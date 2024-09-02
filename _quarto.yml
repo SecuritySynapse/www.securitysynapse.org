@@ -13,7 +13,7 @@ website:
   reader-mode: false
   back-to-top-navigation: true
   page-navigation: true
-  favicon: "icons/algorithmology.png"
+  favicon: "icons/securitysynapse.png"
   open-graph: true
   site-url: https://www.security-synapse.org/
   repo-url: https://github.com/SecuritySynapse/www.security-synapse.org
