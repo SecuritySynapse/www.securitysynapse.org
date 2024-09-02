@@ -1,0 +1,51 @@
+project:
+  type: website
+  preview:
+    port: 5550
+    browser: false
+    watch-inputs: true
+    navigate: false
+
+website:
+  title: ""
+  search:
+    location: navbar
+  reader-mode: false
+  back-to-top-navigation: true
+  page-navigation: true
+  favicon: "icons/algorithmology.png"
+  open-graph: true
+  site-url: https://www.security-synapse.org/
+  repo-url: https://github.com/SecuritySynapse/www.security-synapse.org
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - syllabus/index.qmd
+      - schedule/index.qmd
+      - slides/index.qmd
+
+  page-footer:
+    left: '<a href="https://github.com/SecuritySynapse/www.security-synapse.org/graphs/contributors" aria-label="Security Synapse Maintainers">{{< iconify fa copyright >}} Security Synapse</a>'
+    right:
+      - text: "{{< iconify fa github size=18px >}}"
+        href: https://github.com/SecuritySynapse/
+      - text: "{{< iconify fa github-square size=18px >}}"
+        href: https://github.com/SecuritySynapse/www.security-synapse.org/
+      - text: "{{< iconify bi discord size=19px >}}"
+        href: https://discord.gg/juUXz7d4Jh
+
+format:
+  html:
+    mainfont: Inter
+    monofont: Ubuntu Mono
+    fontsize: 1.25em
+    theme: zephyr
+    highlight-style: github
+    css: css/styles.css
+    include-in-header:
+      # include in the header preconnect and theme-color
+      - file: _include/html/header-include.html
+
+execute:
+  freeze: auto
