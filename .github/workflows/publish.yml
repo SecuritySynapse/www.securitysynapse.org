@@ -1,0 +1,44 @@
+# Basic workflow
+name: Publish
+
+# Controls when the action will run
+# Workflow begins with push or PR events
+# Focuses on the master branch only
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# Jobs for setup, rendering, and publishing
+# for the web site, using Python, Poetry,
+# and the Quarto publishing system
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Repository
+      - name: Check out Repository
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+      # Install Quarto
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: 1.5.56
+      # Render and Publish the Site
+      # Note that this uses Quarto to
+      # directly publish the site, which
+      # means that you do not use Netlify
+      # build minutes. This is great! Yet,
+      # it also means that you do not get
+      # a Netlify preview build for PRs.
+      - name: Render and Publish
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        run: |
+          python3 -m pip install jupyter
+          quarto --version
+          # directly publish a version of the site to Netlify
+          quarto publish netlify
