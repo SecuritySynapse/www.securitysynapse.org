@@ -56,6 +56,13 @@ div.callout-note.callout {
   border-left-color: #03a9f4;
 }
 
+.callout.callout-style-simple>div.callout-header {
+  border-bottom: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  opacity: 100% !important;
+}
+
 div.quarto-post a {
   color: #212529;
   text-decoration: none;
