@@ -1,0 +1,65 @@
+---
+title: ""
+layout: full
+toc: false
+---
+
+![](images/Security-Synapse-Logo.svg){fig-align="center"}
+
+## Welcome to an Adventure in Computer Security!
+
+In addition to ensuring that the programs they implement are correct and
+maintainable, algorithm engineers must confirm that their code is efficient.
+The focus of this course --- called "algorithmology" for fun! --- is the study
+of algorithms, with a concentration on both their correctness and efficiency.
+The process of algorithmology requires the completion of tasks that leverage
+knowledge and skills in both engineering and science. For instance, an
+algorithm engineer needs to design, implement, and test data structures and
+algorithms and then correctly integrate them into a working software system.
+However, an algorithm engineer must also employ the scientific method to
+analyze the efficiency of both a software system's components and the system as
+a whole. This course introduces learners to both empirical and analytical
+approaches to studying the efficiency of algorithms, data structures, and the
+software systems that contain them.
+
+## Course Overview
+
+With the goal of enabling the growth of algorithm engineers, this web site
+features a sixteen-week schedule filled with activities that support the
+development of your professional and technical capacities in the field of
+algorithm analysis. Although this site is best used by an on-campus learner in
+the [Department of Computer and information
+Science](https://www.cs.allegheny.edu/) at [Allegheny
+College](https://www.allegheny.edu/), the resources and projects are all
+publicly available. For instance, this course leverages and extends the
+open-access course textbook called [A First Course on Data Structures in
+Python](https://github.com/donsheehy/datastructures). You can access all of the
+source code and technical content for this book by checking out its GitHub
+repository and following along with the [schedule](schedule/index.qmd) and the
+[slides](slides/index.qmd) for this course, as found on this site.
+
+## Resources for an Adventure in Algorithmology
+
+Interested in getting started on a developer development adventure? Begin here:
+
+- The [sixteen-week course schedule](./schedule/index.qmd) offers detailed
+insights into each step that learners should take to help them to emerge as
+algorithm engineers, including a list of reading assignments and descriptions
+of various algorithm engineering projects.
+
+- The [course syllabus](./syllabus/index.qmd) introduces the course and its
+learning objectives and explains how on-campus learners will be assessed by the
+course instructor.
+
+::: {.callout-note appearance="minimal" title="Security Synapse Community Resources"}
+
+Interested in connecting with other like-minded algorithm engineers? Please join
+the [Algorithmology Discord Server](https://discord.gg/phSQfB8bZx) and join the
+conversation! If you are an on-campus learning at Allegheny College, you may
+also join the [Allegheny College Computer Science Discord
+Server](https://discord.gg/CS2h9kXzX6). Finally, if you are an on-campus
+learner, then you may schedule a meeting with the course instructor during
+office hours by visiting the [Course Instructor's Appointment
+Scheduler](https://www.gregorykapfhammer.com/schedule/).
+
+:::
