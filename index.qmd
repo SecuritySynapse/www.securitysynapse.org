@@ -37,7 +37,7 @@ Success](https://web.njit.edu/~rt494/security/) and [Cracking Codes with
 Python](https://inventwithpython.com/cracking/). You can access all of the
 source code and technical content for this book by checking out its GitHub
 repository and following along with the [schedule](schedule/index.qmd) and the
-[slides](slides/index.qmd) for this course, as found on this site.
+[slides](slides/index.qmd) for this course.
 
 ## Resources for an Adventure in Algorithmology
 
