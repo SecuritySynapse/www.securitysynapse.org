@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: 20a8312f-381c-44b3-a57a-243346a65aa7
+      url: 'https://securitysynapse.netlify.app'
