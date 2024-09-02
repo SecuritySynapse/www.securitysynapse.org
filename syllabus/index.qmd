@@ -17,11 +17,10 @@ for more information!
 
 ### Instructor Appointments
 
-- **Monday**: 11:00 AM -- 12:00 noon
-- **Tuesday**: 1:30 PM -- 2:30 PM
-- **Wednesday**: 10:00 AM -- 12:00 noon
-- **Wednesday**: 2:00 PM -- 3:00 PM
-- **Friday**: 2:30 PM -- 3:30 PM
+- **Monday**: 11:00 -- 12:00 noon and 4:30 PM -- 5:00 PM
+- **Tuesday**: 1:00 PM -- 3:00 PM
+- **Wednesday**: 11:00 AM -- 12:00 noon
+- **Friday**: 11:00 AM -- 12:00 noon and 2:30 PM -- 3:00 PM
 
 All instructor appointments are 15-minute time slots and take place in Alden Hall,
 Room 108.
