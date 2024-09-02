@@ -56,6 +56,19 @@ div.callout-note.callout {
   border-left-color: #03a9f4;
 }
 
+.sidebar nav[role="doc-toc"] ul>li>a.active,
+.sidebar nav[role="doc-toc"] ul>li>ul>li>a.active {
+  border-left: 1px solid #2e5799;
+  color: #2e5799 !important;
+}
+
+.sidebar nav[role="doc-toc"] ul>li>a:hover,
+.sidebar nav[role="doc-toc"] ul>li>ul>li>a:hover {
+  color: #2e5799 !important;
+  text-decoration-color: #2e5799;
+  text-underline-offset: 0.3em;
+}
+
 .callout.callout-style-simple>div.callout-header {
   border-bottom: none;
   font-size: 0.9rem;
