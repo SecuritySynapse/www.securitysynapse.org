@@ -1,7 +1,7 @@
 project:
   type: website
   preview:
-    port: 5550
+    port: 5559
     browser: false
     watch-inputs: true
     navigate: false
