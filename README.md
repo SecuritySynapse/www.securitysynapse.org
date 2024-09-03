@@ -1,4 +1,4 @@
-# www.security-synapse.org
+# www.securitysynapse.org
 
 This is the GitHub repository for [Security
 Synapse](http://www.security-synapse.org), a website that provides a
