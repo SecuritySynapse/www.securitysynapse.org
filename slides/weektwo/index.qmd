@@ -18,13 +18,13 @@ format:
 
 # What is infosec?
 
-::: incremental
+::: {.incremental style="margin-top: -0.5em;"}
 
-- Prevent unauthorized access to data on a computer system
-- Data is both sensitive and valuable and must be protected
-- Risk management is the focus of information security
-- Malware often helps an attacker gain access to a system
-- System failure often occurs during an attack with malware
+- Prevent *unauthorized access* to data on a computer system
+- Data is both *sensitive* and *valuable* and must be *protected*
+- *Risk management* is the focus of information security
+- *Malware* often helps an attacker gain access to a system
+- *System failure* often occurs during an attack with malware
 
 :::
 
@@ -36,18 +36,40 @@ strategies would have enabled your defense?
 
 :::
 
-
-## Algorithm analysis process
+## Learning the Lingo: CIA
 
 ::: incremental
-- Design, implement, and test
-  - Data structures and algorithms
-  - Benchmark framework
-  - Data analysis tools
-- Create execution environments
-  - Repeatable and reproducible
-  - Controlled and varied
-  - Local and in the cloud
+
+- Key security acronyms describing design principles:
+  - **CIA**: **C**onfidentiality, **I**ntegrity, **A**vailability
+    - *Confidentiality*: Keeping secret information secret
+    - *Integrity*: Data has not been corrupted or tampered with
+    - *Availability*: Systems are up and running for valid users
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: What is an attack a "hacker" could take to comprise one of
+the **CIA** principles? How would the attack compromise the **CIA** principles?
+What could be done to prevent the attack?
+
+:::
+
+## Learning the Lingo: AAA
+
+::: incremental
+
+- Understand key security acronyms
+  - **AAA**: Authentication, Authorization, Accounting
+    - Authentication: Confirming someone's identity
+    - Authorization: Keeping track of which resources an entity has access to
+    - Accounting: Tracking the usage of resources
+  - DRY: Don't Repeat Yourself
+    - Guideline for automation and system design
+    - Avoid manual repetition by using scripts and tools
+    - Reuse resources, such as databases, across multiple systems
+
 :::
 
 ## Examples of four programs to study through performance benchmarks
