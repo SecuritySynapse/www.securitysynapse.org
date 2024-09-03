@@ -142,9 +142,10 @@ percentages during the academic semester.
 | Class Participation      |  5%        |
 | In-Person Assessments    |  10%       |
 | Midterm Examinations     |  10%       |
-| Final Examination        |  15%       |
+| Final Examination        |  10%       |
+| Security Synapse Projects|  10%       |
 | Security Survey Projects |  25%       |
-| Security Summit Project  |  35%       |
+| Security Summit Project  |  30%       |
 
 These assessment categories have the following definitions:
 
@@ -193,23 +194,38 @@ coding assistants, during the completion of the final examination provided that
 they cite these sources and explain how they used them to complete the
 examination.
 
-- **Security Survey Projects**: These two-week assignments invite students to
-explore the implementation details of various computer security concepts such as
-cryptography, cryptanalysis, and malware. These projects are completed through
-the design, implementation, documentation, and evaluation of computer programs
-in languages such as Python, Java, JavaScript, C, Go, and Rust. Students may use
-external sources, including artificial intelligence coding assistants, during
-the completion of a security survey project provided that they cite these
-sources and explain how they used them to complete the various components of an
-algorithm engineering project.
+- **Security Synapse Projects**: Students who are assigned by the course
+instructor to serve as a discussion leader will complete two security synapse
+projects during the week. On the Tuesday class session the assigned students
+will lead the class in a discussion concerning the practical and ethical
+implications of that week's high-level computer security concept(s). On the
+Thursday class session the assigned students will demonstrate and explain, in at
+least two programming languages, the source code in a GitHub repository that
+practically connects to the high-level computer security concepts presented in
+the prior class session. Students may use external sources, including artificial
+intelligence coding assistants, during the completion of the final examination
+provided that they cite these sources and explain how they used them to complete
+the examination.
 
-- **Security Summit Project**: Started in the fourth week of the academic
-semester, this long-term project invites students to propose, implement,
-evaluate, and present their own computer security system. Students may use
-external sources, including artificial intelligence coding assistants, during
-the completion of an algorithm all-hands project provided that they cite these
-sources and explain how they used them to complete the various components of an
-algorithm engineering project.
+- **Security Survey Projects**: These two-week assignments invite students to
+make "security synapses" as they survey the implementation details of various
+computer security concepts such as cryptography, cryptanalysis, and malware.
+These projects are completed through the design, implementation, documentation,
+and evaluation of computer programs in languages such as Python, Java,
+JavaScript, C, Go, and Rust. Students may use external sources, including
+artificial intelligence coding assistants, during the completion of a security
+survey project provided that they cite these sources and explain how they used
+them to complete the various components of an algorithm engineering project.
+
+- **Security Summit Project**: Started in approximately the fourth week of the
+academic semester, this long-term project invites students to propose,
+implement, evaluate, and present their own project in the field of computer
+security. In addition to requiring the completion of a significant and
+innovative software tool, this project also invites students to complete a
+series of presentations and reports. Students may use external sources,
+including artificial intelligence coding assistants, during the completion of
+this project provided that they cite these sources and explain how they used
+them to complete the various components of their work.
 
 #### Assessment Policies
 
@@ -221,9 +237,9 @@ assessment policies:
 All assignments will have a stated due date shared through GitHub, GitHub
 Classroom, and/or the [Algorithmology Discord](https://discord.gg/YHjhQaBnme).
 No credit will be awarded for any course work that you submit to the incorrect
-GitHub repository or web site. Unless special advance arrangements are made
-with the instructor to address extenuating circumstances, no work will be
-accepted after the deadline.
+GitHub repository or web site. Unless special advance arrangements are made with
+the instructor to address extenuating circumstances, no work will be accepted
+after the deadline.
 
 ##### Assignment Evaluation
 
