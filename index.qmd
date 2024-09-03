@@ -1,5 +1,5 @@
 ---
-title: ""
+pagetitle: "Security Synapse"
 layout: full
 toc: false
 ---
