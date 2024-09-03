@@ -63,7 +63,7 @@ What could be done to prevent the attack?
 - Strategies for ensuring system security:
   - **AAA**: **A**uthentication, **A**uthorization, **A**ccounting
     - *Authentication*: Confirming someone's identity
-    - *Authorization*: Keeping track of which resources an entity has access to
+    - *Authorization*: Keeping track of entity's resource access
     - *Accounting*: Tracking the usage of resources
 
 :::
@@ -71,7 +71,40 @@ What could be done to prevent the attack?
 ::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
 
 **Key Questions**: Why are these appropriate strategies for ensuring system
-security? What is the fundamental trade-off in computer security?
+security? What are the limitations of each strategy? What is the fundamental
+trade-off in computer security? Why?
+
+:::
+
+## Learning the Lingo: DRY
+
+::: incremental
+
+- Key strategy for ensuring system security:
+  - **DRY**: *D*on't *R*epeat *Y*ourself
+    - Guideline for automation and system design
+    - Avoid manual repetition by using scripts and tools
+    - Reuse resources, such as databases, across multiple systems
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: What is an attack a "hacker" could take to comprise one of
+the **CIA** principles? How would the attack compromise the **CIA** principles?
+What could be done to prevent the attack?
+
+:::
+
+# *Key Dilemma*: people may have key computer security requirements but limited security expertise
+
+# *Key Trade-off*: making a system secure often makes it less usable!
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: When you are using computer hardware and software to you tend
+to err towards security or usability? What are some strategies to making
+software both secure and usable?
 
 :::
 
