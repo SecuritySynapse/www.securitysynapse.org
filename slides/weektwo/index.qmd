@@ -60,42 +60,44 @@ What could be done to prevent the attack?
 
 ::: incremental
 
-- Understand key security acronyms
-  - **AAA**: Authentication, Authorization, Accounting
-    - Authentication: Confirming someone's identity
-    - Authorization: Keeping track of which resources an entity has access to
-    - Accounting: Tracking the usage of resources
-  - DRY: Don't Repeat Yourself
-    - Guideline for automation and system design
-    - Avoid manual repetition by using scripts and tools
-    - Reuse resources, such as databases, across multiple systems
+- Strategies for ensuring system security:
+  - **AAA**: **A**uthentication, **A**uthorization, **A**ccounting
+    - *Authentication*: Confirming someone's identity
+    - *Authorization*: Keeping track of which resources an entity has access to
+    - *Accounting*: Tracking the usage of resources
 
 :::
 
-## Examples of four programs to study through performance benchmarks
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: Why are these appropriate strategies for ensuring system
+security? What is the fundamental trade-off in computer security?
+
+:::
+
+## Examples of four programs that may have security flaws
 
 - Terminal window shell like `bash` or `zsh`
 - Terminal prompt like `powerlevel10k` or `starship`
 - Web browser like `firefox` or `chrome`
-- Text editor like `vim` or `emacs`
+- Server like `sshd` or `httpd`
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
 
-*...* How do we *characterize* the execution environment of these programs? *...* How
-do we *compare* their performance in different configurations? *...* How do we
-*improve* their performance? *...*
+**Key Questions**: What are some of the security vulnerabilities in each of
+these programs? How were they detected? How were they fixed?
 
 :::
 
-## Overall goals of "algorithmology"
+## Overall goals of "security synapse"
 
 ::: {.fragment .fade-right}
 
-- **Algorithm Engineering**:
+- **High-Level Concepts**:
   - Design and implement algorithm and data structure
   - Test all aspects of the system to ensure correctness
   - Make a benchmark framework to measure performance
-- **Algorithm Evaluation**:
+- **Low-Level Implementation Details**:
   - Design experiments to answer research questions
   - Conduct experiments and collect data
   - Analyze and visualize data to draw conclusions
