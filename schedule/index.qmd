@@ -45,14 +45,6 @@ listing:
   - **Chapters**: Eight through ten in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
   - **Final Examination**: Week sixteen during the final examination period
 
-::: {.callout-note appearance="minimal" title="Textbook Abbreviations" collapse="false"}
-
-- **CSP**: [Computer Systems Security: Planning for
-Success](https://web.njit.edu/~rt494/security/)
-- **CCP**: [Cracking Codes with Python](https://inventwithpython.com/cracking/)
-
-:::
-
 ### Schedule Details
 
 #### Week-by-Week
@@ -89,3 +81,12 @@ Success](https://web.njit.edu/~rt494/security/)
     - **Date**: Monday, December 9, 2024
     - **Time**: 7:00 PM -- 10:00 PM
     - **Location**: Alden 109
+
+::: {.callout-note appearance="minimal" title="Textbook Abbreviations" collapse="false"}
+
+- **CSP**: [Computer Systems Security: Planning for
+Success](https://web.njit.edu/~rt494/security/)
+- **CCP**: [Cracking Codes with Python](https://inventwithpython.com/cracking/)
+
+:::
+
