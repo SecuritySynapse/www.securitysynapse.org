@@ -9,7 +9,7 @@ toc-expand: 3
 
 ## Exploration
 
-- {{< iconify fa6-solid book-open size=18px >}} High-level overview of
+- {{< iconify fa6-solid book-open size=18px >}} Chapter One of
 [Computer Systems Security: Planning for
 Success](https://web.njit.edu/~rt494/security/)
 - {{< iconify fa6-solid book-open size=18px >}} High-level overview of
@@ -20,9 +20,18 @@ Success](https://web.njit.edu/~rt494/security/)
 - {{< iconify fa6-solid diagram-project size=18px >}} **Monday**: No laboratory
   session
 - {{< iconify fa6-solid people-line size=18px >}} **Tuesday and Thursday**: Course introduction
-  - Introduction to the computer security course
-  - Highlighting the concept of a security synapse
+  - Continued introduction to the computer security course
+  - Continued highlighting of the concept of a security synapse
+  - Introduction to basic computer security concepts and principles
   - Student presentations that feature:
     - High-level concept in the field of computer security
     - Implementation of that concept in two programming languages
     - Question and answer session with the course instructor
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="../../slides/weektwo/"></iframe>
+```
+
+{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week Two: Learning Computer Security Lingo](../../slides/weektwo/)
