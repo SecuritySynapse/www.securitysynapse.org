@@ -1,6 +1,6 @@
 ---
 title: Making a Security Synapse 
-description: "Ensure Success in Computer Security"
+description: "How to Make Conceptual Connections in Computer Security"
 date: 2024-08-26
 layout: full
 toc: true
