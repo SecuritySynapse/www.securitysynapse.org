@@ -217,13 +217,14 @@ These projects are completed through the design, implementation, documentation,
 and evaluation of computer programs in languages such as Python, Java,
 JavaScript, C, Go, and Rust. Students may use external sources, including
 artificial intelligence coding assistants, during the completion of a security
-survey project provided that they cite these sources and explain how they used
-them to complete the various components of an algorithm engineering project.
+survey project as long as that they cite these sources and explain how they used
+them to complete the various components of their project's implementation,
+evaluation, and writing.
 
 - **Security Summit Project**: Started in approximately the fourth week of the
 academic semester, this long-term project invites students to propose,
-implement, evaluate, and present their own project in the field of computer
-security. In addition to requiring the completion of a significant and
+implement, evaluate, and present their own advanced project in the field of
+computer security. In addition to requiring the completion of a significant and
 innovative software tool, this project also invites students to complete a
 series of presentations and reports. Students may use external sources,
 including artificial intelligence coding assistants, during the completion of
