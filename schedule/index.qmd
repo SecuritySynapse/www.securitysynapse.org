@@ -27,33 +27,51 @@ listing:
 
 ### High-Level Overview
 
-- **Module One**: 
+- **Module One** 
   - **Topic**: Basics of Computer Security
   - **Weeks**: One through six
-  - **Chapters**: One through three in [CSP](https://web.njit.edu/~rt494/security/)
+  - **Chapters**: One through three in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
   - **Midterm Examination One**: Week six during the laboratory session
-- **Module Two**:
-  - **Topic**: Algorithmic Building Blocks
+
+- **Module Two** 
+  - **Topic**: Challenges and Solutions in Computer Security
   - **Weeks**: Seven through eleven
-  - **Chapters**: Six through fourteen in [A First Course on Data Structures in Python](https://donsheehy.github.io/datastructures/)
-- **Module Three**:
-  - **Topic**: Advanced Data Structures
-  - **Weeks**: Twelve through sixteen
-  - **Chapters**: Fifteen through twenty-one in [A First Course on Data Structures in Python](https://donsheehy.github.io/datastructures/)
+  - **Chapters**: Four through seven in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
+  - **Midterm Examination Two**: Week eleven during the laboratory session
+
+- **Module Two** 
+  - **Topic**: Advanced Topics in Computer Security
+  - **Weeks**: Seven through eleven
+  - **Chapters**: Eight through ten in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
+  - **Final Examination**: Week sixteen during the final examination period
+
+::: {.callout-note appearance="minimal" title="Textbook Abbreviations" collapse="false"}
+
+- **CSP**: [Computer Systems Security: Planning for
+Success](https://web.njit.edu/~rt494/security/)
+- **CCP**: [Cracking Codes with Python](https://inventwithpython.com/cracking/)
+
+:::
 
 ### Schedule Details
 
 #### Week-by-Week
 
 - **Start Semester**: Week One, August 26 -- August 30, 2024
-- **Fall Break Break**: Week Eight
-- **Midterm Exam**: Week Nine
+- **Fall Break**: Week Eight
+- **Thanksgiving Break**: Week Fourteen
+- **Midterm Exam One**: Week Six
+- **Midterm Exam Two**: Week Eleven
 - **Final Exam**: Week Sixteen
 
 #### Important Dates
 
 - **Midterm Executable Examination One**
     - **Date**: Monday, September 30, 2024
+    - **Time**: 2:30 -- 4:30 PM
+    - **Location**: Alden 109
+- **Midterm Executable Examination Two**
+    - **Date**: Monday, November 4, 2024
     - **Time**: 2:30 -- 4:30 PM
     - **Location**: Alden 109
 - **Final Executable Examination**
