@@ -33,8 +33,8 @@ of the class activities and projects.
 
 - The [course syllabus](./syllabus/index.qmd) introduces the course and its
 learning objectives, overviews the security survey and security summit projects,
-and explains how on-campus learners will be assessed by the instructor through
-examinations and in-person evaluations.
+and explains how on-campus learners will be assessed by the instructor
+through examinations and in-person evaluations.
 
 ::: {.callout-note appearance="minimal" title="Security Synapse Community Resources"}
 
