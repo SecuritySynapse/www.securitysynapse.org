@@ -1,0 +1,69 @@
+---
+title: "Introduction to Computer Security"
+description: "When learning computer security, how do we think and talk like a
+hacker?"
+date: "2024-08-02"
+date-format: long
+author: Gregory M. Kapfhammer
+format:
+  revealjs:
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Security Synapse"
+---
+
+# What is algorithm analysis?
+
+::: incremental
+- Data structures that organize data
+- Algorithms that process data structures
+- Experimental and theoretical analysis
+- "Algorithmology" is both *science* and *engineering*
+:::
+
+## Algorithm analysis process
+
+::: incremental
+- Design, implement, and test
+  - Data structures and algorithms
+  - Benchmark framework
+  - Data analysis tools
+- Create execution environments
+  - Repeatable and reproducible
+  - Controlled and varied
+  - Local and in the cloud
+:::
+
+## Examples of four programs to study through performance benchmarks
+
+- Terminal window shell like `bash` or `zsh`
+- Terminal prompt like `powerlevel10k` or `starship`
+- Web browser like `firefox` or `chrome`
+- Text editor like `vim` or `emacs`
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+*...* How do we *characterize* the execution environment of these programs? *...* How
+do we *compare* their performance in different configurations? *...* How do we
+*improve* their performance? *...*
+
+:::
+
+## Overall goals of "algorithmology"
+
+::: {.fragment .fade-right}
+
+- **Algorithm Engineering**:
+  - Design and implement algorithm and data structure
+  - Test all aspects of the system to ensure correctness
+  - Make a benchmark framework to measure performance
+- **Algorithm Evaluation**:
+  - Design experiments to answer research questions
+  - Conduct experiments and collect data
+  - Analyze and visualize data to draw conclusions
+
+:::
