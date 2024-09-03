@@ -40,19 +40,19 @@ aware that, by necessity, the meeting before yours may run late.
 
 ### Course Description
 
-A study of fundamental methods for designing and implementing algorithms and
-analyzing their efficiency. While developing expertise in select models of
-computation and the key mathematical and experimental approaches to studying
-algorithm efficiency, students investigate different types of algorithms through
-hands-on activities that often require teamwork. Students also learn how to
-determine whether a problem can be efficiently solved by an algorithm that is
-implemented as a computer program. During a weekly laboratory session students
-use state-of-the-art technology to complete projects, reporting on their results
-through both written documents and oral presentations. Students are invited to
-use their own departmentally approved laptop in this course; a limited number of
-laptops are available for use during class and lab sessions.
+A study of the principles used in the design, implementation, and evaluation of
+secure computer hardware and software. Participating in hands-on activities
+that often require teamwork, students assess the trade-offs in security
+policies and create software with efficient and effective security mechanisms.
+Leveraging insights and tools from an industry partner, students also
+investigate techniques for providing access control, secure channels, and
+intrusion detection. During a weekly laboratory session students use advanced
+security software to complete projects, reporting on their results through both
+written documents and oral presentations. Students are invited to use their own
+departmentally approved laptop in this course; a limited number of laptops are
+available for use during class and lab sessions.
 
-- **Prerequisite**: CMPSC 101
+- **Prerequisite**: CMPSC 200 or CMPSC 201
 - **Distribution Requirements**: QR, SP
 
 ::: {.callout-note appearance="minimal" title="Explaining the Distribution Requirements" collapse="false"}
@@ -93,73 +93,40 @@ experiences of others.
 - **AC-4**: Apply their knowledge and learning to engage in informed debate,
 and to analyze and solve problems.
 
-Computer Science 403 at Allegheny College is a core course in the Computer
-Science major. Graduates with the Computer Science major --- who all take the
-Computer Science 403 course --- must demonstrate their attainment of these
-learning objectives:
+Computer Science 403 at Allegheny College is a course often taken by graduates
+with the Computer Science or Software Engineering majors or minors. Students
+who take the Computer Science 403 course must demonstrate their attainment of
+these course learning objectives:
 
-- **CS-1**: Demonstrate and be able to communicate the knowledge of data types,
-algorithms, and mathematical principles behind discrete objects.
+- **CS-403-1**: Correctly identify the threats to an application's security and
+describe the suitable mitigation(s) for addressing the threats.
 
-- **CS-2**: Use scientific and theoretical methods to design, implement,
-evaluate, deploy, improve, maintain, and document software and hardware systems.
+- **CS-403-2**: Correctly apply security principles, memory management strategies,
+architecture and algorithmic principles, and cryptography in the modeling and
+implementation of security solutions. 
 
-- **CS-3**: Apply and articulate key concepts from a specialization area where
-the interconnection between software and hardware is important and evident.
+- **CS-403-3**: Correctly use hardware and/or software tools to diagnose and fix
+web and network security risks.
 
-- **CS-4**: Able to communicate technical details of the produced software and
-hardware artifacts both in writing and orally.
+- **CS-403-4**: Evaluate the effectiveness of various hardware and software
+systems with respect to computer security. 
 
-All five of the Computer Science major's learning objectives support the **QR**
-and **SP** distribution requirements and the College's learning objectives.
-
-The specific learning objectives for Computer Science 403 are as follows:
-
-- **CS-403-1**: Correctly implement both well-established and custom data
-structures using a programming language so as to solve a problem with a computer
-program.
-
-  - Enables the attainment of **CS-1**.
-
-- **CS-403-2**: Perform an asymptotic analysis of an algorithm to arrive at its
-correct worst-case time complexity class.
-
-  - Enables the attainment of **CS-2**.
-  - Enables the attainment of **CS-4**.
-
-- **CS-403-3**: Conduct experiments that measure the efficiency of different
-combinations of programming languages, data structures, and algorithms.
-
-  - Enables the attainment of **CS-3**.
-
-- **CS-403-4**: Use both theoretical and experimental results to pick the data
-structure(s) and algorithm(s) that balance the trade-offs associated with
-correctly and efficiently solving a problem with a computer program.
-
-  - Enables the attainment of **CS-2**.
-
-- **CS-403-5**: Effectively apply algorithmic problem solving techniques like
-searching, sorting, and memoization to correctly and efficiently solve a problem
-through the use of a computer program.
-
-  - Enables the attainment of **CS-1**.
-
-The learning objectives for Computer Science 403 enable the attainment of the CS
-program learning objectives that in turn support the attainment of the College's
-learning objectives.
+- **CS-403-4**: Design, implement, document, test, and explain secure
+software with emphasis on social, political, legal, and ethical
+vulnerabilities. 
 
 ### Course Textbooks
 
-- {{< iconify fa6-solid book-open >}} Online textbook called [A First Course on
-Data Structures in Python](https://donsheehy.github.io/datastructures/)
+- {{< iconify fa6-solid book-open >}} Online textbook called [Computer Systems
+Security: Planning for Success](https://web.njit.edu/~rt494/security/) 
 
-- {{< iconify fa6-brands github >}} The `ds2` package in the 
-[donsheehy/datastructures](https://github.com/donsheehy/datastructures)  GitHub
-repository
+- {{< iconify fa6-solid book-open >}} Online textbook called [Cracking Codes
+with Python](https://inventwithpython.com/cracking/) 
 
 Extensive details about the content that the course covers in the textbook are
 available in the [course schedule](../schedule/index.qmd) and the [course
-slides](../slides/index.qmd).
+slides](../slides/index.qmd). Specific modules of the course will also
+reference research papers and popular press articles about computer security.
 
 ### Course Policies
 
