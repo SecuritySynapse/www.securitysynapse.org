@@ -36,6 +36,26 @@ strategies would have enabled your defense?
 
 :::
 
+## Learning the Lingo: PDR
+
+::: incremental
+
+- Key security acronyms describing design principles:
+  - **PDR**: **P**revention, **D**etection, **R**eaction
+    - *Prevention*: Stopping an attack before it starts
+    - *Detection*: Identifying an attack in progress
+    - *Reaction*: Stopping an attack before it causes damage
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: From your perspective, which of these three is the most
+important? Should an individual or an organization disclose information about a
+security breach? Why or why not?
+
+:::
+
 ## Learning the Lingo: CIA
 
 ::: incremental
@@ -96,29 +116,30 @@ trade-off in computer security? Why?
 
 :::
 
-# *Key Dilemma*: people may have key computer security requirements but limited security expertise
+# *Key Dilemma*: people may have key computer security requirements but limited computer security expertise
 
 # *Key Trade-off*: making a system secure often makes it less usable!
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
 
-**Key Questions**: When you are using computer hardware and software to you tend
-to err towards security or usability? What are some strategies to making
+**Key Questions**: When you are using computer hardware and software do you tend
+to err towards security or usability? What are some strategies for making
 software both secure and usable?
 
 :::
 
-## Examples of four programs that may have security flaws
+## Examples of four programs that may have security flaws! Any ideas?
 
-- Terminal window shell like `bash` or `zsh`
-- Terminal prompt like `powerlevel10k` or `starship`
-- Web browser like `firefox` or `chrome`
-- Server like `sshd` or `httpd`
+- Web browsers like `firefox` or `chrome`
+- Servers like `sshd` or `httpd`
+- LLM interaction with `litellm`
+- Terminal window history with `atuin` or `zsh`
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
 
-**Key Questions**: What are some of the security vulnerabilities in each of
-these programs? How were they detected? How were they fixed?
+**Key Questions**: What could be a *security vulnerability* in each of
+these programs? How could they be *prevented* and *detected*? What should be the
+*reaction* to the detection of a security vulnerability?
 
 :::
 
@@ -126,13 +147,15 @@ these programs? How were they detected? How were they fixed?
 
 ::: {.fragment .fade-right}
 
-- **High-Level Concepts**:
-  - Design and implement algorithm and data structure
+- **High-Level Concepts**
+  - Concepts such as *confidentiality* and *integrity*
   - Test all aspects of the system to ensure correctness
   - Make a benchmark framework to measure performance
-- **Low-Level Implementation Details**:
-  - Design experiments to answer research questions
-  - Conduct experiments and collect data
-  - Analyze and visualize data to draw conclusions
+- **Low-Level Implementation Details**
+  - Use cryptography to secure transferred data
+  - Use hashing to verify data integrity
+  - Secure implementation in programming languages
 
 :::
+
+# *Implementation*: which languages are reputed to be the most or least secure? Why? Do you agree with consensus?
