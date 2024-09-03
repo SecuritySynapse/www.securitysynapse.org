@@ -239,11 +239,11 @@ assessment policies:
 ##### Assignment Submission
 
 All assignments will have a stated due date shared through GitHub, GitHub
-Classroom, and/or the [Algorithmology Discord](https://discord.gg/YHjhQaBnme).
-No credit will be awarded for any course work that you submit to the incorrect
-GitHub repository or web site. Unless special advance arrangements are made with
-the instructor to address extenuating circumstances, no work will be accepted
-after the deadline.
+Classroom, and/or the [Security Synapse Discord
+Server](https://discord.gg/juUXz7d4Jh). No credit will be awarded for any course
+work that you submit to the incorrect GitHub repository or web site. Unless
+special advance arrangements are made with the instructor to address extenuating
+circumstances, no work will be accepted after the deadline.
 
 ##### Assignment Evaluation
 
