@@ -57,18 +57,22 @@ Success](https://web.njit.edu/~rt494/security/)
 
 #### Week-by-Week
 
-- **Key Dates**
+- **Date Ranges**
   - **Module One**: Week One through Week Six
   - **Module Two**: Week Seven through Week Eleven
   - **Module Three**: Week Twelve through Week Sixteen
   - **Semester Starts**: Week One, August 26 -- August 30, 2024
   - **Semester Ends**: Week Sixteen, December 9, 2024 -- December 12, 2024
 - **Additional Dates**
-  - **Fall Break**: Week Eight
-  - **Thanksgiving Break**: Week Fourteen
-  - **Midterm Exam One**: Week Six
-  - **Midterm Exam Two**: Week Eleven
-  - **Final Exam**: Week Sixteen
+  - *Examinations*
+    - **Midterm Exam One**: Week Six
+    - **Midterm Exam Two**: Week Eleven
+    - **Final Exam**: Week Sixteen
+  - *Breaks*  
+    - **Labor Day**: Week Two
+    - **All-College Programming**: Week Eleven
+    - **Fall Break**: Week Eight
+    - **Thanksgiving Break**: Week Fourteen
 
 #### Important Dates
 
