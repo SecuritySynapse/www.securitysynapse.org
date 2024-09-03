@@ -16,14 +16,26 @@ format:
     footer: "Security Synapse"
 ---
 
-# What is algorithm analysis?
+# What is infosec?
 
 ::: incremental
-- Data structures that organize data
-- Algorithms that process data structures
-- Experimental and theoretical analysis
-- "Algorithmology" is both *science* and *engineering*
+
+- Prevent unauthorized access to data on a computer system
+- Data is both sensitive and valuable and must be protected
+- Risk management is the focus of information security
+- Malware often helps an attacker gain access to a system
+- System failure often occurs during an attack with malware
+
 :::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.9em;"}
+
+**Key Questions**: Have you ever been the subject of an information security
+attack? What was the attack vector? Could it have been prevented? What
+strategies would have enabled your defense?
+
+:::
+
 
 ## Algorithm analysis process
 
