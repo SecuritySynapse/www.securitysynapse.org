@@ -27,18 +27,19 @@ checking out its GitHub repository and following along with the
 Interested in getting started on a developer development adventure? Begin here:
 
 - The [sixteen-week course schedule](./schedule/index.qmd) offers detailed
-insights into each step that learners should take to help them to emerge as
-algorithm engineers, including a list of reading assignments and descriptions
-of various algorithm engineering projects.
+insights into each step that learners should take to help them to effectively
+make security synapses, including a list of reading assignments and descriptions
+of the class activities and projects.
 
 - The [course syllabus](./syllabus/index.qmd) introduces the course and its
-learning objectives and explains how on-campus learners will be assessed by the
-course instructor.
+learning objectives, overviews the security survey and security summit projects,
+and explains how on-campus learners will be assessed by the instructor through
+examinations and in-person evaluations.
 
 ::: {.callout-note appearance="minimal" title="Security Synapse Community Resources"}
 
 Interested in connecting with other like-minded algorithm engineers? Please join
-the [Algorithmology Discord Server](https://discord.gg/phSQfB8bZx) and join the
+the [Security Synapse Discord Server](https://discord.gg/juUXz7d4Jh) and join the
 conversation! If you are an on-campus learning at Allegheny College, you may
 also join the [Allegheny College Computer Science Discord
 Server](https://discord.gg/CS2h9kXzX6). Finally, if you are an on-campus
