@@ -176,10 +176,10 @@ arrangements are made with the instructor, all students should use their
 computer to take these tests on the scheduled date and to complete it in the
 stated location while taking no more than the required amount of time. Each
 midterm is an executable examination that students will complete through the use
-of GitHub, VS Code, and the programming tools installed on their laptops.
-Students may use external sources, including artificial intelligence coding
-assistants, during the completion of a midterm examination provided that they
-cite these sources and explain how they used them to complete the examination.
+of GitHub, VS Code, and their laptop's programming tools. Students may use
+external sources, including artificial intelligence coding assistants, during
+the completion of a midterm examination provided that they cite these sources
+and explain how they used them to complete the examination.
 
 - **Final Examination**: The final examination is an online, executable,
 cumulative assessment covering all of the material during all of the course
@@ -226,10 +226,14 @@ academic semester, this long-term project invites students to propose,
 implement, evaluate, and present their own advanced project in the field of
 computer security. In addition to requiring the completion of a significant and
 innovative software tool, this project also invites students to complete a
-series of presentations and reports. Students may use external sources,
-including artificial intelligence coding assistants, during the completion of
-this project provided that they cite these sources and explain how they used
-them to complete the various components of their work.
+series of presentations and reports. These projects should clearly demonstrate a
+"security synapse" both through the connection between high-level concepts and
+their low-level implementation and technical concepts discussed in the course
+and their practical application to the secure use of real-world computer
+software. Students may use external sources, including artificial intelligence
+coding assistants, during the completion of this project provided that they cite
+these sources and explain how they used them to complete the various components
+of their work.
 
 #### Assessment Policies
 
@@ -248,22 +252,28 @@ circumstances, no work will be accepted after the deadline.
 ##### Assignment Evaluation
 
 Using a report that the instructor shares with you through your GitHub
-repositories devoted to work in the field of algorithm analysis, you will
-privately receive a grade for and feedback on your course projects. Your grade
-will be a function of whether or not you (a) completed work that fulfills the
-project's specification and (b) submitted it by the deadline to the stated
+repositories devoted to work in the field of computer security, you will
+privately receive a grade for and/or feedback on your course projects. Your
+grade will be a function of whether or not you (a) completed work that fulfills
+the project's specification and (b) submitted it by the deadline to the stated
 platform.
 
-##### Algorithmology Tokens
+##### Security Synapse Tokens
 
-Students may "spend" up to five algorithmology "tokens" that they may use to
-either (i) secure 48 hours of additional time to complete an assigned task or
-(ii) request a reassessment of an already graded project after revising it
-according to feedback from the instructor. For instance, a student may choose
-to spend a token by asking the instructor to reevaluate one of the algorithm
-engineering projects. Outside of the use of these five tokens, the instructor
-will not consider any additional requests for deadline extensions or assignment
-reassessment.
+Students may "spend" up to two "security synapse tokens" that they may use to
+secure seven calendar days of time to revise an already assessed project and
+subsequently request a reassessment of it and receive a new assessment score.
+You may use a token to request the reassessment of revised work that you
+completed as part of specific tasks for a security survey project, a checkpoint
+of the security summit project, or either of the mid-term examinations. Students
+may not request to use a token to re-assess their class participation, their
+in-person assessments, their final examination, or their final report for the
+security summit projects. Outside of these two tokens, the instructor will not
+consider any additional requests for deadline extensions or project
+reassessment. The instructor will submit to a student the assessment for work
+revised as part of token used at the end of a course module. Unless there are
+extenuating circumstances, you may not spend any tokens in the last two weeks of
+the semester.
 
 ##### Course Attendance
 
