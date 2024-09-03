@@ -125,8 +125,10 @@ with Python](https://inventwithpython.com/cracking/)
 
 Extensive details about the content that the course covers in the textbook are
 available in the [course schedule](../schedule/index.qmd) and the [course
-slides](../slides/index.qmd). Specific modules of the course will also
-reference research papers and popular press articles about computer security.
+slides](../slides/index.qmd). To best ensure that learners make a "security
+synapse" or a connection between high-level concepts and low-level
+implementation details, the course will also reference research papers and
+popular press articles in the field of computer security.
 
 ### Course Policies
 
@@ -329,8 +331,8 @@ will be the main forum for discussing the professional and technical content in
 the field of algorithm analysis. The [Allegheny College Computer Science Discord
 Server](https://discord.gg/CS2h9kXzX6) will be the main forum for Department of
 Computer Science announcements. Finally, any content that a student wants the
-instructor to assess (e.g., the work for an security summit project) must be in
-a GitHub repository.
+instructor to assess (e.g., the work for a security survey project or a
+checkpoint of the security summit project) must be in a GitHub repository.
 
 #### Using Email
 
@@ -402,11 +404,12 @@ timely fashion.
 In reference to software, Frederick P. Brooks, Jr. wrote in chapter one of *The
 Mythical Man Month* that "the magic of myth and legend has come true in our
 time." Software is a pervasive aspect of our society that changes how we think
-and act. High quality and efficient software also has the potential to
-positively influence the lives of many people. Let's embark on this journey of
-discovery and innovation, harnessing the power of algorithms to efficiently
-solve complex problems with software. At the start of this class, I invite you
-to join together in an adventure in algorithm analysis!
+and act. High quality and secure software also has the potential to positively
+influence the lives of many people. Let's embark on this journey of discovery
+and innovation, harnessing the "security synapses" that we make between the
+high-level concepts and low-level implementation details in the field of
+computer security. At the start of this class, I invite you to join together
+with the instructor and your fellow learners in computer security adventure!
 
 ::: {.callout-note appearance="minimal" title="External Learners"}
 
