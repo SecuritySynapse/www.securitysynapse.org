@@ -18,13 +18,19 @@ listing:
       - "description"
 ---
 
-Interesting in learning more about how to use experimental and analytical
-techniques to study algorithms and data structures? Checkout these slide decks
-to learn more! Each deck explores a specific topic in connection with chapters
-in the book [A First Course on Data Structures in
-Python](https://donsheehy.github.io/datastructures/). Finally, make sure to
-review the [course schedule](../schedule/index.qmd) for more details about how
-these slides connect to various course projects.
+Want to make a "security synapse"? That is to say, do you want to make
+conceptual connections in the field of computer security? Checkout these slide
+decks to learn more! Each deck explores a specific topic in connection with
+chapters in research papers, popular press articles, and the following books:
+
+- {{< iconify fa6-solid book-open >}} Online textbook called [Computer Systems
+Security: Planning for Success](https://web.njit.edu/~rt494/security/) 
+
+- {{< iconify fa6-solid book-open >}} Online textbook called [Cracking Codes
+with Python](https://inventwithpython.com/cracking/) 
+
+Make sure to review the [course schedule](../schedule/index.qmd) for more
+details about how these slides connect to various course projects.
 
 :::{#featured-presentations}
 :::
