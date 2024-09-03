@@ -8,38 +8,22 @@ toc: false
 
 ## Welcome to an Adventure in Computer Security!
 
-In addition to ensuring that the programs they implement are correct and
-maintainable, algorithm engineers must confirm that their code is efficient.
-The focus of this course --- called "algorithmology" for fun! --- is the study
-of algorithms, with a concentration on both their correctness and efficiency.
-The process of algorithmology requires the completion of tasks that leverage
-knowledge and skills in both engineering and science. For instance, an
-algorithm engineer needs to design, implement, and test data structures and
-algorithms and then correctly integrate them into a working software system.
-However, an algorithm engineer must also employ the scientific method to
-analyze the efficiency of both a software system's components and the system as
-a whole. This course introduces learners to both empirical and analytical
-approaches to studying the efficiency of algorithms, data structures, and the
-software systems that contain them.
-
-## Course Overview
-
-With the goal of enabling the growth of algorithm engineers, this web site
-features a sixteen-week schedule filled with activities that support the
+With the goal of enabling the growth of computer security engineers, this web
+site features a sixteen-week schedule filled with activities that support the
 development of your professional and technical capacities in the field of
-algorithm analysis. Although this site is best used by an on-campus learner in
-the [Department of Computer and information
-Science](https://www.cs.allegheny.edu/) at [Allegheny
-College](https://www.allegheny.edu/), the resources and projects are all
-publicly available. For instance, this course leverages and extends the
-open-access books called [Computer Systems Security: Planning for
+computer security. One of the primary goals of this course is to create a
+*security synapse* by connecting high-level concepts in the field of computer
+security with their implementation in programming languages such as Python,
+Java, JavaScript, C, Go, and Rust. Along with leverage research papers and
+popular-press articles, this course leverages and extends two open-access books:
+[Computer Systems Security: Planning for
 Success](https://web.njit.edu/~rt494/security/) and [Cracking Codes with
 Python](https://inventwithpython.com/cracking/). You can access all of the
-source code and technical content for this book by checking out its GitHub
+source code and technical content for this course by checking out its GitHub
 repository and following along with the [schedule](schedule/index.qmd) and the
-[slides](slides/index.qmd) for this course.
+[slides](slides/index.qmd).
 
-## Resources for an Adventure in Algorithmology
+## Resources for Making a Security Synapse
 
 Interested in getting started on a developer development adventure? Begin here:
 
