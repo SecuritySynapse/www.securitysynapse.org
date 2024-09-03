@@ -132,7 +132,7 @@ software both secure and usable?
 
 - Web browsers like `firefox` or `chrome`
 - Servers like `sshd` or `httpd`
-- LLM interaction with `litellm`
+- LLM interaction with `llm` or `litellm`
 - Terminal window history with `atuin` or `zsh`
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
