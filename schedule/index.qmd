@@ -28,9 +28,10 @@ listing:
 ### High-Level Overview
 
 - **Module One**: 
-  - **Topic**: Algorithm Analysis Foundations
+  - **Topic**: Basics of Computer Security
   - **Weeks**: One through six
-  - **Chapters**: One through five in [A First Course on Data Structures in Python](https://donsheehy.github.io/datastructures/)
+  - **Chapters**: One through three in [CSP](https://web.njit.edu/~rt494/security/)
+  - **Midterm Examination One**: Week six during the laboratory session
 - **Module Two**:
   - **Topic**: Algorithmic Building Blocks
   - **Weeks**: Seven through eleven
@@ -44,61 +45,19 @@ listing:
 
 #### Week-by-Week
 
-- **Start Semester**: Week One
-- **Spring Break**: Week Eight
+- **Start Semester**: Week One, August 26 -- August 30, 2024
+- **Fall Break Break**: Week Eight
 - **Midterm Exam**: Week Nine
 - **Final Exam**: Week Sixteen
 
 #### Important Dates
 
-- **Midterm Executable Examination**
-    - **Date**: March 14, 2024
+- **Midterm Executable Examination One**
+    - **Date**: Monday, September 30, 2024
     - **Time**: 2:30 -- 4:30 PM
     - **Location**: Alden 109
 - **Final Executable Examination**
-    - **Examination Code**: A
-    - **Date**: May 2, 2024
-    - **Time**: 9:00 AM -- 12:00 Noon
+    - **Examination Code**: C
+    - **Date**: Monday, December 9, 2024
+    - **Time**: 7:00 PM -- 10:00 PM
     - **Location**: Alden 109
-
-### Weekly Cadence
-
-- {{< iconify fa6-solid people-line size=18px >}} **Monday and Wednesday**: Algorithm Analysis Exposition
-  - Introduction to scientific, technical, and engineering topics:
-    - Data structures and algorithms
-    - Performance evaluation techniques
-    - Software engineering best practices
-    - Prepare for an algorithm engineering project
-- {{< iconify fa6-solid diagram-project size=18px >}} **Thursday**: Algorithm Engineering Project
-  - **Week One**: Design, implement, test, document, and maintain
-      - Data structure(s) and algorithm(s)
-      - Benchmark evaluation framework
-      - Data analysis and visualization tools
-  - **Week Two**: Design and conduct an experiment
-    - Demonstrate implementation of completed system
-    - Document the experimental design
-    - Pose research question(s)
-    - Define evaluation metrics
-    - Conduct the experiment
-    - Analyze and interpret the results
-    - Draw conclusions and make recommendations
-- {{< iconify game-icons team-idea size=18px >}} **Friday**: Algorithm All-Hands Session
-    - **Cadence**: Two weeks devoted to **task one** and then two weeks for **task two**
-    - **Task One**: Leveraging prior work, suggest a research question
-        - **Goal**: *Scientific study in algorithmology*
-        - **Current Week**: Come to class with a proposed research question
-          - Design and conduct an experiment
-          - Analyze and interpret the results
-          - Create a web-based slide deck to present the results
-        - **Following Week**:
-          - Present the slides published to the course web site
-          - Explain answer(s) to the research question
-    - **Task Two**: Leveraging prior work, release useful function(s)
-        - **Goal**: *Engineering effort in algorithmology*
-        - **Current Week**: Come to class with a proposed function for implementation
-          - Identify useful function(s) for refinement
-          - Explain steps for improving the function(s)
-          - Create a pull request and follow it through review
-        - **Following Week**:
-          - Give an overview of the completed function(s)
-          - Give a demonstration of a command-line tool using the function(s)
