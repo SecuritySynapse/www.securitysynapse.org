@@ -1,7 +1,7 @@
 ---
-title: Equipping Algorithm Engineers
-description: "Ensure Success in Algorithm Analysis"
-date: 2024-01-16
+title: Making a Security Synapse 
+description: "Ensure Success in Computer Security"
+date: 2024-08-26
 layout: full
 toc: true
 toc-expand: 3
@@ -9,67 +9,20 @@ toc-expand: 3
 
 ## Exploration
 
-- {{< iconify fa6-solid book-open size=18px >}} Read chapter 1 of [A First
-Course on Data Structures in
-Python](https://donsheehy.github.io/datastructures/)
-- {{< iconify fa6-brands github size=18px >}} Overview the `ds2` package in
-[donsheehy/datastructures](https://github.com/donsheehy/datastructures)
+- {{< iconify fa6-solid book-open size=18px >}} High-level overview of
+[Computer Systems Security: Planning for
+Success](https://web.njit.edu/~rt494/security/)
+- {{< iconify fa6-solid book-open size=18px >}} High-level overview of
+[Cracking Codes with Python](https://inventwithpython.com/cracking/)
 
 ## Activities
 
-- {{< iconify fa6-solid people-line size=18px >}} **Monday and Wednesday**: Course introduction
-  - No class on Monday
-  - Introduction to algorithm engineering
-  - Overview of a course on algorithm analysis
-  - Prepare for an algorithm engineering project
-- {{< iconify fa6-solid diagram-project size=18px >}} **Thursday**: Algorithm engineering project
-- {{< iconify game-icons team-idea size=18px >}} **Friday**: Continue the algorithm engineering project
-
-## Project
-
-### Goal
-
-To build and use a Python program, called `systemsense`, that makes it possible
-to "sense" the characteristics of an execution platform and characterize its
-performance with microbenchmarks, thereby setting the stage for
-future algorithm engineering projects.
-
-### Steps
-
-- Use [System Sense](https://github.com/Algorithmology/algorithmology-setup-starter) as your template repository
-- Install the project's dependencies using `devenv`
-- Follow the instructions to complete the project
-- Schedule [office hours](https://www.gregorykapfhammer.com/schedule/) if you
-have questions
-
-### Insights
-
-::: {.callout-note appearance="minimal" title="Student Insights" collapse="false"}
-
-Students who completed this project shared these insights:
-
-- "If a function is not fully tested, any number of bugs could come up during the
-process of running and evaluating it, muddying the performance results."
-**Mordred Boulais**
-
-- "Operating systems each store and reference their own diagnostic information in
-distinct ways. Although some operating systems and computer architectures are
-obsolete from the perspective of a developer, it is important to note that each
-operating system and processor architecture was built for a specific purpose,
-just like we as humans are made with a specific purpose." **Simon Jones**
-
-- "The way modules, files, and function were written ensured that students with
-different computers would have comparable results. This is important so that
-going forward we can accurately compare our results. Metaphorically speaking, we
-need to compare apples to apples and oranges to oranges and not apples to
-oranges." **Rebekah Rudd**
-
-:::
-
-## Slides
-
-```{=html}
-<iframe class="slide-deck" src="../../slides/weekone/"></iframe>
-```
-
-{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week One: Introduction to Algorithm Analysis](../../slides/weekone/)
+- {{< iconify fa6-solid diagram-project size=18px >}} **Monday**: No laboratory
+  session
+- {{< iconify fa6-solid people-line size=18px >}} **Tuesday and Thursday**: Course introduction
+  - Introduction to the computer security course
+  - Highlighting the concept of a security synapse
+  - Student presentations that feature:
+    - High-level concept in the field of computer security
+    - Implementation of that concept in two programming languages
+    - Question and answer session with the course instructor
