@@ -196,16 +196,19 @@ examination.
 
 - **Security Synapse Projects**: Students who are assigned by the course
 instructor to serve as a discussion leader will complete two security synapse
-projects during the week. On the Tuesday class session the assigned students
+projects during that week. On the Tuesday class session the assigned students
 will lead the class in a discussion concerning the practical and ethical
 implications of that week's high-level computer security concept(s). On the
-Thursday class session the assigned students will demonstrate and explain, in at
-least two programming languages, the source code in a GitHub repository that
-practically connects to the high-level computer security concepts presented in
-the prior class session. Students may use external sources, including artificial
-intelligence coding assistants, during the completion of the final examination
-provided that they cite these sources and explain how they used them to complete
-the examination.
+Thursday class session the assigned students will demonstrate and explain, using
+at least two programming languages studied in the course, the source code in a
+GitHub repository that practically connects to the high-level computer security
+concepts presented in the prior class session. The discussion leaders will
+collaborate with the course instructor to ensure that their prepared materials
+make a security synapse between the high-level concepts and low-level
+implementation details for their week's technical topic. Students may use
+external sources, including artificial intelligence coding assistants, during
+the completion of this project provided that they cite these sources and explain
+how they used them to complete their work.
 
 - **Security Survey Projects**: These two-week assignments invite students to
 make "security synapses" as they survey the implementation details of various
