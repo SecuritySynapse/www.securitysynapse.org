@@ -1,7 +1,7 @@
 ---
-title: Reviewing Python Programming
-description: "Understand Python Programming Basics"
-date: 2024-01-22
+title: Learning Computer Security Lingo
+description: "How Do I Think and Talk Like a Hacker?"
+date: 2024-09-02
 layout: full
 toc: true
 toc-expand: 3
@@ -9,48 +9,20 @@ toc-expand: 3
 
 ## Exploration
 
-- {{< iconify fa6-solid book-open size=18px >}} Read chapters 1 and 2 of [A
-First Course on Data Structures in
-Python](https://donsheehy.github.io/datastructures/)
-- {{< iconify fa6-brands github size=18px >}} Overview functions in `ds2`
-package of
-[donsheehy/datastructures](https://github.com/donsheehy/datastructures)
+- {{< iconify fa6-solid book-open size=18px >}} High-level overview of
+[Computer Systems Security: Planning for
+Success](https://web.njit.edu/~rt494/security/)
+- {{< iconify fa6-solid book-open size=18px >}} High-level overview of
+[Cracking Codes with Python](https://inventwithpython.com/cracking/)
 
 ## Activities
 
-- {{< iconify fa6-solid people-line size=18px >}} **Monday and Wednesday**: Course introduction
-  - Review the basic building blocks of a Python program
-    - Sequence
-    - Selection
-    - Iteration
-  - Consider different ways to create collections in Python
-  - Measure the performance trade-offs of Python's collections
-- {{< iconify fa6-solid diagram-project size=18px >}} **Thursday**: Start algorithm engineering project
-- {{< iconify game-icons team-idea size=18px >}} **Friday**: Continue the algorithm engineering project
-
-## Project
-
-### Goal
-
-To build and use a Python program, called `containmentchecking`, that runs
-benchmarks to measure the performance of `in` for `list`, `tuple`, and `set`,
-thereby enabling software engineers to pick the fastest collection for their
-program.
-
-### Steps
-
-- Use [Containment Checking](https://github.com/Algorithmology/containment-checking-starter) as your template repository
-- Install the project's dependencies using `devenv`
-- Follow the instructions to complete the project:
-  - **Week 1**: Implement all of the modules in `containmentchecking`
-  - **Week 2**: Design and conduct experiments and document experimental results
-- Schedule [office hours](https://www.gregorykapfhammer.com/schedule/) if you
-have questions
-
-## Slides
-
-```{=html}
-<iframe class="slide-deck" src="../../slides/weektwo/"></iframe>
-```
-
-{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week Two: Exploring the Python Programming Language](../../slides/weektwo/)
+- {{< iconify fa6-solid diagram-project size=18px >}} **Monday**: No laboratory
+  session
+- {{< iconify fa6-solid people-line size=18px >}} **Tuesday and Thursday**: Course introduction
+  - Introduction to the computer security course
+  - Highlighting the concept of a security synapse
+  - Student presentations that feature:
+    - High-level concept in the field of computer security
+    - Implementation of that concept in two programming languages
+    - Question and answer session with the course instructor
