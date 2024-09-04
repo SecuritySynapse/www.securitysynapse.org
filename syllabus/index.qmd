@@ -133,6 +133,17 @@ synapse" or a connection between high-level concepts and low-level
 implementation details, the course will also reference research papers and
 popular press articles in the field of computer security.
 
+### Reading Assignments
+
+- **Module One**: Week One through Week Six
+  - **Week One**: Textbook overview for both
+  [CSP](https://web.njit.edu/~rt494/security/) and
+  [CCP](https://inventwithpython.com/cracking/)
+  - **Week Two**: Chapter one in [CSP](https://web.njit.edu/~rt494/security/) 
+
+- **Module Two**: Week Seven through Week Eleven
+- **Module Three**: Week Twelve through Week Sixteen
+
 ### Course Policies
 
 #### Assessment
