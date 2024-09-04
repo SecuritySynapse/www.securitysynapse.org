@@ -24,7 +24,7 @@ checking out its GitHub repository and following along with the
 
 ## Resources for Making a Security Synapse
 
-Interested in getting started on a developer development adventure? Begin here:
+Interested in getting started on a computer security adventure? Begin here:
 
 - The [sixteen-week course schedule](./schedule/index.qmd) offers detailed
 insights into each step that learners should take to help them to effectively
