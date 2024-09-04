@@ -161,7 +161,7 @@ their situation to the course instructor in a timely fashion. A student's
 weekly class participation grade will be reduced if they are frequently
 observed, during either class or laboratory sessions, undertaking
 non-course-related activities like viewing email, social media, or other
-content not about algorithm analysis. 
+content not about computer security. 
 
 - **In-Person Assessments**: Conducted through an in-person conversation with
 the course instructor, the two in-person assessments are cumulative evaluations
@@ -299,7 +299,7 @@ class discussions. To help students remain organized and to effectively prepare
 for classes, the instructor will maintain a list of [course
 slides](../slides/index.qmd) and a [course schedule](../schedule/index.qmd)
 with reading assignments, programming suggestions, and other important
-information about the course (e.g., references to the algorithm engineering
+information about the course (e.g., references to the security engineering
 projects).
 
 #### Seeking Assistance
@@ -325,14 +325,15 @@ This course will primarily use GitHub and Discord for all course communication.
 We will use GitHub for the sharing of both source code and documentation for
 course projects and for reporting issues in those materials. We will use two
 distinct Discord servers for all course discussions. The [Security Synapse
-Discord Server](https://discord.gg/juUXz7d4Jh) provides a way for members of the
-security synapse community to use text and video to chat with each other and
-will be the main forum for discussing the professional and technical content in
-the field of algorithm analysis. The [Allegheny College Computer Science Discord
-Server](https://discord.gg/CS2h9kXzX6) will be the main forum for Department of
-Computer Science announcements. Finally, any content that a student wants the
-instructor to assess (e.g., the work for a security survey project or a
-checkpoint of the security summit project) must be in a GitHub repository.
+Discord Server](https://discord.gg/juUXz7d4Jh) provides a way for members of
+the security synapse community to use text and video to chat with each other
+and will be the main forum for discussing the professional and technical
+content in the field of computer security. The [Allegheny College Computer
+Science Discord Server](https://discord.gg/CS2h9kXzX6) will be the main forum
+for Department of Computer Science announcements. Finally, any content that a
+student wants the instructor to assess (e.g., the work for a security survey
+project or a checkpoint of the security summit project) must be in a GitHub
+repository.
 
 #### Using Email
 
@@ -364,7 +365,7 @@ pledge:
 
 Students who create the source code and documentation for their course projects
 should ensure the implementation of a high-quality final product. While students
-are permitted to use a wide variety of algorithm engineering tools, such as
+are permitted to use a wide variety of computer security tools, such as
 integrated development environments, testing frameworks, automated input
 fuzzers, static analysis toolkits, and automated code generators (e.g., systems
 that leverage large language models like GitHub Copilot) and documentation sites
@@ -413,7 +414,7 @@ with the instructor and your fellow learners in computer security adventure!
 
 ::: {.callout-note appearance="minimal" title="External Learners"}
 
-This syllabus is for learners who enrolled in a for-credit Algorithm Analysis
+This syllabus is for learners who enrolled in a for-credit Computer Security
 course in the [Department of Computer and information
 Science](https://www.cis.allegheny.edu/) at [Allegheny
 College](https://www.allegheny.edu/). Even though external learners are not
