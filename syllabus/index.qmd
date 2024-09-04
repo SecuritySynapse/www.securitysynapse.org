@@ -135,18 +135,47 @@ popular press articles in the field of computer security.
 
 ### Reading Assignments
 
-- **Module One**: Week One through Week Six
-  - **Week One**: Textbook overview for both
-  [CSP](https://web.njit.edu/~rt494/security/) and
-  [CCP](https://inventwithpython.com/cracking/)
+- **Module One**: *Week One through Week Six*
+  - **Week One**: Textbook overview for
+  [CSP](https://web.njit.edu/~rt494/security/),
+  [CCP](https://inventwithpython.com/cracking/), and
+  [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
   - **Week Two**: Chapter one in [CSP](https://web.njit.edu/~rt494/security/) 
   - **Week Three**: Chapter two in [CSP](https://web.njit.edu/~rt494/security/) 
-  - **Week Four**: Chapters four through twelve in [CCP](https://inventwithpython.com/cracking/)
+  - **Week Four**: Chapters four through twelve in
+  [CCP](https://inventwithpython.com/cracking/)
   - **Week Five**: Chapter three in [CSP](https://web.njit.edu/~rt494/security/)
-  - **Week Six**: Review all prior chapters in [CSP](https://web.njit.edu/~rt494/security/) and [CCP](https://inventwithpython.com/cracking/)
+  - **Week Six**: Review all prior chapters in
+  [CSP](https://web.njit.edu/~rt494/security/) and
+  [CCP](https://inventwithpython.com/cracking/)
 
-- **Module Two**: Week Seven through Week Eleven
-- **Module Three**: Week Twelve through Week Sixteen
+- **Module Two**: *Week Seven through Week Eleven*
+  - **Week Seven**: Chapter four in [CSP](https://web.njit.edu/~rt494/security/) 
+  - **Week Eight**: Chapter five in [CSP](https://web.njit.edu/~rt494/security/) 
+  - **Week Nine**: Chapter six in [CSP](https://web.njit.edu/~rt494/security/) 
+  - **Week Ten**: Chapter seven in [CSP](https://web.njit.edu/~rt494/security/) 
+  - **Week Nine**: Chapter six in [CSP](https://web.njit.edu/~rt494/security/) 
+  - **Week Eleven**: Review all prior chapters in
+  [CSP](https://web.njit.edu/~rt494/security/) and
+  [CCP](https://inventwithpython.com/cracking/)
+
+- **Module Three**: *Week Twelve through Week Sixteen*
+  - **Week Twelve**: Chapters thirteen through seventeen in
+  [CCP](https://inventwithpython.com/cracking/)
+  - **Week Thirteen**: Chapter eight and nine in
+  [CSP](https://web.njit.edu/~rt494/security/)
+  - **Week Fourteen**: Chapters eighteen through twenty in
+  [CCP](https://inventwithpython.com/cracking/)
+  - **Week Fifteen**: Chapter ten in [CSP](https://web.njit.edu/~rt494/security/)
+
+::: {.callout-note appearance="minimal" title="Textbook Abbreviations" collapse="false"}
+
+- **CSP**: [Computer Systems Security: Planning for
+Success](https://web.njit.edu/~rt494/security/)
+- **CCP**: [Cracking Codes with Python](https://inventwithpython.com/cracking/)
+- **OSTEP**: [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
+
+:::
 
 ### Course Policies
 
