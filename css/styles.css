@@ -11,6 +11,11 @@ a {
   text-decoration: none;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 1rem !important;
+}
+
 body {
   margin: 0;
   font-family: var(--bs-body-font-family);
@@ -79,7 +84,7 @@ body a:hover {
 }
 
 div.callout-note.callout {
-  padding-top: 1em;
+  padding-top: 1.25em;
   border-left-color: #03a9f4;
 }
 
