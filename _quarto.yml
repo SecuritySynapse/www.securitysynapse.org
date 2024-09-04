@@ -15,8 +15,8 @@ website:
   page-navigation: true
   favicon: "icons/securitysynapse.png"
   open-graph: true
-  site-url: https://www.security-synapse.org/
-  repo-url: https://github.com/SecuritySynapse/www.security-synapse.org
+  site-url: https://www.securitysynapse.org/
+  repo-url: https://github.com/SecuritySynapse/www.securitysynapse.org
   navbar:
     left:
       - href: index.qmd
@@ -26,12 +26,12 @@ website:
       - slides/index.qmd
 
   page-footer:
-    left: '<a href="https://github.com/SecuritySynapse/www.security-synapse.org/graphs/contributors" aria-label="Security Synapse Maintainers">{{< iconify fa copyright >}} Security Synapse</a>'
+    left: '<a href="https://github.com/SecuritySynapse/www.securitysynapse.org/graphs/contributors" aria-label="Security Synapse Maintainers">{{< iconify fa copyright >}} Security Synapse</a>'
     right:
       - text: "{{< iconify fa github size=18px >}}"
         href: https://github.com/SecuritySynapse/
       - text: "{{< iconify fa github-square size=18px >}}"
-        href: https://github.com/SecuritySynapse/www.security-synapse.org/
+        href: https://github.com/SecuritySynapse/www.securitysynapse.org/
       - text: "{{< iconify bi discord size=19px >}}"
         href: https://discord.gg/juUXz7d4Jh
 
