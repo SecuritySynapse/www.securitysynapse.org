@@ -37,7 +37,34 @@ body a:hover {
 .navbar {
   background-color: #03a9f4;
   color: #fdfdff;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
+
+.navbar .nav-item {
+  margin-top: 0.5em;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5em;
+}
+
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-image: var(--bs-navbar-toggler-icon-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
 
 .navbar .navbar-nav .nav-link.active {
   color: #fdfdff !important;
