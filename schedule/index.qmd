@@ -39,9 +39,9 @@ listing:
   - **Chapters**: Four through seven in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
   - **Midterm Examination Two**: Week eleven during the laboratory session
 
-- **Module Two** 
+- **Module Three** 
   - **Topic**: Advanced Topics in Computer Security
-  - **Weeks**: Seven through eleven
+  - **Weeks**: Twelve through sixteen
   - **Chapters**: Eight through ten in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
   - **Final Examination**: Week sixteen during the final examination period
 
