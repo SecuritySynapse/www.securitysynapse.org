@@ -152,8 +152,10 @@ popular press articles in the field of computer security.
 - **Module Two**: *Week Seven through Week Eleven*
   - **Week Seven**: Chapter four in [CSP](https://web.njit.edu/~rt494/security/) 
   - **Week Eight**: Chapter five in [CSP](https://web.njit.edu/~rt494/security/) 
-  - **Week Nine**: Chapter six in [CSP](https://web.njit.edu/~rt494/security/) 
-  - **Week Ten**: Chapter seven in [CSP](https://web.njit.edu/~rt494/security/) 
+  - **Week Nine**: Chapter six in [CSP](https://web.njit.edu/~rt494/security/)
+  and chapter fifty-four in [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+  - **Week Ten**: Chapter seven in [CSP](https://web.njit.edu/~rt494/security/)
+    and chapter fifty-five in [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
   - **Week Nine**: Chapter six in [CSP](https://web.njit.edu/~rt494/security/) 
   - **Week Eleven**: Review all prior chapters in
   [CSP](https://web.njit.edu/~rt494/security/) and
@@ -167,6 +169,9 @@ popular press articles in the field of computer security.
   - **Week Fourteen**: Chapters eighteen through twenty in
   [CCP](https://inventwithpython.com/cracking/)
   - **Week Fifteen**: Chapter ten in [CSP](https://web.njit.edu/~rt494/security/)
+  - **Week Sixteen**: Review all prior chapters in
+  [CSP](https://web.njit.edu/~rt494/security/) and
+  [CCP](https://inventwithpython.com/cracking/)
 
 ::: {.callout-note appearance="minimal" title="Textbook Abbreviations" collapse="false"}
 
