@@ -19,9 +19,10 @@ listing:
 ---
 
 Want to make a "security synapse"? That is to say, do you want to make
-conceptual connections in the field of computer security? Checkout these slide
-decks to learn more! Each deck explores a specific topic in connection with
-chapters in research papers, popular press articles, and the following books:
+conceptual and practical connections in the field of computer security?
+Checkout these slide decks to learn more! Each deck explores a specific topic
+in connection with sections of research papers, quotes from popular press
+articles, and the content from the following books:
 
 - {{< iconify fa6-solid book-open >}} Online textbook called [Computer Systems
 Security: Planning for Success](https://web.njit.edu/~rt494/security/) 
@@ -29,8 +30,9 @@ Security: Planning for Success](https://web.njit.edu/~rt494/security/)
 - {{< iconify fa6-solid book-open >}} Online textbook called [Cracking Codes
 with Python](https://inventwithpython.com/cracking/) 
 
-Make sure to review the [course schedule](../schedule/index.qmd) for more
-details about how these slides connect to various course projects.
+Make sure to review the [course syllabus](../syllabus/index.qmd) and the
+[course schedule](../schedule/index.qmd) for more details about how these
+slides connect to various course activities and projects.
 
 :::{#featured-presentations}
 :::
