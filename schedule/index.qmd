@@ -87,6 +87,6 @@ listing:
 - **CSP**: [Computer Systems Security: Planning for
 Success](https://web.njit.edu/~rt494/security/)
 - **CCP**: [Cracking Codes with Python](https://inventwithpython.com/cracking/)
+- **OSTEP**: [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
 
 :::
-
