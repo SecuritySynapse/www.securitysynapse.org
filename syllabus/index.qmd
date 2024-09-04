@@ -302,6 +302,15 @@ with reading assignments, programming suggestions, and other important
 information about the course (e.g., references to the security engineering
 projects).
 
+##### Discussion Leads
+
+Discussion leads are responsible for collaborating with both their partner(s)
+and the course instructor to create and present technical materials that
+effectively make a security synapse. These are the discussion leads for each
+week of the academic semester:
+
+- **Week Two**: Aidan Dyga and Keven Duverglas
+
 #### Seeking Assistance
 
 Students who are struggling to understand the knowledge and skills developed in
