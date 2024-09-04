@@ -83,8 +83,13 @@ body a:hover {
   border-radius: 10px;
 }
 
+div.callout-note.callout p {
+  margin-bottom: 0em !important;
+}
+
 div.callout-note.callout {
   padding-top: 1.25em;
+  padding-bottom: 1.25em;
   border-left-color: #03a9f4;
 }
 
