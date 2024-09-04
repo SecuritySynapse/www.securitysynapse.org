@@ -140,6 +140,10 @@ popular press articles in the field of computer security.
   [CSP](https://web.njit.edu/~rt494/security/) and
   [CCP](https://inventwithpython.com/cracking/)
   - **Week Two**: Chapter one in [CSP](https://web.njit.edu/~rt494/security/) 
+  - **Week Three**: Chapter two in [CSP](https://web.njit.edu/~rt494/security/) 
+  - **Week Four**: Chapters four through twelve in [CCP](https://inventwithpython.com/cracking/)
+  - **Week Five**: Chapter three in [CSP](https://web.njit.edu/~rt494/security/)
+  - **Week Six**: Review all prior chapters in [CSP](https://web.njit.edu/~rt494/security/) and [CCP](https://inventwithpython.com/cracking/)
 
 - **Module Two**: Week Seven through Week Eleven
 - **Module Three**: Week Twelve through Week Sixteen
