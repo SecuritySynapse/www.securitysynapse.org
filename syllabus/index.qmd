@@ -307,9 +307,24 @@ projects).
 Discussion leads are responsible for collaborating with both their partner(s)
 and the course instructor to create and present technical materials that
 effectively make a security synapse. These are the discussion leads for each
-week of the academic semester:
+week of the three modules in the academic semester:
 
-- **Week Two**: Aidan Dyga and Keven Duverglas
+- **Module One**
+  - **Week Two**: Aidan Dyga and Keven Duverglas
+  - **Week Three**: Preston Smith and Nicholas Ingerson-Meacham
+  - **Week Four**: Caleb Kendra and Alish Chhetri
+  - **Week Five**: Mordred Boulais and Titus Smith
+  - *No Discussion Leads for Week Six*
+
+- **Module Two**
+  - **Week Seven**: Evan Nelson and Miles Franck
+  - **Week Eight**: Jason Gyamafi and Hank Grefenstette
+  - **Week Nine**: Preston Smith and Alish Chhetri
+  - **Week Ten**: Titus Smith and Aidan Dyga
+  - *No Discussion Leads for Week Eleven*
+
+- **Module Three**
+  - **Week Eleven**: Caleb Kendra and Nicholas Ingerson-Meacham
 
 #### Seeking Assistance
 
@@ -334,15 +349,14 @@ This course will primarily use GitHub and Discord for all course communication.
 We will use GitHub for the sharing of both source code and documentation for
 course projects and for reporting issues in those materials. We will use two
 distinct Discord servers for all course discussions. The [Security Synapse
-Discord Server](https://discord.gg/juUXz7d4Jh) provides a way for members of
-the security synapse community to use text and video to chat with each other
-and will be the main forum for discussing the professional and technical
-content in the field of computer security. The [Allegheny College Computer
-Science Discord Server](https://discord.gg/CS2h9kXzX6) will be the main forum
-for Department of Computer Science announcements. Finally, any content that a
-student wants the instructor to assess (e.g., the work for a security survey
-project or a checkpoint of the security summit project) must be in a GitHub
-repository.
+Discord Server](https://discord.gg/juUXz7d4Jh) provides a way for members of the
+security synapse community to use text and video to chat with each other and
+will be the main forum for discussing the professional and technical content in
+the field of computer security. The [Allegheny College Computer Science Discord
+Server](https://discord.gg/CS2h9kXzX6) will be the main forum for Department of
+Computer Science announcements. Finally, any content that a student wants the
+instructor to assess (e.g., the work for a security survey project or a
+checkpoint of the security summit project) must be in a GitHub repository.
 
 #### Using Email
 
