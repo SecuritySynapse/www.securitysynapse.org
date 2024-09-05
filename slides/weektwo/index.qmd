@@ -348,7 +348,7 @@ monitor_file_for_key("security.json", "CVE-2021-2345")
 
 **Key Questions**: What is the attack vector for this program? How would you
 make it more secure? Could a different programming language or a security
-detector and/or prevent this memory leak?
+tool detect and/or prevent this memory leak?
 
 :::
 
