@@ -352,3 +352,52 @@ detector and/or prevent this memory leak?
 
 :::
 
+## Getting Started in Computer Security
+
+::: {.columns}
+
+::: {.column style="font-size: 0.85em;"}
+
+::: fragment
+
+### *Learn the Lingo*
+
+#### Abbreviations
+
+- AAA
+- CIA
+- PDR
+
+#### Concepts
+
+- Authentication
+- Authorization
+- Cryptography
+
+:::
+
+:::
+
+::: {.column style="font-size: 0.85em;"}
+
+::: fragment
+
+### *Think Like Hacker*
+
+#### Implementation
+
+- Look for vulnerabilities
+- Try to exploit them
+- Identify weakest links
+
+#### Prevention
+
+- Use secure coding practices
+- Leverage security tools
+- Rethink everything!
+
+:::
+
+:::
+
+:::
