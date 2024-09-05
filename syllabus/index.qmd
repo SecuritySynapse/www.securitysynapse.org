@@ -322,7 +322,7 @@ completed as part of specific tasks for a security survey project, a checkpoint
 of the security summit project, or either of the mid-term examinations. Students
 may not request to use a token to re-assess their class participation, their
 in-person assessments, their final examination, or their final report for the
-security summit projects. Outside of these two tokens, the instructor will not
+security summit project. Outside of these two tokens, the instructor will not
 consider any additional requests for deadline extensions or project
 reassessment. The instructor will submit to a student the assessment for work
 revised as part of token used at the end of a course module. Unless there are
