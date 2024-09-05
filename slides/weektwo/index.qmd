@@ -163,12 +163,19 @@ these programs? How could they be *prevented* and *detected*? What should be the
 
 # *Implementation*: which languages are reputed to be the most or least secure? Why? Do you agree with consensus?
 
+# Let's Make a Computer Security Synapse!
+
+- Encrypt a file using a symmetric key
+- Compute the SHA256 hash of a file
+- Illustrate an insecure memory access
+
 ## Computing a File's Hash
 
 ```{python}
 import json, hashlib
 
 def compute_hash(file_path):
+    """Compute the SHA256 hash of a file."""
     with open(file_path, 'r') as file:
         data = json.load(file)
     # convert the dictionary into a string
@@ -183,4 +190,54 @@ def compute_hash(file_path):
 
 # original file: security.json
 print(compute_hash('security.json'))
+```
+
+## What Does the JSON File Look Like?
+
+```json
+{
+    "vulnerabilities": [
+        {
+            "id": "CVE-2021-1234",
+            "description": "Buffer overflow in XYZ software",
+            "severity": "High",
+            "exploit_available": true
+        },
+        {
+            "id": "CVE-2021-2345",
+            "description": "SQL injection in ABC database",
+            "severity": "Medium",
+            "exploit_available": false
+        },
+        {
+            "id": "CVE-2021-3456",
+            "description": "Cross-site scripting in DEF web application",
+            "severity": "Low",
+            "exploit_available": true
+        }
+    ]
+}
+```
+
+## Computing a Corrupted File's Hash
+
+```{python}
+import json, hashlib
+
+def compute_hash(file_path):
+    """Compute the SHA256 hash of a file."""
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    # convert the dictionary into a string
+    data_string = json.dumps(data, sort_keys=True)
+    # create a new SHA256 hash object
+    hash_object = hashlib.sha256()
+    # update the hash object with the bytes of the string
+    hash_object.update(data_string.encode())
+    # get the hexadecimal representation of the hash
+    hash_hex = hash_object.hexdigest()
+    return hash_hex
+
+# corrupted file: security-corrupted.json
+print(compute_hash('security-corrupted.json'))
 ```
