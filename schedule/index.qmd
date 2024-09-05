@@ -60,6 +60,9 @@ listing:
     - **Midterm Exam One**: Week Six
     - **Midterm Exam Two**: Week Eleven
     - **Final Exam**: Week Sixteen
+  - *In-Person Assessments*
+    - **In-Person Assessment One**: Week One
+    - **In-Person Assessment Two**: Week Eleven
   - *Breaks*  
     - **Labor Day**: Week Two
     - **All-College Programming**: Week Eleven
