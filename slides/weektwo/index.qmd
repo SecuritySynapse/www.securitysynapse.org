@@ -226,38 +226,38 @@ encrypted_data = encrypt_file('security.json', key)
 ## Showing the Encrypted File
 
 ```{python}
-# Generate a key
+# generate a key
 key = Fernet.generate_key()
 # encrypt the file
 encrypted_data = encrypt_file('security.json', key)
 print(encrypted_data)
 ```
 
-::: {.fragment .fade-up style="margin-top: 0.25em; font-size: 0.95em;"}
+::: {.fragment .fade-up style="margin-top: -0.1em; font-size: 0.95em;"}
 
 - Output will vary each time `encrypt_file` is called
 - Is it possible to retrieve the original JSON file?
+- Reference: [Cryptography Documentation for Fernet](https://cryptography.io/en/latest/fernet/)
 
 :::
 
 ## Decrypting a File
 
 ```{python}
-def decrypt_file(encrypted_data, key):
+def decrypt_file(encrypted_data: str, key: str):
     """Decrypt data using a symmetric key."""
-    # Create a Fernet object
+    # create a Fernet object
     fernet = Fernet(key)
-    # Decrypt the data
+    # decrypt the data
     decrypted_data = fernet.decrypt(encrypted_data)
-    # Convert the decrypted data back into a dictionary
+    # convert the decrypted data back into a dictionary
     original_data = json.loads(decrypted_data.decode())
     return original_data
 
-# decrypt the data
+# decrypt the data and display it
 original_data = decrypt_file(encrypted_data, key)
 print("\n" + str(original_data) + "\n")
 ```
-
 
 ## Computing a File's Hash
 
