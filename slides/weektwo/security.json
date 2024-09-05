@@ -1,0 +1,22 @@
+{
+    "vulnerabilities": [
+        {
+            "id": "CVE-2021-1234",
+            "description": "Buffer overflow in XYZ software",
+            "severity": "High",
+            "exploit_available": true
+        },
+        {
+            "id": "CVE-2021-2345",
+            "description": "SQL injection in ABC database",
+            "severity": "Medium",
+            "exploit_available": false
+        },
+        {
+            "id": "CVE-2021-3456",
+            "description": "Cross-site scripting in DEF web application",
+            "severity": "Low",
+            "exploit_available": true
+        }
+    ]
+}
