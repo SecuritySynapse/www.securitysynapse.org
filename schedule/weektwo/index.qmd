@@ -37,4 +37,4 @@ Success](https://web.njit.edu/~rt494/security/)
 <iframe class="slide-deck" src="../../slides/weektwo/"></iframe>
 ```
 
-{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week Two: Learning Computer Security Lingo](../../slides/weektwo/)
+{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week Two: Introduction to Computer Security](../../slides/weektwo/)
