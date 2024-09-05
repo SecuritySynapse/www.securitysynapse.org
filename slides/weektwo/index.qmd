@@ -5,6 +5,9 @@ description: "When learning computer security, how do we think and talk like a h
 date: "2024-08-02"
 date-format: long
 author: Gregory M. Kapfhammer
+execute:
+  echo: true
+jupyter: python3
 format:
   revealjs:
     theme: default
@@ -159,3 +162,25 @@ these programs? How could they be *prevented* and *detected*? What should be the
 :::
 
 # *Implementation*: which languages are reputed to be the most or least secure? Why? Do you agree with consensus?
+
+## Computing a File's Hash
+
+```{python}
+import json, hashlib
+
+def compute_hash(file_path):
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    # convert the dictionary into a string
+    data_string = json.dumps(data, sort_keys=True)
+    # create a new SHA256 hash object
+    hash_object = hashlib.sha256()
+    # update the hash object with the bytes of the string
+    hash_object.update(data_string.encode())
+    # get the hexadecimal representation of the hash
+    hash_hex = hash_object.hexdigest()
+    return hash_hex
+
+# original file: security.json
+print(compute_hash('security.json'))
+```
