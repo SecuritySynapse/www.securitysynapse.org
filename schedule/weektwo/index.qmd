@@ -14,6 +14,8 @@ toc-expand: 3
 Success](https://web.njit.edu/~rt494/security/)
 - {{< iconify fa6-solid book-open size=18px >}} High-level overview of
 [Cracking Codes with Python](https://inventwithpython.com/cracking/)
+- {{< iconify fa6-solid book-open size=18px >}} High-level overview of
+[Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 ## Activities
 
@@ -21,12 +23,13 @@ Success](https://web.njit.edu/~rt494/security/)
   session
 - {{< iconify fa6-solid people-line size=18px >}} **Tuesday and Thursday**: Course introduction
   - Continued introduction to the computer security course
-  - Continued highlighting of the concept of a security synapse
+  - Continued highlighting of the concept of a "security synapse"
   - Introduction to basic computer security concepts and principles
   - Student presentations that feature:
-    - High-level concept in the field of computer security
-    - Implementation of that concept in two programming languages
-    - Question and answer session with the course instructor
+    - Explanation of a high-level concept in the field of computer security
+    - In-class activity that connects concepts to real-world scenarios
+    - Implementation of a security concept in two programming languages
+    - Question and answer session with learning peers and the course instructor
 
 ## Slides
 
