@@ -217,7 +217,7 @@ def encrypt_file(file_path: str, key: str):
     encrypted_data = fernet.encrypt(data_string.encode())
     return encrypted_data
 
-# Generate a key
+# generate a symmetric key
 key = Fernet.generate_key()
 # encrypt the file
 encrypted_data = encrypt_file('security.json', key)
@@ -303,4 +303,31 @@ def compute_hash(file_path):
 
 # corrupted file: security-corrupted.json
 print(compute_hash('security-corrupted.json'))
+```
+
+## Long-Running Process
+
+```python
+import time
+import os
+
+def monitor_file_for_key(file_path, key):
+    """Monitor a JSON file for a specific key and record it."""
+    leaky_list = []
+    while True:
+        # check if the file exists
+        if os.path.exists(file_path):
+            # open the file in read mode
+            with open(file_path, 'r') as file:
+                # load the JSON data from the file
+                data = json.load(file)
+            # check if the key exists in the data
+            if key in data:
+                # add a reference to the data in the list
+                key_tracking_list.append(data)
+        # wait for a while before checking the file again
+        time.sleep(1)
+
+# start to monitor a changing JSON file and for a key
+monitor_file_for_key("security.json", "CVE-2021-2345")
 ```
