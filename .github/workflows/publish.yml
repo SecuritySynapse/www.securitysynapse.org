@@ -39,6 +39,7 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
         run: |
           python3 -m pip install jupyter
+          python3 -m pip install cryptography
           quarto --version
           # directly publish a version of the site to Netlify
           quarto publish netlify
