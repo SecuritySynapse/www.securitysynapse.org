@@ -313,7 +313,7 @@ import os
 
 def monitor_file_for_key(file_path, key):
     """Monitor a JSON file for a specific key and record it."""
-    leaky_list = []
+    key_tracking_list = []
     while True:
         # check if the file exists
         if os.path.exists(file_path):
@@ -331,3 +331,24 @@ def monitor_file_for_key(file_path, key):
 # start to monitor a changing JSON file and for a key
 monitor_file_for_key("security.json", "CVE-2021-2345")
 ```
+
+## Memory Leaks Restrict Availability
+
+- Do not run this program for an extended time period!
+
+- The `security.json` file will be read every second
+
+- The in-memory `key_tracking_list` grows without bound
+
+- Memory leak occurs when no release of process memory
+
+- Why does `monitor_file_for_key` restrict availability?
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: What is the attack vector for this program? How would you
+make it more secure? Could a different programming language or a security
+detector and/or prevent this memory leak?
+
+:::
+
