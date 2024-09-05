@@ -497,9 +497,7 @@ This syllabus is for learners who enrolled in a for-credit Computer Security
 course in the [Department of Computer and information
 Science](https://www.cis.allegheny.edu/) at [Allegheny
 College](https://www.allegheny.edu/). Even though external learners are not
-bound by this syllabus, they can rely on the
-[Algorithmology](https://github.com/TeamDevDev/www.developerdevelopment.com/graphs/contributors)
-team and the members of the [Algorithmology
-Discord](https://discord.gg/YHjhQaBnme).
+bound by this syllabus, they can participate in the discussions on the [Security
+Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
 
 :::
