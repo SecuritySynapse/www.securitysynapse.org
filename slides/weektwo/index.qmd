@@ -168,38 +168,7 @@ these programs? How could they be *prevented* and *detected*? What should be the
 - Obfuscate a file using a symmetric key
 - Compute the SHA256 hash of a file
 - Illustrate an insecure memory access
-
-## Obfuscating a File
-
-```{python}
-import json, hashlib, base64
-
-def obfuscate_file(file_path: str, key: str):
-    """Obfuscate a file using a symmetric key."""
-    with open(file_path, 'r') as file:
-        data = json.load(file)
-    # convert the dictionary into a string
-    data_string = json.dumps(data, sort_keys=True)
-    # create a new SHA256 hash object
-    hash_object = hashlib.sha256()
-    # update the hash object with the bytes of the string
-    hash_object.update((data_string + key).encode())
-    # get the hexadecimal representation of the hash
-    hash_hex = hash_object.hexdigest()
-    # encode the hash in Base64 for obfuscation
-    obfuscated_data = base64.b64encode(hash_hex.encode())
-    # return the obfuscated data
-    return obfuscated_data
-
-# define a symmetric key (must be kept secret)
-key = "f3d1d0c4-9b7f-4f5f-8f2b-3b1d1f2b1d1f"
-# obfuscate and display the file
-obfuscated_data = obfuscate_file('security.json', key)
-# save the obfuscated data to a file
-with open('security-obfuscated.json', 'w') as file:
-  file.write(obfuscated_data.decode())
-print(obfuscated_data)
-```
+- Use a synthetic JSON file to illustrate concepts
 
 ## What Does the JSON File Look Like?
 
@@ -226,6 +195,29 @@ print(obfuscated_data)
         }
     ]
 }
+```
+
+## Computing a File's Hash
+
+```{python}
+import json, hashlib
+
+def compute_hash(file_path):
+    """Compute the SHA256 hash of a file."""
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    # convert the dictionary into a string
+    data_string = json.dumps(data, sort_keys=True)
+    # create a new SHA256 hash object
+    hash_object = hashlib.sha256()
+    # update the hash object with the bytes of the string
+    hash_object.update(data_string.encode())
+    # get the hexadecimal representation of the hash
+    hash_hex = hash_object.hexdigest()
+    return hash_hex
+
+# corrupted file: security.json
+print(compute_hash('security.json'))
 ```
 
 ## Computing a Corrupted File's Hash
