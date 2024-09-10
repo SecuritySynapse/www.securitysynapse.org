@@ -1,0 +1,403 @@
+---
+title: "Introduction to Computer Security"
+subtitle: "Learning the Lingo and Thinking Like a Hacker"
+description: "When learning computer security, how do we think and talk like a hacker?"
+date: "2024-08-02"
+date-format: long
+author: Gregory M. Kapfhammer
+execute:
+  echo: true
+jupyter: python3
+format:
+  revealjs:
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Security Synapse"
+---
+
+# What is infosec?
+
+::: {.incremental style="margin-top: -0.5em;"}
+
+- Prevent *unauthorized access* to data on a computer system
+- Data is both *sensitive* and *valuable* and must be *protected*
+- *Risk management* is the focus of information security
+- *Malware* often helps an attacker gain access to a system
+- *System failure* often occurs during an attack with malware
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.9em;"}
+
+**Key Questions**: Have you ever been the subject of an information security
+attack? What was the attack vector? Could it have been prevented? What
+strategies would have enabled your defense?
+
+:::
+
+## Learning the Lingo: PDR
+
+::: incremental
+
+- Key security acronyms describing design principles:
+  - **PDR**: **P**revention, **D**etection, **R**eaction
+    - *Prevention*: Stopping an attack before it starts
+    - *Detection*: Identifying an attack in progress
+    - *Reaction*: Stopping an attack before it causes damage
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: From your perspective, which of these three is the most
+important? Should an individual or an organization disclose information about a
+security breach? Why or why not?
+
+:::
+
+## Learning the Lingo: CIA
+
+::: incremental
+
+- Key security acronyms describing design principles:
+  - **CIA**: **C**onfidentiality, **I**ntegrity, **A**vailability
+    - *Confidentiality*: Keeping secret information secret
+    - *Integrity*: Data has not been corrupted or tampered with
+    - *Availability*: Systems are up and running for valid users
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: What is an attack a "hacker" could take to comprise one of
+the **CIA** principles? How would the attack compromise the **CIA** principles?
+What could be done to prevent the attack?
+
+:::
+
+## Learning the Lingo: DRY
+
+::: incremental
+
+- Key strategy for ensuring system security:
+  - **DRY**: *D*on't *R*epeat *Y*ourself
+    - Guideline for automation and system design
+    - Avoid manual repetition by using scripts and tools
+    - Reuse verified resources across multiple systems
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: What are some practical ways to introduce **DRY** into your
+systems and development practices? What is the downside of the **DRY** strategy?
+How does this connect to *zero-touch deployment*?
+
+:::
+
+## Learning the Lingo: AAA
+
+::: incremental
+
+- Strategies for ensuring system security:
+  - **AAA**: **A**uthentication, **A**uthorization, **A**ccounting
+    - *Authentication*: Confirming someone's identity
+    - *Authorization*: Keeping track of entity's resource access
+    - *Accounting*: Tracking the usage of resources
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: Why are these appropriate strategies for ensuring system
+security? What are the limitations of each strategy? What is the fundamental
+trade-off in computer security? Why?
+
+:::
+
+# *Key Dilemma*: people may have key computer security requirements but limited computer security expertise
+
+# *Key Trade-off*: making a system secure often makes it less usable!
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: When you are using computer hardware and software do you tend
+to err towards security or usability? What are some strategies for making
+software both secure and usable?
+
+:::
+
+## Examples of four programs that may have security flaws! Any ideas?
+
+- Web browsers like `firefox` or `chrome`
+- Servers like `sshd` or `httpd`
+- LLM interaction with `llm` or `litellm`
+- Terminal window history with `atuin` or `zsh`
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: What could be a *security vulnerability* in each of
+these programs? How could they be *prevented* and *detected*? What should be the
+*reaction* to the detection of a security vulnerability?
+
+:::
+
+## Overall goals of "security synapse"
+
+::: {.fragment .fade-right}
+
+- **High-Level Concepts**
+  - Concepts such as *confidentiality* and *integrity*
+  - Test all aspects of the system to ensure correctness
+  - Make a benchmark framework to measure performance
+- **Low-Level Implementation Details**
+  - Use cryptography to secure transferred data
+  - Use hashing to verify data integrity
+  - Secure implementation in programming languages
+
+:::
+
+# *Implementation*: which languages are reputed to be the most or least secure? Why? Do you agree with consensus?
+
+# Let's Make a Computer Security Synapse
+
+- Obfuscate a file using a symmetric key
+- Compute the SHA256 hash of a file
+- Illustrate an insecure memory access
+- Use a synthetic JSON file to illustrate concepts
+- Make sure to `pip install cryptography`!
+
+## What Does the JSON File Look Like?
+
+```json
+{
+    "vulnerabilities": [
+        {
+            "id": "CVE-2021-1234",
+            "description": "Buffer overflow in XYZ software",
+            "severity": "High",
+            "exploit_available": true
+        },
+        {
+            "id": "CVE-2021-2345",
+            "description": "SQL injection in ABC database",
+            "severity": "Medium",
+            "exploit_available": false
+        },
+        {
+            "id": "CVE-2021-3456",
+            "description": "Cross-site scripting in DEF web application",
+            "severity": "Low",
+            "exploit_available": true
+        }
+    ]
+}
+```
+
+## Encrypting a File
+
+```{python}
+from cryptography.fernet import Fernet
+import json
+
+def encrypt_file(file_path: str, key: str):
+    """Encrypt a file using a symmetric key."""
+    # load the file
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    # convert the dictionary into a string
+    data_string = json.dumps(data, sort_keys=True)
+    # create a Fernet object
+    fernet = Fernet(key)
+    # encrypt and return the data
+    encrypted_data = fernet.encrypt(data_string.encode())
+    return encrypted_data
+
+# generate a symmetric key
+key = Fernet.generate_key()
+# encrypt the file
+encrypted_data = encrypt_file('security.json', key)
+```
+
+## Showing the Encrypted File
+
+```{python}
+# generate a key
+key = Fernet.generate_key()
+# encrypt the file
+encrypted_data = encrypt_file('security.json', key)
+print(encrypted_data)
+```
+
+::: {.fragment .fade-up style="margin-top: -0.1em; font-size: 0.95em;"}
+
+- Output will vary each time `encrypt_file` is called
+- Is it possible to retrieve the original JSON file?
+- Reference: [Cryptography Documentation for Fernet](https://cryptography.io/en/latest/fernet/)
+
+:::
+
+## Decrypting a File
+
+```{python}
+def decrypt_file(encrypted_data: str, key: str):
+    """Decrypt data using a symmetric key."""
+    # create a Fernet object
+    fernet = Fernet(key)
+    # decrypt the data
+    decrypted_data = fernet.decrypt(encrypted_data)
+    # convert the decrypted data back into a dictionary
+    original_data = json.loads(decrypted_data.decode())
+    return original_data
+
+# decrypt the data and display it
+original_data = decrypt_file(encrypted_data, key)
+print("\n" + str(original_data) + "\n")
+```
+
+## Computing a File's Hash
+
+```{python}
+import json, hashlib
+
+def compute_hash(file_path):
+    """Compute the SHA256 hash of a file."""
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    # convert the dictionary into a string
+    data_string = json.dumps(data, sort_keys=True)
+    # create a new SHA256 hash object
+    hash_object = hashlib.sha256()
+    # update the hash object with the bytes of the string
+    hash_object.update(data_string.encode())
+    # get the hexadecimal representation of the hash
+    hash_hex = hash_object.hexdigest()
+    return hash_hex
+
+# corrupted file: security.json
+print(compute_hash('security.json'))
+```
+
+## Computing a Corrupted File's Hash
+
+```{python}
+import json, hashlib
+
+def compute_hash(file_path):
+    """Compute the SHA256 hash of a file."""
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    # convert the dictionary into a string
+    data_string = json.dumps(data, sort_keys=True)
+    # create a new SHA256 hash object
+    hash_object = hashlib.sha256()
+    # update the hash object with the bytes of the string
+    hash_object.update(data_string.encode())
+    # get the hexadecimal representation of the hash
+    hash_hex = hash_object.hexdigest()
+    return hash_hex
+
+# corrupted file: security-corrupted.json
+print(compute_hash('security-corrupted.json'))
+```
+
+## Long-Running Process
+
+```python
+import time
+import os
+
+def monitor_file_for_key(file_path, key):
+    """Monitor a JSON file for a specific key and record it."""
+    key_tracking_list = []
+    while True:
+        # check if the file exists
+        if os.path.exists(file_path):
+            # open the file in read mode
+            with open(file_path, 'r') as file:
+                # load the JSON data from the file
+                data = json.load(file)
+            # check if the key exists in the data
+            if key in data:
+                # add a reference to the data in the list
+                key_tracking_list.append(data)
+        # wait for a while before checking the file again
+        time.sleep(1)
+
+# start to monitor a changing JSON file and for a key
+monitor_file_for_key("security.json", "CVE-2021-2345")
+```
+
+## Memory Leaks Restrict Availability
+
+- Do not run this program for an extended time period!
+
+- The `security.json` file will be read every second
+
+- The in-memory `key_tracking_list` grows without bound
+
+- Memory leak occurs when no release of process memory
+
+- Why does `monitor_file_for_key` restrict availability?
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: What is the attack vector for this program? How would you
+make it more secure? Could a different programming language or a security
+tool detect and/or prevent this memory leak?
+
+:::
+
+## Getting Started in Computer Security
+
+::: {.columns}
+
+::: {.column style="font-size: 0.85em;"}
+
+::: fragment
+
+### *Learn the Lingo*
+
+#### Abbreviations
+
+- AAA
+- CIA
+- PDR
+
+#### Concepts
+
+- Authentication
+- Authorization
+- Cryptography
+
+:::
+
+:::
+
+::: {.column style="font-size: 0.85em;"}
+
+::: fragment
+
+### *Think Like Hacker*
+
+#### Implementation
+
+- Look for vulnerabilities
+- Try to exploit them
+- Identify weakest links
+
+#### Prevention
+
+- Use secure coding practices
+- Leverage security tools
+- Rethink everything!
+
+:::
+
+:::
+
+:::
