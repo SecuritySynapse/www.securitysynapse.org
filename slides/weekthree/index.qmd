@@ -161,3 +161,63 @@ format:
     - Friend encrypts message with public key
     - You decrypt the message with the private key
 - **Important trade-off**: slower than symmetric encryption!
+
+## Steam and Block Ciphers
+
+- **Stream Cipher**: encrypts one byte at a time
+- **Block Cipher**: encrypts a block of bytes
+- **Example**: AES is a block cipher!
+- Modes of operation for block ciphers:
+    - ECB: Electronic Codebook
+    - CBC: Cipher Block Chaining
+    - CFB: Cipher Feedback
+    - OFB: Output Feedback
+    - CTR: Counter
+
+## Combining Cryptography Algorithms
+
+- A virtual private network (VPN) works like this:
+    - Use asymmetric encryption to exchange symmetric key
+    - Use symmetric encryption for data transmission
+- **Important Insights**
+    - Fast because it mostly uses symmetric encryption
+    - Using multiple algorithms can maintain/increase security
+    - Yet, only as secure as the weakest link!
+
+- Whenever possible, limit manual human intervention in a secure
+process to avoid unexpected mistakes!
+
+## Case Study: Let's Encrypt
+
+::: fragment
+
+- **Goal**: Always encrypt packets sent to a web site!
+- **Problem**: How to make HTTPS more accessible?
+- **Solution**: Automated certificate authority system
+
+:::
+
+::: {.fragment style="margin-top: -0.75em;"}
+
+- Insights about the Let's Encrypt system:
+    - Uses the Automated Certificate Management Environment (ACME) protocol
+    - Provides free SSL/TLS certificates
+    - Automates the certificate renewal process
+    - Requires a web server to support HTTPS
+
+:::
+
+## *Cool*, Let's Encrypt is open source and free and supported by Netlify!
+
+::: {.incremental style="margin-top: -0.5em;"}
+
+- How do you get a certificate for your web site:
+    - Customer generates a certificate signing request (CSR)
+    - Customer sends CSR to Let's Encrypt
+    - Let's Encrypt verifies the CSR
+    - Let's Encrypt issues a certificate
+    - Customer installs the certificate on their web server
+    - Direct integration with systems like Netlify
+- **Reference**: [Let's Encrypt: How it Works](https://letsencrypt.org/how-it-works/)
+
+:::
