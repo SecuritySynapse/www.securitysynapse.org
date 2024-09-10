@@ -128,3 +128,25 @@ format:
     - Hard to factor the product of two large prime numbers
     - Encryption is "easy" and decryption is "hard"
 :::
+
+## Cryptographic Hash Functions
+
+- **Input**: any length of data
+- **Output**: fixed length of data
+- **Example**: SHA-256, SHA-512, MD5
+- Insights about the SHA-256 algorithm:
+    - Fixed length output
+    - Deterministic
+    - Fast computation
+    - Designed by NSA
+
+## Symmetric Encryption
+
+- **Single key** used for encryption and decryption
+- **Examples**: AES, DES, 3DES
+- Insights about the AES algorithm:
+    - Block-based cipher
+    - Key sizes of 128, 192, or 256 bits
+    - Performs multiple rounds of encryption
+    - Designed by Joan Daemen and Vincent Rijmen
+- *Wait*, how do you exchange the key securely?
