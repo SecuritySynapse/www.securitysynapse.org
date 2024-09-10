@@ -150,3 +150,14 @@ format:
     - Performs multiple rounds of encryption
     - Designed by Joan Daemen and Vincent Rijmen
 - *Wait*, how do you exchange the key securely?
+
+## Asymmetric Encryption
+
+- **Public key** used for encryption
+- **Private key** used for decryption
+- Steps for receiving an encrypted message:
+    - Generate a public/private key pair
+    - Share the public key to a key server
+    - Friend encrypts message with public key
+    - You decrypt the message with the private key
+- **Important trade-off**: slower than symmetric encryption!
