@@ -1,0 +1,39 @@
+---
+title: Exploring Cryptography
+description: "How Do I Effectively Use Cryptography?"
+date: 2024-09-09
+layout: full
+toc: true
+toc-expand: 3
+---
+
+## Exploration
+
+- {{< iconify fa6-solid book-open size=18px >}} Chapter Two of
+[Computer Systems Security: Planning for
+Success](https://web.njit.edu/~rt494/security/)
+- {{< iconify fa6-solid book-open size=18px >}} High-level overview of
+[Cracking Codes with Python](https://inventwithpython.com/cracking/)
+- {{< iconify fa6-solid book-open size=18px >}} High-level overview of
+[Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+
+## Activities
+
+- {{< iconify fa6-solid diagram-project size=18px >}} **Monday**: Laboratory session
+- {{< iconify fa6-solid people-line size=18px >}} **Tuesday and Thursday**: Cryptography
+  - Understand the need for and use of cryptography
+  - Introduction to basic concepts and principles in cryptography
+  - Continued highlighting of the concept of a "security synapse"
+  - Student presentations that feature:
+    - Explanation of a high-level concept in the area of cryptography
+    - In-class activity that connects concepts to real-world scenarios
+    - Implementation of a cryptography concept in two programming languages
+    - Question and answer session with learning peers and the course instructor
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="../../slides/weekthree/"></iframe>
+```
+
+{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week Three: Cryptography](../../slides/weekthree/)
