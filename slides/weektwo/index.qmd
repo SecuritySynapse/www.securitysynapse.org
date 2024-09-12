@@ -235,6 +235,7 @@ print(encrypted_data)
 
 ::: {.fragment .fade-up style="margin-top: -0.1em; font-size: 0.95em;"}
 
+- How does the `generate_key` function work?
 - Output will vary each time `encrypt_file` is called
 - Is it possible to retrieve the original JSON file?
 - Reference: [Cryptography Documentation for Fernet](https://cryptography.io/en/latest/fernet/)
