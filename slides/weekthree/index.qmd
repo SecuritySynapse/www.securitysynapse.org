@@ -10,6 +10,7 @@ execute:
 jupyter: python3
 format:
   live-revealjs:
+    completion: true
     theme: default
     css: ../css/styles.css
     history: false
@@ -301,11 +302,11 @@ def encrypt_string(input_string: str, key: str):
     return encrypted_data
 
 # generate a symmetric key
-generated_key = Fernet.generate_key()
-print("Key:", generated_key)
+generated_key_sym = Fernet.generate_key()
+print("Key:", generated_key_sym)
 # encrypt the string
-encrypted_data_output = encrypt_string('Privacy-sensitive data', generated_key)
-print("Encrypted Data:", encrypted_data_output)
+ciphertext_output_sym = encrypt_string('Privacy-sensitive data', generated_key_sym)
+print("Encrypted Data:", ciphertext_output_sym)
 ```
 
 ## Revisiting Symmetric Decryption
@@ -323,11 +324,12 @@ def decrypt_string(encrypted_data: bytes, key: str):
     decrypted_data = fernet.decrypt(encrypted_data)
     return decrypted_data.decode()
 
-# decrypt the string
-encrypted_data = b'<add encrypted data here>'
-key = b'<add generated key here>'
-decrypted_data = decrypt_string(encrypted_data, key)
-print(decrypted_data)
+# set the ciphertext and the key
+ciphertext_input_sym = b'<add encrypted data here>'
+key_sym = b'<add generated key here>'
+# decrypt the ciphertext and display it
+decrypted_ciphertext_sym = decrypt_string(ciphertext_input_sym, key_sym)
+print(decrypted_ciphertext_sym)
 ```
 
 ## Recap on Symmetric Encryption
@@ -389,13 +391,59 @@ private_key = rsa.generate_private_key(
 )
 # generate the public key from the private key
 public_key = private_key.public_key()
-# create the plaintext
+# define the plaintext
 data = b"Privacy-sensitive data"
 
 # encrypt the data with the public key
-ciphertext = public_key.encrypt(
+ciphertext_output_asym = public_key.encrypt(
     data,
     padding.PKCS1v15()
 )
-print("Encrypted Data:", ciphertext)
+print("Encrypted Data:", ciphertext_output_asym)
 ```
+
+## Exploring Asymmetric Decryption
+
+```{pyodide}
+#| autorun: false
+#| max-lines: 15
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives.asymmetric import rsa, padding
+from cryptography.hazmat.primitives import serialization
+
+# decrypt the data with the private key
+ciphertext_input_asym = b'<add encrypted data here>'
+plaintext_asym = private_key.decrypt(
+    ciphertext_input_asym,
+    padding.PKCS1v15()
+)
+
+print(plaintext_asym)
+```
+
+::: fragment
+
+- You must correctly define `ciphertext_input_asym`!
+- The `ciphertext` must have the correct length and format
+
+:::
+
+## Recap on Asymmetric Encryption
+
+::: incremental
+
+- **Key Benefit**: supports secure key exchange
+- **Important Reminder**: securely store the private key!
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.9em;"}
+
+- **Review Questions**:
+    - What does an `rsa` private key look like?
+    - How does `key_size` affect the `rsa` algorithm?
+    - What is the purpose of `padding.PKCS1v15()`?
+    - What if the `rsa` keys incorrectly?
+    - How can you _combine_ symmetric and asymmetric encryption?
+
+:::
