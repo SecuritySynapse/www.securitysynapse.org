@@ -325,7 +325,27 @@ def decrypt_string(encrypted_data: bytes, key: str):
 
 # decrypt the string
 encrypted_data = b'<add data here>'
-key = "<add key here>"
+key = b'<add key here>'
 decrypted_data = decrypt_string(encrypted_data, key)
 print(decrypted_data)
 ```
+
+## Recap on Symmetric Encryption
+
+::: incremental
+
+- **Key Benefit**: symmetric encryption is fast and secure
+- **Important Reminder**: always securely exchange the key!
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.9em;"}
+
+- **Review Questions**:
+    - What does a `Fernet` key look like?
+    - What are the requirements for a `Fernet` key?
+    - What if the `Fernet` key does not match?
+    - What is the purpose of the `b` prefix?
+    - How can you securely exchange the `key`'s contents?
+
+:::
