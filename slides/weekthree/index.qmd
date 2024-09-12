@@ -372,3 +372,30 @@ print(compute_hash('This is a test string'))
 # create your own strings and display their hashes
 # make one string slightly different than the test string!
 ```
+
+## Exploring Asymmetric Encryption
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 8
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives.asymmetric import rsa, padding
+from cryptography.hazmat.primitives import serialization
+
+# generate a new private key
+private_key = rsa.generate_private_key(
+    public_exponent=65537,
+    key_size=2048,
+)
+# generate the public key from the private key
+public_key = private_key.public_key()
+# create the plaintext
+data = b"Privacy-sensitive data"
+
+# encrypt the data with the public key
+ciphertext = public_key.encrypt(
+    data,
+    padding.PKCS1v15()
+)
+print("Encrypted Data:", ciphertext)
+```
