@@ -447,3 +447,53 @@ print(plaintext_asym)
     - How can you _combine_ symmetric and asymmetric encryption?
 
 :::
+
+## Wrapping Up on Encryption
+
+::: {.columns style="margin-top: 0.5em;"}
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Key Concepts*
+
+#### Types of Encryption
+
+- Symmetric
+- Asymmetric
+- Hashing
+
+#### Important Terms
+
+- Plaintext
+- Ciphertext
+- Key
+
+:::
+
+:::
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Best Practices*
+
+#### Implementation
+
+- Use established libraries
+- Securely manage keys
+- Understand the trade-offs
+
+#### Prevention
+
+- No "rolling your own"
+- Update and patch packages
+- Encrypt sensitive data
+
+:::
+
+:::
+
+:::
