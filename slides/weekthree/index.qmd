@@ -69,6 +69,8 @@ format:
 
 :::
 
+# What is a technology practice that you need to rethink from the perspective of computer security? Why? Next?
+
 # What is cryptography?
 
 ::: {.incremental style="margin-top: -0.5em;"}
@@ -88,7 +90,7 @@ format:
 
 # *Key Reminder*: it is deceptively difficult to deploy cryptographic algorithms correctly!
 
-# *Admonition*: avoid the temptation to "roll your own" cryptography algorithms!
+# *Admonition*: avoid the temptation to "roll your own" cryptography algorithms! Problems!
 
 # When do you use cryptography?
 
@@ -101,9 +103,9 @@ format:
 
 :::
 
-# Cryptography Terminology
+# Cryptography Terms
 
-::: fragment
+::: {.incremental style="margin-top: -0.5em;"}
 
 - **Plaintext**: the original message
 - **Ciphertext**: the encrypted message
@@ -111,6 +113,13 @@ format:
 - **Key**: the secret used to encrypt the message
     - **Symmetric Key**: the same key  to encrypt and decrypt
     - **Asymmetric Key**: different keys to encrypt and decrypt
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.9em;"}
+
+**Key Questions**: What are the trade-offs between different types of keys?
+Ways to balance security, privacy, and performance? How?
 
 :::
 
@@ -131,6 +140,8 @@ format:
 
 ## Cryptographic Hash Functions
 
+::: {.incremental style="margin-top: -0.5em;"}
+
 - **Input**: any length of data
 - **Output**: fixed length of data
 - **Example**: SHA-256, SHA-512, MD5
@@ -139,6 +150,9 @@ format:
     - Deterministic
     - Fast computation
     - Designed by NSA
+    - Cannot generate input from output!
+
+:::
 
 ## Symmetric Encryption
 
