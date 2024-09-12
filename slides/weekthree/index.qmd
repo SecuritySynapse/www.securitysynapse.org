@@ -156,6 +156,8 @@ Ways to balance security, privacy, and performance? How?
 
 ## Symmetric Encryption
 
+::: fragment
+
 - **Single key** used for encryption and decryption
 - **Examples**: AES, DES, 3DES
 - Insights about the AES algorithm:
@@ -165,7 +167,11 @@ Ways to balance security, privacy, and performance? How?
     - Designed by Joan Daemen and Vincent Rijmen
 - *Wait*, how do you exchange the key securely?
 
+:::
+
 ## Asymmetric Encryption
+
+::: fragment
 
 - **Public key** used for encryption
 - **Private key** used for decryption
@@ -176,7 +182,11 @@ Ways to balance security, privacy, and performance? How?
     - You decrypt the message with the private key
 - **Important trade-off**: slower than symmetric encryption!
 
+:::
+
 ## Steam and Block Ciphers
+
+::: fragment
 
 - **Stream Cipher**: encrypts one byte at a time
 - **Block Cipher**: encrypts a block of bytes
@@ -187,6 +197,8 @@ Ways to balance security, privacy, and performance? How?
     - CFB: Cipher Feedback
     - OFB: Output Feedback
     - CTR: Counter
+
+:::
 
 ## Combining Cryptography Algorithms
 
@@ -225,7 +237,7 @@ process to avoid unexpected mistakes!
 
 ::: {.incremental style="margin-top: -0.5em;"}
 
-- How do you get a certificate for your web site:
+- How do you get a certificate for your web site?
     - Customer generates a certificate signing request (CSR)
     - Customer sends CSR to Let's Encrypt
     - Let's Encrypt verifies the CSR
@@ -233,5 +245,25 @@ process to avoid unexpected mistakes!
     - Customer installs the certificate on their web server
     - Direct integration with systems like Netlify
 - **Reference**: [Let's Encrypt: How it Works](https://letsencrypt.org/how-it-works/)
+
+:::
+
+## Applications of Cryptography
+
+::: incremental
+
+- Blockchain technology
+- Secure messaging apps
+- Secure payment systems
+- Hardware security modules
+- Trusted platform modules
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Insight**: Cryptographic algorithms underpin many of the applications
+that we use on a daily basis! Let's try to program them for better
+understanding! Start by revisiting basics from last week!
 
 :::
