@@ -43,15 +43,20 @@ checking out its [GitHub organization](https://github.com/SecuritySynapse),
 
 Interested in getting started on a computer security adventure? Begin here:
 
+- The [course syllabus](./syllabus/index.qmd) introduces the course and its
+learning objectives, overviews the security survey and security summit projects,
+and explains how on-campus learners will be assessed by the instructor
+through examinations and in-person evaluations.
+
 - The [sixteen-week course schedule](./schedule/index.qmd) offers detailed
 insights into each step that learners should take to help them to effectively
 make security synapses, including a list of reading assignments and descriptions
 of the class activities and projects.
 
-- The [course syllabus](./syllabus/index.qmd) introduces the course and its
-learning objectives, overviews the security survey and security summit projects,
-and explains how on-campus learners will be assessed by the instructor
-through examinations and in-person evaluations.
+- The [course slides](slides/index.qmd) are a valuable resource for learners who
+want to make a security synapse. These slides present an overview of high-level
+concepts and provide both more detailed explanations and implementations in
+various programming languages.
 
 ## Connecting Concepts to Code
 
