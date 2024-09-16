@@ -19,9 +19,9 @@ listing:
 ---
 
 Want to make a "security synapse"? That is to say, do you want to make
-conceptual and practical connections in the field of computer security?
-Checkout these slide decks to learn more! Each deck explores a specific topic
-in connection with sections of research papers, quotes from popular press
+conceptual and practical connections in the field of computer security? Check
+out these slide decks to learn more! Each deck explores a specific topic in
+connection with sections of research papers, quotes from popular press
 articles, and the content from the following books:
 
 - {{< iconify fa6-solid book-open >}} Online textbook called [Computer Systems
