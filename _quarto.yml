@@ -7,6 +7,8 @@ project:
     navigate: false
 
 website:
+  # do not use a title to keep the
+  # navbar less cluttered
   title: ""
   search:
     location: navbar
@@ -17,7 +19,6 @@ website:
   open-graph: true
   site-url: https://www.securitysynapse.org/
   repo-url: https://github.com/SecuritySynapse/www.securitysynapse.org
-
   # navbar at the top of the page
   navbar:
     # left navbar is the main one for the site
@@ -30,6 +31,9 @@ website:
       - slides/index.qmd
       - projects/index.qmd
 
+  # footer at the bottom of the page
+  # give reference to GitHub organization
+  # and then to the site's main external resources
   page-footer:
     left: '<a href="https://github.com/SecuritySynapse/www.securitysynapse.org/graphs/contributors" aria-label="Security Synapse Maintainers">{{< iconify fa copyright >}} Security Synapse</a>'
     right:
