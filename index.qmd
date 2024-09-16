@@ -2,6 +2,23 @@
 pagetitle: "Security Synapse"
 layout: full
 toc: false
+listing:
+  - id: featured-slides
+    contents:
+      - "slides/**/*.qmd"
+      - "!slides/index.qmd"
+      - "!slides/css/**/*.qmd"
+    sort:
+      - "date desc"
+      - "title"
+    type: default
+    date-format: "MM/DD/YYYY"
+    sort-ui: false
+    filter-ui: false
+    fields: [title, date, description]
+    max-items: 3
+    page-size: 3
+
 ---
 
 ![](images/Security-Synapse-Logo.svg){fig-align="center"}
@@ -35,6 +52,12 @@ of the class activities and projects.
 learning objectives, overviews the security survey and security summit projects,
 and explains how on-campus learners will be assessed by the instructor
 through examinations and in-person evaluations.
+
+## Recent Slides
+
+:::{#featured-slides}
+:::
+
 
 ::: {.callout-note appearance="minimal" title="Security Synapse Community Resources"}
 
