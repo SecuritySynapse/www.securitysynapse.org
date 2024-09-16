@@ -24,6 +24,7 @@ website:
       - syllabus/index.qmd
       - schedule/index.qmd
       - slides/index.qmd
+      - projects/index.qmd
 
   page-footer:
     left: '<a href="https://github.com/SecuritySynapse/www.securitysynapse.org/graphs/contributors" aria-label="Security Synapse Maintainers">{{< iconify fa copyright >}} Security Synapse</a>'
