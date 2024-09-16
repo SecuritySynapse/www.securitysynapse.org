@@ -111,7 +111,7 @@ web and network security risks.
 - **CS-403-4**: Evaluate the effectiveness of various hardware and software
 systems with respect to computer security. 
 
-- **CS-403-4**: Design, implement, document, test, and explain secure
+- **CS-403-5**: Design, implement, document, test, and explain secure
 software with emphasis on social, political, legal, and ethical
 vulnerabilities. 
 
