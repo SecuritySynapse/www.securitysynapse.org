@@ -53,11 +53,57 @@ learning objectives, overviews the security survey and security summit projects,
 and explains how on-campus learners will be assessed by the instructor
 through examinations and in-person evaluations.
 
-## Recent Slides
+## Connecting Concepts to Code
+
+Do you wonder how to practically apply the concepts you are learning about,
+say, cryptography? As you browse the technical resources on this site you will
+notice that they often contain both Python source code and the output from
+running code.
+
+```{python}
+from cryptography.fernet import Fernet
+import json
+
+def encrypt_file(file_path: str, key: str):
+    """Encrypt a file using a symmetric key."""
+    # load the file
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    # convert the dictionary into a string
+    data_string = json.dumps(data, sort_keys=True)
+    # create a Fernet object
+    fernet = Fernet(key)
+    # encrypt and return the data
+    encrypted_data = fernet.encrypt(data_string.encode())
+    return encrypted_data
+
+# generate a symmetric key
+key = Fernet.generate_key()
+# encrypt the file and display it
+encrypted_data = encrypt_file('slides/weektwo/security.json', key)
+print(encrypted_data)
+```
+
+The prior source code segment demonstrates how to use the `Fernet` symmetric key
+encryption algorithm to encrypt a JSON file. The output of this code is the
+encrypted file that can only be decrypted using the same symmetric key. Notably,
+this output was produced by automatically running the `encrypt_file` function
+when this site was deployed! If you check the [course slides](slides/index.qmd)
+you can see many other Python source code segments --- including ones that you
+can edit and run yourself!
+
+## Recent Slide Decks
+
+Focused on presenting an overview of high-level technical concepts and a
+thorough investigation of their low-level technical implementation, the [course
+slides](slides/index.qmd) are a valuable resource for learners who want to make
+a security synapse. The slides are designed to be interactive, allowing learners
+to see the output of code segments and, for many algorithms, modify their inputs
+and/or experiment with their implementation. Want to learn more? Here are quick
+references to some recently presented slide decks:
 
 :::{#featured-slides}
 :::
-
 
 ::: {.callout-note appearance="minimal" title="Security Synapse Community Resources"}
 
