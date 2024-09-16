@@ -39,19 +39,24 @@ difficult to quickly find these availability threats.
 implement a `serverfuzzer` in the Python programming language that will
 automatically fuzz a specific function in a server's implementation.
 Specifically, you will implement a fuzzer that will automatically generate
-certain type of JSON inputs, submit those inputs to a in-memory server, observe
+certain type of JSON inputs, submit those inputs to an in-memory server, observe
 the output and behavior of the server, and record important details and any
-crashes.
+crashes. As you complete the project, please be mindful that it makes certain
+restrictions of the types of JSON inputs your `serverfuzzer` should generate!
 
 ### Resources
 
 To learn more about fuzzing and to gather inspiration for your own
-implementation of the `serverfuzzer`, please consult the following resources:
+implementation of the `serverfuzzer`, please consult the following technical
+resources about building fuzzers:
 
 - [Atheris: A Coverage-Guided, Native Python Fuzzer](https://github.com/google/atheris)
 - [AFL: American Fuzzy Lop, A Security-Oriented Fuzzer](https://github.com/google/AFL)
 - [Fuzzing: Breaking Things with Random Inputs](https://www.fuzzingbook.org/html/Fuzzer.html)
 - [Property-Based Testing with Hypothesis](https://github.com/HypothesisWorks/hypothesis)
 
-Interested in working on this project? You can preview the
-[{{< iconify fa6-brands github size=18px >}} server-fuzzing-starter](https://github.com/SecuritySynapse/server-fuzzing-starter)
+Interested in working on this project? See the [{{< iconify fa6-brands github
+size=18px >}}
+server-fuzzing-starter](https://github.com/SecuritySynapse/server-fuzzing-starter)
+template repository to get started! Questions? Share them in the [Security
+Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
