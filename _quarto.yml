@@ -17,7 +17,11 @@ website:
   open-graph: true
   site-url: https://www.securitysynapse.org/
   repo-url: https://github.com/SecuritySynapse/www.securitysynapse.org
+
+  # navbar at the top of the page
   navbar:
+    # left navbar is the main one for the site
+    # The first link returns to the index page
     left:
       - href: index.qmd
         text: Home
