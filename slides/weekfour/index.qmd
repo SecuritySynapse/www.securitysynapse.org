@@ -298,11 +298,26 @@ def decryptMessage(key, message):
 main()
 ```
 
-::: {.fragment .fade style="margin-top: 0.00em; font-size: 0.9em;"}
+## Recapping Transposition Decryption
 
-- **Task**: Try different values for `current_message` and `current_key`
+::: incremental
+
+- **Key Insight**: assumes knowledge of share secret key
+- **Important Reminder**: decryption works differently than encryption
 
 :::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.85em;"}
+
+- **Review Questions**:
+    - What does it mean if it works in a "columnar" fashion?
+    - Is this more difficult to break than the Caesar cipher?
+    - How does this connect to the encryption technique?
+    - What are the functions inside of this algorithm?
+    - What is the purpose of the `|` character in the output?
+
+:::
+
 
 ## Wrapping Up on Encryption
 
