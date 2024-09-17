@@ -204,7 +204,7 @@ for key in range(len(SYMBOLS)):
 
 :::
 
-## Encryption with the Transposition Cipher
+## Transposition Cipher Encryption 
 
 ```{pyodide}
 #| autorun: true
@@ -212,9 +212,9 @@ for key in range(len(SYMBOLS)):
 # Transposition Cipher Encryption
 # https://www.nostarch.com/crackingcodes/ (BSD Licensed)
 def main():
-    myMessage = 'Common sense is not so common.'
-    myKey = 8
-    ciphertext = encryptMessage(myKey, myMessage)
+    current_message = 'Common sense is not so common.'
+    current_key = 8
+    ciphertext = encryptMessage(current_key, current_message)
     print(ciphertext + '|')
 
 def encryptMessage(key, message):
@@ -237,7 +237,7 @@ main()
 
 ::: {.fragment .fade style="margin-top: 0.00em; font-size: 0.9em;"}
 
-- **Task**: Run this cipher with different `message`s and `mode`s
+- **Task**: Try different values for `current_message` and `current_key`
 
 :::
 
