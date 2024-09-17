@@ -318,7 +318,61 @@ main()
 
 :::
 
-## Wrapping Up on Encryption
+## How to Test a Cipher?
+
+::: incremental
+
+- Test the Transposition Cipher to ensure its correctness!
+- Generate random messages, encrypt, and then decrypt
+- Run for a range of keys, which determine the cipher's shift
+- Use random messages and keys, covering various scenarios
+- A fixed see ensures the test is repeatable, aiding debugging
+- Decryption fails when message does not match original
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.1em; font-size: 0.85em;"}
+
+**Key Questions**: How can we implement this for the transposition cipher? What
+amount of testing is sufficient to confirm correctness?
+
+:::
+
+## Testing the Transposition Cipher
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+# Transposition Cipher Test
+# https://www.nostarch.com/crackingcodes/ (BSD Licensed)
+import random, sys
+def main():
+    random.seed(42)
+    for i in range(10):
+        # generate random messages to test;
+        # the message will have a random length
+        message = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' * random.randint(4, 40)
+        # convert the message string to a list to shuffle it:
+        message = list(message)
+        random.shuffle(message)
+        message = ''.join(message) # Convert the list back to a string.
+        print('Test #%s: "%s..."' % (i + 1, message[:50]))
+        # check all possible keys for each message:
+        for key in range(1, int(len(message)/2)):
+            encrypted = encryptMessage(key, message)
+            decrypted = decryptMessage(key, encrypted)
+            # if the decryption doesn't match the original message, display
+            # an error message and quit to highlight the problematic input
+            if message != decrypted:
+                print('Mismatch with key %s and message %s.' % (key, message))
+                print('Decrypted as: ' + decrypted)
+                sys.exit()
+    print('Transposition cipher test passed.')
+
+main()
+```
+
+## Wrapping Up on Basic Cryptography
 
 ::: {.columns style="margin-top: 0.5em;"}
 
