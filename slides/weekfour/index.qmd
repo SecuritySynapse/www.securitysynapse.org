@@ -41,19 +41,6 @@ format:
 
 # *Admonition*: avoid the temptation to "roll your own" cryptography algorithms! Problems!
 
-# Creating Simple Cryptosystems
-
-::: incremental
-
-- What is the benefit of studying weak cryptography algorithms like those in
-_Cracking Codes with Python_?
-
-    - Understand the **basics** of cryptography
-    - Learn why these systems are **not secure**
-    - Feasibly explore the steps of **cryptanalysis**
-
-:::
-
 # Cryptography Terms
 
 ::: {.incremental style="margin-top: -0.5em;"}
@@ -73,6 +60,20 @@ _Cracking Codes with Python_?
 Ways to balance security, privacy, and performance? How?
 
 :::
+
+# Creating Simple Cryptosystems
+
+::: incremental
+
+- What is the benefit of studying weak cryptography algorithms like those in
+_Cracking Codes with Python_?
+
+    - Understand the **basics** of cryptography
+    - Learn why these systems are **not secure**
+    - Feasibly explore the steps of **cryptanalysis**
+
+:::
+
 
 ## Reverse Cipher Program
 
@@ -200,6 +201,43 @@ for key in range(len(SYMBOLS)):
     - How does this connect to the encryption technique?
     - Why does the algorithm need to handle "wraparound"?
     - Can you explain the assignment of `symbolIndex = SYMBOLS.find(symbol)`?
+
+:::
+
+## Encryption with the Transposition Cipher
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 15
+# Transposition Cipher Encryption
+# https://www.nostarch.com/crackingcodes/ (BSD Licensed)
+def main():
+    myMessage = 'Common sense is not so common.'
+    myKey = 8
+    ciphertext = encryptMessage(myKey, myMessage)
+    print(ciphertext + '|')
+
+def encryptMessage(key, message):
+    ciphertext = [''] * key
+    # Loop through each column in ciphertext:
+    for column in range(key):
+        currentIndex = column
+        # Keep looping until currentIndex goes past the message length:
+        while currentIndex < len(message):
+            # Place the character at currentIndex in message at the
+            # end of the current column in the ciphertext list:
+            ciphertext[column] += message[currentIndex]
+            # Move currentIndex over:
+            currentIndex += key
+    # Convert the ciphertext list into a single string value and return it:
+    return ''.join(ciphertext)
+
+main()
+```
+
+::: {.fragment .fade style="margin-top: 0.00em; font-size: 0.9em;"}
+
+- **Task**: Run this cipher with different `message`s and `mode`s
 
 :::
 
