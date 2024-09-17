@@ -286,7 +286,7 @@ def decryptMessage(key, message):
     row = 0
     for symbol in message:
         plaintext[column] += symbol
-        column += 1 # Point to the next column.
+        column += 1
         # if there are no more columns OR we're at a shaded box, go back
         # to the first column and the next row:
         if (column == numOfColumns) or (column == numOfColumns - 1 and
