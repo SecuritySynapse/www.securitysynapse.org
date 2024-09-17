@@ -99,23 +99,60 @@ print(translated)
 
 :::
 
-## Recap on Symmetric Encryption
+## Caesar Cipher Program
 
-::: incremental
+```{pyodide}
+#| autorun: true
+#| max-lines: 15
+# Caesar Cipher
+# https://www.nostarch.com/crackingcodes/ (BSD Licensed)
+message = 'This is my secret message.'
+key = 13
+mode = 'encrypt' # Set to either 'encrypt' or 'decrypt'.
+SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.'
+translated = ''
+for symbol in message:
+    if symbol in SYMBOLS:
+        symbolIndex = SYMBOLS.find(symbol)
+        if mode == 'encrypt':
+            translatedIndex = symbolIndex + key
+        elif mode == 'decrypt':
+            translatedIndex = symbolIndex - key
+        # handle wraparound, if needed
+        if translatedIndex >= len(SYMBOLS):
+            translatedIndex = translatedIndex - len(SYMBOLS)
+        elif translatedIndex < 0:
+            translatedIndex = translatedIndex + len(SYMBOLS)
+        translated = translated + SYMBOLS[translatedIndex]
+    else:
+        # append the symbol without encrypting/decrypting:
+        translated = translated + symbol
+print(translated)
+```
 
-- **Key Benefit**: symmetric encryption is fast and secure
-- **Important Reminder**: always securely exchange the key!
+::: {.fragment .fade style="margin-top: 0.05em; font-size: 0.9em;"}
+
+- **Task**: Run this cipher with different `message`s and `mode`s
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.9em;"}
+## Recap on the Caesar Cipher
+
+::: incremental
+
+- **Key Benefit**: basic cryptography algorithm previously used
+- **Important Reminder**: easily susceptible to cryptanalysis
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.85em;"}
 
 - **Review Questions**:
-    - What does a `Fernet` key look like?
-    - What are the requirements for a `Fernet` key?
-    - What if the `Fernet` key does not match?
-    - What is the purpose of the `b` prefix?
-    - How can you securely exchange the `key`'s contents?
+    - What is the purpose of the `key` variable?
+    - What is the purpose of the `mode` variable?
+    - What if a letter is not in the `SYMBOLS` string?
+    - Why does the algorithm need to handle "wraparound"?
+    - Explain the assignment of `translated = translated + SYMBOLS[translatedIndex]`
 
 :::
 
