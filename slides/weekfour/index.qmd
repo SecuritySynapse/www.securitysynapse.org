@@ -303,21 +303,20 @@ main()
 ::: incremental
 
 - **Key Insight**: assumes knowledge of share secret key
-- **Important Reminder**: decryption works differently than encryption
+- **Important Reminder**: decryption different than encryption
 
 :::
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.85em;"}
 
 - **Review Questions**:
-    - What does it mean if it works in a "columnar" fashion?
-    - Is this more difficult to break than the Caesar cipher?
-    - How does this connect to the encryption technique?
-    - What are the functions inside of this algorithm?
-    - What is the purpose of the `|` character in the output?
+    - Recovers plaintext by reading columns from a grid
+    - Blank, not needed, cells appear at end of the grid
+    - Must use the same key for encryption and decryption
+    - Purpose of `int(math.ceil(len(message) / float(key)))`?
+    - How do you know that the algorithm worked correctly?
 
 :::
-
 
 ## Wrapping Up on Encryption
 
