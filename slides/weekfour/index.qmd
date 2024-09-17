@@ -1,0 +1,499 @@
+---
+title: "Basic Cryptography"
+subtitle: "Understanding the Implementation of Simple Cryptosystems"
+description: "How can I build system cryptography algorithms in Python?"
+date: "2024-09-17"
+date-format: long
+author: Gregory M. Kapfhammer
+execute:
+  echo: true
+jupyter: python3
+format:
+  live-revealjs:
+    completion: true
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Security Synapse"
+---
+
+## Getting Started in Computer Security
+
+::: {.columns}
+
+::: {.column style="font-size: 0.85em;"}
+
+::: fragment
+
+### *Learn the Lingo*
+
+#### Abbreviations
+
+- AAA
+- CIA
+- PDR
+
+#### Concepts
+
+- Authentication
+- Authorization
+- Cryptography
+
+:::
+
+:::
+
+::: {.column style="font-size: 0.85em;"}
+
+::: fragment
+
+### *Think Like Hacker*
+
+#### Implementation
+
+- Look for vulnerabilities
+- Try to exploit them
+- Identify weakest links
+
+#### Prevention
+
+- Use secure coding practices
+- Leverage security tools
+- Rethink everything!
+
+:::
+
+:::
+
+:::
+
+# What is a technology practice that you need to rethink from the perspective of computer security? Why? Next?
+
+# What is cryptography?
+
+::: {.incremental style="margin-top: -0.5em;"}
+
+- Establish secure and confidential communication channels
+- Supports creation of digital signatures
+- Allows us to support the "AAA principles":
+  - Authentication
+  - Authorization
+  - Accounting
+- Ensures that attackers cannot "listen in" to communication
+- Ensures *non-repudiation* of digital communication
+
+:::
+
+# *Important Insight*: cryptography is one of the key building blocks of computer security!
+
+# *Key Reminder*: it is deceptively difficult to deploy cryptographic algorithms correctly!
+
+# *Admonition*: avoid the temptation to "roll your own" cryptography algorithms! Problems!
+
+# When do you use cryptography?
+
+::: fragment
+
+- Commit data to a GitHub repository
+- Access a website using HTTPS
+- Use a password manager
+- Send a message in chat app
+
+:::
+
+# Cryptography Terms
+
+::: {.incremental style="margin-top: -0.5em;"}
+
+- **Plaintext**: the original message
+- **Ciphertext**: the encrypted message
+- **Cipher**: the algorithm used to encrypt the message
+- **Key**: the secret used to encrypt the message
+    - **Symmetric Key**: the same key  to encrypt and decrypt
+    - **Asymmetric Key**: different keys to encrypt and decrypt
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.9em;"}
+
+**Key Questions**: What are the trade-offs between different types of keys?
+Ways to balance security, privacy, and performance? How?
+
+:::
+
+## Trapdoor Functions
+
+::: {.incremental style="margin-top: -0.5em;"}
+
+- **One-way function**: easy to compute, hard to invert
+- **Examples**: RSA, Diffie-Hellman, Digital Signatures
+- Insights about the RSA algorithm:
+    - Easy to multiply two large prime numbers
+      - Exponentiation
+      - Multiplication
+      - Modular arithmetic
+    - Hard to factor the product of two large prime numbers
+    - Encryption is "easy" and decryption is "hard"
+:::
+
+## Cryptographic Hash Functions
+
+::: {.incremental style="margin-top: -0.5em;"}
+
+- **Input**: any length of data
+- **Output**: fixed length of data
+- **Example**: SHA-256, SHA-512, MD5
+- Insights about the SHA-256 algorithm:
+    - Fixed length output
+    - Deterministic
+    - Fast computation
+    - Designed by NSA
+    - Cannot generate input from output!
+
+:::
+
+## Symmetric Encryption
+
+::: fragment
+
+- **Single key** used for encryption and decryption
+- **Examples**: AES, DES, 3DES
+- Insights about the AES algorithm:
+    - Block-based cipher
+    - Key sizes of 128, 192, or 256 bits
+    - Performs multiple rounds of encryption
+    - Designed by Joan Daemen and Vincent Rijmen
+- *Wait*, how do you exchange the key securely?
+
+:::
+
+## Asymmetric Encryption
+
+::: fragment
+
+- **Public key** used for encryption
+- **Private key** used for decryption
+- Steps for receiving an encrypted message:
+    - Generate a public/private key pair
+    - Share the public key to a key server
+    - Friend encrypts message with public key
+    - You decrypt the message with the private key
+- **Important trade-off**: slower than symmetric encryption!
+
+:::
+
+## Steam and Block Ciphers
+
+::: fragment
+
+- **Stream Cipher**: encrypts one byte at a time
+- **Block Cipher**: encrypts a block of bytes
+- **Example**: AES is a block cipher!
+- Modes of operation for block ciphers:
+    - ECB: Electronic Codebook
+    - CBC: Cipher Block Chaining
+    - CFB: Cipher Feedback
+    - OFB: Output Feedback
+    - CTR: Counter
+
+:::
+
+## Combining Cryptography Algorithms
+
+- A virtual private network (VPN) works like this:
+    - Use asymmetric encryption to exchange symmetric key
+    - Use symmetric encryption for data transmission
+- **Important Insights**
+    - Fast because it mostly uses symmetric encryption
+    - Using multiple algorithms can maintain/increase security
+    - Yet, only as secure as the weakest link!
+
+- Whenever possible, limit manual human intervention in a secure
+process to avoid unexpected mistakes!
+
+## Case Study: Let's Encrypt
+
+::: fragment
+
+- **Goal**: Always encrypt packets sent to a web site!
+- **Problem**: How to make HTTPS more accessible?
+- **Solution**: Automated certificate authority system
+
+:::
+
+::: {.fragment style="margin-top: -0.75em;"}
+
+- Insights about the Let's Encrypt system:
+    - Uses the Automated Certificate Management Environment (ACME) protocol
+    - Provides free SSL/TLS certificates
+    - Automates the certificate renewal process
+    - Requires a web server to support HTTPS
+
+:::
+
+## *Cool*, Let's Encrypt is open source and free and supported by Netlify!
+
+::: {.incremental style="margin-top: -0.5em;"}
+
+- How do you get a certificate for your web site?
+    - Customer generates a certificate signing request (CSR)
+    - Customer sends CSR to Let's Encrypt
+    - Let's Encrypt verifies the CSR
+    - Let's Encrypt issues a certificate
+    - Customer installs the certificate on their web server
+    - Direct integration with systems like Netlify
+- **Reference**: [Let's Encrypt: How it Works](https://letsencrypt.org/how-it-works/)
+
+:::
+
+## Applications of Cryptography
+
+::: incremental
+
+- Blockchain technology
+- Secure messaging apps
+- Secure payment systems
+- Hardware security modules
+- Trusted platform modules
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Insight**: Cryptographic algorithms underpin many of the applications
+that we use on a daily basis! Let's try to program them for better
+understanding! Start by revisiting basics from last week!
+
+:::
+
+# Security Synapses
+
+::: {.incremental style="margin-top: -0.25em;"}
+
+- Use `cryptography.fernet` to encrypt a string and record
+    - Automatically generate a symmetric key
+    - Encrypted string generated by `encrypt_string`
+- Use recorded details to decrypt the string and display it
+    - Define the `encrypted_data` byte-encoded string
+    - Define the `key` as a byte-encoded string
+- Confirm that decrypted string matches the original one
+- **Variables are shared across programming environments**!
+
+:::
+
+## Revisiting Symmetric Encryption
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 14
+from cryptography.fernet import Fernet
+
+def encrypt_string(input_string: str, key: str):
+    """Encrypt a string using a symmetric key."""
+    # convert the string into bytes
+    data_bytes = input_string.encode()
+    # create a Fernet object
+    fernet = Fernet(key)
+    # encrypt and return the data
+    encrypted_data = fernet.encrypt(data_bytes)
+    return encrypted_data
+
+# generate a symmetric key
+generated_key_sym = Fernet.generate_key()
+print("Key:", generated_key_sym)
+# encrypt the string
+ciphertext_output_sym = encrypt_string('Privacy-sensitive data', generated_key_sym)
+print("Encrypted Data:", ciphertext_output_sym)
+```
+
+## Revisiting Symmetric Decryption
+
+```{pyodide}
+#| autorun: false
+#| max-lines: 14
+from cryptography.fernet import Fernet
+
+def decrypt_string(encrypted_data: bytes, key: str):
+    """Decrypt data using a symmetric key."""
+    # create a Fernet object
+    fernet = Fernet(key)
+    # decrypt and return the data
+    decrypted_data = fernet.decrypt(encrypted_data)
+    return decrypted_data.decode()
+
+# set the ciphertext and the key
+ciphertext_input_sym = b'<add encrypted data here>'
+key_sym = b'<add generated key here>'
+# decrypt the ciphertext and display it
+decrypted_ciphertext_sym = decrypt_string(ciphertext_input_sym, key_sym)
+print(decrypted_ciphertext_sym)
+```
+
+## Recap on Symmetric Encryption
+
+::: incremental
+
+- **Key Benefit**: symmetric encryption is fast and secure
+- **Important Reminder**: always securely exchange the key!
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.9em;"}
+
+- **Review Questions**:
+    - What does a `Fernet` key look like?
+    - What are the requirements for a `Fernet` key?
+    - What if the `Fernet` key does not match?
+    - What is the purpose of the `b` prefix?
+    - How can you securely exchange the `key`'s contents?
+
+:::
+
+## Revisiting Content Hashing
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 14
+import hashlib
+
+def compute_hash(input_string):
+    """Compute the SHA256 hash of a string."""
+    # create a new SHA256 hash object
+    hash_object = hashlib.sha256()
+    # update the hash object with the bytes of the string
+    hash_object.update(input_string.encode())
+    # get the hexadecimal representation of the hash
+    hash_hex = hash_object.hexdigest()
+    return hash_hex
+
+# test string: 'This is a test string'
+print(compute_hash('This is a test string'))
+# create your own strings and display their hashes
+# make one string slightly different than the test string!
+```
+
+## Exploring Asymmetric Encryption
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 8
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives.asymmetric import rsa, padding
+from cryptography.hazmat.primitives import serialization
+
+# generate a new private key
+private_key = rsa.generate_private_key(
+    public_exponent=65537,
+    key_size=2048,
+)
+# generate the public key from the private key
+public_key = private_key.public_key()
+# define the plaintext
+data = b"Privacy-sensitive data"
+
+# encrypt the data with the public key
+ciphertext_output_asym = public_key.encrypt(
+    data,
+    padding.PKCS1v15()
+)
+print("Encrypted Data:", ciphertext_output_asym)
+```
+
+## Exploring Asymmetric Decryption
+
+```{pyodide}
+#| autorun: false
+#| max-lines: 15
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives.asymmetric import rsa, padding
+from cryptography.hazmat.primitives import serialization
+
+# decrypt the data with the private key
+ciphertext_input_asym = b'<add encrypted data here>'
+plaintext_asym = private_key.decrypt(
+    ciphertext_input_asym,
+    padding.PKCS1v15()
+)
+
+print(plaintext_asym)
+```
+
+::: fragment
+
+- You must correctly define `ciphertext_input_asym`!
+- The `ciphertext` must have the correct length and format
+
+:::
+
+## Recap on Asymmetric Encryption
+
+::: incremental
+
+- **Key Benefit**: supports secure key exchange
+- **Important Reminder**: securely store the private key!
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.9em;"}
+
+- **Review Questions**:
+    - What does an `rsa` private key look like?
+    - How does `key_size` affect the `rsa` algorithm?
+    - What is the purpose of `padding.PKCS1v15()`?
+    - What if the `rsa` keys incorrectly?
+    - How can you _combine_ symmetric and asymmetric encryption?
+
+:::
+
+## Wrapping Up on Encryption
+
+::: {.columns style="margin-top: 0.5em;"}
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Key Concepts*
+
+#### Types of Encryption
+
+- Symmetric
+- Asymmetric
+- Hashing
+
+#### Important Terms
+
+- Plaintext
+- Ciphertext
+- Key
+
+:::
+
+:::
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Best Practices*
+
+#### Implementation
+
+- Use established libraries
+- Securely manage keys
+- Understand the trade-offs
+
+#### Prevention
+
+- No "rolling your own"
+- Update and patch packages
+- Encrypt sensitive data
+
+:::
+
+:::
+
+:::
