@@ -265,7 +265,7 @@ main()
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 18
+#| max-lines: 16
 # Transposition Cipher Decryption
 # https://www.nostarch.com/crackingcodes/ (BSD Licensed)
 import math
