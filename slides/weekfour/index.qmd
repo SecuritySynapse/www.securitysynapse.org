@@ -20,58 +20,6 @@ format:
     footer: "Security Synapse"
 ---
 
-## Getting Started in Computer Security
-
-::: {.columns}
-
-::: {.column style="font-size: 0.85em;"}
-
-::: fragment
-
-### *Learn the Lingo*
-
-#### Abbreviations
-
-- AAA
-- CIA
-- PDR
-
-#### Concepts
-
-- Authentication
-- Authorization
-- Cryptography
-
-:::
-
-:::
-
-::: {.column style="font-size: 0.85em;"}
-
-::: fragment
-
-### *Think Like Hacker*
-
-#### Implementation
-
-- Look for vulnerabilities
-- Try to exploit them
-- Identify weakest links
-
-#### Prevention
-
-- Use secure coding practices
-- Leverage security tools
-- Rethink everything!
-
-:::
-
-:::
-
-:::
-
-# What is a technology practice that you need to rethink from the perspective of computer security? Why? Next?
-
 # What is cryptography?
 
 ::: {.incremental style="margin-top: -0.5em;"}
@@ -93,14 +41,16 @@ format:
 
 # *Admonition*: avoid the temptation to "roll your own" cryptography algorithms! Problems!
 
-# When do you use cryptography?
+# Creating Simple Cryptosystems
 
-::: fragment
+::: incremental
 
-- Commit data to a GitHub repository
-- Access a website using HTTPS
-- Use a password manager
-- Send a message in chat app
+- What is the benefit of studying weak cryptography algorithms like those in
+_Cracking Codes with Python_?
+
+    - Understand the basics of cryptography
+    - Learn why these systems are not secure
+    - Feasibly explore the steps of cryptanalysis
 
 :::
 
@@ -121,166 +71,6 @@ format:
 
 **Key Questions**: What are the trade-offs between different types of keys?
 Ways to balance security, privacy, and performance? How?
-
-:::
-
-## Trapdoor Functions
-
-::: {.incremental style="margin-top: -0.5em;"}
-
-- **One-way function**: easy to compute, hard to invert
-- **Examples**: RSA, Diffie-Hellman, Digital Signatures
-- Insights about the RSA algorithm:
-    - Easy to multiply two large prime numbers
-      - Exponentiation
-      - Multiplication
-      - Modular arithmetic
-    - Hard to factor the product of two large prime numbers
-    - Encryption is "easy" and decryption is "hard"
-:::
-
-## Cryptographic Hash Functions
-
-::: {.incremental style="margin-top: -0.5em;"}
-
-- **Input**: any length of data
-- **Output**: fixed length of data
-- **Example**: SHA-256, SHA-512, MD5
-- Insights about the SHA-256 algorithm:
-    - Fixed length output
-    - Deterministic
-    - Fast computation
-    - Designed by NSA
-    - Cannot generate input from output!
-
-:::
-
-## Symmetric Encryption
-
-::: fragment
-
-- **Single key** used for encryption and decryption
-- **Examples**: AES, DES, 3DES
-- Insights about the AES algorithm:
-    - Block-based cipher
-    - Key sizes of 128, 192, or 256 bits
-    - Performs multiple rounds of encryption
-    - Designed by Joan Daemen and Vincent Rijmen
-- *Wait*, how do you exchange the key securely?
-
-:::
-
-## Asymmetric Encryption
-
-::: fragment
-
-- **Public key** used for encryption
-- **Private key** used for decryption
-- Steps for receiving an encrypted message:
-    - Generate a public/private key pair
-    - Share the public key to a key server
-    - Friend encrypts message with public key
-    - You decrypt the message with the private key
-- **Important trade-off**: slower than symmetric encryption!
-
-:::
-
-## Steam and Block Ciphers
-
-::: fragment
-
-- **Stream Cipher**: encrypts one byte at a time
-- **Block Cipher**: encrypts a block of bytes
-- **Example**: AES is a block cipher!
-- Modes of operation for block ciphers:
-    - ECB: Electronic Codebook
-    - CBC: Cipher Block Chaining
-    - CFB: Cipher Feedback
-    - OFB: Output Feedback
-    - CTR: Counter
-
-:::
-
-## Combining Cryptography Algorithms
-
-- A virtual private network (VPN) works like this:
-    - Use asymmetric encryption to exchange symmetric key
-    - Use symmetric encryption for data transmission
-- **Important Insights**
-    - Fast because it mostly uses symmetric encryption
-    - Using multiple algorithms can maintain/increase security
-    - Yet, only as secure as the weakest link!
-
-- Whenever possible, limit manual human intervention in a secure
-process to avoid unexpected mistakes!
-
-## Case Study: Let's Encrypt
-
-::: fragment
-
-- **Goal**: Always encrypt packets sent to a web site!
-- **Problem**: How to make HTTPS more accessible?
-- **Solution**: Automated certificate authority system
-
-:::
-
-::: {.fragment style="margin-top: -0.75em;"}
-
-- Insights about the Let's Encrypt system:
-    - Uses the Automated Certificate Management Environment (ACME) protocol
-    - Provides free SSL/TLS certificates
-    - Automates the certificate renewal process
-    - Requires a web server to support HTTPS
-
-:::
-
-## *Cool*, Let's Encrypt is open source and free and supported by Netlify!
-
-::: {.incremental style="margin-top: -0.5em;"}
-
-- How do you get a certificate for your web site?
-    - Customer generates a certificate signing request (CSR)
-    - Customer sends CSR to Let's Encrypt
-    - Let's Encrypt verifies the CSR
-    - Let's Encrypt issues a certificate
-    - Customer installs the certificate on their web server
-    - Direct integration with systems like Netlify
-- **Reference**: [Let's Encrypt: How it Works](https://letsencrypt.org/how-it-works/)
-
-:::
-
-## Applications of Cryptography
-
-::: incremental
-
-- Blockchain technology
-- Secure messaging apps
-- Secure payment systems
-- Hardware security modules
-- Trusted platform modules
-
-:::
-
-::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
-
-**Key Insight**: Cryptographic algorithms underpin many of the applications
-that we use on a daily basis! Let's try to program them for better
-understanding! Start by revisiting basics from last week!
-
-:::
-
-# Security Synapses
-
-::: {.incremental style="margin-top: -0.25em;"}
-
-- Use `cryptography.fernet` to encrypt a string and record
-    - Automatically generate a symmetric key
-    - Encrypted string generated by `encrypt_string`
-- Use recorded details to decrypt the string and display it
-    - Define the `encrypted_data` byte-encoded string
-    - Define the `key` as a byte-encoded string
-- Confirm that decrypted string matches the original one
-- **Variables are shared across programming environments**!
 
 :::
 
