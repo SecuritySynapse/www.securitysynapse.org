@@ -214,17 +214,17 @@ for key in range(len(SYMBOLS)):
 
 ### *Key Concepts*
 
-#### Types of Encryption
+#### Studied Algorithms
 
-- Symmetric
-- Asymmetric
-- Hashing
+- Reverse
+- Caesar
+- Transposition
 
 #### Important Terms
 
 - Plaintext
 - Ciphertext
-- Key
+- Brute force attack
 
 :::
 
@@ -238,15 +238,15 @@ for key in range(len(SYMBOLS)):
 
 #### Implementation
 
-- Use established libraries
-- Securely manage keys
-- Understand the trade-offs
+- Hone intuition
+- Know why not secure
+- Practice cryptanalysis
 
-#### Prevention
+#### Exploration
 
-- No "rolling your own"
-- Update and patch packages
-- Encrypt sensitive data
+- See connections
+- Make combinations
+- Build toolkit
 
 :::
 
