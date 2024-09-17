@@ -2,7 +2,7 @@
 title: "Basic Cryptography"
 subtitle: "Understanding the Implementation of Simple Cryptosystems"
 description: "How can I build system cryptography algorithms in Python?"
-date: "2024-09-17"
+date: "2024-09-16"
 date-format: long
 author: Gregory M. Kapfhammer
 execute:
