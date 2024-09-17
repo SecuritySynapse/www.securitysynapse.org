@@ -90,7 +90,7 @@ while i >= 0:
 print(translated)
 ```
 
-::: {.fragment .fade style="margin-top: 0.05em; font-size: 0.9em;"}
+::: {.fragment .fade style="margin-top: 0.00em; font-size: 0.9em;"}
 
 - How does this cipher work?
 - Does this cipher have a key?
