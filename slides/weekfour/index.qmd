@@ -130,7 +130,7 @@ for symbol in message:
 print(translated)
 ```
 
-::: {.fragment .fade style="margin-top: 0.05em; font-size: 0.9em;"}
+::: {.fragment .fade style="margin-top: 0.00em; font-size: 0.9em;"}
 
 - **Task**: Run this cipher with different `message`s and `mode`s
 
