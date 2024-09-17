@@ -48,9 +48,9 @@ format:
 - What is the benefit of studying weak cryptography algorithms like those in
 _Cracking Codes with Python_?
 
-    - Understand the basics of cryptography
-    - Learn why these systems are not secure
-    - Feasibly explore the steps of cryptanalysis
+    - Understand the **basics** of cryptography
+    - Learn why these systems are **not secure**
+    - Feasibly explore the steps of **cryptanalysis**
 
 :::
 
@@ -145,16 +145,64 @@ print(translated)
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.85em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.85em;"}
 
 - **Review Questions**:
     - What is the purpose of the `key` variable?
     - What is the purpose of the `mode` variable?
     - What if a letter is not in the `SYMBOLS` string?
     - Why does the algorithm need to handle "wraparound"?
-    - Explain the assignment of `translated = translated + SYMBOLS[translatedIndex]`
+    - Can you explain the assignment of `translated = translated + SYMBOLS[translatedIndex]`?
 
 :::
+
+## Brute Force Caesar Cipher Attack
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 6
+# Caesar Cipher Hacker
+# https://www.nostarch.com/crackingcodes/ (BSD Licensed)
+message = 'guv6Jv6Jz!J6rp5r7Jzr66ntrM'
+SYMBOLS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 !?.'
+for key in range(len(SYMBOLS)):
+    translated = ''
+    for symbol in message:
+        if symbol in SYMBOLS:
+            symbolIndex = SYMBOLS.find(symbol)
+            translatedIndex = symbolIndex - key
+            # Handle the wraparound:
+            if translatedIndex < 0:
+                translatedIndex = translatedIndex + len(SYMBOLS)
+            # Append the decrypted symbol:
+            translated = translated + SYMBOLS[translatedIndex]
+        else:
+            # Append the symbol without encrypting/decrypting:
+            translated = translated + symbol
+    # Display every possible decryption:
+    print('Key #%s: %s' % (key, translated))
+```
+
+## Recap on Caesar Cipher Attack
+
+::: incremental
+
+- **Key Insight**: "brute force" means to try all possible keys
+- **Important Reminder**: feasible due to the small key space
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.85em;"}
+
+- **Review Questions**:
+    - Which `key` value ultimately decrypts the message?
+    - What is the purpose of the `mode` variable?
+    - How does this connect to the encryption technique?
+    - Why does the algorithm need to handle "wraparound"?
+    - Can you explain the assignment of `symbolIndex = SYMBOLS.find(symbol)`?
+
+:::
+
 
 ## Wrapping Up on Encryption
 
