@@ -265,31 +265,29 @@ main()
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 15
+#| max-lines: 18
 # Transposition Cipher Decryption
 # https://www.nostarch.com/crackingcodes/ (BSD Licensed)
 import math
 def main():
-    myMessage = 'Cenoonommstmme oo snnio. s s c'
-    myKey = 8
-    plaintext = decryptMessage(myKey, myMessage)
+    current_message = 'Cenoonommstmme oo snnio. s s c'
+    current_key = 8
+    plaintext = decryptMessage(current_key, current_message)
     print(plaintext + '|')
 
 def decryptMessage(key, message):
     numOfColumns = int(math.ceil(len(message) / float(key)))
     numOfRows = key
-    # The number of "shaded boxes" in the last "column" of the grid:
+    # the number of "shaded boxes" in the last "column" of the grid
     numOfShadedBoxes = (numOfColumns * numOfRows) - len(message)
-    # Each string in plaintext represents a column in the grid:
+    # each string in plaintext represents a column in the grid:
     plaintext = [''] * numOfColumns
-    # The column and row variables point to where in the grid the next
-    # character in the encrypted message will go:
     column = 0
     row = 0
     for symbol in message:
         plaintext[column] += symbol
         column += 1 # Point to the next column.
-        # If there are no more columns OR we're at a shaded box, go back
+        # if there are no more columns OR we're at a shaded box, go back
         # to the first column and the next row:
         if (column == numOfColumns) or (column == numOfColumns - 1 and
             row >= numOfRows - numOfShadedBoxes):
