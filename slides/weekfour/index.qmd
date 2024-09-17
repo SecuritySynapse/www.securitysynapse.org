@@ -246,7 +246,7 @@ for key in range(len(SYMBOLS)):
 
 - See connections
 - Make combinations
-- Build toolkit
+- Build your toolkit
 
 :::
 
