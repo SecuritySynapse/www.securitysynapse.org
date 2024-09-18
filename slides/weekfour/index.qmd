@@ -326,7 +326,7 @@ main()
 - Generate random messages, encrypt, and then decrypt
 - Run for a range of keys, which determine the cipher's shift
 - Use random messages and keys, covering various scenarios
-- A fixed see ensures the test is repeatable, aiding debugging
+- A fixed seed ensures the test is repeatable, aiding debugging
 - Decryption fails when message does not match original
 
 :::
