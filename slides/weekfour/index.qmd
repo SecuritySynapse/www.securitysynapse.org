@@ -667,6 +667,38 @@ perform_transposition_hack()
 
 :::
 
+## Performance of Fernet Cipher
+
+```{python}
+import time
+
+def performance_encryption_decryption(message):
+    """Test the encryption and decryption of a message."""
+    key = Fernet.generate_key()
+    start_encryption = time.time()
+    encrypted_data = encrypt_string(message, key)
+    end_encryption = time.time()
+    start_decryption = time.time()
+    decrypted_data = decrypt_string(encrypted_data, key)
+    end_decryption = time.time()
+    encryption_time = (end_encryption - start_encryption) * 1000
+    decryption_time = (end_decryption - start_decryption) * 1000
+    assert decrypted_data == message, 'Decryption does not match original message'
+    return encryption_time, decryption_time
+```
+
+## Performance Study for Fernet Cipher
+
+```{python}
+i = 0
+while i < 14:
+    length = random.randint(10, 30)
+    message = generate_random_string(length)
+    (etime, dtime) = performance_encryption_decryption(message)
+    print(f"M: {message:30} S: Passed, ET: {etime:.4f}ms, DT: {dtime:.4f}ms.")
+    i += 1
+```
+
 ## Wrapping Up on Basic Cryptography
 
 ::: {.columns style="margin-top: 0.5em;"}
