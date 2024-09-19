@@ -673,7 +673,6 @@ perform_transposition_hack()
 import time
 
 def performance_encryption_decryption(message):
-    """Test the encryption and decryption of a message."""
     key = Fernet.generate_key()
     start_encryption = time.time()
     encrypted_data = encrypt_string(message, key)
@@ -686,6 +685,13 @@ def performance_encryption_decryption(message):
     assert decrypted_data == message, 'Decryption does not match original message'
     return encryption_time, decryption_time
 ```
+
+::: {.fragment .fade style="margin-top: 0.25em; font-size: 0.9em;"}
+
+- Use the `time` module to measure the performance of `Fernet`
+- Elapsed time in milliseconds for encryption and decryption
+
+:::
 
 ## Performance Study for Fernet Cipher
 
@@ -741,7 +747,7 @@ while i < 14:
 
 - See connections
 - Make combinations
-- Build your toolkit
+- Study performance
 
 :::
 
