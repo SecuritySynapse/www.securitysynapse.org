@@ -489,6 +489,25 @@ while i < 14:
     i += 1
 ```
 
+## Recapping Cipher Testing
+
+::: incremental
+
+- **Key Insight**: establish a confidence in cipher correctness
+- **Important Reminder**: ensure that functions are invertible
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.9em;"}
+
+- **Review Questions**:
+    - How is this approach related to the previous one?
+    - What is the purpose of the `assert` statement?
+    - How does the `test_encryption_decryption` function work?
+    - How does the `generate_random_string` function work?
+    - What are the limitations of this testing approach?
+
+:::
 
 ## Wrapping Up on Basic Cryptography
 
