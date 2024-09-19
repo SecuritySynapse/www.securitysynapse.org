@@ -431,41 +431,6 @@ def main():
 main()
 ```
 
-
-## Testing the Transposition Cipher
-
-```{pyodide}
-#| autorun: true
-#| max-lines: 10
-# Transposition Cipher Test
-# https://www.nostarch.com/crackingcodes/ (BSD Licensed)
-import random, sys
-def main():
-    random.seed(42)
-    for i in range(10):
-        # generate random messages to test;
-        # the message will have a random length
-        message = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' * random.randint(4, 40)
-        # convert the message string to a list to shuffle it:
-        message = list(message)
-        random.shuffle(message)
-        message = ''.join(message) # Convert the list back to a string.
-        print('Test #%s: "%s..."' % (i + 1, message[:50]))
-        # check all possible keys for each message:
-        for key in range(1, int(len(message)/2)):
-            encrypted = encryptMessage(key, message)
-            decrypted = decryptMessage(key, encrypted)
-            # if the decryption doesn't match the original message, display
-            # an error message and quit to highlight the problematic input
-            if message != decrypted:
-                print('Mismatch with key %s and message %s.' % (key, message))
-                print('Decrypted as: ' + decrypted)
-                sys.exit()
-    print('Transposition cipher test passed.')
-
-main()
-```
-
 ## Wrapping Up on Basic Cryptography
 
 ::: {.columns style="margin-top: 0.5em;"}
