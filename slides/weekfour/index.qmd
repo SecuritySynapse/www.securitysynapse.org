@@ -501,7 +501,7 @@ while i < 14:
 ::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.9em;"}
 
 - **Review Questions**:
-    - How is this approach related to the previous one?
+    - What is the overall approach in cipher testing?
     - What is the purpose of the `assert` statement?
     - How does the `test_encryption_decryption` function work?
     - How does the `generate_random_string` function work?
@@ -513,10 +513,159 @@ while i < 14:
 
 - How can we hack the transposition cipher?
   - Make these assumptions:
-    - Not clear that the cipher is in use
+    - Assume that the cipher is in use
     - Not clear what language is in use
     - Do not know the key or its length
   - *Wow*, this hack requires a lot of implementation!
+
+## Detecting the English Language
+
+```{python}
+# Detect English module
+# https://www.nostarch.com/crackingcodes (BSD Licensed)
+# (There must be a "dictionary.txt" file in this directory with all English
+# words in it, one word per line.)
+UPPERLETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+LETTERS_AND_SPACE = UPPERLETTERS + UPPERLETTERS.lower() + ' \t\n'
+
+def loadDictionary():
+    dictionaryFile = open('dictionary.txt')
+    englishWords = {}
+    for word in dictionaryFile.read().split('\n'):
+        englishWords[word] = None
+    dictionaryFile.close()
+    return englishWords
+
+ENGLISH_WORDS = loadDictionary()
+
+def getEnglishCount(message):
+    message = message.upper()
+    message = removeNonLetters(message)
+    possibleWords = message.split()
+    if possibleWords == []:
+        return 0.0
+    matches = 0
+    for word in possibleWords:
+        if word in ENGLISH_WORDS:
+            matches += 1
+    return float(matches) / len(possibleWords)
+
+def removeNonLetters(message):
+    lettersOnly = []
+    for symbol in message:
+        if symbol in LETTERS_AND_SPACE:
+            lettersOnly.append(symbol)
+    return ''.join(lettersOnly)
+
+def isEnglish(message, wordPercentage=20, letterPercentage=85):
+    wordsMatch = getEnglishCount(message) * 100 >= wordPercentage
+    numLetters = len(removeNonLetters(message))
+    messageLettersPercentage = float(numLetters) / len(message) * 100
+    lettersMatch = messageLettersPercentage >= letterPercentage
+    return wordsMatch and lettersMatch
+```
+
+## Preview the Dictionary File
+
+```text
+AARHUS
+AARON
+ABABA
+ABACK
+ABAFT
+ABANDON
+ABANDONED
+ABANDONING
+ABANDONMENT
+ABANDONS
+ABASE
+ABASED
+ABASEMENT
+ABASEMENTS
+ABASES
+ABASH
+ABASHED
+ABASHES
+```
+
+## Revisiting the Transposition Cipher
+
+```{python}
+import math
+
+# Transposition Cipher Encryption
+# https://www.nostarch.com/crackingcodes/ (BSD Licensed)
+def encryptMessage(key, message):
+    ciphertext = [''] * key
+    # loop through each column in ciphertext:
+    for column in range(key):
+        currentIndex = column
+        # keep looping until currentIndex goes past the message length:
+        while currentIndex < len(message):
+            # place the character at currentIndex in message at the
+            # end of the current column in the ciphertext list
+            ciphertext[column] += message[currentIndex]
+            # move currentIndex over
+            currentIndex += key
+    # convert the ciphertext list into a single string value and return it:
+    return ''.join(ciphertext)
+
+def decryptMessage(key, message):
+    numOfColumns = int(math.ceil(len(message) / float(key)))
+    numOfRows = key
+    # the number of "shaded boxes" in the last "column" of the grid
+    numOfShadedBoxes = (numOfColumns * numOfRows) - len(message)
+    # each string in plaintext represents a column in the grid:
+    plaintext = [''] * numOfColumns
+    column = 0
+    row = 0
+    for symbol in message:
+        plaintext[column] += symbol
+        column += 1
+        # if there are no more columns OR we're at a shaded box, go back
+        # to the first column and the next row:
+        if (column == numOfColumns) or (column == numOfColumns - 1 and
+            row >= numOfRows - numOfShadedBoxes):
+            column = 0
+            row += 1
+    return ''.join(plaintext)
+```
+
+## Setup Transposition Cipher Hacking
+
+```{python}
+def perform_transposition_hack():
+    myMessage = """AaKoosoeDe5 b5sn ma reno ora'lhlrrceey e  enlh na  indeit n uhoretrm au ieu v er Ne2 gmanw,forwnlbsya apor tE.no euarisfatt  e mealefedhsppmgAnlnoe(c -or)alat r lw o eb  nglom,Ain one dtes ilhetcdba. t tg eturmudg,tfl1e1 v  nitiaicynhrCsaemie-sp ncgHt nie cetrgmnoa yc r,ieaa  toesa- e a0m82e1w shcnth  ekh gaecnpeutaaieetgn iodhso d ro hAe snrsfcegrt NCsLc b17m8aEheideikfr aBercaeu thllnrshicwsg etriebruaisss  d iorr."""
+    hackedMessage = hackTransposition(myMessage)
+    if hackedMessage == None:
+        print('Failed to hack encryption.')
+    else:
+        print(hackedMessage)
+
+def hackTransposition(message):
+    print('Hacking...')
+    for key in range(1, len(message)):
+        print('Trying key #%s...' % (key))
+        decryptedText = decryptMessage(key, message)
+        if isEnglish(decryptedText):
+            print('Possible encryption hack:')
+            print('Key %s: %s' % (key, decryptedText[:100]))
+            return decryptedText
+    return None
+```
+
+## Running Transposition Hacking
+
+```{python}
+perform_transposition_hack()
+```
+
+::: {.fragment .fade style="margin-top: 0.00em; font-size: 0.9em;"}
+
+- Generate all possible keys
+- Print the decrypted message if it is English
+
+:::
 
 ## Wrapping Up on Basic Cryptography
 
