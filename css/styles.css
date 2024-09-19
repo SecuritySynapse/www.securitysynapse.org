@@ -218,16 +218,16 @@ h2,
 }
 
 div.sourceCode {
-    background-color: #fff !important;
-    border: none;
-    padding: 0;
+  background-color: #fff !important;
+  border: none;
+  padding: 0;
 }
 
 pre.sourceCode {
   border-left: 3px;
   border-left-style: solid;
   border-left-color: #03a9f4;
-  padding: .5em;
+  padding: 0.5em;
   margin-left: 0.15em;
   border-right: 1px solid #dee2e6;
   border-top: 1px solid #dee2e6;
