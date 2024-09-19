@@ -509,6 +509,15 @@ while i < 14:
 
 :::
 
+# Hacking the Transposition Cipher
+
+- How can we hack the transposition cipher?
+  - Make these assumptions:
+    - Not clear that the cipher is in use
+    - Not clear what language is in use
+    - Do not know the key or its length
+  - *Wow*, this hack requires a lot of implementation!
+
 ## Wrapping Up on Basic Cryptography
 
 ::: {.columns style="margin-top: 0.5em;"}
