@@ -277,7 +277,7 @@ survey project as long as that they cite these sources and explain how they used
 them to complete the various components of their project's implementation,
 evaluation, and writing.
 
-- **Security Summit Project**: Started in approximately the fourth week of the
+- **Security Summit Project**: Started in approximately the sixth week of the
 academic semester, this long-term project invites students to propose,
 implement, evaluate, and present their own advanced project in the field of
 computer security. In addition to requiring the completion of a significant and
