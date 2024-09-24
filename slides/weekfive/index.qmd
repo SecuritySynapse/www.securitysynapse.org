@@ -73,7 +73,7 @@ format:
 
 :::
 
-# "gaining access to anyones browser without them even visiting a website"
+# "gaining access to anyones [*sic*] browser without them even visiting a website"
 
 ::: fragment
 
@@ -85,7 +85,7 @@ format:
 
 ::: fragment
 
-- Worms are a self-replicating and self-propagating
+- Self-replicating and self-propagating software
 
 - Worms can spread without user interaction
 
@@ -102,7 +102,7 @@ format:
 
 ::: fragment
 
-- Modifying a program and inserting their own code
+- Modifies a program and inserts their own code
 
 - Viruses often require user interaction to spread
 
@@ -112,5 +112,39 @@ format:
   - Email
   - Downloads
   - Web sites
+
+:::
+
+# Understanding Trojans
+
+::: fragment
+
+- Disguises itself as a normal file or program
+
+- Trojan horses often require user interaction to spread
+
+- **Primary goal**: create a backdoor in your system for malicious activities
+
+- Trojan horses can be spread via:
+  - Email
+  - Downloads
+  - Web sites
+
+:::
+
+# Exploring Ransomware
+
+::: fragment
+
+- Access and then encrypts a victim's files
+
+- Demands access to payment to decrypt the files
+
+- **Primary goal**: extort money by denying file access
+
+- Ransomware can be spread via:
+  - Phishing emails
+  - Malicious downloads
+  - Exploiting network security holes
 
 :::
