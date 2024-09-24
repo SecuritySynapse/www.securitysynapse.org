@@ -46,5 +46,9 @@ format:
   - Windows operating systems
   - Web browsers
   - Android devices
+- Malware considers:
+  - How many users are affected?
+  - How easily can it infect and spread?
+  - How much money can it generate?
 
 :::
