@@ -7,8 +7,9 @@ toc: true
 Want to make a "security synapse"? That is to say, do you want to make
 conceptual and practical connections in the field of computer security? Check
 out these projects to learn more about how to apply what you are learning in the
-field of computer security! Each projects explores a specific topic in
-connection with content from one of the following online textbooks:
+field of computer security! Projects invite you to complete projects in fields
+like fuzzing and cryptography. Each projects explores a specific topic in
+connection with content from one of these online textbooks:
 
 - {{< iconify fa6-solid book-open >}} Online textbook called [Computer Systems
 Security: Planning for Success](https://web.njit.edu/~rt494/security/) 
@@ -78,7 +79,7 @@ they are not examples of modern cryptography algorithms like the advanced
 encryption standard (AES). It is also important to point out that different
 implementations of AES, like versions of `Fernet` that are implemented purely in
 Python or in a combination of Rust and Python, may have different performance
-trade-offs.
+trade-offs worthy of additional experimental study.
 
 - {{< iconify fa6-solid code size=18px >}} **Task**: This project invites you to
 implement a `cryptobenchmark` in the Python programming language that will
@@ -94,7 +95,7 @@ resources about cryptography using various implementations of AES:
 
 - [Fernet: A Python Implementation of AES](https://cryptography.io/en/latest/fernet/)
 - [rFernet: A Rust-Based Implementation of AES](https://github.com/aviramha/rfernet)
-- [fernet-rs](https://github.com/mozilla-services/fernet-rs)
+- [fernet-rs: An Implementation of Fernet in Rust](https://github.com/mozilla-services/fernet-rs)
 
 Interested in working on this project? See the [{{< iconify fa6-brands github
 size=18px >}}
