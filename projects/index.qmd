@@ -13,10 +13,8 @@ connection with content from one of these online textbooks:
 
 - {{< iconify fa6-solid book-open >}} Online textbook called [Computer Systems
 Security: Planning for Success](https://web.njit.edu/~rt494/security/) 
-
 - {{< iconify fa6-solid book-open >}} Online textbook called [Cracking Codes
 with Python](https://inventwithpython.com/cracking/) 
-
 - {{< iconify fa6-solid book-open >}} Online textbook called [Operating Systems:
 Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
 
@@ -85,16 +83,19 @@ trade-offs worthy of additional experimental study.
 implement a `cryptobenchmark` in the Python programming language that will
 automatically perform a [doubling experiment](https://algorithmology.org/) to
 measure the encryption and decryption performance for the `Fernet` and `rFernet`
+ciphers. This program should randomly generate data and the measure and report
+the time and space overheads arising from use of the `Fernet` and `rFernet`
 ciphers.
 
 ### Resources
 
 To learn more about fuzzing and to gather inspiration for your own
 implementation of the `cryptobenchmark`, please consult the following technical
-resources about cryptography using various implementations of AES:
+resources about cryptography using various implementations of the advanced
+encryption standard as `Fernet`:
 
 - [Fernet: A Python Implementation of AES](https://cryptography.io/en/latest/fernet/)
-- [rFernet: A Rust-Based Implementation of AES](https://github.com/aviramha/rfernet)
+- [rFernet: A Rust-Based Implementation of AES for Python](https://github.com/aviramha/rfernet)
 - [fernet-rs: An Implementation of Fernet in Rust](https://github.com/mozilla-services/fernet-rs)
 
 Interested in working on this project? See the [{{< iconify fa6-brands github
