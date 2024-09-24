@@ -80,3 +80,37 @@ format:
 [Read the article by eva (xyzeva on GitHub)!](https://kibty.town/blog/arc/)
 
 :::
+
+# Understanding Worms
+
+::: fragment
+
+- Worms are a self-replicating and self-propagating
+
+- Worms can spread without user interaction
+
+- **Primary goal**: infect as many devices as possible
+
+- Worms can be spread via:
+  - Email
+  - Network shares
+  - USB drives
+
+:::
+
+# Understanding Viruses
+
+::: fragment
+
+- Modifying a program and inserting their own code
+
+- Viruses often require user interaction to spread
+
+- **Primary goal**: cause damage or steal information
+
+- Viruses can be spread via:
+  - Email
+  - Downloads
+  - Web sites
+
+:::
