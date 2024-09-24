@@ -1,0 +1,62 @@
+---
+title: "Exploring Malware"
+subtitle: "Understanding the Basics of Computer Malware"
+description: "How can I detect and defend against malware?"
+date: "2024-09-23"
+date-format: long
+author: Gregory M. Kapfhammer
+execute:
+  echo: true
+jupyter: python3
+format:
+  live-revealjs:
+    completion: true
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Security Synapse"
+---
+
+# What is cryptography?
+
+::: {.incremental style="margin-top: -0.5em;"}
+
+- Establish secure and confidential communication channels
+- Supports creation of digital signatures
+- Allows us to support the "AAA principles":
+  - Authentication
+  - Authorization
+  - Accounting
+- Ensures that attackers cannot "listen in" to communication
+- Ensures *non-repudiation* of digital communication
+
+:::
+
+# *Important Insight*: cryptography is one of the key building blocks of computer security!
+
+# *Key Reminder*: it is deceptively difficult to deploy cryptographic algorithms correctly!
+
+# *Admonition*: avoid the temptation to "roll your own" cryptography algorithms! Problems!
+
+# Cryptography Terms
+
+::: {.incremental style="margin-top: -0.5em;"}
+
+- **Plaintext**: the original message
+- **Ciphertext**: the encrypted message
+- **Cipher**: the algorithm used to encrypt the message
+- **Key**: the secret used to encrypt the message
+    - **Symmetric Key**: the same key  to encrypt and decrypt
+    - **Asymmetric Key**: different keys to encrypt and decrypt
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.9em;"}
+
+**Key Questions**: What are the trade-offs between different types of keys?
+Ways to balance security, privacy, and performance? How?
+
+:::
