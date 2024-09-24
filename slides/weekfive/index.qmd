@@ -72,3 +72,11 @@ format:
 **Any recent examples of zero-day exploits? Let's explore further!**
 
 :::
+
+# "gaining access to anyones browser without them even visiting a website"
+
+::: fragment
+
+[Read the article by eva (xyzeva on GitHub)!](https://kibty.town/blog/arc/)
+
+:::
