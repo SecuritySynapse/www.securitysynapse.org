@@ -209,3 +209,44 @@ format:
     - Run without access to the Internet
 
 :::
+
+# Compromise Indicators
+
+::: incremental
+
+- Artifacts that indicate a system has been compromised
+- Shared by security researchers to mitigate threats
+- Common indicators:
+  - Hash of known malicious code
+  - IP addresses, URLs, or domains of control server(s)
+  - Strings or byte patterns in malicious or infected code
+- **How can we detect these indicators?**
+
+:::
+
+## Using the `strings` command
+
+::: incremental
+
+- Extracts strings from binary files
+- Can be used to find malicious code
+- Example: `strings /path/to/malware`
+- Running `strings` on `nvim`:
+
+:::
+
+::: fragment
+
+```text
+export NVIM_SYSTEM_RPLUGIN_MANIFEST='/nix/store/0mifqx8ab7nm7xf3h6jw55fgs109hlz2-neovim-0.10.1/rplugin.vim'
+export GEM_HOME='/nix/store/08bjh6z0xj5cdw86fibbbqabrj8ss6f2-neovim-ruby-env/lib/ruby/gems/3.3.0'
+PATH=${PATH:+':'$PATH':'}
+if [[ $PATH != *':''/nix/store/08bjh6z0xj5cdw86fibbbqabrj8ss6f2-neovim-ruby-env/bin'':'* ]]; then
+    PATH=$PATH'/nix/store/08bjh6z0xj5cdw86fibbbqabrj8ss6f2-neovim-ruby-env/bin'
+PATH=${PATH#':'}
+PATH=${PATH%':'}
+export PATH
+LUA_PATH=${LUA_PATH:+';'$LUA_PATH';'}
+```
+
+:::
