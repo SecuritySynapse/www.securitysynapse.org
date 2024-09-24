@@ -148,3 +148,45 @@ format:
   - Exploiting network security holes
 
 :::
+
+# Understanding Spyware
+
+::: fragment
+
+- Secretly monitors and collects user activity
+
+- Often installed without the user's knowledge
+
+- **Primary goal**: gather information about a person or organization without their knowledge
+
+- Spyware can be spread via:
+  - Phishing emails
+  - Malicious downloads
+  - Bundled with other software
+
+:::
+
+# Insights About Malware
+
+::: incremental
+
+- Easy exploits once you have gained access!
+  - Recursive traversal of directories
+  - Search for sensitive and/or system files
+  - Encrypt files, delete originals, demand ransom
+- Which programming language should be used for malware?
+- Trade-offs for implementing and deploying malware?
+
+:::
+
+# Installation with `curl` and `bash`! We do this?!?
+
+::: incremental
+
+- Examples of common installation methods:
+    - `curl -L https://install.pivpn.io | bash`
+    - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/install.sh)"`
+- What are the security risks of these commands?
+- What are the alternatives to these installation methods?
+
+:::
