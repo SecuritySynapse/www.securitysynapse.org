@@ -52,3 +52,23 @@ format:
   - How much money can it generate?
 
 :::
+
+# Zero-Day Exploits
+
+::: incremental
+
+- Malware typically needs elevated privileges to run
+- *Goal*: privilege escalation without user interaction
+- What is a zero-day exploit?
+    - A previously unknown vulnerability
+    - No patch or fix available
+    - Attackers exploit the vulnerability
+    - Supports malware delivery and attack
+
+:::
+
+::: {.fragment style="font-size: 0.95em; margin-top: -0.5em;"}
+
+**Any recent examples of zero-day exploits? Let's explore further!**
+
+:::
