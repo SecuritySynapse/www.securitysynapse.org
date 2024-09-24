@@ -20,26 +20,23 @@ format:
     footer: "Security Synapse"
 ---
 
-# What is cryptography?
+# What is malware?
 
-::: {.incremental style="margin-top: -0.5em;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.95em;"}
 
-- Establish secure and confidential communication channels
-- Supports creation of digital signatures
-- Allows us to support the "AAA principles":
-  - Authentication
-  - Authorization
-  - Accounting
-- Ensures that attackers cannot "listen in" to communication
-- Ensures *non-repudiation* of digital communication
+- A portmanteau of "malicious software"
+- Programs that are intentionally malicious
+- Distinct from software that is defective
+- Real-world examples of malware:
+    - Viruses
+    - Worms
+    - Trojans
+    - Ransomware
+    - Spyware
 
 :::
 
-# *Important Insight*: cryptography is one of the key building blocks of computer security!
-
-# *Key Reminder*: it is deceptively difficult to deploy cryptographic algorithms correctly!
-
-# *Admonition*: avoid the temptation to "roll your own" cryptography algorithms! Problems!
+# *Probing Questions*: have you every encountered malware? What happened? How did you resolve it? Lessons?
 
 # Cryptography Terms
 
