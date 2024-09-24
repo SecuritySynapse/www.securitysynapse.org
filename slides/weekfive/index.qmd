@@ -9,7 +9,7 @@ execute:
   echo: true
 jupyter: python3
 format:
-  live-revealjs:
+  revealjs:
     completion: true
     theme: default
     css: ../css/styles.css
@@ -38,22 +38,13 @@ format:
 
 # *Probing Questions*: have you every encountered malware? What happened? How did you resolve it? Lessons?
 
-# Cryptography Terms
+# Malware Targets
 
 ::: {.incremental style="margin-top: -0.5em;"}
 
-- **Plaintext**: the original message
-- **Ciphertext**: the encrypted message
-- **Cipher**: the algorithm used to encrypt the message
-- **Key**: the secret used to encrypt the message
-    - **Symmetric Key**: the same key  to encrypt and decrypt
-    - **Asymmetric Key**: different keys to encrypt and decrypt
-
-:::
-
-::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.9em;"}
-
-**Key Questions**: What are the trade-offs between different types of keys?
-Ways to balance security, privacy, and performance? How?
+- Malware targets:
+  - Windows operating systems
+  - Web browsers
+  - Android devices
 
 :::
