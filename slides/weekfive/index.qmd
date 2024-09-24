@@ -190,3 +190,22 @@ format:
 - What are the alternatives to these installation methods?
 
 :::
+
+# Malware Source Code
+
+::: {.fragment .fade .boxed-content style="padding-top: .5em; font-size: 0.9em;"}
+
+- {{< iconify fa github >}} GitHub repository: [vxunderground/MalwareSourceCode](https://github.com/vxunderground/MalwareSourceCode)
+- {{< iconify fa github >}} GitHub repository: [ytisf/theZoo](https://github.com/ytisf/theZoo)
+
+:::
+
+::: incremental
+
+- **Important reminders**:
+    - Only use for educational purposes
+    - Do not run directly on your computer
+    - Use a Docker container or virtual machine
+    - Run without access to the Internet
+
+:::
