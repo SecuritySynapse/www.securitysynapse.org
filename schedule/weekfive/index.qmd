@@ -1,0 +1,38 @@
+---
+title: Exploring Malware 
+description: "What is Malware and How Do We Defend Against It?"
+date: 2024-09-23
+layout: full
+toc: true
+toc-expand: 3
+---
+
+## Exploration
+
+- {{< iconify fa6-solid book-open size=18px >}} Read chapter three of
+[Computer Systems Security: Planning for
+Success](https://web.njit.edu/~rt494/security/)
+- {{< iconify fa6-solid book-open size=18px >}} Review chapters four through twelve 
+[Cracking Codes with Python](https://inventwithpython.com/cracking/)
+
+## Activities
+
+- {{< iconify fa6-solid diagram-project size=18px >}} **Monday**: Laboratory session
+- {{< iconify fa6-solid people-line size=18px >}} **Tuesday and Thursday**: Malware
+  - Understand the types of malware
+  - Learn how to detect and defend against malware
+  - Discover the indicators of compromise
+  - Continued highlighting of the concept of a "security synapse"
+  - Student presentations that feature:
+    - Explanation of a high-level concept in the area of malware
+    - In-class activity that connects concepts to real-world scenarios
+    - Implementation of a malware-adjacent concept in a programming language
+    - Question and answer session with learning peers and the course instructor
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="../../slides/weekfive/"></iframe>
+```
+
+{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week Five: Malware](../../slides/weekfive/)
