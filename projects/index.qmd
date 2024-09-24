@@ -71,25 +71,30 @@ Success](https://web.njit.edu/~rt494/security/) and Chapters four through twelve
 of [Cracking Codes with Python](https://inventwithpython.com/cracking/)
 
 - {{< iconify fa6-solid lightbulb size=18px >}} **Insight**: Chapter four
-through twelve of
-[CCP](https://inventwithpython.com/cracking/) introduce a wide variety of
-different cryptography algorithms an explain how they may be cracked. 
+through twelve of [CCP](https://inventwithpython.com/cracking/) introduce a wide
+variety of different cryptography algorithms an explain how they may be cracked.
+Even though it is important to understand how to implement these algorithms,
+they are not examples of modern cryptography algorithms like the advanced
+encryption standard (AES). It is also important to point out that different
+implementations of AES, like versions of `Fernet` that are implemented purely in
+Python or in a combination of Rust and Python, may have different performance
+trade-offs.
 
 - {{< iconify fa6-solid code size=18px >}} **Task**: This project invites you to
 implement a `cryptobenchmark` in the Python programming language that will
-automatically perform a doubling experiment to measure the encryption and
-decryption performance for the `Fernet` and `rFernet` ciphers.
+automatically perform a [doubling experiment](https://algorithmology.org/) to
+measure the encryption and decryption performance for the `Fernet` and `rFernet`
+ciphers.
 
 ### Resources
 
 To learn more about fuzzing and to gather inspiration for your own
-implementation of the `serverfuzzer`, please consult the following technical
-resources about building fuzzers:
+implementation of the `cryptobenchmark`, please consult the following technical
+resources about cryptography using various implementations of AES:
 
-- [Atheris: A Coverage-Guided, Native Python Fuzzer](https://github.com/google/atheris)
-- [AFL: American Fuzzy Lop, A Security-Oriented Fuzzer](https://github.com/google/AFL)
-- [Fuzzing: Breaking Things with Random Inputs](https://www.fuzzingbook.org/html/Fuzzer.html)
-- [Property-Based Testing with Hypothesis](https://github.com/HypothesisWorks/hypothesis)
+- [Fernet: A Python Implementation of AES](https://cryptography.io/en/latest/fernet/)
+- [rFernet: A Rust-Based Implementation of AES](https://github.com/aviramha/rfernet)
+- [fernet-rs](https://github.com/mozilla-services/fernet-rs)
 
 Interested in working on this project? See the [{{< iconify fa6-brands github
 size=18px >}}
