@@ -261,7 +261,8 @@ format:
 
 ::: {.fragment style="font-size: 0.95em; margin-top: -0.1em;"}
 
-**{{< iconify ph scales >}} Attackers trade-off ease-of-use and effectiveness, people who are targets trade-off ease-of-use and security**
+**{{< iconify ph scales >}} _Trade-offs_: Attackers trade-off ease-of-use and
+effectiveness, people who are targets trade-off ease-of-use and security**
 
 :::
 
@@ -528,13 +529,40 @@ __pyarmor__(__name__, __file__, b'PY000000\x00\x03\x0c\x00\xcb\r\r\n\x80\x00\x01
 ::: {.incremental style="font-size: 0.95em;"}
 
 - Analysis with `strings` is clearly no longer possible!
-- *What are the benefits of obfuscating malware?*
+- **_What are the benefits of obfuscating malware?_**
   - Makes it harder for humans to detect and analyze
   - Reduces the likelihood of detection by security software
   - Increases the time required for reverse engineering
-- *What are the downsides of obfuscating malware?*
+- **_What are the downsides of obfuscating malware?_**
   - May increase the size of the malware
   - May require additional libraries or dependencies
   - Makes it harder for attackers to understand and maintain
+
+:::
+
+# "Cyber Kill Chain" Steps
+
+::: incremental
+
+- Steps in the malware lifecycle:
+  - Reconnaissance
+  - Weaponization
+  - Delivery
+  - Exploitation
+  - Installation
+  - Command and Control
+  - Exfiltration
+
+:::
+
+## Case Study: Emotet Ransomware
+
+::: incremental
+
+- Ransomware targeting Windows systems
+  - First observed in 2014
+  - Uses email attachments to spread
+  - Now transmitted via malicious documents
+
 
 :::
