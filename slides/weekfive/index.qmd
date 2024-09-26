@@ -217,10 +217,10 @@ format:
 - Artifacts that indicate a system has been compromised
 - Shared by security researchers to mitigate threats
 - Common indicators:
-  - Hash of known malicious code
+  - Hash of known malicious source or object code
   - IP addresses, URLs, or domains of control server(s)
   - Strings or byte patterns in malicious or infected code
-- **How can we detect these indicators?**
+- **How can we (automatically) detect these indicators?**
 
 :::
 
@@ -248,5 +248,46 @@ PATH=${PATH%':'}
 export PATH
 LUA_PATH=${LUA_PATH:+';'$LUA_PATH';'}
 ```
+
+:::
+
+## Obfuscating Malware
+
+::: incremental
+
+- Obscure a malware's source code or binary
+
+- Makes it harder to detect and analyze
+
+- Common obfuscation techniques:
+  - Encryption
+  - Encoding
+  - Compression
+  - Polymorphism
+
+:::
+
+::: fragment
+
+{{< iconify fa6-solid people-line >}} **How would you obfuscate a Python, Java,
+or C program?**
+
+:::
+
+## Obfuscation Details
+
+::: {.incremental style="margin-top: -0.5em;"}
+
+- What can we obfuscate in a program?
+
+  - Hard-coded strings
+  - Names of functions or variables
+  - Control flow of the program
+  - Data flow of the program
+  - Data structures and algorithms
+
+- *Remember*, the program must still work correctly
+- Deobfuscation is the process of reversing obfuscation
+- Let's explore some obfuscation techniques!
 
 :::
