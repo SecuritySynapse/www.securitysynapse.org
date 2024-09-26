@@ -564,5 +564,13 @@ __pyarmor__(__name__, __file__, b'PY000000\x00\x03\x0c\x00\xcb\r\r\n\x80\x00\x01
   - Uses email attachments to spread
   - Now transmitted via malicious documents
 
+:::
+
+::: fragment
+
+> One noteworthy Emotet attack on the City of Allentown, PA required direct
+> help from Microsoft’s incident response team to clean up and reportedly cost
+> the city upwards of $1M to fix. **Reference: [MalwareBytes
+> Analysis of Emotet](https://www.malwarebytes.com/emotet)**
 
 :::
