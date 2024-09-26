@@ -81,7 +81,24 @@ format:
 
 :::
 
-# Understanding Worms
+# Surveying the Landscape of Malware
+
+::: fragment
+
+- Different types of malware
+- Some malware span multiple categories
+- Malware exists in source code and binaries
+- Malware may appear in documents or data
+
+:::
+
+::: fragment
+
+{{< iconify fa6-solid map >}} **Let's explore the landscape of malware!**
+
+:::
+
+## Understanding Worms
 
 ::: fragment
 
@@ -94,11 +111,17 @@ format:
 - Worms can be spread via:
   - Email
   - Network shares
-  - USB drives
+  - USB drive
 
 :::
 
-# Understanding Viruses
+::: fragment
+
+{{< iconify fa6-solid map >}} **Can you find and explain an example of a worm?**
+
+:::
+
+## Understanding Viruses
 
 ::: fragment
 
@@ -115,7 +138,13 @@ format:
 
 :::
 
-# Understanding Trojans
+::: fragment
+
+{{< iconify fa6-solid map >}} **Can you find and explain an example of a virus?**
+
+:::
+
+## Understanding Trojan Horses
 
 ::: fragment
 
@@ -132,7 +161,13 @@ format:
 
 :::
 
-# Exploring Ransomware
+::: {.fragment style="font-size: 0.95em; margin-top: -0.5em;"}
+
+{{< iconify fa6-solid map >}} **Can you find and explain an example of a trojan horse?**
+
+:::
+
+## Exploring Ransomware
 
 ::: fragment
 
@@ -149,7 +184,13 @@ format:
 
 :::
 
-# Understanding Spyware
+::: fragment
+
+{{< iconify fa6-solid map >}} **Can you find and explain an example of ransomware?**
+
+:::
+
+## Understanding Spyware
 
 ::: fragment
 
@@ -157,7 +198,7 @@ format:
 
 - Often installed without the user's knowledge
 
-- **Primary goal**: gather information about a person or organization without their knowledge
+- **Primary goal**: gather information on person or organization
 
 - Spyware can be spread via:
   - Phishing emails
@@ -166,14 +207,28 @@ format:
 
 :::
 
-# Insights About Malware
+::: fragment
+
+{{< iconify fa6-solid map >}} **Can you find and explain an example of spyware?**
+
+:::
+
+## Insights About Malware
 
 ::: incremental
 
+- A variety of forms (e.g., ransomware, spyware, worms)
 - Easy exploits once you have gained access!
   - Recursive traversal of directories
   - Search for sensitive and/or system files
   - Encrypt files, delete originals, demand ransom
+
+
+:::
+
+::: {.fragment .boxed-content style="padding-top: .5em; font-size: 0.85em;"}
+
+- Which common practices promote the spread of malware?
 - Which programming language should be used for malware?
 - Trade-offs for implementing and deploying malware?
 
@@ -220,7 +275,12 @@ format:
   - Hash of known malicious source or object code
   - IP addresses, URLs, or domains of control server(s)
   - Strings or byte patterns in malicious or infected code
-- **How can we (automatically) detect these indicators?**
+
+:::
+
+::: fragment
+
+{{< iconify fa6-solid people-line >}} **How can we (automatically) detect these indicators?**
 
 :::
 
@@ -325,6 +385,13 @@ or C program?**
 4.0G ┌─┴ .                                                   │█████████████████████████████████████████████████████ │ 100%
 
 ```
+
+## Importance of System Configuration
+
+::: incremental
+
+
+:::
 
 ## Collecting System Data
 
