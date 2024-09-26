@@ -574,3 +574,53 @@ __pyarmor__(__name__, __file__, b'PY000000\x00\x03\x0c\x00\xcb\r\r\n\x80\x00\x01
 > Analysis of Emotet](https://www.malwarebytes.com/emotet)**
 
 :::
+
+## Wrapping Up on Malware
+
+::: {.columns style="margin-top: 0.5em;"}
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Key Concepts*
+
+#### Studied Types
+
+- Viruses
+- Worms
+- Trojans
+
+#### Important Terms
+
+- Payload
+- Infection
+- Obfuscation
+
+:::
+
+:::
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Best Practices*
+
+#### Implementation
+
+- Understand behavior
+- Know detection methods
+- Practice "safe computing"
+
+#### Exploration
+
+- Analyze threats
+- Study propagation
+- Understand trade-offs
+
+:::
+
+:::
+
+:::
