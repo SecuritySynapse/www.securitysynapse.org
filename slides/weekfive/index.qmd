@@ -390,6 +390,20 @@ or C program?**
 
 ::: incremental
 
+- System configuration data may be sensitive:
+
+  - Reveals the programs in use
+  - Identifies program versions
+  - Suggests programs to target
+  - Contains access credentials
+
+:::
+
+::: {.fragment .fade .boxed-content style="padding-top: .25em; padding-bottom: .25em; font-size: 0.9em;"}
+
+- What if a program stores your credentials in plain text?
+- How could we build a program that collects system data?
+- What would be the best language to implement this tool?
 
 :::
 
