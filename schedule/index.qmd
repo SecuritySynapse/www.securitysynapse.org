@@ -32,12 +32,14 @@ listing:
   - **Weeks**: One through six
   - **Chapters**: One through three in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
   - **Midterm Examination One**: Week six during the laboratory session
+  - **In-Person Assessment One**: Week six during the classroom sessions
 
 - **Module Two** 
   - **Topic**: Challenges and Solutions in Computer Security
   - **Weeks**: Seven through eleven
   - **Chapters**: Four through seven in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
   - **Midterm Examination Two**: Week eleven during the laboratory session
+  - **In-Person Assessment Two**: Week eleven during the classroom sessions
 
 - **Module Three** 
   - **Topic**: Advanced Topics in Computer Security
@@ -61,8 +63,9 @@ listing:
     - **Midterm Exam Two**: Week Eleven
     - **Final Exam**: Week Sixteen
   - *In-Person Assessments*
-    - **In-Person Assessment One**: Week One
+    - **In-Person Assessment One**: Week Six
     - **In-Person Assessment Two**: Week Eleven
+    - **Note**: Both occur during Tuesday and Thursday class sessions
   - *Breaks*  
     - **Labor Day**: Week Two
     - **All-College Programming**: Week Eleven
