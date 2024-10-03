@@ -165,7 +165,7 @@ popular press articles in the field of computer security.
 - **Module Three**: *Week Twelve through Week Sixteen*
   - **Week Twelve**: Chapters thirteen through seventeen in
   [CCP](https://inventwithpython.com/cracking/)
-  - **Week Thirteen**: Chapter eight and nine in
+  - **Week Thirteen**: Chapters eight and nine in
   [CSP](https://web.njit.edu/~rt494/security/)
   - **Week Fourteen**: Chapters eighteen through twenty in
   [CCP](https://inventwithpython.com/cracking/)
