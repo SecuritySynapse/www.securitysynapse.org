@@ -20,7 +20,7 @@ format:
     footer: "Security Synapse"
 ---
 
-# What is a networking protocols?
+# What is a computer networking protocol?
 
 ::: {.incremental style="margin-top: -0.5em; font-size: 0.95em;"}
 
@@ -42,17 +42,83 @@ and control attack opportunities
 
 :::
 
-# Malware Targets
+# Networking Overview
 
-::: {.incremental style="margin-top: -0.5em;"}
+::: incremental
 
-- Malware targets:
-  - Windows operating systems
-  - Web browsers
-  - Android devices
-- Malware considers:
-  - How many users are affected?
-  - How easily can it infect and spread?
-  - How much money can it generate?
+- Network Access Layer
+- Internet Layer Protocols
+- Transport Layer Protocols
+- Application Layer Protocols
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.875em;"}
+
+**Key Questions**: Why are networking protocols divided into layers? Which
+layers are closer to hardware? Closer to people using networks?
+
+:::
+
+## Address Resolution Protocol (ARP)
+
+::: incremental
+
+- Resolves IP addresses to MAC addresses
+- Operates at the data link layer
+- Uses ARP cache to store mappings
+- ARP request and ARP reply messages
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.875em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Key Questions**
+
+- What is an example of an IP address?
+- What is an example of a MAC address?
+- How are these addresses similar to and different from each other?
+
+:::
+
+## Wireless Networking
+
+::: incremental
+
+- Uses radio waves to provide network connectivity
+- Operates on IEEE 802.11 standards
+- **Common frequencies**: 2.4 GHz and 5 GHz
+- **Security protocols**: WEP, WPA, WPA2, WPA3
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.875em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Key Questions**
+
+- What are the trade-offs between different frequencies?
+- Which security protocol is the most secure? Why?
+- What are the benefits and downsides of wireless networking?
+
+:::
+
+## Ethernet
+
+::: incremental
+
+- Wired networking technology
+- Uses MAC addresses for communication
+- Common standards: 10BASE-T, 100BASE-TX, 1000BASE-T
+- Full-duplex and half-duplex modes
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.875em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Key Questions**
+
+- What are the benefits and downsides of wired networking?
+- How does this approach compare to wireless networking?
+- How do the different duplex modes affect network performance?
 
 :::
