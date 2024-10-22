@@ -219,6 +219,28 @@ enp103s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 :::
 
+## Internet Control Message Protocol
+
+::: incremental
+
+- **Error Reporting**: Error messages and operational details
+- **Types of Messages**: Echo Request/Reply (ping), Destination Unreachable, Time Exceeded
+all aid in network diagnostics
+- **Integral to IP**: Gives IP insights about network issues
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 0.85em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Key Questions**
+
+- What is the primary purpose of ICMP?
+- How does ICMP help in network diagnostics?
+- Why do some sites block ICMP traffic?
+
+:::
+
+
 ## Using ICMP with `ping`
 
 ```text
