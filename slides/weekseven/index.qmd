@@ -97,7 +97,7 @@ layers are closer to hardware? Closer to people using networks?
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.875em;"}
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.875em;"}
 
 {{< iconify fa6-solid lightbulb >}} **Key Questions**
 
@@ -118,7 +118,7 @@ layers are closer to hardware? Closer to people using networks?
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.875em;"}
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.875em;"}
 
 {{< iconify fa6-solid lightbulb >}} **Key Questions**
 
@@ -139,7 +139,7 @@ layers are closer to hardware? Closer to people using networks?
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.875em;"}
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.875em;"}
 
 {{< iconify fa6-solid lightbulb >}} **Key Questions**
 
@@ -209,7 +209,7 @@ enp103s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 :::
 
-::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 0.85em;"}
+::: {.fragment .boxed-content .fade style="margin-top: 0.05em; font-size: 0.85em;"}
 
 {{< iconify fa6-solid lightbulb >}} **Key Questions**
 
