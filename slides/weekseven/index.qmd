@@ -240,7 +240,6 @@ all aid in network diagnostics
 
 :::
 
-
 ## Using ICMP with `ping`
 
 ```text
@@ -264,5 +263,47 @@ rtt min/avg/max/mdev = 14.641/16.258/19.470/1.680 ms
 - What is the meaning of `ttl` and `time`?
 - What does `ping` report about packet transmission?
 - Will all servers response to `ping` requests?
+
+:::
+
+## Network Address Translation (NAT)
+
+::: incremental
+
+- **IP Address Conservation**: Share a single public IP address
+- **Types**: Static NAT, Dynamic NAT, Port Address Translation
+- **Benefits**: Hides internal IP addresses from external networks
+- **Use Cases**: Home routers, enterprise networks, and VPNs
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.05em; font-size: 0.85em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Key Questions**
+
+- How does NAT contribute to IP address conservation?
+- What are the different types of NAT and their use cases?
+- How does NAT enhance network security?
+
+:::
+
+## IP Security (IPSec)
+
+::: incremental
+
+- **Encryption**: Secures data with encryption
+- **Authentication**: Verifies data integrity and origin
+- **Benefits**: Confidentiality, integrity, and authenticity
+- **Use Cases**: VPNs, secure communications over IP networks
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.05em; font-size: 0.85em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Key Questions**
+
+- How does IPSec provide encryption?
+- What are common use cases for IPSec?
+- How does IPSec ensure data integrity and origin authentication?
 
 :::
