@@ -42,6 +42,32 @@ and control attack opportunities
 
 :::
 
+## Using `dig` for DNS Resolution
+
+```text
+; <<>> DiG 9.18.28 <<>> www.securitysynapse.org
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 49950
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+; COOKIE: 0b85acf369d8eae70100000067179b5124bf1ddbdb95f41e (good)
+;; QUESTION SECTION:
+;www.securitysynapse.org.       IN      A
+
+;; ANSWER SECTION:
+www.securitysynapse.org. 14400  IN      CNAME   securitysynapse.netlify.app.
+securitysynapse.netlify.app. 20 IN      A       44.217.161.11
+securitysynapse.netlify.app. 20 IN      A       54.161.234.33
+
+;; Query time: 103 msec
+;; SERVER: 192.168.5.20#53(192.168.5.20) (UDP)
+;; WHEN: Tue Oct 22 08:32:17 EDT 2024
+;; MSG SIZE  rcvd: 153
+```
+
 # Networking Overview
 
 ::: incremental
@@ -120,5 +146,54 @@ layers are closer to hardware? Closer to people using networks?
 - What are the benefits and downsides of wired networking?
 - How does this approach compare to wireless networking?
 - How do the different duplex modes affect network performance?
+
+:::
+
+## Wireless Output from `ifconfig`
+
+```text
+wlp1s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.130.101  netmask 255.255.192.0  broadcast 10.0.191.255
+        inet6 fe80::2b19:5ed6:ef18:51ed  prefixlen 64  scopeid 0x20<link>
+        ether a8:3b:76:ba:ac:e9  txqueuelen 1000  (Ethernet)
+        RX packets 5598  bytes 343800 (335.7 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 39  bytes 3733 (3.6 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
+
+::: {.fragment .fade style="margin-top: 1.0em; font-size: 0.85em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Key Questions**
+
+- What is the name of this wireless interface?
+- What is the IP address of this wireless interface?
+- What is the MAC address of this wireless interface?
+- How much data has this interface sent and received?
+
+:::
+
+## Ethernet Output from `ifconfig`
+
+```text
+enp103s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.10.1.173  netmask 255.255.255.0  broadcast 10.10.1.255
+        inet6 fe80::2469:6a20:94e2:494a  prefixlen 64  scopeid 0x20<link>
+        ether 64:4b:f0:12:6f:d6  txqueuelen 1000  (Ethernet)
+        RX packets 65541  bytes 42671869 (40.6 MiB)
+        RX errors 0  dropped 33  overruns 0  frame 0
+        TX packets 35552  bytes 14487279 (13.8 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device memory 0x60300000-6037ffff
+```
+
+::: {.fragment .fade style="margin-top: 1.0em; font-size: 0.85em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Key Questions**
+
+- What is the name of this wired interface?
+- What is the IP address of this wired interface?
+- What is the MAC address of this wired interface?
+- How much data has this interface sent and received?
 
 :::
