@@ -198,6 +198,27 @@ enp103s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 :::
 
+## Internet Protocol (IP)
+
+::: incremental
+
+- **IP Addressing**: Unique identifiers for devices on a network
+- **Routing**: Path data packets take to reach destination
+- **IPv4 and IPv6**: Two different versions of IP
+- **Packet Structure**: Consists of a routing header and payload
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 0.85em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Key Questions**
+
+- What is the primary difference between IPv4 and IPv6?
+- How does IP routing determine the best path for data packets?
+- What information is contained in the header of an IP packet?
+
+:::
+
 ## Using ICMP with `ping`
 
 ```text
