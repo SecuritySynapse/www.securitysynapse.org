@@ -20,6 +20,67 @@ format:
     footer: "Security Synapse"
 ---
 
+## Network Communication
+
+:::: {.columns}
+
+::: {.column width=45%}
+
+```{mermaid}
+%%| echo: false
+flowchart TB
+  subgraph Client
+    A(Client) --> B[Send Message]
+    F[Receive Response] --> A
+  end
+
+  subgraph Server
+    C(Server) --> D[Process Request]
+    D --> E[Send Response]
+    E --> F
+  end
+
+  B --> C
+
+  style Client fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style Server fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style A fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style B fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style C fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style D fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style E fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style F fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  linkStyle 0,1,2,3,4,5 stroke:#1c1c1c,color:#1c1c1c
+```
+
+:::
+
+::: {.column width=55%}
+
+::: {.incremental style="font-size: 0.785em;"}
+
+- **Steps for Client-Server Communication**
+  - {{< iconify fa6-solid map >}} Client locates the server
+  - {{< iconify fa6-solid envelope >}} Client sends message to server
+  - {{< iconify fa6-solid server >}} Server processes the request
+  - {{< iconify fa6-solid envelope >}} Server sends response to client
+  - {{< iconify fa6-solid gift >}} Client gets response from server
+
+:::
+
+::: {.incremental style="font-size: 0.785em;"}
+
+- **Notes on Client-Server Communication**
+  - {{< iconify fa6-solid route >}} Messages broken into packets
+  - {{< iconify fa6-solid ruler-combined >}} Protocols govern communication
+  - {{< iconify fa6-solid user-secret >}} Support end-to-end encryption
+
+:::
+
+:::
+
+::::
+
 # What is a computer networking protocol?
 
 ::: {.incremental style="margin-top: -0.5em; font-size: 0.95em;"}
@@ -35,10 +96,11 @@ format:
 
 # How does an understanding network protocols connect to computer security?
 
-::: incremental
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.875em;"}
 
-- Know a network protocol and its weakness to see exploits, the attack surface,
-and control attack opportunities
+{{< iconify fa6-solid award >}} Know a network protocol and its weakness to
+discern possible exploits, model the attack surface, and control attack
+opportunities
 
 :::
 
@@ -307,3 +369,5 @@ rtt min/avg/max/mdev = 14.641/16.258/19.470/1.680 ms
 - How does IPSec ensure data integrity and origin authentication?
 
 :::
+
+
