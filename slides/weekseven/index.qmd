@@ -20,11 +20,13 @@ format:
     footer: "Security Synapse"
 ---
 
-## Network Communication
+## Network Communication Overview
 
 :::: {.columns}
 
 ::: {.column width=45%}
+
+::: fragment
 
 ```{mermaid}
 %%| echo: false
@@ -52,6 +54,8 @@ flowchart TB
   style F fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
   linkStyle 0,1,2,3,4,5 stroke:#1c1c1c,color:#1c1c1c
 ```
+
+:::
 
 :::
 
@@ -94,7 +98,7 @@ flowchart TB
 
 :::
 
-# How does an understanding network protocols connect to computer security?
+# Wait, how does understanding network protocols connect to computer security?
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.875em;"}
 
@@ -148,6 +152,8 @@ layers are closer to hardware? Closer to people using networks?
 
 :::
 
+# Let's investigate each networking protocol layer starting with `Network` and ultimately moving to `Application`!
+
 ## Address Resolution Protocol (ARP)
 
 ::: incremental
@@ -180,7 +186,7 @@ layers are closer to hardware? Closer to people using networks?
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.875em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.875em;"}
 
 {{< iconify fa6-solid lightbulb >}} **Key Questions**
 
@@ -201,7 +207,7 @@ layers are closer to hardware? Closer to people using networks?
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.875em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.875em;"}
 
 {{< iconify fa6-solid lightbulb >}} **Key Questions**
 
@@ -249,7 +255,7 @@ enp103s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
         device memory 0x60300000-6037ffff
 ```
 
-::: {.fragment .fade style="margin-top: 1.0em; font-size: 0.85em;"}
+::: {.fragment .fade style="margin-top: 0.85em; font-size: 0.85em;"}
 
 {{< iconify fa6-solid lightbulb >}} **Key Questions**
 
@@ -271,7 +277,7 @@ enp103s0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
 :::
 
-::: {.fragment .boxed-content .fade style="margin-top: 0.05em; font-size: 0.85em;"}
+::: {.fragment .boxed-content .fade style="margin-top: -0.1em; font-size: 0.85em;"}
 
 {{< iconify fa6-solid lightbulb >}} **Key Questions**
 
@@ -339,7 +345,7 @@ rtt min/avg/max/mdev = 14.641/16.258/19.470/1.680 ms
 
 :::
 
-::: {.fragment .boxed-content .fade style="margin-top: 0.05em; font-size: 0.85em;"}
+::: {.fragment .boxed-content .fade style="margin-top: -0.1em; font-size: 0.85em;"}
 
 {{< iconify fa6-solid lightbulb >}} **Key Questions**
 
