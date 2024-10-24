@@ -376,4 +376,48 @@ rtt min/avg/max/mdev = 14.641/16.258/19.470/1.680 ms
 
 :::
 
+## Transmission Control Protocol (TCP)
 
+:::: {.columns}
+
+::: {.column width=50%}
+
+::: fragment
+
+- **Reliable Communication**
+  - Three-way handshake
+  - Data integrity checks
+  - Flow control
+
+- **Packet Management**
+  - Breaks data into packets
+  - Ensures packet delivery
+
+:::
+
+:::
+
+::: {.column width=50%}
+
+::: fragment
+
+- **Connection-Oriented**
+  - Higher latency
+  - Ensures reliability
+
+- **Security Implications**
+  - Intercept or manipulate
+  - DoS or MitM attacks
+  - Evolving TCP stacks
+
+:::
+
+:::
+
+::::
+
+::: fragment
+
+{{< iconify fa6-solid lightbulb >}} What are the benefits and drawbacks of TCP for networking?
+
+:::
