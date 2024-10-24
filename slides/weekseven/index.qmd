@@ -421,3 +421,28 @@ rtt min/avg/max/mdev = 14.641/16.258/19.470/1.680 ms
 {{< iconify fa6-solid lightbulb >}} What are the benefits and drawbacks of TCP for networking?
 
 :::
+
+## Using `nmap` for Port Scanning
+
+```text
+Starting Nmap 7.94 ( https://nmap.org ) at 2024-10-23 21:17 EDT
+Nmap scan report for 192.168.0.132
+
+Host is up (0.017s latency).
+Not shown: 92 filtered tcp ports (no-response), 7 filtered tcp ports (admin-prohibited)
+
+PORT   STATE SERVICE
+22/tcp open  ssh
+MAC Address: DC:A6:32:C7:04:28 (Raspberry Pi Trading)
+
+Nmap done: 1 IP address (1 host up) scanned in 2.20 seconds
+```
+
+::: {.fragment .fade style="margin-top: 0.25em; font-size: 0.85em;"}
+
+- Scans the host at the IP address `192.168.0.132`
+- Detects open ports and services on the host
+- Detects the MAC address of the specified server
+- Shows that `ssh` is currently open on port `22`
+
+:::
