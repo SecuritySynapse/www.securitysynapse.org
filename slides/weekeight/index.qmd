@@ -286,6 +286,26 @@ flowchart LR
 
 - **Mitigation**
   - Validate and sanitize inputs
-  - Use Content Security Policy (CSP)
+
+:::
+
+## SQL Injection Attacks
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.8em;"}
+
+- **Attack Overview**
+  - Attacker injects malicious SQL queries
+  - Executes in the database
+
+- **Vulnerability**
+  - Poor input validation
+  - Directly embedding user input in SQL queries
+
+- **Consequences**
+  - Data leakage
+  - Unauthorized data modification
+
+- **Mitigation**
+  - Use prepared statements and validate and sanitize inputs
 
 :::
