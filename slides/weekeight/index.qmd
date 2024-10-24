@@ -119,4 +119,24 @@ flowchart LR
 
 :::
 
+## Replays and One-Time Passwords
 
+::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
+
+- **Replay Attacks**
+  - Attacker intercepts and reuses valid data
+  - Exploits repeated transmission
+  - Compromises authentication
+
+- **Thwarting with One-Time Passwords (OTPs)**
+  - Unique password for each session
+  - Valid for a single use only
+  - Prevents reuse of intercepted data
+
+:::
+
+::: {.fragment style="font-size: 0.85em;"}
+
+{{< iconify fa6-solid lightbulb >}} **OTPs enhance security and data integrity and thwart replay attacks!**
+
+:::
