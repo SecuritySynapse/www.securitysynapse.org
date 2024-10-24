@@ -45,6 +45,16 @@ format:
 
 # What are some common attacks on computer networking protocol?
 
+::: {.fragment style="font-size: 0.9em; margin-top: -0.5em;"}
+
+- Interception attacks
+- Network layer attacks
+- Internet layer attacks
+- Name-resolution attacks
+- Web-based attacks
+
+:::
+
 ## "Man-in-the-Middle" Attack
 
 ::: {.fragment style="font-size: 1.85em;"}
