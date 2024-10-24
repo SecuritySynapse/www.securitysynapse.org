@@ -63,7 +63,7 @@ format:
 
 ## "Man-in-the-Middle" Attack
 
-::: {.fragment style="font-size: 1.85em;"}
+::: fragment
 
 ```{mermaid}
 %%| echo: false
@@ -183,7 +183,7 @@ flowchart LR
 
 ## Mitigating the MAC Address Attacks
 
-::: {.fragment style="font-size: 0.8em;"}
+::: {.fragment style="font-size: 0.825em;"}
 
 - **Port Security**
    - Configure switch ports to allow only specific MAC addresses
@@ -199,3 +199,26 @@ flowchart LR
    - Limit the broadcast domain and reduce the impact of MAC spoofing
 
 :::
+
+## IP Spoofing
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.8em;"}
+
+- **Inherent Insecurity**
+  - IP was not designed with security
+  - Easy to forge IP addresses
+
+- **Protocol Limitations**
+  - No built-in authentication
+  - No integrity checks
+
+- **IPSec Solution**
+  - Adds security to IP layer
+  - Provides authentication and encryption
+
+- **Layered Security**
+  - Secure solutions needed at multiple layers
+
+:::
+
+# Combine application and transport layer security to achieve a network that is more secure overall! *Nice*!
