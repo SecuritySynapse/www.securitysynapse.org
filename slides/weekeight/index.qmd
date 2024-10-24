@@ -135,7 +135,7 @@ flowchart LR
 
 :::
 
-::: {.fragment style="font-size: 0.85em;"}
+::: {.fragment style="font-size: 0.85em; margin-top: -0.25em;"}
 
 {{< iconify fa6-solid lightbulb >}} **OTPs enhance security and data integrity and thwart replay attacks!**
 
