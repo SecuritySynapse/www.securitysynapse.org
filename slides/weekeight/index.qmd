@@ -23,7 +23,7 @@ format:
 
 ## Network Protocol Lifecycle
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.75em;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.725em;"}
 
 - **Design Protocol**
   - Define rules for communication
@@ -39,7 +39,7 @@ format:
 
 - **Repeat Process**
   - Continuously monitor for new threats
-  - Iterate to enhance security
+  - Iterate to enhance protocol security
 
 :::
 
