@@ -422,6 +422,112 @@ rtt min/avg/max/mdev = 14.641/16.258/19.470/1.680 ms
 
 :::
 
+## User Datagram Protocol (UDP)
+
+:::: {.columns}
+
+::: {.column width=50%}
+
+::: fragment
+
+- **Unreliable Communication**
+  - No handshake
+  - No data integrity checks
+  - No flow control
+
+- **Packet Management**
+  - Sends data as packets
+  - No guarantee of delivery
+
+:::
+
+:::
+
+::: {.column width=50%}
+
+::: fragment
+
+- **Connectionless Protocol**
+  - Lower latency
+  - No order or reliability
+
+- **Security Implications**
+  - Easier to spoof
+  - Packet loss potential
+  - Ordering attacks
+
+:::
+
+:::
+
+::::
+
+::: fragment
+
+{{< iconify fa6-solid lightbulb >}} Can you compare and contrast UDP and TCP?
+
+:::
+
+## Application Layer Protocols
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 0.85em;"}
+
+- Application-specific protocols build on the previous layers
+- Supports communication for applications and services
+- Common examples include HTTP, FTP, SMTP, and DNS
+
+
+:::
+
+:::: {.columns style="font-size=0.85em;"}
+
+::: {.column width=50%}
+
+::: fragment
+
+- **DHCP**
+  - Dynamic Host Configuration Protocol
+  - Assigns IP addresses
+  - Automates network configuration
+
+:::
+
+:::
+
+::: {.column width=50%}
+
+::: fragment
+
+- **SSL/TLS**
+  - Secure Sockets Layer / Transport Layer Security
+  - Encrypts data in transit
+  - Ensures secure communication
+
+:::
+
+:::
+
+::::
+
+## Common Ports for Services
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 0.75em;"}
+
+| Protocol | Port | Description          |
+|----------|------|----------------------|
+| SSH      | 22   | Secure Shell         |
+| HTTP     | 80   | Hypertext Transfer Protocol |
+| HTTPS    | 443  | Hypertext Transfer Protocol Secure |
+| FTP      | 21   | File Transfer Protocol |
+| SMTP     | 25   | Simple Mail Transfer Protocol |
+| DNS      | 53   | Domain Name System   |
+| POP3     | 110  | Post Office Protocol 3 |
+| IMAP     | 143  | Internet Message Access Protocol |
+| Telnet   | 23   | Unencrypted text communications |
+| NTP      | 123  | Network Time Protocol |
+
+:::
+
 ## Using `nmap` for Port Scanning
 
 ```text
@@ -444,5 +550,55 @@ Nmap done: 1 IP address (1 host up) scanned in 2.20 seconds
 - Detects open ports and services on the host
 - Detects the MAC address of the specified server
 - Shows that `ssh` is currently open on port `22`
+
+:::
+
+## Wrapping Up on Network Protocols
+
+::: {.columns style="margin-top: 0.5em;"}
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Key Concepts*
+
+#### Studied Protocols
+
+- TCP/IP
+- UDP
+- IPSec and SSL/TLS
+
+#### Key Concepts
+
+- Protocol layers
+- Client-server communication
+- Secure data transmission
+
+:::
+
+:::
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Best Practices*
+
+#### Implementation
+
+- Understand protocol roles
+- Ensure secure configurations
+- Regularly update protocols
+
+#### Exploration
+
+- Compare with other protocols
+- Study protocol interactions
+- Consider next generation
+
+:::
+
+:::
 
 :::
