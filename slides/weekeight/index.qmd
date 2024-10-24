@@ -140,3 +140,62 @@ flowchart LR
 {{< iconify fa6-solid lightbulb >}} **OTPs enhance security and data integrity and thwart replay attacks!**
 
 :::
+
+## Attacking the MAC Address
+
+::: {.columns}
+
+::: {.column width=50%}
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
+
+- **MAC Spoofing/Cloning**
+  - Attacker changes a device's MAC address
+  - Now possible to bypass network access controls
+  - Enables the impersonation of legitimate devices
+
+:::
+
+:::
+
+::: {.column width=50%}
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
+
+- **MAC Flooding**
+  - Switches track MAC to IP address mapping
+  - Overloads the switch with fake MAC addresses
+  - Compromises network performance
+
+:::
+
+:::
+
+::::
+
+::: {.fragment style="font-size: 0.85em;"}
+
+- Attack performed at the network layer
+- Exploits the inherent weaknesses of MAC addresses
+- How can we mitigate this type of attack?
+
+:::
+
+## Mitigating the MAC Address Attacks
+
+::: {.fragment style="font-size: 0.8em;"}
+
+- **Port Security**
+   - Configure switch ports to allow only specific MAC addresses
+   - Limit the number of MAC addresses per port
+   - Use sticky MAC addresses to learn and restrict MAC addresses
+
+- **802.1X Authentication**
+   - Network access controls to authenticate devices before network access
+   - Ensure that only authorized devices can connect to the network
+
+- **VLAN Segmentation**
+   - Segment the network into smaller VLANs
+   - Limit the broadcast domain and reduce the impact of MAC spoofing
+
+:::
