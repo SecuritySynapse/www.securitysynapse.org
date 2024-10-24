@@ -222,3 +222,24 @@ flowchart LR
 :::
 
 # Combine application and transport layer security to achieve a network that is more secure overall! *Nice*!
+
+## DNS Cache Poisoning
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.8em;"}
+
+- **Attack Overview**
+  - Attacker corrupts DNS cache
+  - Redirects users to malicious sites
+
+- **Vulnerability**
+  - Exploits lack of DNS query validation
+  - Alters DNS responses
+
+- **Consequences**
+  - Phishing attacks
+  - Data theft
+
+- **Mitigation**
+  - Use DNSSEC for validation!
+
+:::
