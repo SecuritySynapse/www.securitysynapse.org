@@ -243,3 +243,49 @@ flowchart LR
   - Use DNSSEC for validation!
 
 :::
+
+# What are the greatest security vulnerabilities at the application level of the network protocol stack? How to control?
+
+## OWASP Top Ten
+
+::: {.fragment style="font-size: 0.9em; margin-top: -0.15em;"}
+
+- Broken access control
+- Cryptographic failures
+- Injection
+- Insecure design
+- Security misconfiguration
+- Vulnerable and outdated components
+- Identification and authentication failures
+- Software and data integrity failures
+- Security logging and monitoring failures
+- Server-side request forgery
+
+:::
+
+# Let's talk about prominent types of injection attacks at the application layer!
+
+- {{< iconify fa6-solid database >}} Cross-site scripting attacks
+- {{< iconify fa6-solid globe >}} SQL injection attacks
+
+## Cross-Site Scripting (XSS)
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.8em;"}
+
+- **Attack Overview**
+  - Attacker injects malicious scripts
+  - Executes in user's browser
+
+- **Vulnerability**
+  - Poor input validation
+  - Inadequate output encoding
+
+- **Consequences**
+  - Data theft
+  - Session hijacking
+
+- **Mitigation**
+  - Validate and sanitize inputs
+  - Use Content Security Policy (CSP)
+
+:::
