@@ -20,6 +20,12 @@ format:
     footer: "Security Synapse"
 ---
 
+# Network protocols are vulnerable to attacks!
+
+- All protocols have an attack surface
+- Attack surface is the set of vulnerabilities
+- Hackers exploit these vulnerabilities
+- Protocol designers must anticipate attacks
 
 ## Network Protocol Lifecycle
 
