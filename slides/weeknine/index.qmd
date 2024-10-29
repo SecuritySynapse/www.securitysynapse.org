@@ -202,11 +202,13 @@ complements the others!
 
 ## Using `iptables` on a Linux Server
 
+::: fragment
+
 ```bash
 # Flush existing rules
 sudo iptables -F
 
-# Set default policies to drop all incoming and forwarding traffic, allow outgoing
+# Drop all incoming and forwarding traffic, allow outgoing
 sudo iptables -P INPUT DROP
 sudo iptables -P FORWARD DROP
 sudo iptables -P OUTPUT ACCEPT
@@ -227,6 +229,8 @@ sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 # Save the rules
 sudo iptables-save > /etc/iptables/rules.v4
 ```
+
+:::
 
 ## Network Security Solutions
 
