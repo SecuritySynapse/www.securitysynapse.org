@@ -129,18 +129,16 @@ network monitoring by creating clients and servers on localhost and then
 monitoring the network traffic between the client and the server. The program
 supports different modes of operation, including server and client modes using
 either sockets or XML-RPC, and interception modes for monitoring network
-communication with either of the aforementioned protocols.
-
-Ultimately, the `networkmonitor` should work in the following modes:
-
-- **Client and Server Protocols**:
-  - *Server Socket*: Start a server using sockets.
-  - *Client Socket*: Start a client using sockets.
-  - *Server XML-RPC*: Start a server using XML-RPC.
-  - *Client XML-RPC*: Start a client using XML-RPC.
-- **Interception Mechanisms**:
-  - *Intercept Socket*: Intercept network communication that uses sockets.
-  - *Intercept XML-RPC*: Intercept network communication that uses XML-RPC.
+communication with either of the aforementioned protocols. Ultimately, the
+`networkmonitor` should start a separate process in one of these modes:
+  - **Client and Server Protocols**:
+    - **Socket Server**: Start a server using sockets.
+    - **Socket Client**: Start a client using sockets.
+    - **XML-RPC Server**: Start a server using XML-RPC.
+    - **XML-RPC Client**: Start a client using XML-RPC.
+  - **Interception Mechanisms**:
+    - **Socket Interception**: Intercept network communication using sockets.
+    - **XML-RPC Interception**: Intercept network communication using XML-RPC.
 
 #### Resources
 
