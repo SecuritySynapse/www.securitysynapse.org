@@ -131,15 +131,16 @@ supports different modes of operation, including server and client modes using
 either sockets or XML-RPC, and interception modes for monitoring network
 communication with either of the aforementioned protocols.
 
-- **Modes**:
-  - **Client and Server Protocols**:
-    - *Server Socket*: Start a server using sockets.
-    - *Client Socket*: Start a client using sockets.
-    - *Server XML-RPC*: Start a server using XML-RPC.
-    - *Client XML-RPC*: Start a client using XML-RPC.
-  - **Interception Mechanisms**:
-    - *Intercept Socket*: Intercept network communication that uses sockets.
-    - *Intercept XML-RPC*: Intercept network communication that uses XML-RPC.
+Ultimately, the `networkmonitor` should work in the following modes:
+
+- **Client and Server Protocols**:
+  - *Server Socket*: Start a server using sockets.
+  - *Client Socket*: Start a client using sockets.
+  - *Server XML-RPC*: Start a server using XML-RPC.
+  - *Client XML-RPC*: Start a client using XML-RPC.
+- **Interception Mechanisms**:
+  - *Intercept Socket*: Intercept network communication that uses sockets.
+  - *Intercept XML-RPC*: Intercept network communication that uses XML-RPC.
 
 #### Resources
 
