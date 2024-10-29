@@ -218,9 +218,9 @@ non-course-related activities like viewing email, social media, or other
 content not about computer security. 
 
 - **In-Person Assessments**: Conducted through an in-person conversation with
-the course instructor, the two in-person assessments are cumulative evaluations
-of both high-level and low-level knowledge in the field of computer security.
-All students should be prepared to answer at least one question each about their
+the course instructor, the three in-person assessments are cumulative
+evaluations of both high-level and low-level knowledge in the field of computer
+security. All students should be prepared to answer questions that assess their
 comprehension of both concepts and implementation details in the field of
 computer security. The instructor will assess each student response on a
 checkmark basis and report feedback through a private GitHub repository.
