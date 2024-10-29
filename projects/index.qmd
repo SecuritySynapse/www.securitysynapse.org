@@ -143,9 +143,10 @@ communication with either of the aforementioned protocols. Ultimately, the
 #### Resources
 
 To learn more about fuzzing and to gather inspiration for your own
-implementation of the `cryptobenchmark`, please consult the following technical
-resources about cryptography using various implementations of the advanced
-encryption standard as `Fernet`:
+implementation of the `networkmonitor`, please consult the following technical
+resources about the network communication with either sockets or XML-RPC in
+Python, the TCP/IP protocol and the layout of their headers and payloads, and
+various network monitoring techniques:
 
 #### IP Header Structure
 - [IPv4 Header - Wikipedia](https://en.wikipedia.org/wiki/IPv4#Header)
