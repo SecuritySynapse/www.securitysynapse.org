@@ -18,9 +18,11 @@ with Python](https://inventwithpython.com/cracking/)
 - {{< iconify fa6-solid book-open >}} Online textbook called [Operating Systems:
 Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
 
-## Project One: Server Fuzzing
+## Security Survey Projects
 
-### Preparation
+### Project One: Server Fuzzing
+
+#### Preparation
 
 - {{< iconify fa6-solid book-open size=18px >}} **Review**: Chapter one of
 [Computer Systems Security: Planning for
@@ -43,7 +45,7 @@ the output and behavior of the server, and record important details and any
 crashes. As you complete the project, please be mindful that it makes certain
 restrictions of the types of JSON inputs your `serverfuzzer` should generate!
 
-### Resources
+#### Resources
 
 To learn more about fuzzing and to gather inspiration for your own
 implementation of the `serverfuzzer`, please consult the following technical
@@ -60,9 +62,9 @@ server-fuzzing-starter](https://github.com/SecuritySynapse/server-fuzzing-starte
 template repository to get started! Questions? Share them in the [Security
 Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
 
-## Project Two: Cryptography Benchmarking
+### Project Two: Cryptography Benchmarking
 
-### Preparation
+#### Preparation
 
 - {{< iconify fa6-solid book-open size=18px >}} **Review**: Chapters one and two
 of [Computer Systems Security: Planning for
@@ -87,7 +89,7 @@ ciphers. This program should randomly generate data and the measure and report
 the time and space overheads arising from use of the `Fernet` and `rFernet`
 ciphers.
 
-### Resources
+#### Resources
 
 To learn more about fuzzing and to gather inspiration for your own
 implementation of the `cryptobenchmark`, please consult the following technical
