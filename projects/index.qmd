@@ -105,3 +105,60 @@ size=18px >}}
 server-fuzzing-starter](https://github.com/SecuritySynapse/cryptography-benchmarking-starter)
 template repository to get started! Questions? Share them in the [Security
 Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
+
+### Project Three: Network Monitoring
+
+#### Preparation
+
+- {{< iconify fa6-solid book-open size=18px >}} **Review**: Chapters four and five 
+of [Computer Systems Security: Planning for
+Success](https://web.njit.edu/~rt494/security/)
+
+- {{< iconify fa6-solid lightbulb size=18px >}} **Insight**: Chapters four and
+five of [Computer Systems Security: Planning for
+Success](https://web.njit.edu/~rt494/security/) introduce some of the commonly
+used networking protocols and the ways in which they may be attacked. When a
+client and a server are communicating over a network, it is possible for a
+malicious actor to run a program that intercepts their communication. If the
+communication between the client and server is not encrypted, then the malicious
+actor can read the messages and even modify them.
+
+- {{< iconify fa6-solid code size=18px >}} **Task**: This project invites you to
+implement a `networkmonitor` in the Python programming language that conducts
+network monitoring by creating clients and servers on localhost and then
+monitoring the network traffic between the client and the server. The program
+supports different modes of operation, including server and client modes using
+either sockets or XML-RPC, and interception modes for monitoring network
+communication with either of the aforementioned protocols.
+
+- **Modes**:
+  - **Client and Server Protocols**:
+    - *Server Socket*: Start a server using sockets.
+    - *Client Socket*: Start a client using sockets.
+    - *Server XML-RPC*: Start a server using XML-RPC.
+    - *Client XML-RPC*: Start a client using XML-RPC.
+  - **Interception Mechanisms**:
+    - *Intercept Socket*: Intercept network communication that uses sockets.
+    - *Intercept XML-RPC*: Intercept network communication that uses XML-RPC.
+
+#### Resources
+
+To learn more about fuzzing and to gather inspiration for your own
+implementation of the `cryptobenchmark`, please consult the following technical
+resources about cryptography using various implementations of the advanced
+encryption standard as `Fernet`:
+
+#### IP Header Structure
+- [IPv4 Header - Wikipedia](https://en.wikipedia.org/wiki/IPv4#Header)
+- [IP Header Format - GeeksforGeeks](https://www.geeksforgeeks.org/ip-header/)
+
+- **TCP Header Structure**
+  - [TCP Segment Structure -
+  Wikipedia](https://en.wikipedia.org/wiki/Transmission_Control_Protocol#TCP_segment_structure)
+  - [TCP Header Format - GeeksforGeeks](https://www.geeksforgeeks.org/tcp-header/)
+
+Interested in working on this project? See the [{{< iconify fa6-brands github
+size=18px >}}
+server-fuzzing-starter](https://github.com/SecuritySynapse/cryptography-benchmarking-starter)
+template repository to get started! Questions? Share them in the [Security
+Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
