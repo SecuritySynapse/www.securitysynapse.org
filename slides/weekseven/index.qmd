@@ -1,7 +1,7 @@
 ---
 title: "Understanding Protocols"
 subtitle: "Grasping the Basics of Networking Protocols"
-description: "How do networking protocols work?"
+description: "How do computer networking protocols operate?"
 date: "2024-10-14"
 date-format: long
 author: Gregory M. Kapfhammer
