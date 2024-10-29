@@ -150,25 +150,26 @@ popular press articles in the field of computer security.
   [CCP](https://inventwithpython.com/cracking/)
 
 - **Module Two**: *Week Seven through Week Eleven*
-  - **Week Seven**: Chapter four in [CSP](https://web.njit.edu/~rt494/security/) 
-  - **Week Eight**: Chapter five in [CSP](https://web.njit.edu/~rt494/security/) 
-  - **Week Nine**: Chapter six in [CSP](https://web.njit.edu/~rt494/security/)
+  - **Week Seven**: Fall break and research travel
+  - **Week Eight**: Security summit project proposals
+  - **Week Nine**: Chapter four and five in [CSP](https://web.njit.edu/~rt494/security/) 
+  - **Week Ten**: Chapter six in [CSP](https://web.njit.edu/~rt494/security/)
   and chapter fifty-four in [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
-  - **Week Ten**: Chapter seven in [CSP](https://web.njit.edu/~rt494/security/)
-  and chapter fifty-five in [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
   - **Week Eleven**: Review all prior chapters in
   [CSP](https://web.njit.edu/~rt494/security/) and
   [CCP](https://inventwithpython.com/cracking/) and
   [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 - **Module Three**: *Week Twelve through Week Sixteen*
-  - **Week Twelve**: Chapters thirteen through seventeen in
-  [CCP](https://inventwithpython.com/cracking/)
+  - **Week Twelve**: Chapter seven in
+  [CSP](https://web.njit.edu/~rt494/security/) and chapter fifty-five in
+  [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
   - **Week Thirteen**: Chapters eight and nine in
   [CSP](https://web.njit.edu/~rt494/security/)
-  - **Week Fourteen**: Chapters eighteen through twenty in
+  - **Week Fourteen**: Chapters thirteen through twenty in
   [CCP](https://inventwithpython.com/cracking/)
-  - **Week Fifteen**: Chapter ten in [CSP](https://web.njit.edu/~rt494/security/)
+  - **Week Fifteen**: Chapter ten in
+  [CSP](https://web.njit.edu/~rt494/security/) and review of all prior chapters
   - **Week Sixteen**: Review all prior chapters in
   [CSP](https://web.njit.edu/~rt494/security/) and
   [CCP](https://inventwithpython.com/cracking/) and
@@ -366,22 +367,22 @@ week of the three modules in the academic semester:
   - **Week Two**: Aidan Dyga and Keven Duverglas
   - **Week Three**: Preston Smith and Nicholas Ingerson-Meacham
   - **Week Four**: Caleb Kendra and Alish Chhetri
-  - **Week Five**: Mordred Boulais and Titus Smith
-  - *No Discussion Leads for Week Six*
+  - **Week Five**: Mordred Boulais
+  - **Week Six**: No discussion leads due to assessment
 
 - **Module Two**
-  - **Week Seven**: Evan Nelson and Miles Franck
-  - **Week Eight**: Jason Gyamafi and Hank Grefenstette
-  - **Week Nine**: Preston Smith and Alish Chhetri
-  - **Week Ten**: Titus Smith and Aidan Dyga
-  - *No Discussion Leads for Week Eleven*
+  - **Week Seven**: No discussion leads due to fall break and research travel
+  - **Week Eight**: No discussion leads due to security summit project proposals
+  - **Week Nine**: Instructor serves as discussion lead
+  - **Week Ten**: Miles Franck and Evan Nelson
+  - **Week Eleven**: No discussion leads due to assessment and Gator Day
 
 - **Module Three**
-  - **Week Twelve**: Keven Duverglas and Mordred Boulais
-  - **Week Thirteen**: Evan Nelson and Nicholas Ingerson-Meacham
-  - **Week Fourteen**: Caleb Kendra and Hank Grefenstette
-  - **Week Fifteen**: Miles Franck and Jason Gyamafi
-  - *No Discussion Leads for Week Sixteen*
+  - **Week Twelve**: Jason Gyamafi, Hank Grefenstette, and Caleb Kendra
+  - **Week Thirteen**: Aidan Dyga, Nicholas Ingerson-Meacham, and Mordred Boulais 
+  - **Week Fourteen**: Alish Chhetri, Preston Smith, and Keven Duverglas
+  - **Week Fifteen**: Miles Franck, Evan Nelson, Hank Grefenstette, and Jason Gyamafi
+  - **Week Sixteen**: No discussion leads for week sixteen due to assessment
 
 #### Seeking Assistance
 
