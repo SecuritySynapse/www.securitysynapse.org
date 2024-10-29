@@ -92,3 +92,67 @@ Reference:
 [2024 Crowdstrike-related IT Outages](https://en.wikipedia.org/wiki/2024_CrowdStrike-related_IT_outages)
 
 :::
+
+## Layered Security: Zero through Three
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.725em;"}
+
+- **Layer 0: Operating System**
+  - Foundation of system security
+  - Strategy: Regularly update and patch
+
+- **Layer 1: Network Security**
+  - Protects data in transit
+  - Tools: Firewalls, VPNs, and IDS/IPS
+
+- **Layer 2: Application Security**
+  - Secures software applications
+  - Strategy: Secure coding practices, application firewalls
+
+- **Layer 3: Endpoint Security**
+  - Protects individual devices
+  - Tools: Antivirus software, endpoint detection and response
+
+:::
+
+## Layered Security: Four through Six
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.9em;"}
+
+- **Layer 4: Data Security**
+  - Ensures data integrity and confidentiality
+  - Example: Encryption, access controls
+
+- **Layer 5: Human Monitoring**
+  - Continuous oversight and response by experts
+  - Example: Security operations center or incident response teams
+
+- **Layer 6: Physical Security**
+  - Protects physical assets
+  - Example: Biometric access controls, surveillance cameras
+
+:::
+
+::: {.fragment style="margin-top: -0.5em;"}
+
+{{< iconify fa6-solid diagram-project >}} **Additional layers and/or sub-layers are also possible!**
+
+:::
+
+# Adopt a "Defense in Depth" Strategy!
+
+::: fragment
+
+- No security solution thwarts all attacks
+- One layer of security is not enough
+- Multiple layers increase security
+- Redundancy and diversity improves security
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.2em; font-size: 0.875em;"}
+
+{{< iconify fa6-solid award >}} Build a security solution so that each tool
+complements the others!
+
+:::
