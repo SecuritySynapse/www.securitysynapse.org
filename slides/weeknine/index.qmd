@@ -56,14 +56,39 @@ make sure that you have a plan to understand features and pitfalls of a product!
 
 :::
 
-# What are some common attacks on computer networking protocol?
+# What are the downsides of false positives?
 
-::: {.fragment style="font-size: 0.9em; margin-top: -0.5em;"}
+::: {.fragment style="font-size: 0.95em; margin-top: -0.1em;"}
 
-- Interception attacks
-- Network layer attacks
-- Internet layer attacks
-- Name-resolution attacks
-- Web-based attacks
+- Wasting time and resources
+- Disruption of normal operations
+- Decreased trust in security solutions
+- Disable security features or alerts
+- Quarantine or delete benign software
+
+:::
+
+# What are the downsides of false negatives?
+
+::: {.fragment style="font-size: 0.95em; margin-top: -0.1em;"}
+
+- Undetected security breaches
+- Potential data loss or theft
+- Compromised system integrity
+- Increased vulnerability to attacks
+- Delayed response to threats
+
+:::
+
+# Correctness of computer security solutions is paramount!
+
+::: fragment
+
+- Crowdstrike distributes a faulty update to Falcon
+- About 8.5 million computers crashed and could not restart 
+- A "historic IT outage" with billions of dollars lost
+
+Reference:
+[2024 Crowdstrike-related IT Outages](https://en.wikipedia.org/wiki/2024_CrowdStrike-related_IT_outages)
 
 :::
