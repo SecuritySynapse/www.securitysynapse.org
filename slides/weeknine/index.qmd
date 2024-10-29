@@ -133,7 +133,7 @@ Reference:
 
 :::
 
-::: {.fragment style="margin-top: -0.5em;"}
+::: {.fragment style="margin-top: -0.5em; font-size: 0.85em;"}
 
 {{< iconify fa6-solid diagram-project >}} **Additional layers and/or sub-layers are also possible!**
 
@@ -154,5 +154,120 @@ Reference:
 
 {{< iconify fa6-solid award >}} Build a security solution so that each tool
 complements the others!
+
+:::
+
+# Network Security Solutions
+
+- Firewalls
+- Proxy servers
+- Intrusion detection
+- Virtual private networks
+- Load balancers
+
+## Common Ports for Services
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 0.75em;"}
+
+| Protocol | Port | Description          |
+|----------|------|----------------------|
+| SSH      | 22   | Secure Shell         |
+| HTTP     | 80   | Hypertext Transfer Protocol |
+| HTTPS    | 443  | Hypertext Transfer Protocol Secure |
+| FTP      | 21   | File Transfer Protocol |
+| SMTP     | 25   | Simple Mail Transfer Protocol |
+| DNS      | 53   | Domain Name System   |
+| POP3     | 110  | Post Office Protocol 3 |
+| IMAP     | 143  | Internet Message Access Protocol |
+| Telnet   | 23   | Unencrypted text communications |
+| NTP      | 123  | Network Time Protocol |
+
+:::
+
+## Firewalls
+
+- Monitor and control network traffic
+- Barrier between trusted and untrusted networks
+- *Example*: `iptables` on a Linux server
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 0.85em;"}
+
+- **Suggestions for `iptables` rules**:
+  - Allow all outgoing traffic
+  - Block all incoming traffic by default
+  - Allow incoming traffic for specific services
+  - Continuously monitor the network traffic
+
+:::
+
+## Using `iptables` on a Linux Server
+
+```bash
+# Flush existing rules
+sudo iptables -F
+
+# Set default policies to drop all incoming and forwarding traffic, allow outgoing
+sudo iptables -P INPUT DROP
+sudo iptables -P FORWARD DROP
+sudo iptables -P OUTPUT ACCEPT
+
+# Allow incoming traffic on localhost
+sudo iptables -A INPUT -i lo -j ACCEPT
+
+# Allow incoming SSH connections
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+
+# Allow incoming HTTP and HTTPS traffic
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+
+# Allow established and related incoming connections
+sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# Save the rules
+sudo iptables-save > /etc/iptables/rules.v4
+```
+
+## Network Security Solutions
+
+::: fragment
+
+### Proxy Servers
+
+- Act as intermediaries for requests
+- Improve security and performance
+- *Example*: Web proxies, reverse proxies
+
+:::
+
+::: fragment
+
+### Intrusion Detection
+
+- Monitor network for suspicious activity
+- Alert administrators of potential threats
+- *Example*: Network-based IDS, host-based IDS
+
+:::
+
+## More Network Security Solutions
+
+::: fragment
+
+### Virtual Private Networks
+
+- Secure connections over public networks
+- Encrypt data in transit
+- *Example*: Remote access VPN, site-to-site VPN
+
+:::
+
+::: fragment
+
+### Load Balancers
+
+- Distribute network traffic across servers
+- Improve availability and reliability
+- *Example*: Hardware load balancers, software load balancers
 
 :::
