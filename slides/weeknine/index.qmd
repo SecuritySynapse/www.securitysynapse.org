@@ -34,25 +34,25 @@ make sure that you have a plan to understand features and pitfalls of a product!
 
 :::
 
-## Network Protocol Lifecycle
+## Detection Outcomes in Security
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.725em;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.75em;"}
 
-- **Design Protocol**
-  - Define rules for communication
-  - Specify message structure and semantics
+- **True Positive (TP)**
+  - Correctly identified security threat
+  - *Example*: Malware detected and flagged
 
-- **Discover Vulnerability**
-  - Identify security weaknesses
-  - Analyze attack vectors
+- **False Positive (FP)**
+  - Benign activity incorrectly flagged as a threat
+  - *Example*: Legitimate software flagged as malware
 
-- **Patch Protocol**
-  - Implement security fixes
-  - Update protocol specifications
+- **True Negative (TN)**
+  - Correctly identified benign activity
+  - *Example*: Normal network traffic not flagged
 
-- **Repeat Process**
-  - Continuously monitor for new threats
-  - Iterate to enhance protocol security
+- **False Negative (FN)**
+  - Security threat not detected
+  - *Example*: Malware not flagged by the system
 
 :::
 
