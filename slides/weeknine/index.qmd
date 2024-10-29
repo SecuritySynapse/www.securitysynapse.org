@@ -1,0 +1,311 @@
+---
+title: "Security Solutions"
+subtitle: "Learning How to Thwart Security Attacks"
+description: "How can we mitigate computer security risks?"
+date: "2024-10-28"
+date-format: long
+author: Gregory M. Kapfhammer
+execute:
+  echo: true
+jupyter: python3
+format:
+  revealjs:
+    completion: true
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Security Synapse"
+---
+
+# Network protocols are vulnerable to attacks!
+
+- All protocols have an attack surface
+- Attack surface is the set of vulnerabilities
+- Hackers exploit these vulnerabilities
+- Protocol designers must anticipate attacks
+
+## Network Protocol Lifecycle
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.725em;"}
+
+- **Design Protocol**
+  - Define rules for communication
+  - Specify message structure and semantics
+
+- **Discover Vulnerability**
+  - Identify security weaknesses
+  - Analyze attack vectors
+
+- **Patch Protocol**
+  - Implement security fixes
+  - Update protocol specifications
+
+- **Repeat Process**
+  - Continuously monitor for new threats
+  - Iterate to enhance protocol security
+
+:::
+
+# What are some common attacks on computer networking protocol?
+
+::: {.fragment style="font-size: 0.9em; margin-top: -0.5em;"}
+
+- Interception attacks
+- Network layer attacks
+- Internet layer attacks
+- Name-resolution attacks
+- Web-based attacks
+
+:::
+
+## "Man-in-the-Middle" Attack
+
+::: fragment
+
+```{mermaid}
+%%| echo: false
+flowchart LR
+  subgraph Client
+    A(Client) --> B[Send Message]
+  end
+
+  subgraph Attacker
+    B --> X[Intercept & Modify]
+    X --> C[Send Modification]
+  end
+
+  subgraph Server
+    C --> D[Process Message]
+    D --> Y[Send Response]
+  end
+
+  subgraph Attacker
+    Y --> Z[Intercept & Modify]
+    Z --> F[Send Modification]
+  end
+
+  subgraph Client
+    F --> A
+  end
+
+  style Client fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style Server fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style Attacker fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style A fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style B fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style C fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style D fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style F fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style X fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style Y fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style Z fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  linkStyle 0,1,2,3,4,5,6,7 stroke:#1c1c1c,color:#1c1c1c
+```
+
+:::
+
+::: {.incremental style="font-size: 0.785em; margin-top: -0.5em;"}
+
+- {{< iconify fa6-solid map >}} Client sends message
+- {{< iconify fa6-solid user-secret >}} Attacker intercepts message
+- {{< iconify fa6-solid arrows-rotate >}} Attacker modifies message
+- {{< iconify fa6-solid server >}} Server processes modified request
+- {{< iconify fa6-solid envelope >}} Server sends response
+- {{< iconify fa6-solid user-secret >}} Attacker intercepts response
+- {{< iconify fa6-solid arrows-rotate >}} Attacker modifies response
+
+:::
+
+## Replays and One-Time Passwords
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
+
+- **Replay Attacks**
+  - Attacker intercepts and reuses valid data
+  - Exploits repeated transmission
+  - Compromises authentication
+
+- **Thwarting with One-Time Passwords (OTPs)**
+  - Unique password for each session
+  - Valid for a single use only
+  - Prevents reuse of intercepted data
+
+:::
+
+::: {.fragment style="font-size: 0.85em; margin-top: -0.25em;"}
+
+{{< iconify fa6-solid lightbulb >}} **OTPs enhance security and data integrity and thwart replay attacks!**
+
+:::
+
+## Attacking the MAC Address
+
+::: {.columns}
+
+::: {.column width=50%}
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
+
+- **MAC Spoofing/Cloning**
+  - Attacker changes a device's MAC address
+  - Now possible to bypass network access controls
+  - Enables the impersonation of legitimate devices
+
+:::
+
+:::
+
+::: {.column width=50%}
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
+
+- **MAC Flooding**
+  - Switches track MAC to IP address mapping
+  - Overloads the switch with fake MAC addresses
+  - Compromises network performance
+
+:::
+
+:::
+
+::::
+
+::: {.fragment style="font-size: 0.85em;"}
+
+- Attack performed at the network layer
+- Exploits the inherent weaknesses of MAC addresses
+- How can we mitigate this type of attack?
+
+:::
+
+## Mitigating the MAC Address Attacks
+
+::: {.fragment style="font-size: 0.825em;"}
+
+- **Port Security**
+   - Configure switch ports to allow only specific MAC addresses
+   - Limit the number of MAC addresses per port
+   - Use sticky MAC addresses to learn and restrict MAC addresses
+
+- **802.1X Authentication**
+   - Network access controls to authenticate devices before network access
+   - Ensure that only authorized devices can connect to the network
+
+- **VLAN Segmentation**
+   - Segment the network into smaller VLANs
+   - Limit the broadcast domain and reduce the impact of MAC spoofing
+
+:::
+
+## IP Spoofing
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.8em;"}
+
+- **Inherent Insecurity**
+  - IP was not designed with security
+  - Easy to forge IP addresses
+
+- **Protocol Limitations**
+  - No built-in authentication
+  - No integrity checks
+
+- **IPSec Solution**
+  - Adds security to IP layer
+  - Provides authentication and encryption
+
+- **Layered Security**
+  - Secure solutions needed at multiple layers
+
+:::
+
+# Combine application and transport layer security to achieve a network that is more secure overall! *Nice*!
+
+## DNS Cache Poisoning
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.8em;"}
+
+- **Attack Overview**
+  - Attacker corrupts DNS cache
+  - Redirects users to malicious sites
+
+- **Vulnerability**
+  - Exploits lack of DNS query validation
+  - Alters DNS responses
+
+- **Consequences**
+  - Phishing attacks
+  - Data theft
+
+- **Mitigation**
+  - Use DNSSEC for validation!
+
+:::
+
+# What are the greatest security vulnerabilities at the application level of the network protocol stack? How to control?
+
+## OWASP Top Ten
+
+::: {.fragment style="font-size: 0.9em; margin-top: -0.15em;"}
+
+- Broken access control
+- Cryptographic failures
+- Injection
+- Insecure design
+- Security misconfiguration
+- Vulnerable and outdated components
+- Identification and authentication failures
+- Software and data integrity failures
+- Security logging and monitoring failures
+- Server-side request forgery
+
+:::
+
+# Let's talk about prominent types of injection attacks at the application layer!
+
+- {{< iconify fa6-solid database >}} Cross-site scripting attacks
+- {{< iconify fa6-solid globe >}} SQL injection attacks
+
+## Cross-Site Scripting (XSS)
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.8em;"}
+
+- **Attack Overview**
+  - Attacker injects malicious scripts
+  - Executes in user's browser
+
+- **Vulnerability**
+  - Poor input validation
+  - Inadequate output encoding
+
+- **Consequences**
+  - Data theft
+  - Session hijacking
+
+- **Mitigation**
+  - Validate and sanitize inputs
+
+:::
+
+## SQL Injection Attacks
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.8em;"}
+
+- **Attack Overview**
+  - Attacker injects malicious SQL queries
+  - Executes in the database
+
+- **Vulnerability**
+  - Poor input validation
+  - Directly embedding user input in SQL queries
+
+- **Consequences**
+  - Data leakage
+  - Unauthorized data modification
+
+- **Mitigation**
+  - Use prepared statements and validate and sanitize inputs
+
+:::
