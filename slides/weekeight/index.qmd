@@ -395,7 +395,29 @@ attack?
 
 :::
 
+# Can we build a network monitoring tool?
 
+- Client sends messages to server
+- Server receives messages from clients
+- Intercept network communication
+- Client and server are not aware!
 
+## Network Monitoring Tool
 
+::: {.incremental style="margin-top: -.65em; font-size: 0.825em;"}
 
+- Let's build a client and a server and intercept network communication!
+
+- `networkmonitor` start a process in one of these modes:
+    - **Client and Server Protocols**:
+      - **Socket Server**: Start a server using sockets
+      - **Socket Client**: Start a client using sockets
+      - **XML-RPC Server**: Start a server using XML-RPC
+      - **XML-RPC Client**: Start a client using XML-RPC
+    - **Interception Mechanisms**:
+      - **Socket Interception**: Intercept socket network communication
+      - **XML-RPC Interception**: Intercept XML-RPC network communication
+
+- See the course web site's project description for more details!
+
+:::
