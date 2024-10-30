@@ -366,3 +366,36 @@ attack?
   - *Vertical*: gain higher-level access (e.g., user to admin)
 
 :::
+
+## Denial of Service (DoS)
+
+::: {.fragment style="margin-top: -.25em; font-size: 0.8em;"}
+
+- **DoS Attack**
+  - Overwhelm system with requests
+  - DDoS means multiple machines work together
+
+:::
+
+::: {.fragment style="margin-top: -.65em; font-size: 0.8em;"}
+
+- **Types of DoS Attacks**
+  - SYN Floods: multiple SYN packets
+  - ICMP Floods: pinging to overwhelm
+  - Buffer Overflows: unexpected data
+
+:::
+
+::: {.fragment style="margin-top: -.65em; font-size: 0.8em;"}
+
+- **Prevention**
+  - SYN cookies for SYN Floods
+  - Rate limit ICMP packets
+  - Secure software design
+
+:::
+
+
+
+
+
