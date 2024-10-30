@@ -26,10 +26,8 @@ articles, and the content from the following books:
 
 - {{< iconify fa6-solid book-open >}} Online textbook called [Computer Systems
 Security: Planning for Success](https://web.njit.edu/~rt494/security/) 
-
 - {{< iconify fa6-solid book-open >}} Online textbook called [Cracking Codes
 with Python](https://inventwithpython.com/cracking/) 
-
 - {{< iconify fa6-solid book-open >}} Online textbook called [Operating Systems:
 Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
 
