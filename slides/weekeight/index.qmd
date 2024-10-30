@@ -331,7 +331,7 @@ How do they work? How can we practically detect and/or prevent them?
 - Gains full control of the system, its users, and data
 - The "launching pad" for attacks like a denial of service
 
-::: {.fragment .fade .boxed-content style="margin-top: .05em; font-size: 0.875em;"}
+::: {.fragment .fade .boxed-content style="margin-top: .20em; font-size: 0.875em;"}
 
 {{< iconify fa6-solid diagram-project >}} The buffer overflow attack is a common
 method for achieving remote code execution! How can we prevent this attack type?
