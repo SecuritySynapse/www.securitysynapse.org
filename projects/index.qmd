@@ -148,17 +148,18 @@ resources about the network communication with either sockets or XML-RPC in
 Python, the TCP/IP protocol and the layout of their headers and payloads, and
 various network monitoring techniques:
 
-#### IP Header Structure
-- [IPv4 Header - Wikipedia](https://en.wikipedia.org/wiki/IPv4#Header)
-- [IP Header Format - GeeksforGeeks](https://www.geeksforgeeks.org/ip-header/)
+- **IP Header Structure**
+  - [IPv4 Header Description on Wikipedia](https://en.wikipedia.org/wiki/IPv4#Header)
+  - [IP Header Format on GeeksforGeeks](https://www.geeksforgeeks.org/ip-header/)
 
 - **TCP Header Structure**
-  - [TCP Segment Structure -
+  - [TCP Segment Structure on
   Wikipedia](https://en.wikipedia.org/wiki/Transmission_Control_Protocol#TCP_segment_structure)
-  - [TCP Header Format - GeeksforGeeks](https://www.geeksforgeeks.org/tcp-header/)
+  - [TCP Header Format on
+  GeeksforGeeks](https://www.geeksforgeeks.org/introduction-and-ipv4-datagram-header/)
 
 Interested in working on this project? See the [{{< iconify fa6-brands github
 size=18px >}}
-server-fuzzing-starter](https://github.com/SecuritySynapse/cryptography-benchmarking-starter)
+network-monitoring-starter](https://github.com/SecuritySynapse/network-monitoring-starter)
 template repository to get started! Questions? Share them in the [Security
 Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
