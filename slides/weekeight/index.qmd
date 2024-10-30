@@ -310,6 +310,20 @@ flowchart LR
 
 :::
 
+# Outcomes from Successful Attacks
+
+- Remote code execution
+- Privilege escalation
+- Data exfiltration
+- Denial of service
+
+::: {.fragment .fade style="margin-top: .05em; font-size: 0.95em;"}
+
+{{< iconify fa6-solid award >}} Let's learn more about each of these outcomes!
+How do they work? How can we practically detect and/or prevent them?
+
+:::
+
 # Remote Code Execution
 
 - Gives attacker ability to run arbitrary code
@@ -323,3 +337,5 @@ flowchart LR
 method for achieving remote code execution! How can we prevent this attack type?
 
 :::
+
+
