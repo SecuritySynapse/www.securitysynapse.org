@@ -421,3 +421,54 @@ attack?
 - See the course web site's project description for more details!
 
 :::
+
+## Summary of Network Security Attacks
+
+::: {.columns style="margin-top: 0.5em;"}
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Key Concepts*
+
+#### Studied Protocols
+
+- TCP/IP
+- UDP
+- IPSec and SSL/TLS
+
+#### Key Concepts
+
+- Protocol layers
+- Client-server communication
+- Secure data transmission
+
+:::
+
+:::
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Best Practices*
+
+#### Implementation
+
+- Understand protocol roles
+- Ensure secure configurations
+- Regularly update protocols
+
+#### Exploration
+
+- Compare with other protocols
+- Study protocol interactions
+- Consider next generation
+
+:::
+
+:::
+
+:::
+
