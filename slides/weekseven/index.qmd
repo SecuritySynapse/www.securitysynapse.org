@@ -462,9 +462,10 @@ rtt min/avg/max/mdev = 14.641/16.258/19.470/1.680 ms
 
 ::::
 
-::: fragment
+::: {.fragment style="font-size: 0.9em;"}
 
 {{< iconify fa6-solid lightbulb >}} Can you compare and contrast UDP and TCP?
+Benefits? Trade-offs?
 
 :::
 
