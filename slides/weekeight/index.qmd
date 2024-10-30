@@ -173,17 +173,17 @@ flowchart LR
 
 ::::
 
-::: {.fragment style="font-size: 0.85em;"}
+::: {.fragment style="font-size: 0.95em; margin-top: -0.35em;"}
 
 - Attack performed at the network layer
 - Exploits the inherent weaknesses of MAC addresses
-- How can we mitigate this type of attack?
+- **How can we mitigate this type of attack?**
 
 :::
 
 ## Mitigating the MAC Address Attacks
 
-::: {.fragment style="font-size: 0.825em;"}
+::: {.incremental style="font-size: 0.825em; margin-top: 0.05em;"}
 
 - **Port Security**
    - Configure switch ports to allow only specific MAC addresses
