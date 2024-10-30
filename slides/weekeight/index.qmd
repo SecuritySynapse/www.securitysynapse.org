@@ -338,3 +338,31 @@ method for achieving remote code execution! What is it? How can we prevent this
 attack?
 
 :::
+
+## Privilege Escalation
+
+::: {.fragment style="margin-top: -.25em; font-size: 0.8em;"}
+
+- **Details about the attack**
+  - Gain access to protected resources
+  - Example: [CVE-2021-4034](https://www.cve.org/CVERecord?id=CVE-2021-4034) in Linux `pkexec`
+  - Exploit gives regular user a root shell
+
+:::
+
+::: {.fragment style="margin-top: -.65em; font-size: 0.8em;"}
+
+- **Methods of privilege escalation**
+  - Credential exploitation
+  - Vulnerabilities or misconfigurations
+  - Social engineering
+
+:::
+
+::: {.fragment style="margin-top: -.65em; font-size: 0.8em;"}
+
+- **Privilege escalation types**
+  - *Horizontal*: move between user accounts
+  - *Vertical*: gain higher-level access (e.g., user to admin)
+
+:::
