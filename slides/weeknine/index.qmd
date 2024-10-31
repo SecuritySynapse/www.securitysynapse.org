@@ -444,6 +444,13 @@ drwxr-xr-x    - gkapfham 29 Oct 15:12 ├──  syllabus
 
 :::
 
+::: {.fragment .boxed-content .fade-up style="margin-top: 0.25em; font-size: 0.8em;"}
+
+Operating system defines default permissions for files and directories. Within
+certain constraints, users can modify them using commands like `chmod`!
+
+:::
+
 ## Using `chmod` to Set Permissions
 
 ```bash
@@ -462,3 +469,10 @@ chmod 754 data.json
 # resulting permission string
 -rwxr-xr-- 1 owner group 0 Oct 10 12:34 data.json
 ```
+
+::: fragment
+
+- What is the meaning of the permission string `rwxr-xr--`?
+- How does that map to the numbers `754`?
+
+:::
