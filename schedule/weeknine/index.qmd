@@ -1,7 +1,7 @@
 ---
 title: Security Solutions
 description: "How Can we Layer Security Solutions?"
-date: 2024-10-21
+date: 2024-10-28
 layout: full
 toc: true
 toc-expand: 3
