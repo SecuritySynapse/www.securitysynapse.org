@@ -37,14 +37,14 @@ listing:
 - **Module Two** 
   - **Topic**: Challenges and Solutions in Computer Security
   - **Weeks**: Seven through eleven
-  - **Chapters**: Four through seven in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
+  - **Chapters**: Four through six in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
   - **Midterm Examination Two**: Week eleven during the laboratory session
   - **In-Person Assessment Two**: Week eleven during the classroom sessions
 
 - **Module Three** 
   - **Topic**: Advanced Topics in Computer Security
   - **Weeks**: Twelve through sixteen
-  - **Chapters**: Eight through ten in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
+  - **Chapters**: Seven through ten in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
   - **Final Examination**: Week sixteen during the final examination period
 
 ### Schedule Details
