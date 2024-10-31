@@ -35,4 +35,4 @@ Security Solutions
 <iframe class="slide-deck" src="../../slides/weeknine/"></iframe>
 ```
 
-{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week Nine: Networking Attacks](../../slides/weekeight/)
+{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week Nine: Security Solutions](../../slides/weeknine/)
