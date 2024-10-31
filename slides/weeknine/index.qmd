@@ -298,7 +298,7 @@ sudo iptables-save > /etc/iptables/rules.v4
 
 :::
 
-::: {.fragment style="margin-top: 0.25em; font-size: 0.9em;"}
+::: {.fragment .fade-up style="margin-top: 0.25em; font-size: 0.9em;"}
 
 - {{< iconify fa6-solid people-line >}} **In-Class Discussion**
   - What is an example of each type of authentication?
@@ -309,10 +309,14 @@ sudo iptables-save > /etc/iptables/rules.v4
 
 # What comes next after authentication?
 
+::: fragment
+
 - Attach an identity to processes and resources
 - Define access control lists (ACLs) for resources
 - Enforce permissions for users and groups
 - Practical security for both users and administrators
+
+:::
 
 ## Process Listings
 
@@ -335,7 +339,7 @@ sudo iptables-save > /etc/iptables/rules.v4
 176763 gkapfham  20   0 1156.1g 224924 128212 S   0.3   0.3   0:48.73 brave
 ```
 
-::: {.fragment .zoom style="margin-top: 0.75em; font-size: 0.85em;"}
+::: {.fragment .convex style="margin-top: 0.75em; font-size: 0.85em;"}
 
 Operating system tracks each process, its owner, and its resources!
 
