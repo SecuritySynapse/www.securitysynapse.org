@@ -1,6 +1,6 @@
 ---
 title: Understanding Protocols
-description: "How do computer networking protocols operate?"
+description: "How Do Computer Networking Protocols Operate?"
 date: 2024-10-14
 layout: full
 toc: true
