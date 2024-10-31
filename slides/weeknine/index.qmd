@@ -520,3 +520,53 @@ chmod 754 data.json
 - How does that map to the numbers `754` used with `chmod`?
 
 :::
+
+## Summary of Security Solutions
+
+::: {.columns style="margin-top: 0.5em;"}
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Key Concepts*
+
+#### Security Layers
+
+- Operating system
+- Network security tools
+- Application security practices
+
+#### Evaluation Metrics
+
+- FP, TP, TN, FN
+- Precision, recall, accuracy
+- F1-score balances metrics
+
+:::
+
+:::
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Best Practices*
+
+#### Implementation
+
+- Regular updates and patches
+- Secure coding practices
+- Multi-factor authentication
+
+#### Exploration
+
+- Compare security tools
+- Study protocol interactions
+- Consider next-gen solutions
+
+:::
+
+:::
+
+:::
