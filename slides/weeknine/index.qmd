@@ -281,9 +281,63 @@ sudo iptables-save > /etc/iptables/rules.v4
 
 ::: fragment
 
-- **Authentication**: Verify the identity of a user
+- **Authentication**: Confirm the identity of a user
 - **Authorization**: Control access to resources
 - *Plays a critical role in ensuring system security!*
+
+:::
+
+## Authenticating a Person
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 1em;"}
+
+- **Three main strategies for authentication**:
+  - Authentication based on *what you know*
+  - Authentication based on *what you have*
+  - Authentication based on *what you are*
+
+:::
+
+::: {.fragment style="margin-top: 0.25em; font-size: 0.9em;"}
+
+- {{< iconify fa6-solid people-line >}} **In-Class Discussion**
+  - What is an example of each type of authentication?
+  - What are the strengths and weaknesses of each type?
+  - How can you combine these methods to increase security?
+
+:::
+
+# What comes next after authentication?
+
+- Attach an identity to processes and resources
+- Define access control lists (ACLs) for resources
+- Enforce permissions for users and groups
+- Practical security for both users and administrators
+
+## Process Listings
+
+```bash
+  5489 gkapfham  20   0  507568 207916  12836 R   6.0   0.3  83:03.61 nvim
+  4080 gkapfham  20   0  457480 157688  13480 S   1.7   0.2  30:49.27 nvim
+ 34117 gkapfham  20   0  353912  54300  10160 S   1.0   0.1  21:09.79 nvim
+  5673 gkapfham  20   0   32.8g 600140 245208 S   0.7   0.9  15:48.35 brave
+ 26197 gkapfham  20   0  372420  72632  12076 S   0.7   0.1  14:51.28 nvim
+142753 gkapfham  20   0  377348  77484  11788 S   0.7   0.1  11:18.73 nvim
+  1422 root      20   0 1014944 124624  79648 S   0.3   0.2   5:40.33 X
+  1653 gkapfham  20   0  975088 109404  75032 S   0.3   0.2   2:31.56 picom
+  1687 gkapfham  20   0  154384   5984   5216 S   0.3   0.0   0:41.83 i3status
+  2447 gkapfham  20   0   17580   8416   3672 S   0.3   0.0   2:16.78 tmux: server
+  3023 gkapfham  20   0 2722832  36704  16348 S   0.3   0.1   2:05.64 lazygit
+  5229 gkapfham  20   0   21.1g 204076  55472 S   0.3   0.3   6:50.71 deno
+142410 gkapfham  20   0   21.1g 177968  55900 S   0.3   0.3   5:48.26 deno
+142514 gkapfham  20   0 2575176  31032  16032 S   0.3   0.0   0:47.63 lazygit
+156934 gkapfham  20   0  385008  60516  17956 S   0.3   0.1   4:36.81 python3.12
+176763 gkapfham  20   0 1156.1g 224924 128212 S   0.3   0.3   0:48.73 brave
+```
+
+::: {.fragment .zoom style="margin-top: 0.75em; font-size: 0.85em;"}
+
+Operating system tracks each process, its owner, and its resources!
 
 :::
 
