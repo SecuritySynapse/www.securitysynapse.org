@@ -1,0 +1,37 @@
+---
+title: Understanding Protocols
+description: "How do computer networking protocols operate?"
+date: 2024-10-14
+layout: full
+toc: true
+toc-expand: 3
+---
+
+## Exploration
+
+- {{< iconify fa6-solid book-open size=18px >}} Read chapters four and five 
+[Computer Systems Security: Planning for
+Success](https://web.njit.edu/~rt494/security/)
+
+## Activities
+
+- {{< iconify fa6-solid diagram-project size=18px >}} **Monday**: Laboratory session
+- {{< iconify fa6-solid people-line size=18px >}} **Tuesday and Thursday**:
+Computer Networking
+  - Understand design and use of networking protocols
+  - Learn how to detect and defend against network attacks
+  - Continued highlighting of the concept of a "security synapse"
+  - Instructor presentations that feature:
+    - Explanation of a high-level concept in the area of malware
+    - In-class activity that connects concepts to real-world scenarios
+    - Implementation of a malware-adjacent concept in a programming language
+    - Question and answer session with learning peers and the course instructor
+  - No student discussion leaders for this week's material
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="../../slides/weekseven/"></iframe>
+```
+
+{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week Seven: Understanding Protocols](../../slides/weekseven/)
