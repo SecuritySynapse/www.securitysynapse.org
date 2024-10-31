@@ -31,12 +31,14 @@ development of your professional and technical capacities in the field of
 computer security. One of the primary goals of this course is to create a
 *security synapse* by connecting high-level concepts in the field of computer
 security with their implementation in programming languages such as Python,
-Java, JavaScript, C, Go, and Rust. Along with leveraging research papers and
-popular-press articles, this course references two open-access books: [Computer
-Systems Security: Planning for Success](https://web.njit.edu/~rt494/security/)
-and [Cracking Codes with Python](https://inventwithpython.com/cracking/). You
-can access all of the source code and technical content for this course by
-checking out its [GitHub organization](https://github.com/SecuritySynapse),
+Java, C, Go, and Rust. Along with leveraging research papers and
+popular-press articles, this course references three open-access books:
+[Computer Systems Security: Planning for
+Success](https://web.njit.edu/~rt494/security/), [Cracking Codes with
+Python](https://inventwithpython.com/cracking/), and [Operating Systems: Three
+Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/). You can access all of
+the source code and technical content for this course by checking out its
+[GitHub organization](https://github.com/SecuritySynapse),
 [schedule](schedule/index.qmd), and [slides](slides/index.qmd).
 
 ## Resources for Making a Security Synapse
