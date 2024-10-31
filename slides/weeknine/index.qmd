@@ -135,7 +135,7 @@ Reference:
 
 ::: {.fragment style="margin-top: -0.5em; font-size: 0.85em;"}
 
-{{< iconify fa6-solid diagram-project >}} **Additional layers and/or sub-layers are also possible!**
+{{< iconify fa6-solid diagram-project >}} **Considering additional layers and/or sub-layers is also possible!**
 
 :::
 
