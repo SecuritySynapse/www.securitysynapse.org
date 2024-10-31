@@ -80,6 +80,28 @@ make sure that you have a plan to understand features and pitfalls of a product!
 
 :::
 
+## Evaluation Metrics in Security
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.75em;"}
+
+- **Precision**
+  - Equation: TP / (TP + FP)
+  - High precision: few false positives
+
+- **Recall**
+  - Equation: TP / (TP + FN)
+  - High recall: few false negatives
+
+- **Accuracy**
+  - Equation: (TP + TN) / (TP + FP + TN + FN)
+  - Overall correctness of the system
+
+- **F1-Score**
+  - Equation: 2 * (Precision * Recall) / (Precision + Recall)
+  - Balance between precision and recall
+
+:::
+
 # Correctness of computer security solutions is paramount!
 
 ::: fragment
