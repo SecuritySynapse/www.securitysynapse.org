@@ -307,6 +307,28 @@ sudo iptables-save > /etc/iptables/rules.v4
 
 :::
 
+## Multi-Factor Authentication
+
+::: fragment
+
+- Combines two or more authentication methods
+- Increases security by requiring multiple proofs
+- Prevent unauthorized access with combined methods
+
+:::
+
+::: {.fragment .boxed-content style="margin-top: -0.5em; font-size: 0.9em;"}
+
+- {{< iconify fa6-solid arrows-rotate >}} Concrete examples of multi-factor authentication:
+  - Password and fingerprint scan
+  - Password and security token
+  - Password and facial recognition
+
+- {{< iconify fa6-solid lightbulb >}} **Benefits and drawbacks of multi-factor
+authentication**?
+
+:::
+
 # What comes next after authentication?
 
 ::: fragment
@@ -473,6 +495,6 @@ chmod 754 data.json
 ::: fragment
 
 - What is the meaning of the permission string `rwxr-xr--`?
-- How does that map to the numbers `754`?
+- How does that map to the numbers `754` used with `chmod`?
 
 :::
