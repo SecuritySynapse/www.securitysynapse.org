@@ -1,0 +1,38 @@
+---
+title: Security Solutions
+description: "How Can we Layer Security Solutions?"
+date: 2024-10-21
+layout: full
+toc: true
+toc-expand: 3
+---
+
+## Exploration
+
+- {{< iconify fa6-solid book-open size=18px >}} Read chapter six [Computer
+Systems Security: Planning for Success](https://web.njit.edu/~rt494/security/)
+- {{< iconify fa6-solid book-open size=18px >}} Read chapter fifty-four in [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+
+## Activities
+
+- {{< iconify fa6-solid diagram-project size=18px >}} **Monday**: Laboratory session
+- {{< iconify fa6-solid people-line size=18px >}} **Tuesday and Thursday**:
+Security Solutions
+  - Understand the trade-offs in security solutions
+  - Learn how hardware and software can be used to protect systems
+  - Learn more about the "defense in depth" strategy to security
+  - Discover how an operating system plays a critical role in security
+  - Continued highlighting of the concept of a "security synapse"
+  - Student presentations that feature:
+    - Explanation of a high-level concepts behind security solutions
+    - In-class activity that connects concepts to real-world scenarios
+    - Hands-on examples of the operation and behavior of security solutions
+    - Demonstrate the use of a practical security solution
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="../../slides/weeknine/"></iframe>
+```
+
+{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week Nine: Networking Attacks](../../slides/weekeight/)
