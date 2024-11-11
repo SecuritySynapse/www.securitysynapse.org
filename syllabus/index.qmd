@@ -195,13 +195,13 @@ percentages during the academic semester.
 
 | Category                 | Percentage |
 |--------------------------|------------|
-| Class Participation      |  5%        |
+| Class Participation      |   5%       |
 | In-Person Assessments    |  10%       |
 | Midterm Examinations     |  10%       |
-| Final Examination        |  10%       |
-| Security Synapse Projects|  10%       |
-| Security Survey Projects |  25%       |
-| Security Summit Project  |  30%       |
+| Final Examination        |  20%       |
+| Security Synapse Projects|   5%       |
+| Security Summit Project  |  15%       |
+| Security Survey Projects |  35%       |
 
 These assessment categories have the following definitions:
 
