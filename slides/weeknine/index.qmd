@@ -497,7 +497,6 @@ certain constraints, users can modify them using commands like `chmod`!
 ## Using `chmod` to Set Permissions
 
 ```bash
-# Simple example for a hypothetical file
 # Example file: data.json
 # Permissions goal: rwxr-xr--
 
@@ -513,10 +512,11 @@ chmod 754 data.json
 -rwxr-xr-- 1 owner group 0 Oct 10 12:34 data.json
 ```
 
-::: fragment
+::: {.fragment style="font-size: 0.9em;"}
 
 - What is the meaning of the permission string `rwxr-xr--`?
 - How does that map to the numbers `754` used with `chmod`?
+- Different versions of Unix/Linux may operate slightly differently!
 
 :::
 
