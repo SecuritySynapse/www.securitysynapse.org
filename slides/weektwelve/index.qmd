@@ -81,7 +81,7 @@ authentication**?
 
 ## Authenticating a Person
 
-::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 1em;"}
+::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 0.95em;"}
 
 - **Three main strategies for authentication**:
   - Authentication based on *what you know*
@@ -148,8 +148,17 @@ authentication**?
 
 - **Definition**: Identify based on physical traits
 - **Advantages**: Convenient, hard to steal/impersonate
-- **Types**: Physiological (e.g., fingerprints or iris) and behavioral (e.g.,
-voice, signature)
+- **Types**:
+  - Physiological (e.g., fingerprints or iris)
+  - Behavioral (e.g., voice, signature)
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 0.9em;"}
+
+- {{< iconify fa6-solid lightbulb >}} **Discussion Questions**:
+  - What are the risks associated with biometrics?
+  - What are the ethical considerations for using biometrics?
 
 :::
 
@@ -172,3 +181,28 @@ voice, signature)
   - How should you educate users about key card use?
 
 :::
+
+# How do we evaluate the trade-offs of different authentication and authorization solutions?
+
+## Evaluation Metrics in Security
+
+::: {.fragment style="margin-top: -0.5em; font-size: 0.75em;"}
+
+- **Precision**
+  - Equation: TP / (TP + FP)
+  - High precision: few false positives
+
+- **Recall**
+  - Equation: TP / (TP + FN)
+  - High recall: few false negatives
+
+- **Accuracy**
+  - Equation: (TP + TN) / (TP + FP + TN + FN)
+  - Overall correctness of the system
+
+- **F1-Score**
+  - Equation: 2 * (Precision * Recall) / (Precision + Recall)
+  - Balance between precision and recall
+
+:::
+
