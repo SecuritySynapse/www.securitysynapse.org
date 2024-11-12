@@ -46,6 +46,7 @@ format:
   - Authentication based on *what you know*
   - Authentication based on *what you have*
   - Authentication based on *what you are*
+  - Each of these are an *identification factor*
 
 :::
 
@@ -54,7 +55,6 @@ format:
 - {{< iconify fa6-solid people-line >}} **In-Class Discussion**
   - What is an example of each type of authentication?
   - What are the strengths and weaknesses of each type?
-  - How can you combine these methods to increase security?
 
 :::
 
