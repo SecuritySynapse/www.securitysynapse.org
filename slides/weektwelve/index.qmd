@@ -124,3 +124,51 @@ authentication**?
   - Attribute-based, flexible, rule-based
 
 :::
+
+# Physical Access
+
+::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
+
+- **Importance**: Protect buildings, contents, and data
+- **Risk**: Technical controls bypassed if physical security fails
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 1em;"}
+
+- **Quick Examples**:
+  - Gates, biometrics, key cards, proximity cards
+- Let's explore biometrics and cards in more detail!
+
+:::
+
+## Biometrics
+
+::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
+
+- **Definition**: Identify based on physical traits
+- **Advantages**: Convenient, hard to steal/impersonate
+- **Types**: Physiological (e.g., fingerprints or iris) and behavioral (e.g.,
+voice, signature)
+
+:::
+
+## Key Cards
+
+::: {.fragment .boxed-content .fade style="font-size: 1.00em;"}
+
+- **Usage**: Access to rooms
+- **Types**: Magnetic stripes, RFID, NFC
+- **Risks**: Skimming, cloning attacks
+- **Mitigation**: Monitor areas, educate users
+
+:::
+
+::: {.fragment .fade style="margin-top: 0.25em; font-size: 0.9em;"}
+
+- {{< iconify fa6-solid lightbulb >}} **Discussion Questions**:
+  - What are the benefits and drawbacks of using key cards?
+  - How can you prevent attackers from cloning key cards?
+  - How should you educate users about key card use?
+
+:::
