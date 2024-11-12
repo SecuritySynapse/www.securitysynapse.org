@@ -251,7 +251,8 @@ authentication**?
 
 ::: {style="margin-top: -0.45em; font-size: .50em;"}
 
-Source: [Access Controls Chapter of Computer Systems Security: Planning for Success](https://web.njit.edu/~rt494/security/#_access_controls)
+- Source: [Access Controls Chapter of Computer Systems Security: Planning for Success](https://web.njit.edu/~rt494/security/#_access_controls)
+- Although concepts are consistent, different versions of Linux/Unix may use slightly different approaches
 
 :::
 
