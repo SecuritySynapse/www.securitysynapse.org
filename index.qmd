@@ -119,7 +119,7 @@ references to some recently presented slide decks:
 
 ::: {.callout-note appearance="minimal" title="Security Synapse Community Resources"}
 
-Interested in connecting with other like-minded algorithm engineers? Please join
+Interested in connecting with other like-minded security engineers? Please join
 the [Security Synapse Discord Server](https://discord.gg/juUXz7d4Jh) and join the
 conversation! If you are an on-campus learning at Allegheny College, you may
 also join the [Allegheny College Computer Science Discord
