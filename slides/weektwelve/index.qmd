@@ -206,3 +206,75 @@ authentication**?
 
 :::
 
+# How do we manage multiple users who need to securely use an operating system?
+
+## Identity Management
+
+::: {.incremental style="margin-top: -0.45em; font-size: 1.00em;"}
+
+- **Privileged Identity Management (PIM)**
+  - **Purpose**: Granular access control
+  - **Features**: Better reporting, anomaly detection
+
+- **Privileged Access Management (PAM)**
+  - **Purpose**: Safeguard identities, advanced capabilities
+  - **Usage**: Common in Linux, temporary privilege escalation
+
+- **Identity and Access Management (IAM)**
+  - **Framework**: Manages digital identities
+  - **Functions**: User database, access privileges, groups/roles
+
+:::
+
+## Unix File Permissions
+
+::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
+
+- **Design**: Owner (or "user"), group, all users (or "others")
+- **Permissions**: Read (1), Write (2), Execute (4)
+  - **Example**: Read + Execute = 5 = (1 + 4)
+- **`chmod` Command**: Set permissions
+  - **Format**: `chmod 710 <filename>`
+  - **710**: Owner (7), Group (1), Others (0)
+- **`chown` Command**: Change owner/group
+  - **Format**: `chown <owner>.<group> <filename>`
+  - **Note**: Group optional
+
+:::
+
+## Understanding Permissions
+
+::: {style="margin-top: 1.0em;"}
+:::
+
+![Illustrating Unix File Permissions](permissions.svg)
+
+::: {style="margin-top: -0.45em; font-size: .50em;"}
+
+Source: [Access Controls Chapter of Computer Systems Security: Planning for Success](https://web.njit.edu/~rt494/security/#_access_controls)
+
+:::
+
+## Access Control Lists
+
+```bash
+drwxr-xr-x    - gkapfham users 31 Oct 07:27 .git
+drwxr-xr-x    - gkapfham users  2 Sep 18:16 .github
+.rw-r--r-- 2.4k gkapfham users  2 Sep 18:23 .gitignore
+drwxr-xr-x    - gkapfham users 29 Oct 12:48 .quarto
+drwxr-xr-x    - gkapfham users 12 Sep 07:54 _extensions
+drwxr-xr-x    - gkapfham users 16 Sep 11:34 _freeze
+drwxr-xr-x    - gkapfham users  2 Sep 18:16 _include
+.rw-r--r--  125 gkapfham users  2 Sep 19:17 _publish.yml
+.rw-r--r-- 1.8k gkapfham users 18 Sep 20:27 _quarto.yml
+drwxr-xr-x    - gkapfham users 31 Oct 07:30 _site
+drwxr-xr-x    - gkapfham users 18 Sep 21:35 css
+drwxr-xr-x    - gkapfham users  2 Sep 18:43 icons
+drwxr-xr-x    - gkapfham users  2 Sep 18:47 images
+.rw-r--r-- 5.4k gkapfham users 28 Oct 21:21 index.qmd
+drwxr-xr-x    - gkapfham users 30 Oct 09:16 projects
+.rw-r--r--  247 gkapfham users  3 Sep 09:08 README.md
+drwxr-xr-x    - gkapfham users 29 Oct 07:27 schedule
+drwxr-xr-x    - gkapfham users 31 Oct 07:30 slides
+drwxr-xr-x    - gkapfham users 29 Oct 15:12 syllabus
+```
