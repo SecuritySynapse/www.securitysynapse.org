@@ -279,3 +279,42 @@ drwxr-xr-x    - gkapfham users 29 Oct 07:27 schedule
 drwxr-xr-x    - gkapfham users 31 Oct 07:30 slides
 drwxr-xr-x    - gkapfham users 29 Oct 15:12 syllabus
 ```
+
+## Access Management
+
+::: {.fragment .fade style="margin-top: -0.25em; font-size: 1.00em;"}
+
+#### Single Sign-On (SSO)
+
+- **Purpose**: One identity provider for multiple services
+- **Benefits**: Simplifies user management, enhances security
+- **Protocols**: SAML, OpenID, OAuth
+
+:::
+
+::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
+
+#### OpenID and OAuth
+
+- **OpenID**: Decentralized, multiple IDPs
+  - **OpenID Connect (OIDC)**: Modern, REST API
+- **OAuth**: Allows websites to access user profile parts
+  - **Usage**: Often part of authentication protocols
+
+:::
+
+## SAML Details
+
+::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
+
+- **Definition**: Security Assertion Markup Language
+- **Workflow**:
+  - User accesses service
+  - Redirect to SAML IDP with request
+  - User logs in, credentials verified
+  - SAML IDP sends credentials to service
+- **Benefits**:
+  - Centralized identity provider
+  - Single sign-on for multiple services
+
+:::
