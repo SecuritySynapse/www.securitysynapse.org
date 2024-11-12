@@ -392,87 +392,86 @@ Operating system tracks each process, its owner, and its resources!
 ## Access Control Lists
 
 ```bash
-drwxr-xr-x    - gkapfham users 31 Oct 07:27  .git
-drwxr-xr-x    - gkapfham users  2 Sep 18:16  .github
-.rw-r--r-- 2.4k gkapfham users  2 Sep 18:23  .gitignore
-drwxr-xr-x    - gkapfham users 29 Oct 12:48  .quarto
-drwxr-xr-x    - gkapfham users 12 Sep 07:54  _extensions
-drwxr-xr-x    - gkapfham users 16 Sep 11:34  _freeze
-drwxr-xr-x    - gkapfham users  2 Sep 18:16  _include
-.rw-r--r--  125 gkapfham users  2 Sep 19:17  _publish.yml
-.rw-r--r-- 1.8k gkapfham users 18 Sep 20:27  _quarto.yml
-drwxr-xr-x    - gkapfham users 31 Oct 07:30  _site
-drwxr-xr-x    - gkapfham users 18 Sep 21:35  css
-drwxr-xr-x    - gkapfham users  2 Sep 18:43  icons
-drwxr-xr-x    - gkapfham users  2 Sep 18:47  images
-.rw-r--r-- 5.4k gkapfham users 28 Oct 21:21  index.qmd
-drwxr-xr-x    - gkapfham users 30 Oct 09:16  projects
-.rw-r--r--  247 gkapfham users  3 Sep 09:08  README.md
-drwxr-xr-x    - gkapfham users 29 Oct 07:27  schedule
-drwxr-xr-x    - gkapfham users 31 Oct 07:30  slides
-drwxr-xr-x    - gkapfham users 29 Oct 15:12  syllabus
+drwxr-xr-x    - gkapfham users 31 Oct 07:27 .git
+drwxr-xr-x    - gkapfham users  2 Sep 18:16 .github
+.rw-r--r-- 2.4k gkapfham users  2 Sep 18:23 .gitignore
+drwxr-xr-x    - gkapfham users 29 Oct 12:48 .quarto
+drwxr-xr-x    - gkapfham users 12 Sep 07:54 _extensions
+drwxr-xr-x    - gkapfham users 16 Sep 11:34 _freeze
+drwxr-xr-x    - gkapfham users  2 Sep 18:16 _include
+.rw-r--r--  125 gkapfham users  2 Sep 19:17 _publish.yml
+.rw-r--r-- 1.8k gkapfham users 18 Sep 20:27 _quarto.yml
+drwxr-xr-x    - gkapfham users 31 Oct 07:30 _site
+drwxr-xr-x    - gkapfham users 18 Sep 21:35 css
+drwxr-xr-x    - gkapfham users  2 Sep 18:43 icons
+drwxr-xr-x    - gkapfham users  2 Sep 18:47 images
+.rw-r--r-- 5.4k gkapfham users 28 Oct 21:21 index.qmd
+drwxr-xr-x    - gkapfham users 30 Oct 09:16 projects
+.rw-r--r--  247 gkapfham users  3 Sep 09:08 README.md
+drwxr-xr-x    - gkapfham users 29 Oct 07:27 schedule
+drwxr-xr-x    - gkapfham users 31 Oct 07:30 slides
+drwxr-xr-x    - gkapfham users 29 Oct 15:12 syllabus
 ```
 
 ## Tree-Based View of Permissions
 
 ```bash
-drwxr-xr-x    - gkapfham 31 Oct 07:38  .
-drwxr-xr-x    - gkapfham 12 Sep 07:54 ├──  _extensions
-drwxr-xr-x    - gkapfham  2 Sep 18:16 │  ├──  mcanouil
-drwxr-xr-x    - gkapfham 12 Sep 07:54 │  └──  r-wasm
-drwxr-xr-x    - gkapfham 16 Sep 11:34 ├──  _freeze
-drwxr-xr-x    - gkapfham 16 Sep 11:34 │  ├──  index
-drwxr-xr-x    - gkapfham 31 Oct 07:38 │  ├──  site_libs
-drwxr-xr-x    - gkapfham 29 Oct 07:50 │  └──  slides
-drwxr-xr-x    - gkapfham  2 Sep 18:16 ├──  _include
-drwxr-xr-x    - gkapfham  2 Sep 20:55 │  └──  html
-.rw-r--r--  125 gkapfham  2 Sep 19:17 ├──  _publish.yml
-.rw-r--r-- 1.8k gkapfham 18 Sep 20:27 ├──  _quarto.yml
-drwxr-xr-x    - gkapfham 31 Oct 07:38 ├──  _site
-drwxr-xr-x    - gkapfham  2 Sep 18:16 │  ├──  allhands
-drwxr-xr-x    - gkapfham 18 Sep 21:42 │  ├──  css
-drwxr-xr-x    - gkapfham  2 Sep 18:32 │  ├──  icons
-drwxr-xr-x    - gkapfham  2 Sep 18:32 │  ├──  images
-.rw-r--r--  37k gkapfham 31 Oct 07:38 │  ├──  index.html
-.rw-r--r--  911 gkapfham 31 Oct 07:38 │  ├──  listings.json
-drwxr-xr-x    - gkapfham 30 Oct 09:16 │  ├──  projects
-.rw-r--r--   53 gkapfham  4 Sep 15:52 │  ├── 󰚩 robots.txt
-drwxr-xr-x    - gkapfham 29 Oct 07:27 │  ├──  schedule
-.rw-r--r-- 316k gkapfham 31 Oct 07:38 │  ├──  search.json
-drwxr-xr-x    - gkapfham 18 Sep 18:54 │  ├──  site_libs
-.rw-r--r-- 4.5k gkapfham 31 Oct 07:38 │  ├── 󰗀 sitemap.xml
-drwxr-xr-x    - gkapfham 31 Oct 07:38 │  ├──  slides
-drwxr-xr-x    - gkapfham 29 Oct 15:12 │  └──  syllabus
-drwxr-xr-x    - gkapfham 18 Sep 21:35 ├──  css
-.rw-r--r-- 4.8k gkapfham 18 Sep 21:35 │  └──  styles.css
-drwxr-xr-x    - gkapfham  2 Sep 18:43 ├──  icons
-.rw-r--r--  26k gkapfham  2 Sep 18:28 │  └──  securitysynapse.png
-drwxr-xr-x    - gkapfham  2 Sep 18:47 ├──  images
-.rw-r--r--  14k gkapfham  2 Sep 18:27 │  └── 󰕙 Security-Synapse-Logo.svg
-.rw-r--r-- 5.4k gkapfham 28 Oct 21:21 ├──  index.qmd
-drwxr-xr-x    - gkapfham 30 Oct 09:16 ├──  projects
-.rw-r--r-- 8.9k gkapfham 30 Oct 09:14 │  └──  index.qmd
-.rw-r--r--  247 gkapfham  3 Sep 09:08 ├──  README.md
-drwxr-xr-x    - gkapfham 29 Oct 07:27 ├──  schedule
-.rw-r--r-- 3.3k gkapfham 29 Sep 16:08 │  ├──  index.qmd
-drwxr-xr-x    - gkapfham 25 Sep 09:21 │  ├──  weekfive
-drwxr-xr-x    - gkapfham 18 Sep 08:09 │  ├──  weekfour
-drwxr-xr-x    - gkapfham 16 Sep 11:25 │  ├──  weekone
-drwxr-xr-x    - gkapfham 10 Sep 09:18 │  ├──  weekthree
-drwxr-xr-x    - gkapfham 10 Sep 07:49 │  └──  weektwo
-drwxr-xr-x    - gkapfham 31 Oct 07:38 ├──  slides
-drwxr-xr-x    - gkapfham  2 Sep 19:01 │  ├──  css
-.rw-r--r-- 1.3k gkapfham 30 Oct 15:56 │  ├──  index.qmd
-drwxr-xr-x    - gkapfham 31 Oct 07:24 │  ├──  weekeight
-drwxr-xr-x    - gkapfham 29 Oct 12:48 │  ├──  weekfive
-drwxr-xr-x    - gkapfham 29 Oct 12:48 │  ├──  weekfour
-drwxr-xr-x    - gkapfham 31 Oct 07:38 │  ├──  weeknine
-drwxr-xr-x    - gkapfham 30 Oct 16:00 │  ├──  weekseven
-drwxr-xr-x    - gkapfham 29 Oct 12:48 │  ├──  weekthree
-drwxr-xr-x    - gkapfham 29 Oct 12:48 │  └──  weektwo
-drwxr-xr-x    - gkapfham 29 Oct 15:12 ├──  syllabus
-.rw-r--r--  26k gkapfham 29 Oct 15:12 │  └──  index.qmd
-
+drwxr-xr-x    - gkapfham 31 Oct 07:38 .
+drwxr-xr-x    - gkapfham 12 Sep 07:54 ├── _extensions
+drwxr-xr-x    - gkapfham  2 Sep 18:16 │  ├── mcanouil
+drwxr-xr-x    - gkapfham 12 Sep 07:54 │  └── r-wasm
+drwxr-xr-x    - gkapfham 16 Sep 11:34 ├── _freeze
+drwxr-xr-x    - gkapfham 16 Sep 11:34 │  ├── index
+drwxr-xr-x    - gkapfham 31 Oct 07:38 │  ├── site_libs
+drwxr-xr-x    - gkapfham 29 Oct 07:50 │  └── slides
+drwxr-xr-x    - gkapfham  2 Sep 18:16 ├── _include
+drwxr-xr-x    - gkapfham  2 Sep 20:55 │  └── html
+.rw-r--r--  125 gkapfham  2 Sep 19:17 ├── _publish.yml
+.rw-r--r-- 1.8k gkapfham 18 Sep 20:27 ├── _quarto.yml
+drwxr-xr-x    - gkapfham 31 Oct 07:38 ├── _site
+drwxr-xr-x    - gkapfham  2 Sep 18:16 │  ├── allhands
+drwxr-xr-x    - gkapfham 18 Sep 21:42 │  ├── css
+drwxr-xr-x    - gkapfham  2 Sep 18:32 │  ├── icons
+drwxr-xr-x    - gkapfham  2 Sep 18:32 │  ├── images
+.rw-r--r--  37k gkapfham 31 Oct 07:38 │  ├── index.html
+.rw-r--r--  911 gkapfham 31 Oct 07:38 │  ├── listings.json
+drwxr-xr-x    - gkapfham 30 Oct 09:16 │  ├── projects
+.rw-r--r--   53 gkapfham  4 Sep 15:52 │  ├── robots.txt
+drwxr-xr-x    - gkapfham 29 Oct 07:27 │  ├── schedule
+.rw-r--r-- 316k gkapfham 31 Oct 07:38 │  ├── search.json
+drwxr-xr-x    - gkapfham 18 Sep 18:54 │  ├── site_libs
+.rw-r--r-- 4.5k gkapfham 31 Oct 07:38 │  ├── sitemap.xml
+drwxr-xr-x    - gkapfham 31 Oct 07:38 │  ├── slides
+drwxr-xr-x    - gkapfham 29 Oct 15:12 │  └── syllabus
+drwxr-xr-x    - gkapfham 18 Sep 21:35 ├── css
+.rw-r--r-- 4.8k gkapfham 18 Sep 21:35 │  └── styles.css
+drwxr-xr-x    - gkapfham  2 Sep 18:43 ├── icons
+.rw-r--r--  26k gkapfham  2 Sep 18:28 │  └── securitysynapse.png
+drwxr-xr-x    - gkapfham  2 Sep 18:47 ├── images
+.rw-r--r--  14k gkapfham  2 Sep 18:27 │  └── Security-Synapse-Logo.svg
+.rw-r--r-- 5.4k gkapfham 28 Oct 21:21 ├── index.qmd
+drwxr-xr-x    - gkapfham 30 Oct 09:16 ├── projects
+.rw-r--r-- 8.9k gkapfham 30 Oct 09:14 │  └── index.qmd
+.rw-r--r--  247 gkapfham  3 Sep 09:08 ├── README.md
+drwxr-xr-x    - gkapfham 29 Oct 07:27 ├── schedule
+.rw-r--r-- 3.3k gkapfham 29 Sep 16:08 │  ├── index.qmd
+drwxr-xr-x    - gkapfham 25 Sep 09:21 │  ├── weekfive
+drwxr-xr-x    - gkapfham 18 Sep 08:09 │  ├── weekfour
+drwxr-xr-x    - gkapfham 16 Sep 11:25 │  ├── weekone
+drwxr-xr-x    - gkapfham 10 Sep 09:18 │  ├── weekthree
+drwxr-xr-x    - gkapfham 10 Sep 07:49 │  └── weektwo
+drwxr-xr-x    - gkapfham 31 Oct 07:38 ├── slides
+drwxr-xr-x    - gkapfham  2 Sep 19:01 │  ├── css
+.rw-r--r-- 1.3k gkapfham 30 Oct 15:56 │  ├── index.qmd
+drwxr-xr-x    - gkapfham 31 Oct 07:24 │  ├── weekeight
+drwxr-xr-x    - gkapfham 29 Oct 12:48 │  ├── weekfive
+drwxr-xr-x    - gkapfham 29 Oct 12:48 │  ├── weekfour
+drwxr-xr-x    - gkapfham 31 Oct 07:38 │  ├── weeknine
+drwxr-xr-x    - gkapfham 30 Oct 16:00 │  ├── weekseven
+drwxr-xr-x    - gkapfham 29 Oct 12:48 │  ├── weekthree
+drwxr-xr-x    - gkapfham 29 Oct 12:48 │  └── weektwo
+drwxr-xr-x    - gkapfham 29 Oct 15:12 ├── syllabus
+.rw-r--r--  26k gkapfham 29 Oct 15:12 │  └── index.qmd
 ```
 
 ## Exploring Access Control Lists
