@@ -1,0 +1,572 @@
+---
+title: "Security Solutions"
+subtitle: "Learning How to Thwart Security Attacks"
+description: "How can we mitigate computer security risks?"
+date: "2024-10-28"
+date-format: long
+author: Gregory M. Kapfhammer
+execute:
+  echo: true
+jupyter: python3
+format:
+  revealjs:
+    completion: true
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Security Synapse"
+---
+
+# Different computer security solutions!
+
+- Detect, combat, and repair security breaches
+- Leverage both hardware and software solutions
+- In-house, procured from third-parties, or outsourced
+- Building on open-source standards or software tools
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.2em; font-size: 0.875em;"}
+
+{{< iconify fa6-solid award >}} When evaluating computer security solutions,
+make sure that you have a plan to understand features and pitfalls of a product!
+
+:::
+
+## Detection Outcomes in Security
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.75em;"}
+
+- **True Positive (TP)**
+  - Correctly identified security threat
+  - *Example*: Malware detected and flagged
+
+- **False Positive (FP)**
+  - Benign activity incorrectly flagged as a threat
+  - *Example*: Legitimate software flagged as malware
+
+- **True Negative (TN)**
+  - Correctly identified benign activity
+  - *Example*: Normal network traffic not flagged
+
+- **False Negative (FN)**
+  - Security threat not detected
+  - *Example*: Malware not flagged by the system
+
+:::
+
+# What are the downsides of false positives?
+
+::: {.fragment style="font-size: 0.95em; margin-top: -0.1em;"}
+
+- Wasting time and resources
+- Disruption of normal operations
+- Decreased trust in security solutions
+- Disable security features or alerts
+- Quarantine or delete benign software
+
+:::
+
+# What are the downsides of false negatives?
+
+::: {.fragment style="font-size: 0.95em; margin-top: -0.1em;"}
+
+- Undetected security breaches
+- Potential data loss or theft
+- Compromised system integrity
+- Increased vulnerability to attacks
+- Delayed response to threats
+
+:::
+
+## Evaluation Metrics in Security
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.75em;"}
+
+- **Precision**
+  - Equation: TP / (TP + FP)
+  - High precision: few false positives
+
+- **Recall**
+  - Equation: TP / (TP + FN)
+  - High recall: few false negatives
+
+- **Accuracy**
+  - Equation: (TP + TN) / (TP + FP + TN + FN)
+  - Overall correctness of the system
+
+- **F1-Score**
+  - Equation: 2 * (Precision * Recall) / (Precision + Recall)
+  - Balance between precision and recall
+
+:::
+
+# Correctness of computer security solutions is paramount!
+
+::: fragment
+
+- Crowdstrike distributes a faulty update to Falcon
+- About 8.5 million computers crashed and could not restart 
+- A "historic IT outage" with billions of dollars lost
+
+Reference:
+[2024 Crowdstrike-related IT Outages](https://en.wikipedia.org/wiki/2024_CrowdStrike-related_IT_outages)
+
+:::
+
+## Layered Security: Zero through Three
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.725em;"}
+
+- **Layer 0: Operating System**
+  - Foundation of system security
+  - Strategy: Regularly update and patch
+
+- **Layer 1: Network Security**
+  - Protects data in transit
+  - Tools: Firewalls, VPNs, and IDS/IPS
+
+- **Layer 2: Application Security**
+  - Secures software applications
+  - Strategy: Secure coding practices, application firewalls
+
+- **Layer 3: Endpoint Security**
+  - Protects individual devices
+  - Tools: Antivirus software, endpoint detection and response
+
+:::
+
+## Layered Security: Four through Six
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.9em;"}
+
+- **Layer 4: Data Security**
+  - Ensures data integrity and confidentiality
+  - Example: Encryption, access controls
+
+- **Layer 5: Human Monitoring**
+  - Continuous oversight and response by experts
+  - Example: Security operations center or incident response teams
+
+- **Layer 6: Physical Security**
+  - Protects physical assets
+  - Example: Biometric access controls, surveillance cameras
+
+:::
+
+::: {.fragment style="margin-top: -0.5em; font-size: 0.85em;"}
+
+{{< iconify fa6-solid diagram-project >}} **Considering additional layers and/or
+sub-layers is also possible!**
+
+:::
+
+# Adopt a "Defense in Depth" Strategy!
+
+::: fragment
+
+- No security solution thwarts all attacks
+- One layer of security is not enough
+- Multiple layers increase security
+- Redundancy and diversity improves security
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.2em; font-size: 0.875em;"}
+
+{{< iconify fa6-solid award >}} Build a security solution so that each tool
+complements the others!
+
+:::
+
+# Network Security Solutions
+
+- Firewalls
+- Proxy servers
+- Intrusion detection
+- Virtual private networks
+- Load balancers
+
+## Common Ports for Services
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 0.75em;"}
+
+| Protocol | Port | Description          |
+|----------|------|----------------------|
+| SSH      | 22   | Secure Shell         |
+| HTTP     | 80   | Hypertext Transfer Protocol |
+| HTTPS    | 443  | Hypertext Transfer Protocol Secure |
+| FTP      | 21   | File Transfer Protocol |
+| SMTP     | 25   | Simple Mail Transfer Protocol |
+| DNS      | 53   | Domain Name System   |
+| POP3     | 110  | Post Office Protocol 3 |
+| IMAP     | 143  | Internet Message Access Protocol |
+| Telnet   | 23   | Unencrypted text communications |
+| NTP      | 123  | Network Time Protocol |
+
+:::
+
+## Firewalls
+
+- Monitor and control network traffic
+- Barrier between trusted and untrusted networks
+- *Example*: `iptables` on a Linux server
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 0.85em;"}
+
+- **Suggestions for `iptables` rules**:
+  - Allow all outgoing traffic
+  - Block all incoming traffic by default
+  - Allow incoming traffic for specific services
+  - Continuously monitor the network traffic
+
+:::
+
+## Using `iptables` on a Linux Server
+
+::: fragment
+
+```bash
+# Flush existing rules
+sudo iptables -F
+
+# Drop all incoming and forwarding traffic, allow outgoing
+sudo iptables -P INPUT DROP
+sudo iptables -P FORWARD DROP
+sudo iptables -P OUTPUT ACCEPT
+
+# Allow incoming traffic on localhost
+sudo iptables -A INPUT -i lo -j ACCEPT
+
+# Allow incoming SSH connections
+sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+
+# Allow incoming HTTP and HTTPS traffic
+sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+sudo iptables -A INPUT -p tcp --dport 443 -j ACCEPT
+
+# Allow established and related incoming connections
+sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# Save the rules
+sudo iptables-save > /etc/iptables/rules.v4
+```
+
+:::
+
+## Network Security Solutions
+
+::: fragment
+
+### Proxy Servers
+
+- Act as intermediaries for requests
+- Improve security and performance
+- *Example*: Web proxies, reverse proxies
+
+:::
+
+::: fragment
+
+### Intrusion Detection
+
+- Monitor network for suspicious activity
+- Alert administrators of potential threats
+- *Example*: Network-based IDS, host-based IDS
+
+:::
+
+## More Network Security Solutions
+
+::: fragment
+
+### Virtual Private Networks
+
+- Secure connections over public networks
+- Encrypt data in transit
+- *Example*: Remote access VPN, site-to-site VPN
+
+:::
+
+::: fragment
+
+### Load Balancers
+
+- Distribute network traffic across servers
+- Improve availability and reliability
+- *Example*: Hardware load balancers, software load balancers
+
+:::
+
+# How does the operating system enhance overall computer security?
+
+::: fragment
+
+- **Authentication**: Confirm the identity of a user
+- **Authorization**: Control access to resources
+- *Plays a critical role in ensuring system security!*
+
+:::
+
+## Authenticating a Person
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 1em;"}
+
+- **Three main strategies for authentication**:
+  - Authentication based on *what you know*
+  - Authentication based on *what you have*
+  - Authentication based on *what you are*
+
+:::
+
+::: {.fragment .fade-up style="margin-top: 0.25em; font-size: 0.9em;"}
+
+- {{< iconify fa6-solid people-line >}} **In-Class Discussion**
+  - What is an example of each type of authentication?
+  - What are the strengths and weaknesses of each type?
+  - How can you combine these methods to increase security?
+
+:::
+
+## Multi-Factor Authentication
+
+::: fragment
+
+- Combines two or more authentication methods
+- Increases security by requiring multiple proofs
+- Prevent unauthorized access with combined methods
+
+:::
+
+::: {.fragment .boxed-content style="margin-top: -0.5em; font-size: 0.9em;"}
+
+- {{< iconify fa6-solid arrows-rotate >}} Concrete examples of multi-factor authentication:
+  - Password and fingerprint scan
+  - Password and security token
+  - Password and facial recognition
+
+- {{< iconify fa6-solid lightbulb >}} **Benefits and drawbacks of multi-factor
+authentication**?
+
+:::
+
+# What comes next after authentication?
+
+::: fragment
+
+- Attach an identity to processes and resources
+- Define access control lists (ACLs) for resources
+- Enforce permissions for users and groups
+- Practical security for both users and administrators
+
+:::
+
+## Process Listings
+
+```bash
+  5489 gkapfham  20   0  507568 207916  12836 R   6.0   0.3  83:03.61 nvim
+  4080 gkapfham  20   0  457480 157688  13480 S   1.7   0.2  30:49.27 nvim
+ 34117 gkapfham  20   0  353912  54300  10160 S   1.0   0.1  21:09.79 nvim
+  5673 gkapfham  20   0   32.8g 600140 245208 S   0.7   0.9  15:48.35 brave
+ 26197 gkapfham  20   0  372420  72632  12076 S   0.7   0.1  14:51.28 nvim
+142753 gkapfham  20   0  377348  77484  11788 S   0.7   0.1  11:18.73 nvim
+  1422 root      20   0 1014944 124624  79648 S   0.3   0.2   5:40.33 X
+  1653 gkapfham  20   0  975088 109404  75032 S   0.3   0.2   2:31.56 picom
+  1687 gkapfham  20   0  154384   5984   5216 S   0.3   0.0   0:41.83 i3status
+  2447 gkapfham  20   0   17580   8416   3672 S   0.3   0.0   2:16.78 tmux: server
+  3023 gkapfham  20   0 2722832  36704  16348 S   0.3   0.1   2:05.64 lazygit
+  5229 gkapfham  20   0   21.1g 204076  55472 S   0.3   0.3   6:50.71 deno
+142410 gkapfham  20   0   21.1g 177968  55900 S   0.3   0.3   5:48.26 deno
+142514 gkapfham  20   0 2575176  31032  16032 S   0.3   0.0   0:47.63 lazygit
+156934 gkapfham  20   0  385008  60516  17956 S   0.3   0.1   4:36.81 python3.12
+176763 gkapfham  20   0 1156.1g 224924 128212 S   0.3   0.3   0:48.73 brave
+```
+
+::: {.fragment .convex style="margin-top: 0.75em; font-size: 0.85em;"}
+
+Operating system tracks each process, its owner, and its resources!
+
+:::
+
+## Access Control Lists
+
+```bash
+drwxr-xr-x    - gkapfham users 31 Oct 07:27  .gitj
+drwxr-xr-x    - gkapfham users  2 Sep 18:16  .github
+.rw-r--r-- 2.4k gkapfham users  2 Sep 18:23  .gitignore
+drwxr-xr-x    - gkapfham users 29 Oct 12:48  .quarto
+drwxr-xr-x    - gkapfham users 12 Sep 07:54  _extensions
+drwxr-xr-x    - gkapfham users 16 Sep 11:34  _freeze
+drwxr-xr-x    - gkapfham users  2 Sep 18:16  _include
+.rw-r--r--  125 gkapfham users  2 Sep 19:17  _publish.yml
+.rw-r--r-- 1.8k gkapfham users 18 Sep 20:27  _quarto.yml
+drwxr-xr-x    - gkapfham users 31 Oct 07:30  _site
+drwxr-xr-x    - gkapfham users 18 Sep 21:35  css
+drwxr-xr-x    - gkapfham users  2 Sep 18:43  icons
+drwxr-xr-x    - gkapfham users  2 Sep 18:47  images
+.rw-r--r-- 5.4k gkapfham users 28 Oct 21:21  index.qmd
+drwxr-xr-x    - gkapfham users 30 Oct 09:16  projects
+.rw-r--r--  247 gkapfham users  3 Sep 09:08  README.md
+drwxr-xr-x    - gkapfham users 29 Oct 07:27  schedule
+drwxr-xr-x    - gkapfham users 31 Oct 07:30  slides
+drwxr-xr-x    - gkapfham users 29 Oct 15:12  syllabus
+```
+
+## Tree-Based View of Permissions
+
+```bash
+drwxr-xr-x    - gkapfham 31 Oct 07:38  .
+drwxr-xr-x    - gkapfham 12 Sep 07:54 ├──  _extensions
+drwxr-xr-x    - gkapfham  2 Sep 18:16 │  ├──  mcanouil
+drwxr-xr-x    - gkapfham 12 Sep 07:54 │  └──  r-wasm
+drwxr-xr-x    - gkapfham 16 Sep 11:34 ├──  _freeze
+drwxr-xr-x    - gkapfham 16 Sep 11:34 │  ├──  index
+drwxr-xr-x    - gkapfham 31 Oct 07:38 │  ├──  site_libs
+drwxr-xr-x    - gkapfham 29 Oct 07:50 │  └──  slides
+drwxr-xr-x    - gkapfham  2 Sep 18:16 ├──  _include
+drwxr-xr-x    - gkapfham  2 Sep 20:55 │  └──  html
+.rw-r--r--  125 gkapfham  2 Sep 19:17 ├──  _publish.yml
+.rw-r--r-- 1.8k gkapfham 18 Sep 20:27 ├──  _quarto.yml
+drwxr-xr-x    - gkapfham 31 Oct 07:38 ├──  _site
+drwxr-xr-x    - gkapfham  2 Sep 18:16 │  ├──  allhands
+drwxr-xr-x    - gkapfham 18 Sep 21:42 │  ├──  css
+drwxr-xr-x    - gkapfham  2 Sep 18:32 │  ├──  icons
+drwxr-xr-x    - gkapfham  2 Sep 18:32 │  ├──  images
+.rw-r--r--  37k gkapfham 31 Oct 07:38 │  ├──  index.html
+.rw-r--r--  911 gkapfham 31 Oct 07:38 │  ├──  listings.json
+drwxr-xr-x    - gkapfham 30 Oct 09:16 │  ├──  projects
+.rw-r--r--   53 gkapfham  4 Sep 15:52 │  ├── 󰚩 robots.txt
+drwxr-xr-x    - gkapfham 29 Oct 07:27 │  ├──  schedule
+.rw-r--r-- 316k gkapfham 31 Oct 07:38 │  ├──  search.json
+drwxr-xr-x    - gkapfham 18 Sep 18:54 │  ├──  site_libs
+.rw-r--r-- 4.5k gkapfham 31 Oct 07:38 │  ├── 󰗀 sitemap.xml
+drwxr-xr-x    - gkapfham 31 Oct 07:38 │  ├──  slides
+drwxr-xr-x    - gkapfham 29 Oct 15:12 │  └──  syllabus
+drwxr-xr-x    - gkapfham 18 Sep 21:35 ├──  css
+.rw-r--r-- 4.8k gkapfham 18 Sep 21:35 │  └──  styles.css
+drwxr-xr-x    - gkapfham  2 Sep 18:43 ├──  icons
+.rw-r--r--  26k gkapfham  2 Sep 18:28 │  └──  securitysynapse.png
+drwxr-xr-x    - gkapfham  2 Sep 18:47 ├──  images
+.rw-r--r--  14k gkapfham  2 Sep 18:27 │  └── 󰕙 Security-Synapse-Logo.svg
+.rw-r--r-- 5.4k gkapfham 28 Oct 21:21 ├──  index.qmd
+drwxr-xr-x    - gkapfham 30 Oct 09:16 ├──  projects
+.rw-r--r-- 8.9k gkapfham 30 Oct 09:14 │  └──  index.qmd
+.rw-r--r--  247 gkapfham  3 Sep 09:08 ├──  README.md
+drwxr-xr-x    - gkapfham 29 Oct 07:27 ├──  schedule
+.rw-r--r-- 3.3k gkapfham 29 Sep 16:08 │  ├──  index.qmd
+drwxr-xr-x    - gkapfham 25 Sep 09:21 │  ├──  weekfive
+drwxr-xr-x    - gkapfham 18 Sep 08:09 │  ├──  weekfour
+drwxr-xr-x    - gkapfham 16 Sep 11:25 │  ├──  weekone
+drwxr-xr-x    - gkapfham 10 Sep 09:18 │  ├──  weekthree
+drwxr-xr-x    - gkapfham 10 Sep 07:49 │  └──  weektwo
+drwxr-xr-x    - gkapfham 31 Oct 07:38 ├──  slides
+drwxr-xr-x    - gkapfham  2 Sep 19:01 │  ├──  css
+.rw-r--r-- 1.3k gkapfham 30 Oct 15:56 │  ├──  index.qmd
+drwxr-xr-x    - gkapfham 31 Oct 07:24 │  ├──  weekeight
+drwxr-xr-x    - gkapfham 29 Oct 12:48 │  ├──  weekfive
+drwxr-xr-x    - gkapfham 29 Oct 12:48 │  ├──  weekfour
+drwxr-xr-x    - gkapfham 31 Oct 07:38 │  ├──  weeknine
+drwxr-xr-x    - gkapfham 30 Oct 16:00 │  ├──  weekseven
+drwxr-xr-x    - gkapfham 29 Oct 12:48 │  ├──  weekthree
+drwxr-xr-x    - gkapfham 29 Oct 12:48 │  └──  weektwo
+drwxr-xr-x    - gkapfham 29 Oct 15:12 ├──  syllabus
+.rw-r--r--  26k gkapfham 29 Oct 15:12 │  └──  index.qmd
+
+```
+
+## Exploring Access Control Lists
+
+::: incremental
+
+- **ACLs**: Define permissions for users and groups
+- **User**: Individual account with specific permissions
+- **Group**: Collection of users with shared permissions
+- **Owner**: User who created the file or directory
+- **Permissions**: Read, write, execute
+- **Connection**: Owner sets ACLs for user and group access
+
+:::
+
+::: {.fragment .boxed-content .fade-up style="margin-top: 0.25em; font-size: 0.8em;"}
+
+Operating system defines default permissions for files and directories. Within
+certain constraints, users can modify them using commands like `chmod`!
+
+:::
+
+## Using `chmod` to Set Permissions
+
+```bash
+# Simple example for a hypothetical file
+# Example file: data.json
+# Permissions goal: rwxr-xr--
+
+# Breakdown:
+# User (owner): rwx (read, write, execute)
+# Group: r-x (read, execute)
+# Others: r-- (read)
+
+# command to set these permissions
+chmod 754 data.json
+
+# resulting permission string
+-rwxr-xr-- 1 owner group 0 Oct 10 12:34 data.json
+```
+
+::: fragment
+
+- What is the meaning of the permission string `rwxr-xr--`?
+- How does that map to the numbers `754` used with `chmod`?
+
+:::
+
+## Summary of Security Solutions
+
+::: {.columns style="margin-top: 0.5em;"}
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Key Concepts*
+
+#### Security Layers
+
+- Operating system
+- Network security tools
+- Application security practices
+
+#### Evaluation Metrics
+
+- FP, TP, TN, FN
+- Precision, recall, accuracy
+- F1-score balances metrics
+
+:::
+
+:::
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Best Practices*
+
+#### Implementation
+
+- Regular updates and patches
+- Secure coding practices
+- Multi-factor authentication
+
+#### Exploration
+
+- Compare security tools
+- Study protocol interactions
+- Consider next-gen solutions
+
+:::
+
+:::
+
+:::
