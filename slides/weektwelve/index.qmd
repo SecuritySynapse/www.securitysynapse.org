@@ -152,6 +152,8 @@ authentication**?
     
 :::
 
+# In addition to providing software security, we must also maintain physical security!
+
 # Physical Access
 
 ::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
@@ -279,7 +281,8 @@ authentication**?
 ::: {style="margin-top: -0.45em; font-size: .50em;"}
 
 - Source: [Access Controls Chapter of Computer Systems Security: Planning for Success](https://web.njit.edu/~rt494/security/#_access_controls)
-- Although concepts are consistent, different versions of Linux/Unix may use slightly different approaches
+- Although concepts are consistent, different versions of Linux/Unix may use
+slightly different approaches
 
 :::
 
@@ -343,5 +346,18 @@ drwxr-xr-x    - gkapfham users 29 Oct 15:12 syllabus
 - **Benefits**:
   - Centralized identity provider
   - Single sign-on for multiple services
+
+:::
+
+# What are the benefits of using SSO and SAML?
+
+::: fragment
+
+- **Benefits of SSO**:
+  - Simplifies user management
+  - Enhances overall security
+  - Reduces password fatigue
+
+{{< iconify fa6-solid lightbulb >}} What are examples of software systems that use SSO?
 
 :::
