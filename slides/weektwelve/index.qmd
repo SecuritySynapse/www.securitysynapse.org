@@ -437,7 +437,7 @@ nixbld1:x:30001:30000:Nix build user 1
 
 ## Evaluation Metrics: Precision
 
-::: {.callout-note icon=false title="Evaluation of a Biometric-based System"}
+::: {.callout-note icon=false title="Evaluation of a Biometric-based Authentication System" style="padding-bottom: 0.1em;"}
 
 - True Positives (TP): 80
 - False Positives (FP): 10
@@ -459,7 +459,7 @@ nixbld1:x:30001:30000:Nix build user 1
 
 ## Evaluation Metrics: Recall
 
-::: {.callout-note icon=false title="Evaluation of a Biometric-based System"}
+::: {.callout-note icon=false title="Evaluation of a Biometric-based Authentication System" style="padding-bottom: 0.1em;"}
 
 - True Positives (TP): 80
 - False Positives (FP): 10
@@ -481,7 +481,7 @@ nixbld1:x:30001:30000:Nix build user 1
 
 ## Evaluation Metrics: Accuracy
 
-::: {.callout-note icon=false title="Evaluation of a Biometric-based System"}
+::: {.callout-note icon=false title="Evaluation of a Biometric-based Authentication System" style="padding-bottom: 0.1em;"}
 
 - True Positives (TP): 80
 - False Positives (FP): 10
@@ -503,7 +503,7 @@ nixbld1:x:30001:30000:Nix build user 1
 
 ## Evaluation Metrics: F1-Score
 
-::: {.callout-note icon=false title="Evaluation of a Biometric-based System" style="padding-bottom: 0.1em;"}
+::: {.callout-note icon=false title="Evaluation of a Biometric-based Authentication System" style="padding-bottom: 0.1em;"}
 
 - True Positives (TP): 80
 - False Positives (FP): 10
