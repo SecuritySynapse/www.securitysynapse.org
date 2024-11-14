@@ -557,15 +557,15 @@ nixbld1:x:30001:30000:Nix build user 1
 
 #### Implementation
 
-- Regular updates and patches
-- Secure coding practices
 - Multi-factor authentication
+- Network access management
+- Single-sign-on solutions
 
 #### Exploration
 
-- Compare security tools
-- Study protocol interactions
-- Consider next-gen solutions
+- Compare security options
+- Don't "roll your own" auth
+- Understand key trade-offs
 
 :::
 
