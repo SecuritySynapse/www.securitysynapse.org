@@ -152,88 +152,6 @@ authentication**?
     
 :::
 
-# In addition to providing software security, we must also maintain physical security!
-
-# Physical Access
-
-::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
-
-- **Importance**: Protect buildings, contents, and data
-- **Risk**: Technical controls bypassed if physical security fails
-
-:::
-
-::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 1em;"}
-
-- **Quick Examples**:
-  - Gates, biometrics, key cards, proximity cards
-- Let's explore biometrics and cards in more detail!
-
-:::
-
-## Biometrics
-
-::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
-
-- **Definition**: Identify based on physical traits
-- **Advantages**: Convenient, hard to steal/impersonate
-- **Types**:
-  - Physiological (e.g., fingerprints or iris)
-  - Behavioral (e.g., voice, signature)
-
-:::
-
-::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 0.9em;"}
-
-- {{< iconify fa6-solid lightbulb >}} **Discussion Questions**:
-  - What are the risks associated with biometrics?
-  - What are the ethical considerations for using biometrics?
-
-:::
-
-## Key Cards
-
-::: {.fragment .boxed-content .fade style="font-size: 1.00em;"}
-
-- **Usage**: Access to rooms
-- **Types**: Magnetic stripes, RFID, NFC
-- **Risks**: Skimming, cloning attacks
-- **Mitigation**: Monitor areas, educate users
-
-:::
-
-::: {.fragment .fade style="margin-top: 0.25em; font-size: 0.9em;"}
-
-- {{< iconify fa6-solid lightbulb >}} **Discussion Questions**:
-  - What are the benefits and drawbacks of using key cards?
-  - How can you prevent attackers from cloning key cards?
-  - How should you educate users about key card use?
-
-:::
-
-# How do we evaluate the trade-offs of different authentication and authorization solutions?
-
-## Evaluation Metrics in Security
-
-::: {.fragment style="margin-top: -0.5em; font-size: 0.75em;"}
-
-- **Precision**
-  - Equation: TP / (TP + FP)
-  - High precision: few false positives
-
-- **Recall**
-  - Equation: TP / (TP + FN)
-  - High recall: few false negatives
-
-- **Accuracy**
-  - Equation: (TP + TN) / (TP + FP + TN + FN)
-  - Overall correctness of the system
-
-- **F1-Score**
-  - Equation: 2 * (Precision * Recall) / (Precision + Recall)
-  - Balance between precision and recall
-
-:::
 
 # How do we manage multiple users who need to securely use an operating system?
 
@@ -319,6 +237,25 @@ drwxr-xr-x    - gkapfham users 31 Oct 07:30 slides
 drwxr-xr-x    - gkapfham users 29 Oct 15:12 syllabus
 ```
 
+## Where does the operating system store an access control list?
+
+::: {.fragment .callout-note icon=false title="Access Control List Storage"}
+
+- **Linux**: Extended attributes
+- **Windows**: NTFS file system
+- **macOS**: HFS+ file system
+
+:::
+
+::: {.fragment .fade style="margin-top: -0.25em; font-size: 0.8em;"}
+
+- {{< iconify fa6-solid diagram-project >}} **Important Considerations**:
+  - **Security**: ACLs must be protected
+  - **Performance**: ACLs can slow down file access
+  - **Maintenance**: Regularly review and update ACLs
+
+:::
+
 ## Who are the users on your laptop?
 
 ```bash
@@ -338,7 +275,25 @@ rtkit:x:994:994:RealtimeKit daemon for audio
 nixbld1:x:30001:30000:Nix build user 1
 ```
 
-## Access Management
+::: {.fragment .fade style="margin-top: 0.05em; font-size: 0.8em;"}
+
+- Wow, there are many users on a NixOS system!
+- What are the purposes of these users?
+- Who created these users and what are their permissions?
+
+:::
+
+# How do we securely manage access to network resources?
+
+::: fragment
+
+- **Authentication**: Verifying the identity of a user
+- **Login**: Establishing a user session
+- **Single Sign-On (SSO)**: One identity provider, many services
+
+:::
+
+## Network Access Management
 
 ::: {.fragment .fade style="margin-top: -0.25em; font-size: 1.00em;"}
 
@@ -387,5 +342,149 @@ nixbld1:x:30001:30000:Nix build user 1
   - Reduces password fatigue
 
 {{< iconify fa6-solid lightbulb >}} What are examples of software systems that use SSO?
+
+:::
+
+# In addition to providing software security, we must also maintain physical security!
+
+::: fragment
+
+- **Physical Access**: Protect buildings, contents, and data
+- **Complements**: Enhance effectiveness of technical controls
+
+:::
+
+# Physical Access
+
+::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
+
+- **Importance**: Protect buildings, contents, and data
+- **Risk**: Technical controls bypassed if physical security fails
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 1em;"}
+
+- **Quick Examples**:
+  - Gates, biometrics, key cards, proximity cards
+- Let's explore biometrics and cards in more detail!
+
+:::
+
+## Biometrics
+
+::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
+
+- **Definition**: Identify based on physical traits
+- **Advantages**: Convenient, hard to steal/impersonate
+- **Types**:
+  - Physiological (e.g., fingerprints or iris)
+  - Behavioral (e.g., voice, signature)
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 0.9em;"}
+
+- {{< iconify fa6-solid lightbulb >}} **Discussion Questions**:
+  - What are the risks associated with biometrics?
+  - What are the ethical considerations for using biometrics?
+
+:::
+
+## Key Cards
+
+::: {.fragment .boxed-content .fade style="font-size: 1.00em;"}
+
+- **Usage**: Access to rooms
+- **Types**: Magnetic stripes, RFID, NFC
+- **Risks**: Skimming, cloning attacks
+- **Mitigation**: Monitor areas, educate users
+
+:::
+
+::: {.fragment .fade style="margin-top: 0.25em; font-size: 0.9em;"}
+
+- {{< iconify fa6-solid lightbulb >}} **Discussion Questions**:
+  - What are the benefits and drawbacks of using key cards?
+  - How can you prevent attackers from cloning key cards?
+  - How should you educate users about key card use?
+
+:::
+
+# How do we evaluate the trade-offs of different authentication and authorization solutions?
+
+## Evaluation Metrics in Security
+
+::: {.fragment style="margin-top: -0.5em; font-size: 0.75em;"}
+
+- **Precision**
+  - Equation: TP / (TP + FP)
+  - High precision: few false positives
+
+- **Recall**
+  - Equation: TP / (TP + FN)
+  - High recall: few false negatives
+
+- **Accuracy**
+  - Equation: (TP + TN) / (TP + FP + TN + FN)
+  - Overall correctness of the system
+
+- **F1-Score**
+  - Equation: 2 * (Precision * Recall) / (Precision + Recall)
+  - Balance between precision and recall
+
+:::
+
+## Calculating Evaluation Metrics
+
+- True Positives (TP): 80
+- False Positives (FP): 10
+- True Negatives (TN): 90
+- False Negatives (FN): 20
+
+## Calculations
+
+::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.8em;"}
+
+\begin{equation}
+  \text{Precision} = \frac{TP}{TP + FP},
+  \text{Precision} = \frac{80}{80 + 10} = \frac{80}{90} \approx 0.89
+\end{equation}
+
+:::
+
+::: {.incremental .fade style="margin-top: 1.15em; font-size: 0.8em;"}
+
+\begin{equation}
+\text{Recall} = \frac{TP}{TP + FN},
+\text{Recall} = \frac{80}{80 + 20} = \frac{80}{100} = 0.80
+\end{equation}
+
+:::
+
+::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.8em;"}
+
+\begin{equation}
+\text{Accuracy} = \frac{TP + TN}{TP + FP + TN + FN}
+\end{equation}
+
+:::
+
+::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.8em;"}
+
+\begin{equation}
+\text{Accuracy} = \frac{80 + 90}{80 + 10 + 90 + 20} =  \frac{170}{200} = 0.85
+\end{equation}
+
+:::
+
+::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.8em;"}
+
+\begin{equation}
+\text{F1-Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
+\end{equation}
+\begin{equation}
+\text{F1-Score} = 2 \times \frac{0.89 \times 0.80}{0.89 + 0.80} = 2 \times \frac{0.712}{1.69} \approx 0.84
+\end{equation}
 
 :::
