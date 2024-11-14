@@ -435,23 +435,30 @@ nixbld1:x:30001:30000:Nix build user 1
 
 :::
 
-## Calculating Evaluation Metrics
+## Evaluation Metrics: Precision
+
+::: {.callout-note icon=false title="Evaluation of a Biometric-based System"}
 
 - True Positives (TP): 80
 - False Positives (FP): 10
 - True Negatives (TN): 90
 - False Negatives (FN): 20
 
-## Calculations
+:::
 
 ::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.8em;"}
 
 \begin{equation}
-  \text{Precision} = \frac{TP}{TP + FP},
+  \text{Precision} = \frac{TP}{TP + FP}
+\end{equation}
+\begin{equation}
   \text{Precision} = \frac{80}{80 + 10} = \frac{80}{90} \approx 0.89
 \end{equation}
 
 :::
+
+## Calculations
+
 
 ::: {.incremental .fade style="margin-top: 1.15em; font-size: 0.8em;"}
 
