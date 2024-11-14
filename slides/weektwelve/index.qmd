@@ -133,11 +133,11 @@ authentication**?
   - Execute commands with elevated privileges
   - Require authentication to gain elevated privileges
 
-*Let's explore the differences between `sudo` and `su` in more detail!*
+*Let's explore the detailed differences between `sudo` and `su`!*
 
 :::
 
-## Exploring `sudo` and `su`
+## Using the `sudo` and `su` Commands
 
 ::: incremental
 
@@ -522,6 +522,8 @@ nixbld1:x:30001:30000:Nix build user 1
 \end{equation}
 
 :::
+
+# Does the `F1-Score` accurately measure the effectiveness of a security solution?
 
 ## Summary of Access Control
 
