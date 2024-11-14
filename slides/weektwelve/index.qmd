@@ -524,6 +524,14 @@ nixbld1:x:30001:30000:Nix build user 1
 
 # Does the `F1-Score` accurately measure the effectiveness of a security solution?
 
+::: {.fragment .fade style="margin-top: -0.2em; font-size: 0.8em;"}
+
+- What is more important?
+  - **Precision**: Few false positives
+  - **Recall**: Few false negatives
+
+:::
+
 ## Summary of Access Control
 
 ::: {.columns style="margin-top: 0.5em;"}
