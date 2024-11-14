@@ -125,6 +125,33 @@ authentication**?
 
 :::
 
+# What are the similarities and differences between `sudo` and `su`?
+
+::: fragment
+
+- **Similarities**:
+  - Execute commands with elevated privileges
+  - Require authentication to gain elevated privileges
+
+*Let's explore the differences between `sudo` and `su` in more detail!*
+
+:::
+
+## Exploring `sudo` and `su`
+
+::: incremental
+
+- **Differences**:
+  - **Usage**:
+    - **`sudo`**: Executes a single command with superuser privileges. *Example*: `sudo apt update`.
+    - **`su`**: Switches to the superuser account or another user account. *Example*: `su` or `su - username`.
+
+  - **Scope**:
+    - **`sudo`**: Limited to the command being executed
+    - **`su`**: Provides privileges to a shell until exit
+    
+:::
+
 # Physical Access
 
 ::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
