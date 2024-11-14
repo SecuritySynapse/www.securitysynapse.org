@@ -237,6 +237,15 @@ authentication**?
 
 # How do we manage multiple users who need to securely use an operating system?
 
+::: {.fragment .fade style="margin-top: -0.45em; font-size: 0.80em;"}
+
+- User account
+- Group accounts
+- Privileged accounts
+- Service accounts
+
+:::
+
 ## Identity Management
 
 ::: {.incremental style="margin-top: -0.45em; font-size: 1.00em;"}
@@ -308,6 +317,25 @@ drwxr-xr-x    - gkapfham users 30 Oct 09:16 projects
 drwxr-xr-x    - gkapfham users 29 Oct 07:27 schedule
 drwxr-xr-x    - gkapfham users 31 Oct 07:30 slides
 drwxr-xr-x    - gkapfham users 29 Oct 15:12 syllabus
+```
+
+## Who are the users on your laptop?
+
+```bash
+root:x:0:0:System administrator
+messagebus:x:4:4:D-Bus system message bus daemon user
+polkituser:x:28:995:PolKit daemon
+cups:x:36:20:CUPS printing services
+lightdm:x:78:78:Light Display Manager
+systemd-coredump:x:151:993:Core dump user
+systemd-network:x:152:152:Network management daemon
+systemd-resolve:x:153:153:Resolver daemon
+systemd-timesync:x:154:154:Time synchronization daemon
+nm-openvpn:x:217:217:Virtual Private Network user
+fwupd-refresh:x:992:991:Firmware update daemon
+systemd-oom:x:993:992:Systemd Out Of Memory user
+rtkit:x:994:994:RealtimeKit daemon for audio
+nixbld1:x:30001:30000:Nix build user 1
 ```
 
 ## Access Management
