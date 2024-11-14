@@ -446,7 +446,7 @@ nixbld1:x:30001:30000:Nix build user 1
 
 :::
 
-::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.8em;"}
+::: {.fragment .fade style="margin-top: -0.45em; font-size: 0.8em;"}
 
 \begin{equation}
   \text{Precision} = \frac{TP}{TP + FP}
@@ -457,35 +457,62 @@ nixbld1:x:30001:30000:Nix build user 1
 
 :::
 
-## Calculations
+## Evaluation Metrics: Recall
 
+::: {.callout-note icon=false title="Evaluation of a Biometric-based System"}
 
-::: {.incremental .fade style="margin-top: 1.15em; font-size: 0.8em;"}
+- True Positives (TP): 80
+- False Positives (FP): 10
+- True Negatives (TN): 90
+- False Negatives (FN): 20
+
+:::
+
+::: {.fragment .fade style="margin-top: 1.15em; font-size: 0.8em;"}
 
 \begin{equation}
-\text{Recall} = \frac{TP}{TP + FN},
+\text{Recall} = \frac{TP}{TP + FN}
+\end{equation}
+\begin{equation}
 \text{Recall} = \frac{80}{80 + 20} = \frac{80}{100} = 0.80
 \end{equation}
 
 :::
 
-::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.8em;"}
+## Evaluation Metrics: Accuracy
+
+::: {.callout-note icon=false title="Evaluation of a Biometric-based System"}
+
+- True Positives (TP): 80
+- False Positives (FP): 10
+- True Negatives (TN): 90
+- False Negatives (FN): 20
+
+:::
+
+::: {.fragment .fade style="margin-top: -0.45em; font-size: 0.8em;"}
 
 \begin{equation}
 \text{Accuracy} = \frac{TP + TN}{TP + FP + TN + FN}
 \end{equation}
-
-:::
-
-::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.8em;"}
-
 \begin{equation}
 \text{Accuracy} = \frac{80 + 90}{80 + 10 + 90 + 20} =  \frac{170}{200} = 0.85
 \end{equation}
 
 :::
 
-::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.8em;"}
+## Evaluation Metrics: F1-Score
+
+::: {.callout-note icon=false title="Evaluation of a Biometric-based System" style="padding-bottom: 0.1em;"}
+
+- True Positives (TP): 80
+- False Positives (FP): 10
+- True Negatives (TN): 90
+- False Negatives (FN): 20
+
+:::
+
+::: {.fragment .fade style="margin-top: 0.45em; font-size: 0.8em;"}
 
 \begin{equation}
 \text{F1-Score} = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
