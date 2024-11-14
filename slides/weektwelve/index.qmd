@@ -152,7 +152,6 @@ authentication**?
     
 :::
 
-
 # How do we manage multiple users who need to securely use an operating system?
 
 ::: {.fragment .fade style="margin-top: -0.45em; font-size: 0.80em;"}
