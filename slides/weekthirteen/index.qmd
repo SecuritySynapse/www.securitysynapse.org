@@ -20,21 +20,19 @@ format:
     footer: "Security Synapse"
 ---
 
-# Key computer computer security tasks?
+# Security Vulnerability Management
 
-::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
+::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.825em;"}
 
-- **Authentication**: Confirm the identity of a user
-- **Authorization**: Control access to resources
-- **Accounting**: Track usage of resources
+- **Vulnerability**: A weakness in a computer system
+- **Vulnerability management**: A process for identifying, classifying, and
+handling a vulnerability in a computer system
+- **Asset**: A resource that is valuable to an organization
+- **Threat**: A potential danger to an asset
+- **Risk**: The likelihood of a threat exploiting a vulnerability
+- **Countermeasure**: A way to reduce the computer security risk
 
-:::
-
-::: {.fragment .boxed-content .fade style="margin-top: -0.25em; font-size: 0.80em;"}
-
-- **Reminders**:
-  - Must effectively offer *all* features in a system!
-  - Both *hardware and software* must be secure!
+- {{< iconify fa6-solid people-line >}} **In-Class Discussion**: What is a complete example of these steps?
 
 :::
 
