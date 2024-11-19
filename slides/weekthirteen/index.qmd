@@ -57,17 +57,16 @@ complete example of these steps?
 
 ::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
 
-- 
-- **Resources**: Processes, programs, user accounts
-- **Benefits**: Reduces attack surface, limits malware spread
-- **Compliance**: Easier audits, limited Internet access
+- **Hardware**: CPU, RAM, hard drives, network cards
+- **Software**: Operating systems, applications, libraries
+- **Networks**: Routers, switches, firewalls, servers
 
 :::
 
 ::: {.fragment .boxed-content .fade style="margin-top: -0.25em; font-size: 0.80em;"}
 
 - {{< iconify fa6-solid award >}} **Key Questions**:
-  - What do you prefer *more secure* or *easy-to-use*?
-  - What are principles to *striking* the *right balance*?
+  - What is an automated strategy for collecting information?
+  - Once system is deployed, how can we collect information about it?
 
 :::
