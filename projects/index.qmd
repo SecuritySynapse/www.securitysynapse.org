@@ -169,3 +169,65 @@ size=18px >}}
 network-monitoring-starter](https://github.com/SecuritySynapse/network-monitoring-starter)
 template repository to get started! Questions? Share them in the [Security
 Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
+
+### Project Four: Program Tracing
+
+#### Preparation
+
+- {{< iconify fa6-solid book-open size=18px >}} **Review**: Chapters six and
+seven of [Computer Systems Security: Planning for
+Success](https://web.njit.edu/~rt494/security/)
+
+- {{< iconify fa6-solid lightbulb size=18px >}} **Insight**: Chapters six and
+seven of [Computer Systems Security: Planning for
+Success](https://web.njit.edu/~rt494/security/) introduce some of the commonly
+employed security solutions that can prevent attacks through, for instance,
+malware.
+
+
+- {{< iconify fa6-solid code size=18px >}} **Task**: This project invites you to
+implement a `networkmonitor` in the Python programming language that conducts
+network monitoring by creating clients and servers on localhost and then
+monitoring the network traffic between the client and the server. The program
+supports different modes of operation, including server and client modes using
+either sockets or XML-RPC, and interception modes for monitoring network
+communication with either of the aforementioned protocols. Ultimately, the
+`networkmonitor` should start a separate process in one of these modes:
+  - **Client and Server Protocols**:
+    - **Socket Server**: Start a server using sockets.
+    - **Socket Client**: Start a client using sockets.
+    - **XML-RPC Server**: Start a server using XML-RPC.
+    - **XML-RPC Client**: Start a client using XML-RPC.
+  - **Interception Mechanisms**:
+    - **Socket Interception**: Intercept network communication using sockets.
+    - **XML-RPC Interception**: Intercept network communication using XML-RPC.
+
+#### Resources
+
+To learn more about fuzzing and to gather inspiration for your own
+implementation of the `networkmonitor`, please consult the following technical
+resources about the network communication with either sockets or XML-RPC in
+Python, the TCP/IP protocol and the layout of their headers and payloads, and
+various network monitoring techniques:
+
+- **IP Header Structure**
+  - [IPv4 Protocol Description on Wikipedia](https://en.wikipedia.org/wiki/IPv4)
+  - [Reading Binary Data with Python](https://reachtim.com/reading-binary-data-with-python)
+
+- **TCP Header Structure**
+  - [TCP Protocol Description on
+  Wikipedia](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
+  - [TCP Header Format on
+  GeeksforGeeks](https://www.geeksforgeeks.org/introduction-and-ipv4-datagram-header/)
+
+- **Python Networking**
+  - [Python XML-RPC Library](https://docs.python.org/3/library/xmlrpc.server.html)
+  - [Python Socket Library](https://docs.python.org/3/library/socket.html)
+  - [Python Struct Library](https://docs.python.org/3/library/struct.html)
+  - [Regarding struct.unpack() in Python](https://stackoverflow.com/questions/20768107/regarding-struct-unpack-in-python)
+
+Interested in working on this project? See the [{{< iconify fa6-brands github
+size=18px >}}
+network-monitoring-starter](https://github.com/SecuritySynapse/network-monitoring-starter)
+template repository to get started! Questions? Share them in the [Security
+Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
