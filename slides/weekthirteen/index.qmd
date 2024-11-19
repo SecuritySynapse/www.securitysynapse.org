@@ -291,3 +291,53 @@ critically important!
   - How can we ensure that the CVSS score is accurate?
 
 :::
+
+## Vulnerability Management Review
+
+::: {.columns style="margin-top: 0.5em;"}
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Key Concepts*
+
+#### Managing Security
+
+- Asset identification
+- Vulnerability detection
+- Risk evaluation
+
+#### Evaluation Metrics
+
+- Efficiency of scans
+- Accuracy of results
+- Security of stored secrets
+
+:::
+
+:::
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Best Practices*
+
+#### Implementation
+
+- Use secret scanning tools
+- Update detection patterns
+- Automated data collection
+
+#### Exploration
+
+- Evaluate scanning tool options
+- Ensure scanning effectiveness
+- Adapt to new types of secrets
+
+:::
+
+:::
+
+:::
