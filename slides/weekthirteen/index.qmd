@@ -78,3 +78,56 @@ complete example of these concepts?
   - Once a system is deployed, how can we collect information about it?
 
 :::
+
+# What are some automated strategies for collecting and maintaining computer system information?
+
+## Detecting CPU Details
+
+```python
+def get_cpu() -> Dict[str, str]:
+    """Return information about the current CPU in the system."""
+    # detect the name of the function in
+    # which this source code exists
+    function_name = inspect.stack()[0][3]
+    # parse out the second part of the name after
+    # the underscore character
+    function_name = function_name.split("_")[1]
+    # create a dictionary with the function's
+    # purpose as the key and the value as
+    # the return of the function that collects it
+    return {function_name: str(platform.machine())}
+```
+
+::: {.fragment .fade style="margin-top: 0.5em; font-size: 0.95em;"}
+
+- Use the `inspect` package to detect the name of the function
+- Use the `platform` package to detect the CPU architecture
+- Ensure that the function works in all execution environments!
+
+:::
+
+## Detecting Disk Details
+
+```python
+def get_disk() -> Dict[str, str]:
+    """Return disk space usage."""
+    function_name = inspect.stack()[0][3]
+    function_name = function_name.split("_")[1]
+    if platform.system() == constants.system.Windows:
+        total_disk = psutil.disk_usage("C:\\").total
+        used_disk = psutil.disk_usage("C:\\").used
+    else:
+        total_disk = psutil.disk_usage("/").total
+        used_disk = psutil.disk_usage("/").used
+    total_disk_gb = total_disk / (1024**3)
+    used_disk_gb = used_disk / (1024**3)
+    disk = f"Using {used_disk_gb:.2f} GB of {total_disk_gb:.2f} GB"
+    return {function_name: disk}
+```
+
+::: {.fragment .fade style="margin-top: 0.5em; font-size: 0.95em;"}
+
+- Use the `psutil` package to detect disk usage details
+- Customize this function for different operating systems
+
+:::
