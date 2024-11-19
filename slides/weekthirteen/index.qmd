@@ -26,10 +26,10 @@ format:
 
 ::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.85em;"}
 
+- **Asset**: A resource that is valuable to an organization
 - **Vulnerability**: A weakness in a computer system
 - **Vulnerability management**: A process for identifying, classifying, and
 handling a vulnerability in a computer system
-- **Asset**: A resource that is valuable to an organization
 - **Threat**: A potential danger to an asset in a computer system
 - **Risk**: The likelihood of a threat exploiting a vulnerability
 - **Countermeasure**: A way to reduce the computer security risk
