@@ -181,9 +181,13 @@ Success](https://web.njit.edu/~rt494/security/)
 - {{< iconify fa6-solid lightbulb size=18px >}} **Insight**: Chapters six and
 seven of [Computer Systems Security: Planning for
 Success](https://web.njit.edu/~rt494/security/) introduce some of the commonly
-employed security solutions that can prevent attacks through, for instance,
-malware.
-
+employed security solutions that can prevent attacks on computer security. A
+layered security approach that prevents the insertion of malware into a computer
+program may involve tracing (or, monitoring) the program's execution to discover
+what instructions it executes and how it accesses memory. Having access to a
+program trace can help a security engineer to discern when it is infect with
+malware. Program tracing can also be used to analyze the behavior of malware to
+understand how it operates and to aid in its detection.
 
 - {{< iconify fa6-solid code size=18px >}} **Task**: This project invites you to
 implement a `networkmonitor` in the Python programming language that conducts
