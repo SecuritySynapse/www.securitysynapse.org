@@ -99,6 +99,19 @@ print("\nScanning src/subject_contains_false_positive.py")
 detect_api_keys("src/subject_contains_false_positive.py")
 ```
 
+# Lessons Learned from Secret Scanning
+
+::: {.fragment .callout-note icon=false title="Scanning for API Keys in GitHub Repositories"}
+
+- **Important Questions**:
+  - **Efficiency**: Can we scan repositories quickly?
+  - **Effectiveness**: Can we detect all secrets?
+  - **Accuracy**: Can we avoid false positives?
+  - **Adaptability**: Can we update for new secrets?
+  - **Security**: Can we protect secrets from attackers?
+
+:::
+
 # Collecting Information
 
 ::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
@@ -169,5 +182,24 @@ def get_disk() -> Dict[str, str]:
 
 - Use the `psutil` package to detect disk usage details
 - Customize this function for different operating systems
+
+:::
+
+# Key Insights about Information Collection
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
+
+- **Feasibility**: How much information can we collect?
+- **Automation**: Can we automate information collection?
+- **Accuracy**: Can we ensure that the information is accurate?
+- **Security**: Can we manage it without security compromises?
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: -0.25em; font-size: 0.80em;"}
+
+{{< iconify fa6-solid lightbulb >}} Even though system data can be
+automatically collected through scans, proper data collection and management is
+critically important!
 
 :::
