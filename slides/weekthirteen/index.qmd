@@ -59,6 +59,46 @@ complete example of these concepts?
 
 :::
 
+## Secret Scanning
+
+```{python}
+import re
+
+def detect_api_keys(file_path: str):
+    api_key_patterns = [
+        r'AIza[0-9A-Za-z-_]{35}',
+        r'AKIA[0-9A-Z]{16}',
+        r'SK.[0-9a-zA-Z]{32}',
+        r'[0-9a-fA-F]{32}',
+        r'[0-9a-fA-F]{40}',
+        r'[A-Za-z0-9-_]{32}',
+        r'[A-Za-z0-9-_]{40}',
+    ]
+    with open(file_path, 'r') as file:
+        content = file.read()
+    matches = []
+    for pattern in api_key_patterns:
+        matches.extend(re.findall(pattern, content))
+    if matches:
+        print("\tPotential API keys found:")
+        for match in matches:
+            print(f"\t\t{match}")
+    else:
+        print("\tNo API keys found.")
+```
+
+## Using a Secret Scanner
+
+```{python}
+# scan three different files for API keys
+print("Scanning src/subject_contains_key.py")
+detect_api_keys("src/subject_contains_key.py")
+print("\nScanning src/subject_contains_no_key.py")
+detect_api_keys("src/subject_contains_no_key.py")
+print("\nScanning src/subject_contains_false_positive.py")
+detect_api_keys("src/subject_contains_false_positive.py")
+```
+
 # Collecting Information
 
 ::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
