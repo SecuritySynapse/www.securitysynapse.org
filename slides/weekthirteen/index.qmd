@@ -99,6 +99,40 @@ print("\nScanning src/subject_contains_false_positive.py")
 detect_api_keys("src/subject_contains_false_positive.py")
 ```
 
+## Inputs to Security Scanner
+
+```python
+"""Example of a file that contains a secret key."""
+
+if __name__ == "main":
+    api_key = "AIzaSyA-1234567890abcdefgHIJKLMNOPQRSTUV"
+    print("This is a file with a secret API key.")
+```
+
+::: {.fragment style="margin-top: 1em;"}
+
+```python
+"""Example of a file that contains no secret key."""
+
+if __name__ == "main":
+    print("This is a file without a secret API key.")
+```
+
+:::
+
+::: {.fragment style="margin-top: 1em;"}
+
+```python
+"""Example of a file that contains a false positive secret key."""
+
+if __name__ == "main":
+   dummy_key = "A1B2C3D4E5F6G7H8I9J0K1L2M3N4O5P6"
+   print("This is a file with a string that looks like an API key but is not.")
+```
+
+:::
+
+
 # Secret Scanning Lessons Learned
 
 ::: {.fragment .callout-note icon=false title="Scanning for API Keys in GitHub Repositories"}
