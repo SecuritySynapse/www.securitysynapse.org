@@ -132,7 +132,6 @@ if __name__ == "main":
 
 :::
 
-
 # Secret Scanning Lessons Learned
 
 ::: {.fragment .callout-note icon=false title="Scanning for API Keys in GitHub Repositories"}
