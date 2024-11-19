@@ -20,6 +20,8 @@ format:
     footer: "Security Synapse"
 ---
 
+# We need to identify computer security vulnerabilities and effectively manage them! *Best practices*?
+
 # Security Vulnerability Management
 
 ::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.825em;"}
@@ -28,19 +30,34 @@ format:
 - **Vulnerability management**: A process for identifying, classifying, and
 handling a vulnerability in a computer system
 - **Asset**: A resource that is valuable to an organization
-- **Threat**: A potential danger to an asset
+- **Threat**: A potential danger to an asset in a computer system
 - **Risk**: The likelihood of a threat exploiting a vulnerability
 - **Countermeasure**: A way to reduce the computer security risk
 
-- {{< iconify fa6-solid people-line >}} **In-Class Discussion**: What is a complete example of these steps?
+- {{< iconify fa6-solid people-line >}} **In-Class Discussion**: What is a
+complete example of these steps?
 
 :::
 
-# Least Privilege Principle
+# Storing Secrets Inside of GitHub Repositories
+
+::: {.fragment .callout-note icon=false title="Effective Secret Storage"}
+
+- **Vulnerability**:
+  - Secrets unlock access to sensitive information
+  - Programmers often store secrets in GitHub repositories
+  - Attackers can find secrets and easily exploit them
+- **Countermeasure**:
+  - How can we detect secrets in GitHub repositories?
+  - What tools can we use to prevent secrets from being stored?
+
+:::
+
+# Collecting Information
 
 ::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
 
-- **Principle**: Only permit necessary access
+- 
 - **Resources**: Processes, programs, user accounts
 - **Benefits**: Reduces attack surface, limits malware spread
 - **Compliance**: Easier audits, limited Internet access
@@ -52,145 +69,5 @@ handling a vulnerability in a computer system
 - {{< iconify fa6-solid award >}} **Key Questions**:
   - What do you prefer *more secure* or *easy-to-use*?
   - What are principles to *striking* the *right balance*?
-
-:::
-
-## Multi-Factor Authentication (MFA)
-
-::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
-
-- **Definition**: Two or more identification components
-- **Categories**: Username, password, token codes, biometrics
-- **Popular Products**: Google Authenticator, Authy, RSA IDs
-
-:::
-
-::: {.fragment .boxed-content style="margin-top: -0.25em; font-size: 0.9em;"}
-
-- {{< iconify fa6-solid arrows-rotate >}} Concrete examples of multi-factor authentication:
-  - Password and fingerprint scan
-  - Password and security token
-  - Password and facial recognition
-
-- {{< iconify fa6-solid lightbulb >}} **Benefits and drawbacks of multi-factor
-authentication**?
-
-:::
-
-## Authenticating a Person
-
-::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 0.95em;"}
-
-- **Three main strategies for authentication**:
-  - Authentication based on *what you know*
-  - Authentication based on *what you have*
-  - Authentication based on *what you are*
-  - Each of these are an *identification factor*
-
-:::
-
-::: {.fragment .fade-up style="margin-top: 0.25em; font-size: 0.9em;"}
-
-- {{< iconify fa6-solid people-line >}} **In-Class Discussion**
-  - What is an example of each type of authentication?
-  - What are the strengths and weaknesses of each type?
-
-:::
-
-# What comes next after authentication?
-
-::: fragment
-
-- Provide **authorization** for both users and administrators
-- Attach an **identity** to processes and resources
-- Define **access control lists** (ACLs) for resources
-- Enforce **permissions** for users and groups
-
-:::
-
-# Authorization Models
-
-::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
-
-- **MAC**: Mandatory Access Control
-  - High security, complex implementation
-- **DAC**: Discretionary Access Control
-  - Flexible, owner-controlled, less secure
-- **RBAC**: Role-Based Access Control
-  - Role-based, flexible, common
-- **ABAC**: Attribute-Based Access Control
-  - Attribute-based, flexible, rule-based
-
-:::
-
-# What are the similarities and differences between `sudo` and `su`?
-
-::: fragment
-
-- **Similarities**:
-  - Execute commands with elevated privileges
-  - Require authentication to gain elevated privileges
-
-*Let's explore the detailed differences between `sudo` and `su`!*
-
-:::
-
-## Using the `sudo` and `su` Commands
-
-::: incremental
-
-- **Differences**:
-  - **Usage**:
-    - **`sudo`**: Executes a single command with superuser privileges. *Example*: `sudo apt update`.
-    - **`su`**: Switches to the superuser account or another user account. *Example*: `su` or `su - username`.
-
-  - **Scope**:
-    - **`sudo`**: Limited to the command being executed
-    - **`su`**: Provides privileges to a shell until exit
-    
-:::
-
-# How do we manage multiple users who need to securely use an operating system?
-
-::: {.fragment .fade style="margin-top: -0.45em; font-size: 0.80em;"}
-
-- User account
-- Group accounts
-- Privileged accounts
-- Service accounts
-
-:::
-
-## Identity Management
-
-::: {.incremental style="margin-top: -0.45em; font-size: 1.00em;"}
-
-- **Privileged Identity Management (PIM)**
-  - **Purpose**: Granular access control
-  - **Features**: Better reporting, anomaly detection
-
-- **Privileged Access Management (PAM)**
-  - **Purpose**: Safeguard identities, advanced capabilities
-  - **Usage**: Common in Linux, temporary privilege escalation
-
-- **Identity and Access Management (IAM)**
-  - **Framework**: Manages digital identities
-  - **Functions**: User database, access privileges, groups/roles
-
-:::
-
-## Unix File Permissions
-
-::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
-
-- **Design**: Owner (or "user"), group, all users (or "others")
-- **Permissions**: Read (1), Write (2), Execute (4)
-  - **Example**: Read + Execute = 5 = (1 + 4)
-- **`chmod` Command**: Set permissions
-  - **Format**: `chmod 710 <filename>`
-  - **710**: Owner (7), Group (1), Others (0)
-- **`chown` Command**: Change owner/group
-  - **Format**: `chown <owner>.<group> <filename>`
-  - **Note**: Group optional
 
 :::
