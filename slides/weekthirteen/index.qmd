@@ -22,9 +22,9 @@ format:
 
 # We need to identify computer security vulnerabilities and effectively manage them! *Best practices*?
 
-# Security Vulnerability Management
+## Security Vulnerability Management
 
-::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.825em;"}
+::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.85em;"}
 
 - **Vulnerability**: A weakness in a computer system
 - **Vulnerability management**: A process for identifying, classifying, and
@@ -34,8 +34,14 @@ handling a vulnerability in a computer system
 - **Risk**: The likelihood of a threat exploiting a vulnerability
 - **Countermeasure**: A way to reduce the computer security risk
 
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: -0.25em; font-size: 0.80em;"}
+
 - {{< iconify fa6-solid people-line >}} **In-Class Discussion**: What is a
-complete example of these steps?
+complete example of these concepts?
+  - Identify the asset and its importance to computer security
+  - Identify the threat to this asset and ways to mitigate it
 
 :::
 
