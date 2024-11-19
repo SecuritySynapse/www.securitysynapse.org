@@ -66,6 +66,8 @@ complete example of these concepts?
 - **Hardware**: CPU, RAM, hard drives, network cards
 - **Software**: Operating systems, applications, libraries
 - **Networks**: Routers, switches, firewalls, servers
+- **Data**: Repositories, logs, databases, backups
+- **People**: Users, administrators, developers, attackers
 
 :::
 
@@ -73,6 +75,6 @@ complete example of these concepts?
 
 - {{< iconify fa6-solid award >}} **Key Questions**:
   - What is an automated strategy for collecting information?
-  - Once system is deployed, how can we collect information about it?
+  - Once a system is deployed, how can we collect information about it?
 
 :::
