@@ -185,7 +185,7 @@ def get_disk() -> Dict[str, str]:
 
 :::
 
-# Key Insights about Information Collection
+# Key Insights About Information Collection
 
 ::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
 
@@ -201,5 +201,46 @@ def get_disk() -> Dict[str, str]:
 {{< iconify fa6-solid lightbulb >}} Even though system data can be
 automatically collected through scans, proper data collection and management is
 critically important!
+
+:::
+
+# Understanding CVEs
+
+::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.85em;"}
+
+- **CVE**: Common Vulnerabilities and Exposures
+- **Purpose**: Identify and catalog vulnerabilities in software and firmware
+- **Format**: CVE-YYYY-NNNN (e.g., CVE-2023-12345)
+- **Database**: Managed by MITRE Corporation
+- **Usage**: Helps organizations prioritize and address vulnerabilities
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: -0.25em; font-size: 0.80em;"}
+
+- {{< iconify fa6-solid lightbulb >}} **Important Questions**:
+  - MITRE and the disclosing company may decide to embargo a CVE! Why is this
+  important in the computer security field?
+  - What are the overall benefits of recording and disclosing CVEs?
+
+:::
+
+# Understanding CVSS
+
+::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.85em;"}
+
+- **CVSS**: Common Vulnerability Scoring System
+- **Purpose**: Standardized method for rating vulnerability severity
+- **Range**: Values range from 0.0 to 10.0
+- **Interpretation**: None, Low, Medium, High, Critical
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: -0.25em; font-size: 0.80em;"}
+
+- {{< iconify fa6-solid lightbulb >}} **Important Questions**:
+  - How can organizations use CVSS to prioritize their work?
+  - What are the overall benefits of scoring a vulnerability?
+  - How can we ensure that the CVSS score is accurate?
 
 :::
