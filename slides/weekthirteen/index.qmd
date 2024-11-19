@@ -112,6 +112,20 @@ detect_api_keys("src/subject_contains_false_positive.py")
 
 :::
 
+# Secret Scanning is an Important Business!
+
+::: {.fragment .boxed-content .fade style="margin-top: -0.25em; font-size: 0.80em;"}
+
+- **Examples of Security Scanning Tools**:
+  - [GitGuardian](https://www.gitguardian.com/)
+  - [TruffleSecurity](https://trufflesecurity.com/)
+  - [Snyk](https://snyk.io/)
+  - [SonarQube](https://www.sonarqube.org/)
+  - [Veracode](https://www.veracode.com/)
+  - [GitHub Secret Scanning](https://docs.github.com/en/code-security/secret-scanning)
+
+:::
+
 # Collecting Information
 
 ::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
