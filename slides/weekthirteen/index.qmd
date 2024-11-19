@@ -99,7 +99,7 @@ print("\nScanning src/subject_contains_false_positive.py")
 detect_api_keys("src/subject_contains_false_positive.py")
 ```
 
-# Lessons Learned from Secret Scanning
+# Secret Scanning Lessons Learned
 
 ::: {.fragment .callout-note icon=false title="Scanning for API Keys in GitHub Repositories"}
 
