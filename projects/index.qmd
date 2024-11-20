@@ -190,21 +190,38 @@ malware. Program tracing can also be used to analyze the behavior of malware to
 understand how it operates and to aid in its detection.
 
 - {{< iconify fa6-solid code size=18px >}} **Task**: This project invites you to
-implement a `networkmonitor` in the Python programming language that conducts
-network monitoring by creating clients and servers on localhost and then
-monitoring the network traffic between the client and the server. The program
-supports different modes of operation, including server and client modes using
-either sockets or XML-RPC, and interception modes for monitoring network
-communication with either of the aforementioned protocols. Ultimately, the
-`networkmonitor` should start a separate process in one of these modes:
-  - **Client and Server Protocols**:
-    - **Socket Server**: Start a server using sockets.
-    - **Socket Client**: Start a client using sockets.
-    - **XML-RPC Server**: Start a server using XML-RPC.
-    - **XML-RPC Client**: Start a client using XML-RPC.
-  - **Interception Mechanisms**:
-    - **Socket Interception**: Intercept network communication using sockets.
-    - **XML-RPC Interception**: Intercept network communication using XML-RPC.
+implement a `programtracer` in the Python programming language that observes the
+instruction and memory accesses of a program and records them in a log file. The
+`programtracer` output should include all of the executed instructions at the
+level of, for instance, the abstract syntax tree (AST), the Python source code,
+and/or the native code produced by the Python interpreter. Whenever possible,
+the trace should also include the values of variables that were accessed by each
+of the detected instructions. The trace should be stored in a file in either a
+plaintext, comma-separated value (CSV), or JavaScript object notation (JSON)
+format. The `programtracer` tool should have these features:
+
+  - **Command-Line Interface**: A command-line interface (CLI) that accepts the
+  name of a Python program and/or a Python program's test suite and then
+  performs the program tracing when the tests run on the program.
+  - **Program Tracing**: The `programtracer` should trace the execution of a
+  Python program and save the trace in a suitable format in a specified
+  directory and file.
+  - **Variable Tracking**: The `programtracer` should track the values of
+  variables as they are referenced by the specific instructions in the program's
+  source code.
+  - **Trace Analysis**: The `programtracer` should be able to analyze the trace
+  by reporting information about, for instance, the number of instructions in
+  the trace, the number of times each instruction was executed, the number of
+  times a variable is accessed by instructions, and the number of unique values
+  stored in the variables accessed by the instructions.
+  - **Trace Comparison**: The `programtracer` should be able to compare two
+  traces and surface the similarities and differences between the them. This
+  feature would be useful in the context of malware analysis to compare the
+  behavior of a new program to a well-known malware program.
+  - **Efficiency Analysis**: The `programtracer` should offer at least two
+  efficiency analysis features that involve measuring the performance of tasks
+  such as creating the trace, saving the trace, analyzing one or more traces, or
+  the size of the traces when either stored in memory or on disk.
 
 #### Resources
 
