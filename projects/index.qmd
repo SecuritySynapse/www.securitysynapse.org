@@ -214,14 +214,17 @@ format. The `programtracer` tool should have these features:
   trace, the number of times each instruction was executed, the number of times
   a variable is accessed by all of the program's instructions, and the number of
   unique values stored in the variables accessed by the instructions.
-  - **Trace Comparison**: The `programtracer` should be able to compare two
-  traces and surface the similarities and differences between the them. This
-  feature would be useful in the context of malware analysis to compare the
-  behavior of a new program to a well-known malware program.
-  - **Efficiency Analysis**: The `programtracer` should offer at least two
-  efficiency analysis features that involve measuring the performance of tasks
-  such as creating the trace, saving the trace, analyzing one or more traces, or
-  the size of the traces when either stored in memory or on disk.
+  - **Trace Comparison**: A module that compares two or more traces and surfaces
+  the similarities and differences between the them. Examples of trace
+  comparison operators could include pointing out differences in the executed
+  instructions or variable accesses. This feature would be useful in the context
+  of malware analysis to compare the behavior of one version of a malware to the
+  prior version of the same malware. It would also be useful to compare the
+  original version of a program to one that might be infected by malware.
+  - **Efficiency Analysis**: At least two different efficiency analysis features
+  that involve measuring the performance of tasks such as creating the trace,
+  saving the trace, analyzing one or more traces, or the size of the traces when
+  either stored in memory or on disk.
 
 #### Resources
 
