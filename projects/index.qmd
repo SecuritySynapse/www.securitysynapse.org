@@ -332,19 +332,5 @@ chapters in the following textbooks:
   - {{< iconify fa6-solid book-open >}} [Operating
   Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
 
-- {{< iconify fa6-solid lightbulb size=18px >}} **Insight**: Chapter one of
-[CSP](https://web.njit.edu/~rt494/security/) explains that a server demonstrates
-*availability* if is up and running for valid users. However, if a server is
-running a process that contains a defect that results in a system crash, then
-this is a direct threat to its availability. However, since the programs that
-run on servers often have complex input spaces and implementations, it is often
-difficult to quickly find these availability threats.
-
-- {{< iconify fa6-solid code size=18px >}} **Task**: This project invites you to
-implement a `serverfuzzer` in the Python programming language that will
-automatically fuzz a specific function in a server's implementation.
-Specifically, you will implement a fuzzer that will automatically generate
-certain type of JSON inputs, submit those inputs to an in-memory server, observe
-the output and behavior of the server, and record important details and any
-crashes. As you complete the project, please be mindful that it makes certain
-restrictions of the types of JSON inputs your `serverfuzzer` should generate!
+- {{< iconify fa6-solid code size=18px >}} **Tasks**: This project invites you to
+complete an independent research project in the field of computer security.
