@@ -224,7 +224,8 @@ format. The `programtracer` tool should have these features:
   - **Efficiency Analysis**: At least two different efficiency analysis features
   that involve measuring the performance of tasks such as creating the trace,
   saving the trace, analyzing one or more traces, or the size of the traces when
-  either stored in memory or on disk.
+  either stored in memory or on disk. This feature could involve calculating and
+  reporting time and/or space overhead of the `programtracer` tool.
 
 #### Resources
 
