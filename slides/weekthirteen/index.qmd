@@ -251,6 +251,16 @@ critically important!
 
 :::
 
+# Once a system's vulnerability is known, how do we share details and prevent attacks?
+
+::: {.fragment style="margin-top: -0.45em; font-size: 0.85em;"}
+
+- **CVEs**: Common Vulnerabilities and Exposures
+- **CVSS**: Common Vulnerability Scoring System
+- **Responsible disclosure** of security vulnerabilities
+
+:::
+
 # Understanding CVEs
 
 ::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.85em;"}
