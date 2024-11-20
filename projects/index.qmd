@@ -203,10 +203,10 @@ format. The `programtracer` tool should have these features:
   - **Command-Line Interface**: A command-line interface (CLI) that accepts the
   name of a Python program and/or a Python program's test suite and then
   performs the program tracing when the tests run on the program.
-  - **Program Tracing**: An implementation of tracer for the execution
-  of a Python program that saves the trace in a suitable format in a specified
+  - **Program Tracing**: An implementation of tracer for the execution of a
+  Python program that saves the trace in a suitable format in a specified
   directory and file.
-  - **Variable Tracking**: The `programtracer` should track the values of
+  - **Variable Tracking**: An implementation of a means to track the values of
   variables as they are referenced by the specific instructions in the program's
   source code.
   - **Trace Analysis**: The `programtracer` should be able to analyze the trace
