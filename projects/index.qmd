@@ -281,25 +281,9 @@ broadly follows these steps:
 
 To learn more about fuzzing and to gather inspiration for your own
 implementation of the `programtracer`, please consult the following technical
-resources about the network communication with either sockets or XML-RPC in
-Python, the TCP/IP protocol and the layout of their headers and payloads, and
-various network monitoring techniques:
+resources about techniques for tracing Python programs for program
+understanding, debugging, and malware analysis:
 
-- **IP Header Structure**
-  - [IPv4 Protocol Description on Wikipedia](https://en.wikipedia.org/wiki/IPv4)
-  - [Reading Binary Data with Python](https://reachtim.com/reading-binary-data-with-python)
-
-- **TCP Header Structure**
-  - [TCP Protocol Description on
-  Wikipedia](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
-  - [TCP Header Format on
-  GeeksforGeeks](https://www.geeksforgeeks.org/introduction-and-ipv4-datagram-header/)
-
-- **Python Networking**
-  - [Python XML-RPC Library](https://docs.python.org/3/library/xmlrpc.server.html)
-  - [Python Socket Library](https://docs.python.org/3/library/socket.html)
-  - [Python Struct Library](https://docs.python.org/3/library/struct.html)
-  - [Regarding struct.unpack() in Python](https://stackoverflow.com/questions/20768107/regarding-struct-unpack-in-python)
 
 Interested in working on this project? See the [{{< iconify fa6-brands github
 size=18px >}}
