@@ -227,10 +227,60 @@ format. The `programtracer` tool should have these features:
   either stored in memory or on disk. This feature could involve calculating and
   reporting time and/or space overhead of the `programtracer` tool.
 
+- {{< iconify fa6-solid microscope size=18px >}} **Experiment**: This project invites
+you to evaluate the `programtracer` tool by conducting an experiment that
+broadly follows these steps:
+
+  - **Select a Python Program and Test Suite**: Choose at least five small- to
+  medium-sized Python program and their corresponding Pytest test suites. Make
+  sure that these are all programs that you did not implement yourself. Aim to
+  strike a balance between programs that are realistic and programs that are
+  small enough that you can feasibly analyze and understand their traces.
+  - **Run the `programtracer` Tool**: Execute the `programtracer` tool on each
+  of the selected Python programs and its test suite. Ensure that the tool
+  generates a trace file in the specified format (i.e., plaintext, CSV, or
+  JSON).
+  - **Verify the Trace Output**: For each selected program and its test suite,
+  manually inspect the majority of the trace file to verify that it accurately
+  records the program's execution. Check that the trace includes details such as
+  executed instructions, variable values, and any other relevant runtime
+  information.
+  - **Analyze the Trace**: For each selected program and its test suite, use the
+  `programtracer` tool's analysis features to gather information about the
+  trace. This includes:
+      - The number of instructions in the trace.
+      - The number of times each instruction was executed.
+      - The number of times variables were accessed by instructions.
+      - The number of unique values stored in the variables accessed by the
+      instructions.
+  - **Compare Traces**: After making a change to the source code of each Python
+  program, run the `programtracer` tool on it. Manually compare the traces that
+  arise from this modified program and the original to identify the similarities
+  and differences in their execution behavior. You could imagine that this is
+  the step that a malware analyst would take to (a) compare the behavior of a
+  new program to a well-known malware program or (b) compare the behavior of a
+  program before it was infected with malware to after it was infected.
+  - **Efficiency Analysis**: For each selected program and its test suite, time
+  the execution of the `programtracer` tool when it is completing tasks such as
+  creating the trace, saving the trace, and analyzing the trace. Record the size
+  of the trace files when stored in memory and on disk.
+  - **Collect Data**: Collect all relevant data from the analysis and efficiency
+  measurements. Ensure that the data is well-organized and clearly labeled and
+  add it to the experiment report.
+  - **Report Results**: Summarize the findings from the experiment in a report.
+  The report should include:
+      - An overview of the selected Python program and test suite.
+      - A description of the trace output and its verification.
+      - Results from the trace analysis, including any notable patterns or
+      insights.
+      - A comparison of different traces, highlighting key differences.
+      - Efficiency results, including time overhead metrics and trace sizes.
+      - Challenges encountered and how they were addressed.
+
 #### Resources
 
 To learn more about fuzzing and to gather inspiration for your own
-implementation of the `networkmonitor`, please consult the following technical
+implementation of the `programtracer`, please consult the following technical
 resources about the network communication with either sockets or XML-RPC in
 Python, the TCP/IP protocol and the layout of their headers and payloads, and
 various network monitoring techniques:
@@ -253,6 +303,6 @@ various network monitoring techniques:
 
 Interested in working on this project? See the [{{< iconify fa6-brands github
 size=18px >}}
-network-monitoring-starter](https://github.com/SecuritySynapse/network-monitoring-starter)
+network-monitoring-starter](https://github.com/SecuritySynapse/program-tracing-starter)
 template repository to get started! Questions? Share them in the [Security
 Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
