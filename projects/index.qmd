@@ -129,7 +129,7 @@ network monitoring by creating clients and servers on localhost and then
 monitoring the network traffic between the client and the server. The program
 supports different modes of operation, including server and client modes using
 either sockets or XML-RPC, and interception modes for monitoring network
-communication with either of the aforementioned protocols. Ultimately, the
+communication with either of the aforementioned protocols. The
 `networkmonitor` should start a separate process in one of these modes:
   - **Client and Server Protocols**:
     - **Socket Server**: Start a server using sockets.
