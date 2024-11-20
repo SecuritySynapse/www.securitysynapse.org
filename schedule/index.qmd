@@ -65,7 +65,9 @@ listing:
   - *In-Person Assessments*
     - **In-Person Assessment One**: Week Six
     - **In-Person Assessment Two**: Week Eleven
-    - **Note**: Both occur during Tuesday and Thursday class sessions
+      - **Note**: Both occur during Tuesday and Thursday class sessions
+    - **In-Person Assessment Three**: Week Sixteen
+      - **Note**: Occurs during the final examination period
   - *Breaks*  
     - **Labor Day**: Week Two
     - **All-College Programming**: Week Eleven
@@ -82,6 +84,11 @@ listing:
     - **Date**: Monday, November 4, 2024
     - **Time**: 2:30 -- 4:30 PM
     - **Location**: Alden 109
+- **Computer Security Summit Presentations**
+    - **Date**: Monday, December 5, 2024
+    - **Time**: 9:30 AM -- 10:45 AM
+    - **Location**: Alden 109
+    - **Format**: Three to five minute lightning talks
 - **Final Executable Examination**
     - **Examination Code**: C
     - **Date**: Monday, December 9, 2024
