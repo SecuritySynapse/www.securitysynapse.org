@@ -18,14 +18,9 @@ listing:
       - "description"
 ---
 
-## Weekly Schedule
+## Schedule Overview
 
-:::{#featured-weeks}
-:::
-
-## Additional Details
-
-### High-Level Overview
+### Module Highlights
 
 - **Module One** 
   - **Topic**: Basics of Computer Security
@@ -47,9 +42,7 @@ listing:
   - **Chapters**: Seven through ten in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
   - **Final Examination**: Week sixteen during the final examination period
 
-### Schedule Details
-
-#### Week-by-Week
+### Week-by-Week Highlights
 
 - **Date Ranges**
   - **Module One**: Week One through Week Six
@@ -74,7 +67,7 @@ listing:
     - **Fall Break**: Week Eight
     - **Thanksgiving Break**: Week Fourteen
 
-#### Important Dates
+### Important Dates
 
 - **Midterm Executable Examination One**
     - **Date**: Monday, September 30, 2024
@@ -111,4 +104,9 @@ Success](https://web.njit.edu/~rt494/security/)
 - **CCP**: [Cracking Codes with Python](https://inventwithpython.com/cracking/)
 - **OSTEP**: [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
 
+:::
+
+## Weekly Schedule
+
+:::{#featured-weeks}
 :::
