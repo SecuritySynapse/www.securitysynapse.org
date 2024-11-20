@@ -325,11 +325,11 @@ Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
 invites learners to propose and conduct their own independent project, it is
 important should read, in addition to additional online resources, all of the
 chapters in the following textbooks:
-  - {{< iconify fa6-solid book-open >}} Online textbook called [Computer Systems
+  - {{< iconify fa6-solid book-open >}} [Computer Systems
   Security: Planning for Success](https://web.njit.edu/~rt494/security/) 
-  - {{< iconify fa6-solid book-open >}} Online textbook called [Cracking Codes
+  - {{< iconify fa6-solid book-open >}} [Cracking Codes
   with Python](https://inventwithpython.com/cracking/) 
-  - {{< iconify fa6-solid book-open >}} Online textbook called [Operating
+  - {{< iconify fa6-solid book-open >}} [Operating
   Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
 
 - {{< iconify fa6-solid lightbulb size=18px >}} **Insight**: Chapter one of
