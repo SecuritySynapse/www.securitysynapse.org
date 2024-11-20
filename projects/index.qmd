@@ -209,11 +209,11 @@ format. The `programtracer` tool should have these features:
   - **Variable Tracking**: An implementation of a means to track the values of
   variables as they are referenced by the specific instructions in the program's
   source code.
-  - **Trace Analysis**: The `programtracer` should be able to analyze the trace
-  by reporting information about, for instance, the number of instructions in
-  the trace, the number of times each instruction was executed, the number of
-  times a variable is accessed by instructions, and the number of unique values
-  stored in the variables accessed by the instructions.
+  - **Trace Analysis**: A module that can automatically analyze the trace by
+  reporting information about, for instance, the number of instructions in the
+  trace, the number of times each instruction was executed, the number of times
+  a variable is accessed by all of the program's instructions, and the number of
+  unique values stored in the variables accessed by the instructions.
   - **Trace Comparison**: The `programtracer` should be able to compare two
   traces and surface the similarities and differences between the them. This
   feature would be useful in the context of malware analysis to compare the
