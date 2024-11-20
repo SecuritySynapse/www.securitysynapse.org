@@ -279,10 +279,38 @@ broadly follows these steps:
 
 #### Resources
 
-To learn more about fuzzing and to gather inspiration for your own
+Your `programtracer` will take as input a Python program and/or a Python
+program's test suite, and then produce a detailed trace of the program's
+behavior.To learn more about fuzzing and to gather inspiration for your own
 implementation of the `programtracer`, please consult the following technical
 resources about techniques for tracing Python programs for program
 understanding, debugging, and malware analysis:
+
+- **Concepts**: Introduction to program analysis and dynamic malware analysis.
+    - [10 Malware Detection
+    Techniques](https://www.crowdstrike.com/en-us/cybersecurity-101/malware/malware-detection/)
+    - [What is a Malware Signature and How Does it
+    Work?](https://www.sentinelone.com/blog/what-is-a-malware-file-signature-and-how-does-it-work/)
+    - [Tracing Executions](https://www.debuggingbook.org/beta/html/Tracer.html)
+    - [Tracking Failure
+    Origins](https://www.debuggingbook.org/beta/html/Slicer.html)
+- **Packages**: Built-in packages for program tracing in Python
+    - [Python `sys`](https://docs.python.org/3/library/sys.html)
+    - [Python
+    `settrace`](https://docs.python.org/3/library/sys.html#sys.settrace)
+    - [Python
+    `monitoring`](https://docs.python.org/3/library/sys.monitoring.html)
+    - [Python `trace`](https://docs.python.org/3/library/trace.html)
+    - [Python `inspect`](https://docs.python.org/3/library/inspect.html)
+    - [Python `dis`](https://docs.python.org/3/library/dis.html)
+    - [Python `ast`](https://docs.python.org/3/library/ast.html)
+- **Tools**: Tools for program tracing in Python
+    - [`coverage.py`](https://github.com/nedbat/coveragepy)
+    - [`line_profiler`](https://github.com/pyutils/line_profiler)
+    - [`python-hunter`](https://github.com/ionelmc/python-hunter)
+    - [`slipcover`](https://github.com/plasma-umass/slipcover)
+    - [`scalene`](https://github.com/plasma-umass/scalene)
+
 
 
 Interested in working on this project? See the [{{< iconify fa6-brands github
