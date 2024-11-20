@@ -87,6 +87,11 @@ listing:
     - **Date**: Monday, December 9, 2024
     - **Time**: 7:00 PM -- 10:00 PM
     - **Location**: Alden 109
+- **Final In-Person Assessment**
+    - **Date**: Monday, December 9, 2024
+    - **Time**: 7:00 PM -- 10:00 PM
+    - **Location**: Alden 109
+    - **Task**: Answer technical questions about source code
 
 ::: {.callout-note appearance="minimal" title="Textbook Abbreviations" collapse="false"}
 
