@@ -351,3 +351,37 @@ critically important!
 :::
 
 :::
+
+# Security is never perfect! We need a way to respond to security incidents when they occur! *Best practices*?
+
+# Security-Related Incident Response Organizations
+
+::: {.incremental style="font-size: 0.9em;"}
+
+- MITRE Corporation
+- CERT Coordination Center
+- National Cyber Security Centre
+- National Institute of Standards and Technology
+- Open Web Application Security Project
+
+:::
+
+## Security Operations Centers
+
+::: incremental
+
+- **Purpose**: Monitor, detect, and respond to security incidents
+- **Components**: People, processes, and technology
+- **Benefits**: Rapid response to security incidents
+- **Cost**: Often there are high costs for maintaining an SOC
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: -0.1em; font-size: 0.90em;"}
+
+- {{< iconify fa6-solid lightbulb >}} **Important Questions**:
+  - What are best practices for maintaining compliance?
+  - What is the security attack baseline for an organization?
+  - How can an SOC maintain continuity after a security incident?
+
+:::
