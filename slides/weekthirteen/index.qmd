@@ -546,3 +546,60 @@ monitor_logs()
 - **Expense**: Hardware RAID controllers can be costly
 
 :::
+
+# Understanding Data Integrity for Security Incident Response
+
+::: incremental
+
+- Security attacks can corrupt data
+- Data integrity ensures that data is accurate
+- Ensures recovery is faster and more confident
+- **Question**: How can we confirm data integrity?
+
+:::
+
+## Data Integrity with Hashing
+
+```{python}
+import hashlib
+
+def calculate_hash_checksum(data):
+    sha256 = hashlib.sha256()
+    sha256.update(data.encode('utf-8'))
+    return sha256.hexdigest()
+
+# calculate the checksum of a string
+data_one = "Important data for redundancy"
+checksum_data_one = calculate_hash_checksum(data_one)
+
+# display the data and its checksum
+print(f"Data One: {data_one}")
+print(f"Hash Checksum: {checksum_data_one}")
+```
+
+::: fragment
+
+{{< iconify fa6-solid lightbulb >}} Are there other alternatives to SHA-256? How to use them?
+
+:::
+
+## Data Integrity with CRC32
+
+```{python}
+import zlib
+
+def calculate_crc32(data):
+    return zlib.crc32(data.encode('utf-8'))
+
+data_one = "Important data for redundancy"
+data_two = "Additional Important data for redundancy"
+
+checksum_data_one = calculate_crc32(data_one)
+checksum_data_two = calculate_crc32(data_two)
+
+print(f"Data One: {data_one}")
+print(f"CRC32 Checksum: {checksum_data_one:#010x}")
+
+print(f"Data Two: {data_two}")
+print(f"CRC32 Checksum: {checksum_data_two:#010x}")
+```
