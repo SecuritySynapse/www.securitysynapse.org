@@ -488,3 +488,45 @@ monitor_logs()
 - Surface alerts for suspicious activity
 
 :::
+
+## Establishing Business Continuity
+
+::: {.fragment .callout-note icon=false title="Responding to Security Incidents"}
+
+- Business impact analysis measures outage impact on:
+  - Property
+  - Finance
+  - Safety
+  - Reputation
+  - Customers
+
+- **What are practical strategies for ensuring business continuity?**
+  - Technical
+  - Operational
+  - Legal
+
+:::
+
+# Redundancy, Backup, and Recovery
+
+- **Redundancy**: Duplicate systems to ensure continuity
+- **Backup**: Copy data to a separate location
+- **Recovery**: Restore data from backup
+- **Benefits**: Faster response to security incidents
+- **Costs**: Higher upfront costs and greater complexity
+
+## RAID to the Rescue!
+
+- **RAID**: Redundant Array of Independent Disks
+- **RAID 0**: Striping, no redundancy, improved performance
+- **RAID 1**: Mirroring, redundancy, improved reliability
+- **RAID 5**: Block-level striping with distributed parity
+
+::: {.fragment .callout-note icon=false title="Understanding RAID's Trade-offs"}
+
+- **Performance**: Varying effects on read/write speeds
+- **Complexity**: More hardware to manage and maintain
+- **Recovery**: Faster recovery from disk failures
+- **Expense**: Hardware RAID controllers can be costly
+
+:::
