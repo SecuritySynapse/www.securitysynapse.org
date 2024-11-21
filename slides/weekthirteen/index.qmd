@@ -407,6 +407,61 @@ attacks are detected and handled before they manifest as security incidents!
 
 :::
 
+## Levels of Logging
+
+::: fragment
+
+```{python}
+import logging
+
+# create a simple logging configuration
+logging.basicConfig(level=logging.DEBUG,
+                    format='%(asctime)s - %(levelname)s - %(message)s',
+                    datefmt='%Y-%m-%d %H:%M:%S')
+
+# debugging messages have severity levels
+logging.debug('This is a debug message')
+logging.info('This is an info message')
+logging.warning('This is a warning message')
+logging.error('This is an error message')
+logging.critical('This is a critical message')
+```
+
+:::
+
+::: {.fragment style="margin-top: 1em;"}
+
+```text
+2023-10-05 12:00:00 - DEBUG - This is a debug message
+2023-10-05 12:00:00 - INFO - This is an info message
+2023-10-05 12:00:00 - WARNING - This is a warning message
+2023-10-05 12:00:00 - ERROR - This is an error message
+2023-10-05 12:00:00 - CRITICAL - This is a critical message
+```
+
+:::
+
+## Security Logging Details
+
+::: {.fragment style="margin-top: -0.1em; font-size: 0.90em;"}
+
+- **Purpose**: Record details about system behavior
+- **Severity**: Indicate the severity of the event
+- **Timestamp**: Record the time when the event occurred
+- **Execution**: Run loggers on key infrastructure parts
+- **Transmission**: Send logs to a central server
+- **Storage**: Store logs for a period or to a size
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: -0.1em; font-size: 0.80em;"}
+
+- {{< iconify fa6-solid people-line >}} **Discussion Questions**:
+    - Where and for how long should a security log be stored?
+    - How do we ensure that precursors are not overlooked?
+
+:::
+
 ## Security Log Analysis
 
 ```python
@@ -425,3 +480,11 @@ def monitor_logs():
 
 monitor_logs()
 ```
+
+::: {.fragment style="margin-top: 0.5em; font-size: 0.80em;"}
+
+- Read the log file and inspect each line
+- Checks for `ERROR` or `WARNING` messages
+- Surface alerts for suspicious activity
+
+:::
