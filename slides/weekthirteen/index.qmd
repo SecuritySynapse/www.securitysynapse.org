@@ -603,3 +603,53 @@ print(f"CRC32 Checksum: {checksum_data_one:#010x}")
 print(f"Data Two: {data_two}")
 print(f"CRC32 Checksum: {checksum_data_two:#010x}")
 ```
+
+## Wrap-up on Incident Response
+
+::: {.columns style="margin-top: 0.5em;"}
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Key Concepts*
+
+#### Operation Centers
+
+- Monitor for suspicious activity
+- Detect security incidents
+- Effective security response
+
+#### Security Logging
+
+- Record system behavior
+- Store logs securely
+- Analyze for anomalies
+
+:::
+
+:::
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Best Practices*
+
+#### Implementation
+
+- Use fault-tolerant systems
+- Test backup and recovery
+- Effective log analysis
+
+#### Exploration
+
+- Learn to use logging tools
+- Try out RAID configurations
+- Revisit data checksums
+
+:::
+
+:::
+
+:::
