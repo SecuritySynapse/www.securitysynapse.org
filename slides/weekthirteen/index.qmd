@@ -385,3 +385,43 @@ critically important!
   - How can an SOC maintain continuity after a security incident?
 
 :::
+
+## Security Incidents
+
+### Precursor to an Incident
+
+::: fragment
+
+- **Asset**: A valuable resource to an organization
+- **Threat**: A potential danger to an asset
+- **Vulnerability**: A weakness in a computer system
+- **Risk**: Likelihood of a threat exploiting a vulnerability
+- **Task**: Monitor high-risk areas for developing exploits
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: -0.1em; font-size: 0.90em;"}
+
+- {{< iconify fa6-solid award >}} **Key Goal**: Make sure that high-risk
+attacks are detected and handled before they manifest as security incidents!
+
+:::
+
+## Security Log Analysis
+
+```python
+import time
+
+# sample log file path
+log_file_path = 'system.log'
+
+# function to monitor the log file for suspicious activity
+def monitor_logs():
+    with open(log_file_path, 'r') as log_file:
+        lines = log_file.readlines()
+        for line in lines:
+            if "ERROR" in line or "WARNING" in line:
+                print(f"ALERT: Suspicious activity detected - {line.strip()}")
+
+monitor_logs()
+```
