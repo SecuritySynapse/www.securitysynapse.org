@@ -515,6 +515,22 @@ monitor_logs()
 - **Benefits**: Faster response to security incidents
 - **Costs**: Higher upfront costs and greater complexity
 
+## Understanding Redundancy
+
+- **Purpose**: Deploy extra components in case of failures
+- **Failover**: Switch to a backup system when a component fails
+- **High availability**: Ensure that systems are always available
+- **Fault tolerance**: Continue function if a component fails
+
+::: {.fragment .boxed-content .fade style="margin-top: -0.1em; font-size: 0.85em;"}
+
+- {{< iconify fa6-solid people-line >}} **Discussion Questions**:
+    - What are the trade-offs of redundancy?
+    - What system components should be redundant?
+    - Overall, how can you ensure high availability?
+
+:::
+
 ## RAID to the Rescue!
 
 - **RAID**: Redundant Array of Independent Disks
