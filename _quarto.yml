@@ -1,11 +1,16 @@
+# define the project
 project:
   type: website
+  # use a port that is not commonly used
+  # for other projects that I maintain
+  # that leverage Quarto
   preview:
     port: 5559
     browser: false
     watch-inputs: true
     navigate: false
 
+# define the output format
 website:
   # do not use a title to keep the
   # navbar less cluttered
@@ -44,6 +49,9 @@ website:
       - text: "{{< iconify bi discord size=19px >}}"
         href: https://discord.gg/juUXz7d4Jh
 
+# define details about the website
+# style, the baseline theme, and then
+# the local updates to the theme
 format:
   html:
     mainfont: Inter
@@ -56,5 +64,8 @@ format:
       # include in the header preconnect and theme-color
       - file: _include/html/header-include.html
 
+# automatically freeze
+# the execution of the computations
+# to make rendering faster
 execute:
   freeze: auto
