@@ -3,7 +3,7 @@ project:
   type: website
   # use a port that is not commonly used
   # for other projects that I maintain
-  # that leverage Quarto
+  # and that also leverage Quarto
   preview:
     port: 5559
     browser: false
