@@ -223,6 +223,12 @@ div.sourceCode {
   padding: 0;
 }
 
+code {
+  background-color: #fff !important;
+  border: none;
+  padding: 0;
+}
+
 pre.sourceCode {
   border-left: 3px;
   border-left-style: solid;
