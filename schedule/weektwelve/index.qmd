@@ -1,7 +1,6 @@
 ---
 title: "Access Controls"
-subtitle: "Exploring Ways to Securely Manage Access"
-description: "How to offer secure access to systems and data?"
+description: "How Can We Securely Access Systems and Data?"
 date: "2024-11-11"
 layout: full
 toc: true
