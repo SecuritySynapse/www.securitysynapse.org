@@ -334,3 +334,11 @@ all of the chapters in the following textbooks:
 
 - {{< iconify fa6-solid code size=18px >}} **Tasks**: This project invites you to
 complete an independent research project in the field of computer security.
+  - {{< iconify fa6-solid diagram-project size=18px >}} **Tasks for the Project Proposal**
+    - Explore various topics in the field of computer security
+    - Provide an informative title for the proposed project
+    - List the overall scientific and engineering goals for the project
+    - Write a proposal abstract with both an overview and the expected contributions
+    - Outline a design, implementation, and evaluation strategy for the project
+    - Give a demonstration of project feasibility through code and/or data
+    - Itemize a list of tasks that you will complete to launch the project
