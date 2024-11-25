@@ -348,3 +348,12 @@ complete an independent research project in the field of computer security.
     - Furnish a demonstration of project feasibility through code segment(s)
     - Overview at least one empirical result from your preliminary experiments
     - Give a list of tasks that you plan to complete after the status update
+  - {{< iconify fa6-solid diagram-project size=18px >}} **Tasks for the Lighting Talk**
+    - Prepare a slide deck to support a three to five minute lightning talk
+    - Confirm that the slide deck contains all of the following elements:
+      - Title slide with the project title, your name, and the course name
+      - Overview slide with the project's scientific and engineering goals
+      - Design slide with a diagram that overviews the system you created
+      - Implementation slide with a code snippet that highlights a system detail
+      - Evaluation slide with a table of data or a graph with your results
+      - Conclusion slide with a summary of the project and future work
