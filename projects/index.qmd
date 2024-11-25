@@ -342,3 +342,9 @@ complete an independent research project in the field of computer security.
     - Outline a design, implementation, and evaluation strategy for the project
     - Give a demonstration of project feasibility through code and/or data
     - Itemize a list of tasks that you will complete to launch the project
+  - {{< iconify fa6-solid diagram-project size=18px >}} **Tasks for the Status Update**
+    - Continue to explore various topics in the field of computer security
+    - Explain the ways in which the project's topic evolved since its proposal
+    - Furnish a demonstration of project feasibility through code segment(s)
+    - Overview at least one empirical result from your preliminary experiments
+    - Give a list of tasks that you plan to complete after the status update
