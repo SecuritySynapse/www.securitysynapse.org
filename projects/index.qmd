@@ -359,3 +359,5 @@ complete an independent research project in the field of computer security.
       - Conclusion slide with a summary of the project and future work
     - Share the slide deck with the instructor and the class through Discord
     - Give the lightning talk presentation on the last day of class
+  - {{< iconify fa6-solid diagram-project size=18px >}} **Tasks for the Final Report**
+    - Finalize your exploration of topics within the field of computer security
