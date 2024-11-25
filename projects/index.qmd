@@ -365,5 +365,5 @@ complete an independent research project in the field of computer security.
     - Describe each of the key components within the implemented software tool
     - Document the design of the experiment that you conducted to evaluate the tool
     - Using tables of data and/or graphs, report on the experimental results
-    - Summarize the project's contributions and suggest areas for future work
     - Document the technical challenges that you faced and how you overcame them
+    - Summarize the project's contributions and suggest areas for future work
