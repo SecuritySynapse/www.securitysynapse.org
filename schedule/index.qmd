@@ -91,9 +91,10 @@ listing:
     - **Date**: Monday, December 9, 2024
     - **Time**: 7:00 PM -- 10:00 PM
     - **Location**: Alden 109
-    - **Task**: Answer technical questions about source code
+    - **Task**: Answer technical questions about code and concepts
 - **Completed Computer Security Summit Project**
-    - **Date**: Thursday, December 12, 2024
+    - **Suggested Date**: Monday, December 9, 2024
+    - **Strict Deadline**: Thursday, December 12, 2024
     - **Time**: 11:59 PM
     - **Task**: Submit final report through GitHub
 
