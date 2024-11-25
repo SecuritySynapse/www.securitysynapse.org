@@ -361,3 +361,9 @@ complete an independent research project in the field of computer security.
     - Give the lightning talk presentation on the last day of class
   - {{< iconify fa6-solid diagram-project size=18px >}} **Tasks for the Final Report**
     - Finalize your exploration of topics within the field of computer security
+    - Assess how well the project achieved its scientific and engineering goals
+    - Describe each of the key components within the implemented software tool
+    - Document the design of the experiment that you conducted to evaluate the tool
+    - Using tables of data and/or graphs, report on the experimental results
+    - Summarize the project's contributions and suggest areas for future work
+    - Document the technical challenges that you faced and how you overcame them
