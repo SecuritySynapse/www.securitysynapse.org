@@ -357,3 +357,4 @@ complete an independent research project in the field of computer security.
       - Implementation slide with a code snippet that highlights a system detail
       - Evaluation slide with a table of data or a graph with your results
       - Conclusion slide with a summary of the project and future work
+    - Give the lightning talk presentation on the last day of class
