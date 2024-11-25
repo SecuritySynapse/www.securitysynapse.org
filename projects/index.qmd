@@ -349,7 +349,7 @@ complete an independent research project in the field of computer security.
     - Overview at least one empirical result from your preliminary experiments
     - Give a list of tasks that you plan to complete after the status update
   - {{< iconify fa6-solid diagram-project size=18px >}} **Tasks for the Lighting Talk**
-    - Prepare a slide deck to support a three to five minute lightning talk
+    - Prepare a slide deck to support a five to six minute lightning talk
     - Confirm that the slide deck contains all of the following elements:
       - Title slide with the project title, your name, and the course name
       - Overview slide with the project's scientific and engineering goals
