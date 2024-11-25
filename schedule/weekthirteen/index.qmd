@@ -9,31 +9,31 @@ toc-expand: 3
 
 ## Exploration
 
-- {{< iconify fa6-solid book-open size=18px >}} Read chapter seven in [Computer
-Systems Security: Planning for Success](https://web.njit.edu/~rt494/security/)
-- {{< iconify fa6-solid book-open size=18px >}} Read chapter fifty-five in
-[OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+- {{< iconify fa6-solid book-open size=18px >}} Read chapters eight and nine in
+[Computer Systems Security: Planning for
+Success](https://web.njit.edu/~rt494/security/)
 
 ## Activities
 
 - {{< iconify fa6-solid diagram-project size=18px >}} **Monday**: Laboratory session
 - {{< iconify fa6-solid people-line size=18px >}} **Tuesday and Thursday**:
 Security Solutions
-  - Understand the trade-offs in approaches to access control
-  - Develop more insights into multi-factor authentication
-  - Explore strategies to authentication and authorization
-  - Discover how an operating system plays a critical role in security
+  - Explore terms and concepts in security vulnerability management
+  - Complete a case study on the topic of secrets in GitHub repositories
+  - Learn more about common vulnerabilities and exposures (CVEs)
+  - Understand how to use the common vulnerability scoring system (CVSS)
   - Continued highlighting of the concept of a "security synapse"
   - Student presentations that feature:
-    - Explanation of a high-level concepts behind access control
+    - Explanation of a high-level concepts behind security scanning
     - In-class activity that connects concepts to real-world scenarios
-    - Hands-on examples of the operation and behavior of access control methods
-    - Demonstrate the use of a practical approach to access control
+    - Hands-on examples of methods for assess security vulnerabilities
+    - Demonstrate the use of a practical approach to vulnerabilities
 
 ## Slides
 
 ```{=html}
-<iframe class="slide-deck" src="../../slides/weektwelve/"></iframe>
+<iframe class="slide-deck" src="../../slides/weekthirteen/"></iframe>
 ```
 
-{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week Twelve: Security Solutions](../../slides/weektwelve/)
+{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week
+Thirteen: Security Vulnerabilities](../../slides/weekthirteen/)
