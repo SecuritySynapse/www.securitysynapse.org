@@ -8,7 +8,7 @@ Want to make a "security synapse"? That is to say, do you want to make
 conceptual and practical connections in the field of computer security? Check
 out these projects to learn more about how to apply what you are learning in the
 field of computer security! Projects invite you to complete projects in fields
-like fuzzing and cryptography. Each projects explores a specific topic in
+like fuzzing and cryptography. Each project explores a specific topic in
 connection with content from one of these online textbooks:
 
 - {{< iconify fa6-solid book-open >}} Online textbook called [Computer Systems
