@@ -78,10 +78,10 @@ listing:
     - **Time**: 2:30 -- 4:30 PM
     - **Location**: Alden 109
 - **Computer Security Summit Presentations**
-    - **Date**: Monday, December 5, 2024
+    - **Date**: Thursday, December 5, 2024
     - **Time**: 9:30 AM -- 10:45 AM
     - **Location**: Alden 109
-    - **Format**: Three to five minute lightning talks
+    - **Format**: Five to six minute lightning talks
 - **Final Executable Examination**
     - **Examination Code**: C
     - **Date**: Monday, December 9, 2024
@@ -91,9 +91,10 @@ listing:
     - **Date**: Monday, December 9, 2024
     - **Time**: 7:00 PM -- 10:00 PM
     - **Location**: Alden 109
-    - **Task**: Answer technical questions about source code
+    - **Task**: Answer technical questions about code and concepts
 - **Completed Computer Security Summit Project**
-    - **Date**: Thursday, December 12, 2024
+    - **Suggested Date**: Monday, December 9, 2024
+    - **Strict Deadline**: Thursday, December 12, 2024
     - **Time**: 11:59 PM
     - **Task**: Submit final report through GitHub
 
