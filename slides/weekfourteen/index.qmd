@@ -318,6 +318,7 @@ print(f"Decrypted: {decrypted}")
 
 ::: incremental
 
+- Functionality for both encryption and decryption
 - Vigenere ciphers use a repeating key to shift letters
 
 - Code segment from the encryption function:
