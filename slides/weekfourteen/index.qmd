@@ -70,3 +70,52 @@ format:
 - Offer initial implementations in Python --- but explore others!
 
 :::
+
+## Mathematical Background
+
+```{python}
+def gcd(a: int, b: int) -> int:
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+def mod_inverse(a: int, m: int) -> int:
+    for x in range(1, m):
+        if (a * x) % m == 1:
+            return x
+    raise ValueError("Modular inverse does not exist.")
+```
+
+::: fragment
+
+- {{< iconify fa6-solid people-line >}} **In-Class Discussion**
+    - What are the input and output types of these functions?
+    - What is the purpose of the `%` operator in these functions?
+    - What do the `gcd` and `mod_inverse` functions do?
+
+:::
+
+## Using the `gcd` Function
+
+```{python}
+a = 10
+b = 26
+gcd_result = gcd(a, b)
+print(f"gcd({a}, {b}) = {gcd_result}")
+
+a = 5
+b = 26
+gcd_result = gcd(a, b)
+print(f"gcd({a}, {b}) = {gcd_result}")
+
+a = 17
+b = 31
+gcd_result = gcd(a, b)
+print(f"gcd({a}, {b}) = {gcd_result}")
+```
+
+::: fragment
+
+What do outputs show about the `gcd` function's behavior?
+
+:::
