@@ -250,12 +250,11 @@ broadly follows these steps:
   information.
   - **Analyze the Trace**: For each selected program and its test suite, use the
   `programtracer` tool's analysis features to gather information about the
-  trace. This includes:
+  trace. This includes, but is not limited to, the following types of data:
       - The number of instructions in the trace.
       - The number of times each instruction was executed.
       - The number of times variables were accessed by instructions.
-      - The number of unique values stored in the variables accessed by the
-      instructions.
+      - The number of unique values stored in the accessed variables.
   - **Compare Traces**: After making a change to the source code of each Python
   program, run the `programtracer` tool on it. Manually compare the traces that
   arise from this modified program and the original to identify the similarities
