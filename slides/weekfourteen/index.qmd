@@ -86,7 +86,7 @@ def mod_inverse(a: int, m: int) -> int:
     raise ValueError("Modular inverse does not exist.")
 ```
 
-::: fragment
+::: {.fragment style="margin-top: 0.25em;"}
 
 - {{< iconify fa6-solid people-line >}} **In-Class Discussion**
     - What are the input and output types of these functions?
@@ -119,3 +119,30 @@ print(f"gcd({a}, {b}) = {gcd_result}")
 What do outputs show about the `gcd` function's behavior?
 
 :::
+
+## Using the `mod_inverse` Function
+
+```{python}
+a = 10
+m = 26
+try:
+    mod_inverse_result = mod_inverse(a, m)
+    print(f"mod_inverse({a}, {m}) = {mod_inverse_result}")
+except ValueError as e:
+    print(e)
+
+a = 17
+m = 31
+try:
+    mod_inverse_result = mod_inverse(a, m)
+    print(f"mod_inverse({a}, {m}) = {mod_inverse_result}")
+except ValueError as e:
+    print(e)
+```
+
+::: fragment
+
+What do outputs show about the `mod_inverse` function's behavior?
+
+:::
+
