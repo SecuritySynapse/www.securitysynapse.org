@@ -1,0 +1,69 @@
+---
+title: "Revisiting Cryptography"
+subtitle: "Understanding the Role of Cryptography in Security"
+description: "How does cryptography fit into modern software?"
+date: "2024-11-25"
+date-format: long
+author: Gregory M. Kapfhammer
+execute:
+  echo: true
+jupyter: python3
+format:
+  revealjs:
+    completion: true
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Security Synapse"
+---
+
+# What role should cryptography play in secure software?
+
+::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.95em;"}
+
+- Hashing
+- Signatures
+- Encryption
+- Decryption
+
+:::
+
+## Security Vulnerability Management
+
+::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.85em;"}
+
+- **Asset**: A resource that is valuable to an organization
+- **Vulnerability**: A weakness in a computer system
+- **Vulnerability management**: A process for identifying, classifying, and
+handling a vulnerability in a computer system
+- **Threat**: A potential danger to an asset in a computer system
+- **Risk**: The likelihood of a threat exploiting a vulnerability
+- **Countermeasure**: A way to reduce the computer security risk
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: -0.25em; font-size: 0.80em;"}
+
+- {{< iconify fa6-solid people-line >}} **In-Class Discussion**: What is a
+complete example of these concepts?
+  - Identify the asset and its importance to computer security
+  - Identify the threat to this asset and ways to mitigate it
+
+:::
+
+# Storing Secrets Inside of GitHub Repositories
+
+::: {.fragment .callout-note icon=false title="Effective Secret Storage"}
+
+- **Vulnerability**:
+  - Secrets unlock access to sensitive information
+  - Programmers often store secrets in GitHub repositories
+  - Attackers can find secrets and easily exploit them
+- **Countermeasure**:
+  - How can we detect secrets in GitHub repositories?
+  - What tools can we use to prevent secrets from being stored?
+
+:::
