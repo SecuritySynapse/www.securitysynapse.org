@@ -254,8 +254,8 @@ print(f"Decrypted: {decrypted}")
 
 ::: fragment
 
-- Type of substitution cipher
-- Uses a keyword to encrypt messages
+- Example of of substitution cipher
+- Uses a `key` to encrypt messages
 - Encrypts each letter with a different shift value
 - Let's explore these functions:
   - `vigenere_encrypt`
@@ -291,7 +291,7 @@ print(f"Encrypted: {encrypted}")
 ## Decrypting with Vigenere
 
 ```{python}
-def vigenere_decrypt(ciphertext, key):
+def vigenere_decrypt(ciphertext:str, key:str) -> str:
     key = key.lower()
     key_length = len(key)
     plaintext = ""
