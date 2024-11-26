@@ -169,3 +169,61 @@ print(f"is {result} with a remainder of {remainder}")
 - Okay, let's explore this cryptosystem in greater detail!
 
 :::
+
+## Encryption with Affine Ciphers
+
+```{python}
+def affine_encrypt(plaintext, a, b):
+    if gcd(a, 26) != 1:
+        raise ValueError("a and 26 are not coprime, choose a different 'a' value.")
+    ciphertext = ""
+    for char in plaintext:
+        if char.isalpha():
+            # convert character to 0-25 range
+            x = ord(char.lower()) - ord('a')
+            # apply affine transformation
+            encrypted_char = (a * x + b) % 26
+            # convert back to character and preserve case
+            if char.islower():
+                ciphertext += chr(encrypted_char + ord('a'))
+            else:
+                ciphertext += chr(encrypted_char + ord('A'))
+        else:
+            ciphertext += char
+    return ciphertext
+
+plaintext = "Make a security synapse"
+a = 5
+b = 8
+
+encrypted = affine_encrypt(plaintext, a, b)
+print(f"Encrypted: {encrypted}")
+```
+
+## Decryption with Affine Ciphers
+
+```{python}
+def affine_decrypt(ciphertext, a, b):
+    if gcd(a, 26) != 1:
+        raise ValueError("a and 26 are not coprime, choose a different 'a' value.")
+    plaintext = ""
+    # find modular inverse of a
+    a_inv = mod_inverse(a, 26)
+    for char in ciphertext:
+        if char.isalpha():
+            # convert character to 0-25 range
+            y = ord(char.lower()) - ord('a')
+            # apply inverse affine transformation
+            decrypted_char = (a_inv * (y - b)) % 26
+            # convert back to character and preserve case
+            if char.islower():
+                plaintext += chr(decrypted_char + ord('a'))
+            else:
+                plaintext += chr(decrypted_char + ord('A'))
+        else:
+            plaintext += char
+    return plaintext
+
+decrypted = affine_decrypt(encrypted, a, b)
+print(f"Decrypted: {decrypted}")
+```
