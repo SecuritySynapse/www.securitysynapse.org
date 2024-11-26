@@ -33,7 +33,7 @@ Success](https://web.njit.edu/~rt494/security/)
 
 - {{< iconify fa6-solid lightbulb size=18px >}} **Insight**: Chapter one of
 [CSP](https://web.njit.edu/~rt494/security/) explains that a server demonstrates
-*availability* if is up and running for valid users. However, if a server is
+*availability* if it is up and running for valid users. Yet, if a server is
 running a process that contains a defect that results in a system crash, then
 this is a direct threat to its availability. However, since the programs that
 run on servers often have complex input spaces and implementations, it is often
