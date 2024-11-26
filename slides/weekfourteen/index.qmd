@@ -147,3 +147,25 @@ What is the behavior of the `mod_inverse` function?
 :::
 
 # Goal: Find the number `x` such that when `a` is multiplied by `x` and then divided by `m`, the remainder is 1!
+
+## Checking `mod_inverse`
+
+```{python}
+a = 17
+m = 31
+numerator = 17 * 11
+denominator = 31
+result = numerator // denominator
+remainder = numerator % denominator
+print(f"The result of {numerator} divided by {denominator}")
+print(f"is {result} with a remainder of {remainder}")
+```
+
+::: fragment
+
+- Did the `mod_inverse` function return the correct result?
+- What is the time complexity of the `mod_inverse` function?
+- How does this connection to affine ciphers?
+- Okay, let's explore this cryptosystem in greater detail!
+
+:::
