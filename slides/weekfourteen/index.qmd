@@ -52,16 +52,21 @@ format:
 
 :::
 
-# Storing Secrets Inside of GitHub Repositories
+# Practical Exploration: Try to use the `ssh-keygen` program! What do the public and private keys look like?
 
-::: {.fragment .callout-note icon=false title="Effective Secret Storage"}
+# What are some other cryptographic methods?
 
-- **Vulnerability**:
-  - Secrets unlock access to sensitive information
-  - Programmers often store secrets in GitHub repositories
-  - Attackers can find secrets and easily exploit them
-- **Countermeasure**:
-  - How can we detect secrets in GitHub repositories?
-  - What tools can we use to prevent secrets from being stored?
+::: incremental
+
+- Affine ciphers
+- Substitution ciphers
+- Vigenere ciphers
+
+:::
+
+::: {.fragment .callout-note icon=false title="Cryptography Reminders" style="margin-top: -0.45em;"}
+
+- Explore ciphers to understand key principles of cryptography
+- Offer initial implementations in Python --- but explore others!
 
 :::
