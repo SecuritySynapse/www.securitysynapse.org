@@ -341,7 +341,7 @@ complete an independent research project in the field of computer security.
     - Explore various topics in the field of computer security
     - Provide an informative title for the proposed project
     - List the overall scientific and engineering goals for the project
-    - Write a proposal abstract with both an overview and the expected contributions
+    - Write a proposal abstract with overview and expected contributions
     - Outline a design, implementation, and evaluation strategy for the project
     - Give a demonstration of project feasibility through code and/or data
     - Itemize a list of tasks that you will complete to launch the project
@@ -366,7 +366,7 @@ complete an independent research project in the field of computer security.
     - Finalize your exploration of topics within the field of computer security
     - Assess how well the project achieved its scientific and engineering goals
     - Describe each of the key components within the implemented software tool
-    - Document the design of the experiment that you conducted to evaluate the tool
+    - Document the design of the experiment that you conducted for evaluation
     - Using tables of data and/or graphs, report on the experimental results
-    - Document the technical challenges that you faced and how you overcame them
+    - Document the challenges that you faced and how you overcame them
     - Summarize the project's contributions and suggest areas for future work
