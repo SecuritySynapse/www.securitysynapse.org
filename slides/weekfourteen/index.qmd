@@ -250,3 +250,85 @@ print(f"Decrypted: {decrypted}")
 :::
 
 :::
+
+# Exploring Substitution Ciphers Like Vigenere
+
+::: fragment
+
+- Type of substitution cipher
+- Uses a keyword to encrypt messages
+- Encrypts each letter with a different shift value
+- Let's explore these functions:
+  - `vigenere_encrypt`
+  - `vigenere_decrypt`
+
+:::
+
+## Encrypting with Vigenere
+
+```{python}
+def vigenere_encrypt(plaintext: str, key: str) -> str:
+    key = key.lower()
+    key_length = len(key)
+    ciphertext = ""
+    for i, char in enumerate(plaintext):
+        if char.isalpha():
+            shift = ord(key[i % key_length]) - ord('a')
+            if char.islower():
+                encrypted_char = chr((ord(char) - ord('a') + shift) % 26 + ord('a'))
+            else:
+                encrypted_char = chr((ord(char) - ord('A') + shift) % 26 + ord('A'))
+            ciphertext += encrypted_char
+        else:
+            ciphertext += char
+    return ciphertext
+
+plaintext = "Make a security synapse"
+key = "key"
+encrypted = vigenere_encrypt(plaintext, key)
+print(f"Encrypted: {encrypted}")
+```
+
+## Decrypting with Vigenere
+
+```{python}
+def vigenere_decrypt(ciphertext, key):
+    key = key.lower()
+    key_length = len(key)
+    plaintext = ""
+    for i, char in enumerate(ciphertext):
+        if char.isalpha():
+            shift = ord(key[i % key_length]) - ord('a')
+            if char.islower():
+                decrypted_char = chr((ord(char) - ord('a') - shift + 26) % 26 + ord('a'))
+            else:
+                decrypted_char = chr((ord(char) - ord('A') - shift + 26) % 26 + ord('A'))
+            plaintext += decrypted_char
+        else:
+            plaintext += char
+    return plaintext
+
+decrypted = vigenere_decrypt(encrypted, key)
+print(f"Decrypted: {decrypted}")
+```
+
+## Recapping the Vigenere Cipher
+
+::: {.fragment .callout-note icon=false title="Lessons Learned about Vigenere Cipher" style="margin-top: 0em;"}
+
+::: incremental
+
+- Vigenere ciphers use a repeating key to shift letters
+
+- Code segment from the encryption function:
+  - `encrypted_char = chr((ord(char) - ord('a') + shift) % 26 + ord('a'))`
+
+- Code segment from the decryption function:
+  - `decrypted_char = chr((ord(char) - ord('a') - shift + 26) % 26 + ord('a'))`
+
+- Importantly, it is more secure than simple substitution ciphers
+- However, it is still vulnerable to frequency analysis with long ciphertexts
+
+:::
+
+:::
