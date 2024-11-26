@@ -195,7 +195,6 @@ def affine_encrypt(plaintext, a, b):
 plaintext = "Make a security synapse"
 a = 5
 b = 8
-
 encrypted = affine_encrypt(plaintext, a, b)
 print(f"Encrypted: {encrypted}")
 ```
