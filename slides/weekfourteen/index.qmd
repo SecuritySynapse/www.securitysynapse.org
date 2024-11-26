@@ -173,7 +173,7 @@ print(f"is {result} with a remainder of {remainder}")
 ## Encryption with Affine Ciphers
 
 ```{python}
-def affine_encrypt(plaintext, a, b):
+def affine_encrypt(plaintext: str, a: int, b: int) -> str:
     if gcd(a, 26) != 1:
         raise ValueError("a and 26 are not coprime, choose a different 'a' value.")
     ciphertext = ""
@@ -202,11 +202,11 @@ print(f"Encrypted: {encrypted}")
 ## Decryption with Affine Ciphers
 
 ```{python}
-def affine_decrypt(ciphertext, a, b):
+def affine_decrypt(ciphertext: str, a: int, b: int) -> str:
     if gcd(a, 26) != 1:
         raise ValueError("a and 26 are not coprime, choose a different 'a' value.")
     plaintext = ""
-    # find modular inverse of a
+    # find modular inverse of the integer a
     a_inv = mod_inverse(a, 26)
     for char in ciphertext:
         if char.isalpha():
