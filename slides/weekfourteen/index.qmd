@@ -331,3 +331,40 @@ print(f"Decrypted: {decrypted}")
 :::
 
 :::
+
+## Frequency Analysis Functions
+
+```{python}
+from collections import Counter
+
+def compute_word_frequency(text):
+    words = text.lower().split()
+    frequency = Counter(words)
+    return frequency
+
+def top_k_frequent_words(frequency, k):
+    return frequency.most_common(k)
+
+def bottom_k_frequent_words(frequency, k):
+    return frequency.most_common()[:-k-1:-1]
+```
+
+## Running Frequency Analysis
+
+```{python}
+text = "This is a sample text. This text is for testing the frequency analysis. Frequency analysis is useful."
+
+# Compute word frequency
+frequency = compute_word_frequency(text)
+print(f"Word Frequency: {frequency}")
+
+# Get top-3 most frequent words
+top_k = 3
+top_k_words = top_k_frequent_words(frequency, top_k)
+print(f"Top-{top_k} Most Frequent Words: {top_k_words}")
+
+# Get bottom-3 least frequent words
+bottom_k = 3
+bottom_k_words = bottom_k_frequent_words(frequency, bottom_k)
+print(f"Bottom-{bottom_k} Least Frequent Words: {bottom_k_words}")
+```
