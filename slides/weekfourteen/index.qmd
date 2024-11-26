@@ -233,7 +233,6 @@ print(f"Decrypted: {decrypted}")
 
 ::: incremental
 
-- Affine ciphers can encrypt and decrypt messages
 - Affine ciphers use modular arithmetic and inverses
 
 - Code segment from the encryption function:
@@ -318,7 +317,6 @@ print(f"Decrypted: {decrypted}")
 
 ::: incremental
 
-- Functionality for both encryption and decryption
 - Vigenere ciphers use a repeating key to shift letters
 
 - Code segment from the encryption function:
