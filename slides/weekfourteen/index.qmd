@@ -142,7 +142,8 @@ except ValueError as e:
 
 ::: fragment
 
-What do outputs show about the `mod_inverse` function's behavior?
+What is the behavior of the `mod_inverse` function?
 
 :::
 
+# Goal: Find the number `x` such that when `a` is multiplied by `x` and then divided by `m`, the remainder is 1!
