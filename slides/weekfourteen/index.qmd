@@ -383,6 +383,13 @@ bottom_k = 3
 bottom_k_words = bottom_k_frequent_words(frequency, bottom_k)
 ```
 
+::: {.incremental .fade style="margin-top: 0.25em; font-size: 0.80em;"}
+
+- The `frequency` variable is a `Counter` with word frequency
+- The `top_k_words` and `bottom_k_words` are lists of tuples
+
+:::
+
 ## Output from Frequency Analysis
 
 ```{python}
@@ -396,7 +403,17 @@ for word, freq in frequency.items():
 ## Most and Least Frequent Words
 
 ```{python}
-print(f"Top-{top_k} Most Frequent Words: {top_k_words}")
+print(f"Top-{top_k} Most Frequent Words:")
+for word, freq in top_k_words:
+    print(f"{word}: {freq}")
 
-print(f"Bottom-{bottom_k} Least Frequent Words: {bottom_k_words}")
+print(f"\nBottom-{bottom_k} Least Frequent Words:")
+for word, freq in bottom_k_words:
+    print(f"{word}: {freq}")
 ```
+
+::: fragment
+
+How does this help a cryptographer break a simple cipher?
+
+:::
