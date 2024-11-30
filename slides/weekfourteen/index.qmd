@@ -229,7 +229,7 @@ print(f"Decrypted: {decrypted}")
 
 ## Recapping the Affine Cipher
 
-::: {.fragment .callout-note icon=false title="Lessons Learned about Affine Cipher" style="margin-top: 0em;"}
+::: {.fragment .callout-note icon=false title="Lessons Learned about Affine Cipher" style="margin-top: 0em; font-size: 1.1em;"}
 
 ::: incremental
 
