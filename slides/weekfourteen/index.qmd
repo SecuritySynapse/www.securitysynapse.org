@@ -386,8 +386,16 @@ bottom_k_words = bottom_k_frequent_words(frequency, bottom_k)
 ## Output from Frequency Analysis
 
 ```{python}
-print(f"Word Frequency: {frequency}")
+# display an output label
+print("Word Frequency:")
+# display the frequency of each word
+for word, freq in frequency.items():
+    print(f"{word}: {freq}")
+```
 
+## Most and Least Frequent Words
+
+```{python}
 print(f"Top-{top_k} Most Frequent Words: {top_k_words}")
 
 print(f"Bottom-{bottom_k} Least Frequent Words: {bottom_k_words}")
