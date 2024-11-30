@@ -363,6 +363,14 @@ def bottom_k_frequent_words(frequency: Counter, k: int) -> list:
     return frequency.most_common()[:-k-1:-1]
 ```
 
+::: incremental
+
+- Accept as input a string of plaintext or ciphertext
+- Use the `Counter` class from the `collections` module
+- Use functions to find the top and bottom `k` words
+
+:::
+
 ## Running Frequency Analysis
 
 ```{python}
@@ -415,5 +423,16 @@ for word, freq in bottom_k_words:
 ::: fragment
 
 How does this help a cryptographer break a simple cipher?
+
+:::
+
+# How Can Frequency Analysis Be Used to Break Ciphers?
+
+::: incremental
+
+- Determine the frequency of words over plaintexts
+- Analyze the frequency of words in a ciphertext
+- Use the frequency analysis to determine the key
+- Decrypt the ciphertext to plaintext using the key
 
 :::
