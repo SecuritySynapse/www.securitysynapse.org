@@ -351,34 +351,44 @@ print(f"Decrypted: {decrypted}")
 ```{python}
 from collections import Counter
 
-def compute_word_frequency(text):
+def compute_word_frequency(text: str) -> Counter:
     words = text.lower().split()
     frequency = Counter(words)
     return frequency
 
-def top_k_frequent_words(frequency, k):
+def top_k_frequent_words(frequency: Counter, k: int) -> list:
     return frequency.most_common(k)
 
-def bottom_k_frequent_words(frequency, k):
+def bottom_k_frequent_words(frequency: Counter, k: int) -> list:
     return frequency.most_common()[:-k-1:-1]
 ```
 
 ## Running Frequency Analysis
 
 ```{python}
-text = "This is a sample text. This text is for testing the frequency analysis. Frequency analysis is useful."
+# define a simple text string for analysis
+text = "This is a sample text. " \
+       "This text is for testing the frequency analysis. " \
+       "Frequency analysis is useful."
 
-# Compute word frequency
+# compute word frequency and return a Counter
 frequency = compute_word_frequency(text)
-print(f"Word Frequency: {frequency}")
 
-# Get top-3 most frequent words
+# determine the top-3 most frequent words
 top_k = 3
 top_k_words = top_k_frequent_words(frequency, top_k)
-print(f"Top-{top_k} Most Frequent Words: {top_k_words}")
 
-# Get bottom-3 least frequent words
+# determine the bottom-3 least frequent words
 bottom_k = 3
 bottom_k_words = bottom_k_frequent_words(frequency, bottom_k)
+```
+
+## Output from Frequency Analysis
+
+```{python}
+print(f"Word Frequency: {frequency}")
+
+print(f"Top-{top_k} Most Frequent Words: {top_k_words}")
+
 print(f"Bottom-{bottom_k} Least Frequent Words: {bottom_k_words}")
 ```
