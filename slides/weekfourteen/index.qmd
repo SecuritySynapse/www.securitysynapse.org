@@ -252,7 +252,7 @@ print(f"Decrypted: {decrypted}")
 
 # Exploring Substitution Ciphers Like Vigenere
 
-::: fragment
+::: incremental
 
 - Example of of substitution cipher
 - Uses a `key` to encrypt messages
@@ -313,7 +313,7 @@ print(f"Decrypted: {decrypted}")
 
 ## Recapping the Vigenere Cipher
 
-::: {.fragment .callout-note icon=false title="Lessons Learned about Vigenere Cipher" style="margin-top: 0em;"}
+::: {.fragment .callout-note icon=false title="Lessons Learned about Vigenere Cipher" style="margin-top: 0em; font-size: 1.1em;"}
 
 ::: incremental
 
@@ -326,9 +326,23 @@ print(f"Decrypted: {decrypted}")
   - `decrypted_char = chr((ord(char) - ord('a') - shift + 26) % 26 + ord('a'))`
 
 - Importantly, it is more secure than simple substitution ciphers
-- However, it is still vulnerable to frequency analysis with long ciphertexts
+- However, it is still vulnerable to frequency analysis for long ciphertexts
 
 :::
+
+:::
+
+# Frequency Analysis
+
+::: incremental
+
+- Analyze the frequency of words in a text
+- Find the *most* and *least* frequent words
+- Use frequency analysis to break simple ciphers
+- Implement the following functions:
+  - `compute_word_frequency`
+  - `top_k_frequent_words`
+  - `bottom_k_frequent_words`
 
 :::
 
