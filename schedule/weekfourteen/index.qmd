@@ -1,6 +1,6 @@
 ---
 title: "Revisiting Cryptography"
-description: "How does cryptography fit into modern software?"
+description: "How Does Cryptography Fit into Modern Software?"
 date: "2024-11-25"
 layout: full
 toc: true
