@@ -1,6 +1,6 @@
 ---
 title: "Security Vulnerabilities"
-description: "What Are best Practices for Handling Vulnerabilities?"
+description: "What Are Best Practices for Handling Vulnerabilities?"
 date: "2024-11-18"
 layout: full
 toc: true
