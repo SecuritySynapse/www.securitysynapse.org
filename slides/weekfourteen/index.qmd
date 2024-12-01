@@ -436,3 +436,53 @@ How does this help a cryptographer break a simple cipher?
 - Decrypt the ciphertext to plaintext using the key
 
 :::
+
+## Cryptography Review
+
+::: {.columns style="margin-top: 0.5em;"}
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+#### Cryptography Roles
+
+- Hashing
+- Signatures
+- Communication
+- Cryptanalysis
+
+#### SSH Keys
+
+- Generate and add SSH keys
+- Run SSH agent
+- Clone repositories using SSH
+
+:::
+
+:::
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+#### Affine Ciphers
+
+- Modular arithmetic
+- Encryption and decryption
+
+#### Vigenere Ciphers
+
+- Repeating key shifts
+- Enhances simple substitution
+
+#### Frequency Analysis
+
+- Compute word frequency
+- Break simple ciphers
+
+:::
+
+:::
+
+:::
