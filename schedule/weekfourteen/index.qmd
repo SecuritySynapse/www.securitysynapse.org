@@ -1,0 +1,38 @@
+---
+title: "Revisiting Cryptography"
+description: "How does cryptography fit into modern software?"
+date: "2024-11-25"
+layout: full
+toc: true
+toc-expand: 3
+---
+
+## Exploration
+
+- {{< iconify fa6-solid book-open size=18px >}} Read chapters thirteen through
+twenty in [Cracking Codes with Python](https://inventwithpython.com/cracking/)
+
+## Activities
+
+- {{< iconify fa6-solid diagram-project size=18px >}} **Monday**: Laboratory session
+- {{< iconify fa6-solid people-line size=18px >}} **Tuesday and Thursday**:
+Security Solutions
+  - Explore terms and concepts in security vulnerability management
+  - Complete a case study on the topic of secrets in GitHub repositories
+  - Learn more about common vulnerabilities and exposures (CVEs)
+  - Understand how to use the common vulnerability scoring system (CVSS)
+  - Continued highlighting of the concept of a "security synapse"
+  - Student presentations that feature:
+    - Explanation of a high-level concepts behind security scanning
+    - In-class activity that connects concepts to real-world scenarios
+    - Hands-on examples of methods for assess security vulnerabilities
+    - Demonstrate the use of a practical approach to vulnerabilities
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="../../slides/weekthirteen/"></iframe>
+```
+
+{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week
+Thirteen: Security Vulnerabilities](../../slides/weekthirteen/)
