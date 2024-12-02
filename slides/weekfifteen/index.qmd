@@ -20,14 +20,15 @@ format:
     footer: "Security Synapse"
 ---
 
-# What role should cryptography play in secure software?
+# What role should virtualization play in secure software?
 
 ::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.95em;"}
 
-- Hashing
-- Signatures
-- Encryption
-- Decryption
+- Offer an abstraction for system resources
+- Securely emulate a privileged environment
+- Yet, it introduces new security risks!
+    - Do I trust the virtualization software?
+    - Do I trust the Docker container?
 
 :::
 
