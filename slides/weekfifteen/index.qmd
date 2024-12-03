@@ -191,9 +191,11 @@ docker run -d \
 
 ## "Four Cs" of Cloud Native Security
 
-::: fragment
+::: {.fragment .boxed-content .fade style="margin-top: 0.15em; font-size: 1em;"}
 
 - **Code**: How secure is the code of the application?
 - **Container**: How secure is the software container?
+- **Cluster**: How secure is the Kubernetes cluster?
+- **Cloud**: How secure is the cloud provider?
 
 :::
