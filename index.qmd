@@ -65,7 +65,7 @@ two-week project that learners complete to ensure that they have suitable
 hands-on practice to make a security synapse and achieve the learning
 objectives for the course. The project list also includes details about the
 long-term computer security summit project that invites learners to propose,
-conduct, and report on their own independent research project.
+conduct, and report on an independent research project.
 
 ## Connecting Concepts to Code
 
