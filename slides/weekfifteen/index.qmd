@@ -243,12 +243,12 @@ docker run -d \
 #### Implementation
 
 - Use trusted/updated images
-- Apply principle of least privilege
+- Principle of least privilege
 - Scan and update containers
 
 #### Exploration
 
-- Experiment with resource limits
+- Try Docker resource limits
 - Container orchestration tools
 - Find secure configurations
 
