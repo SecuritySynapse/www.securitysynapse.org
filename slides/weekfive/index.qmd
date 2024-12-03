@@ -529,11 +529,11 @@ __pyarmor__(__name__, __file__, b'PY000000\x00\x03\x0c\x00\xcb\r\r\n\x80\x00\x01
 ::: {.incremental style="font-size: 0.95em;"}
 
 - Analysis with `strings` is clearly no longer possible!
-- **_What are the benefits of obfuscating malware?_**
+- {{< iconify fa6-solid lightbulb >}} **What are the benefits of obfuscating malware?**
   - Makes it harder for humans to detect and analyze
   - Reduces the likelihood of detection by security software
   - Increases the time required for reverse engineering
-- **_What are the downsides of obfuscating malware?_**
+- {{< iconify fa6-solid lightbulb >}} **What are the downsides of obfuscating malware?**
   - May increase the size of the malware
   - May require additional libraries or dependencies
   - Makes it harder for attackers to understand and maintain
