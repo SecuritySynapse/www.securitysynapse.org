@@ -104,7 +104,7 @@ encrypted file that can only be decrypted using the same symmetric key. Notably,
 this output was produced by automatically running the `encrypt_file` function
 when this site was deployed! If you check the [course slides](slides/index.qmd)
 you can see many other Python source code segments --- including some that you
-can edit and run yourself through an IDE embedded in the slide!
+can modify and run through an editor in the slide!
 
 ## Recent Slide Decks
 
