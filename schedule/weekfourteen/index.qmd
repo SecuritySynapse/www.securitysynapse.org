@@ -27,7 +27,7 @@ Cryptography Review
   - Continued highlighting of the concept of a "security synapse"
   - Student presentations that feature:
     - Explanation of a high-level concepts behind cryptography
-    - Since there is only one class students need not program
+    - Since there is only one class this week, students need not program
 - **No class on Thursday due to Thanksgiving Break**
 
 ## Slides
