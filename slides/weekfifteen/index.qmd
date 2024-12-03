@@ -45,7 +45,7 @@ format:
 
 ::: {.fragment .boxed-content .fade style="margin-top: -0.05em; font-size: 0.80em;"}
 
-- {{< iconify fa6-solid people-line >}} **In-Class Discussion**:
+- {{< iconify fa6-solid people-line >}} **In-Class Discussion**
     - Where are virtual machines commonly used in industry?
     - What are the security benefits of using a virtual machine?
     - What are the downside of using a virtual machines?
@@ -138,3 +138,62 @@ docker run -d \
 :::
 
 # Docker containers are complex software applications with behaviors that vary by operating system!
+
+# Container Orchestration
+
+::: incremental
+
+- Deployment, scaling, and management of containers
+- **Examples**: Kubernetes or Docker Swarm
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.15em; font-size: 0.80em;"}
+
+- Features of container orchestration:
+    - **Service Discovery**: Automatically find containers
+    - **Load Balancing**: Distribute traffic across containers
+    - **Health Checks**: Monitor container health
+    - **Rolling Updates**: Update containers without downtime
+
+:::
+
+# Security implications of Kubernetes clusters?
+
+::: incremental
+
+- **Complexity**: More moving parts, more vulnerabilities
+- **Attack Surface**: More services, more potential entry points
+- **Misconfiguration**: Picking the best settings can be tricky
+- **Shared Responsibility**: Must also consider cloud providers!
+
+:::
+
+## Overview of Cloud Computing
+
+::: fragment
+
+- **Public Cloud**: Shared resources from a major data center
+- **Private Cloud**: Dedicated resources for a single organization
+- **Hybrid Cloud**: Combination of public and private cloud
+- **Multi-Cloud**: Use of multiple public cloud providers
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.15em; font-size: 0.8em;"}
+
+- {{< iconify fa6-solid people-line >}} **In-Class Discussion**: What are the trade-offs for each cloud option?
+    - Performance
+    - Reliability
+    - Security
+
+:::
+
+## "Four Cs" of Cloud Native Security
+
+::: fragment
+
+- **Code**: How secure is the code of the application?
+- **Container**: How secure is the software container?
+
+:::
