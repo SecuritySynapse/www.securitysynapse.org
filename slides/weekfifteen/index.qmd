@@ -199,3 +199,53 @@ docker run -d \
 - **Cloud**: How secure is the cloud provider?
 
 :::
+
+## Wrap-up on System Virtualization
+
+::: {.columns style="margin-top: 0.5em;"}
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Key Concepts*
+
+#### Virtualization Security
+
+- Shared kernel vulnerabilities
+- Isolation issues in containers
+- Risks of untrusted containers
+
+#### Resource Management
+
+- Limit memory and CPU use
+- Control files and processes
+- System stability and security
+
+:::
+
+:::
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Best Practices*
+
+#### Implementation
+
+- Use trusted/updated images
+- Apply principle of least privilege
+- Scan and update containers
+
+#### Exploration
+
+- Experiment with resource limits
+- Container orchestration tools
+- Find secure configurations
+
+:::
+
+:::
+
+:::
