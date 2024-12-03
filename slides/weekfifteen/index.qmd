@@ -191,12 +191,20 @@ docker run -d \
 
 ## "Four Cs" of Cloud Native Security
 
+::: {.incremental style="margin-top: 0.15em;"}
+
+- Decide whether or not to use virtual machines or containers
+- Determine whether or not cloud deployment is necessary
+
+:::
+
 ::: {.fragment .boxed-content .fade style="margin-top: 0.15em; font-size: 1em;"}
 
-- **Code**: How secure is the code of the application?
-- **Container**: How secure is the software container?
-- **Cluster**: How secure is the Kubernetes cluster?
-- **Cloud**: How secure is the cloud provider?
+- {{< iconify fa6-solid lightbulb >}} **Answer these questions for cloud native security:**
+    - **Code**: How secure is the code of the application?
+    - **Container**: How secure is the software container?
+    - **Cluster**: How secure is the Kubernetes cluster?
+    - **Cloud**: How secure is the cloud provider?
 
 :::
 
