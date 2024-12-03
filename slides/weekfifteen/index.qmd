@@ -88,3 +88,53 @@ elevated privileges, increasing security risks for all software it runs
 - Do the benefits of containers outweigh the security risks?
 
 :::
+
+## Docker Security Concerns
+
+```bash
+docker run -d \
+  --name mysecurecontainer \
+  --network mynetwork \
+  --restart unless-stopped \
+  -v /host/data:/container/data:ro \
+  -p 8080:80 \
+  --cap-drop ALL \
+  --read-only \
+  --user 1000:1000 \
+  nginx:latest
+```
+
+::: {.fragment style="margin-top: 0.15em; font-size: 0.825em;"}
+
+- Downloads the `nginx` image from Docker Hub
+- Restarts the container unless explicitly stopped
+- Maps host's `/host/data` to container's `/container/data`
+- Uses the `--cap-drop` flag to drop all capabilities
+- See the [Docker Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html) for more details!
+
+:::
+
+## Limiting Docker Resources
+
+```bash
+docker run -d \
+  --name limitedcontainer \
+  --memory="512m" \
+  --cpus="1.5" \
+  --ulimit nofile=1024:2048 \
+  --ulimit nproc=100 \
+  nginx:latest
+```
+
+::: {.fragment style="margin-top: 0.15em; font-size: 0.9em;"}
+
+- Downloads the `nginx` image from Docker Hub
+- Uses the `--memory` flag to limit memory usage
+- Uses `--cpus` to limit the number of CPUs
+- Operating systems influence parameters impact
+- Overall, limited resources can enhance security!
+- However, is this enough to prevent all attacks?
+
+:::
+
+# Docker containers are complex software applications with behaviors that vary by operating system!
