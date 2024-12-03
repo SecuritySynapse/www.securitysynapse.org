@@ -166,7 +166,7 @@ Ways to balance security, privacy, and performance? How?
     - Key sizes of 128, 192, or 256 bits
     - Performs multiple rounds of encryption
     - Designed by Joan Daemen and Vincent Rijmen
-- *Wait*, how do you exchange the key securely?
+- {{< iconify fa6-solid lightbulb >}} *Wait*, how do you exchange the key securely?
 
 :::
 
@@ -181,7 +181,7 @@ Ways to balance security, privacy, and performance? How?
     - Share the public key to a key server
     - Friend encrypts message with public key
     - You decrypt the message with the private key
-- **Important trade-off**: slower than symmetric encryption!
+- {{< iconify fa6-solid ruler >}} **Important trade-off**: slower than symmetric encryption!
 
 :::
 
@@ -206,7 +206,7 @@ Ways to balance security, privacy, and performance? How?
 - A virtual private network (VPN) works like this:
     - Use asymmetric encryption to exchange symmetric key
     - Use symmetric encryption for data transmission
-- **Important Insights**
+- {{< iconify fa6-solid lightbulb >}} **Important Insights**:
     - Fast because it mostly uses symmetric encryption
     - Using multiple algorithms can maintain/increase security
     - Yet, only as secure as the weakest link!
@@ -271,7 +271,7 @@ understanding! Start by revisiting basics from last week!
 
 # Security Synapses
 
-::: {.incremental style="margin-top: -0.25em;"}
+::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
 
 - Use `cryptography.fernet` to encrypt a string and record
     - Automatically generate a symmetric key
@@ -280,7 +280,7 @@ understanding! Start by revisiting basics from last week!
     - Define the `encrypted_data` byte-encoded string
     - Define the `key` as a byte-encoded string
 - Confirm that decrypted string matches the original one
-- **Variables are shared across programming environments**!
+- {{< iconify fa6-solid key >}} **Variables are shared across programming environments**!
 
 :::
 
