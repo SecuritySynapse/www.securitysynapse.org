@@ -82,7 +82,7 @@ elevated privileges, increasing security risks for all software it runs
 
 :::
 
-::: {.fragment style="margin-top: 0.05em; font-size: 0.85em;"}
+::: {.fragment style="margin-top: -0.05em; font-size: 0.85em;"}
 
 - How can one container influence the behavior of another?
 - Do the benefits of containers outweigh the security risks?
