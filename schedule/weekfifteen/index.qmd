@@ -1,0 +1,35 @@
+---
+title: "Leveraging Virtualization"
+description: "How Does Virtualization Influence System Security?"
+date: "2024-12-02"
+layout: full
+toc: true
+toc-expand: 3
+---
+
+## Exploration
+
+- {{< iconify fa6-solid book-open size=18px >}} Read chapter 10 in [Computer
+Systems Security: Planning for Success](https://web.njit.edu/~rt494/security/)
+
+## Activities
+
+- {{< iconify fa6-solid diagram-project size=18px >}} **Monday**: Laboratory session
+- {{< iconify fa6-solid people-line size=18px >}} **Tuesday**: Virtualization 
+  - Explore the concepts of virtualization and containerization
+  - Learn more about the security trade-offs of virtualization
+  - Explore the security implications of containerization
+  - Continued highlighting of the concept of a "security synapse"
+  - Student presentations that feature:
+    - Explanation of a high-level concepts in virtualization
+    - Since there is only one class this week, students need not program
+- **Thursday's Class Session Devoted to Lightning Talks!**
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="../../slides/weekfifteen/"></iframe>
+```
+
+{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week
+Fifteen: Virtualization](../../slides/weekfifteen/)
