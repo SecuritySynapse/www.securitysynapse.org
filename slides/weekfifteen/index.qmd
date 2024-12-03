@@ -1,0 +1,259 @@
+---
+title: "Leveraging Virtualization"
+subtitle: "Understanding the Role of Virtualization in Security"
+description: "How does virtualization influence system security?"
+date: "2024-12-02"
+date-format: long
+author: Gregory M. Kapfhammer
+execute:
+  echo: true
+jupyter: python3
+format:
+  revealjs:
+    completion: true
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Security Synapse"
+---
+
+# What role should virtualization play in secure software?
+
+::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.95em;"}
+
+- Offer an abstraction for system resources
+- Securely emulate a privileged environment
+- Yet, it introduces new security risks!
+    - Do I trust the virtualization software?
+    - Do I trust the Docker container?
+
+:::
+
+## What is a virtual machine? 
+
+::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.95em;"}
+
+- A software-based emulation of a computer
+- Runs an operating system and applications
+- Isolation from the host operating system
+- Run untrusted code in a safe environment
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: -0.05em; font-size: 0.80em;"}
+
+- {{< iconify fa6-solid people-line >}} **In-Class Discussion**
+    - Where are virtual machines commonly used in industry?
+    - What are the security benefits of using a virtual machine?
+    - What are the downside of using a virtual machines?
+    - How do you design and implement a secure virtual machine?
+
+:::
+
+# Trade-offs between virtual machines and software containers?
+
+::: incremental
+
+- Virtual machines are often resource intensive
+- Containers share the host operating system
+- Containers are often lightweight and fast
+- {{< iconify fa6-solid lightbulb >}} **What are the security downsides of containers?**
+
+:::
+
+## Insecure Software Containers
+
+::: {.fragment .callout-note icon=false title="Software Container Security Concerns" style="margin-top: -0.15em;"}
+
+- **Shared Kernel Vulnerabilities**: Containers share the host operating
+system's kernel, increasing the risk if the kernel is compromised
+  
+- **Isolation Issues**: Containers provide less isolation compared to virtual
+machines, potentially allowing for a variety of container breakout attacks
+  
+- **Image Vulnerabilities**: Container images downloaded from "hubs" may
+contain vulnerabilities if not regularly updated and scanned
+  
+- **Privilege Escalation**: Misconfigured software containers may run with some
+elevated privileges, increasing security risks for all software it runs
+
+:::
+
+::: {.fragment style="margin-top: 0.05em; font-size: 0.85em;"}
+
+- How can one container influence the behavior of another?
+- Do the benefits of containers outweigh the security risks?
+
+:::
+
+## Docker Security Concerns
+
+```bash
+docker run -d \
+  --name mysecurecontainer \
+  --network mynetwork \
+  --restart unless-stopped \
+  -v /host/data:/container/data:ro \
+  -p 8080:80 \
+  --cap-drop ALL \
+  --read-only \
+  --user 1000:1000 \
+  nginx:latest
+```
+
+::: {.fragment style="margin-top: 0.15em; font-size: 0.825em;"}
+
+- Downloads the `nginx` image from Docker Hub
+- Restarts the container unless explicitly stopped
+- Maps host's `/host/data` to container's `/container/data`
+- Uses the `--cap-drop` flag to drop all capabilities
+- See the [Docker Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html) for more details!
+
+:::
+
+## Limiting Docker Resources
+
+```bash
+docker run -d \
+  --name limitedcontainer \
+  --memory="512m" \
+  --cpus="1.5" \
+  --ulimit nofile=1024:2048 \
+  --ulimit nproc=100 \
+  nginx:latest
+```
+
+::: {.fragment style="margin-top: 0.15em; font-size: 0.875em;"}
+
+- Downloads the `nginx` image from Docker Hub
+- Uses the `--memory` flag to limit memory usage
+- Uses `--cpus` to limit the number of CPUs
+- Operating systems influence parameters impact
+- Overall, limited resources can enhance security!
+- However, is this enough to prevent most attacks?
+
+:::
+
+# Docker containers are complex software applications with behaviors that vary by operating system!
+
+# Container Orchestration
+
+::: incremental
+
+- Deployment, scaling, and management of containers
+- **Examples**: Kubernetes or Docker Swarm
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.15em; font-size: 0.80em;"}
+
+- Features of container orchestration:
+    - **Service Discovery**: Automatically find containers
+    - **Load Balancing**: Distribute traffic across containers
+    - **Health Checks**: Monitor container health
+    - **Rolling Updates**: Update containers without downtime
+
+:::
+
+# Security implications of Kubernetes clusters?
+
+::: incremental
+
+- **Complexity**: More moving parts, more vulnerabilities
+- **Attack Surface**: More services, more potential entry points
+- **Misconfiguration**: Picking the best settings can be tricky
+- **Shared Responsibility**: Must also consider cloud providers!
+
+:::
+
+## Overview of Cloud Computing
+
+::: fragment
+
+- **Public Cloud**: Shared resources from a major data center
+- **Private Cloud**: Dedicated resources for a single organization
+- **Hybrid Cloud**: Combination of public and private cloud
+- **Multi-Cloud**: Use of multiple public cloud providers
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.15em; font-size: 0.8em;"}
+
+- {{< iconify fa6-solid people-line >}} **In-Class Discussion**: What are the trade-offs for each cloud option?
+    - Performance
+    - Reliability
+    - Security
+
+:::
+
+## "Four Cs" of Cloud Native Security
+
+::: {.incremental style="margin-top: 0.15em;"}
+
+- Decide whether or not to use virtual machines or containers
+- Determine whether or not cloud deployment is necessary
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: 0.15em; font-size: 1em;"}
+
+- {{< iconify fa6-solid lightbulb >}} **Answer these questions for cloud native security:**
+    - **Code**: How secure is the code of the application?
+    - **Container**: How secure is the software container?
+    - **Cluster**: How secure is the Kubernetes cluster?
+    - **Cloud**: How secure is the cloud provider?
+
+:::
+
+## Wrap-up on System Virtualization
+
+::: {.columns style="margin-top: 0.5em;"}
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Key Concepts*
+
+#### Virtualization Security
+
+- Shared kernel vulnerabilities
+- Isolation issues in containers
+- Risks of untrusted containers
+
+#### Resource Management
+
+- Limit memory and CPU use
+- Control files and processes
+- System stability and security
+
+:::
+
+:::
+
+::: {.column style="font-size: 0.9em;"}
+
+::: fragment
+
+### *Best Practices*
+
+#### Implementation
+
+- Use trusted/updated images
+- Apply principle of least privilege
+- Scan and update containers
+
+#### Exploration
+
+- Experiment with resource limits
+- Container orchestration tools
+- Find secure configurations
+
+:::
+
+:::
+
+:::
