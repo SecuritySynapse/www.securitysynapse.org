@@ -126,14 +126,14 @@ docker run -d \
   nginx:latest
 ```
 
-::: {.fragment style="margin-top: 0.15em; font-size: 0.9em;"}
+::: {.fragment style="margin-top: 0.15em; font-size: 0.875em;"}
 
 - Downloads the `nginx` image from Docker Hub
 - Uses the `--memory` flag to limit memory usage
 - Uses `--cpus` to limit the number of CPUs
 - Operating systems influence parameters impact
 - Overall, limited resources can enhance security!
-- However, is this enough to prevent all attacks?
+- However, is this enough to prevent most attacks?
 
 :::
 
