@@ -63,3 +63,28 @@ format:
 - {{< iconify fa6-solid lightbulb >}} **What are the security downsides of containers?**
 
 :::
+
+## Insecure Software Containers
+
+::: {.fragment .callout-note icon=false title="Software Container Security Concerns" style="margin-top: -0.15em;"}
+
+- **Shared Kernel Vulnerabilities**: Containers share the host operating
+system's kernel, increasing the risk if the kernel is compromised
+  
+- **Isolation Issues**: Containers provide less isolation compared to virtual
+machines, potentially allowing for a variety of container breakout attacks
+  
+- **Image Vulnerabilities**: Container images downloaded from "hubs" may
+contain vulnerabilities if not regularly updated and scanned
+  
+- **Privilege Escalation**: Misconfigured software containers may run with some
+elevated privileges, increasing security risks for all software it runs
+
+:::
+
+::: {.fragment style="margin-top: 0.05em; font-size: 0.85em;"}
+
+- How can one container influence the behavior of another?
+- Do the benefits of containers outweigh the security risks?
+
+:::
