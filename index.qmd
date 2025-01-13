@@ -18,7 +18,6 @@ listing:
     fields: [title, date, description]
     max-items: 3
     page-size: 3
-
 ---
 
 ![](images/Security-Synapse-Logo.svg){fig-align="center"}
