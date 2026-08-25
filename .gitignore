@@ -135,6 +135,8 @@ site_libs/
 _freeze
 _site
 _optimize
+**/*.quarto_ipynb
+**/*.quarto_ipynb_1
 
 ### NixOS: ignore generated files in nix/ ###
 /env/
