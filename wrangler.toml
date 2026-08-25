@@ -1,0 +1,30 @@
+# Wrangler configuration for www.securitysynapse.org
+#
+# This file deploys this Quarto site as a Cloudflare Worker that serves
+# the static assets produced by `quarto render`.
+#
+# When you push to the `main` branch, the GitHub Actions workflow in
+# .github/workflows/publish.yml renders the site into ./_site and then
+# runs `wrangler deploy`, which uploads ./_site as this Worker's static
+# assets. See MIGRATE.md in the reference repository for the full steps.
+
+name = "www-securitysynapse-org"
+compatibility_date = "2026-08-25"
+
+# Serve the rendered Quarto output as static assets. Because this Worker
+# has no script (main), every request is answered from ./_site directly.
+[assets]
+directory = "./_site"
+
+# To bind the domain purely from code (no dashboard clicking), uncomment
+# the block below. It only works when the zone is on the SAME Cloudflare
+# account as the API token used to deploy. The domain must not already be
+# bound to another Worker.
+#
+# [[routes]]
+# pattern = "www.securitysynapse.org"
+# custom_domain = true
+#
+# [[routes]]
+# pattern = "securitysynapse.org"
+# custom_domain = true
