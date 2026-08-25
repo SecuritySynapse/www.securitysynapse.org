@@ -1,0 +1,17 @@
+[project]
+name = "securitysynapse"
+version = "0.1.0"
+description = ""
+authors = [
+    { name = "Gregory M. Kapfhammer", email = "gkapfham@allegheny.edu" },
+]
+readme = "README.md"
+requires-python = ">=3.11,<4.0"
+dependencies = [
+    "cryptography>=50.0.0,<51.0.0",
+    "jupyter>=1.0.0,<2.0.0",
+]
+
+[tool.uv]
+# This repository contains a Quarto website, not an installable Python package.
+package = false
