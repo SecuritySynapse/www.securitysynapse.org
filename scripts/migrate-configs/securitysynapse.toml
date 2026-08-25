@@ -1,0 +1,30 @@
+# Migration configuration for www.securitysynapse.org
+# Used by scripts/migrate-to-cloudflare.py -- see MIGRATE.md
+
+worker_name = "www-securitysynapse-org"
+apex = "securitysynapse.org"
+github_repo = "SecuritySynapse/www.securitysynapse.org"
+branch = "main"
+quarto_version = "1.5.56"
+
+# uv build: freeze is not committed, so CI re-executes the computational
+# content exactly like the current Netlify build does. uv sync --locked
+# installs both jupyter and cryptography from pyproject.toml.
+render_command = "uv run quarto render"
+
+# Environment variables for the render step (inline table)
+render_env = { PYDEVD_DISABLE_FILE_VALIDATION = "1" }
+
+# Extra workflow steps (pre-indented YAML) inserted before the render step
+workflow_setup = [
+    "      - name: Install Python",
+    "        uses: actions/setup-python@v4",
+    "        with:",
+    '          python-version: "3.11"',
+    "      - name: Install uv",
+    "        uses: astral-sh/setup-uv@v6",
+    "        with:",
+    "          enable-cache: true",
+    "      - name: Sync Python dependencies",
+    "        run: uv sync --locked",
+]

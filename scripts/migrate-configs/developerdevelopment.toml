@@ -1,0 +1,33 @@
+# Migration configuration for www.developerdevelopment.com
+# Used by scripts/migrate-to-cloudflare.py -- see MIGRATE.md
+
+worker_name = "www-developerdevelopment-com"
+apex = "developerdevelopment.com"
+hostnames = ["developerdevelopment.com", "www.developerdevelopment.com"]
+netlify_apex_ips = ["75.2.60.5"]
+github_repo = "TeamDevDev/www.developerdevelopment.com"
+branch = "master"
+quarto_version = "1.5.56"
+
+# uv build: render with the optimize profile (runs minify-files.py)
+render_command = "uv run quarto render --profile optimize"
+
+# The site has a custom 404.html ("Sorry, this Page is Not Available!")
+not_found_handling = "404-page"
+
+# Environment variables for the render step (inline table)
+render_env = { PYDEVD_DISABLE_FILE_VALIDATION = "1" }
+
+# Extra workflow steps (pre-indented YAML) inserted before the render step
+workflow_setup = [
+    "      - name: Install Python",
+    "        uses: actions/setup-python@v4",
+    "        with:",
+    '          python-version: "3.11"',
+    "      - name: Install uv",
+    "        uses: astral-sh/setup-uv@v6",
+    "        with:",
+    "          enable-cache: true",
+    "      - name: Sync Python dependencies",
+    "        run: uv sync --locked",
+]
