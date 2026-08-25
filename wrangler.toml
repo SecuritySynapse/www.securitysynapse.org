@@ -15,6 +15,7 @@ compatibility_date = "2026-08-25"
 # has no script (main), every request is answered from ./_site directly.
 [assets]
 directory = "./_site"
+not_found_handling = "404-page"
 
 # To bind the domain purely from code (no dashboard clicking), uncomment
 # the block below. It only works when the zone is on the SAME Cloudflare
