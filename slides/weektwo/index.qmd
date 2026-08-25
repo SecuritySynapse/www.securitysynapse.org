@@ -6,20 +6,20 @@ date: "2024-09-02"
 date-format: long
 author: Gregory M. Kapfhammer
 execute:
-echo: true
+  echo: true
 jupyter: python3
 format:
-revealjs:
-theme: default
-css: ../css/styles.css
-history: false
-scrollable: true
-transition: slide
-highlight-style: github
-footer: "Security Synapse"
+  revealjs:
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Security Synapse"
 ---
 
-## What is infosec?
+# What is infosec?
 
 ::: {.incremental style="margin-top: -0.5em;"}
 
@@ -44,10 +44,10 @@ strategies would have enabled your defense?
 ::: incremental
 
 - Key security acronyms describing design principles:
-- **PDR**: **P**revention, **D**etection, **R**eaction
-- *Prevention*: Stopping an attack before it starts
-- *Detection*: Identifying an attack in progress
-- *Reaction*: Stopping an attack before it causes damage
+  - **PDR**: **P**revention, **D**etection, **R**eaction
+    - *Prevention*: Stopping an attack before it starts
+    - *Detection*: Identifying an attack in progress
+    - *Reaction*: Stopping an attack before it causes damage
 
 :::
 
@@ -64,10 +64,10 @@ security breach? Why or why not?
 ::: incremental
 
 - Key security acronyms describing design principles:
-- **CIA**: **C**onfidentiality, **I**ntegrity, **A**vailability
-- *Confidentiality*: Keeping secret information secret
-- *Integrity*: Data has not been corrupted or tampered with
-- *Availability*: Systems are up and running for valid users
+  - **CIA**: **C**onfidentiality, **I**ntegrity, **A**vailability
+    - *Confidentiality*: Keeping secret information secret
+    - *Integrity*: Data has not been corrupted or tampered with
+    - *Availability*: Systems are up and running for valid users
 
 :::
 
@@ -84,10 +84,10 @@ What could be done to prevent the attack?
 ::: incremental
 
 - Key strategy for ensuring system security:
-- **DRY**: *D*on't *R*epeat *Y*ourself
-- Guideline for automation and system design
-- Avoid manual repetition by using scripts and tools
-- Reuse verified resources across multiple systems
+  - **DRY**: *D*on't *R*epeat *Y*ourself
+    - Guideline for automation and system design
+    - Avoid manual repetition by using scripts and tools
+    - Reuse verified resources across multiple systems
 
 :::
 
@@ -104,10 +104,10 @@ How does this connect to *zero-touch deployment*?
 ::: incremental
 
 - Strategies for ensuring system security:
-- **AAA**: **A**uthentication, **A**uthorization, **A**ccounting
-- *Authentication*: Confirming someone's identity
-- *Authorization*: Keeping track of entity's resource access
-- *Accounting*: Tracking the usage of resources
+  - **AAA**: **A**uthentication, **A**uthorization, **A**ccounting
+    - *Authentication*: Confirming someone's identity
+    - *Authorization*: Keeping track of entity's resource access
+    - *Accounting*: Tracking the usage of resources
 
 :::
 
@@ -119,9 +119,9 @@ trade-off in computer security? Why?
 
 :::
 
-## *Key Dilemma*: people may have key computer security requirements but limited computer security expertise
+# *Key Dilemma*: people may have key computer security requirements but limited computer security expertise
 
-## *Key Trade-off*: making a system secure often makes it less usable!
+# *Key Trade-off*: making a system secure often makes it less usable!
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
 
@@ -151,19 +151,19 @@ these programs? How could they be *prevented* and *detected*? What should be the
 ::: {.fragment .fade-right}
 
 - **High-Level Concepts**
-- Concepts such as *confidentiality* and *integrity*
-- Test all aspects of the system to ensure correctness
-- Make a benchmark framework to measure performance
+  - Concepts such as *confidentiality* and *integrity*
+  - Test all aspects of the system to ensure correctness
+  - Make a benchmark framework to measure performance
 - **Low-Level Implementation Details**
-- Use cryptography to secure transferred data
-- Use hashing to verify data integrity
-- Secure implementation in programming languages
+  - Use cryptography to secure transferred data
+  - Use hashing to verify data integrity
+  - Secure implementation in programming languages
 
 :::
 
-## *Implementation*: which languages are reputed to be the most or least secure? Why? Do you agree with consensus?
+# *Implementation*: which languages are reputed to be the most or least secure? Why? Do you agree with consensus?
 
-## Let's Make a Computer Security Synapse
+# Let's Make a Computer Security Synapse
 
 - Obfuscate a file using a symmetric key
 - Compute the SHA256 hash of a file
@@ -175,26 +175,26 @@ these programs? How could they be *prevented* and *detected*? What should be the
 
 ```json
 {
-"vulnerabilities": [
-{
-"id": "CVE-2021-1234",
-"description": "Buffer overflow in XYZ software",
-"severity": "High",
-"exploit_available": true
-},
-{
-"id": "CVE-2021-2345",
-"description": "SQL injection in ABC database",
-"severity": "Medium",
-"exploit_available": false
-},
-{
-"id": "CVE-2021-3456",
-"description": "Cross-site scripting in DEF web application",
-"severity": "Low",
-"exploit_available": true
-}
-]
+    "vulnerabilities": [
+        {
+            "id": "CVE-2021-1234",
+            "description": "Buffer overflow in XYZ software",
+            "severity": "High",
+            "exploit_available": true
+        },
+        {
+            "id": "CVE-2021-2345",
+            "description": "SQL injection in ABC database",
+            "severity": "Medium",
+            "exploit_available": false
+        },
+        {
+            "id": "CVE-2021-3456",
+            "description": "Cross-site scripting in DEF web application",
+            "severity": "Low",
+            "exploit_available": true
+        }
+    ]
 }
 ```
 
@@ -205,17 +205,17 @@ from cryptography.fernet import Fernet
 import json
 
 def encrypt_file(file_path: str, key: str):
-"""Encrypt a file using a symmetric key."""
-# load the file
-with open(file_path, 'r') as file:
-data = json.load(file)
-# convert the dictionary into a string
-data_string = json.dumps(data, sort_keys=True)
-# create a Fernet object
-fernet = Fernet(key)
-# encrypt and return the data
-encrypted_data = fernet.encrypt(data_string.encode())
-return encrypted_data
+    """Encrypt a file using a symmetric key."""
+    # load the file
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    # convert the dictionary into a string
+    data_string = json.dumps(data, sort_keys=True)
+    # create a Fernet object
+    fernet = Fernet(key)
+    # encrypt and return the data
+    encrypted_data = fernet.encrypt(data_string.encode())
+    return encrypted_data
 
 # generate a symmetric key
 key = Fernet.generate_key()
@@ -246,14 +246,14 @@ print(encrypted_data)
 
 ```{python}
 def decrypt_file(encrypted_data: str, key: str):
-"""Decrypt data using a symmetric key."""
-# create a Fernet object
-fernet = Fernet(key)
-# decrypt the data
-decrypted_data = fernet.decrypt(encrypted_data)
-# convert the decrypted data back into a dictionary
-original_data = json.loads(decrypted_data.decode())
-return original_data
+    """Decrypt data using a symmetric key."""
+    # create a Fernet object
+    fernet = Fernet(key)
+    # decrypt the data
+    decrypted_data = fernet.decrypt(encrypted_data)
+    # convert the decrypted data back into a dictionary
+    original_data = json.loads(decrypted_data.decode())
+    return original_data
 
 # decrypt the data and display it
 original_data = decrypt_file(encrypted_data, key)
@@ -266,18 +266,18 @@ print("\n" + str(original_data) + "\n")
 import json, hashlib
 
 def compute_hash(file_path):
-"""Compute the SHA256 hash of a file."""
-with open(file_path, 'r') as file:
-data = json.load(file)
-# convert the dictionary into a string
-data_string = json.dumps(data, sort_keys=True)
-# create a new SHA256 hash object
-hash_object = hashlib.sha256()
-# update the hash object with the bytes of the string
-hash_object.update(data_string.encode())
-# get the hexadecimal representation of the hash
-hash_hex = hash_object.hexdigest()
-return hash_hex
+    """Compute the SHA256 hash of a file."""
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    # convert the dictionary into a string
+    data_string = json.dumps(data, sort_keys=True)
+    # create a new SHA256 hash object
+    hash_object = hashlib.sha256()
+    # update the hash object with the bytes of the string
+    hash_object.update(data_string.encode())
+    # get the hexadecimal representation of the hash
+    hash_hex = hash_object.hexdigest()
+    return hash_hex
 
 # corrupted file: security.json
 print(compute_hash('security.json'))
@@ -289,18 +289,18 @@ print(compute_hash('security.json'))
 import json, hashlib
 
 def compute_hash(file_path):
-"""Compute the SHA256 hash of a file."""
-with open(file_path, 'r') as file:
-data = json.load(file)
-# convert the dictionary into a string
-data_string = json.dumps(data, sort_keys=True)
-# create a new SHA256 hash object
-hash_object = hashlib.sha256()
-# update the hash object with the bytes of the string
-hash_object.update(data_string.encode())
-# get the hexadecimal representation of the hash
-hash_hex = hash_object.hexdigest()
-return hash_hex
+    """Compute the SHA256 hash of a file."""
+    with open(file_path, 'r') as file:
+        data = json.load(file)
+    # convert the dictionary into a string
+    data_string = json.dumps(data, sort_keys=True)
+    # create a new SHA256 hash object
+    hash_object = hashlib.sha256()
+    # update the hash object with the bytes of the string
+    hash_object.update(data_string.encode())
+    # get the hexadecimal representation of the hash
+    hash_hex = hash_object.hexdigest()
+    return hash_hex
 
 # corrupted file: security-corrupted.json
 print(compute_hash('security-corrupted.json'))
@@ -313,21 +313,21 @@ import time
 import os
 
 def monitor_file_for_key(file_path, key):
-"""Monitor a JSON file for a specific key and record it."""
-key_tracking_list = []
-while True:
-# check if the file exists
-if os.path.exists(file_path):
-# open the file in read mode
-with open(file_path, 'r') as file:
-# load the JSON data from the file
-data = json.load(file)
-# check if the key exists in the data
-if key in data:
-# add a reference to the data in the list
-key_tracking_list.append(data)
-# wait for a while before checking the file again
-time.sleep(1)
+    """Monitor a JSON file for a specific key and record it."""
+    key_tracking_list = []
+    while True:
+        # check if the file exists
+        if os.path.exists(file_path):
+            # open the file in read mode
+            with open(file_path, 'r') as file:
+                # load the JSON data from the file
+                data = json.load(file)
+            # check if the key exists in the data
+            if key in data:
+                # add a reference to the data in the list
+                key_tracking_list.append(data)
+        # wait for a while before checking the file again
+        time.sleep(1)
 
 # start to monitor a changing JSON file and for a key
 monitor_file_for_key("security.json", "CVE-2021-2345")
