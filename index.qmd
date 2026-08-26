@@ -22,7 +22,7 @@ listing:
 
 ![](images/Security-Synapse-Logo.svg){fig-align="center"}
 
-## Welcome to an Adventure in Computer Security
+## Adventure in Computer Security
 
 With the goal of enabling the growth of computer security engineers, this web
 site features a sixteen-week schedule filled with activities that support the
@@ -52,20 +52,25 @@ through examinations and in-person evaluations.
 
 - The [sixteen-week course schedule](./schedule/index.qmd) offers detailed
 insights into each step that learners should take to help them to effectively
-make security synapses, including a list of reading assignments and descriptions
-of the class activities and projects.
+make security synapses, including a list of reading assignments, descriptions
+of the class activities and projects, and references to external resources.
 
 - The [course slides](slides/index.qmd) are a valuable resource for learners who
 want to make a security synapse. These slides present an overview of high-level
 concepts and provide both more detailed explanations and implementations in
-various programming languages.
+various programming languages, with a focus on content in Python.
 
-- The [course projects](projects/index.qmd) page furnishes descriptions of each
-two-week project that learners complete to ensure that they have suitable
-hands-on practice to make a security synapse and achieve the learning
-objectives for the course. The project list also includes details about the
-long-term computer security summit project that invites learners to propose,
-conduct, and report on an independent research project.
+- The [course projects](projects/index.qmd) page furnishes descriptions of
+each two-week project that learners complete to ensure that they have suitable
+hands-on practice to make a security synapse and achieve the learning objectives
+for the course. The project list also includes details about the long-term
+computer security summit project that invites learners to propose, conduct, and
+report on an independent research project. Each project invites a learner to (a)
+understand fundamental concepts in computer security, (b), implement those
+concepts into a working prototype, (c) evaluate the prototype through well-designed
+experiments, (d) give a demonstration of the prototype to both the course
+instructor and their peers, and (e) give a presentation to document their
+learning adventure!
 
 ## Connecting Concepts to Code
 
