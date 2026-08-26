@@ -12,10 +12,13 @@ toc-expand: 3
 - {{< iconify fa6-solid book-open size=18px >}} Chapter One of
 [Computer Systems Security: Planning for
 Success](https://web.njit.edu/~rt494/security/)
-- {{< iconify fa6-solid book-open size=18px >}} High-level overview of
+- {{< iconify fa6-solid book-open size=18px >}} High-level references to
 [Cracking Codes with Python](https://inventwithpython.com/cracking/)
-- {{< iconify fa6-solid book-open size=18px >}} High-level overview of
-[Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+- {{< iconify fa6-solid book-open size=18px >}} High-level references to [The Joy
+of Cryptography](https://joyofcryptography.com/)
+- {{< iconify fa6-solid book-open size=18px >}} High-level references to
+[Operating Systems: Three Easy
+Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 ## Activities
 
