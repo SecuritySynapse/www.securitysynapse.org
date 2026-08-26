@@ -2,7 +2,7 @@
 title: "Access Controls"
 subtitle: "Exploring Ways to Securely Manage Access"
 description: "How to offer secure access to systems and data?"
-date: "2024-11-11"
+date: "2026-11-09"
 date-format: long
 author: Gregory M. Kapfhammer
 execute:

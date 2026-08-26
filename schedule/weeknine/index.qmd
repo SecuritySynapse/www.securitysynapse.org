@@ -1,7 +1,7 @@
 ---
 title: Security Solutions
 description: "How Can we Layer Security Solutions?"
-date: 2024-10-28
+date: 2026-10-19
 layout: full
 toc: true
 toc-expand: 3
@@ -15,9 +15,10 @@ Systems Security: Planning for Success](https://web.njit.edu/~rt494/security/)
 
 ## Activities
 
-- {{< iconify fa6-solid diagram-project size=18px >}} **Monday**: Laboratory session
-- {{< iconify fa6-solid people-line size=18px >}} **Tuesday and Thursday**:
+- {{< iconify fa6-solid people-line size=18px >}} **Monday and Wednesday**:
 Security Solutions
+- {{< iconify fa6-solid people-line size=18px >}} **Friday**: Programming skill check or in-person assessment
+- {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Laboratory session
   - Understand the trade-offs in security solutions
   - Learn how hardware and software can be used to protect systems
   - Learn more about the "defense in depth" strategy to security

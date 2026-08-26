@@ -1,7 +1,7 @@
 ---
 title: "Revisiting Cryptography"
 description: "How Does Cryptography Fit into Modern Software?"
-date: "2024-11-25"
+date: "2026-11-23"
 layout: full
 toc: true
 toc-expand: 3
@@ -17,8 +17,7 @@ Success](https://web.njit.edu/~rt494/security/)
 
 ## Activities
 
-- {{< iconify fa6-solid diagram-project size=18px >}} **Monday**: Laboratory session
-- {{< iconify fa6-solid people-line size=18px >}} **Tuesday**:
+- {{< iconify fa6-solid people-line size=18px >}} **Monday**:
 Cryptography Review
   - Review terms and concepts in the field of cryptography
   - Complete a case study on the use of SSH keys with GitHub
@@ -28,7 +27,7 @@ Cryptography Review
   - Student presentations that feature:
     - Explanation of a high-level concepts behind cryptography
     - Since there is only one class this week, students need not program
-- **No class on Thursday due to Thanksgiving Break**
+- **No class on Wednesday or Friday due to Thanksgiving Break**
 
 ## Slides
 

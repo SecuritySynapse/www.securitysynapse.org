@@ -2,7 +2,7 @@
 title: "Leveraging Virtualization"
 subtitle: "Understanding the Role of Virtualization in Security"
 description: "How does virtualization influence system security?"
-date: "2024-12-02"
+date: "2026-11-30"
 date-format: long
 author: Gregory M. Kapfhammer
 execute:

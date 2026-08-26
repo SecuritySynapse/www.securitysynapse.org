@@ -2,7 +2,7 @@
 title: "Handling Security Vulnerabilities"
 subtitle: "Exploring Ways to Manage Security Vulnerabilities"
 description: "What are best practices for handling vulnerabilities?"
-date: "2024-11-18"
+date: "2026-11-16"
 date-format: long
 author: Gregory M. Kapfhammer
 execute:

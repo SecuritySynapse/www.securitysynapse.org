@@ -2,7 +2,7 @@
 title: "Security Solutions"
 subtitle: "Learning How to Thwart Security Attacks"
 description: "How can we mitigate computer security risks?"
-date: "2024-10-28"
+date: "2026-10-19"
 date-format: long
 author: Gregory M. Kapfhammer
 execute:

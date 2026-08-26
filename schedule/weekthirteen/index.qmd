@@ -1,7 +1,7 @@
 ---
 title: "Security Vulnerabilities"
 description: "What Are Best Practices for Handling Vulnerabilities?"
-date: "2024-11-18"
+date: "2026-11-16"
 layout: full
 toc: true
 toc-expand: 3
@@ -15,9 +15,10 @@ Success](https://web.njit.edu/~rt494/security/)
 
 ## Activities
 
-- {{< iconify fa6-solid diagram-project size=18px >}} **Monday**: Laboratory session
-- {{< iconify fa6-solid people-line size=18px >}} **Tuesday and Thursday**:
+- {{< iconify fa6-solid people-line size=18px >}} **Monday and Wednesday**:
 Security Solutions
+- {{< iconify fa6-solid people-line size=18px >}} **Friday**: Programming skill check or in-person assessment
+- {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Laboratory session
   - Explore terms and concepts in security vulnerability management
   - Complete a case study on the topic of secrets in GitHub repositories
   - Learn more about common vulnerabilities and exposures (CVEs)

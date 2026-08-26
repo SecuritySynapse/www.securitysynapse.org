@@ -2,7 +2,7 @@
 title: "Networking Attacks"
 subtitle: "Learning How to Exploit Networking Protocols"
 description: "What is the attack surface of a networking protocol?"
-date: "2024-10-21"
+date: "2026-10-12"
 date-format: long
 author: Gregory M. Kapfhammer
 execute:

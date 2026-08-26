@@ -2,7 +2,7 @@
 title: "Exploring Malware"
 subtitle: "Understanding the Basics of Computer Malware"
 description: "How can I detect and defend against malware?"
-date: "2024-09-23"
+date: "2026-09-21"
 date-format: long
 author: Gregory M. Kapfhammer
 execute:

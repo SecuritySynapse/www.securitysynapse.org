@@ -1,7 +1,7 @@
 ---
 title: "Leveraging Virtualization"
 description: "How Does Virtualization Influence System Security?"
-date: "2024-12-02"
+date: "2026-11-30"
 layout: full
 toc: true
 toc-expand: 3
@@ -14,8 +14,9 @@ Systems Security: Planning for Success](https://web.njit.edu/~rt494/security/)
 
 ## Activities
 
-- {{< iconify fa6-solid diagram-project size=18px >}} **Monday**: Laboratory session
-- {{< iconify fa6-solid people-line size=18px >}} **Tuesday**: Virtualization 
+- {{< iconify fa6-solid people-line size=18px >}} **Monday**: Virtualization 
+- {{< iconify fa6-solid people-line size=18px >}} **Friday**: Programming skill check or in-person assessment
+- {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Laboratory session
   - Explore the concepts of virtualization and containerization
   - Learn more about the security trade-offs of virtualization
   - Explore the security implications of containerization
@@ -23,7 +24,7 @@ Systems Security: Planning for Success](https://web.njit.edu/~rt494/security/)
   - Student presentations that feature:
     - Explanation of a high-level concepts in virtualization
     - Since there is only one class this week, students need not program
-- **Thursday's Class Session Devoted to Lightning Talks!**
+- **One Class Session Devoted to Lightning Talks!**
 
 ## Slides
 

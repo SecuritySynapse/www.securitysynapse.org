@@ -2,7 +2,7 @@
 title: "Revisiting Cryptography"
 subtitle: "Understanding the Role of Cryptography in Security"
 description: "How does cryptography fit into modern software?"
-date: "2024-11-25"
+date: "2026-11-23"
 date-format: long
 author: Gregory M. Kapfhammer
 execute:
