@@ -121,12 +121,14 @@ systems, computer architectures, networking protocols, and software applications
 ## Selected Slide Decks
 
 Focused on presenting an overview of high-level technical concepts and a
-thorough investigation of their low-level technical implementation, the [course
-slides](slides/index.qmd) are a valuable resource for learners who want to make
-a security synapse. The slides are designed to be interactive, allowing learners
-to see the output of code segments and, for many algorithms, modify their inputs
-and/or experiment with their implementation. Want to learn more? Here are quick
-references to some recently presented slide decks:
+thorough investigation of their low-level technical implementation, the
+[course slides](slides/index.qmd) are a valuable resource for learners who
+want to make a security synapse. The slides are designed to be interactive,
+allowing learners to see the output of code segments and, for many algorithms,
+modify their inputs and/or experiment with their implementation. Although many
+implementations are in Python, there are pointers to projects in many different
+programming languages. Want to learn more? Here are quick references to some
+selected presentation slide decks:
 
 :::{#featured-slides}
 :::
