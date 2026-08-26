@@ -1,7 +1,7 @@
 ---
 title: Making a Security Synapse 
 description: "Can I Make Connections in Computer Security?"
-date: 2024-08-26
+date: 2026-08-24
 layout: full
 toc: true
 toc-expand: 3
@@ -14,15 +14,22 @@ toc-expand: 3
 Success](https://web.njit.edu/~rt494/security/)
 - {{< iconify fa6-solid book-open size=18px >}} High-level overview of
 [Cracking Codes with Python](https://inventwithpython.com/cracking/)
+- {{< iconify fa6-solid book-open size=18px >}} High-level overview of [The Joy
+of Cryptography](https://joyofcryptography.com/)
+- {{< iconify fa6-solid book-open size=18px >}} High-level overview of
+[Operating Systems: Three Easy
+Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 ## Activities
 
-- {{< iconify fa6-solid diagram-project size=18px >}} **Monday**: No laboratory
-  session
-- {{< iconify fa6-solid people-line size=18px >}} **Tuesday and Thursday**: Course introduction
+- {{< iconify fa6-solid people-line size=18px >}} **Monday and Wednesday**: Course introduction
+- {{< iconify fa6-solid people-line size=18px >}} **Friday**: No programming skill check or in-person assessment
+- {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Laboratory session
   - Introduction to the computer security course
   - Highlighting the concept of a security synapse
-  - Student presentations that feature:
-    - High-level concept in the field of computer security
-    - Implementation of that concept in two programming languages
-    - Question and answer session with the course instructor
+  - Setup all software on student laptops
+  - Presentation of a computer security article
+    - *Options for your article*:
+      - Popular press article that explains a security incident
+      - Technical article that explains a computer security concept
+      - Research paper that introduces new theory or practice in computer security
