@@ -25,7 +25,7 @@ listing:
 - **Module One** 
   - **Topic**: Basics of Computer Security
   - **Weeks**: One through six
-  - **Chapters**: One through three in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
+  - **Chapters**: One through three in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)/[JOY](https://joyofcryptography.com/) 
   - **Programming Skill Checks** during the Friday class session:
       - Week two
       - Week four
@@ -38,7 +38,9 @@ listing:
 - **Module Two** 
   - **Topic**: Challenges and Solutions in Computer Security
   - **Weeks**: Seven through eleven
-  - **Chapters**: Four through six in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
+  - **Chapters**: Four through six in
+  [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from
+  [CCP](https://inventwithpython.com/cracking/)/[JOY](https://joyofcryptography.com/)
   - **Programming Skill Checks** during the Friday class session:
       - Week seven 
       - Week nine 
@@ -51,7 +53,9 @@ listing:
 - **Module Three** 
   - **Topic**: Advanced Topics in Computer Security
   - **Weeks**: Twelve through sixteen
-  - **Chapters**: Seven through ten in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
+  - **Chapters**: Seven through ten in
+  [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from
+  [CCP](https://inventwithpython.com/cracking)/[JOY](https://joyofcryptography.com/)
   - **Programming Skill Checks** during the Friday class session:
       - Week twelve 
       - Week fourteen 
