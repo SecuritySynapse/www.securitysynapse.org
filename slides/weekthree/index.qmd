@@ -2,7 +2,7 @@
 title: "Crytpography Overview"
 subtitle: "Understanding the Need for and Uses of Cryptography"
 description: "What are the best practicies for cryptography?"
-date: "2024-09-09"
+date: "2026-09-07"
 date-format: long
 author: Gregory M. Kapfhammer
 execute:
