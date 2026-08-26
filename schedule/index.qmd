@@ -52,6 +52,12 @@ listing:
   - **Topic**: Advanced Topics in Computer Security
   - **Weeks**: Twelve through sixteen
   - **Chapters**: Seven through ten in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
+  - **Programming Skill Checks** during the Friday class session:
+      - Week twelve 
+      - Week fourteen 
+  - **Computer Security Checks** during the Friday class session:
+      - Week thirteen 
+      - Week fifteen 
   - **Final Examination**: Week sixteen during the final examination period
   - **In-Person Assessment Three**: Week sixteen during the final examination period
 
