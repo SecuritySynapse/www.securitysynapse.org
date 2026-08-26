@@ -123,6 +123,9 @@ vulnerabilities.
 - {{< iconify fa6-solid book-open>}} Online textbook called [Cracking Codes
 with Python](https://inventwithpython.com/cracking/)
 
+- {{< iconify fa6-solid book-open>}} Online textbook called [The Joy of
+Cryptography](https://joyofcryptography.com/)
+
 - {{< iconify fa6-solid book-open>}} Online textbook called [Operating
 Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
