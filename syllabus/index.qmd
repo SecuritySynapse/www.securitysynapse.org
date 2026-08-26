@@ -214,16 +214,16 @@ percentages during the academic semester.
 These assessment categories have the following definitions:
 
 - **Class Participation**: Students are expected to regularly attend and
-actively participate in all the class and laboratory sessions, as outlined
-on the [course schedule](../schedule/index.qmd). After either an unexcused
+actively participate in all the class and laboratory sessions, as outlined on
+the [course schedule](../schedule/index.qmd). After either an unexcused
 absence or a late attendance to either a class or a laboratory session, a
-student's weekly class participation grade will be reduced. Students who need
-to miss class or attend class late for an excused reason should communicate
-their situation to the course instructor in a timely fashion. A student's
-weekly class participation grade will be reduced if they are frequently
-observed, during either class or laboratory sessions, undertaking
-non-course-related activities like viewing email, social media, or other
-content not about computer security.
+student's weekly class participation grade will be reduced. Students who need to
+miss class or attend class late for an excused reason should communicate their
+situation to the course instructor in a timely fashion. A student's weekly class
+participation grade will be reduced if they are observed, during either class or
+laboratory sessions, undertaking non-course-related activities like viewing
+email, social media, or reading or creating other content not connected to the
+field of computer security.
 
 - **In-Person Assessments**: Conducted through an in-person conversation with
 the course instructor, the three in-person assessments are cumulative
@@ -279,19 +279,9 @@ artificial intelligence coding assistants, during the completion of the final
 examination provided that they cite these sources and explain how they used them
 to complete the examination.
 
-- **Security Survey Projects**: These two-week assignments invite students to make "security synapses" as they survey
-the implementation details of various computer security concepts such as cryptography, cryptanalysis, and malware. These
-projects are completed through the design, implementation, documentation, and evaluation of computer programs in
-languages such as Python, Java, JavaScript, C, Go, and Rust. Each project invites a learner to (a) understand
-fundamental concepts in computer security, (b), implement those concepts into a working prototype, (c) evaluate the
-prototype through well-designed experiments, (d) give a demonstration of the prototype to both the course instructor and
-their peers, and (e) give a presentation to document their learning adventure. Students may use external sources,
-including artificial intelligence coding assistants, during the completion of a security survey project as long as that
-they cite these sources and explain how they used them to complete the various components of their project's
-implementation, evaluation, and writing. Beyond their prepared slides, students may not consult any external sources,
-including but not limited to artificial coding assistants, when they give demonstrations or presentations.
+- **Security Survey Projects**: These two-week assignments invite students to make "security synapses" as they survey the implementation details of various computer security concepts such as cryptography, cryptanalysis, and malware. These projects are completed through the design, implementation, documentation, and evaluation of computer programs in languages such as Python, Java, JavaScript, C, Go, and Rust. Each project invites a learner to (a) understand fundamental concepts in computer security, (b), implement those concepts into a working prototype, (c) evaluate the prototype through well-designed experiments, (d) give a demonstration of the prototype to both the course instructor and their peers, and (e) give a presentation to document their learning adventure. Students may use external sources, including artificial intelligence coding assistants, during the completion of a security survey project as long as that they cite these sources and explain how they used them to complete the various components of their project's implementation, evaluation, and writing. Beyond their prepared slides, students may not consult any external sources, including but not limited to artificial coding assistants, when they give demonstrations or presentations.
 
-- **Security Summit Project**: Started in approximately the sixth week of the
+- **Security Summit Project**: Started in approximately the seventh week of the
 academic semester, this long-term project invites students to propose,
 implement, evaluate, and present their own advanced project in the field of
 computer security. In addition to requiring the completion of a significant and
@@ -307,26 +297,26 @@ their work.
 
 #### Assessment Policies
 
-      Unless exempted by the instructor, students must abide by the following
-      assessment policies:
+Unless exempted by the instructor, students must abide by the following
+assessment policies:
 
 ##### Assignment Submission
 
-      All assignments will have a stated due date shared through GitHub, GitHub
-      Classroom, and/or the [Security Synapse Discord
-      Server](https://discord.gg/juUXz7d4Jh). No credit will be awarded for any course
-      work that you submit to the incorrect GitHub repository or web site. Unless
-      special advance arrangements are made with the instructor to address extenuating
-      circumstances, no work will be accepted after the deadline.
+All assignments will have a stated due date shared through GitHub, GitHub
+Classroom, and/or the [Security Synapse Discord
+Server](https://discord.gg/juUXz7d4Jh). No credit will be awarded for any course
+work that you submit to the incorrect GitHub repository or web site. Unless
+special advance arrangements are made with the instructor to address extenuating
+circumstances, no work will be accepted after the deadline.
 
 ##### Assignment Evaluation
 
-      Using a report that the instructor shares with you through your GitHub
-      repositories devoted to work in the field of computer security, you will
-      privately receive a grade for and/or feedback on your course projects. Your
-      grade will be a function of whether or not you (a) completed work that fulfills
-      the project's specification and (b) submitted it by the deadline to the stated
-      platform.
+Using a report that the instructor shares with you through your GitHub
+repositories devoted to work in the field of computer security, you will
+privately receive a grade for and/or feedback on your course projects. Your
+grade will be a function of whether or not you (a) completed work that fulfills
+the project's specification and (b) submitted it by the deadline to the stated
+platform.
 
 ##### Security Synapse Tokens
 
