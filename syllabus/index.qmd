@@ -476,6 +476,7 @@ course in the [Department of Computer and information
 Science](https://www.cis.allegheny.edu/) at [Allegheny
 College](https://www.allegheny.edu/). Even though external learners are not
 bound by this syllabus, they can participate in the discussions on the [Security
-Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
+Synapse Discord Server](https://discord.gg/juUXz7d4Jh) and use their own
+computational resources to complete the [course projects](../projects/index.qmd).
 
 :::
