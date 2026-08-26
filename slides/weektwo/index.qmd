@@ -2,7 +2,7 @@
 title: "Introduction to Computer Security"
 subtitle: "Learning the Lingo and Thinking Like a Hacker"
 description: "How should we think and talk like a hacker?"
-date: "2024-09-02"
+date: "2026-08-31"
 date-format: long
 author: Gregory M. Kapfhammer
 execute:
