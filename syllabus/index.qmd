@@ -5,7 +5,7 @@ toc-depth: 5
 page-layout: full
 ---
 
-## Computer Science 403 Spring 2024
+## Computer Science 403 Fall 2026
 
 ### Course Instructor
 
@@ -17,7 +17,7 @@ for more information!
 
 ### Instructor Appointments
 
-- **Monday**: 11:00 -- 12:00 noon and 4:30 PM -- 5:00 PM
+- **Monday**: 3:00 -- 5:00 PM
 - **Tuesday**: 1:00 PM -- 3:00 PM
 - **Wednesday**: 11:00 AM -- 12:00 noon
 - **Friday**: 11:00 AM -- 12:00 noon and 2:30 PM -- 3:00 PM
@@ -103,28 +103,28 @@ describe the suitable mitigation(s) for addressing the threats.
 
 - **CS-403-2**: Correctly apply security principles, memory management strategies,
 architecture and algorithmic principles, and cryptography in the modeling and
-implementation of security solutions. 
+implementation of security solutions.
 
 - **CS-403-3**: Correctly use hardware and/or software tools to diagnose and fix
 web and network security risks.
 
 - **CS-403-4**: Evaluate the effectiveness of various hardware and software
-systems with respect to computer security. 
+systems with respect to computer security.
 
 - **CS-403-5**: Design, implement, document, test, and explain secure
 software with emphasis on social, political, legal, and ethical
-vulnerabilities. 
+vulnerabilities.
 
 ### Course Textbooks
 
-- {{< iconify fa6-solid book-open >}} Online textbook called [Computer Systems
-Security: Planning for Success](https://web.njit.edu/~rt494/security/) 
+- {{< iconify fa6-solid book-open>}} Online textbook called [Computer Systems
+  Security: Planning for Success](https://web.njit.edu/~rt494/security/)
 
-- {{< iconify fa6-solid book-open >}} Online textbook called [Cracking Codes
-with Python](https://inventwithpython.com/cracking/) 
+- {{< iconify fa6-solid book-open>}} Online textbook called [Cracking Codes
+with Python](https://inventwithpython.com/cracking/)
 
-- {{< iconify fa6-solid book-open >}} Online textbook called [Operating Systems:
-Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
+- {{< iconify fa6-solid book-open>}} Online textbook called [Operating
+Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 Extensive details about the content that the course covers in the textbook are
 available in the [course schedule](../schedule/index.qmd) and the [course
@@ -135,371 +135,378 @@ popular press articles in the field of computer security.
 
 ### Reading Assignments
 
-- **Module One**: *Week One through Week Six*
-  - **Week One**: Textbook overview for
-  [CSP](https://web.njit.edu/~rt494/security/),
-  [CCP](https://inventwithpython.com/cracking/), and
-  [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
-  - **Week Two**: Chapter one in [CSP](https://web.njit.edu/~rt494/security/) 
-  - **Week Three**: Chapter two in [CSP](https://web.njit.edu/~rt494/security/) 
-  - **Week Four**: Chapters four through twelve in
-  [CCP](https://inventwithpython.com/cracking/)
-  - **Week Five**: Chapter three in [CSP](https://web.njit.edu/~rt494/security/)
-  - **Week Six**: Review all prior chapters in
-  [CSP](https://web.njit.edu/~rt494/security/) and
-  [CCP](https://inventwithpython.com/cracking/)
+      - **Module One**: *Week One through Week Six*
+      - **Week One**: Textbook overview for
+      [CSP](https://web.njit.edu/~rt494/security/),
+      [CCP](https://inventwithpython.com/cracking/), and
+      [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+      - **Week Two**: Chapter one in [CSP](https://web.njit.edu/~rt494/security/)
+      - **Week Three**: Chapter two in [CSP](https://web.njit.edu/~rt494/security/)
+      - **Week Four**: Chapters four through twelve in
+      [CCP](https://inventwithpython.com/cracking/)
+      - **Week Five**: Chapter three in [CSP](https://web.njit.edu/~rt494/security/)
+      - **Week Six**: Review all prior chapters in
+      [CSP](https://web.njit.edu/~rt494/security/) and
+      [CCP](https://inventwithpython.com/cracking/)
 
-- **Module Two**: *Week Seven through Week Eleven*
-  - **Week Seven**: Fall break and research travel
-  - **Week Eight**: Security summit project proposals
-  - **Week Nine**: Chapter four and five in [CSP](https://web.njit.edu/~rt494/security/) 
-  - **Week Ten**: Chapter six in [CSP](https://web.njit.edu/~rt494/security/)
-  and chapter fifty-four in [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
-  - **Week Eleven**: Review all prior chapters in
-  [CSP](https://web.njit.edu/~rt494/security/) and
-  [CCP](https://inventwithpython.com/cracking/) and
-  [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+      - **Module Two**: *Week Seven through Week Eleven*
+      - **Week Seven**: Fall break and research travel
+      - **Week Eight**: Security summit project proposals
+      - **Week Nine**: Chapter four and five in [CSP](https://web.njit.edu/~rt494/security/)
+      - **Week Ten**: Chapter six in [CSP](https://web.njit.edu/~rt494/security/)
+      and chapter fifty-four in [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+      - **Week Eleven**: Review all prior chapters in
+      [CSP](https://web.njit.edu/~rt494/security/) and
+      [CCP](https://inventwithpython.com/cracking/) and
+      [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
-- **Module Three**: *Week Twelve through Week Sixteen*
-  - **Week Twelve**: Chapter seven in
-  [CSP](https://web.njit.edu/~rt494/security/) and chapter fifty-five in
-  [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
-  - **Week Thirteen**: Chapters eight and nine in
-  [CSP](https://web.njit.edu/~rt494/security/)
-  - **Week Fourteen**: Chapters thirteen through twenty in
-  [CCP](https://inventwithpython.com/cracking/)
-  - **Week Fifteen**: Chapter ten in
-  [CSP](https://web.njit.edu/~rt494/security/) and review of all prior chapters
-  - **Week Sixteen**: Review all prior chapters in
-  [CSP](https://web.njit.edu/~rt494/security/) and
-  [CCP](https://inventwithpython.com/cracking/) and
-  [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
+      - **Module Three**: *Week Twelve through Week Sixteen*
+      - **Week Twelve**: Chapter seven in
+      [CSP](https://web.njit.edu/~rt494/security/) and chapter fifty-five in
+      [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+      - **Week Thirteen**: Chapters eight and nine in
+      [CSP](https://web.njit.edu/~rt494/security/)
+      - **Week Fourteen**: Chapters thirteen through twenty in
+      [CCP](https://inventwithpython.com/cracking/)
+      - **Week Fifteen**: Chapter ten in
+      [CSP](https://web.njit.edu/~rt494/security/) and review of all prior chapters
+      - **Week Sixteen**: Review all prior chapters in
+      [CSP](https://web.njit.edu/~rt494/security/) and
+      [CCP](https://inventwithpython.com/cracking/) and
+      [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
-::: {.callout-note appearance="minimal" title="Textbook Abbreviations" collapse="false"}
+      ::: {.callout-note appearance="minimal" title="Textbook Abbreviations" collapse="false"}
 
-- **CSP**: [Computer Systems Security: Planning for
-Success](https://web.njit.edu/~rt494/security/)
-- **CCP**: [Cracking Codes with Python](https://inventwithpython.com/cracking/)
-- **OSTEP**: [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
+      - **CSP**: [Computer Systems Security: Planning for
+      Success](https://web.njit.edu/~rt494/security/)
+      - **CCP**: [Cracking Codes with Python](https://inventwithpython.com/cracking/)
+      - **OSTEP**: [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
-:::
+      :::
 
 ### Course Policies
 
 #### Assessment
 
-The grade that a student receives in this class will be based on the following
-categories. All of these percentages are approximate and, if the need to do so
-presents itself, the course instructor may, for instance, change the assigned
-percentages during the academic semester.
+      The grade that a student receives in this class will be based on the following
+      categories. All of these percentages are approximate and, if the need to do so
+      presents itself, the course instructor may, for instance, change the assigned
+      percentages during the academic semester.
 
-| Category                 | Percentage |
-|--------------------------|------------|
-| Class Participation      |   5%       |
-| In-Person Assessments    |  15%       |
-| Midterm Examinations     |  10%       |
-| Final Examination        |  15%       |
-| Security Synapse Projects|   5%       |
-| Security Summit Project  |  15%       |
-| Security Survey Projects |  35%       |
+      | Category | Percentage |
+      |--------------------------|------------|
+      | Class Participation | 5% |
+      | In-Person Assessments | 15% |
+      | Midterm Examinations | 10% |
+      | Final Examination | 15% |
+      | Security Synapse Projects| 5% |
+      | Security Summit Project | 15% |
+      | Security Survey Projects | 35% |
 
-These assessment categories have the following definitions:
+      These assessment categories have the following definitions:
 
-- **Class Participation**: Students are expected to regularly attend and
-actively participate in all of the class and laboratory sessions, as outlined
-on the [course schedule](../schedule/index.qmd). After either an unexcused
-absence or a late attendance to either a class or a laboratory session, a
-student's weekly class participation grade will be reduced. Students who need
-to miss class or attend class late for an excused reason should communicate
-their situation to the course instructor in a timely fashion. A student's
-weekly class participation grade will be reduced if they are frequently
-observed, during either class or laboratory sessions, undertaking
-non-course-related activities like viewing email, social media, or other
-content not about computer security. 
+      - **Class Participation**: Students are expected to regularly attend and
+      actively participate in all of the class and laboratory sessions, as outlined
 
-- **In-Person Assessments**: Conducted through an in-person conversation with
-the course instructor, the three in-person assessments are cumulative
-evaluations of both high-level and low-level knowledge in the field of computer
-security. All students should be prepared to answer questions that assess their
-comprehension of both concepts and implementation details in the field of
-computer security. The instructor will assess each student response on a
-checkmark basis and report feedback through a private GitHub repository.
+      on the [course schedule](../schedule/index.qmd). After either an unexcused
+      absence or a late attendance to either a class or a laboratory session, a
+      student's weekly class participation grade will be reduced. Students who need
+      to miss class or attend class late for an excused reason should communicate
+      their situation to the course instructor in a timely fashion. A student's
+      weekly class participation grade will be reduced if they are frequently
+      observed, during either class or laboratory sessions, undertaking
+      non-course-related activities like viewing email, social media, or other
+      content not about computer security.
 
-- **Midterm Examination**: Each midterm examination is an online, executable,
-and cumulative assessment covering all prior material from the course sessions,
-as outlined on the [course schedule](../schedule/index.qmd). Unless prior
-arrangements are made with the instructor, all students should use their
-computer to take these tests on the scheduled date and to complete it in the
-stated location while taking no more than the required amount of time. Each
-midterm is an executable examination that students will complete through the use
-of GitHub, VS Code, and their laptop's programming tools. Students may use
-external sources, including artificial intelligence coding assistants, during
-the completion of a midterm examination provided that they cite these sources
-and explain how they used them to complete the examination.
+      - **In-Person Assessments**: Conducted through an in-person conversation with
+      the course instructor, the three in-person assessments are cumulative
 
-- **Final Examination**: The final examination is an online, executable,
-cumulative assessment covering all of the material during all of the course
-sessions, as outlined on the [course schedule](../schedule/index.qmd). Unless
-prior arrangements are made with the instructor, all students should use their
-computer to take the final examination on the scheduled date and to complete it
-in the stated location while taking no more than the required amount of time.
-The cumulative final is an executable examination that a student will complete
-through the use of GitHub, VS Code, and the programming tools installed on their
-laptops. Students may use external sources, including artificial intelligence
-coding assistants, during the completion of the final examination provided that
-they cite these sources and explain how they used them to complete the
-examination.
+      evaluations of both high-level and low-level knowledge in the field of computer
+      security. All students should be prepared to answer questions that assess their
+      comprehension of both concepts and implementation details in the field of
+      computer security. The instructor will assess each student response on a
+      checkmark basis and report feedback through a private GitHub repository.
 
-- **Security Synapse Projects**: Students who are assigned by the course
-instructor to serve as a discussion leader will complete two security synapse
-projects during that week. On the Tuesday class session the assigned students
-will lead the class in a discussion concerning the practical and ethical
-implications of that week's high-level computer security concept(s). On the
-Thursday class session the assigned students will demonstrate and explain, using
-at least two programming languages studied in the course, the source code in a
-GitHub repository that practically connects to the high-level computer security
-concepts presented in the prior class session. The discussion leaders will
-collaborate with the course instructor to ensure that their prepared materials
-make a security synapse between the high-level concepts and low-level
-implementation details for their week's technical topic. Students may use
-external sources, including artificial intelligence coding assistants, during
-the completion of this project provided that they cite these sources and explain
-how they used them to complete their work.
+      - **Midterm Examination**: Each midterm examination is an online, executable,
+      and cumulative assessment covering all prior material from the course sessions,
 
-- **Security Survey Projects**: These two-week assignments invite students to
-make "security synapses" as they survey the implementation details of various
-computer security concepts such as cryptography, cryptanalysis, and malware.
-These projects are completed through the design, implementation, documentation,
-and evaluation of computer programs in languages such as Python, Java,
-JavaScript, C, Go, and Rust. Students may use external sources, including
-artificial intelligence coding assistants, during the completion of a security
-survey project as long as that they cite these sources and explain how they used
-them to complete the various components of their project's implementation,
-evaluation, and writing.
+      as outlined on the [course schedule](../schedule/index.qmd). Unless prior
+      arrangements are made with the instructor, all students should use their
+      computer to take these tests on the scheduled date and to complete it in the
+      stated location while taking no more than the required amount of time. Each
+      midterm is an executable examination that students will complete through the use
+      of GitHub, VS Code, and their laptop's programming tools. Students may use
+      external sources, including artificial intelligence coding assistants, during
+      the completion of a midterm examination provided that they cite these sources
+      and explain how they used them to complete the examination.
 
-- **Security Summit Project**: Started in approximately the sixth week of the
-academic semester, this long-term project invites students to propose,
-implement, evaluate, and present their own advanced project in the field of
-computer security. In addition to requiring the completion of a significant and
-innovative software tool, this project invites students to complete a series of
-presentations and reports. These projects should clearly demonstrate a "security
-synapse" both through the connection between high-level concepts and their
-low-level implementation and technical concepts discussed in the course and
-their practical application to the secure use of real-world computer software.
-Students may use external sources, including artificial intelligence coding
-assistants, during the completion of this project provided that they cite these
-sources and explain how they used them to complete the various components of
-their work.
+      - **Final Examination**: The final examination is an online, executable,
+      cumulative assessment covering all of the material during all of the course
+
+      sessions, as outlined on the [course schedule](../schedule/index.qmd). Unless
+      prior arrangements are made with the instructor, all students should use their
+      computer to take the final examination on the scheduled date and to complete it
+      in the stated location while taking no more than the required amount of time.
+      The cumulative final is an executable examination that a student will complete
+      through the use of GitHub, VS Code, and the programming tools installed on their
+      laptops. Students may use external sources, including artificial intelligence
+      coding assistants, during the completion of the final examination provided that
+      they cite these sources and explain how they used them to complete the
+      examination.
+
+      - **Security Synapse Projects**: Students who are assigned by the course
+      instructor to serve as a discussion leader will complete two security synapse
+
+      projects during that week. During a class session the assigned students
+      will lead the class in a discussion concerning the practical and ethical
+      implications of that week's high-level computer security concept(s). During
+      another class session the assigned students will demonstrate and explain, using
+      at least two programming languages studied in the course, the source code in a
+      GitHub repository that practically connects to the high-level computer security
+      concepts presented in the prior class session. The discussion leaders will
+      collaborate with the course instructor to ensure that their prepared materials
+      make a security synapse between the high-level concepts and low-level
+      implementation details for their week's technical topic. Students may use
+      external sources, including artificial intelligence coding assistants, during
+      the completion of this project provided that they cite these sources and explain
+      how they used them to complete their work.
+
+      - **Security Survey Projects**: These two-week assignments invite students to
+      make "security synapses" as they survey the implementation details of various
+
+      computer security concepts such as cryptography, cryptanalysis, and malware.
+      These projects are completed through the design, implementation, documentation,
+      and evaluation of computer programs in languages such as Python, Java,
+      JavaScript, C, Go, and Rust. Students may use external sources, including
+      artificial intelligence coding assistants, during the completion of a security
+      survey project as long as that they cite these sources and explain how they used
+      them to complete the various components of their project's implementation,
+      evaluation, and writing.
+
+      - **Security Summit Project**: Started in approximately the sixth week of the
+      academic semester, this long-term project invites students to propose,
+
+      implement, evaluate, and present their own advanced project in the field of
+      computer security. In addition to requiring the completion of a significant and
+      innovative software tool, this project invites students to complete a series of
+      presentations and reports. These projects should clearly demonstrate a "security
+      synapse" both through the connection between high-level concepts and their
+      low-level implementation and technical concepts discussed in the course and
+      their practical application to the secure use of real-world computer software.
+      Students may use external sources, including artificial intelligence coding
+      assistants, during the completion of this project provided that they cite these
+      sources and explain how they used them to complete the various components of
+      their work.
 
 #### Assessment Policies
 
-Unless exempted by the instructor, students must abide by the following
-assessment policies:
+      Unless exempted by the instructor, students must abide by the following
+      assessment policies:
 
 ##### Assignment Submission
 
-All assignments will have a stated due date shared through GitHub, GitHub
-Classroom, and/or the [Security Synapse Discord
-Server](https://discord.gg/juUXz7d4Jh). No credit will be awarded for any course
-work that you submit to the incorrect GitHub repository or web site. Unless
-special advance arrangements are made with the instructor to address extenuating
-circumstances, no work will be accepted after the deadline.
+      All assignments will have a stated due date shared through GitHub, GitHub
+      Classroom, and/or the [Security Synapse Discord
+      Server](https://discord.gg/juUXz7d4Jh). No credit will be awarded for any course
+      work that you submit to the incorrect GitHub repository or web site. Unless
+      special advance arrangements are made with the instructor to address extenuating
+      circumstances, no work will be accepted after the deadline.
 
 ##### Assignment Evaluation
 
-Using a report that the instructor shares with you through your GitHub
-repositories devoted to work in the field of computer security, you will
-privately receive a grade for and/or feedback on your course projects. Your
-grade will be a function of whether or not you (a) completed work that fulfills
-the project's specification and (b) submitted it by the deadline to the stated
-platform.
+      Using a report that the instructor shares with you through your GitHub
+      repositories devoted to work in the field of computer security, you will
+      privately receive a grade for and/or feedback on your course projects. Your
+      grade will be a function of whether or not you (a) completed work that fulfills
+      the project's specification and (b) submitted it by the deadline to the stated
+      platform.
 
 ##### Security Synapse Tokens
 
-Students may "spend" up to two "security synapse tokens" that they may use to
-secure seven calendar days of time to revise an already assessed project and
-subsequently request a reassessment of it and receive a new assessment score.
-You may use a token to request the reassessment of revised work that you
-completed as part of specific tasks for a security survey project, a checkpoint
-of the security summit project, or either of the mid-term examinations. Students
-may not request to use a token to re-assess their class participation, their
-in-person assessments, their final examination, or their final report for the
-security summit project. Outside of these two tokens, the instructor will not
-consider any additional requests for deadline extensions or project
-reassessment. The instructor will submit to a student the assessment for work
-revised as part of token used at the end of a course module. Unless there are
-documented severe and extenuating circumstances, you may not spend any tokens in
-the last two weeks of the semester.
+      Students may "spend" up to two "security synapse tokens" that they may use to
+      secure seven calendar days of time to revise an already assessed project and
+      subsequently request a reassessment of it and receive a new assessment score.
+      You may use a token to request the reassessment of revised work that you
+      completed as part of specific tasks for a security survey project, a checkpoint
+      of the security summit project, or either of the mid-term examinations. Students
+      may not request to use a token to re-assess their class participation, their
+      in-person assessments, their final examination, or their final report for the
+      security summit project. Outside of these two tokens, the instructor will not
+      consider any additional requests for deadline extensions or project
+      reassessment. The instructor will submit to a student the assessment for work
+      revised as part of token used at the end of a course module. Unless there are
+      documented severe and extenuating circumstances, you may not spend any tokens in
+      the last two weeks of the semester.
 
 ##### Course Attendance
 
-It is mandatory for all students to attend the course sessions. If, due to
-extenuating circumstances, you will not be able to attend a session, then,
-whenever possible, please communicate with the instructor at least one week in
-advance to describe your situation. Students who have any signs of illness
-should not attend any in-person course sessions.
+      It is mandatory for all students to attend the course sessions. If, due to
+      extenuating circumstances, you will not be able to attend a session, then,
+      whenever possible, please communicate with the instructor at least one week in
+      advance to describe your situation. Students who have any signs of illness
+      should not attend any in-person course sessions.
 
 ##### Class Preparation
 
-In order to minimize confusion and maximize learning, students must invest time
-to prepare for the class sessions that focus on professional development,
-technical development, and project development. Although the course instructor
-and the student technical leaders will always be available to serve as guide
-for individual students, teams of students, and the entire class, it is
-expected that students will volunteer to lead and actively contribute to all
-class sessions. Only those students who have prepared for class by reading and
-running the assigned material will be able to effectively participate in these
-class discussions. To help students remain organized and to effectively prepare
-for classes, the instructor will maintain a list of [course
-slides](../slides/index.qmd) and a [course schedule](../schedule/index.qmd)
-with reading assignments, programming suggestions, and other important
-information about the course (e.g., references to the security engineering
-projects).
+      In order to minimize confusion and maximize learning, students must invest time
+      to prepare for the class sessions that focus on professional development,
+      technical development, and project development. Although the course instructor
+      and the student technical leaders will always be available to serve as guide
+      for individual students, teams of students, and the entire class, it is
+      expected that students will volunteer to lead and actively contribute to all
+      class sessions. Only those students who have prepared for class by reading and
+      running the assigned material will be able to effectively participate in these
+      class discussions. To help students remain organized and to effectively prepare
+      for classes, the instructor will maintain a list of [course
+      slides](../slides/index.qmd) and a [course schedule](../schedule/index.qmd)
+      with reading assignments, programming suggestions, and other important
+      information about the course (e.g., references to the security engineering
+      projects).
 
 ##### Discussion Leads
 
-Discussion leads are responsible for collaborating with both their partner(s)
-and the course instructor to create and present technical materials that
-effectively make a security synapse. These are the discussion leads for each
-week of the three modules in the academic semester:
+      Discussion leads are responsible for collaborating with both their partner(s)
+      and the course instructor to create and present technical materials that
+      effectively make a security synapse. These are the discussion leads for each
+      week of the three modules in the academic semester:
 
-- **Module One**
-  - **Week Two**: Aidan Dyga and Keven Duverglas
-  - **Week Three**: Preston Smith and Nicholas Ingerson-Meacham
-  - **Week Four**: Caleb Kendra and Alish Chhetri
-  - **Week Five**: Mordred Boulais
-  - **Week Six**: No discussion leads due to assessment
+      - **Module One**
+      - **Week Two**: Aidan Dyga and Keven Duverglas
+      - **Week Three**: Preston Smith and Nicholas Ingerson-Meacham
+      - **Week Four**: Caleb Kendra and Alish Chhetri
+      - **Week Five**: Mordred Boulais
+      - **Week Six**: No discussion leads due to assessment
 
-- **Module Two**
-  - **Week Seven**: No discussion leads due to fall break and research travel
-  - **Week Eight**: No discussion leads due to security summit project proposals
-  - **Week Nine**: Instructor serves as discussion lead
-  - **Week Ten**: Miles Franck and Evan Nelson
-  - **Week Eleven**: No discussion leads due to assessment and Gator Day
+      - **Module Two**
+      - **Week Seven**: No discussion leads due to fall break and research travel
+      - **Week Eight**: No discussion leads due to security summit project proposals
+      - **Week Nine**: Instructor serves as discussion lead
+      - **Week Ten**: Miles Franck and Evan Nelson
+      - **Week Eleven**: No discussion leads due to assessment and Gator Day
 
-- **Module Three**
-  - **Week Twelve**: Jason Gyamafi, Hank Grefenstette, and Caleb Kendra
-  - **Week Thirteen**: Aidan Dyga, Nicholas Ingerson-Meacham, and Mordred Boulais 
-  - **Week Fourteen**: Alish Chhetri, Preston Smith, and Keven Duverglas
-  - **Week Fifteen**: Miles Franck, Evan Nelson, Hank Grefenstette, and Jason Gyamafi
-  - **Week Sixteen**: No discussion leads for week sixteen due to assessment
+      - **Module Three**
+      - **Week Twelve**: Jason Gyamafi, Hank Grefenstette, and Caleb Kendra
+      - **Week Thirteen**: Aidan Dyga, Nicholas Ingerson-Meacham, and Mordred Boulais
+      - **Week Fourteen**: Alish Chhetri, Preston Smith, and Keven Duverglas
+      - **Week Fifteen**: Miles Franck, Evan Nelson, Hank Grefenstette, and Jason Gyamafi
+      - **Week Sixteen**: No discussion leads for week sixteen due to assessment
 
 #### Seeking Assistance
 
-Students who are struggling to understand the knowledge and skills developed in
-this course are encouraged to seek assistance from the course instructor and/or
-the student technical leaders. Students should, within the bounds of the Honor
-Code, ask and answer questions on the [Security Synapse Discord
-Server](https://discord.gg/juUXz7d4Jh); please request assistance from the
-instructor and student technical leaders first through public Discord channels
-before sending an email or a direct message. Students who need more assistance
-are invited to schedule a meeting through the [instructor's appointment
-scheduler](https://www.gregorykapfhammer.com/schedule/) and come to the meeting
-with details about their question. Students can see the office hour schedule for
-student technical leaders by viewing the list of [student technical
-leaders](https://www.cis.allegheny.edu/teaching/technicalleaders/) and by
-monitoring announcements in the [Allegheny College Computer Science Discord
-Server](https://discord.gg/CS2h9kXzX6).
+      Students who are struggling to understand the knowledge and skills developed in
+      this course are encouraged to seek assistance from the course instructor and/or
+      the student technical leaders. Students should, within the bounds of the Honor
+      Code, ask and answer questions on the [Security Synapse Discord
+      Server](https://discord.gg/juUXz7d4Jh); please request assistance from the
+      instructor and student technical leaders first through public Discord channels
+      before sending an email or a direct message. Students who need more assistance
+      are invited to schedule a meeting through the [instructor's appointment
+      scheduler](https://www.gregorykapfhammer.com/schedule/) and come to the meeting
+      with details about their question. Students can see the office hour schedule for
+      student technical leaders by viewing the list of [student technical
+      leaders](https://www.cis.allegheny.edu/teaching/technicalleaders/) and by
+      monitoring announcements in the [Allegheny College Computer Science Discord
+      Server](https://discord.gg/CS2h9kXzX6).
 
 #### Using GitHub and Discord
 
-This course will primarily use GitHub and Discord for all course communication.
-We will use GitHub for the sharing of both source code and documentation for
-course projects and for reporting issues in those materials. We will use two
-distinct Discord servers for all course discussions. The [Security Synapse
-Discord Server](https://discord.gg/juUXz7d4Jh) provides a way for members of the
-security synapse community to use text and video to chat with each other and
-will be the main forum for discussing the professional and technical content in
-the field of computer security. The [Allegheny College Computer Science Discord
-Server](https://discord.gg/CS2h9kXzX6) will be the main forum for Department of
-Computer Science announcements. Finally, any content that a student wants the
-instructor to assess (e.g., the work for a security survey project or a
-checkpoint of the security summit project) must be in a GitHub repository.
+      This course will primarily use GitHub and Discord for all course communication.
+      We will use GitHub for the sharing of both source code and documentation for
+      course projects and for reporting issues in those materials. We will use two
+      distinct Discord servers for all course discussions. The [Security Synapse
+      Discord Server](https://discord.gg/juUXz7d4Jh) provides a way for members of the
+      security synapse community to use text and video to chat with each other and
+      will be the main forum for discussing the professional and technical content in
+      the field of computer security. The [Allegheny College Computer Science Discord
+      Server](https://discord.gg/CS2h9kXzX6) will be the main forum for Department of
+      Computer Science announcements. Finally, any content that a student wants the
+      instructor to assess (e.g., the work for a security survey project or a
+      checkpoint of the security summit project) must be in a GitHub repository.
 
 #### Using Email
 
-Although we will primarily use the [Security Synapse Discord
-Server](https://discord.gg/juUXz7d4Jh) for class communication, the course
-instructor will sometimes use email to send announcements about important
-matters such as changes in the schedule. It is your responsibility to check your
-email at least once a day and to ensure that you can reliably send and receive
-emails. This class policy is based on the statement about the use of email that
-appears in *The Compass*, the College's student handbook; please see the course
-instructor if you do not have this handbook.
+      Although we will primarily use the [Security Synapse Discord
+      Server](https://discord.gg/juUXz7d4Jh) for class communication, the course
+      instructor will sometimes use email to send announcements about important
+      matters such as changes in the schedule. It is your responsibility to check your
+      email at least once a day and to ensure that you can reliably send and receive
+      emails. This class policy is based on the statement about the use of email that
+      appears in *The Compass*, the College's student handbook; please see the course
+      instructor if you do not have this handbook.
 
 #### Honor Code
 
-The Allegheny College Academic bulletin describes The Academic Honor Program
-that governs the entire academic program at Allegheny College. The Honor Program
-applies to all work that is submitted for academic credit or to meet non-credit
-requirements for graduation at Allegheny College. This includes all work
-assigned for this class (e.g., executable examinations and course assignments).
-All students who have enrolled in the College will work under the Honor Program.
-Each student who matriculates at the College acknowledges this Honor Code
-pledge:
+      The Allegheny College Academic bulletin describes The Academic Honor Program
+      that governs the entire academic program at Allegheny College. The Honor Program
+      applies to all work that is submitted for academic credit or to meet non-credit
+      requirements for graduation at Allegheny College. This includes all work
+      assigned for this class (e.g., executable examinations and course assignments).
+      All students who have enrolled in the College will work under the Honor Program.
+      Each student who matriculates at the College acknowledges this Honor Code
+      pledge:
 
-> I hereby recognize and pledge to fulfill my responsibilities, as
-> defined in the Honor Code, and to maintain the integrity of both
-> myself and the College community as a whole.
+      > I hereby recognize and pledge to fulfill my responsibilities, as
+      > defined in the Honor Code, and to maintain the integrity of both
+      > myself and the College community as a whole.
 
 #### Effective Security Engineering
 
-Students who create the source code and documentation for their course projects
-should ensure the implementation of a high-quality final product. While students
-are permitted to use a wide variety of computer security tools, such as
-integrated development environments, testing frameworks, automated input
-fuzzers, static analysis toolkits, and automated code generators (e.g., systems
-that leverage large language models like GitHub Copilot) and documentation sites
-such as StackOverflow, they must take responsibility for all of the source code
-and documentation that they submit for this course, including artifacts that are
-automatically generated by a software tool.
+      Students who create the source code and documentation for their course projects
+      should ensure the implementation of a high-quality final product. While students
+      are permitted to use a wide variety of computer security tools, such as
+      integrated development environments, testing frameworks, automated input
+      fuzzers, static analysis toolkits, and automated code generators (e.g., systems
+      that leverage large language models like GitHub Copilot) and documentation sites
+      such as StackOverflow, they must take responsibility for all of the source code
+      and documentation that they submit for this course, including artifacts that are
+      automatically generated by a software tool.
 
-This policy means that every student must work as an ethical and professional
-software engineer by documenting the sources for their work and verifying the
-correctness, maintainability, and long-term reliability of all source code and
-documentation that they submit. As such, a student who uses software tools to
-create content is responsible for citing their sources and demonstrating their
-understanding of it during the in-person assessments. Moreover, all students in
-the class are responsible for all of the source code and documentation submitted
-to the GitHub repository that hosts their course projects, including any
-tool-generated software artifacts. This means that every student should be able
-to answer questions, during an in-person assessment, about any technical or
-professional content, including that which was automatically generated by a
-software tool.
+      This policy means that every student must work as an ethical and professional
+      software engineer by documenting the sources for their work and verifying the
+      correctness, maintainability, and long-term reliability of all source code and
+      documentation that they submit. As such, a student who uses software tools to
+      create content is responsible for citing their sources and demonstrating their
+      understanding of it during the in-person assessments. Moreover, all students in
+      the class are responsible for all of the source code and documentation submitted
+      to the GitHub repository that hosts their course projects, including any
+      tool-generated software artifacts. This means that every student should be able
+      to answer questions, during an in-person assessment, about any technical or
+      professional content, including that which was automatically generated by a
+      software tool.
 
-Students who are effective engineers also pledge to abide by the [ACM Code of
-Ethics and Professional Conduct](https://www.acm.org/code-of-ethics) and the
-[Policies of the Department of Computer and Information
-Science](https://www.cis.allegheny.edu/teaching/policies/).
+      Students who are effective engineers also pledge to abide by the [ACM Code of
+      Ethics and Professional Conduct](https://www.acm.org/code-of-ethics) and the
+      [Policies of the Department of Computer and Information
+      Science](https://www.cis.allegheny.edu/teaching/policies/).
 
 #### Disability Services
 
-Students with disabilities who believe they may need accommodations in this
-class are encouraged to contact Student Accessibility and Support Services
-(SASS) at 814-332-2898 or `studentaccessibility@allegheny.edu`. SASS is located
-in the Center for Student Success in Pelletier Library. Please contact SASS as
-soon as possible to ensure that approved accommodations are implemented in a
-timely fashion.
+      Students with disabilities who believe they may need accommodations in this
+      class are encouraged to contact Student Accessibility and Support Services
+      (SASS) at 814-332-2898 or `studentaccessibility@allegheny.edu`. SASS is located
+      in the Center for Student Success in Pelletier Library. Please contact SASS as
+      soon as possible to ensure that approved accommodations are implemented in a
+      timely fashion.
 
 ### Welcome Message
 
-In reference to software, Frederick P. Brooks, Jr. wrote in chapter one of *The
-Mythical Man Month* that "the magic of myth and legend has come true in our
-time." Software is a pervasive aspect of our society that changes how we think
-and act. High quality and secure software also has the potential to positively
-influence the lives of many people. Let's embark on this journey of discovery
-and innovation, harnessing the "security synapses" that we make between the
-high-level concepts and low-level implementation details in the field of
-computer security. At the start of this class, I invite you to join together
-with the instructor and your fellow learners in computer security adventure!
+      In reference to software, Frederick P. Brooks, Jr. wrote in chapter one of *The
+      Mythical Man Month* that "the magic of myth and legend has come true in our
+      time." Software is a pervasive aspect of our society that changes how we think
+      and act. High quality and secure software also has the potential to positively
+      influence the lives of many people. Let's embark on this journey of discovery
+      and innovation, harnessing the "security synapses" that we make between the
+      high-level concepts and low-level implementation details in the field of
+      computer security. At the start of this class, I invite you to join together
+      with the instructor and your fellow learners in computer security adventure!
 
-::: {.callout-note appearance="minimal" title="External Learners"}
+      ::: {.callout-note appearance="minimal" title="External Learners"}
 
-This syllabus is for learners who enrolled in a for-credit Computer Security
-course in the [Department of Computer and information
-Science](https://www.cis.allegheny.edu/) at [Allegheny
-College](https://www.allegheny.edu/). Even though external learners are not
-bound by this syllabus, they can participate in the discussions on the [Security
-Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
+      This syllabus is for learners who enrolled in a for-credit Computer Security
+      course in the [Department of Computer and information
+      Science](https://www.cis.allegheny.edu/) at [Allegheny
+      College](https://www.allegheny.edu/). Even though external learners are not
+      bound by this syllabus, they can participate in the discussions on the [Security
+      Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
 
-:::
+      :::
