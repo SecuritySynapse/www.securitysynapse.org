@@ -9,7 +9,7 @@ listing:
       - "!slides/index.qmd"
       - "!slides/css/**/*.qmd"
     sort:
-      - "date desc"
+      - "date asc"
       - "title"
     type: default
     date-format: "MM/DD/YYYY"
@@ -47,13 +47,14 @@ Interested in getting started on a computer security adventure? Begin here:
 
 - The [course syllabus](./syllabus/index.qmd) introduces the course and its
 learning objectives, overviews the security survey and security summit projects,
-and explains how on-campus learners will be assessed by the instructor
-through examinations and in-person evaluations.
+and explains how on-campus learners will be assessed by the instructor through,
+for instance, examinations, project demonstrations, and in-person evaluations.
 
 - The [sixteen-week course schedule](./schedule/index.qmd) offers detailed
 insights into each step that learners should take to help them to effectively
-make security synapses, including a list of reading assignments, descriptions
-of the class activities and projects, and references to external resources.
+make security synapses, including a list of reading assignments, descriptions of
+the class activities and projects, and references to external resources in
+computer security.
 
 - The [course slides](slides/index.qmd) are a valuable resource for learners who
 want to make a security synapse. These slides present an overview of high-level
@@ -109,9 +110,15 @@ encrypted file that can only be decrypted using the same symmetric key. Notably,
 this output was produced by automatically running the `encrypt_file` function
 when this site was deployed! If you check the [course slides](slides/index.qmd)
 you can see many other Python source code segments --- including some that you
-can modify and run through an editor in the slide!
+can modify and run through an editor in the slide! Remember, whenever you see a
+source code segment in one programming language, like the one for the
+`encrypt_file` that was implemented in Python, please think about how you might
+build it in another language and what trade-offs you might make. As you emerge
+as a computer security engineer, make sure to train yourself to think about
+the usability and security trade-offs in programming languages, operating
+systems, computer architectures, networking protocols, and software applications!
 
-## Recent Slide Decks
+## Selected Slide Decks
 
 Focused on presenting an overview of high-level technical concepts and a
 thorough investigation of their low-level technical implementation, the [course
