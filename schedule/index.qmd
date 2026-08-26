@@ -39,6 +39,12 @@ listing:
   - **Topic**: Challenges and Solutions in Computer Security
   - **Weeks**: Seven through eleven
   - **Chapters**: Four through six in [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from [CCP](https://inventwithpython.com/cracking)
+  - **Programming Skill Checks** during the Friday class session:
+      - Week seven 
+      - Week nine 
+  - **Computer Security Checks** during the Friday class session:
+      - Week eight 
+      - Week ten
   - **Midterm Examination Two**: Week eleven during the laboratory session
   - **In-Person Assessment Two**: Week eleven during the Friday class session
 
