@@ -184,6 +184,7 @@ posts, and popular press articles in computer security.
 - **CSP**: [Computer Systems Security: Planning for
 Success](https://web.njit.edu/~rt494/security/)
 - **CCP**: [Cracking Codes with Python](https://inventwithpython.com/cracking/)
+- **JOY**: [Joy of Cryptography](https://joyofcryptography.com/)
 - **OSTEP**: [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
 
 :::
