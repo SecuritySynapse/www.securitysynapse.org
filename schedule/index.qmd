@@ -89,31 +89,25 @@ listing:
 ### Important Dates
 
 - **Midterm Executable Examination One**
-    - **Date**: Monday, September 30, 2024
+    - **Date**: Monday, September 30, 2026
     - **Time**: 2:30 -- 4:30 PM
     - **Location**: Alden 109
 - **Midterm Executable Examination Two**
-    - **Date**: Monday, November 4, 2024
+    - **Date**: Monday, November 4, 2026
     - **Time**: 2:30 -- 4:30 PM
     - **Location**: Alden 109
-- **Computer Security Summit Presentations**
-    - **Date**: Thursday, December 5, 2024
-    - **Time**: 9:30 AM -- 10:45 AM
-    - **Location**: Alden 109
-    - **Format**: Five to six minute lightning talks
 - **Final Executable Examination**
-    - **Examination Code**: C
-    - **Date**: Monday, December 9, 2024
-    - **Time**: 7:00 PM -- 10:00 PM
+    - **Examination Code**: J
+    - **Date**: Thursday, December 10, 2026
+    - **Time**: 9:00 AM -- 12:00 noon
     - **Location**: Alden 109
 - **Final In-Person Assessment**
-    - **Date**: Monday, December 9, 2024
-    - **Time**: 7:00 PM -- 10:00 PM
+    - **Date**: Monday, December 9, 2026
+    - **Time**: 9:00 AM -- 12:00 noon
     - **Location**: Alden 109
     - **Task**: Answer technical questions about code and concepts
 - **Completed Computer Security Summit Project**
-    - **Suggested Date**: Monday, December 9, 2024
-    - **Strict Deadline**: Thursday, December 12, 2024
+    - **Suggested Date**: Friday, December 4, 2026
     - **Time**: 11:59 PM
     - **Task**: Submit final report through GitHub
 
