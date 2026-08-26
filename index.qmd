@@ -135,13 +135,14 @@ selected presentation slide decks:
 
 ::: {.callout-note appearance="minimal" title="Security Synapse Community Resources"}
 
-Interested in connecting with other like-minded security engineers? Please join
-the [Security Synapse Discord Server](https://discord.gg/juUXz7d4Jh) and join the
-conversation! If you are an on-campus learning at Allegheny College, you may
-also join the [Allegheny College Computer Science Discord
-Server](https://discord.gg/CS2h9kXzX6). Finally, if you are an on-campus
-learner, then you may schedule a meeting with the course instructor during
-office hours by visiting the [Course Instructor's Appointment
+Interested in connecting with other like-minded computer security engineers?
+Please join the [Security Synapse Discord
+Server](https://discord.gg/juUXz7d4Jh) and join the conversation! If you are an
+on-campus learning at Allegheny College, you may also join the [Allegheny
+College Computer Science Discord Server](https://discord.gg/CS2h9kXzX6).
+Finally, if you are an on-campus learner, then you may schedule and attend a
+meeting with the course instructor during office hours by visiting the [Course
+Instructor's Appointment
 Scheduler](https://www.gregorykapfhammer.com/schedule/).
 
 :::
