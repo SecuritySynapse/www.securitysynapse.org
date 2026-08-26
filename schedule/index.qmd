@@ -89,11 +89,11 @@ listing:
 ### Important Dates
 
 - **Midterm Executable Examination One**
-    - **Date**: Monday, September 30, 2026
+    - **Date**: Friday, October 2, 2026
     - **Time**: 2:30 -- 4:30 PM
     - **Location**: Alden 109
 - **Midterm Executable Examination Two**
-    - **Date**: Monday, November 4, 2026
+    - **Date**: Friday, November 6, 2026
     - **Time**: 2:30 -- 4:30 PM
     - **Location**: Alden 109
 - **Final Executable Examination**
