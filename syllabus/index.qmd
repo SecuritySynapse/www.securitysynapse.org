@@ -203,17 +203,18 @@ percentages during the academic semester.
 |--------------------------|------------|
 | Class Participation      |   5%       |
 | In-Person Assessments    |  15%       |
+| Programming Skill Checks        |  10%       |
+| Computer Security Checks        | 10%       |
 | Midterm Examinations     |  10%       |
-| Final Examination        |  15%       |
-| Security Synapse Projects|   5%       |
+| Final Examination        |  10%       |
 | Security Summit Project  |  15%       |
-| Security Survey Projects |  35%       |
+| Security Survey Projects |  25%       |
 
 
 These assessment categories have the following definitions:
 
 - **Class Participation**: Students are expected to regularly attend and
-actively participate in all of the class and laboratory sessions, as outlined
+actively participate in all the class and laboratory sessions, as outlined
 on the [course schedule](../schedule/index.qmd). After either an unexcused
 absence or a late attendance to either a class or a laboratory session, a
 student's weekly class participation grade will be reduced. Students who need
@@ -222,15 +223,36 @@ their situation to the course instructor in a timely fashion. A student's
 weekly class participation grade will be reduced if they are frequently
 observed, during either class or laboratory sessions, undertaking
 non-course-related activities like viewing email, social media, or other
-content not about computer security. 
+content not about computer security.
 
 - **In-Person Assessments**: Conducted through an in-person conversation with
 the course instructor, the three in-person assessments are cumulative
 evaluations of both high-level and low-level knowledge in the field of computer
 security. All students should be prepared to answer questions that assess their
 comprehension of both concepts and implementation details in the field of
-computer security. The instructor will assess each student response on a
-checkmark basis and report feedback through a private GitHub repository.
+computer security. In-person assessment invite students to demonstrate their
+knowledge of computer security without the aid of any external sources,
+including, but not limited to, software tools on any type of device.
+
+- **Programming Skill Checks**: The programming skill checks are in-class online
+cumulative assessments covering all prior technical material from the course
+sessions, as outlined on the [course schedule](../schedule/index.qmd). Unless
+prior arrangements are made with the instructor, all students should use their
+computer to take these skill-checks on the scheduled date and to complete it in
+the stated location while taking no more than the required amount of time.
+Designed to prepare learners for an executable examination, each skill-check is
+an in-class executable assessment that students complete through the use of
+GitHub, VS Code, and the computer security and programming tools on their laptops.
+
+- **Computer Security Checks**: The computer security checks in-class cumulative
+assessments covering all prior technical material from the course sessions, as
+outlined on the [course schedule](../schedule/index.qmd). Unless prior
+arrangements are made with the instructor, all students should use their
+computer to take these skill-checks on the scheduled date and to complete it in
+the stated location while taking no more than the required amount of time.
+Designed to prepare learners for an in-person assessment, each skill-check
+involves the completion of an automatically assessed online, form-based quiz
+and/or a brief in-person assessment with the course instructor.
 
 - **Midterm Examination**: Each midterm examination is an online, executable,
 and cumulative assessment covering all prior material from the course sessions,
@@ -257,32 +279,20 @@ coding assistants, during the completion of the final examination provided that
 they cite these sources and explain how they used them to complete the
 examination.
 
-- **Security Synapse Projects**: Students who are assigned by the course
-instructor to serve as a discussion leader will complete two security synapse
-projects during that week. On the Tuesday class session the assigned students
-will lead the class in a discussion concerning the practical and ethical
-implications of that week's high-level computer security concept(s). On the
-Thursday class session the assigned students will demonstrate and explain, using
-at least two programming languages studied in the course, the source code in a
-GitHub repository that practically connects to the high-level computer security
-concepts presented in the prior class session. The discussion leaders will
-collaborate with the course instructor to ensure that their prepared materials
-make a security synapse between the high-level concepts and low-level
-implementation details for their week's technical topic. Students may use
-external sources, including artificial intelligence coding assistants, during
-the completion of this project provided that they cite these sources and explain
-how they used them to complete their work.
-
 - **Security Survey Projects**: These two-week assignments invite students to
 make "security synapses" as they survey the implementation details of various
 computer security concepts such as cryptography, cryptanalysis, and malware.
 These projects are completed through the design, implementation, documentation,
 and evaluation of computer programs in languages such as Python, Java,
-JavaScript, C, Go, and Rust. Students may use external sources, including
-artificial intelligence coding assistants, during the completion of a security
-survey project as long as that they cite these sources and explain how they used
-them to complete the various components of their project's implementation,
-evaluation, and writing.
+JavaScript, C, Go, and Rust. Each project invites a learner to (a) understand
+fundamental concepts in computer security, (b), implement those concepts into a
+working prototype, (c) evaluate the prototype through well-designed experiments,
+(d) give a demonstration of the prototype to both the course instructor and
+their peers, and (e) give a presentation to document their learning adventure!
+Students may use external sources, including artificial intelligence coding
+assistants, during the completion of a security survey project as long as that
+they cite these sources and explain how they used them to complete the various
+components of their project's implementation, evaluation, and writing.
 
 - **Security Summit Project**: Started in approximately the sixth week of the
 academic semester, this long-term project invites students to propose,
