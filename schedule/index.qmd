@@ -111,7 +111,7 @@ listing:
     - **Location**: Alden 109
     - **Task**: Answer technical questions about code and concepts
 - **Completed Computer Security Summit Project**
-    - **Suggested Date**: Friday, December 4, 2026
+    - **Submission Date**: Friday, December 4, 2026
     - **Time**: 11:59 PM
     - **Task**: Submit final report through GitHub
 
