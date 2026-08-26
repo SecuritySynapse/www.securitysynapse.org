@@ -86,8 +86,8 @@ listing:
       - **Note**: Occurs during the final examination period
   - *Breaks*  
     - **Labor Day**: Week Three
-    - **All-College Programming**: Week Eleven
     - **Fall Break**: Week Seven
+    - **All-College Programming**: Week Eleven
     - **Thanksgiving Break**: Week Fourteen
 
 ### Important Dates
