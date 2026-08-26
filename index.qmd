@@ -22,19 +22,20 @@ listing:
 
 ![](images/Security-Synapse-Logo.svg){fig-align="center"}
 
-## Welcome to an Adventure in Computer Security!
+## Welcome to an Adventure in Computer Security
 
 With the goal of enabling the growth of computer security engineers, this web
 site features a sixteen-week schedule filled with activities that support the
 development of your professional and technical capacities in the field of
 computer security. One of the primary goals of this course is to create a
-*security synapse* by connecting high-level concepts in the field of computer
-security with their implementation in programming languages such as Python,
-Java, C, Go, and Rust. Along with leveraging research papers and
-popular-press articles, this course references three open-access books:
-[Computer Systems Security: Planning for
+*security synapse* by connecting high-level concepts (e.g., authentication,
+authorization, and cryptography) in the field of computer security with their
+implementation in programming languages such as Python, Java, C, Go, and Rust.
+Along with leveraging research papers and popular-press articles, this course
+references four open-access books: [Computer Systems Security: Planning for
 Success](https://web.njit.edu/~rt494/security/), [Cracking Codes with
-Python](https://inventwithpython.com/cracking/), and [Operating Systems: Three
+Python](https://inventwithpython.com/cracking/), [The Joy of
+Cryptography](https://joyofcryptography.com/), and [Operating Systems: Three
 Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/). You can access all of
 the source code and technical content for this course by checking out its
 [GitHub organization](https://github.com/SecuritySynapse),
