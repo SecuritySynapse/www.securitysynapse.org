@@ -18,6 +18,11 @@ listing:
       - "description"
 ---
 
+## Weekly Schedule
+
+:::{#featured-weeks}
+:::
+
 ## Schedule Overview
 
 ### Module Highlights
@@ -123,9 +128,4 @@ Success](https://web.njit.edu/~rt494/security/)
 - **OSTEP**: [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
 - **JOY**: [Joy of Cryptography](https://joyofcryptography.com/)
 
-:::
-
-## Weekly Schedule
-
-:::{#featured-weeks}
 :::
