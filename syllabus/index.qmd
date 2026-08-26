@@ -132,9 +132,10 @@ Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 Extensive details about the content that the course covers in the textbook are
 available in the [course schedule](../schedule/index.qmd) and the [course
 slides](../slides/index.qmd). To best ensure that learners make a "security
-synapse" or a connection between high-level concepts and low-level
-implementation details, the course will also reference research papers and
-popular press articles in the field of computer security.
+synapse" --- or a connection between high-level concepts and low-level
+implementation details --- the course will also reference programming language
+and operating system documentation, research papers, blog
+posts, and popular press articles in computer security.
 
 ### Reading Assignments
 
