@@ -67,5 +67,5 @@ format:
 # automatically freeze
 # the execution of the computations
 # to make rendering faster
-execute:
-  freeze: auto
+# execute:
+#   freeze: auto
