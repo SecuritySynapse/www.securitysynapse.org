@@ -230,14 +230,15 @@ encrypted_data = encrypt_file('security.json', key)
 key = Fernet.generate_key()
 # encrypt the file
 encrypted_data = encrypt_file('security.json', key)
-print(encrypted_data)
+# display the first 500 characters of the encrypted output
+print(encrypted_data[:500])
 ```
 
-::: {.fragment .fade-up style="margin-top: -0.2em; font-size: 0.75em;"}
+::: {.fragment .fade-up style="margin-top: -0.2em; font-size: 0.9em;"}
 
 - How does the `generate_key` function work?
 - Output will vary each time `encrypt_file` is called
-- Is it possible to retrieve the original JSON file? Reference: [Fernet Docs](https://cryptography.io/en/latest/fernet/)
+- Is it possible to retrieve the original JSON file? Ref: [Fernet Docs](https://cryptography.io/en/latest/fernet/)
 
 :::
 
