@@ -339,7 +339,7 @@ monitor_file_for_key("security.json", "CVE-2021-2345")
 
 - The `security.json` file will be read every second
 
-- The in-memory `key_tracking_list` grows without bound
+- In-memory `key_tracking_list` may grow unbounded
 
 - Memory leak occurs when no release of process memory
 
