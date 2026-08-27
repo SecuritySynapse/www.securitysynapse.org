@@ -20,16 +20,12 @@ Success](https://web.njit.edu/~rt494/security/)
 ## Activities
 
 - {{< iconify fa6-solid people-line size=18px >}} **Monday and Wednesday**: Cryptography
-- {{< iconify fa6-solid people-line size=18px >}} **Friday**: Programming skill check or in-person assessment
+- {{< iconify fa6-solid people-line size=18px >}} **Friday**: Complete an in-person assessment
 - {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Laboratory session
   - Understand the need for and use of cryptography
   - Introduction to basic concepts and principles in cryptography
   - Continued highlighting of the concept of a "security synapse"
-  - Student presentations that feature:
-    - Explanation of a high-level concept in the area of cryptography
-    - In-class activity that connects concepts to real-world scenarios
-    - Implementation of a cryptography concept in two programming languages
-    - Question and answer session with learning peers and the course instructor
+  - Starting working of the [Security Survey Project One: Server Fuzzing](/../projects/)
 
 ## Slides
 
