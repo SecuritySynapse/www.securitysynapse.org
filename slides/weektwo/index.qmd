@@ -372,152 +372,231 @@ How do these programs help an analyst detect a security incident?
 
 :::
 
-# Let's Make More Security Synapses
+# Three Security Synapses
 
-- Use Python to simulate a **dictionary attack** on passwords
-- Use Python to illustrate an **access control list**
-- Use Python to simulate a **backup and restore** after an attack
+## Authentication: Reused Credentials
 
-## Password Guessing: A Dictionary Attack
+::: {.incremental style="margin-top: -0.25em; font-size: 0.92em;"}
 
-```{python}
-# a hacker simulates a "dictionary attack" against two users
-common_passwords = ["password", "123456", "letmein", "admin", "welcome"]
-
-def login(username, password):
-    """Return True when the credentials match the stored user."""
-    users = {"bob": "password", "alice": "s3cret!"}
-    return password == users.get(username)
-
-# will the hacker's list of common passwords work?
-for username in ["bob", "alice"]:
-    for guess in common_passwords:
-        if login(username, guess):
-            print(f"{username}: cracked with {guess!r}")
-            break
-    else:
-        print(f"{username}: resisted the dictionary attack")
-```
-
-## Password Guessing: What Did We Learn?
-
-::: incremental
-
-- `bob` used a common password and was easily compromised!
-- `alice` chose a strong password and resisted the "script kiddie"
-- A *dictionary attack* automates guessing common passwords
-- Strong password policies support the *authentication* pillar of **AAA**
-- *User awareness* training helps people choose better passwords
+- Credential stuffing reuses password pairs exposed elsewhere.
+- The attacker exploits reuse instead of guessing at random.
+- Authentication checks the pair; accounting records the outcome.
+- This is **AAA**: identity plus evidence.
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+::: {.fragment .fade .boxed-content style="margin-top: 0.2em; font-size: 0.82em;"}
 
-**Key Questions**: What is a "script kiddie"? How do password policies help?
-What should a system do after too many failed logins -- and why?
+**Key Questions**: Why is password reuse valuable to an attacker? Which
+**PDR** control would detect this pattern?
 
 :::
 
-## Authorization: An Access Control List
+## Credential Stuffing
 
 ```{python}
-# an access control list: which role can perform which action
-access_control_list = {
-    "admin": {"read", "write", "delete"},
-    "user": {"read"},
-    "guest": set(),
+leaked_pairs = [("bob", "password"), ("alice", "password"),
+                ("sam", "qwerty")]
+service_passwords = {
+    "bob": "password", "alice": "s3cret!", "sam": "qwerty"
 }
+events = []  # fictional data; never store real passwords
 
-def check_access(role, action):
-    """Return True when the role is authorized for the action."""
-    return action in access_control_list.get(role, set())
-
-# what can a 'user' role do in this system?
-for action in ["read", "write", "delete"]:
-    print(action, "->", check_access("user", action))
+def login(username: str, password: str) -> bool:
+    success = service_passwords.get(username) == password
+    events.append((username, "success" if success else "failure"))
+    return success
+for username, password in leaked_pairs:
+    result = login(username, password)
+    print(username, "ACCOUNT TAKEN OVER" if result else "rejected")
+print("Accounting events:", len(events))
 ```
 
-## Authorization: What Did We Learn?
+## Credential Stuffing: Lessons
 
-::: incremental
+::: {.incremental style="font-size: 0.9em;"}
 
-- An *access control list* (**ACL**) links roles to permitted actions
-- The `user` role can `read` but cannot `write` or `delete`
-- Least privilege means granting only the access a role truly needs
-- **Authorization** answers: "what is this entity allowed to do?"
-- **Authentication** and **Authorization** together form the heart of **AAA**
-
-:::
-
-::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
-
-**Key Questions**: Who should hold the `admin` role in a real organization?
-What happens when a role is missing from the **ACL**? How does the **ACL**
-connect to the principle of *least privilege*?
+- `bob` and `sam` were compromised because they reused passwords.
+- `alice` resisted this list; that does not prove her account is safe.
+- The event log records outcomes without recording the passwords.
+- Real services use unique passwords and salted hashes.
+- They rate-limit logins and support MFA.
 
 :::
 
-## Backup and Restore: Surviving Ransomware
+::: {.fragment .fade .boxed-content style="margin-top: 0.2em; font-size: 0.82em;"}
+
+**Key Questions**: Which control prevents credential reuse? What should happen
+after an unusual burst of failed logins?
+
+:::
+
+## Authorization: Who Can Change the Inventory?
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.92em;"}
+
+- Authentication answers **who?** Authorization answers **what?**
+- Inventory roles should receive only the actions they need.
+- **Deny by default** prevents an unknown role from gaining access.
+- Accounting preserves evidence of every authorization decision.
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.2em; font-size: 0.82em;"}
+
+**Reading bridge**: Chapter 1 describes an access control list as a way to
+manage which resources an entity may access.
+
+:::
+
+## Access Control List
 
 ```{python}
-import json, os, shutil, tempfile
+roles = {"alice": "analyst", "sam": "responder", "visitor": "guest"}
+acl = {"analyst": {"read"}, "responder": {"read", "update"},
+       "guest": set()}  # deny by default
+decisions = []
 
-original = json.load(open("security.json"))   # the real vulnerability data
+def authorize(username: str, action: str) -> bool:
+    role = roles.get(username)
+    allowed = action in acl.get(role, set())
+    decisions.append((username, action, allowed))
+    return allowed
 
-with tempfile.TemporaryDirectory() as folder:
-    live = os.path.join(folder, "records.json")
-    backup = os.path.join(folder, "records.backup")
-    with open(live, "w") as file:
-        json.dump(original, file)          # write the live data
-    shutil.copy(live, backup)              # maintain a backup copy
-
-    with open(live, "w") as file:
-        file.write("ENCRYPTED: pay a ransom")  # ransomware attack
-    shutil.copy(backup, live)              # restore from the backup
-
-    with open(live, "r") as file:
-        restored = json.load(file)         # verify the recovery
-
-print("Restored records:", len(restored["vulnerabilities"]))
+requests = [("alice", "read"), ("alice", "delete"),
+            ("visitor", "read")]
+for username, action in requests:
+    allowed = authorize(username, action)
+    print(f"{username}: {action} -> {'ALLOW' if allowed else 'DENY'}")
 ```
 
-## Backup and Restore: What Did We Learn?
+## Access Control List: Lessons
 
-::: incremental
+::: {.incremental style="font-size: 0.9em;"}
 
-- A *ransomware* attack encrypted the live `records.json` file
-- The *backup* copy was not touched by the attacker
-- Restoring from the backup quickly brought the data back
-- **Backups** are a key tool in the security professional's toolbox
-- Backups and *encryption* complement each other in a security plan
-
-:::
-
-::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
-
-**Key Questions**: Why does restoring from a *backup* sometimes beat paying a
-ransom? How often should backups be made? Where should backups be stored so
-that an attacker cannot also destroy them?
+- Authentication identifies `alice`; authorization limits her actions.
+- **Least privilege** lets an analyst read, but not delete.
+- Missing roles and permissions receive **DENY**.
+- The decision log supplies **accounting** evidence for investigation.
 
 :::
 
-## Summary of the New Security Synapse Programs
+::: {.fragment .fade .boxed-content style="margin-top: 0.2em; font-size: 0.82em;"}
 
-::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
-
-- **Dictionary attack**: weak passwords are easily cracked by a "script kiddie"
-- **Access control list**: authorization limits what each role can do
-- **Backup and restore**: recovery from an attack restores *availability*
-- **AAA** connects authentication, authorization, and accounting
-- **PDR** connects prevention, detection, and *reaction* to an attack
+**Key Questions**: Who approves a new permission? What happens when an
+attacker compromises an analyst's account?
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+## Availability: Can We Recover?
 
-**Key Questions**: How do the three new programs connect to the earlier
-examples? Which high-level concept does each program illustrate? What other
-Python programs could help you make another "security synapse"?
+::: {.incremental style="margin-top: -0.25em; font-size: 0.92em;"}
+
+- Ransomware makes the **live** copy unavailable.
+- An isolated backup gives the security plan a recovery option.
+- Restoration is a **reaction** that returns the asset to service.
+- Backups improve availability, but do not undo data theft.
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.2em; font-size: 0.82em;"}
+
+**Key Questions**: How often should backups run? What evidence shows that a
+restore is trustworthy?
+
+:::
+
+## Backup and Restore
+
+```{python}
+from pathlib import Path
+import json, shutil, tempfile
+
+records = Path("security.json").read_text()
+with tempfile.TemporaryDirectory() as folder:
+    live = Path(folder) / "live" / "records.json"
+    backup = Path(folder) / "isolated" / "records.json"
+    live.parent.mkdir(); backup.parent.mkdir()
+    live.write_text(records)
+    shutil.copy2(live, backup)  # simulate an isolated backup
+    live.write_text("RANSOMWARE: live copy unavailable")
+    backup_intact = backup.read_text() == records
+    shutil.copy2(backup, live)  # reaction: restore known-good data
+    restored = json.loads(live.read_text())
+print("Backup intact after attack:", backup_intact)
+print("Recovered records:", len(restored["vulnerabilities"]))
+```
+
+## Backup and Restore: Lessons
+
+::: {.incremental style="font-size: 0.9em;"}
+
+- The live copy is damaged; the isolated backup remains usable.
+- Restoration is a **reaction** that returns the asset to service.
+- Backups improve **availability**, but do not undo data theft.
+- **RPO** measures data loss; **RTO** measures recovery time.
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.2em; font-size: 0.82em;"}
+
+**Key Questions**: Where should the backup live? How can a team test recovery
+without waiting for a real ransomware incident?
+
+:::
+
+## Three New Security Synapses
+
+::: {.columns style="margin-top: 0.25em;"}
+
+::: {.column style="width: 33%; font-size: 0.78em;"}
+
+::: {.fragment .fade}
+
+### **Authentication**
+
+- Credential stuffing
+- Password reuse
+- Accounting events
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.78em;"}
+
+::: {.fragment .fade}
+
+### **Authorization**
+
+- ACL and least privilege
+- Deny by default
+- Decision evidence
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.78em;"}
+
+::: {.fragment .fade}
+
+### **Availability**
+
+- Ransomware impact
+- Isolated backup
+- Tested recovery
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.15em; font-size: 0.8em;"}
+
+**Chapter 1 connection**: use **AAA**, **CIA**, and **PDR** to ask who can act,
+what can happen, how we will know, and how we will recover.
 
 :::
 
