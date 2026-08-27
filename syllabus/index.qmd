@@ -154,14 +154,16 @@ posts, and popular press articles in computer security.
   [CCP](https://inventwithpython.com/cracking/)
 
 - **Module Two**: *Week Seven through Week Eleven*
-  - **Week Seven**: Fall break and research travel
-  - **Week Eight**: Security summit project proposals
+  - **Week Seven**: Chapters one and two in [JOY](https://joyofcryptography.com/), Fall break
+  - **Week Eight**: Chapter four and five in
+  [JOY](https://joyofcryptography.com/), security summit project proposals
   - **Week Nine**: Chapter four and five in [CSP](https://web.njit.edu/~rt494/security/) 
   - **Week Ten**: Chapter six in [CSP](https://web.njit.edu/~rt494/security/)
   and chapter fifty-four in [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
   - **Week Eleven**: Review all prior chapters in
-  [CSP](https://web.njit.edu/~rt494/security/) and
-  [CCP](https://inventwithpython.com/cracking/) and
+  [CSP](https://web.njit.edu/~rt494/security/),
+  [CCP](https://inventwithpython.com/cracking/),
+ [JOY](https://joyofcryptography.com/), and
   [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 - **Module Three**: *Week Twelve through Week Sixteen*
@@ -175,8 +177,9 @@ posts, and popular press articles in computer security.
   - **Week Fifteen**: Chapter ten in
   [CSP](https://web.njit.edu/~rt494/security/) and review of all prior chapters
   - **Week Sixteen**: Review all prior chapters in
-  [CSP](https://web.njit.edu/~rt494/security/) and
-  [CCP](https://inventwithpython.com/cracking/) and
+  [CSP](https://web.njit.edu/~rt494/security/),
+  [CCP](https://inventwithpython.com/cracking/),
+  [JOY](https://joyofcryptography.com/), and
   [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
 
 ::: {.callout-note appearance="minimal" title="Textbook Abbreviations" collapse="false"}
