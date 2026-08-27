@@ -65,7 +65,9 @@ Interested in working on this project? See the [{{< iconify fa6-brands github
 size=18px >}}
 server-fuzzing-starter](https://github.com/SecuritySynapse/server-fuzzing-starter)
 template repository to get started! Questions? Share them in the [Security
-Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
+Synapse Discord Server](https://discord.gg/juUXz7d4Jh). Want to take this
+project to the next level? Consider meeting with the course instructor during
+office hours!
 
 ### Project Two: Cryptography Benchmarking
 
