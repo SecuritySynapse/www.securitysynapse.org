@@ -455,7 +455,9 @@ print("Accounting events:", len(events))
 ::: {.fragment .fade .boxed-content style="margin-top: 0.2em; font-size: 0.82em;"}
 
 **Key Questions**: Which control prevents credential reuse? What should happen
-after an unusual burst of failed logins?
+after an unusual burst of failed logins? What evidence should a defender record
+without logging passwords? How can a lockout improve security without making the
+system unusable?
 
 :::
 
