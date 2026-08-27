@@ -57,6 +57,9 @@ the Quarto-based website for Security Synapse.
 1. Use single backticks for source-code names such as `compute_hash`.
 1. Use fragments and incremental lists intentionally, not on every element.
 1. Keep each bullet focused on one idea.
+1. Do not normally put periods at the end of bullet points. Use periods when a
+   bullet contains multiple complete sentences or when punctuation is needed
+   for clarity.
 1. Support important claims with the assigned textbook, syllabus, code output,
    or a clearly identified external source.
 
