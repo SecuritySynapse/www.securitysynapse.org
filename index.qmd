@@ -104,19 +104,20 @@ encrypted_data = encrypt_file('slides/weektwo/security.json', key)
 print(encrypted_data)
 ```
 
-The prior source code segment demonstrates how to use the `Fernet` symmetric key
-encryption algorithm to encrypt a JSON file. The output of this code is the
-encrypted file that can only be decrypted using the same symmetric key. Notably,
-this output was produced by automatically running the `encrypt_file` function
-when this site was deployed! If you check the [course slides](slides/index.qmd)
-you can see many other Python source code segments --- including some that you
-can modify and run through an editor in the slide! Remember, whenever you see a
-source code segment in one programming language, like the one for the
-`encrypt_file` that was implemented in Python, please think about how you might
-build it in another language and what trade-offs you might make. As you emerge
-as a computer security engineer, make sure to train yourself to think about
-the usability and security trade-offs in programming languages, operating
-systems, computer architectures, networking protocols, and software applications!
+The prior source code segment demonstrates how to use the `Fernet` symmetric
+key encryption algorithm to encrypt a JSON file. The output of this code is the
+encrypted file that can only be decrypted using the same symmetric key.
+Notably, this output was produced by automatically running the `encrypt_file`
+function when this site was deployed! If you check the [course
+slides](slides/index.qmd) you can see many other Python source code segments
+--- including some that you can modify and run through an editor in the slide!
+Remember, whenever you see a source code segment in one programming language,
+like the one for the `encrypt_file` that was implemented in Python, please
+think about how you might build it in another language and what trade-offs you
+could discover during re-implementation. As you emerge as a computer security
+engineer, make sure to train yourself to think about the usability and security
+trade-offs in programming languages, operating systems, computer architectures,
+networking protocols, and software applications!
 
 ## Selected Slide Decks
 
