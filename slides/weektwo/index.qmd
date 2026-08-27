@@ -233,7 +233,7 @@ encrypted_data = encrypt_file('security.json', key)
 print(encrypted_data)
 ```
 
-::: {.fragment .fade-up style="margin-top: -0.1em; font-size: 0.95em;"}
+::: {.fragment .fade-up style="margin-top: -0.2em; font-size: 0.75em;"}
 
 - How does the `generate_key` function work?
 - Output will vary each time `encrypt_file` is called
