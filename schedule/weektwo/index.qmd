@@ -22,17 +22,19 @@ Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 ## Activities
 
-- {{< iconify fa6-solid people-line size=18px >}} **Monday and Wednesday**: Course introduction
-- {{< iconify fa6-solid people-line size=18px >}} **Friday**: No programming skill check or in-person assessment
-- {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: No laboratory session
+- {{< iconify fa6-solid people-line size=18px >}} **Monday and Wednesday**:
+Course introduction
+- {{< iconify fa6-solid people-line size=18px >}} **Friday**: Complete
+programming skill check
+- {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Continued
+setup during laboratory session
   - Continued introduction to the computer security course
   - Continued highlighting of the concept of a "security synapse"
   - Introduction to basic computer security concepts and principles
-  - Student presentations that feature:
-    - Explanation of a high-level concept in the field of computer security
-    - In-class activity that connects concepts to real-world scenarios
-    - Implementation of a security concept in two programming languages
-    - Question and answer session with learning peers and the course instructor
+  - If needed, continue to work on the programming skill check
+  - In-person assessment in which students demonstrate the use of their
+  installed software tools (e.g., download a Python script from the course web
+  site and use `uv run` to execute it with an structure file input)
 
 ## Slides
 
