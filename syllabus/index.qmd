@@ -238,9 +238,10 @@ the course instructor, the three in-person assessments are cumulative
 evaluations of both high-level and low-level knowledge in the field of computer
 security. All students should be prepared to answer questions that assess their
 comprehension of both concepts and implementation details in the field of
-computer security. In-person assessment invite students to demonstrate their
+computer security. Unless the instructor provides access to a computational
+device, the in-person assessments invite students to demonstrate their
 knowledge of computer security without the aid of any external sources,
-including, but not limited to, software tools on any type of device.
+including, but not limited to, software tools running on a student laptop.
 
 - **Programming Skill Checks**: The programming skill checks are in-class, online
 cumulative assessments covering all prior technical material from the course
