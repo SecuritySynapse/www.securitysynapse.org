@@ -121,7 +121,7 @@ trade-off in computer security? Why?
 
 # *Key Dilemma*: people may have key computer security requirements but limited computer security expertise
 
-# *Key Trade-off*: making a system secure often makes it less usable!
+# *Key Trade-off*: making a system secure often makes it less usable
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
 
@@ -237,8 +237,7 @@ print(encrypted_data)
 
 - How does the `generate_key` function work?
 - Output will vary each time `encrypt_file` is called
-- Is it possible to retrieve the original JSON file?
-- Reference: [Cryptography Documentation for Fernet](https://cryptography.io/en/latest/fernet/)
+- Is it possible to retrieve the original JSON file? Reference: [Fernet Docs](https://cryptography.io/en/latest/fernet/)
 
 :::
 
