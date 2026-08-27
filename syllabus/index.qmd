@@ -262,9 +262,9 @@ instructor, all students should use their computer to take these skill-checks
 on the scheduled date and to complete it in the stated location while taking no
 more than the required amount of time. Designed to prepare learners for the
 discussion of computer security concepts during an in-person assessment, each
-security-check involves the completion of an automatically assessed online,
-form-based assessment and/or a brief, in-person assessment completed
-interactively with the course instructor.
+security-check involves the completion of an automatically scored online,
+form-based assessment and a brief, in-person assessment completed interactively
+with the course instructor.
 
 - **Midterm Examination**: Each midterm examination is an online, executable,
 and cumulative assessment covering all prior material from the course sessions,
