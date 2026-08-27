@@ -353,22 +353,28 @@ tool detect and/or prevent this memory leak?
 
 :::
 
-## Summary of the Security Synapse Programs
+## Summary of the Prior Programs
 
-::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
+::: {.incremental style="margin-top: -0.25em; font-size: 0.75em;"}
 
-- **Confidentiality**: `encrypt_file` and `decrypt_file` scramble and then recover the vulnerability data
-- **Integrity**: `compute_hash` fingerprints a file so that tampering can be detected
-- **Availability**: `monitor_file_for_key` shows how an unbounded loop can exhaust memory
-- **Detection**: comparing hashes reveals that `security-corrupted.json` was changed!
-- **Reaction**: decrypting data and recomputing hashes help respond to an incident
+- **Confidentiality**: `encrypt_file` and `decrypt_file` scramble and then
+recover the vulnerability data, potentially thwarting an attacker
+- **Integrity**: `compute_hash` fingerprints a file so that tampering can be
+detected
+- **Availability**: `monitor_file_for_key` shows how an unbounded loop can
+exhaust memory, potentially crashing a computer
+- **Detection**: hashes reveal that `security-corrupted.json` was changed!
+- **Reaction**: decrypting data and recomputing hashes help respond to an
+incident
 
 :::
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
 
 **Key Questions**: Which of the **CIA** principles does each program support?
-How do these programs help an analyst detect a security incident?
+How do these programs help an analyst detect a security incident? Can you see
+the connection between the concepts and their implementation? Can you run these
+programs on your laptop?
 
 :::
 
