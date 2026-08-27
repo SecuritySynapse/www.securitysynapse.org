@@ -154,7 +154,7 @@ posts, and popular press articles in computer security.
   [CCP](https://inventwithpython.com/cracking/)
 
 - **Module Two**: *Week Seven through Week Eleven*
-  - **Week Seven**: Chapters one and two in [JOY](https://joyofcryptography.com/), Fall break
+  - **Week Seven**: Chapters one and two in [JOY](https://joyofcryptography.com/)
   - **Week Eight**: Chapter four and five in
   [JOY](https://joyofcryptography.com/), security summit project proposals
   - **Week Nine**: Chapter four and five in [CSP](https://web.njit.edu/~rt494/security/) 
@@ -220,13 +220,17 @@ These assessment categories have the following definitions:
 actively participate in all the class and laboratory sessions, as outlined on
 the [course schedule](../schedule/index.qmd). After either an unexcused
 absence or a late attendance to either a class or a laboratory session, a
-student's weekly class participation grade will be reduced. Students who need to
-miss class or attend class late for an excused reason should communicate their
-situation to the course instructor in a timely fashion. A student's weekly class
-participation grade will be reduced if they are observed, during either class or
-laboratory sessions, undertaking non-course-related activities like viewing
-email, social media, or reading or creating other content not connected to the
-field of computer security.
+student's weekly class participation grade will be reduced. Students who need
+to miss class or attend class late for an excused reason should communicate
+their situation to the course instructor in a timely fashion. In accordance
+with [Department of Computer and Information Science
+Policies](https://www.cis.allegheny.edu/teaching/policies/), each time a
+student misses one week of class, their grade will be reduced by one letter
+grade, with three late attendances counting for an absence. A student's weekly
+class participation grade also will be reduced if they are observed, during
+either class or laboratory sessions, undertaking non-course-related activities
+like viewing email, social media, or reading or creating other content not
+connected to the field of computer security.
 
 - **In-Person Assessments**: Conducted through an in-person conversation with
 the course instructor, the three in-person assessments are cumulative
