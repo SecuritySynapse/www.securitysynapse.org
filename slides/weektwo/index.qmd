@@ -400,19 +400,23 @@ and working like a security engineer!*
 
 ## Authentication: Reused Credentials
 
-::: {.incremental style="margin-top: -0.25em; font-size: 0.92em;"}
+::: {.incremental style="margin-top: -0.25em; font-size: 0.8em;"}
 
 - Credential stuffing reuses password pairs exposed elsewhere
 - The attacker exploits reuse instead of guessing at random
 - Authentication checks the pair; accounting records the outcome
-- This is **AAA**: identity plus evidence
+- **Timeline of events in the credential stuffing process**:
+  - User creates an account logs into a remote service
+  - Service stores the password in a database
+  - Attacker steals the database and extracts the password pairs
+  - Attacker tries the stolen pairs on other remote services
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.2em; font-size: 0.82em;"}
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.82em;"}
 
 **Key Questions**: Why is password reuse valuable to an attacker? Which
-**PDR** control would detect this pattern?
+**PDR** control would detect and/or prevent this security risk pattern?
 
 :::
 
@@ -440,11 +444,11 @@ print("Accounting events:", len(events))
 
 ::: {.incremental style="font-size: 0.9em;"}
 
-- `bob` and `sam` were compromised because they reused passwords.
-- `alice` resisted this list; that does not prove her account is safe.
-- The event log records outcomes without recording the passwords.
-- Real services use unique passwords and salted hashes.
-- They rate-limit logins and support MFA.
+- `bob` and `sam` were compromised because they reused passwords
+- `alice` resisted this list; that does not prove her account is safe
+- The event log records outcomes without recording the passwords
+- Real services use unique passwords and salted hashes
+- They rate-limit logins and support multiple-factor authentication
 
 :::
 
