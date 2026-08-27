@@ -353,6 +353,174 @@ tool detect and/or prevent this memory leak?
 
 :::
 
+## Summary of the Security Synapse Programs
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
+
+- **Confidentiality**: `encrypt_file` and `decrypt_file` scramble and then recover the vulnerability data
+- **Integrity**: `compute_hash` fingerprints a file so that tampering can be detected
+- **Availability**: `monitor_file_for_key` shows how an unbounded loop can exhaust memory
+- **Detection**: comparing hashes reveals that `security-corrupted.json` was changed!
+- **Reaction**: decrypting data and recomputing hashes help respond to an incident
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: Which of the **CIA** principles does each program support?
+How do these programs help an analyst detect a security incident?
+
+:::
+
+# Let's Make More Security Synapses
+
+- Use Python to simulate a **dictionary attack** on passwords
+- Use Python to illustrate an **access control list**
+- Use Python to simulate a **backup and restore** after an attack
+
+## Password Guessing: A Dictionary Attack
+
+```{python}
+# a hacker simulates a "dictionary attack" against two users
+common_passwords = ["password", "123456", "letmein", "admin", "welcome"]
+
+def login(username, password):
+    """Return True when the credentials match the stored user."""
+    users = {"bob": "password", "alice": "s3cret!"}
+    return password == users.get(username)
+
+# will the hacker's list of common passwords work?
+for username in ["bob", "alice"]:
+    for guess in common_passwords:
+        if login(username, guess):
+            print(f"{username}: cracked with {guess!r}")
+            break
+    else:
+        print(f"{username}: resisted the dictionary attack")
+```
+
+## Password Guessing: What Did We Learn?
+
+::: incremental
+
+- `bob` used a common password and was easily compromised!
+- `alice` chose a strong password and resisted the "script kiddie"
+- A *dictionary attack* automates guessing common passwords
+- Strong password policies support the *authentication* pillar of **AAA**
+- *User awareness* training helps people choose better passwords
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: What is a "script kiddie"? How do password policies help?
+What should a system do after too many failed logins -- and why?
+
+:::
+
+## Authorization: An Access Control List
+
+```{python}
+# an access control list: which role can perform which action
+access_control_list = {
+    "admin": {"read", "write", "delete"},
+    "user": {"read"},
+    "guest": set(),
+}
+
+def check_access(role, action):
+    """Return True when the role is authorized for the action."""
+    return action in access_control_list.get(role, set())
+
+# what can a 'user' role do in this system?
+for action in ["read", "write", "delete"]:
+    print(action, "->", check_access("user", action))
+```
+
+## Authorization: What Did We Learn?
+
+::: incremental
+
+- An *access control list* (**ACL**) links roles to permitted actions
+- The `user` role can `read` but cannot `write` or `delete`
+- Least privilege means granting only the access a role truly needs
+- **Authorization** answers: "what is this entity allowed to do?"
+- **Authentication** and **Authorization** together form the heart of **AAA**
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: Who should hold the `admin` role in a real organization?
+What happens when a role is missing from the **ACL**? How does the **ACL**
+connect to the principle of *least privilege*?
+
+:::
+
+## Backup and Restore: Surviving Ransomware
+
+```{python}
+import json, os, shutil, tempfile
+
+original = json.load(open("security.json"))   # the real vulnerability data
+
+with tempfile.TemporaryDirectory() as folder:
+    live = os.path.join(folder, "records.json")
+    backup = os.path.join(folder, "records.backup")
+    with open(live, "w") as file:
+        json.dump(original, file)          # write the live data
+    shutil.copy(live, backup)              # maintain a backup copy
+
+    with open(live, "w") as file:
+        file.write("ENCRYPTED: pay a ransom")  # ransomware attack
+    shutil.copy(backup, live)              # restore from the backup
+
+    with open(live, "r") as file:
+        restored = json.load(file)         # verify the recovery
+
+print("Restored records:", len(restored["vulnerabilities"]))
+```
+
+## Backup and Restore: What Did We Learn?
+
+::: incremental
+
+- A *ransomware* attack encrypted the live `records.json` file
+- The *backup* copy was not touched by the attacker
+- Restoring from the backup quickly brought the data back
+- **Backups** are a key tool in the security professional's toolbox
+- Backups and *encryption* complement each other in a security plan
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: Why does restoring from a *backup* sometimes beat paying a
+ransom? How often should backups be made? Where should backups be stored so
+that an attacker cannot also destroy them?
+
+:::
+
+## Summary of the New Security Synapse Programs
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
+
+- **Dictionary attack**: weak passwords are easily cracked by a "script kiddie"
+- **Access control list**: authorization limits what each role can do
+- **Backup and restore**: recovery from an attack restores *availability*
+- **AAA** connects authentication, authorization, and accounting
+- **PDR** connects prevention, detection, and *reaction* to an attack
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
+
+**Key Questions**: How do the three new programs connect to the earlier
+examples? Which high-level concept does each program illustrate? What other
+Python programs could help you make another "security synapse"?
+
+:::
+
 ## Getting Started in Computer Security
 
 ::: {.columns}
