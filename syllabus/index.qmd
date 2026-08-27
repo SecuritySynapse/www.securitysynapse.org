@@ -225,12 +225,13 @@ to miss class or attend class late for an excused reason should communicate
 their situation to the course instructor in a timely fashion. In accordance
 with [Department of Computer and Information Science
 Policies](https://www.cis.allegheny.edu/teaching/policies/), each time a
-student misses one week of class, their grade will be reduced by one letter
-grade, with three late attendances counting for an absence. A student's weekly
-class participation grade also will be reduced if they are observed, during
-either class or laboratory sessions, undertaking non-course-related activities
-like viewing email, social media, or reading or creating other content not
-connected to the field of computer security.
+student misses one week of class (i.e., three class sessions and one laboratory
+session), their grade will be reduced by one letter grade, with three late
+attendances counting for an absence. A student's weekly class participation
+grade also will be reduced if they are observed, during either class or
+laboratory sessions, undertaking non-course-related activities like viewing
+email, social media, or reading or creating other content not connected to
+computer security.
 
 - **In-Person Assessments**: Conducted through an in-person conversation with
 the course instructor, the three in-person assessments are cumulative
