@@ -243,25 +243,28 @@ device, the in-person assessments invite students to demonstrate their
 knowledge of computer security without the aid of any external sources,
 including, but not limited to, software tools running on a student laptop.
 
-- **Programming Skill Checks**: The programming skill checks are in-class, online
-cumulative assessments covering all prior technical material from the course
-sessions, as outlined on the [course schedule](../schedule/index.qmd). Unless
-prior arrangements are made with the instructor, all students should use their
-computer to take these skill-checks on the scheduled date and to complete it in
-the stated location while taking no more than the required amount of time.
-Designed to prepare learners for an executable examination, each skill-check is
-an in-class executable assessment that students complete through the use of
-GitHub, VS Code, and the computer security and programming tools on their laptops.
+- **Programming Skill Checks**: The programming skill checks are in-class,
+online cumulative assessments covering all prior technical material from the
+course sessions, as outlined on the [course schedule](../schedule/index.qmd).
+Unless prior arrangements are made with the instructor, all students should use
+their personal computer to take these skill-checks on the scheduled date and to
+complete it in the stated location while taking no more than the required
+amount of time. Designed to prepare learners for an executable examination,
+each skill-check is an in-class executable assessment that students complete
+through the use of GitHub, VS Code, and the computer security and programming
+tools on their laptops.
 
-- **Computer Security Checks**: The computer security checks in-class, online
-cumulative assessments covering all prior technical material from the course
-sessions, as outlined on the [course schedule](../schedule/index.qmd). Unless
-prior arrangements are made with the instructor, all students should use their
-computer to take these skill-checks on the scheduled date and to complete it in
-the stated location while taking no more than the required amount of time.
-Designed to prepare learners for an in-person assessment, each skill-check
-involves the completion of an automatically assessed online, form-based
-assessment and/or a brief, in-person assessment with the course instructor.
+- **Computer Security Checks**: The computer security checks are in-class,
+online and in-person cumulative assessments covering all prior technical
+material from the course sessions, as outlined on the [course
+schedule](../schedule/index.qmd). Unless prior arrangements are made with the
+instructor, all students should use their computer to take these skill-checks
+on the scheduled date and to complete it in the stated location while taking no
+more than the required amount of time. Designed to prepare learners for the
+discussion of computer security concepts during an in-person assessment, each
+security-check involves the completion of an automatically assessed online,
+form-based assessment and/or a brief, in-person assessment completed
+interactively with the course instructor.
 
 - **Midterm Examination**: Each midterm examination is an online, executable,
 and cumulative assessment covering all prior material from the course sessions,
