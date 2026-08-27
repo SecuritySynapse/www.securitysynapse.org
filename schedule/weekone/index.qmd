@@ -23,7 +23,7 @@ Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 ## Activities
 
 - {{< iconify fa6-solid people-line size=18px >}} **Monday and Wednesday**: Course introduction
-- {{< iconify fa6-solid people-line size=18px >}} **Friday**: No programming skill check or in-person assessment
+- {{< iconify fa6-solid people-line size=18px >}} **Friday**: Course introduction
 - {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Laboratory session
   - Introduction to the computer security course
   - Highlighting the concept of a security synapse
