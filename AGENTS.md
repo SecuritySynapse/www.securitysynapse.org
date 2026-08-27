@@ -103,6 +103,29 @@ the Quarto-based website for Security Synapse.
   Iconify shortcode style, for example:
   `{{< iconify fa6-solid lightbulb >}}`.
 
+### Narrative Signposting
+
+Use a deliberate three-part teaching rhythm throughout a slide deck:
+
+1. **Tell them what you will tell them**: begin a section with a concise
+   signpost that previews the concepts, examples, or questions that follow
+2. **Tell them**: teach the concepts and show the implementation without
+   repeating the preview on every slide
+3. **Tell them what you told them**: close the section with a concise summary
+   that maps the examples back to the main concepts
+
+- A preview signpost should identify what is coming and why it matters
+- A recap signpost should identify what was learned and how the pieces connect
+- Keep signposting slides concise; they should orient learners, not become a
+  second lecture
+- Use a level-one heading only as a short section divider, then put the preview
+  or teaching content on a level-two slide
+- Do not create a redundant recap when a nearby slide already summarizes the
+  same material
+- For code sections, preview the security concepts first, show the code and
+  output next, and end with a summary that connects the behavior to the
+  vocabulary from the assigned reading
+
 ## Week Two Content Rules
 
 - Week Two should visibly connect code to CSP Chapter 1.
