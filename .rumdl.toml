@@ -1,0 +1,14 @@
+# Configuration file for the rumdl
+# Markdown linter and formatter.
+# Reference: https://rumdl.dev/
+
+[global]
+# Use the Quarto flavor so that rumdl understands
+# executable code chunks, shortcodes, and divs.
+flavor = "quarto"
+
+# Preserve revealjs slide structure: the deck uses
+# "#" for section slides and "##" for sub-slides,
+# so multiple top-level headings are intentional.
+[MD025]
+enabled = false
