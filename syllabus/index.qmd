@@ -272,11 +272,12 @@ as outlined on the [course schedule](../schedule/index.qmd). Unless prior
 arrangements are made with the instructor, all students should use their
 computer to take these tests on the scheduled date and to complete it in the
 stated location while taking no more than the required amount of time. Each
-midterm is an executable examination that students will complete through the use
-of GitHub, VS Code, and their laptop's computer security and programming tools.
-Students may use external sources, including artificial intelligence coding
-assistants, during the completion of a midterm examination provided that they
-cite these sources and explain how they used them to complete the examination.
+midterm is an executable examination that students will complete through the
+use of GitHub, VS Code, and their laptop's computer security and programming
+tools. Students may use external sources, including artificial intelligence
+coding assistants, during the completion of a midterm examination provided that
+they cite these sources and explain, in detail, how they used them to complete
+the examination.
 
 - **Final Examination**: The final examination is an online, executable,
 cumulative assessment covering all of the material during all of the course
@@ -288,8 +289,8 @@ The cumulative final is an executable examination that a student will complete
 through the use of GitHub, VS Code, and the computer security and programming
 tools installed on their laptops. Students may use external sources, including
 artificial intelligence coding assistants, during the completion of the final
-examination provided that they cite these sources and explain how they used them
-to complete the examination.
+examination provided that they cite these sources and explain, in detail, how
+they used them to complete the examination.
 
 - **Security Survey Projects**: These two-week assignments invite students to make "security synapses" as they survey the implementation details of various computer security concepts such as cryptography, cryptanalysis, and malware. These projects are completed through the design, implementation, documentation, and evaluation of computer programs in languages such as Python, Java, JavaScript, C, Go, and Rust. Each project invites a learner to (a) understand fundamental concepts in computer security, (b), implement those concepts into a working prototype, (c) evaluate the prototype through well-designed experiments, (d) give a demonstration of the prototype to both the course instructor and their peers, and (e) give a presentation to document their learning adventure. Students may use external sources, including artificial intelligence coding assistants, during the completion of a security survey project as long as that they cite these sources and explain how they used them to complete the various components of their project's implementation, evaluation, and writing. Beyond their prepared slides, students may not consult any external sources, including but not limited to artificial coding assistants, when they give demonstrations or presentations.
 
