@@ -391,9 +391,10 @@ programs on your laptop?
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.9em;"}
 
-**Key Questions**: What is the attack vector for this program? How would you
-make it more secure? Could a different programming language or a security
-tool detect and/or prevent this memory leak?
+**Insight**: For each upcoming Python example, identify the **CIA** objective
+at risk, the **AAA** decision involved, and the **PDR** control that prevents,
+detects, or responds to the problem. *Make sure that you are learning the lingo
+and working like a security engineer!*
 
 :::
 
