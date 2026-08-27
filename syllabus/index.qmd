@@ -327,10 +327,10 @@ work will be accepted after the deadline.
 
 Using a report that the instructor shares with you through your GitHub
 repositories devoted to work in the field of computer security, you will
-privately receive a grade for and/or feedback on your course projects. Your
-grade will be a function of whether or not you (a) completed work that fulfills
-the project's specification and (b) submitted it by the deadline to the stated
-platform.
+privately receive a grade for and/or feedback on your course projects and all
+types of course assessments. Your grade will be a function of whether or not
+you (a) completed work that fulfills the specification for the project or
+assessment and (b) submitted it by the deadline to the stated platform.
 
 ##### Security Synapse Tokens
 
@@ -339,7 +339,7 @@ secure seven calendar days of time to revise an already assessed project and
 subsequently request a reassessment of it and receive a new assessment score.
 You may use a token to request the reassessment of revised work that you
 completed as part of specific tasks for a security survey project, a checkpoint
-of the security summit project, or either of the mid-term examinations. Students
+of the security summit project, or either of the midterm examinations. Students
 may not request to use a token to re-assess their class participation, their
 in-person assessments, their computer security checks, their programming skill
 checks, their final examination, or their final report for the computer security
