@@ -32,4 +32,5 @@ Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
     - *Options for your article*:
       - Popular press article that explains a security incident
       - Technical article that explains a computer security concept
-      - Research paper that introduces new theory or practice in computer security
+      - Research paper that introduces new theory, practice application, or
+      empirical study in the field of computer security
