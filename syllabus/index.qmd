@@ -144,8 +144,8 @@ posts, and popular press articles in computer security.
   [CSP](https://web.njit.edu/~rt494/security/),
   [CCP](https://inventwithpython.com/cracking/), and
   [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
-  - **Week Two**: Chapter one in [CSP](https://web.njit.edu/~rt494/security/) 
-  - **Week Three**: Chapter two in [CSP](https://web.njit.edu/~rt494/security/) 
+  - **Week Two**: Chapter one in [CSP](https://web.njit.edu/~rt494/security/)
+  - **Week Three**: Chapter two in [CSP](https://web.njit.edu/~rt494/security/)
   - **Week Four**: Chapters four through twelve in
   [CCP](https://inventwithpython.com/cracking/)
   - **Week Five**: Chapter three in [CSP](https://web.njit.edu/~rt494/security/)
@@ -157,13 +157,14 @@ posts, and popular press articles in computer security.
   - **Week Seven**: Chapters one and two in [JOY](https://joyofcryptography.com/)
   - **Week Eight**: Chapter four and five in
   [JOY](https://joyofcryptography.com/), security summit project proposals
-  - **Week Nine**: Chapter four and five in [CSP](https://web.njit.edu/~rt494/security/) 
+  - **Week Nine**: Chapter four and five in [CSP](https://web.njit.edu/~rt494/security/)
   - **Week Ten**: Chapter six in [CSP](https://web.njit.edu/~rt494/security/)
   and chapter fifty-four in [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
   - **Week Eleven**: Review all prior chapters in
   [CSP](https://web.njit.edu/~rt494/security/),
   [CCP](https://inventwithpython.com/cracking/),
- [JOY](https://joyofcryptography.com/), and
+
+  [JOY](https://joyofcryptography.com/), and
   [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 - **Module Three**: *Week Twelve through Week Sixteen*
@@ -180,7 +181,7 @@ posts, and popular press articles in computer security.
   [CSP](https://web.njit.edu/~rt494/security/),
   [CCP](https://inventwithpython.com/cracking/),
   [JOY](https://joyofcryptography.com/), and
-  [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
+  [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 ::: {.callout-note appearance="minimal" title="Textbook Abbreviations" collapse="false"}
 
@@ -188,7 +189,7 @@ posts, and popular press articles in computer security.
 Success](https://web.njit.edu/~rt494/security/)
 - **CCP**: [Cracking Codes with Python](https://inventwithpython.com/cracking/)
 - **JOY**: [Joy of Cryptography](https://joyofcryptography.com/)
-- **OSTEP**: [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
+- **OSTEP**: [Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 :::
 
@@ -201,7 +202,6 @@ categories. All of these percentages are approximate and, if the need to do so
 presents itself, the course instructor may, for instance, change the assigned
 percentages during the academic semester.
 
-
 | Category                 | Percentage |
 |--------------------------|------------|
 | Class Participation      |   5%       |
@@ -212,7 +212,6 @@ percentages during the academic semester.
 | Final Examination        |  10%       |
 | Security Summit Project  |  15%       |
 | Security Survey Projects |  25%       |
-
 
 These assessment categories have the following definitions:
 
@@ -264,14 +263,17 @@ more than the required amount of time. Designed to prepare learners for the
 discussion of computer security concepts during an in-person assessment, each
 security-check involves the completion of an automatically scored online,
 form-based assessment and a brief, in-person assessment completed interactively
-with the course instructor.
+with the course instructor. Unless the instructor provides access to a
+computational device, the in-person assessments invite students to demonstrate
+their knowledge of computer security without the aid of any external sources,
+including, but not limited to, software tools running on a student laptop.
 
 - **Midterm Examination**: Each midterm examination is an online, executable,
 and cumulative assessment covering all prior material from the course sessions,
 as outlined on the [course schedule](../schedule/index.qmd). Unless prior
 arrangements are made with the instructor, all students should use their
-computer to take these tests on the scheduled date and to complete it in the
-stated location while taking no more than the required amount of time. Each
+computer to take these examinations on the scheduled date and to complete it in
+the stated location while taking no more than the required amount of time. Each
 midterm is an executable examination that students will complete through the
 use of GitHub, VS Code, and their laptop's computer security and programming
 tools. Students may use external sources, including artificial intelligence
@@ -292,7 +294,7 @@ artificial intelligence coding assistants, during the completion of the final
 examination provided that they cite these sources and explain, in detail, how
 they used them to complete the examination.
 
-- **Security Survey Projects**: These two-week assignments invite students to make "security synapses" as they survey the implementation details of various computer security concepts such as cryptography, cryptanalysis, and malware. These projects are completed through the design, implementation, documentation, and evaluation of computer programs in languages such as Python, Java, JavaScript, C, Go, and Rust. Each project invites a learner to (a) understand fundamental concepts in computer security, (b), implement those concepts into a working prototype, (c) evaluate the prototype through well-designed experiments, (d) give a demonstration of the prototype to both the course instructor and their peers, and (e) give a presentation to document their learning adventure. Students may use external sources, including artificial intelligence coding assistants, during the completion of a security survey project as long as that they cite these sources and explain how they used them to complete the various components of their project's implementation, evaluation, and writing. Beyond their prepared slides, students may not consult any external sources, including but not limited to artificial coding assistants, when they give demonstrations or presentations.
+- **Security Survey Projects**: These two-week assignments invite students to make "security synapses" as they survey the implementation details of various computer security concepts such as fuzzing, cryptography, cryptanalysis, and malware. These projects are completed through the design, implementation, documentation, and evaluation of computer programs in languages such as Python, Java, JavaScript, C, Go, and Rust. Each project invites a learner to (a) understand fundamental concepts in computer security, (b), implement those concepts into a working prototype, (c) evaluate the prototype through well-designed experiments, (d) give a demonstration of the prototype to both the course instructor and their peers, and (e) give a presentation to document their learning adventure. Students may use external sources, including artificial intelligence coding assistants, during the completion of a security survey project as long as that they cite these sources and explain how they used them to complete the various components of their project's implementation, evaluation, and writing. Beyond their prepared slides, students may not consult any external sources, including but not limited to artificial coding assistants, when they give demonstrations or presentations.
 
 - **Security Summit Project**: Started in the eighth week of the academic
 semester, this long-term project invites students to propose, implement,
