@@ -487,7 +487,7 @@ influence the lives of many people. Let's embark on this journey of discovery
 and innovation, harnessing the "security synapses" that we make between the
 high-level concepts and low-level implementation details in the field of
 computer security. At the start of this class, I invite you to join together
-with the instructor and your fellow learners in computer security adventure!
+with the instructor and your fellow learners in a computer security adventure!
 
 ::: {.callout-note appearance="minimal" title="External Learners"}
 
