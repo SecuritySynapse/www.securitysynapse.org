@@ -399,14 +399,15 @@ This course will primarily use GitHub and Discord for all course communication.
 We will use GitHub for the sharing of both source code and documentation for
 course projects and for reporting issues in those materials. We will use two
 distinct Discord servers for all course discussions. The [Security Synapse
-Discord Server](https://discord.gg/juUXz7d4Jh) provides a way for members of the
-security synapse community to use text and video to chat with each other and
-will be the main forum for discussing the professional and technical content in
-the field of computer security. The [Allegheny College Computer Science Discord
-Server](https://discord.gg/CS2h9kXzX6) will be the main forum for Department of
-Computer Science announcements. Finally, any content that a student wants the
-instructor to assess (e.g., the work for a security survey project or a
-checkpoint of the security summit project) must be in a GitHub repository.
+Discord Server](https://discord.gg/juUXz7d4Jh) provides a way for members of
+the security synapse community to use text and video to chat with each other
+and will be the main forum for discussing the professional and technical
+content in the field of computer security. The [Allegheny College Computer
+Science Discord Server](https://discord.gg/CS2h9kXzX6) will be the main forum
+for Department of Computer Science announcements. Finally, any content that a
+student wants the instructor to assess (e.g., the work for a security survey
+project or a checkpoint of the security summit project) must be in a GitHub
+repository approved for use in this course.
 
 #### Using Email
 
