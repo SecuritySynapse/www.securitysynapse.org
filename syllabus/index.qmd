@@ -422,13 +422,13 @@ instructor if you do not have this handbook.
 #### Honor Code
 
 The Allegheny College Academic bulletin describes The Academic Honor Program
-that governs the entire academic program at Allegheny College. The Honor Program
-applies to all work that is submitted for academic credit or to meet non-credit
-requirements for graduation at Allegheny College. This includes all work
-assigned for this class (e.g., executable examinations and course assignments).
-All students who have enrolled in the College will work under the Honor Program.
-Each student who matriculates at the College acknowledges this Honor Code
-pledge:
+that governs the entire academic program at Allegheny College. The Honor
+Program applies to all work that is submitted for academic credit or to meet
+non-credit requirements for graduation at Allegheny College. This includes all
+work assigned for this class (e.g., programming skill checks, knowledge checks,
+executable examinations, and course assignments). All students who have
+enrolled in the College will work under the Honor Program. Each student who
+matriculates at the College acknowledges this Honor Code pledge:
 
 > I hereby recognize and pledge to fulfill my responsibilities, as
 > defined in the Honor Code, and to maintain the integrity of both
