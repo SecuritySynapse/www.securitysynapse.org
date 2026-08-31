@@ -163,7 +163,6 @@ posts, and popular press articles in computer security.
   - **Week Eleven**: Review all prior chapters in
   [CSP](https://web.njit.edu/~rt494/security/),
   [CCP](https://inventwithpython.com/cracking/),
-
   [JOY](https://joyofcryptography.com/), and
   [OSTEP](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
