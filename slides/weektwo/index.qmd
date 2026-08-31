@@ -505,37 +505,45 @@ for username, action in requests:
 
 ## Access Control List: Lessons
 
-::: {.incremental style="font-size: 0.9em;"}
+::: {.incremental style="font-size: 0.8em;"}
 
-- Authentication identifies `alice`; authorization limits her actions.
-- **Least privilege** lets an analyst read, but not delete.
-- Missing roles and permissions receive **DENY**.
-- The decision log supplies **accounting** evidence for investigation.
+- Authentication identifies `alice`; authorization limits her actions
+- ACL maps identity, resource, and action to a decision
+- **Least privilege** lets an analyst `read`, but not `delete`
+- **Deny by default** blocks unknown roles and new actions
+- Broad rules enable privilege creep and lateral movement
+- The decision log supplies **accounting** evidence for investigation
+- Review ACLs regularly and revoke stale permissions quickly
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.2em; font-size: 0.82em;"}
+::: {.fragment .fade .boxed-content style="margin-top: 0.15em; font-size: 0.74em;"}
 
 **Key Questions**: Who approves a new permission? What happens when an
-attacker compromises an analyst's account?
+attacker compromises an analyst's account? How does deny by default
+limit blast radius and support a least-privilege plan?
 
 :::
 
 ## Availability: Can We Recover?
 
-::: {.incremental style="margin-top: -0.25em; font-size: 0.92em;"}
+::: {.incremental style="margin-top: -0.25em; font-size: 0.8em;"}
 
-- Ransomware makes the **live** copy unavailable.
-- An isolated backup gives the security plan a recovery option.
-- Restoration is a **reaction** that returns the asset to service.
-- Backups improve availability, but do not undo data theft.
+- Ransomware makes the **live** copy unavailable
+- An isolated backup gives the security plan a recovery option
+- Restoration is a **reaction** that returns the asset to service
+- Backups improve availability, but do not undo data theft
+- Test restores regularly; an untested backup is not a control
+- Measure **RPO** for data loss and **RTO** for recovery time
+- Keep the backup offline, encrypted, and access-controlled
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.2em; font-size: 0.82em;"}
+::: {.fragment .fade .boxed-content style="margin-top: 0.15em; font-size: 0.74em;"}
 
-**Key Questions**: How often should backups run? What evidence shows that a
-restore is trustworthy?
+**Key Questions**: How often should backups run? What evidence
+shows that a restore is trustworthy? Who verifies integrity
+after recovery and how is the check logged for accounting?
 
 :::
 
@@ -562,63 +570,70 @@ print("Recovered records:", len(restored["vulnerabilities"]))
 
 ## Backup and Restore: Lessons
 
-::: {.incremental style="font-size: 0.9em;"}
+::: {.incremental style="font-size: 0.8em;"}
 
-- The live copy is damaged; the isolated backup remains usable.
-- Restoration is a **reaction** that returns the asset to service.
-- Backups improve **availability**, but do not undo data theft.
-- **RPO** measures data loss; **RTO** measures recovery time.
+- The live copy is damaged; the isolated backup remains usable
+- Restoration is a **reaction** that returns the asset to service
+- Backups improve **availability**, but do not undo data theft
+- **RPO** measures data loss; **RTO** measures recovery time
+- Hashing with `compute_hash` detects backup tampering
+- Keep the backup offline and test the restore before you need it
+- Log when the backup was made, verified, and restored
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.2em; font-size: 0.82em;"}
+::: {.fragment .fade .boxed-content style="margin-top: 0.15em; font-size: 0.74em;"}
 
-**Key Questions**: Where should the backup live? How can a team test recovery
-without waiting for a real ransomware incident?
+**Key Questions**: Where should the backup live? How can a team test
+recovery without waiting for a real incident? What proves that the
+backup has not been altered and that the restore is safe?
 
 :::
 
 ## Three New Security Synapses
 
-::: {.columns style="margin-top: 0.25em;"}
+::: {.columns style="margin-top: 0.15em;"}
 
-::: {.column style="width: 33%; font-size: 0.78em;"}
+::: {.column style="width: 33%; font-size: 0.76em;"}
 
 ::: {.fragment .fade}
 
 ### **Authentication**
 
-- Credential stuffing
-- Password reuse
-- Accounting events
+- Leaked pairs fuel stuffing
+- Reuse breaks confidentiality
+- Log events for detection
+- Hash, MFA, and lockout
 
 :::
 
 :::
 
-::: {.column style="width: 33%; font-size: 0.78em;"}
+::: {.column style="width: 33%; font-size: 0.76em;"}
 
 ::: {.fragment .fade}
 
 ### **Authorization**
 
-- ACL and least privilege
-- Deny by default
-- Decision evidence
+- Map user, resource, action
+- Least privilege, deny by default
+- Log each allow and deny
+- Review roles often
 
 :::
 
 :::
 
-::: {.column style="width: 33%; font-size: 0.78em;"}
+::: {.column style="width: 33%; font-size: 0.76em;"}
 
 ::: {.fragment .fade}
 
 ### **Availability**
 
-- Ransomware impact
-- Isolated backup
-- Tested recovery
+- Ransomware denies service
+- Isolated backup restores
+- Hash checks integrity
+- Track RPO and RTO
 
 :::
 
@@ -626,10 +641,10 @@ without waiting for a real ransomware incident?
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.15em; font-size: 0.8em;"}
+::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.74em;"}
 
-**Chapter 1 connection**: use **AAA**, **CIA**, and **PDR** to ask who can act,
-what can happen, how we will know, and how we will recover.
+**Chapter 1 connection**: use **AAA**, **CIA**, and **PDR** to ask who
+can act, what can happen, how we will know, and how we will recover
 
 :::
 
