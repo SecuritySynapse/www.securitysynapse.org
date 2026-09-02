@@ -382,10 +382,10 @@ programs on your laptop?
 
 ::: fragment
 
-- **Authentication**: Reused Credentials
-- **Authorization**: Who Can Change the Inventory?
-- **Availability**: Can We Recover?
-- **Access Control List**: Who Can Do What?
+- **Authentication**: Reused credentials
+- **Authorization**: Who can change the inventory?
+- **Availability**: Can we recover?
+- **Access Control List**: Who can do what?
 
 :::
 
@@ -400,7 +400,7 @@ and working like a security engineer!*
 
 ## Authentication: Reused Credentials
 
-::: {.incremental style="margin-top: -0.25em; font-size: 0.8em;"}
+::: {.incremental style="margin-top: -0.35em; font-size: 0.8em;"}
 
 - Credential stuffing reuses password pairs exposed elsewhere
 - The attacker exploits reuse instead of guessing at random
@@ -440,7 +440,7 @@ for username, password in leaked_pairs:
 print("Accounting events:", len(events))
 ```
 
-## Credential Stuffing: Lessons
+## Credential Stuffing: Lessons Learned
 
 ::: {.incremental style="font-size: 0.9em;"}
 
@@ -457,7 +457,7 @@ print("Accounting events:", len(events))
 **Key Questions**: Which control prevents credential reuse? What should happen
 after an unusual burst of failed logins? What evidence should a defender record
 without logging passwords? How can a lockout improve security without making the
-system unusable?
+system unusable? Any questions?
 
 :::
 
@@ -519,9 +519,9 @@ for username, action in requests:
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.15em; font-size: 0.74em;"}
 
-**Key Questions**: Who approves a new permission? What happens when an
-attacker compromises an analyst's account? How does deny by default
-limit blast radius and support a least-privilege plan?
+**Key Questions**: Who approves a new permission? What happens when an attacker
+compromises an analyst's account? How does "deny by default" limit blast radius
+and support a least-privilege plan? Any questions about ACLs?
 
 :::
 
@@ -541,9 +541,10 @@ limit blast radius and support a least-privilege plan?
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.15em; font-size: 0.74em;"}
 
-**Key Questions**: How often should backups run? What evidence
-shows that a restore is trustworthy? Who verifies integrity
-after recovery and how is the check logged for accounting?
+**Key Questions**: If you were a systems administrator, how often would you run
+filesystem backups? What evidence shows that a restore is trustworthy? Who
+verifies integrity after recovery and how is this person's check logged for
+accounting?
 
 :::
 
