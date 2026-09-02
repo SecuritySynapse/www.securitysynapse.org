@@ -584,9 +584,10 @@ print("Recovered records:", len(restored["vulnerabilities"]))
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.15em; font-size: 0.74em;"}
 
-**Key Questions**: Where should the backup live? How can a team test
-recovery without waiting for a real incident? What proves that the
-backup has not been altered and that the restore is safe?
+**Key Questions**: Where should the system backup live? How can a team test
+recovery without waiting for a real incident? What proves that the backup has
+not been altered and that the restore is safe? How does this improve
+availability?
 
 :::
 
