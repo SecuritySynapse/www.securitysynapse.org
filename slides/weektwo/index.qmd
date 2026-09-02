@@ -230,8 +230,8 @@ encrypted_data = encrypt_file('security.json', key)
 key = Fernet.generate_key()
 # encrypt the file
 encrypted_data = encrypt_file('security.json', key)
-# display the first 500 characters of the encrypted output
-print(encrypted_data[:500])
+# display the first 300 characters of the encrypted output
+print(encrypted_data[:300])
 ```
 
 ::: {.fragment .fade-up style="margin-top: -0.2em; font-size: 0.9em;"}
