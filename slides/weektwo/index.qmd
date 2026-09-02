@@ -466,9 +466,9 @@ system unusable? Any questions?
 ::: {.incremental style="margin-top: -0.25em; font-size: 0.92em;"}
 
 - Authentication answers **who?** Authorization answers **what?**
-- Inventory roles should receive only the actions they need.
-- **Deny by default** prevents an unknown role from gaining access.
-- Accounting preserves evidence of every authorization decision.
+- Inventory roles should receive only the actions they need
+- **Deny by default** prevents an unknown role from gaining access
+- Accounting preserves evidence of every authorization decision
 
 :::
 
@@ -503,7 +503,7 @@ for username, action in requests:
     print(f"{username}: {action} -> {'ALLOW' if allowed else 'DENY'}")
 ```
 
-## Access Control List: Lessons
+## Access Control List: Lessons Learned
 
 ::: {.incremental style="font-size: 0.8em;"}
 
@@ -520,7 +520,7 @@ for username, action in requests:
 ::: {.fragment .fade .boxed-content style="margin-top: 0.15em; font-size: 0.74em;"}
 
 **Key Questions**: Who approves a new permission? What happens when an attacker
-compromises an analyst's account? How does "deny by default" limit blast radius
+compromises an analyst's account? How does "deny by default" limit "blast radius"
 and support a least-privilege plan? Any questions about ACLs?
 
 :::
@@ -568,7 +568,7 @@ print("Backup intact after attack:", backup_intact)
 print("Recovered records:", len(restored["vulnerabilities"]))
 ```
 
-## Backup and Restore: Lessons
+## Backup and Restore: Lessons Learned
 
 ::: {.incremental style="font-size: 0.8em;"}
 
