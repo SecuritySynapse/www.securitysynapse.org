@@ -542,9 +542,8 @@ and support a least-privilege plan? Any questions about ACLs?
 ::: {.fragment .fade .boxed-content style="margin-top: 0.15em; font-size: 0.74em;"}
 
 **Key Questions**: If you were a systems administrator, how often would you run
-filesystem backups? What evidence shows that a restore is trustworthy? Who
-verifies integrity after recovery and how is this person's check logged for
-accounting?
+backups? What evidence shows that a system restore is trustworthy? Who verifies
+integrity after recovery and how is this person's check logged for accounting?
 
 :::
 
