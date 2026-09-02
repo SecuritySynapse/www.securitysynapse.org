@@ -601,8 +601,8 @@ availability?
 
 ### **Authentication**
 
-- Leaked pairs fuel stuffing
-- Reuse breaks confidentiality
+- Risk of leaked pairs
+- Password reuse
 - Log events for detection
 - Hash, MFA, and lockout
 
@@ -616,9 +616,9 @@ availability?
 
 ### **Authorization**
 
-- Map user, resource, action
-- Least privilege, deny by default
-- Log each allow and deny
+- User, resource, action
+- Least privilege principle
+- Log allow and deny
 - Review roles often
 
 :::
@@ -631,8 +631,8 @@ availability?
 
 ### **Availability**
 
-- Ransomware denies service
-- Isolated backup restores
+- Ransomware attacks
+- Backup and restore
 - Hash checks integrity
 - Track RPO and RTO
 
@@ -642,10 +642,16 @@ availability?
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.25em; font-size: 0.74em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.75em;"}
 
-**Chapter 1 connection**: use **AAA**, **CIA**, and **PDR** to ask who
-can act, what can happen, how we will know, and how we will recover
+- **Chapter 1 connection**: use **AAA**, **CIA**, and **PDR** to ask who
+can act, what can happen, how we will know, and how we will recover! Any questions?
+
+- **CS-403-1**: Correctly identify the **threats** to an application's security and
+describe the **suitable mitigation(s)** for addressing the threats.
+
+- **CS-403-2**: Correctly apply **security principles**, [...], and **cryptography** in
+the modeling and implementation of security solutions.
 
 :::
 
