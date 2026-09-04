@@ -34,12 +34,14 @@ Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 Success](https://web.njit.edu/~rt494/security/)
 
 - {{< iconify fa6-solid lightbulb size=18px >}} **Insight**: Chapter one of
-[CSP](https://web.njit.edu/~rt494/security/) explains that a server demonstrates
-*availability* if it is up and running for valid users. Yet, if a server is
-running a process that contains a defect that results in a system crash, then
-this is a direct threat to its availability. However, since the programs that
-run on servers often have complex input spaces and implementations, it is often
-difficult to quickly find these availability threats.
+[CSP](https://web.njit.edu/~rt494/security/) explains that a server
+demonstrates *availability* if it is up and running for valid users. Yet, if a
+server is running a process that contains a defect that results in a system
+crash, then this is a direct threat to its availability. A program that crashes
+when it is given erroneous inputs is not robust. However, since the programs
+that run on servers often have complex input spaces and implementations, it is
+often difficult to quickly find these availability threats without appropriate
+and automated tool support.
 
 - {{< iconify fa6-solid code size=18px >}} **Task**: This project invites you to
 implement a `serverfuzzer` in the Python programming language that will
@@ -92,8 +94,8 @@ implement a `cryptobenchmark` in the Python programming language that will
 automatically perform a [doubling experiment](https://algorithmology.org/) to
 measure the encryption and decryption performance for the `Fernet` and `rFernet`
 ciphers. This program should randomly generate data and then measure and report
-the time and space overheads arising from the use of the `Fernet` and
-`rFernet` ciphers.
+the time and space overheads arising from the use of, at minimum, the `Fernet`
+and `rFernet` ciphers.
 
 #### Resources
 
@@ -107,7 +109,8 @@ encryption standard as `Fernet`:
 - [fernet-rs: An Implementation of Fernet in Rust](https://github.com/mozilla-services/fernet-rs)
 
 Questions? Share them in the [Security Synapse Discord
-Server](https://discord.gg/juUXz7d4Jh).
+Server](https://discord.gg/juUXz7d4Jh). Want to take this project to the next
+level? Consider meeting with the instructor during office hours!
 
 ### Project Three: Network Monitoring
 
