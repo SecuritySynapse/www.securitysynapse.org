@@ -54,8 +54,8 @@ JSON inputs your `serverfuzzer` should generate!
 #### Resources
 
 To learn more about fuzzing and to gather inspiration for your own
-implementation of the `serverfuzzer`, please consult the following technical
-resources about building fuzzers:
+`serverfuzzer` tool, please consult the following resources about building
+fuzzers:
 
 - [Atheris: A Coverage-Guided, Native Python Fuzzer](https://github.com/google/atheris)
 - [AFL: American Fuzzy Lop, A Security-Oriented Fuzzer](https://github.com/google/AFL)
