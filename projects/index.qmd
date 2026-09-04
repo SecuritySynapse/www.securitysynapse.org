@@ -6,22 +6,22 @@ toc: true
 
 Want to make a "security synapse"? That is to say, do you want to make
 conceptual and practical connections in the field of computer security? Check
-out these projects to learn more about how to apply what you are learning in the
-field of computer security! The security survey projects invite you to complete
-work in fields like fuzzing and cryptography. The long-term security summit
-project offers the scaffolding for learners to complete independent research and
-development in the field of computer security. Each project explores a specific
-topic in connection with content from either accessible online resources or one
-of these online textbooks:
+out these projects to learn more about how to apply what you are learning in
+the field of computer security! The security survey projects invite you to
+complete work in fields like fuzzing and cryptography. The long-term security
+summit project offers the scaffolding for learners to complete independent
+research and development in the field of computer security. Each project
+explores a specific topic in connection with content from extra online
+resources or one of these online textbooks:
 
 - {{< iconify fa6-solid book-open >}} Online textbook called [Computer Systems
-Security: Planning for Success](https://web.njit.edu/~rt494/security/) 
+Security: Planning for Success](https://web.njit.edu/~rt494/security/)
 - {{< iconify fa6-solid book-open >}} Online textbook called [Cracking Codes
-with Python](https://inventwithpython.com/cracking/) 
+with Python](https://inventwithpython.com/cracking/)
 - {{< iconify fa6-solid book-open>}} Online textbook called [The Joy of
 Cryptography](https://joyofcryptography.com/)
 - {{< iconify fa6-solid book-open >}} Online textbook called [Operating Systems:
-Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
+Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 ## Security Survey Projects
 
@@ -45,10 +45,11 @@ difficult to quickly find these availability threats.
 implement a `serverfuzzer` in the Python programming language that will
 automatically fuzz a specific function in a server's implementation.
 Specifically, you will implement a fuzzer that will automatically generate
-certain type of JSON inputs, submit those inputs to an in-memory server, observe
-the output and behavior of the server, and record important details and any
-crashes. As you complete the project, please be mindful that it makes certain
-restrictions of the types of JSON inputs your `serverfuzzer` should generate!
+certain types of JSON inputs, submit those inputs to an in-memory
+server, observe the output and behavior of the server, and record important
+details and any crashes. As you complete the project, please be mindful that
+it places certain restrictions on the types of JSON inputs your
+`serverfuzzer` should generate!
 
 #### Resources
 
@@ -61,13 +62,9 @@ resources about building fuzzers:
 - [Fuzzing: Breaking Things with Random Inputs](https://www.fuzzingbook.org/html/Fuzzer.html)
 - [Property-Based Testing with Hypothesis](https://github.com/HypothesisWorks/hypothesis)
 
-Interested in working on this project? See the [{{< iconify fa6-brands github
-size=18px >}}
-server-fuzzing-starter](https://github.com/SecuritySynapse/server-fuzzing-starter)
-template repository to get started! Questions? Share them in the [Security
-Synapse Discord Server](https://discord.gg/juUXz7d4Jh). Want to take this
-project to the next level? Consider meeting with the course instructor during
-office hours!
+Questions? Share them in the [Security Synapse Discord
+Server](https://discord.gg/juUXz7d4Jh). Want to take this project to the next
+level? Consider meeting with the course instructor during office hours!
 
 ### Project Two: Cryptography Benchmarking
 
@@ -80,7 +77,8 @@ of [Cracking Codes with Python](https://inventwithpython.com/cracking/)
 
 - {{< iconify fa6-solid lightbulb size=18px >}} **Insight**: Chapter four
 through twelve of [CCP](https://inventwithpython.com/cracking/) introduce a wide
-variety of different cryptography algorithms an explain how they may be cracked.
+variety of different cryptography algorithms and explain how they may
+be cracked.
 Even though it is important to understand how to implement these algorithms,
 they are not examples of modern cryptography algorithms like the advanced
 encryption standard (AES). It is also important to point out that different
@@ -92,13 +90,13 @@ trade-offs worthy of additional experimental study.
 implement a `cryptobenchmark` in the Python programming language that will
 automatically perform a [doubling experiment](https://algorithmology.org/) to
 measure the encryption and decryption performance for the `Fernet` and `rFernet`
-ciphers. This program should randomly generate data and the measure and report
-the time and space overheads arising from use of the `Fernet` and `rFernet`
-ciphers.
+ciphers. This program should randomly generate data and then measure and report
+the time and space overheads arising from the use of the `Fernet` and
+`rFernet` ciphers.
 
 #### Resources
 
-To learn more about fuzzing and to gather inspiration for your own
+To learn more about cryptography and to gather inspiration for your own
 implementation of the `cryptobenchmark`, please consult the following technical
 resources about cryptography using various implementations of the advanced
 encryption standard as `Fernet`:
@@ -107,17 +105,14 @@ encryption standard as `Fernet`:
 - [rFernet: A Rust-Based Implementation of AES for Python](https://github.com/aviramha/rfernet)
 - [fernet-rs: An Implementation of Fernet in Rust](https://github.com/mozilla-services/fernet-rs)
 
-Interested in working on this project? See the [{{< iconify fa6-brands github
-size=18px >}}
-server-fuzzing-starter](https://github.com/SecuritySynapse/cryptography-benchmarking-starter)
-template repository to get started! Questions? Share them in the [Security
-Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
+Questions? Share them in the [Security Synapse Discord
+Server](https://discord.gg/juUXz7d4Jh).
 
 ### Project Three: Network Monitoring
 
 #### Preparation
 
-- {{< iconify fa6-solid book-open size=18px >}} **Review**: Chapters four and five 
+- {{< iconify fa6-solid book-open size=18px >}} **Review**: Chapters four and five
 of [Computer Systems Security: Planning for
 Success](https://web.njit.edu/~rt494/security/)
 
@@ -149,11 +144,11 @@ communication with either of the aforementioned protocols. The
 
 #### Resources
 
-To learn more about fuzzing and to gather inspiration for your own
-implementation of the `networkmonitor`, please consult the following technical
-resources about the network communication with either sockets or XML-RPC in
-Python, the TCP/IP protocol and the layout of their headers and payloads, and
-various network monitoring techniques:
+To learn more about network monitoring and to gather inspiration for
+your own implementation of the `networkmonitor`, please consult the
+following technical resources about network communication with either
+sockets or XML-RPC in Python, the TCP/IP protocol and the layout of
+their headers and payloads, and various network monitoring techniques:
 
 - **IP Header Structure**
   - [IPv4 Protocol Description on Wikipedia](https://en.wikipedia.org/wiki/IPv4)
@@ -171,11 +166,8 @@ various network monitoring techniques:
   - [Python Struct Library](https://docs.python.org/3/library/struct.html)
   - [Regarding struct.unpack() in Python](https://stackoverflow.com/questions/20768107/regarding-struct-unpack-in-python)
 
-Interested in working on this project? See the [{{< iconify fa6-brands github
-size=18px >}}
-network-monitoring-starter](https://github.com/SecuritySynapse/network-monitoring-starter)
-template repository to get started! Questions? Share them in the [Security
-Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
+Questions? Share them in the [Security Synapse Discord
+Server](https://discord.gg/juUXz7d4Jh).
 
 ### Project Four: Program Tracing
 
@@ -192,9 +184,9 @@ employed security solutions that can prevent attacks on computer security. A
 layered security approach that prevents the insertion of malware into a computer
 program may involve tracing (or, monitoring) the program's execution to discover
 what instructions it executes and how it accesses memory. Having access to a
-program trace can help a security engineer to discern when it is infect with
-malware. Program tracing can also be used to analyze the behavior of malware to
-understand how it operates and to aid in its detection.
+program trace can help a security engineer to discern when it is infected
+with malware. Program tracing can also be used to analyze the behavior of
+malware to understand how it operates and to aid in its detection.
 
 - {{< iconify fa6-solid code size=18px >}} **Task**: This project invites you to
 implement a `programtracer` in the Python programming language that observes the
@@ -222,7 +214,7 @@ format. The `programtracer` tool should have these features:
   a variable is accessed by all of the program's instructions, and the number of
   unique values stored in the variables accessed by the instructions.
   - **Trace Comparison**: A module that compares two or more traces and surfaces
-  the similarities and differences between the them. Examples of trace
+  the similarities and differences between them. Examples of trace
   comparison operators could include pointing out differences in the executed
   instructions or variable accesses. This feature would be useful in the context
   of malware analysis to compare the behavior of one version of a malware to the
@@ -255,10 +247,10 @@ broadly follows these steps:
   - **Analyze the Trace**: For each selected program and its test suite, use the
   `programtracer` tool's analysis features to gather information about the
   trace. This includes, but is not limited to, the following types of data:
-      - The number of instructions in the trace.
-      - The number of times each instruction was executed.
-      - The number of times variables were accessed by instructions.
-      - The number of unique values stored in the accessed variables.
+    - The number of instructions in the trace.
+    - The number of times each instruction was executed.
+    - The number of times variables were accessed by instructions.
+    - The number of unique values stored in the accessed variables.
   - **Compare Traces**: After making a change to the source code of each Python
   program, run the `programtracer` tool on it. Manually compare the traces that
   arise from this modified program and the original to identify the similarities
@@ -275,53 +267,50 @@ broadly follows these steps:
   add it to the experiment report.
   - **Report Results**: Summarize the findings from the experiment in a report.
   The report should include:
-      - An overview of the selected Python program and test suite.
-      - A description of the trace output and its verification.
-      - Results from the trace analysis, including any notable patterns or
+    - An overview of the selected Python program and test suite.
+    - A description of the trace output and its verification.
+    - Results from the trace analysis, including any notable patterns or
       insights.
-      - A comparison of different traces, highlighting key differences.
-      - Efficiency results, including time overhead metrics and trace sizes.
-      - Challenges encountered and how they were addressed.
+    - A comparison of different traces, highlighting key differences.
+    - Efficiency results, including time overhead metrics and trace sizes.
+    - Challenges encountered and how they were addressed.
 
 #### Resources
 
 Your `programtracer` will take as input a Python program and/or a Python
 program's test suite, and then produce a detailed trace of the program's
-behavior.To learn more about fuzzing and to gather inspiration for your own
-implementation of the `programtracer`, please consult the following technical
-resources about techniques for tracing Python programs for program
-understanding, debugging, and malware analysis:
+behavior. To learn more about program tracing and to gather inspiration for
+your own implementation of the `programtracer`, please consult the
+following technical resources about techniques for tracing Python programs
+for program understanding, debugging, and malware analysis:
 
 - **Concepts**: Introduction to program analysis and dynamic malware analysis.
-    - [10 Malware Detection
+  - [10 Malware Detection
     Techniques](https://www.crowdstrike.com/en-us/cybersecurity-101/malware/malware-detection/)
-    - [What is a Malware Signature and How Does it
+  - [What is a Malware Signature and How Does it
     Work?](https://www.sentinelone.com/blog/what-is-a-malware-file-signature-and-how-does-it-work/)
-    - [Tracing Executions](https://www.debuggingbook.org/beta/html/Tracer.html)
-    - [Tracking Failure
+  - [Tracing Executions](https://www.debuggingbook.org/beta/html/Tracer.html)
+  - [Tracking Failure
     Origins](https://www.debuggingbook.org/beta/html/Slicer.html)
 - **Packages**: Built-in packages for program tracing in Python
-    - [Python `sys`](https://docs.python.org/3/library/sys.html)
-    - [Python
+  - [Python `sys`](https://docs.python.org/3/library/sys.html)
+  - [Python
     `settrace`](https://docs.python.org/3/library/sys.html#sys.settrace)
-    - [Python
+  - [Python
     `monitoring`](https://docs.python.org/3/library/sys.monitoring.html)
-    - [Python `trace`](https://docs.python.org/3/library/trace.html)
-    - [Python `inspect`](https://docs.python.org/3/library/inspect.html)
-    - [Python `dis`](https://docs.python.org/3/library/dis.html)
-    - [Python `ast`](https://docs.python.org/3/library/ast.html)
+  - [Python `trace`](https://docs.python.org/3/library/trace.html)
+  - [Python `inspect`](https://docs.python.org/3/library/inspect.html)
+  - [Python `dis`](https://docs.python.org/3/library/dis.html)
+  - [Python `ast`](https://docs.python.org/3/library/ast.html)
 - **Tools**: Tools for program tracing in Python
-    - [`coverage.py`](https://github.com/nedbat/coveragepy)
-    - [`line_profiler`](https://github.com/pyutils/line_profiler)
-    - [`python-hunter`](https://github.com/ionelmc/python-hunter)
-    - [`slipcover`](https://github.com/plasma-umass/slipcover)
-    - [`scalene`](https://github.com/plasma-umass/scalene)
+  - [`coverage.py`](https://github.com/nedbat/coveragepy)
+  - [`line_profiler`](https://github.com/pyutils/line_profiler)
+  - [`python-hunter`](https://github.com/ionelmc/python-hunter)
+  - [`slipcover`](https://github.com/plasma-umass/slipcover)
+  - [`scalene`](https://github.com/plasma-umass/scalene)
 
-Interested in working on this project? See the [{{< iconify fa6-brands github
-size=18px >}}
-network-monitoring-starter](https://github.com/SecuritySynapse/program-tracing-starter)
-template repository to get started! Questions? Share them in the [Security
-Synapse Discord Server](https://discord.gg/juUXz7d4Jh).
+Questions? Share them in the [Security Synapse Discord
+Server](https://discord.gg/juUXz7d4Jh).
 
 ### Security Summit Project: Long-Term Project
 
@@ -332,11 +321,11 @@ invites learners to propose and conduct their own independent project, it is
 important that they should read, in addition to any relevant online resources,
 all of the covered chapters in the following textbooks:
   - {{< iconify fa6-solid book-open >}} [Computer Systems Security: Planning
-  for Success](https://web.njit.edu/~rt494/security/) 
+  for Success](https://web.njit.edu/~rt494/security/)
   - {{< iconify fa6-solid book-open >}} [Cracking Codes with
-  Python](https://inventwithpython.com/cracking/) 
+  Python](https://inventwithpython.com/cracking/)
   - {{< iconify fa6-solid book-open >}} [Operating Systems: Three Easy
-  Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/) 
+  Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 - {{< iconify fa6-solid code size=18px >}} **Tasks**: This project invites you to
 complete an independent research project in the field of computer security.
@@ -354,8 +343,8 @@ complete an independent research project in the field of computer security.
     - Furnish a demonstration of project feasibility through code segment(s)
     - Overview at least one empirical result from your preliminary experiments
     - Give a list of tasks that you plan to complete after the status update
-  - {{< iconify fa6-solid diagram-project size=18px >}} **Tasks for the Lighting Talk**
-    - Prepare a slide deck to support a five to six minute lightning talk
+  - {{< iconify fa6-solid diagram-project size=18px >}} **Tasks for the Lightning Talk**
+    - Prepare a slide deck to support a five- to six-minute lightning talk
     - Confirm that the slide deck contains all of the following elements:
       - Title slide with the project title, your name, and the course name
       - Overview slide with the project's scientific and engineering goals
