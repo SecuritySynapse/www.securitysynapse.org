@@ -59,12 +59,13 @@ resources about building fuzzers:
 
 - [Atheris: A Coverage-Guided, Native Python Fuzzer](https://github.com/google/atheris)
 - [AFL: American Fuzzy Lop, A Security-Oriented Fuzzer](https://github.com/google/AFL)
+- [AFL++: A fuzzing framework built as a descendant of the original AFL](https://aflplus.plus/)
 - [Fuzzing: Breaking Things with Random Inputs](https://www.fuzzingbook.org/html/Fuzzer.html)
 - [Property-Based Testing with Hypothesis](https://github.com/HypothesisWorks/hypothesis)
 
 Questions? Share them in the [Security Synapse Discord
 Server](https://discord.gg/juUXz7d4Jh). Want to take this project to the next
-level? Consider meeting with the course instructor during office hours!
+level? Consider meeting with the instructor during office hours!
 
 ### Project Two: Cryptography Benchmarking
 
