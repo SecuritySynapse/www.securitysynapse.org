@@ -45,11 +45,11 @@ difficult to quickly find these availability threats.
 implement a `serverfuzzer` in the Python programming language that will
 automatically fuzz a specific function in a server's implementation.
 Specifically, you will implement a fuzzer that will automatically generate
-certain types of JSON inputs, submit those inputs to an in-memory
-server, observe the output and behavior of the server, and record important
-details and any crashes. As you complete the project, please be mindful that
-it places certain restrictions on the types of JSON inputs your
-`serverfuzzer` should generate!
+certain types of JSON inputs, submit those inputs to an in-memory server,
+observe the output and behavior of the server, record important details and any
+crashes, and minimize the JSON inputs that cause a failure. As you complete the
+project, please be mindful that it places certain restrictions on the types of
+JSON inputs your `serverfuzzer` should generate!
 
 #### Resources
 
