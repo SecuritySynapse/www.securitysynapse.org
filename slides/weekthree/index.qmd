@@ -87,11 +87,11 @@ format:
 
 :::
 
-# *Important Insight*: cryptography is one of the key building blocks of computer security!
+# *Important Insight*: cryptography is one of the key building blocks of computer security
 
-# *Key Reminder*: it is deceptively difficult to deploy cryptographic algorithms correctly!
+# *Key Reminder*: it is deceptively difficult to deploy cryptographic algorithms correctly
 
-# *Admonition*: avoid the temptation to "roll your own" cryptography algorithms! Problems!
+# *Admonition*: avoid the temptation to "roll your own" cryptography algorithms! Problems
 
 # When do you use cryptography?
 
@@ -106,18 +106,18 @@ format:
 
 # Cryptography Terms
 
-::: {.incremental style="margin-top: -0.5em;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.95em;"}
 
 - **Plaintext**: the original message
 - **Ciphertext**: the encrypted message
 - **Cipher**: the algorithm used to encrypt the message
 - **Key**: the secret used to encrypt the message
-    - **Symmetric Key**: the same key  to encrypt and decrypt
-    - **Asymmetric Key**: different keys to encrypt and decrypt
+  - **Symmetric Key**: the same key to encrypt and decrypt
+  - **Asymmetric Key**: different keys to encrypt and decrypt
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.9em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.85em;"}
 
 **Key Questions**: What are the trade-offs between different types of keys?
 Ways to balance security, privacy, and performance? How?
@@ -126,32 +126,32 @@ Ways to balance security, privacy, and performance? How?
 
 ## Trapdoor Functions
 
-::: {.incremental style="margin-top: -0.5em;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.95em;"}
 
 - **One-way function**: easy to compute, hard to invert
 - **Examples**: RSA, Diffie-Hellman, Digital Signatures
 - Insights about the RSA algorithm:
-    - Easy to multiply two large prime numbers
-      - Exponentiation
-      - Multiplication
-      - Modular arithmetic
-    - Hard to factor the product of two large prime numbers
-    - Encryption is "easy" and decryption is "hard"
+  - Easy to multiply two large prime numbers
+    - Exponentiation
+    - Multiplication
+    - Modular arithmetic
+  - Hard to factor the product of two large prime numbers
+  - Encryption is "easy" and decryption is "hard"
 :::
 
 ## Cryptographic Hash Functions
 
-::: {.incremental style="margin-top: -0.5em;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.95em;"}
 
 - **Input**: any length of data
 - **Output**: fixed length of data
 - **Example**: SHA-256, SHA-512, MD5
 - Insights about the SHA-256 algorithm:
-    - Fixed length output
-    - Deterministic
-    - Fast computation
-    - Designed by NSA
-    - Cannot generate input from output!
+  - Fixed length output
+  - Deterministic
+  - Fast computation
+  - Designed by NSA
+  - Cannot generate the input from the output!
 
 :::
 
@@ -162,10 +162,10 @@ Ways to balance security, privacy, and performance? How?
 - **Single key** used for encryption and decryption
 - **Examples**: AES, DES, 3DES
 - Insights about the AES algorithm:
-    - Block-based cipher
-    - Key sizes of 128, 192, or 256 bits
-    - Performs multiple rounds of encryption
-    - Designed by Joan Daemen and Vincent Rijmen
+  - Block-based cipher
+  - Key sizes of 128, 192, or 256 bits
+  - Performs multiple rounds of encryption
+  - Designed by Joan Daemen and Vincent Rijmen
 - {{< iconify fa6-solid lightbulb >}} *Wait*, how do you exchange the key securely?
 
 :::
@@ -177,10 +177,10 @@ Ways to balance security, privacy, and performance? How?
 - **Public key** used for encryption
 - **Private key** used for decryption
 - Steps for receiving an encrypted message:
-    - Generate a public/private key pair
-    - Share the public key to a key server
-    - Friend encrypts message with public key
-    - You decrypt the message with the private key
+  - Generate a public/private key pair
+  - Share the public key to a key server
+  - Friend encrypts message with public key
+  - You decrypt the message with the private key
 - {{< iconify fa6-solid ruler >}} **Important trade-off**: slower than symmetric encryption!
 
 :::
@@ -193,24 +193,23 @@ Ways to balance security, privacy, and performance? How?
 - **Block Cipher**: encrypts a block of bytes
 - **Example**: AES is a block cipher!
 - Modes of operation for block ciphers:
-    - ECB: Electronic Codebook
-    - CBC: Cipher Block Chaining
-    - CFB: Cipher Feedback
-    - OFB: Output Feedback
-    - CTR: Counter
+  - ECB: Electronic Codebook
+  - CBC: Cipher Block Chaining
+  - CFB: Cipher Feedback
+  - OFB: Output Feedback
+  - CTR: Counter
 
 :::
 
 ## Combining Cryptography Algorithms
 
 - A virtual private network (VPN) works like this:
-    - Use asymmetric encryption to exchange symmetric key
-    - Use symmetric encryption for data transmission
+  - Use asymmetric encryption to exchange symmetric key
+  - Use symmetric encryption for data transmission
 - {{< iconify fa6-solid lightbulb >}} **Important Insights**:
-    - Fast because it mostly uses symmetric encryption
-    - Using multiple algorithms can maintain/increase security
-    - Yet, only as secure as the weakest link!
-
+  - Fast because it mostly uses symmetric encryption
+  - Using multiple algorithms can maintain/increase security
+  - Yet, only as secure as the weakest link!
 - Whenever possible, limit manual human intervention in a secure
 process to avoid unexpected mistakes!
 
@@ -227,24 +226,24 @@ process to avoid unexpected mistakes!
 ::: {.fragment style="margin-top: -0.75em;"}
 
 - Insights about the Let's Encrypt system:
-    - Uses the Automated Certificate Management Environment (ACME) protocol
-    - Provides free SSL/TLS certificates
-    - Automates the certificate renewal process
-    - Requires a web server to support HTTPS
+  - Uses the Automated Certificate Management Environment (ACME) protocol
+  - Provides free SSL/TLS certificates
+  - Automates the certificate renewal process
+  - Requires a web server to support HTTPS
 
 :::
 
-## *Cool*, Let's Encrypt is open source and free and supported by Netlify!
+## *Cool*, Let's Encrypt is open source and free and supported by Netlify
 
 ::: {.incremental style="margin-top: -0.5em;"}
 
 - How do you get a certificate for your web site?
-    - Customer generates a certificate signing request (CSR)
-    - Customer sends CSR to Let's Encrypt
-    - Let's Encrypt verifies the CSR
-    - Let's Encrypt issues a certificate
-    - Customer installs the certificate on their web server
-    - Direct integration with systems like Netlify
+  - Customer generates a certificate signing request (CSR)
+  - Customer sends CSR to Let's Encrypt
+  - Let's Encrypt verifies the CSR
+  - Let's Encrypt issues a certificate
+  - Customer installs the certificate on their web server
+  - Direct integration with systems like Netlify
 - **Reference**: [Let's Encrypt: How it Works](https://letsencrypt.org/how-it-works/)
 
 :::
@@ -274,11 +273,11 @@ understanding! Start by revisiting basics from last week!
 ::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
 
 - Use `cryptography.fernet` to encrypt a string and record
-    - Automatically generate a symmetric key
-    - Encrypted string generated by `encrypt_string`
+  - Automatically generate a symmetric key
+  - Encrypted string generated by `encrypt_string`
 - Use recorded details to decrypt the string and display it
-    - Define the `encrypted_data` byte-encoded string
-    - Define the `key` as a byte-encoded string
+  - Define the `encrypted_data` byte-encoded string
+  - Define the `key` as a byte-encoded string
 - Confirm that decrypted string matches the original one
 - {{< iconify fa6-solid key >}} **Variables are shared across programming environments**!
 
@@ -344,11 +343,11 @@ print(decrypted_ciphertext_sym)
 ::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.9em;"}
 
 - **Review Questions**:
-    - What does a `Fernet` key look like?
-    - What are the requirements for a `Fernet` key?
-    - What if the `Fernet` key does not match?
-    - What is the purpose of the `b` prefix?
-    - How can you securely exchange the `key`'s contents?
+  - What does a `Fernet` key look like?
+  - What are the requirements for a `Fernet` key?
+  - What if the `Fernet` key does not match?
+  - What is the purpose of the `b` prefix?
+  - How can you securely exchange the `key`'s contents?
 
 :::
 
@@ -440,11 +439,11 @@ print(plaintext_asym)
 ::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.9em;"}
 
 - **Review Questions**:
-    - What does an `rsa` private key look like?
-    - How does `key_size` affect the `rsa` algorithm?
-    - What is the purpose of `padding.PKCS1v15()`?
-    - What if the `rsa` keys incorrectly?
-    - How can you _combine_ symmetric and asymmetric encryption?
+  - What does an `rsa` private key look like?
+  - How does `key_size` affect the `rsa` algorithm?
+  - What is the purpose of `padding.PKCS1v15()`?
+  - What if the `rsa` keys incorrectly?
+  - How can you *combine* symmetric and asymmetric encryption?
 
 :::
 
