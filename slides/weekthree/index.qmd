@@ -378,6 +378,25 @@ print(compute_hash('This is a test string'))
 # make one string slightly different than the test string!
 ```
 
+## Recap on Content Hashing
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
+
+- **Key Benefit**: hashing detects tampering and verifies integrity
+- **Important Reminder**: hashing is *not* encryption; it cannot be reversed!
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.85em;"}
+
+- **Review Questions**:
+  - What does a SHA-256 hash look like?
+  - What happens when one character of the input changes?
+  - Why is it impossible to recover the input from the hash?
+  - How is hashing different from encryption?
+
+:::
+
 ## Exploring Asymmetric Encryption
 
 ```{pyodide}
@@ -451,6 +470,28 @@ print(plaintext_asym)
 
 :::
 
+## Signatures and Non-Repudiation
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.8em;"}
+
+- **Sign**: use the private key to sign a message hash
+- **Verify**: use the public key to check the signature
+- **Non-repudiation**: a sender cannot deny a signed message
+- Certificate authorities sign Let's Encrypt certificates
+- Only the private key signs; the public key verifies
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.5em; font-size: 0.75em;"}
+
+- **Key Questions**:
+  - Who can create a digital signature? Who can verify one?
+  - Why can a sender not deny a signed message?
+  - How do signatures provide *authenticity* and *non-repudiation*?
+  - How do signed certificates support the Let's Encrypt case study?
+
+:::
+
 ## Wrapping Up on Encryption
 
 ::: {.columns style="margin-top: 0.5em;"}
@@ -465,7 +506,7 @@ print(plaintext_asym)
 
 - Symmetric
 - Asymmetric
-- Hashing
+- Combined
 
 #### Important Terms
 
@@ -498,5 +539,69 @@ print(plaintext_asym)
 :::
 
 :::
+
+:::
+
+## Cryptography and Objectives
+
+::: {.columns style="margin-top: 0.15em;"}
+
+::: {.column style="width: 33%; font-size: 0.76em;"}
+
+::: {.fragment .fade}
+
+### **Confidentiality**
+
+- Encrypt with `Fernet`
+- Symmetric and asymmetric keys
+- Protect data at rest and in motion
+- Keep the plaintext secret
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.76em;"}
+
+::: {.fragment .fade}
+
+### **Integrity**
+
+- Hash with `compute_hash`
+- Fixed-length SHA-256 digest
+- Detect any change or tampering
+- Verify data before trusting it
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.76em;"}
+
+::: {.fragment .fade}
+
+### **Authenticity**
+
+- Asymmetric public/private keys
+- Sign and verify messages
+- Support non-repudiation
+- Trust a certificate authority
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.75em;"}
+
+- **Chapter 1 connection**: use **CIA** and **AAA** to ask who can act, what
+can happen, how we will know, and how we keep data secret! Any questions?
+
+- **CS-403-1**: Correctly identify the **threats** to an application's security and
+describe the **suitable mitigation(s)** for addressing the threats.
+
+- **CS-403-2**: Correctly apply **security principles**, [...], and **cryptography** in
+the modeling and implementation of security solutions.
 
 :::
