@@ -185,19 +185,19 @@ Ways to balance security, privacy, and performance? How?
 
 :::
 
-## Steam and Block Ciphers
+## Stream and Block Ciphers
 
-::: fragment
+::: {.incremental style="margin-top: -0.5em; font-size: 0.95em;"}
 
 - **Stream Cipher**: encrypts one byte at a time
 - **Block Cipher**: encrypts a block of bytes
 - **Example**: AES is a block cipher!
 - Modes of operation for block ciphers:
-  - ECB: Electronic Codebook
-  - CBC: Cipher Block Chaining
-  - CFB: Cipher Feedback
-  - OFB: Output Feedback
-  - CTR: Counter
+  - *ECB*: Electronic Codebook
+  - *CBC*: Cipher Block Chaining
+  - *CFB*: Cipher Feedback
+  - *OFB*: Output Feedback
+  - *CTR*: Counter
 
 :::
 
