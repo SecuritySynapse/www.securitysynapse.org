@@ -203,19 +203,23 @@ Ways to balance security, privacy, and performance? How?
 
 ## Combining Cryptography Algorithms
 
+::: {.incremental style="margin-top: -0.5em; font-size: 0.95em;"}
+
 - A virtual private network (VPN) works like this:
   - Use asymmetric encryption to exchange symmetric key
   - Use symmetric encryption for data transmission
 - {{< iconify fa6-solid lightbulb >}} **Important Insights**:
   - Fast because it mostly uses symmetric encryption
   - Using multiple algorithms can maintain/increase security
-  - Yet, only as secure as the weakest link!
+  - Yet, only as secure as the weakest link in the system!
 - Whenever possible, limit manual human intervention in a secure
 process to avoid unexpected mistakes!
 
+:::
+
 ## Case Study: Let's Encrypt
 
-::: fragment
+::: {.incremental style="margin-top: -0.5em; font-size: 0.95em;"}
 
 - **Goal**: Always encrypt packets sent to a web site!
 - **Problem**: How to make HTTPS more accessible?
@@ -235,7 +239,7 @@ process to avoid unexpected mistakes!
 
 ## *Cool*, Let's Encrypt is open source and free and supported by Netlify
 
-::: {.incremental style="margin-top: -0.5em;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.95em;"}
 
 - How do you get a certificate for your web site?
   - Customer generates a certificate signing request (CSR)
