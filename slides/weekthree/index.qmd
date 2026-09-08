@@ -337,14 +337,14 @@ print(decrypted_ciphertext_sym)
 
 ## Recap on Symmetric Encryption
 
-::: incremental
+::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
 
 - **Key Benefit**: symmetric encryption is fast and secure
 - **Important Reminder**: always securely exchange the key!
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.9em;"}
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.85em;"}
 
 - **Review Questions**:
   - What does a `Fernet` key look like?
@@ -433,7 +433,7 @@ print(plaintext_asym)
 
 ## Recap on Asymmetric Encryption
 
-::: incremental
+::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
 
 - **Key Benefit**: supports secure key exchange
 - **Important Reminder**: securely store the private key!
