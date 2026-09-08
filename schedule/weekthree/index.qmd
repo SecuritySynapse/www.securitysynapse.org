@@ -20,7 +20,7 @@ Success](https://web.njit.edu/~rt494/security/)
 ## Activities
 
 - {{< iconify fa6-solid people-line size=18px >}} **Monday and Wednesday**: Cryptography
-- {{< iconify fa6-solid people-line size=18px >}} **Friday**: Complete an in-person assessment
+- {{< iconify fa6-solid people-line size=18px >}} **Friday**: Complete a computer security check
   - Complete a form-based assessment on your laptop
   - Complete an in-person assessment with course instructor
 - {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Laboratory session
