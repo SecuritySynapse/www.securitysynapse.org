@@ -32,9 +32,7 @@ setup during laboratory session
   - Continued highlighting of the concept of a "security synapse"
   - Introduction to basic computer security concepts and principles
   - If needed, continue to work on the programming skill check
-  - In-person assessment in which students demonstrate the use of their
-  installed software tools (e.g., download a Python script from the course web
-  site and use `uv run` to execute it with an structure file input)
+  - Start working on the [Security Survey Project One: Server Fuzzing](/../projects/)
 
 ## Slides
 
