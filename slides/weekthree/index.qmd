@@ -403,7 +403,6 @@ print(compute_hash('This is a test string'))
 ```{pyodide}
 #| autorun: true
 #| max-lines: 8
-from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.asymmetric import rsa, padding
 from cryptography.hazmat.primitives import serialization
 
@@ -430,7 +429,6 @@ print("Encrypted Data:", ciphertext_output_asym)
 ```{pyodide}
 #| autorun: false
 #| max-lines: 15
-from cryptography.hazmat.primitives import hashes
 from cryptography.hazmat.primitives.asymmetric import rsa, padding
 from cryptography.hazmat.primitives import serialization
 
