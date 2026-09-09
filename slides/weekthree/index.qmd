@@ -50,7 +50,7 @@ format:
 
 ::: fragment
 
-### *Think Like Hacker*
+### *Think Like a Hacker*
 
 #### Implementation
 
