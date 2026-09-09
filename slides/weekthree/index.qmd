@@ -146,7 +146,7 @@ Ways to balance security, privacy, and performance? Best approach?
 
 - **Input**: any length of data
 - **Output**: fixed length of data
-- **Example**: SHA-256, SHA-512, MD5
+- **Historical Examples**: SHA-256, SHA-512, and MD5
 - Insights about the SHA-256 algorithm:
   - Fixed length output
   - Deterministic
