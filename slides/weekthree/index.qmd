@@ -120,7 +120,7 @@ format:
 ::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.85em;"}
 
 **Key Questions**: What are the trade-offs between different types of keys?
-Ways to balance security, privacy, and performance? How?
+Ways to balance security, privacy, and performance? Best approach?
 
 :::
 
