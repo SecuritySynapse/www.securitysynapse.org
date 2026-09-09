@@ -546,46 +546,46 @@ print(plaintext_asym)
 
 ::: {.columns style="margin-top: 0.15em;"}
 
-::: {.column style="width: 33%; font-size: 0.76em;"}
+::: {.column style="width: 33%; font-size: 0.75em;"}
 
 ::: {.fragment .fade}
 
 ### **Confidentiality**
 
 - Encrypt with `Fernet`
-- Symmetric and asymmetric keys
-- Protect data at rest and in motion
-- Keep the plaintext secret
+- Symmetric keys
+- Asymmetric keys
+- Keep data secret
 
 :::
 
 :::
 
-::: {.column style="width: 33%; font-size: 0.76em;"}
+::: {.column style="width: 33%; font-size: 0.75em;"}
 
 ::: {.fragment .fade}
 
 ### **Integrity**
 
-- Hash with `compute_hash`
-- Fixed-length SHA-256 digest
-- Detect any change or tampering
-- Verify data before trusting it
+- Hash with SHA-256
+- Fixed-length digest
+- Detect any tampering
+- Verify data
 
 :::
 
 :::
 
-::: {.column style="width: 33%; font-size: 0.76em;"}
+::: {.column style="width: 33%; font-size: 0.75em;"}
 
 ::: {.fragment .fade}
 
 ### **Authenticity**
 
-- Asymmetric public/private keys
-- Sign and verify messages
-- Support non-repudiation
-- Trust a certificate authority
+- Asymmetric key pairs
+- Sign and verify
+- Non-repudiation
+- Trust certificates
 
 :::
 
@@ -593,10 +593,10 @@ print(plaintext_asym)
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.75em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.72em;"}
 
-- **Chapter 1 connection**: use **CIA** and **AAA** to ask who can act, what
-can happen, how we will know, and how we keep data secret! Any questions?
+- **Chapter 2 connection**: make sure that you understand the key terms and mathematical
+  foundations of cryptography and hashing
 
 - **CS-403-1**: Correctly identify the **threats** to an application's security and
 describe the **suitable mitigation(s)** for addressing the threats.
