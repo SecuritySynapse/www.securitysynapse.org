@@ -384,17 +384,19 @@ print(compute_hash('This is a test string'))
 ::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
 
 - **Key Benefit**: hashing detects tampering and verifies integrity
-- **Important Reminder**: hashing is *not* encryption; it cannot be reversed!
+- **Important Reminder**: hashing is *not* encryption; it is not designed to be
+and it cannot be reversed!
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.85em;"}
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.8em;"}
 
 - **Review Questions**:
   - What does a SHA-256 hash look like?
   - What happens when one character of the input changes?
   - Why is it impossible to recover the input from the hash?
   - How is hashing different from encryption?
+  - How is hashing similar to encryption?
 
 :::
 
