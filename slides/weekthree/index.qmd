@@ -91,7 +91,7 @@ format:
 
 # *Key Reminder*: it is deceptively difficult to deploy cryptographic algorithms correctly
 
-# *Admonition*: avoid the temptation to "roll your own" cryptography algorithms! Why?
+# *Admonition*: avoid the temptation to "roll your own" cryptographic algorithms! Why?
 
 # When do you use cryptography?
 
@@ -222,33 +222,35 @@ process to avoid unexpected mistakes!
 
 ::: {.incremental style="margin-top: -0.5em; font-size: 0.95em;"}
 
-- **Goal**: Always encrypt packets sent to a web site!
+- **Goal**: Always encrypt HTTP traffic sent to a web site!
 - **Problem**: How to make HTTPS more accessible?
 - **Solution**: Automated certificate authority system
 
 :::
 
-::: {.fragment style="margin-top: -0.75em;"}
+::: {.fragment style="margin-top: -0.75em; font-size: 0.9em;"}
 
 - Insights about the Let's Encrypt system:
-  - Uses the Automated Certificate Management Environment (ACME) protocol
+  - Uses Automated Certificate Management Environment (ACME)
   - Provides free SSL/TLS certificates
-  - Automates the certificate renewal process
+  - Automates renewal of 90-day certificates
+  - Short lifetimes limit leaked-key damage
   - Requires a web server to support HTTPS
 
 :::
 
-## *Cool*, Let's Encrypt is open source and free and supported by Netlify
+## Let's Encrypt is Free and Open Source
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.95em;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.925em;"}
 
 - How do you get a certificate for your web site?
-  - Customer generates a certificate signing request (CSR)
-  - Customer sends CSR to Let's Encrypt
-  - Let's Encrypt verifies the CSR
-  - Let's Encrypt issues a certificate
-  - Customer installs the certificate on their web server
-  - Direct integration with systems like Netlify
+  - Run an ACME client on the web server
+  - Prove domain control: complete a DNS or HTTP challenge
+  - Let's Encrypt validates from multiple network perspectives
+  - Submit a CSR signed with the authorized account key
+  - Let's Encrypt verifies both signatures
+  - Issues the certificate and logs it to Certificate Transparency
+  - Netlify and similar hosts automate install and renewal
 - **Reference**: [Let's Encrypt: How it Works](https://letsencrypt.org/how-it-works/)
 
 :::
