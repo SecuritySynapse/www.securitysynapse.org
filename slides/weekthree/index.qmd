@@ -70,7 +70,7 @@ format:
 
 :::
 
-# What is a technology practice that you need to rethink from the perspective of computer security? Why? Next?
+# What is a technology practice that you need to rethink from the perspective of computer security? Why?
 
 # What is cryptography?
 
@@ -91,7 +91,7 @@ format:
 
 # *Key Reminder*: it is deceptively difficult to deploy cryptographic algorithms correctly
 
-# *Admonition*: avoid the temptation to "roll your own" cryptography algorithms! Problems
+# *Admonition*: avoid the temptation to "roll your own" cryptography algorithms! Why?
 
 # When do you use cryptography?
 
@@ -136,7 +136,8 @@ Ways to balance security, privacy, and performance? Best approach?
     - Multiplication
     - Modular arithmetic
   - Hard to factor the product of two large prime numbers
-  - Encryption is "easy" and decryption is "hard"
+  - Encryption is "easy" and breaking decryption is "hard"
+
 :::
 
 ## Cryptographic Hash Functions
