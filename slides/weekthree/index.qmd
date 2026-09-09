@@ -466,7 +466,7 @@ print(plaintext_asym)
   - What does an `rsa` private key look like?
   - How does `key_size` affect the `rsa` algorithm?
   - What is the purpose of `padding.PKCS1v15()`?
-  - What if the `rsa` keys incorrectly?
+  - What if the `rsa` keys do not match?
   - How can you *combine* symmetric and asymmetric encryption?
 
 :::
