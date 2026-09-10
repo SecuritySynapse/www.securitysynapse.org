@@ -263,10 +263,12 @@ learners for the discussion of computer security concepts during an in-person
 assessment, each security-check involves the completion of an automatically
 scored online, form-based assessment and a brief, in-person assessment completed
 interactively with the course instructor. Unless the instructor provides access
-to a computational device, the in-person assessments invite students to
+to a computational device, the brief in-person assessments invite students to
 demonstrate their knowledge of computer security without the aid of any external
 sources, including, but not limited to, software tools running on a student
-laptop.
+laptop. With that said, students may use external sources, including artificial
+coding assistants, during the completion of the form-based component of the
+knowledge-check.
 
 - **Midterm Examination**: Each midterm examination is an online, executable,
 and cumulative assessment covering all prior material from the course sessions,
