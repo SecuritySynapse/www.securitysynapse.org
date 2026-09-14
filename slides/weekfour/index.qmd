@@ -295,8 +295,8 @@ main()
 
 ::: incremental
 
-- **Key Insight**: assumes knowledge of share secret key
-- **Important Reminder**: decryption different than encryption
+- **Key Insight**: assumes knowledge of the shared secret key
+- **Important Reminder**: decryption differs from encryption
 
 :::
 
@@ -306,7 +306,7 @@ main()
   - Recovers plaintext by reading columns from a grid
   - Blank, not needed, cells appear at end of the grid
   - Must use the same key for encryption and decryption
-  - Purpose of `int(math.ceil(len(message) / float(key)))`?
+  - Why `int(math.ceil(len(message) / float(key)))`?
   - How do you know that the algorithm worked correctly?
 
 :::
