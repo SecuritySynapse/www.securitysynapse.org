@@ -815,11 +815,12 @@ while i < 14:
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.72em;"}
 
-- **CCP Chapters 4--12 connection**: build, test, and hack
-  the reverse, Caesar, and transposition ciphers with `Fernet`
+- **CCP Chapters 4--12 connection**: illustrate key concepts by building,
+testing, and hacking the reverse, Caesar, and transposition ciphers, and
+`Fernet` speed study
 
-- **CS-403-1**: Correctly identify the **threats** to an application's security and
-describe the **suitable mitigation(s)** for addressing the threats.
+- **CS-403-1**: Correctly identify the **threats** to an application's security
+and describe the **suitable mitigation(s)** for addressing the threats.
 
 - **CS-403-2**: Correctly apply **security principles**, [...], and **cryptography** in
 the modeling and implementation of security solutions.
