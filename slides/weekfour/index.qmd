@@ -377,7 +377,7 @@ flowchart LR
   style F fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
   style G fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
   style H fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
-  linkStyle 0,1,2,3,4,5,6,7,8 stroke:#1c1c1c,color:#1c1c1c
+  linkStyle 0,1,2,3,4,5,6,7,8 stroke:#1c1c1c,color:#1c1c1c,stroke-width:3px
 ```
 
 :::
