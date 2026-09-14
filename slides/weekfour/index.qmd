@@ -35,12 +35,6 @@ format:
 
 :::
 
-# *Important Insight*: cryptography is one of the key building blocks of computer security!
-
-# *Key Reminder*: it is deceptively difficult to deploy cryptographic algorithms correctly!
-
-# *Admonition*: avoid the temptation to "roll your own" cryptography algorithms! Problems!
-
 # Cryptography Terms
 
 ::: {.incremental style="margin-top: -0.5em;"}
@@ -49,8 +43,8 @@ format:
 - **Ciphertext**: the encrypted message
 - **Cipher**: the algorithm used to encrypt the message
 - **Key**: the secret used to encrypt the message
-    - **Symmetric Key**: the same key  to encrypt and decrypt
-    - **Asymmetric Key**: different keys to encrypt and decrypt
+  - **Symmetric Key**: the same key to encrypt and decrypt
+  - **Asymmetric Key**: different keys to encrypt and decrypt
 
 :::
 
@@ -66,14 +60,13 @@ Ways to balance security, privacy, and performance? How?
 ::: incremental
 
 - What is the benefit of studying weak cryptography algorithms like those in
-_Cracking Codes with Python_?
+*Cracking Codes with Python*?
 
-    - Understand the **basics** of cryptography
-    - Learn why these systems are **not secure**
-    - Feasibly explore the steps of **cryptanalysis**
+  - Understand the **basics** of cryptography
+  - Learn why these systems are **not secure**
+  - Feasibly explore the steps of **cryptanalysis**
 
 :::
-
 
 ## Reverse Cipher Program
 
@@ -149,11 +142,11 @@ print(translated)
 ::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.85em;"}
 
 - **Review Questions**:
-    - What is the purpose of the `key` variable?
-    - What is the purpose of the `mode` variable?
-    - What if a letter is not in the `SYMBOLS` string?
-    - Why does the algorithm need to handle "wraparound"?
-    - Can you explain the assignment of `translated = translated + SYMBOLS[translatedIndex]`?
+  - What is the purpose of the `key` variable?
+  - What is the purpose of the `mode` variable?
+  - What if a letter is not in the `SYMBOLS` string?
+  - Why does the algorithm need to handle "wraparound"?
+  - Can you explain the assignment of `translated = translated + SYMBOLS[translatedIndex]`?
 
 :::
 
@@ -196,15 +189,15 @@ for key in range(len(SYMBOLS)):
 ::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.85em;"}
 
 - **Review Questions**:
-    - Which `key` value ultimately decrypts the message?
-    - What is the purpose of the `mode` variable?
-    - How does this connect to the encryption technique?
-    - Why does the algorithm need to handle "wraparound"?
-    - Can you explain the assignment of `symbolIndex = SYMBOLS.find(symbol)`?
+  - Which `key` value ultimately decrypts the message?
+  - What is the purpose of the `mode` variable?
+  - How does this connect to the encryption technique?
+  - Why does the algorithm need to handle "wraparound"?
+  - Can you explain the assignment of `symbolIndex = SYMBOLS.find(symbol)`?
 
 :::
 
-## Transposition Cipher Encryption 
+## Transposition Cipher Encryption
 
 ```{pyodide}
 #| autorun: true
@@ -253,11 +246,11 @@ main()
 ::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.85em;"}
 
 - **Review Questions**:
-    - What does it mean if it works in a "columnar" fashion?
-    - Is this more difficult to break than the Caesar cipher?
-    - How does this connect to the encryption technique?
-    - What are the functions inside of this algorithm?
-    - What is the purpose of the `|` character in the output?
+  - What does it mean if it works in a "columnar" fashion?
+  - Is this more difficult to break than the Caesar cipher?
+  - How does this connect to the encryption technique?
+  - What are the functions inside of this algorithm?
+  - What is the purpose of the `|` character in the output?
 
 :::
 
@@ -310,11 +303,11 @@ main()
 ::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.85em;"}
 
 - **Review Questions**:
-    - Recovers plaintext by reading columns from a grid
-    - Blank, not needed, cells appear at end of the grid
-    - Must use the same key for encryption and decryption
-    - Purpose of `int(math.ceil(len(message) / float(key)))`?
-    - How do you know that the algorithm worked correctly?
+  - Recovers plaintext by reading columns from a grid
+  - Blank, not needed, cells appear at end of the grid
+  - Must use the same key for encryption and decryption
+  - Purpose of `int(math.ceil(len(message) / float(key)))`?
+  - How do you know that the algorithm worked correctly?
 
 :::
 
@@ -501,11 +494,11 @@ while i < 14:
 ::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.9em;"}
 
 - **Review Questions**:
-    - What is the overall approach in cipher testing?
-    - What is the purpose of the `assert` statement?
-    - How does the `test_encryption_decryption` function work?
-    - How does the `generate_random_string` function work?
-    - What are the limitations of this testing approach?
+  - What is the overall approach in cipher testing?
+  - What is the purpose of the `assert` statement?
+  - How does the `test_encryption_decryption` function work?
+  - How does the `generate_random_string` function work?
+  - What are the limitations of this testing approach?
 
 :::
 
