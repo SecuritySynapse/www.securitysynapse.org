@@ -193,7 +193,7 @@ for key in range(len(SYMBOLS)):
   - What is the purpose of the `mode` variable?
   - How does this connect to the encryption technique?
   - Why does the algorithm need to handle "wraparound"?
-  - Can you explain the assignment of `symbolIndex = SYMBOLS.find(symbol)`?
+  - Can you explain `symbolIndex = SYMBOLS.find(symbol)`?
 
 :::
 
