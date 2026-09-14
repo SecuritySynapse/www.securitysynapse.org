@@ -716,6 +716,14 @@ for i in range(5):
           f"ET: {etime:.4f}ms, DT: {dtime:.4f}ms.")
 ```
 
+::: {.fragment .fade style="margin-top: 0.00em; font-size: 0.8em;"}
+
+- Seeded lengths keep the five runs comparable
+- Reports encryption and decryption time in milliseconds
+- Each run asserts the round-trip is correct
+
+:::
+
 ## Recapping Key Trade-offs
 
 ::: incremental
@@ -731,7 +739,8 @@ for i in range(5):
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.9em;"}
 
-**Answer**: symmetric for bulk data, asymmetric for key exchange.
+**Insight**: symmetric for bulk data, asymmetric for key exchange. Questions on
+trade-offs between symmetric and asymmetric keys?
 
 :::
 
