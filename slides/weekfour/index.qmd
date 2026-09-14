@@ -84,7 +84,7 @@ while i >= 0:
 print(translated)
 ```
 
-::: {.fragment .fade style="margin-top: 0.00em; font-size: 0.9em;"}
+::: {.fragment .fade style="margin-top: 0.00em; font-size: 0.8em;"}
 
 - How does this cipher work?
 - Does this cipher have a key?
@@ -315,7 +315,7 @@ main()
 
 ::: {.incremental style="margin-top: -0.75em;"}
 
-- Test the Transposition Cipher to ensure its correctness!
+- Test the Transposition Cipher to ensure its correctness
 - Generate random messages, encrypt, and then decrypt
 - Run for a range of keys, which determine the cipher's shift
 - Use random messages and keys, covering various scenarios
@@ -384,7 +384,7 @@ flowchart LR
 
 ::: {.fragment .fade style="margin-top: 0.1em; font-size: 0.825em;"}
 
-Repeatedly generate random messages, checking cipher output each round!
+Repeatedly generate random messages, checking cipher output each round.
 Continue testing until you have established confidence in the cipher.
 
 :::
@@ -462,7 +462,8 @@ def test_encryption_decryption(message):
     # decrypt the data
     decrypted_data = decrypt_string(encrypted_data, key)
     # check if the decrypted data matches the original message
-    assert decrypted_data == message, 'Decryption does not match original message'
+    assert decrypted_data == message, \
+        'Decryption does not match original message'
 
 def generate_random_string(length):
     """Generate a random string of letters."""
@@ -473,6 +474,8 @@ def generate_random_string(length):
 ## Running Tests for Fernet Cipher
 
 ```{python}
+import random
+
 i = 0
 while i < 14:
     length = random.randint(10, 50)
@@ -486,7 +489,7 @@ while i < 14:
 
 ::: incremental
 
-- **Key Insight**: establish a confidence in cipher correctness
+- **Key Insight**: establish confidence in cipher correctness
 - **Important Reminder**: ensure that functions are invertible
 
 :::
@@ -507,7 +510,7 @@ while i < 14:
 - How can we hack the transposition cipher?
   - Make these assumptions:
     - Assume that the cipher is in use
-    - Not clear what language is in use
+    - The language in use is not clear
     - Do not know the key or its length
   - *Wow*, this hack requires a lot of implementation!
 
@@ -628,9 +631,17 @@ def decryptMessage(key, message):
 
 ```{python}
 def perform_transposition_hack():
-    myMessage = """AaKoosoeDe5 b5sn ma reno ora'lhlrrceey e  enlh na  indeit n uhoretrm au ieu v er Ne2 gmanw,forwnlbsya apor tE.no euarisfatt  e mealefedhsppmgAnlnoe(c -or)alat r lw o eb  nglom,Ain one dtes ilhetcdba. t tg eturmudg,tfl1e1 v  nitiaicynhrCsaemie-sp ncgHt nie cetrgmnoa yc r,ieaa  toesa- e a0m82e1w shcnth  ekh gaecnpeutaaieetgn iodhso d ro hAe snrsfcegrt NCsLc b17m8aEheideikfr aBercaeu thllnrshicwsg etriebruaisss  d iorr."""
+    myMessage = (
+        "AaKoosoeDe5 b5sn ma reno ora'lhlrrceey e  enlh na  indeit n uhoretrm"
+        " au ieu v er Ne2 gmanw,forwnlbsya apor tE.no euarisfatt  e mealefedh"
+        "sppmgAnlnoe(c -or)alat r lw o eb  nglom,Ain one dtes ilhetcdba. t tg"
+        " eturmudg,tfl1e1 v  nitiaicynhrCsaemie-sp ncgHt nie cetrgmnoa yc r,i"
+        "eaa  toesa- e a0m82e1w shcnth  ekh gaecnpeutaaieetgn iodhso d ro hAe"
+        " snrsfcegrt NCsLc b17m8aEheideikfr aBercaeu thllnrshicwsg etriebruai"
+        "sss  d iorr."
+    )
     hackedMessage = hackTransposition(myMessage)
-    if hackedMessage == None:
+    if hackedMessage is None:
         print('Failed to hack encryption.')
     else:
         print(hackedMessage)
@@ -675,7 +686,8 @@ def performance_encryption_decryption(message):
     end_decryption = time.time()
     encryption_time = (end_encryption - start_encryption) * 1000
     decryption_time = (end_decryption - start_decryption) * 1000
-    assert decrypted_data == message, 'Decryption does not match original message'
+    assert decrypted_data == message, \
+        'Decryption does not match original message'
     return encryption_time, decryption_time
 ```
 
@@ -689,6 +701,8 @@ def performance_encryption_decryption(message):
 ## Performance Study for Fernet Cipher
 
 ```{python}
+import random
+
 i = 0
 while i < 14:
     length = random.randint(10, 30)
@@ -745,5 +759,69 @@ while i < 14:
 :::
 
 :::
+
+:::
+
+## Cryptography and Objectives
+
+::: {.columns style="margin-top: 0.15em;"}
+
+::: {.column style="width: 33%; font-size: 0.75em;"}
+
+::: {.fragment .fade}
+
+### **Build Ciphers**
+
+- Reverse a `message`
+- Shift with a `key`
+- Transpose the columns
+- Encrypt with `Fernet`
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.75em;"}
+
+::: {.fragment .fade}
+
+### **Test Ciphers**
+
+- Round-trip the plaintext
+- Seed `random` for replays
+- Assert with `assert`
+- Measure with `time`
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.75em;"}
+
+::: {.fragment .fade}
+
+### **Hack Ciphers**
+
+- Brute-force every `key`
+- Detect English plaintext
+- Search the key space
+- Compare the performance
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.72em;"}
+
+- **CCP Chapters 4--12 connection**: build, test, and hack
+  the reverse, Caesar, and transposition ciphers with `Fernet`
+
+- **CS-403-1**: Correctly identify the **threats** to an application's security and
+describe the **suitable mitigation(s)** for addressing the threats.
+
+- **CS-403-2**: Correctly apply **security principles**, [...], and **cryptography** in
+the modeling and implementation of security solutions.
 
 :::
