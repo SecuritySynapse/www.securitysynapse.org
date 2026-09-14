@@ -499,7 +499,7 @@ while i < 14:
 - **Review Questions**:
   - What is the overall approach in cipher testing?
   - What is the purpose of the `assert` statement?
-  - How does the `test_encryption_decryption` function work?
+  - How does `test_encryption_decryption` work?
   - How does the `generate_random_string` function work?
   - What are the limitations of this testing approach?
 
@@ -788,7 +788,7 @@ while i < 14:
 ### **Test Ciphers**
 
 - Round-trip the plaintext
-- Seed `random` for replays
+- Seed `random` to replay
 - Assert with `assert`
 - Measure with `time`
 
@@ -805,7 +805,7 @@ while i < 14:
 - Brute-force every `key`
 - Detect English plaintext
 - Search the key space
-- Compare the performance
+- Compare the speed
 
 :::
 
