@@ -201,7 +201,7 @@ for key in range(len(SYMBOLS)):
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 15
+#| max-lines: 14
 # Transposition Cipher Encryption
 # https://www.nostarch.com/crackingcodes/ (BSD Licensed)
 def main():
@@ -228,7 +228,7 @@ def encryptMessage(key, message):
 main()
 ```
 
-::: {.fragment .fade style="margin-top: 0.00em; font-size: 0.9em;"}
+::: {.fragment .fade style="margin-top: 0.00em; font-size: 0.8em;"}
 
 - **Task**: Try different values for `current_message` and `current_key`
 
