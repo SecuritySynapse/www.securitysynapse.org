@@ -146,7 +146,7 @@ print(translated)
   - What is the purpose of the `mode` variable?
   - What if a letter is not in the `SYMBOLS` string?
   - Why does the algorithm need to handle "wraparound"?
-  - Can you explain the assignment of `translated = translated + SYMBOLS[translatedIndex]`?
+  - Can you explain the update to `translated`?
 
 :::
 
