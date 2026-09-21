@@ -308,7 +308,7 @@ memory? How is this more difficult than detecting file-based malware? Ideas?**
 
 :::
 
-## Insights About Malware
+## Key Insights About Malware
 
 ::: incremental
 
@@ -321,7 +321,7 @@ memory? How is this more difficult than detecting file-based malware? Ideas?**
 
 :::
 
-::: {.fragment .boxed-content style="padding-top: .5em; font-size: 0.85em;"}
+::: {.fragment .boxed-content style="padding-top: .5em; font-size: 0.7em;"}
 
 - Which common practices promote the spread of malware?
 - Which programming language should be used for malware?
