@@ -213,6 +213,103 @@ format:
 
 :::
 
+## Fileless Malware
+
+::: fragment
+
+- Never stores its own code as a file on the disk
+
+- Runs that code in memory, inside another process
+
+- **Primary goal**: hide from file-based malware scanners
+
+- Fileless malware often relies on:
+  - Code that arrives as text and is rebuilt in memory
+  - Tools that are already installed on the machine
+  - Script engines such as Python, Bash, or PowerShell
+
+:::
+
+::: {.fragment style="font-size: 0.95em; margin-top: -0.5em;"}
+
+{{< iconify fa6-solid map >}} **Which evidence remains when no file is
+written?**
+
+:::
+
+## Hiding Code as Text
+
+::: incremental
+
+- A scanner looks for known bad code inside files
+- Fileless malware never gives it a file to inspect
+- Instead, the code travels as ordinary text
+- `base64` rewrites code as text that looks like noise
+- Anyone can reverse `base64`, so it only buys time
+
+:::
+
+::: {.fragment .fade .boxed-content style="padding-top: .5em; font-size: 0.9em;"}
+
+**Key idea**: `print('hi')` and `cHJpbnQoJ2hpJyk=` are the same program.
+
+:::
+
+## Executing Code in Memory
+
+```{python}
+import base64
+
+# the payload is a program, stored as plain text
+payload = "print('payload ran without a file')"
+hidden = base64.b64encode(payload.encode()).decode()
+print(f"hidden: {hidden}")
+
+# rebuild the program and run it, writing no file
+source = base64.b64decode(hidden).decode()
+exec(source)
+```
+
+::: fragment
+
+- The payload is a program stored as ordinary text
+
+- `b64encode` disguises it, and `b64decode` restores it
+
+- `exec` runs the restored program without a file
+
+:::
+
+## What Was Hidden?
+
+```{python}
+print(f"on disk:   {hidden}")
+print(f"in memory: {source}")
+```
+
+::: fragment
+
+- The file holds text that looks like noise
+
+- The program that runs is ordinary Python
+
+- Records of the hidden code live in memory, not on disk
+
+:::
+
+::: {.fragment .fade .boxed-content style="padding-top: .5em; font-size: 0.9em;"}
+
+**Insight**: the payload leaves nothing on disk, so memory is the evidence.
+
+:::
+
+::: {.fragment style="font-size: 0.95em; margin-top: 0.1em;"}
+
+{{< iconify fa6-solid people-line >}} **How would you find the payload in
+memory?**
+
+:::
+
 ## Insights About Malware
 
 ::: incremental
@@ -231,6 +328,129 @@ format:
 - Which common practices promote the spread of malware?
 - Which programming language should be used for malware?
 - Trade-offs for implementing and deploying malware?
+
+:::
+
+# Mining and Cryptojacking
+
+::: fragment
+
+- Mining must be hard to do and easy to check
+- The miner who seals a block earns the reward
+- A cryptojacker makes a victim's machine do that work
+
+:::
+
+::: {.fragment style="font-size: 0.95em; margin-top: -0.1em;"}
+
+{{< iconify fa6-solid people-line >}} **Who pays for the mining?**
+
+:::
+
+## Cryptojacking
+
+::: fragment
+
+- Steals processor cycles and electricity instead of files
+
+- Mines cryptocurrency in the background
+
+- **Primary goal**: earn coins with someone else's hardware
+
+- Cryptojacking can be spread via:
+  - Malicious web pages and browser scripts
+  - Trojanized downloads and browser extensions
+  - Exploited servers and Internet of Things (IoT) devices
+
+:::
+
+::: {.fragment style="font-size: 0.95em; margin-top: -0.1em;"}
+
+{{< iconify fa6-solid map >}} **Can you find an example of cryptojacking?**
+
+:::
+
+## Sealing a Block with Proof of Work
+
+::: {.incremental style="margin-top: -0.5em;"}
+
+- Mining adds the next block to a blockchain
+- A block is accepted only when its hash passes a test:
+  - The digest must start with a set number of zeros
+- The miner picks a free number called the `nonce`
+- Each `nonce` gives a completely different digest
+- So the miner keeps guessing until one digest passes
+- The miner who finds it earns the block reward
+
+:::
+
+## Why Guessing Is the Work
+
+::: incremental
+
+- SHA-256 is one-way, so a digest hides its `nonce`
+- There is no shortcut, so the miner must guess
+- Checking one guess costs a single hash
+- So any peer can verify a `nonce` almost instantly
+- The guessing is paid for in electricity
+- A cryptojacker makes someone else pay that bill
+
+:::
+
+::: {.fragment style="font-size: 0.95em; margin-top: -0.1em;"}
+
+{{< iconify fa6-solid people-line >}} **Why mine quietly instead of stealing
+files?**
+
+:::
+
+## Simulating a Mining Loop
+
+```{python}
+import hashlib
+
+def mine(zeros, limit=500_000):
+    target = "0" * zeros
+    for nonce in range(limit):
+        block = f"block-{nonce}".encode()
+        digest = hashlib.sha256(block).hexdigest()
+        if digest.startswith(target):
+            return nonce, digest
+    return None, None
+```
+
+::: fragment
+
+- `zeros` sets how many leading zeros count as a win
+
+- `hashlib.sha256` hashes one candidate block
+
+- `digest.startswith(target)` tests each guess
+
+- The `for` loop tries each `nonce`, up to `limit` guesses
+
+:::
+
+## Measuring the Cost of Mining
+
+```{python}
+import time
+
+for zeros in (3, 4):
+    start = time.perf_counter()
+    nonce, digest = mine(zeros)
+    elapsed = time.perf_counter() - start
+    print(f"{zeros} zeros: {nonce + 1:,} guesses, "
+          f"{elapsed * 1000:.1f} ms, {digest[:12]}...")
+```
+
+::: fragment
+
+- A guess wins about once in 4,096 at three zeros
+
+- At four zeros a win takes 65,536 guesses, 16x more
+
+- The runs above are single, lucky draws
 
 :::
 
@@ -622,5 +842,69 @@ __pyarmor__(__name__, __file__, b'PY000000\x00\x03\x0c\x00\xcb\r\r\n\x80\x00\x01
 :::
 
 :::
+
+:::
+
+## Malware and Objectives
+
+::: {.columns style="margin-top: 0.15em;"}
+
+::: {.column style="width: 33%; font-size: 0.72em;"}
+
+::: {.fragment .fade}
+
+### **Classify**
+
+- Worms, viruses
+- Trojans, ransomware
+- Spyware, cryptojacking
+- Fileless malware
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.72em;"}
+
+::: {.fragment .fade}
+
+### **Detect**
+
+- Run `strings`
+- Collect IoCs
+- Map the kill chain
+- Watch CPU and memory
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.72em;"}
+
+::: {.fragment .fade}
+
+### **Defend**
+
+- Patch and update
+- Least privilege
+- Isolate with a VM
+- Restore from backups
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.72em;"}
+
+- **CSP Chapter 3 connection**: connect malware **types** and **targets** to
+**delivery**, **obfuscation**, and **defense**
+
+- **CS-403-1**: Correctly identify the **threats** to an application's security and
+describe the **suitable mitigation(s)** for addressing the threats.
+
+- **CS-403-3**: Correctly use hardware and/or software **tools** to diagnose
+and fix web and network security risks.
 
 :::
