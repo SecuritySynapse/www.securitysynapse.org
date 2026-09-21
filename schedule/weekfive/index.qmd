@@ -1,5 +1,5 @@
 ---
-title: Exploring Malware 
+title: Exploring Malware
 description: "What is Malware and How Do We Defend Against It?"
 date: 2026-09-21
 layout: full
@@ -12,23 +12,19 @@ toc-expand: 3
 - {{< iconify fa6-solid book-open size=18px >}} Read chapter three of
 [Computer Systems Security: Planning for
 Success](https://web.njit.edu/~rt494/security/)
-- {{< iconify fa6-solid book-open size=18px >}} Review chapters four through twelve 
+- {{< iconify fa6-solid book-open size=18px >}} Review chapters four through twelve
 [Cracking Codes with Python](https://inventwithpython.com/cracking/)
 
 ## Activities
 
 - {{< iconify fa6-solid people-line size=18px >}} **Monday and Wednesday**: Malware
-- {{< iconify fa6-solid people-line size=18px >}} **Friday**: Programming skill check or in-person assessment
+- {{< iconify fa6-solid people-line size=18px >}} **Friday**: Complete a computer security check Complete a form-based assessment on your laptop
+  - Complete an in-person assessment with course instructor
 - {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Laboratory session
-  - Understand the types of malware
-  - Learn how to detect and defend against malware
-  - Discover the indicators of compromise
-  - Continued highlighting of the concept of a "security synapse"
-  - Student presentations that feature:
-    - Explanation of a high-level concept in the area of malware
-    - In-class activity that connects concepts to real-world scenarios
-    - Implementation of a malware-adjacent concept in a programming language
-    - Question and answer session with learning peers and the course instructor
+  - Complete and submit the [Security Survey Project One: Server Fuzzing](/../projects/)
+    - Using your own laptop, give a public demonstration and presentation of
+  the project to the instructor and your peers
+  - Start working on [Security Survey Project Two: Cryptography Benchmarking](/../projects/)
 
 ## Slides
 
