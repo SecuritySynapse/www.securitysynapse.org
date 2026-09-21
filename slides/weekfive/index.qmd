@@ -297,18 +297,14 @@ print(f"in memory: {source}")
 
 - Records of the hidden code live in memory, not on disk
 
-:::
-
-::: {.fragment .fade .boxed-content style="padding-top: .5em; font-size: 0.9em;"}
-
-**Insight**: the payload leaves nothing on disk, so memory is the evidence.
+- Payload leaves nothing on disk, so memory is the evidence
 
 :::
 
 ::: {.fragment style="font-size: 0.95em; margin-top: 0.1em;"}
 
-{{< iconify fa6-solid people-line >}} **How would you find the payload in
-memory?**
+{{< iconify fa6-solid people-line >}} **How would you find the active payload in
+memory? How is this more difficult than detecting file-based malware? Ideas?**
 
 :::
 
