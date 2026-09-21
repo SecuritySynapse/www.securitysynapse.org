@@ -232,8 +232,8 @@ format:
 
 ::: {.fragment style="font-size: 0.95em; margin-top: -0.5em;"}
 
-{{< iconify fa6-solid map >}} **Which evidence remains when no file is
-written?**
+{{< iconify fa6-solid map >}} **What evidence of malware remains when no file
+is written?**
 
 :::
 
