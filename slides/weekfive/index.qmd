@@ -237,7 +237,7 @@ is written?**
 
 :::
 
-## Hiding Code as Text
+## Hiding Code as Text with `base64`
 
 ::: incremental
 
@@ -245,13 +245,15 @@ is written?**
 - Fileless malware never gives it a file to inspect
 - Instead, the code travels as ordinary text
 - `base64` rewrites code as text that looks like noise
-- Anyone can reverse `base64`, so it only buys time
+- Anyone can reverse `base64`, so it obscures attack
 
 :::
 
 ::: {.fragment .fade .boxed-content style="padding-top: .5em; font-size: 0.9em;"}
 
-**Key idea**: `print('hi')` and `cHJpbnQoJ2hpJyk=` are the same program.
+**Key idea**: From the perspective of Python programming, `print('hi')` and
+`cHJpbnQoJ2hpJyk=` are the same program. Try this out! Now, do a deep-dive
+on `base64` encoding in Python!
 
 :::
 
