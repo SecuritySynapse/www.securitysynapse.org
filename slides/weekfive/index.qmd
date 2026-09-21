@@ -374,12 +374,13 @@ this an attack?**
 ::: {.incremental style="margin-top: -0.5em;"}
 
 - Mining adds the next block to a blockchain
-- A block is accepted only when its hash passes a test:
-  - The digest must start with a set number of zeros
-- The miner picks a free number called the `nonce`
-- Each `nonce` gives a completely different digest
+- A block is accepted when its digest has leading zeros
+- The miner picks a "free number" called the `nonce`
+  - A *nonce* is a number used once
+- Each new `nonce` gives a completely different digest
 - So the miner keeps guessing until one digest passes
 - The miner who finds it earns the block reward
+- Use the victim's computer to find a passing nonce!
 
 :::
 
@@ -399,7 +400,8 @@ this an attack?**
 ::: {.fragment style="font-size: 0.95em; margin-top: -0.1em;"}
 
 {{< iconify fa6-solid people-line >}} **Why mine quietly instead of stealing
-files?**
+files? What are the trade-offs of this approach? Why? Now, investigate
+further!**
 
 :::
 
@@ -639,7 +641,7 @@ or C program?**
 
 :::
 
-::: {.fragment .fade .boxed-content style="padding-top: .25em; padding-bottom: .25em; font-size: 0.9em;"}
+::: {.fragment .fade .boxed-content style="padding-top: .10em; padding-bottom: .25em; font-size: 0.8em;"}
 
 - What if a program stores your credentials in plain text?
 - How could we build a program that collects system data?
