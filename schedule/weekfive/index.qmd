@@ -18,7 +18,8 @@ Success](https://web.njit.edu/~rt494/security/)
 ## Activities
 
 - {{< iconify fa6-solid people-line size=18px >}} **Monday and Wednesday**: Malware
-- {{< iconify fa6-solid people-line size=18px >}} **Friday**: Complete a computer security check Complete a form-based assessment on your laptop
+- {{< iconify fa6-solid people-line size=18px >}} **Friday**: Complete a computer security check
+  - Complete a form-based assessment on your laptop
   - Complete an in-person assessment with course instructor
 - {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Laboratory session
   - Complete and submit the [Security Survey Project One: Server Fuzzing](/../projects/)
