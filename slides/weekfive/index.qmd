@@ -341,7 +341,8 @@ memory? How is this more difficult than detecting file-based malware? Ideas?**
 
 ::: {.fragment style="font-size: 0.95em; margin-top: -0.1em;"}
 
-{{< iconify fa6-solid people-line >}} **Who pays for the mining?**
+{{< iconify fa6-solid people-line >}} **Wait, who pays for the mining? How is
+this an attack?**
 
 :::
 
@@ -449,6 +450,8 @@ for zeros in (3, 4):
 - At four zeros a win takes 65,536 guesses, 16x more
 
 - The runs above are single, lucky draws
+
+- Mining costs are paid by the computer's owner!
 
 :::
 
