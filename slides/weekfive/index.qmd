@@ -22,17 +22,17 @@ format:
 
 # What is malware?
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.95em;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.9em;"}
 
 - A portmanteau of "malicious software"
 - Programs that are intentionally malicious
 - Distinct from software that is defective
 - Real-world examples of malware:
-    - Viruses
-    - Worms
-    - Trojans
-    - Ransomware
-    - Spyware
+  - Viruses
+  - Worms
+  - Trojans
+  - Ransomware
+  - Spyware
 
 :::
 
@@ -60,10 +60,10 @@ format:
 - Malware typically needs elevated privileges to run
 - *Goal*: privilege escalation without user interaction
 - What is a zero-day exploit?
-    - A previously unknown vulnerability
-    - No patch or fix available
-    - Attackers exploit the vulnerability
-    - Supports malware delivery and attack
+  - A previously unknown vulnerability
+  - No patch or fix available
+  - Attackers exploit the vulnerability
+  - Supports malware delivery and attack
 
 :::
 
@@ -459,8 +459,8 @@ for zeros in (3, 4):
 ::: incremental
 
 - Examples of common installation methods:
-    - `curl -L https://install.pivpn.io | bash`
-    - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/install.sh)"`
+  - `curl -L https://install.pivpn.io | bash`
+  - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/install.sh)"`
 - What are the security risks of these commands?
 - What are the alternatives to these installation methods?
 
@@ -481,7 +481,7 @@ for zeros in (3, 4):
 
 ::: {.fragment style="font-size: 0.95em; margin-top: -0.1em;"}
 
-**{{< iconify ph scales >}} _Trade-offs_: Attackers trade-off ease-of-use and
+**{{< iconify ph scales >}} *Trade-offs*: Attackers trade-off ease-of-use and
 effectiveness, people who are targets trade-off ease-of-use and security**
 
 :::
@@ -498,10 +498,10 @@ effectiveness, people who are targets trade-off ease-of-use and security**
 ::: incremental
 
 - **Important reminders**:
-    - Only use for educational purposes
-    - Do not run directly on your computer
-    - Use a Docker container or virtual machine
-    - Run without access to the Internet
+  - Only use for educational purposes
+  - Do not run directly on your computer
+  - Use a Docker container or virtual machine
+  - Run without access to the Internet
 
 :::
 
@@ -585,7 +585,6 @@ or C program?**
   - Control flow of the program
   - Data flow of the program
   - Data structures and algorithms
-
 - *Remember*, the program must still work correctly
 - Deobfuscation is the process of reversing obfuscation
 - Let's explore some obfuscation techniques!
@@ -697,8 +696,6 @@ Total files: 2802
 - How could this program be obfuscated?
 
 :::
-
-
 
 ## Obfuscation of Data Collection
 
