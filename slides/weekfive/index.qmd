@@ -85,7 +85,7 @@ format:
 
 ::: fragment
 
-- Different types of malware
+- Different types and behaviors of malware
 - Some malware span multiple categories
 - Malware exists in source code and binaries
 - Malware may appear in documents or data
