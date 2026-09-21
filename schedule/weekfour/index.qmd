@@ -28,6 +28,8 @@ programming skill check
   - Continued highlighting of the concept of a "security synapse"
   - Presentation of the [Security Survey Project One: Server Fuzzing](/../projects/)
   - Continue working on and submit the [Security Survey Project One: Server Fuzzing](/../projects/)
+  - Note that final deadline for this project was pushed back to Friday
+    of next week due to the on-campus Alumni Panel and Meet and Greet events.
 
 ## Slides
 
