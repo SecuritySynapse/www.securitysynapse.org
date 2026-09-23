@@ -36,7 +36,7 @@ format:
 
 :::
 
-# *Probing Questions*: have you every encountered malware? What happened? How did you resolve it? Lessons?
+# *Probing Questions*: have you ever encountered malware? What happened? How did you resolve it? Lessons?
 
 # Malware Targets
 
@@ -46,7 +46,7 @@ format:
   - Windows operating systems
   - Web browsers
   - Android devices
-- Malware considers:
+- Malware authors consider:
   - How many users are affected?
   - How easily can it infect and spread?
   - How much money can it generate?
@@ -57,13 +57,13 @@ format:
 
 ::: incremental
 
-- Malware typically needs elevated privileges to run
-- *Goal*: privilege escalation without user interaction
+- Malware does not always need elevated privileges to run
+- *Goal*: privilege escalation, perhaps without user interaction
 - What is a zero-day exploit?
-  - A previously unknown vulnerability
-  - No patch or fix available
-  - Attackers exploit the vulnerability
-  - Supports malware delivery and attack
+  - A vulnerability unknown to the vendor or defenders
+  - Often has no patch available when first exploited
+  - Can support malware delivery, code execution, privilege escalation,
+  denial of service, or other attacks
 
 :::
 
@@ -73,11 +73,11 @@ format:
 
 :::
 
-# "gaining access to anyones [*sic*] browser without them even visiting a website"
+# Wow, A Browser Vulnerability Involving Malicious JavaScript
 
 ::: fragment
 
-[Read the article by eva (xyzeva on GitHub)!](https://kibty.town/blog/arc/)
+[Read the article about CVE-2024-45489 by eva!](https://kibty.town/blog/arc/)
 
 :::
 
@@ -87,8 +87,8 @@ format:
 
 - Different types and behaviors of malware
 - Some malware span multiple categories
-- Malware exists in source code and binaries
-- Malware may appear in documents or data
+- Malicious code can appear in source code and binaries
+- Malicious code may be embedded in documents or scripts
 
 :::
 
@@ -104,7 +104,7 @@ format:
 
 - Self-replicating and self-propagating software
 
-- Worms can spread without user interaction
+- Some worms can spread without further user interaction
 
 - **Primary goal**: infect as many devices as possible
 
@@ -125,11 +125,11 @@ format:
 
 ::: fragment
 
-- Modifies a program and inserts their own code
+- Modifies a program and inserts its own code
 
-- Viruses often require user interaction to spread
+- Viruses often require user action to begin spreading
 
-- **Primary goal**: cause damage or steal information
+- **Defining behavior**: replicate by infecting other programs
 
 - Viruses can be spread via:
   - Email
@@ -148,11 +148,12 @@ format:
 
 ::: fragment
 
-- Disguises itself as a normal file or program
+- Disguises itself as a legitimate file or program
 
-- Trojan horses often require user interaction to spread
+- Trojan horses often require user action to install or run
 
-- **Primary goal**: create a backdoor in your system for malicious activities
+- **Possible goal**: provide access, steal data, or deliver other types of
+malware (e.g., ransomware, spyware, or worms)
 
 - Trojan horses can be spread via:
   - Email
@@ -171,9 +172,9 @@ format:
 
 ::: fragment
 
-- Access and then encrypts a victim's files
+- Encrypts a victim's files after gaining access
 
-- Demands access to payment to decrypt the files
+- Demands payment to decrypt the files or restore access
 
 - **Primary goal**: extort money by denying file access
 
@@ -215,13 +216,14 @@ format:
 
 ## Fileless Malware
 
-::: fragment
+::: {.fragment style="margin-top: 0.00em; font-size: 0.95em;"}
 
-- Never stores its own code as a file on the disk
+- May avoid storing its main payload as a traditional executable file,
+  which can sometimes evade detection by antivirus software
 
-- Runs that code in memory, inside another process
+- May run code in memory or through a trusted interpreter
 
-- **Primary goal**: hide from file-based malware scanners
+- **Possible benefit**: reduce reliance on file-based detection
 
 - Fileless malware often relies on:
   - Code that arrives as text and is rebuilt in memory
@@ -239,21 +241,21 @@ is written?**
 
 ## Hiding Code as Text with `base64`
 
-::: incremental
+::: {.fragment style="margin-top: 0.00em; font-size: 0.95em;"}
 
-- A scanner looks for known bad code inside files
-- Fileless malware never gives it a file to inspect
-- Instead, the code travels as ordinary text
-- `base64` rewrites code as text that looks like noise
-- Anyone can reverse `base64`, so it obscures attack
+- A simple scanner may search for recognizable text in files
+- An attacker may send a payload or command as ordinary text
+- `base64` encodes the bytes into a less recognizable text form
+- Base64 is encoding, not encryption, and anyone can decode it
+- A loader must decode the content before it can execute or use it
 
 :::
 
-::: {.fragment .fade .boxed-content style="padding-top: .5em; font-size: 0.9em;"}
+::: {.fragment .fade .boxed-content style="padding-top: .5em; font-size: 0.8em;"}
 
-**Key idea**: From the perspective of Python programming, `print('hi')` and
-`cHJpbnQoJ2hpJyk=` are the same program. Try this out! Now, do a deep-dive
-on `base64` encoding in Python!
+**Key idea**: `cHJpbnQoJ2hpJyk=` is a Base64-encoded representation of
+`print('hi')`; Python must decode it before it can execute the source. Try
+this out, then consider how a detector could decode suspicious text!
 
 :::
 
@@ -262,23 +264,21 @@ on `base64` encoding in Python!
 ```{python}
 import base64
 
-# the payload is a program, stored as plain text
-payload = "print('payload ran without a file')"
+# a harmless payload is stored as plain text
+payload = "print('payload ran without a separate payload file')"
 hidden = base64.b64encode(payload.encode()).decode()
 print(f"hidden: {hidden}")
 
-# rebuild the program and run it, writing no file
+# decode and run it without creating a separate payload file
 source = base64.b64decode(hidden).decode()
 exec(source)
 ```
 
-::: fragment
+::: {.fragment .fade style="padding-top: .2em; font-size: 0.8em;"}
 
 - The payload is a program stored as ordinary text
-
-- `b64encode` disguises it, and `b64decode` restores it
-
-- `exec` runs the restored program without a file
+- `b64encode` changes its representation; `b64decode` restores it
+- `exec` runs the restored program without a separate payload file
 
 :::
 
@@ -289,15 +289,12 @@ print(f"on disk:   {hidden}")
 print(f"in memory: {source}")
 ```
 
-::: fragment
+::: {.fragment style="margin-top: 0.00em; font-size: 0.9em;"}
 
-- The file holds text that looks like noise
-
-- The program that runs is ordinary Python
-
-- Records of the hidden code live in memory, not on disk
-
-- Payload leaves nothing on disk, so memory is the evidence
+- The encoded text may be less recognizable to a simple string search
+- The program that runs is ordinary Python after decoding
+- This cell creates no separate payload file
+- The decoded source remains available in the process's memory
 
 :::
 
@@ -313,19 +310,18 @@ memory? How is this more difficult than detecting file-based malware? Ideas?**
 ::: incremental
 
 - A variety of forms (e.g., ransomware, spyware, worms)
-- Easy exploits once you have gained access!
+- Actions may follow once malware is running with access
   - Recursive traversal of directories
   - Search for sensitive and/or system files
   - Encrypt files, delete originals, demand ransom
-
 
 :::
 
 ::: {.fragment .boxed-content style="padding-top: .5em; font-size: 0.7em;"}
 
 - Which common practices promote the spread of malware?
-- Which programming language should be used for malware?
-- Trade-offs for implementing and deploying malware?
+- Which language or runtime choices affect detection?
+- Trade-offs in implementing and defending against malware?
 
 :::
 
@@ -356,7 +352,7 @@ this an attack?**
 
 - **Primary goal**: earn coins with someone else's hardware
 
-- Cryptojacking can be spread via:
+- Cryptojacking can be spread through:
   - Malicious web pages and browser scripts
   - Trojanized downloads and browser extensions
   - Exploited servers and Internet of Things (IoT) devices
@@ -371,28 +367,34 @@ this an attack?**
 
 ## Sealing a Block with Proof of Work
 
-::: {.incremental style="margin-top: -0.5em;"}
+::: {.fragment style="margin-top: 0.00em; font-size: 0.9em;"}
 
-- Mining adds the next block to a blockchain
-- A block is accepted when its digest has leading zeros
+- In proof-of-work systems, mining proposes the next block
+- In this toy model, a block wins when its digest has leading zeros
 - The miner picks a "free number" called the `nonce`
-  - A *nonce* is a number used once
-- Each new `nonce` gives a completely different digest
+  - A *nonce* is a value varied to produce a new candidate digest
+- Each new `nonce` gives a different candidate digest
 - So the miner keeps guessing until one digest passes
-- The miner who finds it earns the block reward
-- Use the victim's computer to find a passing nonce!
+- A successful miner may receive the block reward
+- In cryptojacking, the victim's computer performs this work
+
+:::
+
+::: {.fragment style="font-size: 0.95em; margin-top: -0.1em;"}
+
+{{< iconify fa6-solid people-line >}} **Again, can you explain why this is considered an attack?**
 
 :::
 
 ## Why Guessing Is the Work
 
-::: incremental
+::: {.fragment style="margin-top: 0.00em; font-size: 0.9em;"}
 
-- SHA-256 is one-way, so a digest hides its `nonce`
-- There is no shortcut, so the miner must guess
-- Checking one guess costs a single hash
+- A cryptographic hash makes the winning `nonce` hard to predict
+- In the toy model, the miner tests candidates until one succeeds
+- Checking one guess costs a hash computation
 - So any peer can verify a `nonce` almost instantly
-- The guessing is paid for in electricity
+- The guessing is paid for in electricity at no cost to attacker
 - A cryptojacker makes someone else pay that bill
 
 :::
@@ -400,7 +402,7 @@ this an attack?**
 ::: {.fragment style="font-size: 0.95em; margin-top: -0.1em;"}
 
 {{< iconify fa6-solid people-line >}} **Why mine quietly instead of stealing
-files? What are the trade-offs of this approach? Why? Now, investigate
+files? What are the trade-offs of this approach? Now, let's investigate
 further!**
 
 :::
@@ -445,15 +447,15 @@ for zeros in (3, 4):
           f"{elapsed * 1000:.1f} ms, {digest[:12]}...")
 ```
 
-::: fragment
+::: {.fragment style="margin-top: 0.00em; font-size: 0.85em;"}
 
-- A guess wins about once in 4,096 at three zeros
+- With three hexadecimal leading zeros, a guess wins about once in 4,096
 
-- At four zeros a win takes 65,536 guesses, 16x more
+- At four zeros a win takes 65,536 guesses, which is much more!
 
-- The runs above are single, lucky draws
+- The runs above are single, lucky draws with an illustrative model
 
-- Mining costs are paid by the computer's owner!
+- Don't forget, mining costs are paid by the computer's owner!
 
 :::
 
@@ -463,7 +465,7 @@ for zeros in (3, 4):
 
 - Examples of common installation methods:
   - `curl -L https://install.pivpn.io | bash`
-  - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/install.sh)"`
+  - Generic pattern: `/bin/bash -c "$(curl -fsSL https://example.invalid/install.sh)"`
 - What are the security risks of these commands?
 - What are the alternatives to these installation methods?
 
@@ -473,7 +475,7 @@ for zeros in (3, 4):
 
 ::: fragment
 
-- What are commons ways to deliver malware?
+- What are common ways to deliver malware?
   - Spear phishing
   - Whaling
   - Smishing
@@ -482,10 +484,10 @@ for zeros in (3, 4):
 
 :::
 
-::: {.fragment style="font-size: 0.95em; margin-top: -0.1em;"}
+::: {.fragment style="font-size: 0.95em; margin-top: -0.4em;"}
 
-**{{< iconify ph scales >}} *Trade-offs*: Attackers trade-off ease-of-use and
-effectiveness, people who are targets trade-off ease-of-use and security**
+**{{< iconify ph scales >}} *Trade-offs*: Attackers trade off ease of use and
+effectiveness; users trade off convenience and security. Leads to problems!**
 
 :::
 
@@ -498,26 +500,27 @@ effectiveness, people who are targets trade-off ease-of-use and security**
 
 :::
 
-::: incremental
+::: {.fragment style="margin-top: 0.00em; font-size: 0.85em;"}
 
 - **Important reminders**:
   - Only use for educational purposes
   - Do not run directly on your computer
-  - Use a Docker container or virtual machine
+  - Use a dedicated, isolated virtual machine
+  - Do not run unknown samples on a host system
   - Run without access to the Internet
 
 :::
 
 # Compromise Indicators
 
-::: incremental
+::: {.fragment style="margin-top: 0.00em; font-size: 0.95em;"}
 
 - Artifacts that indicate a system has been compromised
 - Shared by security researchers to mitigate threats
 - Common indicators:
-  - Hash of known malicious source or object code
-  - IP addresses, URLs, or domains of control server(s)
-  - Strings or byte patterns in malicious or infected code
+  - Hash of a known malicious file or object code
+  - IPs, URLs, or domains of command-and-control servers
+  - Strings or byte patterns in suspicious code
 
 :::
 
@@ -532,7 +535,7 @@ effectiveness, people who are targets trade-off ease-of-use and security**
 ::: incremental
 
 - Extracts strings from binary files
-- Can be used to find malicious code
+- Can reveal readable text embedded in a file
 - Example: `strings /path/to/malware`
 - Running `strings` on `nvim`:
 
@@ -556,11 +559,11 @@ LUA_PATH=${LUA_PATH:+';'$LUA_PATH';'}
 
 ## Obfuscating Malware
 
-::: incremental
+::: {.fragment style="margin-top: 0.00em; font-size: 0.85em;"}
 
-- Obscure a malware's source code or binary
+- Obscures a malware's source code or binary
 
-- Makes it harder to detect and analyze
+- Can make static analysis harder, but does not prevent detection
 
 - Common obfuscation techniques:
   - Encryption
@@ -573,7 +576,7 @@ LUA_PATH=${LUA_PATH:+';'$LUA_PATH';'}
 ::: fragment
 
 {{< iconify fa6-solid people-line >}} **How would you obfuscate a Python, Java,
-or C program?**
+or C program? How hard do you think it is to reverse engineer? Why?**
 
 :::
 
@@ -590,7 +593,7 @@ or C program?**
   - Data structures and algorithms
 - *Remember*, the program must still work correctly
 - Deobfuscation is the process of reversing obfuscation
-- Let's explore some obfuscation techniques!
+- **Let's explore some obfuscation techniques!**
 
 :::
 
@@ -627,6 +630,13 @@ or C program?**
 4.0G ┌─┴ .                                                   │█████████████████████████████████████████████████████ │ 100%
 
 ```
+::: {.fragment style="margin-top: 0.75em; font-size: 0.95em;"}
+
+{{< iconify fa6-solid people-line >}} **This snapshot shows some of the files and directories
+stored in the computer's filesystem. What do you notice? Why is this possibly sensitive? How
+could an attacker exploit this data?**
+
+:::
 
 ## Importance of System Configuration
 
@@ -637,7 +647,7 @@ or C program?**
   - Reveals the programs in use
   - Identifies program versions
   - Suggests programs to target
-  - Contains access credentials
+  - May contain access credentials or tokens
 
 :::
 
@@ -748,7 +758,7 @@ __pyarmor__(__name__, __file__, b'PY000000\x00\x03\x0c\x00\xcb\r\r\n\x80\x00\x01
 
 ::: {.incremental style="font-size: 0.95em;"}
 
-- Analysis with `strings` is clearly no longer possible!
+- `strings` analysis may be less effective, but it is still possible
 - {{< iconify fa6-solid lightbulb >}} **What are the benefits of obfuscating malware?**
   - Makes it harder for humans to detect and analyze
   - Reduces the likelihood of detection by security software
@@ -771,22 +781,23 @@ __pyarmor__(__name__, __file__, b'PY000000\x00\x03\x0c\x00\xcb\r\r\n\x80\x00\x01
   - Exploitation
   - Installation
   - Command and Control
-  - Exfiltration
+  - Actions on Objectives (such as exfiltration)
 
 :::
 
-## Case Study: Emotet Ransomware
+## Case Study: Emotet Trojan
 
-::: incremental
+::: {.fragment style="margin-top: 0.00em; font-size: 0.95em;"}
 
-- Ransomware targeting Windows systems
+- Malware targeting Windows systems
   - First observed in 2014
-  - Uses email attachments to spread
-  - Now transmitted via malicious documents
+  - Historically spread through malicious email attachments
+  - Later served as a platform for delivering other malware, including
+  ransomware, often with consequences for victims
 
 :::
 
-::: fragment
+::: {.fragment style="margin-top: -0.5em; font-size: 0.95em;"}
 
 > One noteworthy Emotet attack on the City of Allentown, PA required direct
 > help from Microsoft’s incident response team to clean up and reportedly cost
@@ -887,7 +898,7 @@ __pyarmor__(__name__, __file__, b'PY000000\x00\x03\x0c\x00\xcb\r\r\n\x80\x00\x01
 
 - Patch and update
 - Least privilege
-- Isolate with a VM
+- Isolated VM for analysis
 - Restore from backups
 
 :::
@@ -905,6 +916,6 @@ __pyarmor__(__name__, __file__, b'PY000000\x00\x03\x0c\x00\xcb\r\r\n\x80\x00\x01
 describe the **suitable mitigation(s)** for addressing the threats.
 
 - **CS-403-3**: Correctly use hardware and/or software **tools** to diagnose
-and fix web and network **security risks**.
+and fix web and **network security risks**.
 
 :::
