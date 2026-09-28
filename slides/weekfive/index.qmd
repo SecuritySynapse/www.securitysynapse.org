@@ -915,7 +915,7 @@ __pyarmor__(__name__, __file__, b'PY000000\x00\x03\x0c\x00\xcb\r\r\n\x80\x00\x01
 - **CS-403-1**: Correctly identify the **threats** to an application's security and
 describe the **suitable mitigation(s)** for addressing the threats.
 
-- **CS-403-3**: Correctly use hardware and/or software **tools** to diagnose
-and fix web and **network security risks**.
+- **CS-403-3**: Correctly use hardware and/or software **tools** to **diagnose**
+and **fix** web and **network security risks**.
 
 :::
