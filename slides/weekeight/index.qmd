@@ -475,7 +475,7 @@ attack?
 
 ::: {.columns style="margin-top: 0.15em;"}
 
-::: {.column style="width: 33%; font-size: 0.72em;"}
+::: {.column style="width: 33%; font-size: 0.7em;"}
 
 ::: {.fragment .fade}
 
@@ -490,7 +490,7 @@ attack?
 
 :::
 
-::: {.column style="width: 33%; font-size: 0.72em;"}
+::: {.column style="width: 33%; font-size: 0.7em;"}
 
 ::: {.fragment .fade}
 
@@ -505,7 +505,7 @@ attack?
 
 :::
 
-::: {.column style="width: 33%; font-size: 0.72em;"}
+::: {.column style="width: 33%; font-size: 0.7em;"}
 
 ::: {.fragment .fade}
 
@@ -522,7 +522,7 @@ attack?
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: -0.7em; font-size: 0.72em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.65em;"}
 
 - **CSP Chapter 5 connection**: connect **attacks** to their **outcomes** and
 **defense**
