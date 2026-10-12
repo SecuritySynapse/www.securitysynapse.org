@@ -85,7 +85,7 @@ flowchart TB
 
 ::::
 
-# What is a computer networking protocol?
+# What is a computer networking protocol? {transition="convex"}
 
 ::: {.incremental style="margin-top: -0.5em; font-size: 0.95em;"}
 
@@ -152,7 +152,7 @@ layers are closer to hardware? Closer to people using networks?
 
 :::
 
-# Let's investigate each networking protocol layer starting with `Network` and ultimately moving to `Application`
+# Let's investigate each networking protocol layer starting with `Network` and moving to `Application`
 
 ## Address Resolution Protocol (ARP)
 
