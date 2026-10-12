@@ -91,10 +91,10 @@ flowchart TB
 
 - Rules that govern how devices communicate
 - Includes rules for the following tasks:
-    - Syntax and structure of messages
-    - Message semantics
-    - Message synchronization
-    - Error detection and correction
+  - Syntax and structure of messages
+  - Message semantics
+  - Message synchronization
+  - Error detection and correction
 
 :::
 
@@ -152,7 +152,7 @@ layers are closer to hardware? Closer to people using networks?
 
 :::
 
-# Let's investigate each networking protocol layer starting with `Network` and ultimately moving to `Application`!
+# Let's investigate each networking protocol layer starting with `Network` and ultimately moving to `Application`
 
 ## Address Resolution Protocol (ARP)
 
@@ -601,5 +601,69 @@ Nmap done: 1 IP address (1 host up) scanned in 2.20 seconds
 :::
 
 :::
+
+:::
+
+## Network Protocols and Objectives
+
+::: {.columns style="margin-top: 0.15em;"}
+
+::: {.column style="width: 33%; font-size: 0.72em;"}
+
+::: {.fragment .fade}
+
+### **Identify**
+
+- Network layers
+- IP, TCP, and UDP
+- ARP, Ethernet, WiFi
+- Ports and services
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.72em;"}
+
+::: {.fragment .fade}
+
+### **Diagnose**
+
+- Resolve with `dig`
+- Inspect with `ifconfig`
+- Probe with `ping`
+- Scan with `nmap`
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.72em;"}
+
+::: {.fragment .fade}
+
+### **Defend**
+
+- IPSec and TLS encryption
+- Harden WiFi with WPA3
+- NAT and firewall filters
+- Patch and update
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.72em;"}
+
+- **CSP Chapter 4 connection**: connect **protocol layers** and **network
+protocols** to **attacks**, **detection**, and **defense**
+
+- **CS-403-1**: Correctly identify the **threats** to an application's security
+and describe the **suitable mitigation(s)** for addressing the threats.
+
+- **CS-403-3**: Correctly use hardware and/or software **tools** to **diagnose**
+and **fix** web and **network security risks**.
 
 :::
