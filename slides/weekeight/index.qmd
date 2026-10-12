@@ -63,7 +63,7 @@ format:
 
 ## "Man-in-the-Middle" Attack
 
-::: fragment
+::: {.fragment .mitm-diagram}
 
 ```{mermaid}
 %%| echo: false
