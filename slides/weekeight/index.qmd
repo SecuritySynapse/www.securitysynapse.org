@@ -29,7 +29,7 @@ format:
 
 ## Network Protocol Lifecycle
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.725em;"}
+::: {.fragment style="margin-top: -0.5em; font-size: 0.725em;"}
 
 - **Design Protocol**
   - Define rules for communication
@@ -106,7 +106,7 @@ flowchart LR
 
 :::
 
-::: {.incremental style="font-size: 0.785em; margin-top: -0.5em;"}
+::: {.incremental style="font-size: 0.875em; margin-top: -0.25em;"}
 
 - {{< iconify fa6-solid map >}} Client sends message
 - {{< iconify fa6-solid user-secret >}} Attacker intercepts message
