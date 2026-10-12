@@ -403,7 +403,7 @@ attack?
 
 ## Network Monitoring Tool
 
-::: {.incremental style="margin-top: -.65em; font-size: 0.825em;"}
+::: {.incremental style="margin-top: -.65em; font-size: 0.8em;"}
 
 - Let's build a client and a server and intercept network communication!
 
