@@ -182,7 +182,7 @@ flowchart LR
 
 ## Mitigating the MAC Address Attacks
 
-::: {.incremental style="font-size: 0.825em; margin-top: 0.05em;"}
+::: {.fragment style="font-size: 0.825em; margin-top: 0.05em;"}
 
 - **Port Security**
   - Configure switch ports to allow only specific MAC addresses
@@ -201,7 +201,7 @@ flowchart LR
 
 ## IP Spoofing
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.8em;"}
+::: {.fragment style="margin-top: -0.5em; font-size: 0.8em;"}
 
 - **Inherent Insecurity**
   - IP was not designed with security
