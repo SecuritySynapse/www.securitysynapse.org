@@ -165,7 +165,7 @@ layers are closer to hardware? Closer to people using networks?
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.875em;"}
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.825em;"}
 
 {{< iconify fa6-solid lightbulb >}} **Key Questions**
 
