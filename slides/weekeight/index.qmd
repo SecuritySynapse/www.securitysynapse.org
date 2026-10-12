@@ -247,7 +247,7 @@ flowchart LR
 
 ## OWASP Top Ten
 
-::: {.fragment style="font-size: 0.9em; margin-top: -0.15em;"}
+::: {.fragment style="font-size: 0.85em; margin-top: -0.25em;"}
 
 - Broken access control
 - Cryptographic failures
@@ -267,7 +267,7 @@ flowchart LR
 - {{< iconify fa6-solid database >}} Cross-site scripting attacks
 - {{< iconify fa6-solid globe >}} SQL injection attacks
 
-## Cross-Site Scripting (XSS)
+## Cross-Site Scripting (XSS) {transition="convex"}
 
 ::: {.incremental style="margin-top: -0.5em; font-size: 0.8em;"}
 
@@ -288,9 +288,9 @@ flowchart LR
 
 :::
 
-## SQL Injection Attacks
+## SQL Injection Attacks {transition="convex"}
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.8em;"}
+::: {.fragment style="margin-top: -0.5em; font-size: 0.8em;"}
 
 - **Attack Overview**
   - Attacker injects malicious SQL queries
@@ -340,7 +340,7 @@ attack?
 
 ## Privilege Escalation
 
-::: {.fragment style="margin-top: -.25em; font-size: 0.8em;"}
+::: {.fragment style="margin-top: -.25em; font-size: 0.75em;"}
 
 - **Details about the attack**
   - Gain access to protected resources
@@ -349,7 +349,7 @@ attack?
 
 :::
 
-::: {.fragment style="margin-top: -.65em; font-size: 0.8em;"}
+::: {.fragment style="margin-top: -.65em; font-size: 0.75em;"}
 
 - **Methods of privilege escalation**
   - Credential exploitation
@@ -358,7 +358,7 @@ attack?
 
 :::
 
-::: {.fragment style="margin-top: -.65em; font-size: 0.8em;"}
+::: {.fragment style="margin-top: -.65em; font-size: 0.75em;"}
 
 - **Privilege escalation types**
   - *Horizontal*: move between user accounts
@@ -368,7 +368,7 @@ attack?
 
 ## Denial of Service (DoS)
 
-::: {.fragment style="margin-top: -.25em; font-size: 0.8em;"}
+::: {.fragment style="margin-top: -.25em; font-size: 0.75em;"}
 
 - **DoS Attack**
   - Overwhelm system with requests
@@ -376,7 +376,7 @@ attack?
 
 :::
 
-::: {.fragment style="margin-top: -.65em; font-size: 0.8em;"}
+::: {.fragment style="margin-top: -.65em; font-size: 0.75em;"}
 
 - **Types of DoS Attacks**
   - SYN Floods: multiple SYN packets
@@ -385,7 +385,7 @@ attack?
 
 :::
 
-::: {.fragment style="margin-top: -.65em; font-size: 0.8em;"}
+::: {.fragment style="margin-top: -.65em; font-size: 0.75em;"}
 
 - **Prevention**
   - SYN cookies for SYN Floods
@@ -468,5 +468,72 @@ attack?
 :::
 
 :::
+
+:::
+
+## Network Attacks and Objectives
+
+::: {.columns style="margin-top: 0.15em;"}
+
+::: {.column style="width: 33%; font-size: 0.72em;"}
+
+::: {.fragment .fade}
+
+### **Recognize**
+
+- Man-in-the-Middle
+- Replay and spoofing
+- DNS cache poisoning
+- Injection (XSS, SQL)
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.72em;"}
+
+::: {.fragment .fade}
+
+### **Assess**
+
+- Remote code execution
+- Privilege escalation
+- Data exfiltration
+- Denial of service
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.72em;"}
+
+::: {.fragment .fade}
+
+### **Defend**
+
+- IPSec, DNSSEC, OTP
+- Port security, 802.1X
+- Validate all input
+- Rate limit requests
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.7em; font-size: 0.72em;"}
+
+- **CSP Chapter 5 connection**: connect **attacks** to their **outcomes** and
+**defense**
+
+- **CS-403-1**: Correctly identify the **threats** to an application's security
+and describe the **suitable mitigation(s)** for addressing the threats.
+
+- **CS-403-3**: Correctly use hardware and/or software **tools** to **diagnose**
+and **fix** web and **network security risks**.
+
+- **CS-403-4**: Evaluate the **effectiveness** of various hardware and software
+systems with respect to **computer security**.
 
 :::
