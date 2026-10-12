@@ -146,7 +146,7 @@ flowchart LR
 
 ::: {.column width=50%}
 
-::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
+::: {.incremental style="margin-top: -0.25em; font-size: 0.925em;"}
 
 - **MAC Spoofing/Cloning**
   - Attacker changes a device's MAC address
@@ -159,7 +159,7 @@ flowchart LR
 
 ::: {.column width=50%}
 
-::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
+::: {.incremental style="margin-top: -0.25em; font-size: 0.925em;"}
 
 - **MAC Flooding**
   - Switches track MAC to IP address mapping
@@ -172,7 +172,7 @@ flowchart LR
 
 ::::
 
-::: {.fragment style="font-size: 0.95em; margin-top: -0.35em;"}
+::: {.fragment style="font-size: 0.85em; margin-top: -0.35em;"}
 
 - Attack performed at the network layer
 - Exploits the inherent weaknesses of MAC addresses
