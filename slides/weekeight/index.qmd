@@ -20,7 +20,7 @@ format:
     footer: "Security Synapse"
 ---
 
-# Network protocols are vulnerable to attacks!
+# Network protocols are vulnerable to attacks
 
 - All protocols have an attack surface
 - Attack surface is the set of vulnerabilities
@@ -91,8 +91,8 @@ flowchart LR
     F --> A
   end
 
-  style Client fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
-  style Server fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style Client fill:#fff,color:#fff,stroke:#1c1c1c,stroke-width:2px
+  style Server fill:#fff,color:#fff,stroke:#1c1c1c,stroke-width:2px
   style Attacker fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
   style A fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
   style B fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
@@ -186,17 +186,17 @@ flowchart LR
 ::: {.incremental style="font-size: 0.825em; margin-top: 0.05em;"}
 
 - **Port Security**
-   - Configure switch ports to allow only specific MAC addresses
-   - Limit the number of MAC addresses per port
-   - Use sticky MAC addresses to learn and restrict MAC addresses
+  - Configure switch ports to allow only specific MAC addresses
+  - Limit the number of MAC addresses per port
+  - Use sticky MAC addresses to learn and restrict MAC addresses
 
 - **802.1X Authentication**
-   - Network access controls to authenticate devices before network access
-   - Ensure that only authorized devices can connect to the network
+  - Network access controls to authenticate devices before network access
+  - Ensure that only authorized devices can connect to the network
 
 - **VLAN Segmentation**
-   - Segment the network into smaller VLANs
-   - Limit the broadcast domain and reduce the impact of MAC spoofing
+  - Segment the network into smaller VLANs
+  - Limit the broadcast domain and reduce the impact of MAC spoofing
 
 :::
 
@@ -221,7 +221,7 @@ flowchart LR
 
 :::
 
-# Combine application and transport layer security to achieve a network that is more secure overall! *Nice*!
+# Combine application and transport layer security to achieve a network that is more secure overall! *Nice*
 
 ## DNS Cache Poisoning
 
@@ -263,7 +263,7 @@ flowchart LR
 
 :::
 
-# Let's talk about prominent types of injection attacks at the application layer!
+# Let's talk about prominent types of injection attacks at the application layer
 
 - {{< iconify fa6-solid database >}} Cross-site scripting attacks
 - {{< iconify fa6-solid globe >}} SQL injection attacks
@@ -409,14 +409,14 @@ attack?
 - Let's build a client and a server and intercept network communication!
 
 - `networkmonitor` start a process in one of these modes:
-    - **Client and Server Protocols**:
-      - **Socket Server**: Start a server using sockets
-      - **Socket Client**: Start a client using sockets
-      - **XML-RPC Server**: Start a server using XML-RPC
-      - **XML-RPC Client**: Start a client using XML-RPC
-    - **Interception Mechanisms**:
-      - **Socket Interception**: Intercept socket network communication
-      - **XML-RPC Interception**: Intercept XML-RPC network communication
+  - **Client and Server Protocols**:
+    - **Socket Server**: Start a server using sockets
+    - **Socket Client**: Start a client using sockets
+    - **XML-RPC Server**: Start a server using XML-RPC
+    - **XML-RPC Client**: Start a client using XML-RPC
+  - **Interception Mechanisms**:
+    - **Socket Interception**: Intercept socket network communication
+    - **XML-RPC Interception**: Intercept XML-RPC network communication
 
 - See the course web site's project description for more details!
 
