@@ -14,7 +14,7 @@
 }
 
 .reveal code {
-  font-size: 1em;  
+  font-size: 1em;
   color: #ff5722;
   background-color: rgba(0, 0, 0, 0);
   white-space: pre-wrap;
@@ -49,4 +49,18 @@ p.tightspacer {
     Consolas, "Liberation Mono", "Courier New", monospace !important;
   --r-code-font: "Ubuntu Mono", SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace !important;
+}
+
+/* create larger, bolder labels and heavier lines in the MITM diagram */
+.mitm-diagram .mermaid-js .label,
+.mitm-diagram .mermaid-js .nodeLabel,
+.mitm-diagram .mermaid-js .cluster-label span,
+.mitm-diagram .mermaid-js text {
+  font-size: 19px;
+  font-weight: 700 !important;
+}
+
+.mitm-diagram .mermaid-js .edgePath path,
+.mitm-diagram .mermaid-js .flowchart-link {
+  stroke-width: 2.5px !important;
 }
