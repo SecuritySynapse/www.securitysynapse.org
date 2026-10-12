@@ -68,32 +68,34 @@ format:
 ```{mermaid}
 %%| echo: false
 flowchart LR
-  subgraph Client
+  subgraph c1["Client"]
     A(Client) --> B[Send Message]
   end
 
-  subgraph Attacker
+  subgraph att1["Attacker"]
     B --> X[Intercept & Modify]
     X --> C[Send Modification]
   end
 
-  subgraph Server
+  subgraph srv["Server"]
     C --> D[Process Message]
     D --> Y[Send Response]
   end
 
-  subgraph Attacker
+  subgraph att2["Attacker"]
     Y --> Z[Intercept & Modify]
     Z --> F[Send Modification]
   end
 
-  subgraph Client
+  subgraph c2["Client"]
     F --> A
   end
 
-  style Client fill:#fff,color:#fff,stroke:#1c1c1c,stroke-width:2px
-  style Server fill:#fff,color:#fff,stroke:#1c1c1c,stroke-width:2px
-  style Attacker fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style c1 fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style c2 fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style srv fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style att1 fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
+  style att2 fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
   style A fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
   style B fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
   style C fill:#fff,color:#1c1c1c,stroke:#1c1c1c,stroke-width:2px
