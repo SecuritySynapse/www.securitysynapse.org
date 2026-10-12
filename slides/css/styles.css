@@ -51,16 +51,16 @@ p.tightspacer {
     "Liberation Mono", "Courier New", monospace !important;
 }
 
-/* create larger, bolder labels and heavier lines in the MITM diagram */
-.mitm-diagram .mermaid-js .label,
-.mitm-diagram .mermaid-js .nodeLabel,
-.mitm-diagram .mermaid-js .cluster-label span,
-.mitm-diagram .mermaid-js text {
+/* create larger, bolder labels and heavier lines in mermaid diagrams */
+.mermaid-js .label,
+.mermaid-js .nodeLabel,
+.mermaid-js .cluster-label span,
+.mermaid-js text {
   font-size: 19px;
   font-weight: 700 !important;
 }
 
-.mitm-diagram .mermaid-js .edgePath path,
-.mitm-diagram .mermaid-js .flowchart-link {
-  stroke-width: 2.5px !important;
+.mermaid-js .edgePath path,
+.mermaid-js .flowchart-link {
+  stroke-width: 3px !important;
 }
