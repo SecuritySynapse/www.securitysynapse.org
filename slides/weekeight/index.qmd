@@ -421,33 +421,35 @@ attack?
 
 :::
 
-## Summary of Network Security Attacks
+## Summary of Network Attacks
 
 ::: {.columns style="margin-top: 0.5em;"}
 
-::: {.column style="font-size: 0.9em;"}
+::: {.column style="font-size: 0.72em;"}
 
 ::: fragment
 
 ### *Key Concepts*
 
-#### Studied Protocols
+#### Studied Attacks
 
-- TCP/IP
-- UDP
-- IPSec and SSL/TLS
+- Man-in-the-Middle
+- Spoofing and replay
+- DNS cache poisoning
+- Injection attacks
 
-#### Key Concepts
+#### Key Outcomes
 
-- Protocol layers
-- Client-server communication
-- Secure data transmission
+- Remote code execution
+- Privilege escalation
+- Data exfiltration
+- Denial of service
 
 :::
 
 :::
 
-::: {.column style="font-size: 0.9em;"}
+::: {.column style="font-size: 0.72em;"}
 
 ::: fragment
 
@@ -455,15 +457,17 @@ attack?
 
 #### Implementation
 
-- Understand protocol roles
-- Ensure secure configurations
-- Regularly update protocols
+- Validate and sanitize input
+- Harden protocols and devices
+- Patch and update software
+- Awareness of new attacks
 
 #### Exploration
 
-- Compare with other protocols
+- Detect with monitoring
+- Compare security controls
+- Consider layered defense
 - Study protocol interactions
-- Consider next generation
 
 :::
 
