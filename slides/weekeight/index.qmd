@@ -457,11 +457,12 @@ $ sysctl kernel.randomize_va_space
 kernel.randomize_va_space = 2
 ```
 
-::: {.fragment .fade style="margin-top: 0.1em; font-size: 0.8em;"}
+::: {.fragment .fade style="margin-top: 0.1em; font-size: 0.78em;"}
 
 - `strcpy` ignores the 16-byte size and corrupts adjacent memory
-- The buffer address changes every run because ASLR randomizes it
-- An exploit cannot hard-code an address; ASLR raises the cost of RCE
+- `ctypes` reaches the real C `strcpy`, so this is a C overflow, not a Python bug
+- The changing address is the OS's ASLR; Python has no ASLR of its own
+- An exploit cannot hard-code the address, which raises the cost of RCE
 
 :::
 
