@@ -318,6 +318,32 @@ securitysynapse.org. 300 IN A 104.21.20.61
 
 :::
 
+## DNSSEC on Additional Web Sites
+
+```text
+$ dig +dnssec @1.1.1.1 whitehouse.gov A +noall +comments +answer
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+;; ANSWER SECTION:
+whitehouse.gov. 196 IN A 192.0.66.51
+whitehouse.gov. 196 IN RRSIG A 13 2 300 ... oyDXuKLq...Q==
+$ for d in ietf.org nist.gov google.com; do \
+>   dig +dnssec @1.1.1.1 "$d" A +noall +comments \
+>     | grep -qE "flags:.* ad;" && echo "$d signed" \
+>     || echo "$d unsigned"; done
+ietf.org signed
+nist.gov signed
+google.com unsigned
+```
+
+::: {.fragment .fade style="margin-top: 0.1em; font-size: 0.85em;"}
+
+- `whitehouse.gov` is signed: `ad` plus a covering `RRSIG`
+- Other signed sites: `ietf.org`, `nist.gov`, `ripe.net`, `iana.org`
+- `google.com` is not signed, so no validating resolver sets `ad`
+- Signing is the zone owner's choice; validation is the resolver's job
+
+:::
+
 # What are the greatest security vulnerabilities at the application level of the network protocol stack? How to control?
 
 ## OWASP Top Ten
