@@ -529,11 +529,19 @@ $ sysctl net.ipv4.tcp_syncookies
 net.ipv4.tcp_syncookies = 1
 
 $ ss -s
-Total: 1267
-TCP:   83 (estab 54, closed 9, orphaned 0, timewait 8)
+Total: 1391
+TCP:   142 (estab 105, closed 15, orphaned 0, timewait 14)
+
+Transport Total     IP        IPv6
+RAW       1         0         1
+UDP       5         5         0
+TCP       127       126       1
+INET      133       131       2
+FRAG      0         0         0
+
 ```
 
-::: {.fragment .fade style="margin-top: 0.15em; font-size: 0.85em;"}
+::: {.fragment .fade style="margin-top: 0.15em; font-size: 0.75em;"}
 
 - A SYN flood fills the backlog with half-open connections
 - `ss -s` summarizes sockets; watch `timewait` and `orphaned`
