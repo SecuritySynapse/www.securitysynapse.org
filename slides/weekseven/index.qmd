@@ -366,7 +366,7 @@ rtt min/avg/max/mdev = 14.641/16.258/19.470/1.680 ms
 
 :::
 
-::: {.fragment .boxed-content .fade style="margin-top: 0.05em; font-size: 0.85em;"}
+::: {.fragment .boxed-content .fade style="margin-top: 0.05em; font-size: 0.8em;"}
 
 {{< iconify fa6-solid lightbulb >}} **Key Questions**:
 
