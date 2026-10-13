@@ -136,7 +136,7 @@ Verify return code: 0 (ok)
 
 ::: {.fragment .fade style="margin-top: 0.15em; font-size: 0.85em;"}
 
-- The client verifies a certificate chain up to a trusted root
+- The client verifies a certificate chain up to a trusted root server
 - `Verify return code: 0 (ok)` proves the server's identity
 - A MITM cannot present a trusted certificate for the same name
 - `-servername` (SNI) requests the certificate for the chosen host
@@ -239,12 +239,13 @@ $ ip neigh
 172.16.0.21  dev wlp1s0   lladdr aa:bb:cc:dd:ee:05 STALE
 ```
 
-::: {.fragment .fade style="margin-top: 0.15em; font-size: 0.85em;"}
+::: {.fragment .fade style="margin-top: 0.15em; font-size: 0.825em;"}
 
 - `ip -brief link` shows each interface and its `ether` (MAC) address
 - `ip neigh` is the ARP cache of trusted IP-to-MAC bindings
 - Spoofing or poisoning one binding redirects traffic to the attacker
 - Port security, 802.1X, and VLANs limit how far a bad binding spreads
+- What are all the output codes for the `ip neigh` command?
 
 :::
 
