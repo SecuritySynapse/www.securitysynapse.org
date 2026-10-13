@@ -1,0 +1,810 @@
+---
+title: "Computational Security"
+subtitle: "Understanding Pseudorandom Generators and Stream Ciphers"
+description: "How do we encrypt a long message with a short key?"
+date: "2026-11-02"
+date-format: long
+author: Gregory M. Kapfhammer
+execute:
+  echo: true
+jupyter: python3
+format:
+  live-revealjs:
+    completion: true
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Security Synapse"
+---
+
+# Practical Encryption
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The problem**
+  - Perfect secrecy needs a huge key
+  - Real systems protect long messages
+
+- **The solution**
+  - Stretch a short key safely
+  - Keep the simple XOR idea
+
+- **The trade**
+  - Security becomes a question of cost
+  - Reading: JOY chapters four and five
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: how can 16 key bytes protect a one gigabyte file?
+
+:::
+
+## What Will We Learn This Week?
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **Key stretching**
+  - Why the pad cannot scale
+  - How a seed makes a keystream
+
+- **Practical security**
+  - Why "impractical" is good enough
+  - What "negligible" really means
+
+- **Good habits**
+  - How a nonce keeps messages unique
+  - What cryptography cannot prove
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Security synapse**: the nonce rule protects tools from later weeks
+
+:::
+
+## The One-Time Pad Does Not Scale
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The cost**
+  - An *n*-bit key for an *n*-bit message
+  - Key storage grows with the message
+
+- **The logistics**
+  - Sharing the key is as hard as sending it
+  - Every message needs a fresh key
+
+- **The consequence**
+  - Nobody memorizes a huge key
+  - The key is the message in disguise
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: can we expand a short key into a long keystream?
+
+:::
+
+# Stretching a Short Key
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The function**
+  - A deterministic expansion of the key
+  - Both sides compute the same output
+
+- **The requirement**
+  - The output must look random
+  - It can never be truly random
+
+- **The choice**
+  - Accept an approximation
+  - Call it pseudorandomness
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: why does a formula always leave a fingerprint?
+
+:::
+
+## The Key-Expansion Idea
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The tool**
+  - Call the expansion function `G`
+  - Both sides compute `G(key)`
+
+- **The use**
+  - XOR the keystream with the message
+  - Keep the seed secret
+
+- **The goal**
+  - The output looks uniform
+  - A small seed masks a large file
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Aim for indistinguishability**: if nobody can tell, nothing leaks
+
+:::
+
+## Why Uniform Stretching Is Impossible
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The counting**
+  - Small seeds, far more outputs
+  - Some strings never appear
+
+- **The observer**
+  - Full knowledge reveals the gap
+  - An attacker sees few samples
+
+- **The judgment**
+  - Security is local, not global
+  - The gap matters only if visible
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Practical view**: the gap only matters if an attacker can see it
+
+:::
+
+## Pseudorandom Generators
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The shape**
+  - `G` stretches a seed into a string
+  - The **stretch** adds extra length
+
+- **The inputs**
+  - The **seed** `S` is uniform
+  - The seed stays secret
+
+- **The promise**
+  - `G(S)` looks random
+  - Used once, it replaces randomness
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Pseudorandom**: looks random to any efficient test
+
+:::
+
+## Pseudorandomness in Python
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+import hashlib
+
+def prg(seed: bytes, length: int) -> bytes:
+    """Stretch a short seed into a keystream."""
+    return hashlib.shake_256(seed).digest(length)
+
+seed = b"short-seed"
+keystream = prg(seed, 32)
+print("Keystream:", len(keystream), "bytes from", len(seed))
+print("Repeats:  ", prg(seed, 32) == keystream)
+```
+
+::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Takeaway**: the same seed always gives the
+same keystream
+
+:::
+
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid keyboard >}} **Try it**: change the seed and watch every byte
+change
+
+:::
+
+## Recap on Pseudorandomness
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The idea**
+  - A short seed makes a keystream
+  - The output only looks uniform
+
+- **The rules**
+  - The seed is used exactly once
+  - The same seed repeats output
+
+- **The caution**
+  - No PRG is proven from scratch
+  - A repeated seed breaks secrecy
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: why does a repeated seed break secrecy?
+
+:::
+
+# Is Security Enough?
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The shift**
+  - Perfect security ignores cost
+  - Modern security allows slow attacks
+
+- **The measure**
+  - Effort is counted in bits
+  - 128 bits is a common target
+
+- **The honesty**
+  - Assumptions replace proofs
+  - State them clearly
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: is a trillion-year attack different from an impossible one?
+
+:::
+
+## Removing the Two Impossibilities
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **What we drop**
+  - Attacks may take a long time
+  - They may succeed very rarely
+
+- **What we keep**
+  - Every attack stays impractical
+  - No realistic attack succeeds
+
+- **Why it works**
+  - Real hardware has limits
+  - Deployable systems need this
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**The trade**: an absolute guarantee for a deployable system
+
+:::
+
+## The Concrete Approach
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The claim**
+  - Effort `2^80`, success `2^-64`
+  - Cost divided by success probability
+
+- **The scale**
+  - `2^50` cycles: a cup of coffee
+  - `2^128` cycles: beyond any civilization
+
+- **The standard**
+  - Target at least 128 bits
+  - Judge against your own risk
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Why it helps**: you can compare attack cost with data value
+
+:::
+
+## Tiny Probabilities Matter
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **Compare the odds**
+  - `2^-40.6`: 154 dice rolls without a seven
+  - `2^-64`: a dart hitting a tiny target
+
+- **Count the attempts**
+  - Many tries multiply small odds
+  - `2^50` tries turn `2^-80` into `2^-30`
+
+- **Pick the right event**
+  - Report the probability that matters
+  - Small numbers need careful thought
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Watch the right event**: count the probability that really matters
+
+:::
+
+## The Asymptotic Approach
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The parameter**
+  - `λ` is the security parameter
+  - It is usually the key length
+
+- **The adversary**
+  - Runs in polynomial time
+  - Cannot succeed with high odds
+
+- **The rule**
+  - `1 / 2^λ` is negligible
+  - `1 / λ^2` is not negligible
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Why discard them**: negligible odds make "no attack works" provable
+
+:::
+
+## Pseudo-OTP
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The inputs**
+  - Key: `λ` bits
+  - Message and ciphertext: `λ + ℓ` bits
+
+- **The operations**
+  - **Encrypt**: `C := G(K) ^ M`
+  - **Decrypt**: `M := G(K) ^ C`
+
+- **The result**
+  - A short key protects a long message
+  - Security reduces to the PRG
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Result**: one short key protects a much longer message
+
+:::
+
+## Pseudo-OTP in Python
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 11
+import hashlib
+
+message = b"Encrypt me with a short key!"
+seed = b"a-short-16-byte-"
+stream = hashlib.shake_256(seed).digest(len(message))
+
+ciphertext = bytes(m ^ s for m, s in zip(message, stream))
+decrypted = bytes(c ^ s for c, s in zip(ciphertext, stream))
+print("Key size:", len(seed), "bytes for", len(message))
+print("Decrypted:", decrypted)
+```
+
+::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Takeaway**: 16 key bytes encrypt a 28 byte
+message exactly
+
+:::
+
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid keyboard >}} **Try it**: swap the seed and watch decryption
+fail
+
+:::
+
+## Recap on Pseudo-OTP
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The idea**
+  - A short key plus a PRG
+  - The XOR structure is reused
+
+- **The rules**
+  - The seed is used once
+  - A weak seed breaks it
+
+- **The risk**
+  - Security rests on the PRG
+  - Never repeat a seed
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: if the key is fixed, what else must change?
+
+:::
+
+# Using a PRG Correctly
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The rules**
+  - One seed use for each key
+  - A fresh nonce per message
+
+- **The habits**
+  - Standard ciphers help
+  - Libraries enforce the details
+
+- **The warning**
+  - Misuse breaks sound mathematics
+  - Attack the usage, not the math
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: which fails first, the algorithm or the usage?
+
+:::
+
+## Nonces Make Keystreams Unique
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The input**
+  - The keystream needs key and nonce
+  - A counter or random value works
+
+- **The rule**
+  - Every message gets a fresh nonce
+  - The nonce may be public
+
+- **The danger**
+  - Reusing both repeats the pad
+  - The key then cancels out
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Why it matters**: a repeated keystream makes the key cancel out
+
+:::
+
+## Nonce Reuse in Python
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 13
+import hashlib
+
+def stream(key: bytes, nonce: bytes, n: int) -> bytes:
+    return hashlib.shake_256(key + nonce).digest(n)
+def xor(p: bytes, q: bytes) -> bytes:
+    return bytes(a ^ b for a, b in zip(p, q))
+
+key, nonce = b"shared-key-12345", b"nonce-one"
+m1, m2 = b"Attack at dawn!!", b"Retreat at dusk!"
+s = stream(key, nonce, len(m1))    # one nonce, two messages
+c1, c2 = xor(m1, s), xor(m2, s)
+print("M1 xor M2:", xor(m1, m2).hex())
+print("C1 xor C2:", xor(c1, c2).hex())
+```
+
+::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Takeaway**: the two values match, so the
+reused keystream has vanished
+
+:::
+
+## Extending a PRG's Stretch
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The idea**
+  - Length doubling gives `2λ` bits
+  - Feed the second half back in
+
+- **The steps**
+  - `A || B := G(S)`
+  - `C || D := G(B)`
+  - Output `A || C || D`
+
+- **The caution**
+  - Each step needs a uniform seed
+  - One seed fills a whole file
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: why not reuse `S` in the second call?
+
+:::
+
+## Even the Best PRG Can Be Misused
+
+::: {.columns style="margin-top: 0.25em;"}
+
+::: {.column style="width: 52%; font-size: 0.8em;"}
+
+::: fragment
+
+```text
+A || B := G(S)
+C || D := G(B)
+return A || B || C || D
+```
+
+:::
+
+:::
+
+::: {.column style="width: 48%; font-size: 0.72em;"}
+
+::: fragment
+
+- **The mistake**
+  - `B` is output and seed
+  - The adversary computes `G(B)`
+
+- **The result**
+  - It fails even if `G` is ideal
+  - The break is in the usage
+
+- **The lesson**
+  - Attack the construction
+  - Document the usage
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.2em; font-size: 0.72em;"}
+
+**Lesson**: attack how a primitive is used, not the primitive
+
+:::
+
+## What We Cannot Prove
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The gap**
+  - No PRG is proven from scratch
+  - A proof would settle P versus NP
+
+- **The method**
+  - Reductions turn one guess into another
+  - Fewer assumptions, more confidence
+
+- **The practice**
+  - Standardize ciphers like AES
+  - Let experts track the evidence
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Reality check**: cryptography manages risk rather than removing it
+
+:::
+
+## Where Stream Ciphers Appear
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **In protocols**
+  - TLS 1.3 with `ChaCha20-Poly1305`
+  - AES-GCM with a nonce
+
+- **In storage**
+  - Full-disk encryption
+  - Database encryption
+
+- **In practice**
+  - Password managers use them
+  - Weak key management breaks them
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Discussion Question**: which fails first in practice?
+
+:::
+
+# Telling the Story Back
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The tool**
+  - A PRG turns a seed into a keystream
+  - Pseudo-OTP uses a short key
+
+- **The trade**
+  - Impractical attacks are allowed
+  - Assumptions carry the guarantee
+
+- **The rules**
+  - Nonces keep keystreams unique
+  - Seeds are used only once
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: which assumption does your system rely on?
+
+:::
+
+## Wrapping Up on Encryption
+
+::: {.columns style="margin-top: 0.3em;"}
+
+::: {.column style="width: 50%; font-size: 0.72em;"}
+
+::: fragment
+
+### *Key Concepts*
+
+#### Primitives
+
+- Pseudorandom generator
+- Seed, stretch, nonce
+- Pseudo-OTP
+
+#### Definitions
+
+- Computational secrecy
+- Negligible probability
+- Bits of security
+
+:::
+
+:::
+
+::: {.column style="width: 50%; font-size: 0.72em;"}
+
+::: fragment
+
+### *Best Practices*
+
+#### Implementation
+
+- One nonce per key
+- Standard ciphers only
+- Randomly seeded keys
+
+#### Prevention
+
+- Never reuse a keystream
+- Never leak or share a seed
+- Write down the assumptions
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.72em;"}
+
+**Next week**: access control and authentication
+
+:::
+
+## Computational Security Goals
+
+::: {.columns style="margin-top: 0.1em;"}
+
+::: {.column style="width: 33%; font-size: 0.68em;"}
+
+::: fragment
+
+### **Confidentiality**
+
+- Short key, long file
+- Keystream from a PRG
+- Fresh nonce always
+- Seed kept secret
+- Standard ciphers only
+- Trust the library
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.68em;"}
+
+::: fragment
+
+### **Integrity**
+
+- Bit flips invisible
+- Authentication later
+- AEAD combines both
+- Detect tampering
+- Never trust input
+- Verify every field
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.68em;"}
+
+::: fragment
+
+### **Risk**
+
+- Assumptions may fail
+- Key management
+- Review often
+- Document choices
+- Plan for failure
+- Limit the blast radius
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.7em;"}
+
+- **JOY connection**: chapters four and five define pseudorandomness
+
+- **CS-403-2**: apply **cryptography** to security solutions
+
+- **CS-403-4**: evaluate systems for computer security
+
+- **CS-403-1**: identify **threats** and **mitigations**
+
+:::
+
+## Prepare for Midterm Examination Two
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The event**
+  - **Friday, November 6, 2026**
+  - In the laboratory session
+  - 2:30 -- 4:30 PM in Alden 109
+
+- **The scope**
+  - Cumulative over weeks 1-11
+  - Review all slides and checks
+
+- **How to prepare**
+  - Bring your laptop and GitHub
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Cumulative**: the examination covers all prior material
+
+:::
