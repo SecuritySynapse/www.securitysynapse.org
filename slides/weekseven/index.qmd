@@ -203,11 +203,11 @@ layers are closer to hardware? Closer to people using networks?
 - Wired networking technology
 - Uses MAC addresses for communication
 - Common standards: 10BASE-T, 100BASE-TX, 1000BASE-T
-- Full-duplex and half-duplex modes
+- Full-duplex and half-duplex modes, with differing speed
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.875em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.825em;"}
 
 {{< iconify fa6-solid lightbulb >}} **Key Questions**
 
