@@ -1,0 +1,50 @@
+---
+title: "Computational Security"
+description: "How Do We Encrypt a Long Message with a Short Key?"
+date: 2026-11-02
+layout: full
+toc: true
+toc-expand: 3
+---
+
+## Exploration
+
+- {{< iconify fa6-solid book-open size=18px >}} Read chapters four and five in
+[The Joy of Cryptography](https://joyofcryptography.com/)
+- {{< iconify fa6-solid book-open size=18px >}} Review all prior chapters in
+[Computer Systems Security: Planning for
+Success](https://web.njit.edu/~rt494/security/) and
+[The Joy of Cryptography](https://joyofcryptography.com/)
+
+## Activities
+
+- {{< iconify fa6-solid people-line size=18px >}} **Monday and Wednesday**:
+Modern cryptography and review
+  - Understand why the one-time pad cannot scale to long messages
+  - Learn how a pseudorandom generator expands a short key
+  - Explore how a stream cipher depends on a unique nonce
+  - Review the security concepts and code from all prior weeks
+  - Continued highlighting of the concept of a "security synapse"
+  - Student presentations that feature:
+    - Explanation of a high-level concept behind computational security
+    - In-class activity that connects concepts to real-world scenarios
+    - Hands-on examples of the operation of a pseudorandom generator
+- **Tuesday**: No classes due to All-College Programming Day
+- {{< iconify fa6-solid people-line size=18px >}} **Friday**: Complete In-Person
+Assessment Two during the class session
+- {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Complete
+Midterm Executable Examination Two in the laboratory session
+  - **Date**: Friday, November 6, 2026
+  - **Time**: 2:30 -- 4:30 PM
+  - **Location**: Alden 109
+  - Use GitHub, VS Code, and your laptop to complete the examination
+  - Cite external sources, including artificial intelligence coding
+  assistants, that you use during the examination
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="../../slides/weekeleven/"></iframe>
+```
+
+{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week Eleven: Computational Security](../../slides/weekeleven/)
