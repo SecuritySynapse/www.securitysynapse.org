@@ -471,7 +471,7 @@ Benefits? Trade-offs?
 
 ## Application Layer Protocols
 
-::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 0.85em;"}
+::: {.fragment .boxed-content .fade style="margin-top: 0.25em; font-size: 0.8em;"}
 
 - Application-specific protocols build on the previous layers
 - Supports communication for applications and services
@@ -480,7 +480,7 @@ Benefits? Trade-offs?
 
 :::
 
-:::: {.columns style="font-size=0.85em;"}
+:::: {.columns style="font-size=0.8em;"}
 
 ::: {.column width=50%}
 
