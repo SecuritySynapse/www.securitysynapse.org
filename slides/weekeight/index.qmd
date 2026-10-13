@@ -507,7 +507,7 @@ kernel.randomize_va_space = 2
 ::: {.fragment style="margin-top: -.65em; font-size: 0.75em;"}
 
 - **Types of DoS Attacks**
-  - SYN Floods: multiple SYN packets
+  - SYN Floods: unfinished handshakes
   - ICMP Floods: pinging to overwhelm
   - Buffer Overflows: unexpected data
 
@@ -519,6 +519,47 @@ kernel.randomize_va_space = 2
   - SYN cookies for SYN Floods
   - Rate limit ICMP packets
   - Secure software design
+
+:::
+
+## What Is a SYN Flood?
+
+:::: {.columns style="margin-top: 0.1em; font-size: 0.72em;"}
+
+::: {.column width="50%"}
+
+::: {.fragment .fade}
+
+### **Normal Handshake**
+
+- Client `SYN`; server `SYN-ACK`
+- Server reserves a **half-open** entry
+- Client `ACK` completes the connection
+
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.fragment .fade}
+
+### **SYN Flood**
+
+- Attacker floods `SYN`s, often spoofed
+- The final `ACK` never arrives
+- Half-open entries exhaust the backlog
+
+:::
+
+:::
+
+::::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid lightbulb >}} An **availability** attack: **unfinished**
+handshakes exhaust the server
 
 :::
 
@@ -543,10 +584,10 @@ FRAG      0         0         0
 
 ::: {.fragment .fade style="margin-top: 0.15em; font-size: 0.75em;"}
 
-- A SYN flood fills the backlog with half-open connections
-- `ss -s` summarizes sockets; watch `timewait` and `orphaned`
-- `tcp_syncookies = 1` replies without storing half-open state
-- Rate limiting and ICMP policy complement SYN cookies
+- This `ss -s` output is a **baseline**: no flood is in progress
+- `tcp_syncookies = 1` answers a `SYN` without reserving memory
+- The `SYN-ACK` carries a cookie, checked when the real `ACK` returns
+- Fake `SYN`s cost almost nothing, so real clients still get in
 
 :::
 
