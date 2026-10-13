@@ -64,3 +64,8 @@ p.tightspacer {
 .mermaid-js .flowchart-link {
   stroke-width: 3px !important;
 }
+
+/* keep long command-output lines inside the slide */
+.reveal pre.text code {
+  font-size: 21px;
+}
