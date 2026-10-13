@@ -1,0 +1,34 @@
+---
+title: "Final Examination"
+description: "How Do I Demonstrate a Security Synapse?"
+date: 2026-12-07
+layout: full
+toc: true
+toc-expand: 3
+---
+
+## Exploration
+
+- {{< iconify fa6-solid book-open size=18px >}} Review all prior chapters in
+[Computer Systems Security: Planning for
+Success](https://web.njit.edu/~rt494/security/),
+[Cracking Codes with Python](https://inventwithpython.com/cracking/),
+[The Joy of Cryptography](https://joyofcryptography.com/), and
+[Operating Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
+
+## Activities
+
+- **Monday -- Thursday**: Final examination period
+- {{< iconify fa6-solid people-line size=18px >}} **Wednesday**: Complete
+In-Person Assessment Three
+  - **Date**: Wednesday, December 9, 2026
+  - **Time**: 9:00 AM -- 12:00 noon
+  - **Location**: Alden 109
+  - Answer technical questions about code and concepts
+- {{< iconify fa6-solid diagram-project size=18px >}} **Thursday**: Complete the
+Final Executable Examination
+  - **Examination Code**: J
+  - **Date**: Thursday, December 10, 2026
+  - **Time**: 9:00 AM -- 12:00 noon
+  - **Location**: Alden 109
+  - Use GitHub, VS Code, and your laptop to complete the examination
