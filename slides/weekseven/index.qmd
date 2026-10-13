@@ -181,12 +181,12 @@ layers are closer to hardware? Closer to people using networks?
 
 - Uses radio waves to provide network connectivity
 - Operates on IEEE 802.11 standards
-- **Common frequencies**: 2.4 GHz and 5 GHz
+- **Common frequencies**: 2.4 GHz, 5 GHz, and 6 GHz
 - **Security protocols**: WEP, WPA, WPA2, WPA3
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.875em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.825em;"}
 
 {{< iconify fa6-solid lightbulb >}} **Key Questions**:
 
