@@ -1,0 +1,734 @@
+---
+title: "Provable Security"
+subtitle: "Understanding the One-Time Pad and Its Guarantees"
+description: "Why is the one-time pad impossible to break?"
+date: "2026-10-26"
+date-format: long
+author: Gregory M. Kapfhammer
+execute:
+  echo: true
+jupyter: python3
+format:
+  live-revealjs:
+    completion: true
+    theme: default
+    css: ../css/styles.css
+    history: false
+    scrollable: true
+    transition: slide
+    highlight-style: github
+    footer: "Security Synapse"
+---
+
+# What Is Security?
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **Why this question matters**
+  - Anyone can claim a system is secure
+  - A definition makes a claim testable
+
+- **What we will build**
+  - A precise definition of secrecy
+  - A proof for the one-time pad
+
+- **What we will warn about**
+  - Reusing a key breaks a message
+  - Integrity needs its own control
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: how would you prove that your encryption is safe?
+
+:::
+
+## What Will We Learn This Week?
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **Proof beats promise**
+  - A definition makes a claim testable
+  - A proof covers every possible attack
+
+- **The one-time pad**
+  - Encrypt and decrypt with XOR
+  - A random key as long as the message
+
+- **When the rules break**
+  - Key reuse leaks two messages
+  - Secrecy is not integrity
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Security synapse**: JOY *proves* the confidentiality that CSP names
+
+:::
+
+## Defining the Encryption Problem
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The people**
+  - **Alice** sends to **Bob**
+  - **Eve** reads everything in transit
+
+- **The algorithms**
+  - **Enc** builds the ciphertext
+  - **Dec** rebuilds the plaintext
+
+- **The secret**
+  - Bob and Alice share a key
+  - Eve never learns the key
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: if Eve can do what Bob can do, what is protected?
+
+:::
+
+## The Key Is the Only Secret
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **What stays secret**
+  - Only the key must be hidden
+  - The algorithm can be published
+
+- **Why that helps**
+  - Experts can review the method
+  - Anyone can test the code
+  - One method serves many users
+
+- **What can go wrong**
+  - A leaked key breaks a message
+  - Rotate keys to limit the damage
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Kerckhoffs's principle**: all security comes
+from the secret key
+
+:::
+
+# The One-Time Pad
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The oldest cipher**
+  - Simple and easy to explain
+  - Its name states the rule
+
+- **The requirement**
+  - The key matches the message length
+  - The key is used exactly once
+
+- **The role it plays**
+  - The benchmark for other ciphers
+  - Later ciphers trade speed for proof
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: what would you give for an absolute guarantee?
+
+:::
+
+## XOR: The Only Operation We Need
+
+::: {.columns style="margin-top: 0.25em;"}
+
+::: {.column style="width: 45%; font-size: 0.8em;"}
+
+::: fragment
+
+| `M` | `K` | `M ^ K` |
+|:---:|:---:|:-------:|
+|  0  |  0  |    0    |
+|  0  |  1  |    1    |
+|  1  |  0  |    1    |
+|  1  |  1  |    0    |
+
+:::
+
+:::
+
+::: {.column style="width: 55%; font-size: 0.72em;"}
+
+::: fragment
+
+- **The rule**
+  - Same bits give `0`
+  - Different bits give `1`
+
+- **Why we like it**
+  - Its own inverse
+  - No carries or lookups
+  - Very fast
+
+- **Where it appears**
+  - Inside ciphers today
+  - The basis of stream ciphers
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.72em;"}
+
+{{< iconify fa6-solid wand-magic-sparkles >}} The same key locks and unlocks, so
+decryption is encryption again
+
+:::
+
+## How the One-Time Pad Works
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The inputs**
+  - Keys and messages match in length
+  - The key is uniform and random
+
+- **The operations**
+  - **Encrypt**: `C := K ^ M`
+  - **Decrypt**: `M := K ^ C`
+
+- **The rules**
+  - One key for one message
+  - `(M ^ K) ^ K` returns `M`
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+{{< iconify fa6-solid key >}} **Correctness**: `Dec(K, Enc(K, M))` returns `M`
+
+:::
+
+## One-Time Pad in Python
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 11
+import secrets
+
+def otp(message: bytes, key: bytes) -> bytes:
+    """XOR each message byte with the key byte."""
+    return bytes(m ^ k for m, k in zip(message, key))
+
+plaintext = b"Security Synapse"
+key = secrets.token_bytes(len(plaintext))
+ciphertext = otp(plaintext, key)
+print("Ciphertext:", ciphertext.hex())
+print("Decrypted: ", otp(ciphertext, key))
+```
+
+::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Takeaway**: `secrets` gives a fresh key, so
+every run changes the ciphertext
+
+:::
+
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid keyboard >}} **Try it**: change the plaintext, then run the
+cell again
+
+:::
+
+## Recap on the One-Time Pad
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The mechanism**
+  - XOR hides the message
+  - The key cancels out exactly
+
+- **The rules**
+  - Random and message length
+  - One key, one message, one use
+
+- **The limits**
+  - The key is as long as the message
+  - No cipher has a stronger proof
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: what if the key is shorter than the message?
+
+:::
+
+# Proving Perfect Secrecy
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The definition**
+  - A ciphertext should look like noise
+  - No test can separate the two
+
+- **The adversary**
+  - Chooses the plaintexts
+  - Sees `C` but never `K`
+
+- **The guarantee**
+  - It holds even for unlimited time
+  - It rests on a random key
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: what must be true of the key for the proof to hold?
+
+:::
+
+## One-Time Secrecy
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The goal**
+  - Ciphertext looks like noise
+  - No test separates the two
+
+- **The adversary**
+  - Chooses the plaintexts
+  - Sees `C` but never `K`
+
+- **The conditions**
+  - A uniform key, used once
+  - The algorithm stays public
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: if `C` looks random, what can Eve learn about `M`?
+
+:::
+
+## Perfect Secrecy: A Definition
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The test**
+  - Real ciphertext versus random string
+  - Interchangeable means perfect
+
+- **The strength**
+  - Running time does not matter
+  - Even slow attacks cannot win
+
+- **The practice**
+  - Proven, never assumed
+  - Definitions are the contract
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+{{< iconify fa6-solid infinity >}} **Absolute guarantee**: unlimited computing
+power still fails
+
+:::
+
+## Why Perfect Secrecy Holds
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The key**
+  - Uniform over all bit strings
+  - Used for one message only
+
+- **The argument**
+  - `K ^ M` is uniform as well
+  - Every ciphertext is equally likely
+  - Eve is left with a blind guess
+
+- **The cost**
+  - No unproven assumption is needed
+  - Randomness is the whole proof
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+{{< iconify fa6-solid award >}} **Gold standard**: other ciphers only approximate
+this guarantee
+
+:::
+
+## Testing Secrecy in Python
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 12
+import secrets
+from collections import Counter
+
+message = b"JOY!"
+first_byte = Counter()
+for _ in range(1000):
+    key = secrets.token_bytes(len(message))
+    first_byte[message[0] ^ key[0]] += 1
+
+print("Values seen:", len(first_byte), "of 256")
+print("Most common:", first_byte.most_common(1))
+```
+
+::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Takeaway**: one message still spreads across
+many ciphertext values
+
+:::
+
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid keyboard >}} **Try it**: run the cell twice and compare the
+counters
+
+:::
+
+## The Catch: Key Length
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The requirement**
+  - The key matches the message
+  - The randomness must be uniform
+
+- **The difficulty**
+  - Sharing *n* bits is as hard as sending them
+  - True randomness is hard to generate
+  - A biased key leaks parts of `M`
+
+- **The consequence**
+  - Most systems cannot pay this price
+  - Next week stretches a short key
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Coming next week**: can we stretch a short
+key safely?
+
+:::
+
+# When a Key Is Reused
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The setup**
+  - Two messages, one key
+  - The ciphertexts are public
+
+- **The break**
+  - The key cancels out
+  - `M1 ^ M2` remains
+
+- **The lesson**
+  - A guarantee needs discipline
+  - Secrecy does not stop changes
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: which breaks first, the math or the human habit?
+
+:::
+
+## The Two-Time Pad Attack
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The setup**
+  - Two messages, one key
+  - `C1 ^ C2 == (K ^ M1) ^ (K ^ M2)`
+
+- **The break**
+  - The key cancels out
+  - `M1 ^ M2` remains
+  - A crib such as `Transfer $` exposes text
+
+- **The lesson**
+  - Guessing one reveals the other
+  - Never reuse a pad or stream
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+{{< iconify fa6-solid triangle-exclamation >}} **Key insight**: the attacker learns
+the *difference* of two messages
+
+:::
+
+## Key Reuse in Python
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 12
+def xor(a: bytes, b: bytes) -> bytes:
+    """XOR two byte strings of equal length."""
+    return bytes(x ^ y for x, y in zip(a, b))
+
+key = b"reused-key-material"
+m1 = b"Transfer $100 now"
+m2 = b"Transfer $900 now"
+c1, c2 = xor(m1, key), xor(m2, key)
+
+print("C1 xor C2:", xor(c1, c2).hex())
+print("M1 xor M2:", xor(m1, m2).hex())
+```
+
+::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Takeaway**: the outputs match, so the key
+has vanished from both messages
+
+:::
+
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid keyboard >}} **Try it**: change one plaintext byte and
+compare the outputs
+
+:::
+
+## A Historical Warning
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The mistake**
+  - Soviet pads were reused
+  - One key served many messages
+
+- **The result**
+  - VENONA decrypted them for decades
+  - Partial text still leaked secrets
+
+- **The lesson**
+  - One-time means exactly one time
+  - Process, not math, failed here
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Discussion Question**: which control prevents key reuse?
+
+:::
+
+## Secrecy Is Not Integrity
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The gap**
+  - Hiding is not protecting
+  - Bit flips go unnoticed
+
+- **The attack**
+  - Flip a ciphertext bit
+  - The plaintext bit flips too
+  - No key is needed
+
+- **The fix**
+  - *Malleable* data can be reshaped
+  - Authentication comes later
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+{{< iconify fa6-solid scale-unbalanced >}} **Two separate goals**: secrecy and
+integrity need two controls
+
+:::
+
+## Malleability in Python
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 11
+key = b"another-secret-key"
+message = b"Pay 100 USD"
+ciphertext = bytes(m ^ k for m, k in zip(message, key))
+
+# one flipped bit, and no key was needed to flip it
+attacked = bytearray(ciphertext)
+attacked[4] ^= 0x01
+
+received = bytes(a ^ k for a, k in zip(attacked, key))
+print("Sent:    ", message)
+print("Received:", received)
+```
+
+::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Takeaway**: `100` becomes `000`, and Bob
+never notices the change
+
+:::
+
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid keyboard >}} **Try it**: flip a different bit and watch the
+amount change
+
+:::
+
+# Telling the Story Back
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+
+- **The guarantee**
+  - Perfect secrecy is provable
+  - The pad achieves it with XOR
+
+- **The rules**
+  - The key matches the message
+  - One key, one message, one use
+
+- **The warnings**
+  - Reuse leaks the difference
+  - Integrity needs its own control
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+
+**Key Question**: which single rule keeps the pad perfectly secret?
+
+:::
+
+## Wrapping Up on Provable Security
+
+::: {.columns style="margin-top: 0.2em;"}
+
+::: {.column style="width: 50%; font-size: 0.72em;"}
+
+::: fragment
+
+### *Key Concepts*
+
+#### Encryption
+
+- One-time pad
+- XOR and the secret key
+- Perfect secrecy
+
+#### Failures
+
+- Key reuse
+- Malleable ciphertexts
+- No integrity check
+
+:::
+
+:::
+
+::: {.column style="width: 50%; font-size: 0.72em;"}
+
+::: fragment
+
+### *Best Practices*
+
+#### Implementation
+
+- One key for one message
+- Uniform randomness only
+- Battle-tested libraries
+
+#### Prevention
+
+- Never reuse key material
+- Track risks in a security plan
+- Separate secrecy from integrity
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.72em;"}
+
+**Next week**: a short key that protects a long message
+
+:::
+
+## Provable Security and Objectives
+
+::: {.columns style="margin-top: 0.1em;"}
+
+::: {.column style="width: 33%; font-size: 0.72em;"}
+
+::: fragment
+
+### **Confidentiality**
+
+- XOR with a uniform key
+- Ciphertext looks random
+- A proof, not a promise
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.72em;"}
+
+::: fragment
+
+### **Integrity**
+
+- Bit flips are invisible
+- No authentication
+- Detect tampering later
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.72em;"}
+
+::: fragment
+
+### **Assurance**
+
+- A proof beats a promise
+- Test the code you write
+- Question assumptions
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.7em;"}
+
+- **JOY connection**: chapters one and two define encryption and prove that
+  the one-time pad achieves perfect secrecy
+
+- **CS-403-1**: identify **threats** and **mitigations**
+
+- **CS-403-2**: apply **cryptography** to **security solutions**
+
+- **CS-403-4**: evaluate systems for **computer security**
+
+:::
