@@ -296,25 +296,25 @@ $ ip neigh
 ## Validating DNS with DNSSEC
 
 ```text
-$ dig +dnssec cloudflare.com A
-;; flags: qr rd ra ad; QUERY: 1, ANSWER: 3, AUTHORITY: 0
+$ dig +dnssec @1.1.1.1 cloudflare.com A
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
 ;; ANSWER SECTION:
 cloudflare.com. 300 IN A 104.16.132.229
 cloudflare.com. 300 IN A 104.16.133.229
-cloudflare.com. 300 IN RRSIG A 13 2 300 ... HZxxETTQ...zow==
-$ dig +dnssec securitysynapse.org A
-;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0
+cloudflare.com. 300 IN RRSIG A 13 2 300 ... B9g8fuuo...G5w==
+$ dig +dnssec @1.1.1.1 securitysynapse.org A
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
 ;; ANSWER SECTION:
-securitysynapse.org. 12 IN A 104.21.20.61
-securitysynapse.org. 12 IN A 172.67.191.211
+securitysynapse.org. 300 IN A 172.67.191.211
+securitysynapse.org. 300 IN A 104.21.20.61
 ```
 
 ::: {.fragment .fade style="margin-top: 0.15em; font-size: 0.85em;"}
 
-- `ad` (authenticated data) means the resolver validated DNSSEC
-- A signed answer includes `RRSIG` records covering the data
-- `securitysynapse.org` returns neither `ad` nor `RRSIG` (unsigned)
-- A poisoned cache entry looks normal when DNSSEC is not validated
+- `@1.1.1.1` pins a resolver that validates DNSSEC
+- `+dnssec` sets the DO bit, asking for the `RRSIG` records
+- `ad` (authenticated data) means the resolver verified the signatures
+- `securitysynapse.org` is unsigned: no `ad` and no `RRSIG`
 
 :::
 
