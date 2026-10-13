@@ -1,0 +1,40 @@
+---
+title: "Provable Security"
+description: "Why Is the One-Time Pad Impossible to Break?"
+date: 2026-10-26
+layout: full
+toc: true
+toc-expand: 3
+---
+
+## Exploration
+
+- {{< iconify fa6-solid book-open size=18px >}} Read chapters one and two in
+[The Joy of Cryptography](https://joyofcryptography.com/)
+
+## Activities
+
+- {{< iconify fa6-solid people-line size=18px >}} **Monday and Wednesday**: The
+one-time pad and provable security
+- {{< iconify fa6-solid people-line size=18px >}} **Friday**: Complete a
+computer security check
+  - Complete a form-based assessment on your laptop
+  - Complete an in-person assessment with course instructor
+- {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Laboratory
+session
+  - Explore the one-time pad and the meaning of perfect secrecy
+  - Learn why reusing a key destroys a message's confidentiality
+  - Understand the difference between secrecy and integrity
+  - Continued highlighting of the concept of a "security synapse"
+  - Instructor presentations that feature:
+    - Explanation of a high-level concept behind provable security
+    - In-class activity that connects concepts to real-world scenarios
+    - Hands-on examples of the operation and behavior of the one-time pad
+
+## Slides
+
+```{=html}
+<iframe class="slide-deck" src="../../slides/weekten/"></iframe>
+```
+
+{{< iconify majesticons presentation-play size=18px >}} Full Screen: [Week Ten: Provable Security](../../slides/weekten/)
