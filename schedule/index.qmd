@@ -47,7 +47,7 @@ listing:
   [CSP](https://web.njit.edu/~rt494/security/) and selected chapters from
   [CCP](https://inventwithpython.com/cracking/)/[JOY](https://joyofcryptography.com/)
   - **Programming Skill Checks** during the Friday class session:
-      - Week seven 
+      - Week seven (Wednesday, October 7, due to Fall Break)
       - Week nine 
   - **Computer Security Checks** during the Friday class session:
       - Week eight 
@@ -91,7 +91,7 @@ listing:
       - **Note**: Occurs during the final examination period
   - *Breaks*  
     - **Labor Day**: Week Three
-    - **Fall Break**: Week Seven
+    - **Fall Break**: Week Seven (Thursday, October 8 -- Sunday, October 11)
     - **All-College Programming**: Week Eleven
     - **Thanksgiving Break**: Week Fourteen
 
@@ -111,7 +111,7 @@ listing:
     - **Time**: 9:00 AM -- 12:00 noon
     - **Location**: Alden 109
 - **Final In-Person Assessment**
-    - **Date**: Monday, December 9, 2026
+    - **Date**: Wednesday, December 9, 2026
     - **Time**: 9:00 AM -- 12:00 noon
     - **Location**: Alden 109
     - **Task**: Answer technical questions about code and concepts
