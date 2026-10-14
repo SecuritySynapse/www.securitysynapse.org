@@ -149,7 +149,7 @@ authentication**?
   - **Scope**:
     - **`sudo`**: Limited to the command being executed
     - **`su`**: Provides privileges to a shell until exit
-    
+
 :::
 
 # How do we manage multiple users who need to securely use an operating system?
@@ -296,7 +296,7 @@ nixbld1:x:30001:30000:Nix build user 1
 
 ::: {.fragment .fade style="margin-top: -0.25em; font-size: 1.00em;"}
 
-#### Single Sign-On (SSO)
+### Single Sign-On (SSO)
 
 - **Purpose**: One identity provider for multiple services
 - **Benefits**: Simplifies user management, enhances security
@@ -344,7 +344,7 @@ nixbld1:x:30001:30000:Nix build user 1
 
 :::
 
-# In addition to providing software security, we must also maintain physical security!
+# In addition to providing software security, we must also maintain physical security
 
 ::: fragment
 
@@ -414,22 +414,22 @@ nixbld1:x:30001:30000:Nix build user 1
 
 ## Evaluation Metrics in Security
 
-::: {.fragment style="margin-top: -0.5em; font-size: 0.75em;"}
+::: {.fragment style="margin-top: -0.5em; font-size: 0.7em;"}
 
 - **Precision**
-  - Equation: TP / (TP + FP)
+  - Equation: $TP / (TP + FP)$
   - High precision: few false positives
 
 - **Recall**
-  - Equation: TP / (TP + FN)
+  - Equation: $TP / (TP + FN)$
   - High recall: few false negatives
 
 - **Accuracy**
-  - Equation: (TP + TN) / (TP + FP + TN + FN)
+  - Equation: $(TP + TN) / (TP + FP + TN + FN)$
   - Overall correctness of the system
 
 - **F1-Score**
-  - Equation: 2 * (Precision * Recall) / (Precision + Recall)
+  - Equation: $2 \times (Precision \times Recall) / (Precision + Recall)$
   - Balance between precision and recall
 
 :::
@@ -495,7 +495,7 @@ nixbld1:x:30001:30000:Nix build user 1
 \text{Accuracy} = \frac{TP + TN}{TP + FP + TN + FN}
 \end{equation}
 \begin{equation}
-\text{Accuracy} = \frac{80 + 90}{80 + 10 + 90 + 20} =  \frac{170}{200} = 0.85
+\text{Accuracy} = \frac{80 + 90}{80 + 10 + 90 + 20} = \frac{170}{200} = 0.85
 \end{equation}
 
 :::
