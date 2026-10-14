@@ -568,10 +568,10 @@ FRAG      0         0         0
 
 ::: {.fragment .fade style="margin-top: 0.15em; font-size: 0.75em;"}
 
-- This `ss -s` output is a **baseline**: no flood is in progress
+- This `ss -s` output is a **baseline** and no flood is in progress
 - `tcp_syncookies = 1` answers a `SYN` without reserving memory
 - The `SYN-ACK` carries a cookie, checked when the real `ACK` returns
-- Fake `SYN`s cost almost nothing, so real clients still get in
+- Fake `SYN`s cost almost nothing, so real clients still access server with no denial
 
 :::
 
