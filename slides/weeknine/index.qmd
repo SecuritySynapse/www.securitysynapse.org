@@ -20,7 +20,7 @@ format:
     footer: "Security Synapse"
 ---
 
-# Different computer security solutions!
+# Different computer security solutions
 
 - Detect, combat, and repair security breaches
 - Leverage both hardware and software solutions
@@ -36,7 +36,7 @@ make sure that you have a plan to understand features and pitfalls of a product!
 
 ## Detection Outcomes in Security
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.75em;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.725em;"}
 
 - **True Positive (TP)**
   - Correctly identified security threat
@@ -82,32 +82,32 @@ make sure that you have a plan to understand features and pitfalls of a product!
 
 ## Evaluation Metrics in Security
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.75em;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.7em;"}
 
 - **Precision**
-  - Equation: TP / (TP + FP)
+  - Equation: $TP / (TP + FP)$
   - High precision: few false positives
 
 - **Recall**
-  - Equation: TP / (TP + FN)
+  - Equation: $TP / (TP + FN)$
   - High recall: few false negatives
 
 - **Accuracy**
-  - Equation: (TP + TN) / (TP + FP + TN + FN)
+  - Equation: $(TP + TN) / (TP + FP + TN + FN)$
   - Overall correctness of the system
 
 - **F1-Score**
-  - Equation: 2 * (Precision * Recall) / (Precision + Recall)
+  - Equation: $2 \times (Precision \times Recall) / (Precision + Recall)$
   - Balance between precision and recall
 
 :::
 
-# Correctness of computer security solutions is paramount!
+# Correctness of computer security solutions is paramount
 
 ::: fragment
 
 - Crowdstrike distributes a faulty update to Falcon
-- About 8.5 million computers crashed and could not restart 
+- About 8.5 million computers crashed and could not restart
 - A "historic IT outage" with billions of dollars lost
 
 Reference:
@@ -162,7 +162,7 @@ sub-layers is also possible!**
 
 :::
 
-# Adopt a "Defense in Depth" Strategy!
+# Adopt a "Defense in Depth" Strategy
 
 ::: fragment
 
