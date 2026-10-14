@@ -524,42 +524,26 @@ kernel.randomize_va_space = 2
 
 ## What Is a SYN Flood?
 
-:::: {.columns style="margin-top: 0.1em; font-size: 0.72em;"}
+::: {.incremental style="margin-top: -0.6em; font-size: 0.775em;"}
 
-::: {.column width="50%"}
+- **Normal TCP handshake**
+  - Client sends `SYN`; server replies `SYN-ACK`
+  - Client's `ACK` completes the connection
 
-::: {.fragment .fade}
+- **SYN flood attack**
+  - Attacker floods `SYN`s, often spoofed
+  - The final `ACK` never arrives
 
-### **Normal Handshake**
-
-- Client `SYN`; server `SYN-ACK`
-- Server reserves a **half-open** entry
-- Client `ACK` completes the connection
-
-:::
-
-:::
-
-::: {.column width="50%"}
-
-::: {.fragment .fade}
-
-### **SYN Flood**
-
-- Attacker floods `SYN`s, often spoofed
-- The final `ACK` never arrives
-- Half-open entries exhaust the backlog
+- **The impact**
+  - Half-open entries exhaust the backlog
+  - Legitimate clients are refused service
 
 :::
 
-:::
+::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.775em;"}
 
-::::
-
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.75em;"}
-
-{{< iconify fa6-solid lightbulb >}} An **availability** attack: **unfinished**
-handshakes exhaust the server
+{{< iconify fa6-solid lightbulb >}} **Availability** attack: **unfinished**
+handshakes exhaust the server and deny service
 
 :::
 
