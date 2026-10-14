@@ -139,7 +139,7 @@ Reference:
 
 ## Layered Security: Four through Six
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.9em;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.85em;"}
 
 - **Layer 4: Data Security**
   - Ensures data integrity and confidentiality
