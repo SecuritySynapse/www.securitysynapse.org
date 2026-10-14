@@ -669,7 +669,7 @@ FRAG      0         0         0
 - Man-in-the-Middle
 - Replay and spoofing
 - DNS cache poisoning
-- Injection (XSS, SQL)
+- Injection (e.g., XSS, SQL)
 
 :::
 
