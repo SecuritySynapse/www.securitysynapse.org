@@ -626,13 +626,13 @@ chmod 754 data.json
 - **CSP Chapter 6 + OSTEP Chapter 54 connection**: connect **detection**,
 **network controls**, and **authentication** to a **layered defense**
 
-- **CS-403-4**: Evaluate the **effectiveness** of various hardware and software
-systems with respect to **computer security**.
+- **CS-403-2**: Correctly apply **security principles**, [...], and
+**cryptography** in the modeling and implementation of **security solutions**.
 
 - **CS-403-3**: Correctly use hardware and/or software **tools** to **diagnose**
 and **fix** web and **network security risks**.
 
-- **CS-403-2**: Correctly apply **security principles**, [...], and
-**cryptography** in the modeling and implementation of **security solutions**.
+- **CS-403-4**: Evaluate the **effectiveness** of various hardware and software
+systems with respect to **computer security**.
 
 :::
