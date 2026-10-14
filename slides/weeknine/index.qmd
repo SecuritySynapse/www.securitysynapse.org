@@ -569,3 +569,70 @@ chmod 754 data.json
 :::
 
 :::
+
+## Security Solutions and Objectives
+
+::: {.columns style="margin-top: 0em;"}
+
+::: {.column style="width: 33%; font-size: 0.65em;"}
+
+::: {.fragment .fade}
+
+### **Detect**
+
+- TP, FP, TN, FN
+- Precision and recall
+- F1-score
+- Intrusion detection
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.65em;"}
+
+::: {.fragment .fade}
+
+### **Control**
+
+- Firewalls and ACLs
+- Authentication and MFA
+- File permissions
+- Least privilege
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.65em;"}
+
+::: {.fragment .fade}
+
+### **Layer**
+
+- Defense in depth
+- OS, network, application
+- VPNs and proxies
+- Load balancers
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.625em;"}
+
+- **CSP Chapter 6 + OSTEP Chapter 54 connection**: connect **detection**,
+**network controls**, and **authentication** to a **layered defense**
+
+- **CS-403-4**: Evaluate the **effectiveness** of various hardware and software
+systems with respect to **computer security**.
+
+- **CS-403-3**: Correctly use hardware and/or software **tools** to **diagnose**
+and **fix** web and **network security risks**.
+
+- **CS-403-2**: Correctly apply **security principles**, [...], and
+**cryptography** in the modeling and implementation of **security solutions**.
+
+:::
