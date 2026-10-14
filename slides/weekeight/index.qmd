@@ -542,8 +542,8 @@ kernel.randomize_va_space = 2
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.775em;"}
 
-{{< iconify fa6-solid lightbulb >}} **Availability** attack: **unfinished**
-handshakes exhaust the server and deny service
+{{< iconify fa6-solid lightbulb >}} **Attack**: Unfinished handshakes exhaust
+the server and denies service!
 
 :::
 
