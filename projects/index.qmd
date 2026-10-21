@@ -38,13 +38,14 @@ Thanksgiving Break, and other breaks in the academic calendar.
 | Three: Network Monitoring | Nov 6 | Nov 13 | Nov 20 |
 | Four: Program Tracing | Nov 20 | Dec 4 | Dec 10 |
 
-All dates are Fridays during the Fall 2026 semester. Project Four's presentation
-is on December 10 because November 27 is Thanksgiving Break; on this date
-you are invited to submit presentation slides and the final version of your report
-in your project's GitHub repository. The final submission for Project One was
-extended to Friday, September 25, 2026. See the [course
-schedule](../schedule/index.qmd) for the week number of each milestone and the
-[syllabus](../syllabus/index.qmd) for the project requirements.
+All milestones fall on Fridays during the Fall 2026 semester except Project
+Four's final submission, which is due on Thursday, December 10, 2026. Project
+Four's demonstration is on December 4 because November 27 is Thanksgiving
+Break. On December 10 you are invited to submit presentation slides and the
+final version of your report in your project's GitHub repository. The final
+submission for Project One was extended to Friday, September 25, 2026. See the
+[course schedule](../schedule/index.qmd) for the week number of each milestone
+and the [syllabus](../syllabus/index.qmd) for the project requirements.
 
 ### Project One: Server Fuzzing
 
