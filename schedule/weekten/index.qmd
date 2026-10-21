@@ -33,7 +33,7 @@ session
   - Demonstrate the [Security Survey Project Two: Cryptography
     Benchmarking](/../projects/)
     - Show `cryptobenchmark` measuring `Fernet` and `rFernet`
-    - Report preliminary time and space overheads from the doubling experiment
+    - Report preliminary time overheads from the doubling experiment
 
 ## Slides
 
