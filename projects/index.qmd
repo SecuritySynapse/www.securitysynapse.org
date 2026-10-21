@@ -221,7 +221,7 @@ and/or the native code produced by the Python interpreter. Whenever possible,
 the trace should also include the values of variables that were accessed by each
 of the detected instructions. The trace should be stored in a file in either a
 plaintext, comma-separated value (CSV), or JavaScript object notation (JSON)
-format. The `programtracer` tool should have these features:
+format. The `programtracer` tool should have, at minimum, the following features:
 
   - **Command-Line Interface**: A command-line interface (CLI) that accepts the
   name of a Python program and/or a Python program's test suite and then
@@ -353,14 +353,14 @@ class, with a checkpoint every two weeks after the proposal.
 - {{< iconify fa6-solid book-open size=18px >}} **Study**: Since this project
 invites learners to propose and conduct their own independent project, it is
 important that they should read, in addition to any relevant online resources,
-all of the covered chapters in the following textbooks:
-  - {{< iconify fa6-solid book-open>}} Online textbook called [Computer Systems
+all of the covered chapters in these textbooks:
+  - {{< iconify fa6-solid book-open>}} Online textbook: [Computer Systems
     Security: Planning for Success](https://web.njit.edu/~rt494/security/)
-  - {{< iconify fa6-solid book-open>}} Online textbook called [Cracking Codes
+  - {{< iconify fa6-solid book-open>}} Online textbook: [Cracking Codes
   with Python](https://inventwithpython.com/cracking/)
-  - {{< iconify fa6-solid book-open>}} Online textbook called [The Joy of
+  - {{< iconify fa6-solid book-open>}} Online textbook: [The Joy of
   Cryptography](https://joyofcryptography.com/)
-  - {{< iconify fa6-solid book-open>}} Online textbook called [Operating
+  - {{< iconify fa6-solid book-open>}} Online textbook: [Operating
   Systems: Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 - {{< iconify fa6-solid code size=18px >}} **Tasks**: This project invites you to
