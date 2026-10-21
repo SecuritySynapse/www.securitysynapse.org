@@ -25,6 +25,23 @@ Three Easy Pieces](https://pages.cs.wisc.edu/~remzi/OSTEP/)
 
 ## Security Survey Projects
 
+### Security Survey Project Timeline
+
+Each security survey project includes a release, a demonstration, and a
+presentation. The dates below account for the midterm examinations, Fall Break,
+Thanksgiving Break, and other breaks in the academic calendar.
+
+| Project | Release | Demonstration | Presentation |
+|---------|---------|---------------|--------------|
+| One: Server Fuzzing | Sep 4 | Sep 11 | Sep 18 |
+| Two: Cryptography Benchmarking | Oct 23 | Oct 30  | Nov 6 |
+| Three: Network Monitoring | Nov 6 | Nov 13 | Nov 20 |
+| Four: Program Tracing | Nov 20 | Nov 27 | Dec 4 |
+
+All dates are Fridays during the Fall 2026 semester. See the [course
+schedule](../schedule/index.qmd) for the week number of each milestone and the
+[syllabus](../syllabus/index.qmd) for the project requirements.
+
 ### Project One: Server Fuzzing
 
 #### Preparation
@@ -317,6 +334,16 @@ Questions? Share them in the [Security Synapse Discord
 Server](https://discord.gg/juUXz7d4Jh).
 
 ### Security Summit Project: Long-Term Project
+
+The security summit project runs from the eighth week through the last day of
+class, with a checkpoint every two weeks after the proposal.
+
+| Checkpoint | Due Date |
+|------------|----------|
+| Proposal | Fri Oct 23, 2026 |
+| Status Update | Fri Nov 6, 2026 |
+| Demonstration | Fri Nov 20, 2026 |
+| Lightning Talk and Final Report | Fri Dec 4, 2026 |
 
 #### Preparation
 
