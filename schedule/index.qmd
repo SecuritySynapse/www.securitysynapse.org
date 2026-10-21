@@ -63,7 +63,6 @@ listing:
   [CCP](https://inventwithpython.com/cracking)/[JOY](https://joyofcryptography.com/)
   - **Programming Skill Checks** during the Friday class session:
     - Week twelve
-    - Week fourteen
   - **Computer Security Checks** during the Friday class session:
     - Week thirteen
     - Week fifteen
@@ -146,11 +145,12 @@ listing:
 ::: {.callout-note appearance="minimal" title="Security Survey Project Schedule" collapse="false"}
 
 The security survey projects are released in Weeks Two, Nine, Eleven, and
-Fourteen. The releases were re-sequenced after the first module so that every
-demonstration and presentation falls on an instructional Friday and each project
-aligns with the week that teaches its concepts. The original Project Two release
-in Week Five would have placed its demonstration on Midterm Executable
-Examination One and its presentation during Fall Break.
+Thirteen. The releases were re-sequenced after the first module so that every
+release, demonstration, and in-class presentation falls on an instructional
+Friday and each project aligns with the week that teaches its concepts. The
+original Project Two release in Week Five would have placed its demonstration on
+Midterm Executable Examination One and its presentation during Fall Break,
+thus necessitating this modification to the schedule.
 
 :::
 
