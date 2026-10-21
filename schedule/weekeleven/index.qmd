@@ -44,7 +44,7 @@ Midterm Executable Examination Two in the laboratory session
 submit the [Security Survey Project Two: Cryptography
 Benchmarking](/../projects/)
   - Give the public presentation during the class session
-  - Report the time and space overheads of the `Fernet` and `rFernet` ciphers
+  - Report the time overheads of the `Fernet` and `rFernet` ciphers
 - {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Start working
 on the [Security Survey Project Three: Network Monitoring](/../projects/)
   - Review the project tasks, the preparation reading, and the resources
