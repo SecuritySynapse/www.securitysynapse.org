@@ -62,8 +62,9 @@ concepts and provide both more detailed explanations and implementations in
 various programming languages, with a focus on content in the Python language.
 
 - The [course projects](projects/index.qmd) page furnishes descriptions of
-each two-week project that learners complete to ensure that they have suitable
-hands-on practice to make a security synapse and achieve the learning objectives
+each security survey project that learners complete to ensure that they
+have suitable hands-on practice to make a security synapse and achieve the
+learning objectives
 for the course. The project list also includes details about the long-term
 computer security summit project that invites learners to propose, conduct, and
 report on an independent research project. Each project invites a learner to (a)
@@ -71,7 +72,7 @@ understand fundamental concepts in computer security, (b), implement those
 concepts into a working prototype, (c) evaluate the prototype through well-designed
 experiments, (d) give a demonstration of the prototype to both the course
 instructor and their peers, and (e) give a presentation to document their
-learning adventure!
+learning adventure and to share ideas for future research and development!
 
 ## Connecting Concepts to Code
 
