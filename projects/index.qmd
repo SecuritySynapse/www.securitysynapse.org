@@ -34,11 +34,15 @@ Thanksgiving Break, and other breaks in the academic calendar.
 | Project | Release | Demonstration | Presentation |
 |---------|---------|---------------|--------------|
 | One: Server Fuzzing | Sep 4 | Sep 11 | Sep 18 |
-| Two: Cryptography Benchmarking | Oct 23 | Oct 30  | Nov 6 |
+| Two: Cryptography Benchmarking | Oct 23 | Oct 30 | Nov 6 |
 | Three: Network Monitoring | Nov 6 | Nov 13 | Nov 20 |
-| Four: Program Tracing | Nov 20 | Nov 27 | Dec 4 |
+| Four: Program Tracing | Nov 20 | Dec 4 | Dec 10 |
 
-All dates are Fridays during the Fall 2026 semester. See the [course
+All dates are Fridays during the Fall 2026 semester. Project Four's presentation
+is on December 10 because November 27 is Thanksgiving Break; on this date
+you are invited to submit presentation slides and the final version of your report
+in your project's GitHub repository. The final submission for Project One was
+extended to Friday, September 25, 2026. See the [course
 schedule](../schedule/index.qmd) for the week number of each milestone and the
 [syllabus](../syllabus/index.qmd) for the project requirements.
 
@@ -338,15 +342,15 @@ Server](https://discord.gg/juUXz7d4Jh).
 
 ### Security Summit Project: Long-Term Project
 
-The security summit project runs from the eighth week through the last day of
-class, with a checkpoint every two weeks after the proposal.
+The security summit project runs from the eighth week through the final
+examination period. Its checkpoints and final report are listed below.
 
 | Checkpoint | Due Date |
 |------------|----------|
 | Proposal | Fri Oct 23, 2026 |
-| Status Update | Fri Nov 6, 2026 |
-| Demonstration | Fri Nov 20, 2026 |
-| Lightning Talk and Final Report | Fri Dec 4, 2026 |
+| Status Update and Demonstration | Fri Nov 20, 2026 |
+| Lightning Talk | Fri Dec 4, 2026 |
+| Final Report | Thu Dec 10, 2026 |
 
 #### Preparation
 
