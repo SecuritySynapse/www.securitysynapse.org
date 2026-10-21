@@ -146,7 +146,7 @@ used networking protocols and the ways in which they may be attacked. When a
 client and a server are communicating over a network, it is possible for a
 malicious actor to run a program that intercepts their communication. If the
 communication between the client and server is not encrypted, then the malicious
-actor can read the messages and even modify them.
+actor can read the sent and/or received messages and even modify them.
 
 - {{< iconify fa6-solid code size=18px >}} **Task**: This project invites you to
 implement a `networkmonitor` in the Python programming language that conducts
