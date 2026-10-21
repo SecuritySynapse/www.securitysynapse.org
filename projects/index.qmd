@@ -111,8 +111,10 @@ implement a `cryptobenchmark` in the Python programming language that will
 automatically perform a [doubling experiment](https://algorithmology.org/) to
 measure the encryption and decryption performance for the `Fernet` and `rFernet`
 ciphers. This program should randomly generate data and then measure and report
-the time and space overheads arising from the use of, at minimum, the `Fernet`
-and `rFernet` ciphers.
+the time overheads arising from the use of, at minimum, the `Fernet` and
+`rFernet` ciphers. Along with explaining the threats to validity and how they
+were handled, the project report should use the collected data and the
+cipher's implementation to explain the performance characteristics.
 
 #### Resources
 
