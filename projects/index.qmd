@@ -150,12 +150,12 @@ actor can read the messages and even modify them.
 
 - {{< iconify fa6-solid code size=18px >}} **Task**: This project invites you to
 implement a `networkmonitor` in the Python programming language that conducts
-network monitoring by creating clients and servers on localhost and then
-monitoring the network traffic between the client and the server. The program
-supports different modes of operation, including server and client modes using
-either sockets or XML-RPC, and interception modes for monitoring network
-communication with either of the aforementioned protocols. The
-`networkmonitor` should start a separate process in one of these modes:
+network monitoring by creating clients and servers on the `localhost` server and
+then monitoring the network traffic between the client and the server. The
+program supports different modes of operation, including server and client modes
+using either sockets or XML-RPC, and interception modes for monitoring network
+communication with either of the aforementioned protocols. The `networkmonitor`
+should start a separate process in one of these modes:
   - **Client and Server Protocols**:
     - **Socket Server**: Start a server using sockets.
     - **Socket Client**: Start a client using sockets.
@@ -190,7 +190,8 @@ their headers and payloads, and various network monitoring techniques:
   - [Regarding struct.unpack() in Python](https://stackoverflow.com/questions/20768107/regarding-struct-unpack-in-python)
 
 Questions? Share them in the [Security Synapse Discord
-Server](https://discord.gg/juUXz7d4Jh).
+Server](https://discord.gg/juUXz7d4Jh). Want to take this project to the next
+level? Consider meeting with the instructor during office hours!
 
 ### Project Four: Program Tracing
 
