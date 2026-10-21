@@ -29,6 +29,19 @@ Security Solutions
     - In-class activity that connects concepts to real-world scenarios
     - Hands-on examples of methods for assess security vulnerabilities
     - Demonstrate the use of a practical approach to vulnerabilities
+  - Complete and submit the [Security Survey Project Three: Network
+    Monitoring](/../projects/)
+    - Give a public presentation of the `networkmonitor` tool and its results
+    - Report the results of the socket and XML-RPC monitoring experiments
+  - Start working on the [Security Survey Project Four: Program
+    Tracing](/../projects/)
+    - Review the project tasks, the preparation reading, and the resources
+    - Begin designing the `programtracer` tool and its trace analysis
+- {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Submit the
+[Security Summit Project](/../projects/) status update and give a demonstration
+  - Explain how the project's topic evolved since the proposal
+  - Show a working prototype of the project to the instructor and your peers
+  - Overview at least one empirical result from preliminary experiments
 
 ## Slides
 

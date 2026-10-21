@@ -27,6 +27,10 @@ Computer Networking
     - In-class activity that connects concepts to real-world scenarios
     - Hands-on examples of the operation and behavior of networking protocols
   - No student discussion leaders for this week's material
+- {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Start working
+on the [Security Summit Project](/../projects/)
+  - Form a team or work individually to select a project topic
+  - Begin the proposal, including its goals, abstract, and evaluation strategy
 
 ## Slides
 

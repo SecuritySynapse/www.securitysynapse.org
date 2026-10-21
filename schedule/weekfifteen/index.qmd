@@ -24,6 +24,14 @@ Systems Security: Planning for Success](https://web.njit.edu/~rt494/security/)
   - Student presentations that feature:
     - Explanation of a high-level concepts in virtualization
     - Since there is only one class this week, students need not program
+  - Demonstrate the [Security Survey Project Four: Program
+    Tracing](/../projects/)
+    - Show the `programtracer` tool tracing a Python program and its test suite
+    - Report preliminary results from the trace comparison and analysis
+- {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Give the
+[Security Summit Project](/../projects/) lightning talk
+  - Present a five- to six-minute talk with the required slides
+  - Share the slide deck with the instructor and the class through Discord
 - **One Class Session Devoted to Lightning Talks!**
 
 ## Slides

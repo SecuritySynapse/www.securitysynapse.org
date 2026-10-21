@@ -25,7 +25,8 @@ Success](https://web.njit.edu/~rt494/security/)
   - Complete and submit the [Security Survey Project One: Server Fuzzing](/../projects/)
     - Using your own laptop, give a public demonstration and presentation of
   the project to the instructor and your peers
-  - Start working on [Security Survey Project Two: Cryptography Benchmarking](/../projects/)
+  - Note that the release of [Security Survey Project Two: Cryptography
+    Benchmarking](/../projects/) was moved to Week Nine
 
 ## Slides
 

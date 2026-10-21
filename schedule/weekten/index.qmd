@@ -30,6 +30,10 @@ session
     - Explanation of a high-level concept behind provable security
     - In-class activity that connects concepts to real-world scenarios
     - Hands-on examples of the operation and behavior of the one-time pad
+  - Demonstrate the [Security Survey Project Two: Cryptography
+    Benchmarking](/../projects/)
+    - Show `cryptobenchmark` measuring `Fernet` and `rFernet`
+    - Report preliminary time and space overheads from the doubling experiment
 
 ## Slides
 

@@ -653,3 +653,71 @@ print(f"CRC32 Checksum: {checksum_data_two:#010x}")
 :::
 
 :::
+
+## Vulnerabilities and Objectives
+
+::: {.columns style="margin-top: 0.15em;"}
+
+::: {.column style="width: 33%; font-size: 0.7em;"}
+
+::: {.fragment .fade}
+
+### **Discover**
+
+- Vulnerability management
+- CVEs and CVSS
+- Secret scanning
+- Information collection
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.7em;"}
+
+::: {.fragment .fade}
+
+### **Monitor**
+
+- Security logging
+- Log analysis
+- Incident response
+- Operations centers
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.7em;"}
+
+::: {.fragment .fade}
+
+### **Recover**
+
+- Redundancy and RAID
+- Backup and recovery
+- Data integrity
+- Business continuity
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.62em;"}
+
+- **CSP Chapters 8-9 connection**: connect **vulnerability discovery**,
+**logging**, and **recovery** to **incident response**
+
+- **CS-403-1**: Correctly identify the **threats** to an application's security
+and describe the **suitable mitigation(s)** for addressing the threats.
+
+- **CS-403-3**: Correctly use hardware and/or software **tools** to **diagnose**
+and **fix** web and **network security risks**.
+
+- **CS-403-5**: Design, implement, document, test, and explain **secure
+software** with emphasis on social, political, legal, and **ethical
+vulnerabilities**.
+
+:::

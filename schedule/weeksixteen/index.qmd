@@ -32,3 +32,14 @@ Final Executable Examination
   - **Time**: 9:00 AM -- 12:00 noon
   - **Location**: Alden 109
   - Use GitHub, VS Code, and your laptop to complete the examination
+- {{< iconify fa6-solid diagram-project size=18px >}} **Thursday**: Submit the
+[Security Survey Project Four: Program Tracing](/../projects/) presentation
+slides and final report
+  - **Date**: Thursday, December 10, 2026
+  - **Time**: 11:59 PM
+  - Submit the slides and the final report through GitHub
+- {{< iconify fa6-solid diagram-project size=18px >}} **Thursday**: Complete and
+submit the [Security Summit Project](/../projects/) final report
+  - **Date**: Thursday, December 10, 2026
+  - **Time**: 11:59 PM
+  - Submit the final report through GitHub

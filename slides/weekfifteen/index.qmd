@@ -257,3 +257,70 @@ docker run -d \
 :::
 
 :::
+
+## Virtualization and Objectives
+
+::: {.columns style="margin-top: 0.15em;"}
+
+::: {.column style="width: 33%; font-size: 0.7em;"}
+
+::: {.fragment .fade}
+
+### **Isolate**
+
+- Virtual machines
+- Software containers
+- Shared-kernel risks
+- Untrusted images
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.7em;"}
+
+::: {.fragment .fade}
+
+### **Constrain**
+
+- Limit CPU and memory
+- Control files and processes
+- Least privilege
+- System stability
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.7em;"}
+
+::: {.fragment .fade}
+
+### **Orchestrate**
+
+- Docker security
+- Kubernetes clusters
+- Cloud computing
+- The "four Cs"
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.62em;"}
+
+- **CSP Chapter 10 connection**: connect **isolation** and **resource limits**
+to secure **virtualization**
+
+- **CS-403-2**: Correctly apply **security principles**, [...], and
+**architecture** in the modeling and implementation of **security solutions**.
+
+- **CS-403-4**: Evaluate the **effectiveness** of various hardware and software
+systems with respect to **computer security**.
+
+- **CS-403-5**: Design, implement, test, and explain **secure software** with
+emphasis on **ethical vulnerabilities**
+
+:::

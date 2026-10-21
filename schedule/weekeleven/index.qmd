@@ -31,7 +31,7 @@ Modern cryptography and review
     - Hands-on examples of the operation of a pseudorandom generator
 - **Tuesday**: No classes due to All-College Programming Day
 - {{< iconify fa6-solid people-line size=18px >}} **Friday**: Complete In-Person
-Assessment Two during the class session
+Assessment Two during the laboratory session
 - {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Complete
 Midterm Executable Examination Two in the laboratory session
   - **Date**: Friday, November 6, 2026
@@ -40,6 +40,17 @@ Midterm Executable Examination Two in the laboratory session
   - Use GitHub, VS Code, and your laptop to complete the examination
   - Cite external sources, including artificial intelligence coding
   assistants, that you use during the examination
+- {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Complete and
+submit the [Security Survey Project Two: Cryptography
+Benchmarking](/../projects/)
+  - Give the public presentation during the class session
+  - Report the time and space overheads of the `Fernet` and `rFernet` ciphers
+- {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Start working
+on the [Security Survey Project Three: Network Monitoring](/../projects/)
+  - Review the project tasks, the preparation reading, and the resources
+  - Begin designing the `networkmonitor` tool for the socket and XML-RPC modes
+  - Note that the Friday laboratory session is devoted to Midterm Executable
+  Examination Two
 
 ## Slides
 

@@ -581,3 +581,70 @@ nixbld1:x:30001:30000:Nix build user 1
 :::
 
 :::
+
+## Access Control and Objectives
+
+::: {.columns style="margin-top: 0.15em;"}
+
+::: {.column style="width: 33%; font-size: 0.7em;"}
+
+::: {.fragment .fade}
+
+### **Authenticate**
+
+- MFA and its factors
+- What you know, have, are
+- Identity management
+- SSO and SAML
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.7em;"}
+
+::: {.fragment .fade}
+
+### **Authorize**
+
+- Least privilege
+- Authorization models
+- Unix permissions
+- Access control lists
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.7em;"}
+
+::: {.fragment .fade}
+
+### **Evaluate**
+
+- TP, FP, TN, FN
+- Precision and recall
+- F1-score
+- Compare auth solutions
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.62em;"}
+
+- **CSP Chapter 7 + OSTEP Chapter 55 connection**: connect **least privilege**
+and **authorization models** to **access controls** and their **evaluation**
+
+- **CS-403-2**: Correctly apply **security principles**, [...], and
+**cryptography** in the modeling and implementation of **security solutions**.
+
+- **CS-403-4**: Evaluate the **effectiveness** of various hardware and software
+systems with respect to **computer security**.
+
+- **CS-403-3**: Correctly use hardware and/or software **tools** to **diagnose**
+and **fix** web and **network security risks**.
+
+:::

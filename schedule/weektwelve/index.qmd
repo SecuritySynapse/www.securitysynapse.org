@@ -30,6 +30,10 @@ Security Solutions
     - In-class activity that connects concepts to real-world scenarios
     - Hands-on examples of the operation and behavior of access control methods
     - Demonstrate the use of a practical approach to access control
+  - Demonstrate the [Security Survey Project Three: Network
+    Monitoring](/../projects/)
+    - Show the `networkmonitor` tool in its socket and XML-RPC modes
+    - Report preliminary results from monitoring traffic on localhost
 
 ## Slides
 

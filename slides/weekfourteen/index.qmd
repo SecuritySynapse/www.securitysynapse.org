@@ -486,3 +486,70 @@ How does this help a cryptographer break a simple cipher?
 :::
 
 :::
+
+## Cryptography and Objectives
+
+::: {.columns style="margin-top: 0.15em;"}
+
+::: {.column style="width: 33%; font-size: 0.7em;"}
+
+::: {.fragment .fade}
+
+### **Encrypt**
+
+- Affine ciphers
+- Vigenere ciphers
+- Modular arithmetic
+- SSH keys
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.7em;"}
+
+::: {.fragment .fade}
+
+### **Analyze**
+
+- Frequency analysis
+- Word frequencies
+- Cryptanalysis
+- Break simple ciphers
+
+:::
+
+:::
+
+::: {.column style="width: 33%; font-size: 0.7em;"}
+
+::: {.fragment .fade}
+
+### **Apply**
+
+- Hashing and signatures
+- Secure communication
+- Key management
+- Cryptography roles
+
+:::
+
+:::
+
+:::
+
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.62em;"}
+
+- **CCP Chapters 13-20 connection**: connect **affine** and **Vigenere**
+ciphers to **cryptanalysis** and **secure software**
+
+- **CS-403-2**: Correctly apply **security principles**, [...], and
+**cryptography** in the modeling and implementation of **security solutions**.
+
+- **CS-403-4**: Evaluate the **effectiveness** of various hardware and software
+systems with respect to **computer security**.
+
+- **CS-403-1**: Correctly identify the **threats** to an application's security
+and describe the **suitable mitigation(s)** for addressing the threats.
+
+:::

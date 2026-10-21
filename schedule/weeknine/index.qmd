@@ -29,6 +29,16 @@ Security Solutions
     - In-class activity that connects concepts to real-world scenarios
     - Hands-on examples of the operation and behavior of security solutions
     - Demonstrate the use of a practical security solution
+  - Start working on the [Security Survey Project Two: Cryptography
+    Benchmarking](/../projects/)
+    - Review the project tasks, the preparation reading, and the resources
+    - Begin designing the `cryptobenchmark` tool for the doubling experiment
+- {{< iconify fa6-solid diagram-project size=18px >}} **Friday**: Submit the
+[Security Summit Project](/../projects/) proposal
+  - Provide an informative title and the project's scientific and
+    engineering goals
+  - Write the proposal abstract and outline the design and evaluation strategy
+  - Give a demonstration of project feasibility through code and/or data
 
 ## Slides
 
