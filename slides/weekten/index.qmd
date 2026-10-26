@@ -299,12 +299,10 @@ sharing?
   - It holds even for unlimited time
   - It rests on a random key
 
-:::
-
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
-
-{{< iconify fa6-solid lightbulb >}} **Key Question**: what must be true of the
-key for the proof of perfect security to hold?
+- {{< iconify fa6-solid code >}} **Key Insights**: what must be true of the key
+for the proof of perfect security to hold? Remember, the proof assumes that the
+algorithm is known and that the adversary is unlimited in time and resources.
+Okay, let's keep going!
 
 :::
 
