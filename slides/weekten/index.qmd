@@ -517,8 +517,8 @@ print("M1 xor M2:", xor(m1, m2).hex())
 
 ::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
 
-{{< iconify fa6-solid lightbulb >}} **Takeaway**: the outputs match, so the key
-has vanished from both messages
+{{< iconify fa6-solid lightbulb >}} **Takeaway**: outputs match, key cancels out
+and `C1 ⊕ C2` reveals `M1 ⊕ M2`
 
 :::
 
