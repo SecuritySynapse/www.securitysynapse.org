@@ -73,15 +73,15 @@ is secure? Is there a general way to build this evidence?
 
 ## Defining the Encryption Problem
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.85em; line-height: 1.18;"}
 
 - **The people**
   - **Alice** sends to **Bob**
   - **Eve** reads everything in transit
 
 - **The algorithms**
-  - **Enc** builds the ciphertext
-  - **Dec** rebuilds the plaintext
+  - `Enc` builds the ciphertext from the plaintext
+  - `Dec` rebuilds the plaintext from the ciphertext
 
 - **The secret**
   - Bob and Alice share a key
@@ -91,7 +91,8 @@ is secure? Is there a general way to build this evidence?
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Key Question**: if Eve can do what Bob can do, what is protected?
+{{< iconify fa6-solid lightbulb >}} **Question**: if Eve can do what Bob can
+do, what is protected? How is it guarded?
 
 :::
 
