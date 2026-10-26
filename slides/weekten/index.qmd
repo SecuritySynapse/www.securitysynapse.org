@@ -157,7 +157,7 @@ key of message length?
 
 ::: fragment
 
-| `M` | `K` | `M ^ K` |
+| `M` | `K` | `M ⊕ K` |
 |:---:|:---:|:-------:|
 |  0  |  0  |    0    |
 |  0  |  1  |    1    |
@@ -184,8 +184,8 @@ key of message length?
   - Inside ciphers today
   - The basis of stream ciphers
 
-- {{< iconify fa6-solid wand-magic-sparkles >}} The same key locks and unlocks,
-so decryption is encryption again
+- {{< iconify fa6-solid wand-magic-sparkles >}} The **same key** locks and unlocks,
+so decryption is encryption again!
 
 :::
 
@@ -202,12 +202,16 @@ so decryption is encryption again
   - The key is uniform and random
 
 - **The operations**
-  - **Encrypt**: `C := K ^ M`
-  - **Decrypt**: `M := K ^ C`
+  - **Encrypt**: `C := K ⊕ M`
+  - **Decrypt**: `M := K ⊕ C`
 
 - **The rules**
   - One key for one message
-  - `(M ^ K) ^ K` returns `M`
+  - `(M ⊕ K) ⊕ K` returns `M`
+
+- **The notation**
+  - `⊕` is XOR in the textbook
+  - `^` is XOR in Python
 
 :::
 
