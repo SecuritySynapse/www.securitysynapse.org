@@ -538,25 +538,30 @@ between the two messages!
 
 ## A Historical Warning
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.65em; line-height: 1.1;"}
 
 - **The mistake**
-  - Soviet pads were reused
-  - One key served many messages
+  - Soviet pad production made ~35,000 duplicate key pages
+  - Duplicates went to distant stations to dilute the risk
+  - Reuse was a known weakness accepted under wartime pressure
 
-- **The result**
-  - VENONA decrypted them for decades
-  - Partial text still leaked secrets
+- **The break**
+  - Oct 1943: Hallock spotted clues to a "depth", the same pad twice
+  - 31 Jul 1946: Gardner read a phrase in a 1944 KGB message
+  - Most decrypts came from 1947 to 1952, not during the war itself
 
 - **The lesson**
   - One-time means exactly one time
-  - Process, not math, failed here
+  - Key generation and distribution are part of the math
+  - Only 1.8% of 1942 and 49% of 1944 KGB New York traffic was read
 
-:::
-
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
-
-**Discussion Question**: which control prevents key reuse?
+- **Sources**: NSA, [VENONA: An Overview](https://documents.theblackvault.com/documents/nsa/cryptoalmanac/VENONA_An_Overview.pdf)
+and [Introductory History of VENONA and Guide to the
+Translations](https://permanent.access.gpo.gov/lps33230/www.nsa.gov/docs/venona/monographs/monograph-1.html);
+Robert Louis Benson and Michael Warner, eds., [VENONA: Soviet Espionage
+and the American Response,
+1939--1957](https://www.cia.gov/resources/csi/books-monographs/venona/),
+NSA and CIA, 1996
 
 :::
 
