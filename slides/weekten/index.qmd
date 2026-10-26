@@ -133,7 +133,7 @@ by using a secret algorithm! Any questions?
 
 - **The requirement**
   - The key matches the message length
-  - The key is used exactly once
+  - The key is used _exactly once_, without reuse
 
 - **The role it plays**
   - The benchmark for other ciphers
@@ -551,7 +551,7 @@ between the two messages!
   - Most decrypts came from 1947 to 1952, not during the war itself
 
 - **The lesson**
-  - One-time means exactly one time
+  - One-time means _exactly one time_, without reuse
   - Key generation and distribution are part of the math
   - Only 1.8% of 1942 and 49% of 1944 KGB New York traffic was read
 
