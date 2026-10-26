@@ -195,7 +195,7 @@ so decryption is encryption again!
 
 ## How the One-Time Pad Works
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.75em; line-height: 1.05;"}
 
 - **The inputs**
   - Keys and messages match in length
@@ -210,14 +210,10 @@ so decryption is encryption again!
   - `(M ⊕ K) ⊕ K` returns `M`
 
 - **The notation**
-  - `⊕` is XOR in the textbook
-  - `^` is XOR in Python
+  - `⊕` is XOR in the textbook and in mathematics
+  - `^` is XOR in programming languages like Python
 
-:::
-
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
-
-{{< iconify fa6-solid key >}} **Correctness**: `Dec(K, Enc(K, M))` returns `M`
+- {{< iconify fa6-solid key >}} **Correctness**: `Dec(K, Enc(K, M))` returns `M`
 
 :::
 
