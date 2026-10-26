@@ -40,7 +40,8 @@ format:
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Key Question**: how would you prove that your encryption is safe?
+{{< iconify fa6-solid lightbulb >}} **Key Question**: how would you prove that
+your encryption algorithm is safe?
 
 :::
 
