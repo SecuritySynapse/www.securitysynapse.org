@@ -278,7 +278,7 @@ users correctly managing the secret key, not from the secrecy of the algorithm
 - **Kissner's Maxim**: cryptography turns challenges into key management
 problems
 
-- **Key Question**: wait, what if the key is shorter than the message? Key
+- **Questions**: wait, what if the key is shorter than the message? Key
 sharing?
 
 :::
@@ -303,7 +303,8 @@ sharing?
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Key Question**: what must be true of the key for the proof to hold?
+{{< iconify fa6-solid lightbulb >}} **Key Question**: what must be true of the
+key for the proof of perfect security to hold?
 
 :::
 
