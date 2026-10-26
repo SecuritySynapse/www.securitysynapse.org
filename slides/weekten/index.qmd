@@ -137,13 +137,15 @@ by using a secret algorithm! Any questions?
 
 - **The role it plays**
   - The benchmark for other ciphers
-  - Later ciphers trade speed for proof
+  - Later ciphers trade speed for proof and ease of use
 
 :::
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Key Question**: what would you give for an absolute guarantee?
+{{< iconify fa6-solid lightbulb >}} **Key Question**: what would you trade-off
+for an absolute guarantee of communication secrecy? Are you willing to use a new
+key of message length?
 
 :::
 
@@ -175,24 +177,19 @@ by using a secret algorithm! Any questions?
   - Different bits give `1`
 
 - **Why we like it**
-  - Its own inverse
+  - Fast and its own inverse
   - No carries or lookups
-  - Very fast
 
 - **Where it appears**
   - Inside ciphers today
   - The basis of stream ciphers
 
-:::
+- {{< iconify fa6-solid wand-magic-sparkles >}} The same key locks and unlocks,
+so decryption is encryption again
 
 :::
 
 :::
-
-::: {.fragment .fade .boxed-content style="margin-top: -0.25em; font-size: 0.72em;"}
-
-{{< iconify fa6-solid wand-magic-sparkles >}} The same key locks and unlocks, so
-decryption is encryption again
 
 :::
 
