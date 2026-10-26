@@ -308,11 +308,7 @@ Okay, let's keep going! *Ready*?
 
 ## One-Time Secrecy
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
-
-- **The goal**
-  - Ciphertext looks like noise
-  - No test separates the two
+::: {.incremental style="margin-top: -0.5em; font-size: 0.85em; line-height: 1.18;"}
 
 - **The adversary**
   - Chooses the plaintexts
@@ -322,11 +318,13 @@ Okay, let's keep going! *Ready*?
   - A uniform key, used once
   - The algorithm stays public
 
-:::
+- **The reason**
+  - Each `M` is explained by one key `K := M ⊕ C`
+  - This means that no plaintext can be efficiently ruled out
 
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
-
-**Key Question**: if `C` looks random, what can Eve learn about `M`?
+- {{< iconify fa6-solid wand-magic-sparkles >}} **"Random junk"**: Eve cannot
+tell `C` from a meaningless string and thus the ciphertext is perfectly secret.
+Any questions so far?
 
 :::
 
@@ -334,17 +332,17 @@ Okay, let's keep going! *Ready*?
 
 ::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
 
+- **The claim**
+  - For every `M`, `C` is a uniform `n`-bit string
+  - Each string is equally likely, whatever `M` is
+
 - **The test**
   - Real ciphertext versus random string
   - Interchangeable means perfect
 
-- **The strength**
-  - Running time does not matter
-  - Even slow attacks cannot win
-
-- **The practice**
-  - Proven, never assumed
-  - Definitions are the contract
+- **Bob's view**
+  - He holds both `C` and `K`
+  - Together they do reveal `M`
 
 :::
 
