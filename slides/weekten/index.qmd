@@ -587,7 +587,8 @@ NSA and CIA, 1996
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
 {{< iconify fa6-solid scale-unbalanced >}} **Two separate goals**: secrecy and
-integrity need two controls
+integrity need two controls. Let's show this with a Python program that
+performs a bit-flipping attack on a one-time pad ciphertext!
 
 :::
 
@@ -623,6 +624,14 @@ amount change
 
 :::
 
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid bus >}} **Summary**: this means that one-time pad is not
+robust to tampering!
+
+:::
+
+
 # Telling the Story Back
 
 ::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
@@ -643,7 +652,8 @@ amount change
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Key Question**: which single rule keeps the pad perfectly secret?
+{{< iconify fa6-solid lightbulb >}} **Key Insight**: the ciphertext looks exactly like "random junk" to the attacker
+Eve!
 
 :::
 
@@ -699,7 +709,8 @@ amount change
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.72em;"}
 
-**Next week**: a short key that protects a long message
+**Next week**: a short key that protects a long message, enhancing overall
+feasibility!
 
 :::
 
@@ -751,7 +762,7 @@ amount change
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.7em;"}
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.875em;"}
 
 - **JOY connection**: chapters one and two define encryption and prove that
   the one-time pad achieves perfect secrecy
