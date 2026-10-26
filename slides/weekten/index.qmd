@@ -372,7 +372,8 @@ the claim?
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
 {{< iconify fa6-solid award >}} **Gold standard**: other ciphers only approximate
-this guarantee, but may have other benefits related to efficiency or usability
+this guarantee, but may have other benefits related to efficiency or usability.
+Does this make sense? Questions?
 
 :::
 
