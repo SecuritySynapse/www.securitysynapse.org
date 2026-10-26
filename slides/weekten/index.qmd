@@ -237,7 +237,7 @@ print("Decrypted: ", otp(ciphertext, key))
 
 ::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
 
-{{< iconify fa6-solid lightbulb >}} **Takeaway**: `secrets` gives a fresh key, so
+{{< iconify fa6-solid code >}} **Takeaway**: `secrets` gives a fresh key, so
 every run changes the ciphertext
 
 :::
@@ -245,7 +245,14 @@ every run changes the ciphertext
 ::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
 
 {{< iconify fa6-solid keyboard >}} **Try it**: change the plaintext, then run the
-cell again
+cell again. What do you notice?
+
+:::
+
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Key question**: what are the trade-offs
+with this method? How do you know?
 
 :::
 
