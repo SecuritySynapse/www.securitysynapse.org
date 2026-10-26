@@ -423,7 +423,7 @@ compare the counters
 
 ## The Catch: Key Length
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.775em; line-height: 1.18;"}
 
 - **The requirement**
   - The key matches the message
@@ -436,14 +436,14 @@ compare the counters
 
 - **The consequence**
   - Most systems cannot pay this price
-  - Next week stretches a short key
+  - Next week "stretches" a short key
 
 :::
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-{{< iconify fa6-solid lightbulb >}} **Coming next week**: can we stretch a short
-key safely?
+{{< iconify fa6-solid calendar >}} **Coming next week**: can we stretch a short
+key safely? How and why does that work?
 
 :::
 
