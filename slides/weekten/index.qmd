@@ -330,7 +330,7 @@ Any questions so far?
 
 ## Perfect Secrecy: A Definition
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.85em; line-height: 1.18;"}
 
 - **The claim**
   - For every `M`, `C` is a uniform `n`-bit string
@@ -338,18 +338,15 @@ Any questions so far?
 
 - **The test**
   - Real ciphertext versus random string
-  - Interchangeable means perfect
+  - Interchangeable means perfect secrecy
 
 - **Bob's view**
   - He holds both `C` and `K`
   - Together they do reveal `M`
 
-:::
-
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
-
-{{< iconify fa6-solid infinity >}} **Absolute guarantee**: unlimited computing
-power still fails
+- {{< iconify fa6-solid infinity >}} **Absolute guarantee**: unlimited computing
+power still fails. Can you explain why perfect secrecy holds correctly? Key to
+the claim?
 
 :::
 
@@ -362,7 +359,7 @@ power still fails
   - Used for one message only
 
 - **The argument**
-  - `K ^ M` is uniform as well
+  - `K ⊕ M` is uniform as well
   - Every ciphertext is equally likely
   - Eve is left with a blind guess
 
@@ -375,7 +372,7 @@ power still fails
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
 {{< iconify fa6-solid award >}} **Gold standard**: other ciphers only approximate
-this guarantee
+this guarantee, but may have other benefits related to efficiency or usability
 
 :::
 
