@@ -217,7 +217,7 @@ so decryption is encryption again!
 
 :::
 
-## One-Time Pad in Python
+## One-Time Pad in Python {transition="convex"}
 
 ```{pyodide}
 #| autorun: true
@@ -377,7 +377,7 @@ Does this make sense? Questions?
 
 :::
 
-## Suggesting Secrecy in Python
+## Suggesting Secrecy in Python {transition="convex"}
 
 ```{pyodide}
 #| autorun: true
@@ -482,22 +482,22 @@ key safely? How does that work?
 - **The break**
   - The key cancels out
   - `M1 ^ M2` remains
-  - A crib such as `Transfer $` exposes text
+  - A reused "crib" such as `Transfer $` exposes text
 
 - **The lesson**
   - Guessing one reveals the other
-  - Never reuse a pad or stream
+  - Never reuse a pad or stream as this compromises security!
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.75em;"}
 
 {{< iconify fa6-solid triangle-exclamation >}} **Key insight**: the attacker learns
-the *difference* of two messages
+the *difference* of two messages!
 
 :::
 
-## Key Reuse in Python
+## Key Reuse in Python {transition="convex"} 
 
 ```{pyodide}
 #| autorun: true
