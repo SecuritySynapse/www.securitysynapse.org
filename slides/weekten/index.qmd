@@ -47,15 +47,15 @@ your encryption algorithm is safe?
 
 ## What Will We Learn This Week?
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.8em; line-height: 1.18;"}
 
 - **Proof beats promise**
   - A definition makes a claim testable
   - A proof covers every possible attack
 
 - **The one-time pad**
-  - Encrypt and decrypt with XOR
-  - A random key as long as the message
+  - Encrypt and decrypt with XOR boolean operator
+  - A random key as long as the plaintext message
 
 - **When the rules break**
   - Key reuse leaks two messages
@@ -65,7 +65,9 @@ your encryption algorithm is safe?
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Security synapse**: JOY *proves* the confidentiality that CSP names
+{{< iconify fa6-solid lightbulb >}} **Security synapse**: JOY *proves* the
+confidentiality that CSP names. What is needed to convince you that a cipher
+is secure? Is there a general way to build this evidence?
 
 :::
 
