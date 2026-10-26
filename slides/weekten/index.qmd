@@ -377,7 +377,7 @@ Does this make sense? Questions?
 
 :::
 
-## Testing Secrecy in Python
+## Suggesting Secrecy in Python
 
 ```{pyodide}
 #| autorun: true
@@ -418,6 +418,8 @@ compare the counters
 `M`, so the secrecy claim holds
 
 :::
+
+# Eve cannot tell `C` from "random junk", so `C` tells her nothing about `M`. Alice and Bob can message secretly!
 
 ## The Catch: Key Length
 
