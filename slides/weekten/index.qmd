@@ -381,31 +381,40 @@ Does this make sense? Questions?
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 12
+#| max-lines: 13
 import secrets
 from collections import Counter
 
 message = b"JOY!"
-first_byte = Counter()
+c0 = Counter()
 for _ in range(1000):
     key = secrets.token_bytes(len(message))
-    first_byte[message[0] ^ key[0]] += 1
+    c = bytes(m ^ k for m, k in zip(message, key))
+    c0[c[0]] += 1
 
-print("Values seen:", len(first_byte), "of 256")
-print("Most common:", first_byte.most_common(1))
+print("Distinct C bytes:", len(c0), "of 256")
+print("Ideal count:", round(1000 / 256, 2))
+print("Busiest:", c0.most_common(1))
 ```
 
 ::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
 
-{{< iconify fa6-solid lightbulb >}} **Takeaway**: one message still spreads across
-many ciphertext values
+{{< iconify fa6-solid lightbulb >}} **Takeaway**: every value turns up about
+equally often, so `C` shows no sign of `M`
 
 :::
 
 ::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
 
-{{< iconify fa6-solid keyboard >}} **Try it**: run the cell twice and compare the
-counters
+{{< iconify fa6-solid keyboard >}} **Try it**: change the message, then rerun and
+compare the counters
+
+:::
+
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid bus >}} **Summary**: the spread never depends on
+`M`, so the claim holds
 
 :::
 
