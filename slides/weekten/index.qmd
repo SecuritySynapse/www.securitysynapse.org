@@ -299,10 +299,10 @@ sharing?
   - It holds even for unlimited time
   - It rests on a random key
 
-- {{< iconify fa6-solid code >}} **Key Insights**: what must be true of the key
+- {{< iconify fa6-solid code >}} **Key Reminders**: what must be true of the key
 for the proof of perfect security to hold? Remember, the proof assumes that the
 algorithm is known and that the adversary is unlimited in time and resources.
-Okay, let's keep going!
+Okay, let's keep going! *Ready*?
 
 :::
 
