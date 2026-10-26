@@ -381,7 +381,7 @@ Does this make sense? Questions?
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 13
+#| max-lines: 10
 import secrets
 from collections import Counter
 
@@ -394,7 +394,8 @@ for _ in range(1000):
 
 print("Distinct C bytes:", len(c0), "of 256")
 print("Ideal count:", round(1000 / 256, 2))
-print("Busiest:", c0.most_common(1))
+busiest, hits = c0.most_common(1)[0]
+print("Busiest byte:", busiest, "seen", hits, "times")
 ```
 
 ::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
@@ -414,7 +415,7 @@ compare the counters
 ::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
 
 {{< iconify fa6-solid bus >}} **Summary**: the spread never depends on
-`M`, so the claim holds
+`M`, so the secrecy claim holds
 
 :::
 
