@@ -762,7 +762,7 @@ feasibility!
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.875em;"}
+::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.825em;"}
 
 - **JOY connection**: chapters one and two define encryption and prove that
   the one-time pad achieves perfect secrecy
@@ -772,5 +772,7 @@ feasibility!
 - **CS-403-2**: apply **cryptography** to **security solutions**
 
 - **CS-403-4**: evaluate systems for **computer security**
+
+- **Reference**: [The Joy of Cryptography](https://joyofcryptography.com/)
 
 :::
