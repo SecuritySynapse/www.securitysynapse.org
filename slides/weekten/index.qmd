@@ -117,8 +117,9 @@ do, what is protected? How is it guarded?
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-{{< iconify fa6-solid lightbulb >}} **Kerckhoffs's principle**: all security comes
-from the secret key
+{{< iconify fa6-solid lightbulb >}} **Kerckhoffs's Principle**: all security
+comes from the secret key and thus you should not try to protect communication
+by using a secret algorithm! Any questions?
 
 :::
 
