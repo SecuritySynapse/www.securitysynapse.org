@@ -272,11 +272,14 @@ with this method? How do you know?
   - The key is as long as the message
   - No cipher has a stronger proof
 
-:::
+- **Reformulated Kerckhoffs's Principle**: security properties stem from the
+users correctly managing the secret key, not from the secrecy of the algorithm
 
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+- **Kissner's Maxim**: cryptography turns challenges into key management
+problems
 
-**Key Question**: what if the key is shorter than the message?
+- **Key Question**: wait, what if the key is shorter than the message? Key
+sharing?
 
 :::
 
