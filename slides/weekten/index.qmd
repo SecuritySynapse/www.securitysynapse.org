@@ -579,7 +579,7 @@ NSA and CIA, 1996
   - No key is needed
 
 - **The fix**
-  - *Malleable* data can be reshaped
+  - Malleable data can be reshaped
   - Authentication comes later
 
 :::
