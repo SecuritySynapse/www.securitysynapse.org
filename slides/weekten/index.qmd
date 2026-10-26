@@ -443,7 +443,7 @@ compare the counters
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
 {{< iconify fa6-solid calendar >}} **Coming next week**: can we stretch a short
-key safely? How and why does that work?
+key safely? How does that work?
 
 :::
 
