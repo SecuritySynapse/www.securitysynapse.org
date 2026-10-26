@@ -529,6 +529,13 @@ compare the outputs
 
 :::
 
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid bus >}} **Summary**: the attacker knows the difference
+between the two messages!
+
+:::
+
 ## A Historical Warning
 
 ::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
