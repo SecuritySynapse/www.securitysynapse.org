@@ -117,9 +117,9 @@ do, what is protected? How is it guarded?
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-{{< iconify fa6-solid lightbulb >}} **Kerckhoffs's Principle**: all security
-comes from the secret key and thus you should not try to protect communication
-by using a secret algorithm! Any questions?
+{{< iconify fa6-solid lightbulb >}} **Kerckhoffs's Principle**: the system
+should remain secure even if its algorithms are public; only the key needs to be
+secret. Any questions about this key insight?
 
 :::
 
@@ -136,8 +136,8 @@ by using a secret algorithm! Any questions?
   - The key is used _exactly once_, without reuse
 
 - **The role it plays**
-  - The benchmark for other ciphers
-  - Later ciphers trade speed for proof and ease of use
+  - The effectiveness benchmark for other ciphers
+  - Perfect secrecy costs a fresh, message-length key
 
 :::
 
@@ -213,7 +213,7 @@ so decryption is encryption again!
   - `⊕` is XOR in the textbook and in mathematics
   - `^` is XOR in programming languages like Python
 
-- {{< iconify fa6-solid key >}} **Correctness**: `Dec(K, Enc(K, M))` returns `M`
+- {{< iconify fa6-solid key >}} **Round-Trip Correctness**: `Dec(K, Enc(K, M))` returns `M`
 
 :::
 
@@ -320,7 +320,7 @@ Okay, let's keep going! *Ready*?
 
 - **The reason**
   - Each `M` is explained by one key `K := M ⊕ C`
-  - This means that no plaintext can be efficiently ruled out
+  - This means `C` has the same distribution for every `M`
 
 - {{< iconify fa6-solid wand-magic-sparkles >}} **"Random junk"**: Eve cannot
 tell `C` from a meaningless string and thus the ciphertext is perfectly secret.
@@ -364,8 +364,8 @@ the claim?
   - Eve is left with a blind guess
 
 - **The cost**
-  - No unproven assumption is needed
-  - Randomness is the whole proof
+  - No computational hardness assumption is needed
+  - Uniform randomness is central to the proof
 
 :::
 
@@ -400,8 +400,8 @@ print("Busiest byte:", busiest, "seen", hits, "times")
 
 ::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
 
-{{< iconify fa6-solid lightbulb >}} **Takeaway**: every value turns up about
-equally often, so `C` shows no sign of `M`
+{{< iconify fa6-solid lightbulb >}} **Takeaway**: each ciphertext byte is
+uniform; finite samples still vary
 
 :::
 
@@ -414,8 +414,8 @@ compare the counters
 
 ::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
 
-{{< iconify fa6-solid bus >}} **Summary**: the spread never depends on
-`M`, so the secrecy claim holds
+{{< iconify fa6-solid bus >}} **Summary**: the proof, not this sample, shows
+independence from `M`
 
 :::
 
@@ -461,7 +461,7 @@ key safely? How does that work?
 
 - **The lesson**
   - A guarantee needs discipline
-  - Secrecy does not stop changes
+  - Key reuse violates the proof's one-use assumption
 
 :::
 
@@ -482,7 +482,6 @@ key safely? How does that work?
 - **The break**
   - The key cancels out
   - `M1 ^ M2` remains
-  - A reused "crib" such as `Transfer $` exposes text
 
 - **The lesson**
   - Guessing one reveals the other
@@ -501,14 +500,18 @@ the *difference* of two messages!
 
 ```{pyodide}
 #| autorun: true
-#| max-lines: 12
+#| max-lines: 11
+import secrets
+
 def xor(a: bytes, b: bytes) -> bytes:
     """XOR two byte strings of equal length."""
+    if len(a) != len(b):
+        raise ValueError("Inputs must have equal length")
     return bytes(x ^ y for x, y in zip(a, b))
 
-key = b"reused-key-material"
 m1 = b"Transfer $100 now"
 m2 = b"Transfer $900 now"
+key = secrets.token_bytes(len(m1))
 c1, c2 = xor(m1, key), xor(m2, key)
 
 print("C1 xor C2:", xor(c1, c2).hex())
@@ -538,7 +541,7 @@ between the two messages!
 
 ## A Historical Warning
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.65em; line-height: 1.1;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.675em; line-height: 1.1;"}
 
 - **The mistake**
   - Soviet pad production made ~35,000 duplicate key pages
@@ -764,8 +767,8 @@ feasibility!
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.825em;"}
 
-- **JOY connection**: chapters one and two define encryption and prove that
-  the one-time pad achieves perfect secrecy
+- **JOY connection**: Chapter 1 proves OTP perfect secrecy; Chapter 2
+  develops proof techniques
 
 - **CS-403-1**: identify **threats** and **mitigations**
 
