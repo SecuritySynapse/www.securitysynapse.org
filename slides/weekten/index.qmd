@@ -419,6 +419,39 @@ independence from `M`
 
 :::
 
+## Exhaustive Key-Space Check {transition="convex"}
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 4
+for message in range(4):  # all two-bit plaintexts
+    counts = [0] * 4
+    for key in range(4):  # all two-bit keys
+        counts[key ^ message] += 1
+    print(f"M={message:02b}: {counts}")
+```
+
+::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Takeaway**: list positions count keys
+for `C=00, 01, 10, 11`
+
+:::
+
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid keyboard >}} **Try it**: JOY §1.7—replace `^` with `&`;
+check `M=00`
+
+:::
+
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid bus >}} **Summary**: uniform `K` gives
+`Pr[C=c | M=m] = 1/4` (JOY §1.4)
+
+:::
+
 # Eve cannot tell `C` from "random junk", so `C` tells her nothing about `M`. Alice and Bob can message secretly!
 
 ## The Catch: Key Length
