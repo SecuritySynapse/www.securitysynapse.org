@@ -473,7 +473,7 @@ length and key space size!
 - **The difficulty**
   - Sharing *n* bits is as hard as sending them
   - True randomness is hard to generate
-  - A biased key leaks parts of `M`
+  - A tiny or biased key leaks parts of `M`
 
 - **The consequence**
   - Most systems cannot pay this price
@@ -485,6 +485,42 @@ length and key space size!
 
 {{< iconify fa6-solid calendar >}} **Coming next week**: can we stretch a short
 key safely? How does that work?
+
+:::
+
+## A Tiny Key Space Leaks the Message {transition="convex"}
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 9
+import secrets
+
+SPACE = 2  # key bytes are uniform over 0x00 .. SPACE - 1
+messages = [b"A", b"Z", b"a", b"z"]
+for message in messages:
+    keys = [secrets.randbelow(SPACE) for _ in range(500)]
+    seen = sorted({message[0] ^ k for k in keys})
+    print(f"M={message!r}  C ever: {seen}")
+```
+
+::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Takeaway**: only two ciphertexts per
+message -- one byte reveals `M`
+
+:::
+
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid keyboard >}} **Try it**: `SPACE = 0x18` merges the pairs;
+`SPACE = 256` leaks nothing
+
+:::
+
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid bus >}} **Summary**: uniformity is not enough --- the key
+space must match the message!
 
 :::
 
