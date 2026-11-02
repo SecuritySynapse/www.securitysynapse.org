@@ -46,7 +46,7 @@ format:
 
 ## What Will We Learn This Week?
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.8em; line-height: 1.18;"}
 
 - **Key stretching**
   - Why the pad cannot scale
@@ -57,14 +57,37 @@ format:
   - What "negligible" really means
 
 - **Good habits**
-  - How a nonce keeps messages unique
+  - Why a PRG seed is used only once
   - What cryptography cannot prove
 
 :::
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Security synapse**: the nonce rule protects tools from later weeks
+**Security synapse**: JOY's one-time key rule protects pseudo-OTP
+
+:::
+
+## Last Week: The OTP
+
+::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.15;"}
+
+- **The model**
+  - Algorithms are public; only `K` is secret
+  - Eve can choose `M` and see `C`, not `K`
+
+- **The rule and guarantee**
+  - Uniform key, as long as `M`, used once
+  - `C := K ⊕ M`; decrypt with `M := K ⊕ C`
+  - For every `M`, `C` is uniform
+  - No test distinguishes `C` from random, even with unlimited time
+
+- **The limits**
+  - Sharing a message-length key is hard
+  - Reuse exposes `C1 ⊕ C2 = M1 ⊕ M2`
+  - XOR alone does not provide integrity
+
+- **Bridge**: can a short key provide secrecy for a long message?
 
 :::
 
@@ -82,7 +105,7 @@ format:
 
 - **The consequence**
   - Nobody memorizes a huge key
-  - The key is the message in disguise
+  - The key carries as many bits as the message
 
 :::
 
@@ -136,7 +159,8 @@ format:
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Aim for indistinguishability**: if nobody can tell, nothing leaks
+**Aim for indistinguishability**: polynomial-time tests have negligible
+advantage
 
 :::
 
@@ -177,14 +201,14 @@ format:
   - The seed stays secret
 
 - **The promise**
-  - `G(S)` looks random
-  - Used once, it replaces randomness
+  - `G(S)` is indistinguishable from uniform
+  - The seed is used only once
 
 :::
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Pseudorandom**: looks random to any efficient test
+**Pseudorandom**: polynomial-time distinguishers have negligible advantage
 
 :::
 
@@ -199,23 +223,23 @@ def prg(seed: bytes, length: int) -> bytes:
     """Stretch a short seed into a keystream."""
     return hashlib.shake_256(seed).digest(length)
 
-seed = b"short-seed"
+seed = b"short-seed"  # Fixed toy value; not a security example
 keystream = prg(seed, 32)
-print("Keystream:", len(keystream), "bytes from", len(seed))
+print("Keystream:", keystream.hex())
 print("Repeats:  ", prg(seed, 32) == keystream)
 ```
 
 ::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
 
-{{< iconify fa6-solid lightbulb >}} **Takeaway**: the same seed always gives the
-same keystream
+{{< iconify fa6-solid lightbulb >}} **Takeaway**: the fixed seed demonstrates
+repeatability, not security
 
 :::
 
 ::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
 
-{{< iconify fa6-solid keyboard >}} **Try it**: change the seed and watch every byte
-change
+{{< iconify fa6-solid keyboard >}} **Try it**: change the seed and compare the
+output
 
 :::
 
@@ -276,8 +300,8 @@ change
   - They may succeed very rarely
 
 - **What we keep**
-  - Every attack stays impractical
-  - No realistic attack succeeds
+  - Every attack has high cost or tiny success odds
+  - Judge whether the bounds fit your risk
 
 - **Why it works**
   - Real hardware has limits
@@ -287,7 +311,7 @@ change
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**The trade**: an absolute guarantee for a deployable system
+**The trade**: replace absolute claims with cost and success bounds
 
 :::
 
@@ -349,7 +373,7 @@ change
 
 - **The adversary**
   - Runs in polynomial time
-  - Cannot succeed with high odds
+  - Has negligible distinguishing advantage
 
 - **The rule**
   - `1 / 2^λ` is negligible
@@ -359,7 +383,7 @@ change
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Why discard them**: negligible odds make "no attack works" provable
+**The goal**: every polynomial-time distinguisher has negligible advantage
 
 :::
 
@@ -372,8 +396,8 @@ change
   - Message and ciphertext: `λ + ℓ` bits
 
 - **The operations**
-  - **Encrypt**: `C := G(K) ^ M`
-  - **Decrypt**: `M := G(K) ^ C`
+  - **Encrypt**: `C := G(K) ⊕ M`
+  - **Decrypt**: `M := G(K) ⊕ C`
 
 - **The result**
   - A short key protects a long message
@@ -395,26 +419,27 @@ change
 import hashlib
 
 message = b"Encrypt me with a short key!"
-seed = b"a-short-16-byte-"
+seed = b"a-short-16-byte-"  # Fixed, disclosed toy key; no secrecy
 stream = hashlib.shake_256(seed).digest(len(message))
 
 ciphertext = bytes(m ^ s for m, s in zip(message, stream))
 decrypted = bytes(c ^ s for c, s in zip(ciphertext, stream))
 print("Key size:", len(seed), "bytes for", len(message))
+print("Ciphertext:", ciphertext.hex())
 print("Decrypted:", decrypted)
 ```
 
 ::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
 
-{{< iconify fa6-solid lightbulb >}} **Takeaway**: 16 key bytes encrypt a 28 byte
-message exactly
+{{< iconify fa6-solid lightbulb >}} **Takeaway**: the fixed key demonstrates XOR,
+not computational secrecy
 
 :::
 
 ::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
 
-{{< iconify fa6-solid keyboard >}} **Try it**: swap the seed and watch decryption
-fail
+{{< iconify fa6-solid keyboard >}} **Try it**: change the seed and compare the
+ciphertext
 
 :::
 
@@ -447,64 +472,64 @@ fail
 ::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
 
 - **The rules**
-  - One seed use for each key
-  - A fresh nonce per message
+  - The seed is uniform and secret
+  - Use each seed only once
 
-- **The habits**
-  - Standard ciphers help
-  - Libraries enforce the details
+- **The result**
+  - A repeated seed repeats the output
+  - Reusing a pseudo-OTP key leaks a relation
 
 - **The warning**
-  - Misuse breaks sound mathematics
+  - Security depends on the PRG assumption
   - Attack the usage, not the math
 
 :::
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Key Question**: which fails first, the algorithm or the usage?
+**Key Question**: what can key reuse reveal?
 
 :::
 
-## Nonces Make Keystreams Unique
+## Pseudo-OTP Key Reuse
 
 ::: {.incremental style="margin-top: -0.5em; font-size: 0.72em; line-height: 1.18;"}
 
-- **The input**
-  - The keystream needs key and nonce
-  - A counter or random value works
+- **The reuse**
+  - The same key repeats the same pad
+  - Both ciphertexts use that pad
 
-- **The rule**
-  - Every message gets a fresh nonce
-  - The nonce may be public
+- **The result**
+  - `C1 ⊕ C2 = M1 ⊕ M2`
+  - The shared pad cancels out
 
-- **The danger**
-  - Reusing both repeats the pad
-  - The key then cancels out
+- **The lesson**
+  - The plaintexts' XOR is exposed
+  - The key must be used only once
 
 :::
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Why it matters**: a repeated keystream makes the key cancel out
+**Why it matters**: pseudo-OTP is a one-time secrecy scheme
 
 :::
 
-## Nonce Reuse in Python
+## Pseudo-OTP Key Reuse in Python
 
 ```{pyodide}
 #| autorun: true
 #| max-lines: 13
 import hashlib
 
-def stream(key: bytes, nonce: bytes, n: int) -> bytes:
-    return hashlib.shake_256(key + nonce).digest(n)
+def stream(key: bytes, n: int) -> bytes:
+    return hashlib.shake_256(key).digest(n)
 def xor(p: bytes, q: bytes) -> bytes:
     return bytes(a ^ b for a, b in zip(p, q))
 
-key, nonce = b"shared-key-12345", b"nonce-one"
+key = b"shared-key-12345"  # Public toy key; reuse demo only
 m1, m2 = b"Attack at dawn!!", b"Retreat at dusk!"
-s = stream(key, nonce, len(m1))    # one nonce, two messages
+s = stream(key, len(m1))
 c1, c2 = xor(m1, s), xor(m2, s)
 print("M1 xor M2:", xor(m1, m2).hex())
 print("C1 xor C2:", xor(c1, c2).hex())
@@ -512,8 +537,8 @@ print("C1 xor C2:", xor(c1, c2).hex())
 
 ::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
 
-{{< iconify fa6-solid lightbulb >}} **Takeaway**: the two values match, so the
-reused keystream has vanished
+{{< iconify fa6-solid lightbulb >}} **Takeaway**: the repeated keystream cancels,
+leaving the XOR of the messages
 
 :::
 
@@ -530,9 +555,9 @@ reused keystream has vanished
   - `C || D := G(B)`
   - Output `A || C || D`
 
-- **The caution**
-  - Each step needs a uniform seed
-  - One seed fills a whole file
+- **The proof**
+  - `S` is uniform; `B` is pseudorandom
+  - Replace `B` with uniform in a hybrid
 
 :::
 
@@ -649,8 +674,8 @@ return A || B || C || D
   - Assumptions carry the guarantee
 
 - **The rules**
-  - Nonces keep keystreams unique
-  - Seeds are used only once
+  - A seed is uniform and secret
+  - Each seed is used only once
 
 :::
 
@@ -673,7 +698,7 @@ return A || B || C || D
 #### Primitives
 
 - Pseudorandom generator
-- Seed, stretch, nonce
+- Seed and stretch
 - Pseudo-OTP
 
 #### Definitions
@@ -694,9 +719,9 @@ return A || B || C || D
 
 #### Implementation
 
-- One nonce per key
+- Uniform, secret keys
+- Pseudo-OTP keys are one-time
 - Standard ciphers only
-- Randomly seeded keys
 
 #### Prevention
 
@@ -728,7 +753,7 @@ return A || B || C || D
 
 - Short key, long file
 - Keystream from a PRG
-- Fresh nonce always
+- Use each seed once
 - Seed kept secret
 - Standard ciphers only
 - Trust the library
