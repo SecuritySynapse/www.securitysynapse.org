@@ -544,7 +544,7 @@ leaving the XOR of the messages
 
 ## Extending a PRG's Stretch
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.8em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.75em; line-height: 1.18;"}
 
 - **The idea**
   - Length doubling gives `2λ` bits
