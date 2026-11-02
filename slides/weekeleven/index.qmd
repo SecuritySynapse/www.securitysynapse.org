@@ -32,7 +32,7 @@ format:
   - Stretch a short key safely
   - Keep the simple XOR idea
 
-- **The trade**
+- **The trade-off**
   - Security becomes a question of cost
   - Reading: JOY chapters four and five
 
@@ -40,7 +40,7 @@ format:
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Key Question**: how can 16 key bytes protect a one gigabyte file?
+**Key Question**: how can 16 key bytes effectively protect a one gigabyte file?
 
 :::
 
