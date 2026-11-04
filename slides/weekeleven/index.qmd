@@ -225,7 +225,7 @@ far?
 import hashlib
 
 def prg(seed: bytes, length: int) -> bytes:
-    """Stretch a short seed into a keystream."""
+    """Stretch a short seed into a keystream using SHAKE-256, an XOF."""
     return hashlib.shake_256(seed).digest(length)
 
 seed = b"short-seed"  # Fixed toy value; not a security example
@@ -245,6 +245,13 @@ repeatability, not security
 
 {{< iconify fa6-solid keyboard >}} **Try it**: change the seed and compare the
 output
+
+:::
+
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid lightbulb >}} **Key question**: Why is this output an
+example of pseudorandom and not truly random?
 
 :::
 
