@@ -305,7 +305,7 @@ returns as many bytes as requested
 
 ## Removing the Two Impossibilities
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.8em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.85em; line-height: 1.18;"}
 
 - **What we drop**
   - Attacks may take a long time
@@ -323,7 +323,7 @@ returns as many bytes as requested
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**The trade**: replace absolute claims with cost and success bounds
+**The trade**: replace absolute claims of secrecy with overall cost and success bounds
 
 :::
 
