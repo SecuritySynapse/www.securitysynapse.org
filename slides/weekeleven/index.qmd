@@ -756,8 +756,8 @@ your system rely on? Why are they justified?
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.72em;"}
 
-{{< iconify fa6-solid calendar >}} **Next week**: access control and
-authentication
+{{< iconify fa6-solid calendar >}} **Next week**: improving security with access control and
+authentication!
 
 :::
 
@@ -820,7 +820,7 @@ authentication
 
 ::: {.fragment .fade .boxed-content style="margin-top: 0.05em; font-size: 0.7em;"}
 
-- **JOY connection**: chapters four and five define pseudorandomness
+- **JOY connection**: chapters four and five define pseudorandomness for OTP
 
 - **CS-403-2**: apply **cryptography** to security solutions
 
