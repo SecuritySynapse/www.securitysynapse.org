@@ -790,7 +790,7 @@ authentication!
 
 - Bit flips invisible
 - Authentication later
-- AEAD combines both
+- AEAD: ciphertext and a tag
 - Detect tampering
 - Never trust input
 - Verify every field
@@ -832,7 +832,7 @@ authentication!
 
 ## Prepare for Midterm Examination Two
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.8em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.8em; line-height: 1.05;"}
 
 - **The event**
   - **Friday, November 6, 2026**
@@ -845,12 +845,13 @@ authentication!
 
 - **How to prepare**
   - Bring your laptop and GitHub
+  - Create `Formtuist` forms with an agent!
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.65em;"}
 
-{{< iconify fa6-solid calendar >}} **Cumulative**: the examination covers all
-prior material
+{{< iconify fa6-solid calendar >}} **Cumulative**: the executable examination
+and inperson assessment cover all prior material!
 
 :::
