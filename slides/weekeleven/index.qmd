@@ -93,7 +93,7 @@ format:
 
 ## The One-Time Pad Does Not Scale
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.8em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.825em; line-height: 1.18;"}
 
 - **The cost**
   - An *n*-bit key for an *n*-bit message
@@ -111,7 +111,7 @@ format:
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Key Question**: can we expand a short key into a long keystream?
+**Key Question**: can we effectively expand a short key into a long "keystream"?
 
 :::
 
