@@ -209,9 +209,9 @@ far?
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.68em;"}
 
-**Insight about Pseudorandom**: polynomial-time distinguishers have negligible advantage
+**Insight About Pseudorandom**: polynomial-time distinguishers have negligible advantage
 
 :::
 
