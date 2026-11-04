@@ -377,7 +377,7 @@ returns as many bytes as requested
 
 ## The Asymptotic Approach
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.8em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.85em; line-height: 1.18;"}
 
 - **The parameter**
   - `λ` is the security parameter
@@ -393,9 +393,9 @@ returns as many bytes as requested
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.68em;"}
 
-**The goal**: every polynomial-time distinguisher has negligible advantage
+**The goal**: every polynomial-time distinguisher has negligible advantage on Alice and Bob
 
 :::
 
@@ -412,14 +412,14 @@ returns as many bytes as requested
   - **Decrypt**: `M := G(K) ⊕ C`
 
 - **The result**
-  - A short key protects a long message
-  - Security reduces to the PRG
+  - A short key helps to protect a long message
+  - Security reduces to characteristics of the PRG
 
 :::
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Result**: one short key protects a much longer message
+**Result**: one short key practically protects a much longer message!
 
 :::
 
