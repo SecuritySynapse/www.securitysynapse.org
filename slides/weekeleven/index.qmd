@@ -631,7 +631,7 @@ result is exactly equal to the second half of the output from `H`!
 
 ## What We Cannot Prove
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.8em; line-height: 1.18;"}
+::: {.fragment style="margin-top: -0.5em; font-size: 0.8em; line-height: 1.18;"}
 
 - **The gap**
   - No PRG is proven from scratch
@@ -650,7 +650,7 @@ result is exactly equal to the second half of the output from `H`!
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
 {{< iconify fa6-solid scale-unbalanced >}} **Reality check**: cryptography
-manages secrecy risk rather than removing it entirely!
+manages risk rather than removing it entirely!
 
 :::
 
