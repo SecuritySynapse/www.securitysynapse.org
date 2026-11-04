@@ -329,7 +329,7 @@ returns as many bytes as requested
 
 ## The Concrete Approach
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.8em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.85em; line-height: 1.18;"}
 
 - **The claim**
   - Effort `2^80`, success `2^-64`
@@ -347,7 +347,7 @@ returns as many bytes as requested
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Why it helps**: you can compare attack cost with data value
+**Benefits**: you can compare attack cost with value of data that you're keeping secret!
 
 :::
 
@@ -371,7 +371,7 @@ returns as many bytes as requested
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Watch the right event**: count the probability that really matters
+**Watch the right event**: count the probability that really matters for message secrecy
 
 :::
 
