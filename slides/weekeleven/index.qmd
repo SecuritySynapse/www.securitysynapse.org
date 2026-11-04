@@ -401,7 +401,7 @@ returns as many bytes as requested
 
 ## Pseudo-OTP
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.8em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.85em; line-height: 1.18;"}
 
 - **The inputs**
   - Key: `λ` bits
