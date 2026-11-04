@@ -115,6 +115,8 @@ format:
 
 :::
 
+# Security by considering the computational difficulty of attacks, not the total absence of attacks in principle
+
 # Stretching a Short Key
 
 ::: {.incremental style="margin-top: -0.5em; font-size: 0.8em; line-height: 1.18;"}
