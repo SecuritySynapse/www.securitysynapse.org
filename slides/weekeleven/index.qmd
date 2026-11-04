@@ -149,18 +149,19 @@ format:
 
 - **The use**
   - XOR the keystream with the message
-  - Keep the seed secret
+  - Keep the seed secret as we do for the key
 
 - **The goal**
-  - The output looks uniform
-  - A small seed masks a large file
+  - The output of `G(key)` looks uniform
+  - A small seed "masks" a large file
 
 :::
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Aim for "indistinguishability"**: polynomial-time tests have negligible
-advantage
+**Aim for "indistinguishability"**: negligibly close output probabilities for
+polynomial-time adversaries so that the message is reasonably safe from
+eavesdroppers
 
 :::
 
