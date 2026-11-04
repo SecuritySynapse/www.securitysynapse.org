@@ -104,8 +104,8 @@ format:
   - Every message needs a fresh key
 
 - **The consequence**
-  - Nobody memorizes a huge key
-  - The key carries as many bits as the message
+  - Very difficult to correctly memorizes a huge key
+  - The key requires as many bits as the message
 
 :::
 
