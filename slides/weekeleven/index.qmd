@@ -218,12 +218,13 @@ parts of ciphertext. Any questions so far?
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.68em;"}
 
-{{< iconify fa6-solid wand-magic-sparkles >}} **Insight About Pseudorandom**:
+{{< iconify fa6-solid wand-magic-sparkles >}} **Pseudorandomness Insight**:
 polynomial-time distinguishers have negligible advantage
 
 :::
 
 ## Pseudorandomness in Python {transition="convex"}
+
 ```{pyodide}
 #| autorun: true
 #| max-lines: 10
@@ -405,7 +406,7 @@ the probability that really matters for message secrecy
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.68em;"}
 
-{{< iconify fa6-solid infinity >}} **The goal**: every polynomial-time
+{{< iconify fa6-solid infinity >}} **The secrecy goal**: every polynomial-time
 distinguisher has negligible advantage
 
 :::
@@ -436,6 +437,7 @@ much longer message!
 :::
 
 ## Pseudo-OTP in Python {transition="convex"}
+
 ```{pyodide}
 #| autorun: true
 #| max-lines: 11
@@ -462,7 +464,7 @@ not computational secrecy
 ::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
 
 {{< iconify fa6-solid keyboard >}} **Try it**: change the seed and compare the
-ciphertext
+ciphertext. What did you notice?
 
 :::
 
@@ -487,13 +489,13 @@ ciphertext
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
 {{< iconify fa6-solid lightbulb >}} **Key Question**: if the key is fixed, what
-else must change?
+else must change? Use the PRG correctly?
 
 :::
 
 # Using a PRG Correctly
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.8em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.78em; line-height: 1.18;"}
 
 - **The rules**
   - The seed is uniform and secret
@@ -536,11 +538,12 @@ else must change?
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
 {{< iconify fa6-solid triangle-exclamation >}} **Why it matters**: pseudo-OTP
-is a one-time secrecy scheme
+is a one-time secrecy scheme for the keystream
 
 :::
 
 ## Pseudo-OTP Key Reuse in Python {transition="convex"}
+
 ```{pyodide}
 #| autorun: true
 #| max-lines: 13
@@ -568,7 +571,11 @@ leaving the XOR of the messages
 
 ## Extending a PRG's Stretch
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.75em; line-height: 1.18;"}
+::: {.fragment style="margin-top: -0.5em; font-size: 0.75em; line-height: 1.05;"}
+
+- **The concepts**
+  - Stretch is how much longer plaintext can be than key
+  - Larger stretch means encrypt longer message with short key
 
 - **The idea**
   - Length doubling gives `2λ` bits
@@ -582,13 +589,6 @@ leaving the XOR of the messages
 - **The proof**
   - `S` is uniform; `B` is pseudorandom
   - Replace `B` with uniform in a hybrid
-
-:::
-
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
-
-{{< iconify fa6-solid lightbulb >}} **Key Question**: why not reuse `S` in the
-second call?
 
 :::
 
