@@ -185,7 +185,9 @@ eavesdroppers
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Practical view**: the gap only matters if an attacker can see it
+**Practical view**: the gap only matters if an attacker knows how key expansion
+is in use and can detect the pseudorandom parts of ciphertext. Any questions so
+far?
 
 :::
 
@@ -202,14 +204,14 @@ eavesdroppers
   - The seed stays secret
 
 - **The promise**
-  - `G(S)` is indistinguishable from uniform
-  - The seed is used only once
+  - `G(S)` is "indistinguishable" from uniform
+  - The secret seed is used only once by Alice and Bob
 
 :::
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Pseudorandom**: polynomial-time distinguishers have negligible advantage
+**Insight about Pseudorandom**: polynomial-time distinguishers have negligible advantage
 
 :::
 
