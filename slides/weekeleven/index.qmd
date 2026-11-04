@@ -250,8 +250,8 @@ code, and compare the output
 
 ::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
 
-{{< iconify fa6-solid lightbulb >}} **Key question**: Why an example of
-pseudorandom and not truly random?
+{{< iconify fa6-solid code >}} **XOF**: an extendable-output function
+returns as many bytes as requested
 
 :::
 
