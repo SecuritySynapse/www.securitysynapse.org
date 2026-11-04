@@ -353,7 +353,7 @@ returns as many bytes as requested
 
 ## Tiny Probabilities Matter
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.8em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.85em; line-height: 1.18;"}
 
 - **Compare the odds**
   - `2^-40.6`: 154 dice rolls without a seven
