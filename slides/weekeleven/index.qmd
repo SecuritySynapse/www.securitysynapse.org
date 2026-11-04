@@ -257,7 +257,7 @@ returns as many bytes as requested
 
 ## Recap on Pseudorandomness
 
-::: {.incremental style="margin-top: -0.5em; font-size: 0.8em; line-height: 1.18;"}
+::: {.incremental style="margin-top: -0.5em; font-size: 0.825em; line-height: 1.18;"}
 
 - **The idea**
   - A short seed makes a keystream
@@ -273,9 +273,9 @@ returns as many bytes as requested
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.625em;"}
 
-**Key Question**: why does a repeated seed break secrecy?
+**Key Question**: why does a repeated PRG seed break secrecy and advantage the eavesdropper?
 
 :::
 
@@ -293,13 +293,13 @@ returns as many bytes as requested
 
 - **The honesty**
   - Assumptions replace proofs
-  - State them clearly
+  - State and justify assumptions clearly
 
 :::
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Key Question**: is a trillion-year attack different from an impossible one?
+**Key Question**: is a trillion-year attack realistically different from an impossible one?
 
 :::
 
