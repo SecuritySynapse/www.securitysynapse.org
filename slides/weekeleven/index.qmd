@@ -231,7 +231,7 @@ def prg(seed: bytes, length: int) -> bytes:
 seed = b"short-seed"  # Fixed toy value; not a security example
 keystream = prg(seed, 32)
 print("Keystream:", keystream.hex())
-print("Repeats:  ", prg(seed, 32) == keystream)
+print("Deterministic Output:  ", prg(seed, 32) == keystream)
 ```
 
 ::: {.fragment .fade style="margin-top: -0.4em; font-size: 0.75em;"}
@@ -243,15 +243,15 @@ repeatability, not security
 
 ::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
 
-{{< iconify fa6-solid keyboard >}} **Try it**: change the seed and compare the
-output
+{{< iconify fa6-solid keyboard >}} **Try it**: change the seed, re-run the
+code, and compare the output
 
 :::
 
 ::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.75em;"}
 
-{{< iconify fa6-solid lightbulb >}} **Key question**: Why is this output an
-example of pseudorandom and not truly random?
+{{< iconify fa6-solid lightbulb >}} **Key question**: Why an example of
+pseudorandom and not truly random?
 
 :::
 
