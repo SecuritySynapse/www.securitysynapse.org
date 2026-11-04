@@ -135,7 +135,7 @@ format:
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Key Question**: why does a formula always leave a fingerprint?
+**Key Question**: why is the stream of generated numbers not truly random?
 
 :::
 
@@ -159,7 +159,7 @@ format:
 
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
-**Aim for indistinguishability**: polynomial-time tests have negligible
+**Aim for "indistinguishability"**: polynomial-time tests have negligible
 advantage
 
 :::
