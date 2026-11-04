@@ -571,7 +571,7 @@ leaving the XOR of the messages
 
 ## Extending a PRG's Stretch
 
-::: {.fragment style="margin-top: -0.5em; font-size: 0.75em; line-height: 1.05;"}
+::: {.fragment style="margin-top: -0.5em; font-size: 0.725em; line-height: 1.1;"}
 
 - **The concepts**
   - Stretch is how much longer plaintext can be than key
@@ -582,8 +582,8 @@ leaving the XOR of the messages
   - Feed the second half back in
 
 - **The steps**
-  - `A || B := G(S)`
-  - `C || D := G(B)`
+  - "Assign the first half of output to `A` and second half to `B`" *or* `A || B := G(S)`
+  - "Assign the first half of output to `C` and second half to `D`" *or* `C || D := G(B)`
   - Output `A || C || D`
 
 - **The proof**
@@ -620,9 +620,14 @@ return A || B || C || D
 ::: {.fragment .fade .boxed-content style="margin-top: 0.3em; font-size: 0.82em;"}
 
 {{< iconify fa6-solid triangle-exclamation >}} **Lesson**: the flaw is in how
-`H` uses `G`, not in `G` itself
+`H` uses `G`, not in `G` itself! Critically, this violates this "contract" by
+using `B` as the input to `G` while also including `B` in the output! An
+adversary who knows `B` can also compute `G(B)`, and will notice that the
+result is exactly equal to the second half of the output from `H`!
 
 :::
+
+# What is a hacker's goal? Find a way to efficiently distinguish the output of `G` from uniform random distribution
 
 ## What We Cannot Prove
 
@@ -645,7 +650,7 @@ return A || B || C || D
 ::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.72em;"}
 
 {{< iconify fa6-solid scale-unbalanced >}} **Reality check**: cryptography
-manages risk rather than removing it
+manages secrecy risk rather than removing it entirely!
 
 :::
 
