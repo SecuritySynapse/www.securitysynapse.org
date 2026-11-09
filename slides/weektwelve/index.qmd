@@ -238,7 +238,7 @@ drwxr-xr-x    - gkapfham users 29 Oct 15:12 syllabus
 
 ## Access Control Lists
 
-```{.text code-line-numbers="false"}
+```{.text code-line-numbers="false" style="border: 1px solid #bbb; border-radius: 4px; box-sizing: border-box; padding: 6px 9px;"}
 $ ls -l /dev/video0
 crw-rw----+ 1 root video 81, 0 Nov  9 08:29 /dev/video0
 
@@ -253,30 +253,38 @@ mask::rw-
 other::---
 ```
 
-::: {.columns style="margin-top: -0.2em;"}
+::: {.fragment .fade style="margin-top: 0.1em; font-size: 0.8em;"}
 
-::: {.column width="50%" style="font-size: 0.68em;"}
-
-- `user::rw-`: owner, `root`
-- `user:gkapfham:rw-`: the named ACE
-- `group::rw-`: owning group, `video`
-
-:::
-
-::: {.column width="50%" style="font-size: 0.68em;"}
-
-- `mask::rw-`: caps the group entries
-- `other::---`: everyone else
-- `+`: this file carries an ACL
+- {{< iconify fa6-solid lightbulb >}} The `+` marks an ACL for the file `/dev/video0`
+  - `getfacl` shows the ACL for `/dev/video0`
+  - `gkapfham` can use the camera
+  - `other` cannot use the camera
 
 :::
 
+## Reading `getfacl` Output
+
+::: {.incremental style="margin-top: -0.1em; font-size: 0.85em;"}
+
+- More details about the ACL for `/dev/video0`:
+  - `user::rw-`: owner, `root`
+  - `user:gkapfham:rw-`: named entry for one account
+  - `group::rw-`: owning group, `video`
+  - `mask::rw-`: ceiling for group entries
+  - `other::---`: everyone else
+
 :::
 
-::: {.fragment .boxed-content .fade style="margin-top: -0.35em; font-size: 0.72em;"}
+::: {.fragment .fade style="margin-top: 0.05em; font-size: 0.8em;"}
 
-- {{< iconify fa6-solid lightbulb >}} `systemd-logind` added this ACE at login;
-mode bits cannot express it
+- {{< iconify fa6-solid user-shield >}} `systemd-logind` granted this entry when
+the user logged in
+
+- {{< iconify fa6-solid lightbulb >}} If the mask were `r--`, what would
+`user:gkapfham:rw-` grant?
+
+- {{< iconify fa6-solid code >}} Any additional questions about permissions or
+ACLs in the Linux operating system? How to apply ACLs and permissions for a coding agent?
 
 :::
 
