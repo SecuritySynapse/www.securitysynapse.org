@@ -822,11 +822,11 @@ authentication!
 
 - **JOY connection**: chapters four and five define pseudorandomness for OTP
 
+- **CS-403-1**: identify **threats** and **mitigations**
+
 - **CS-403-2**: apply **cryptography** to security solutions
 
 - **CS-403-4**: evaluate systems for computer security
-
-- **CS-403-1**: identify **threats** and **mitigations**
 
 :::
 
