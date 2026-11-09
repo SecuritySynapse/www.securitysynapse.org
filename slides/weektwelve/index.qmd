@@ -246,7 +246,7 @@ drwxr-xr-x    - gkapfham users 29 Oct 15:12 syllabus
 
 :::
 
-::: {.fragment .fade style="margin-top: -0.25em; font-size: 0.8em;"}
+::: {.fragment .fade style="margin-top: -0.25em; font-size: 0.9em;"}
 
 - {{< iconify fa6-solid diagram-project >}} **Important Considerations**:
   - **Security**: ACLs must be protected
@@ -294,7 +294,7 @@ nixbld1:x:30001:30000:Nix build user 1
 
 ## Network Access Management
 
-::: {.fragment .fade style="margin-top: -0.25em; font-size: 1.00em;"}
+::: {.fragment .fade style="margin-top: -0.25em; font-size: 0.9em;"}
 
 ### Single Sign-On (SSO)
 
@@ -304,7 +304,7 @@ nixbld1:x:30001:30000:Nix build user 1
 
 :::
 
-::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
+::: {.fragment .fade style="margin-top: -0.45em; font-size: 0.9em;"}
 
 #### OpenID and OAuth
 
@@ -317,7 +317,7 @@ nixbld1:x:30001:30000:Nix build user 1
 
 ## SAML Details
 
-::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
+::: {.fragment .fade style="margin-top: -0.45em; font-size: 0.95em;"}
 
 - **Definition**: Security Assertion Markup Language
 - **Workflow**:
