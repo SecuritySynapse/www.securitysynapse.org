@@ -183,7 +183,7 @@ authentication**?
 
 ## Unix File Permissions
 
-::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
+::: {.fragment .fade style="margin-top: -0.45em; font-size: 0.95em;"}
 
 - **Design**: Owner (or "user"), group, all users (or "others")
 - **Permissions**: Read (1), Write (2), Execute (4)
