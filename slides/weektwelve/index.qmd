@@ -412,7 +412,7 @@ nixbld1:x:30001:30000:Nix build user 1
 
 # How do we evaluate the trade-offs of different authentication and authorization solutions?
 
-## Evaluation Metrics in Security
+## Evaluation Metrics in Security {transition="convex"}
 
 ::: {.fragment style="margin-top: -0.5em; font-size: 0.7em;"}
 
@@ -633,7 +633,7 @@ nixbld1:x:30001:30000:Nix build user 1
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.62em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.6em;"}
 
 - **CSP Chapter 7 + OSTEP Chapter 55 connection**: connect **least privilege**
 and **authorization models** to **access controls** and their **evaluation**
