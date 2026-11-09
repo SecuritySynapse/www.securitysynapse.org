@@ -238,7 +238,7 @@ drwxr-xr-x    - gkapfham users 29 Oct 15:12 syllabus
 
 ## Access Control Lists
 
-```bash
+```{.text code-line-numbers="false"}
 $ ls -l /dev/video0
 crw-rw----+ 1 root video 81, 0 Nov  9 08:29 /dev/video0
 
@@ -253,10 +253,30 @@ mask::rw-
 other::---
 ```
 
-::: {.fragment .boxed-content .fade style="margin-top: -0.05em; font-size: 0.8em;"}
+::: {.columns style="margin-top: -0.2em;"}
 
-- {{< iconify fa6-solid lightbulb >}} The `+` marks an ACL: `gkapfham` can use
-the laptop camera although `other` has no access
+::: {.column width="50%" style="font-size: 0.68em;"}
+
+- `user::rw-`: owner, `root`
+- `user:gkapfham:rw-`: the named ACE
+- `group::rw-`: owning group, `video`
+
+:::
+
+::: {.column width="50%" style="font-size: 0.68em;"}
+
+- `mask::rw-`: caps the group entries
+- `other::---`: everyone else
+- `+`: this file carries an ACL
+
+:::
+
+:::
+
+::: {.fragment .boxed-content .fade style="margin-top: -0.35em; font-size: 0.72em;"}
+
+- {{< iconify fa6-solid lightbulb >}} `systemd-logind` added this ACE at login;
+mode bits cannot express it
 
 :::
 
