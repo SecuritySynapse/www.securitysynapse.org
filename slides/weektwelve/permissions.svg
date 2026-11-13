@@ -1,4 +1,6 @@
-<svg class='svgbob' height='144' preserveAspectRatio='xMidYMid meet' viewBox='0 0 336 144' width='336' xmlns='http://www.w3.org/2000/svg'>
+<svg class='svgbob' height='144' preserveAspectRatio='xMidYMid meet' viewBox='0 0 336 144' width='336' xmlns='http://www.w3.org/2000/svg' role='img' aria-labelledby='permissions-title permissions-desc'>
+  <title id='permissions-title'>Unix file permission bits for owner, group, and other</title>
+  <desc id='permissions-desc'>Each of the owner, group, and other triads has a read, write, and execute bit. Read is 4, write is 2, and execute is 1, so a full triad sums to 7. The command chmod 640 sets the owner triad to read and write (4 + 2 = 6), the group triad to read (4), and the other triad to no permissions (0).</desc>
   <style>.svgbob line, .svgbob path, .svgbob circle, .svgbob rect, .svgbob polygon {
   stroke: black;
   stroke-width: 2;
@@ -24,103 +26,33 @@
   stroke-dasharray: 8;
 }
 
-.svgbob .filled {
-  fill: black;
-}
-
-.svgbob .bg_filled {
-  fill: white;
-  stroke-width: 1;
-}
-
-.svgbob .nofill {
-  fill: white;
-}
-
-.svgbob .end_marked_arrow {
-  marker-end: url(#arrow);
-}
-
-.svgbob .start_marked_arrow {
-  marker-start: url(#arrow);
-}
-
-.svgbob .end_marked_diamond {
-  marker-end: url(#diamond);
-}
-
-.svgbob .start_marked_diamond {
-  marker-start: url(#diamond);
-}
-
-.svgbob .end_marked_circle {
-  marker-end: url(#circle);
-}
-
-.svgbob .start_marked_circle {
-  marker-start: url(#circle);
-}
-
-.svgbob .end_marked_open_circle {
-  marker-end: url(#open_circle);
-}
-
-.svgbob .start_marked_open_circle {
-  marker-start: url(#open_circle);
-}
-
-.svgbob .end_marked_big_open_circle {
-  marker-end: url(#big_open_circle);
-}
-
-.svgbob .start_marked_big_open_circle {
-  marker-start: url(#big_open_circle);
-}
-
 </style>
-  <defs>
-    <marker id='arrow' markerHeight='7' markerWidth='7' orient='auto-start-reverse' refX='4' refY='2' viewBox='-2 -2 8 8'>
-      <polygon points='0,0 0,4 4,2 0,0'/>
-    </marker>
-    <marker id='diamond' markerHeight='7' markerWidth='7' orient='auto-start-reverse' refX='4' refY='2' viewBox='-2 -2 8 8'>
-      <polygon points='0,2 2,0 4,2 2,4 0,2'/>
-    </marker>
-    <marker id='circle' markerHeight='7' markerWidth='7' orient='auto-start-reverse' refX='4' refY='4' viewBox='0 0 8 8'>
-      <circle class='filled' cx='4' cy='4' r='2'/>
-    </marker>
-    <marker id='open_circle' markerHeight='7' markerWidth='7' orient='auto-start-reverse' refX='4' refY='4' viewBox='0 0 8 8'>
-      <circle class='bg_filled' cx='4' cy='4' r='2'/>
-    </marker>
-    <marker id='big_open_circle' markerHeight='7' markerWidth='7' orient='auto-start-reverse' refX='4' refY='4' viewBox='0 0 8 8'>
-      <circle class='bg_filled' cx='4' cy='4' r='3'/>
-    </marker>
-  </defs>
   <rect class='backdrop' height='144' width='336' x='0' y='0'/>
   <text x='34' y='12'>Owner</text>
   <text x='18' y='44'>r</text>
   <text x='50' y='44'>w</text>
   <text x='82' y='44'>x</text>
-  <text x='18' y='76'>1</text>
+  <text x='18' y='76'>4</text>
   <text x='50' y='76'>2</text>
-  <text x='82' y='76'>4</text>
+  <text x='82' y='76'>1</text>
   <text x='50' y='108'>&#39;</text>
   <text x='50' y='124'>7</text>
   <text x='146' y='12'>Group</text>
   <text x='130' y='44'>r</text>
   <text x='162' y='44'>w</text>
   <text x='194' y='44'>x</text>
-  <text x='130' y='76'>1</text>
+  <text x='130' y='76'>4</text>
   <text x='162' y='76'>2</text>
-  <text x='194' y='76'>4</text>
+  <text x='194' y='76'>1</text>
   <text x='162' y='108'>&#39;</text>
   <text x='162' y='124'>7</text>
   <text x='258' y='12'>Other</text>
   <text x='242' y='44'>r</text>
   <text x='274' y='44'>w</text>
   <text x='306' y='44'>x</text>
-  <text x='242' y='76'>1</text>
+  <text x='242' y='76'>4</text>
   <text x='274' y='76'>2</text>
-  <text x='306' y='76'>4</text>
+  <text x='306' y='76'>1</text>
   <text x='274' y='108'>&#39;</text>
   <text x='274' y='124'>7</text>
   <g>
