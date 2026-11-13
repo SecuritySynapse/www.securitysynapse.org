@@ -186,8 +186,8 @@ of **MFA**?
 ::: {.fragment .fade style="margin-top: -0.45em; font-size: 0.95em;"}
 
 - **Design**: Owner (or "user"), group, all users (or "others")
-- **Permissions**: Read (1), Write (2), Execute (4)
-  - **Example**: Read + Execute = 5 = (1 + 4)
+- **Permissions**: Read (4), Write (2), Execute (1)
+  - **Example**: Read + Execute = 5 = (4 + 1)
 - **`chmod` Command**: Set permissions
   - **Format**: `chmod 710 <filename>`
   - **710**: Owner (7), Group (1), Others (0)
