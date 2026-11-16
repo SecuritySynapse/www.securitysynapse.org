@@ -723,7 +723,7 @@ print(f"CRC32 Checksum: {checksum_data_two:#010x}")
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.62em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.6em;"}
 
 - **CSP Chapters 8-9 connection**: connect **vulnerability discovery**,
 **logging**, and **recovery** to **incident response**
