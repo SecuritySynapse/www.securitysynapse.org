@@ -281,7 +281,7 @@ critically important!
 
 # Understanding CVEs
 
-::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.85em;"}
+::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.825em;"}
 
 - **CVE**: Common Vulnerabilities and Exposures
 - **Purpose**: Identify and catalog vulnerabilities in software and firmware
