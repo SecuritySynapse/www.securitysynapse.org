@@ -183,7 +183,7 @@ if __name__ == "main":
 
 ## Collecting System Information
 
-::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
+::: {.incremental style="margin-top: -0.25em; font-size: 0.85em;"}
 
 - Helps to answer to questions such as:
   - Why is the disk filling up so quickly?
@@ -191,6 +191,11 @@ if __name__ == "main":
   - Why is the network so slow?
   - Why is memory consumption so high?
   - Why is this system crashing so often?
+
+- Building a system in the Python programming language:
+  - Use `platform` to detect the operating system
+  - Use `psutil` to detect CPU, memory, and disk usage
+  - Use `inspect` to detect the name of functions
 
 :::
 
