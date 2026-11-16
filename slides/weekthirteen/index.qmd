@@ -181,6 +181,19 @@ if __name__ == "main":
 
 # What are some *automated strategies* for collecting and maintaining computer system information?
 
+## Collecting System Information
+
+::: {.incremental style="margin-top: -0.25em; font-size: 0.95em;"}
+
+- Helps to answer to questions such as:
+  - Why is the disk filling up so quickly?
+  - Why is the CPU usage so high?
+  - Why is the network so slow?
+  - Why is memory consumption so high?
+  - Why is this system crashing so often?
+
+:::
+
 ## Detecting CPU Details
 
 ```python
