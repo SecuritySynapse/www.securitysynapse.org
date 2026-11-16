@@ -556,7 +556,7 @@ monitor_logs()
 - **RAID 1**: Mirroring, redundancy, improved reliability
 - **RAID 5**: Block-level striping with distributed parity
 
-::: {.fragment .callout-note icon=false title="Understanding RAID's Trade-offs"}
+::: {.fragment .callout-note style="margin-top: -0.5em;" icon=false title="Understanding RAID's Trade-offs"}
 
 - **Performance**: Varying effects on read/write speeds
 - **Complexity**: More hardware to manage and maintain
