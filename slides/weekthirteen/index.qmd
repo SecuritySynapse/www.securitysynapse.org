@@ -386,7 +386,7 @@ critically important!
 
 ## Security Operations Centers
 
-::: incremental
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.90em;"}
 
 - **Purpose**: Monitor, detect, and respond to security incidents
 - **Components**: People, processes, and technology
