@@ -408,7 +408,7 @@ critically important!
 
 ### Precursor to an Incident
 
-::: fragment
+::: {.fragment .fade style="margin-top: -0.1em; font-size: 0.90em;"}
 
 - **Asset**: A valuable resource to an organization
 - **Threat**: A potential danger to an asset
