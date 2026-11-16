@@ -461,7 +461,7 @@ logging.critical('This is a critical message')
 
 ## Security Logging Details
 
-::: {.fragment style="margin-top: -0.1em; font-size: 0.90em;"}
+::: {.fragment style="margin-top: -0.1em; font-size: 0.85em;"}
 
 - **Purpose**: Record details about system behavior
 - **Severity**: Indicate the severity of the event
@@ -511,7 +511,7 @@ monitor_logs()
 
 ::: {.fragment .callout-note icon=false title="Responding to Security Incidents"}
 
-- Business impact analysis measures outage impact on:
+- **Business impact analysis measures outage impact on**:
   - Property
   - Finance
   - Safety
