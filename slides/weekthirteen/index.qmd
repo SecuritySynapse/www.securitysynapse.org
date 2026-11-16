@@ -24,7 +24,7 @@ format:
 
 ## Security Vulnerability Management
 
-::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.85em;"}
+::: {.fragment .fade style="margin-top: -0.45em; font-size: 0.825em;"}
 
 - **Asset**: A resource that is valuable to an organization
 - **Vulnerability**: A weakness in a computer system
@@ -36,7 +36,7 @@ handling a vulnerability in a computer system
 
 :::
 
-::: {.fragment .boxed-content .fade style="margin-top: -0.25em; font-size: 0.80em;"}
+::: {.fragment .boxed-content .fade style="margin-top: -0.25em; font-size: 0.75em;"}
 
 - {{< iconify fa6-solid people-line >}} **In-Class Discussion**: What is a
 complete example of these concepts?
@@ -145,7 +145,7 @@ if __name__ == "main":
 
 :::
 
-# Secret Scanning is an Important Business!
+# Secret Scanning is an Important Business
 
 ::: {.fragment .boxed-content .fade style="margin-top: -0.25em; font-size: 0.80em;"}
 
@@ -161,7 +161,7 @@ if __name__ == "main":
 
 # Collecting Information
 
-::: {.fragment .fade style="margin-top: -0.45em; font-size: 1.00em;"}
+::: {.fragment .fade style="margin-top: -0.45em; font-size: 0.95em;"}
 
 - **Hardware**: CPU, RAM, hard drives, network cards
 - **Software**: Operating systems, applications, libraries
@@ -179,7 +179,7 @@ if __name__ == "main":
 
 :::
 
-# What are some automated strategies for collecting and maintaining computer system information?
+# What are some *automated strategies* for collecting and maintaining computer system information?
 
 ## Detecting CPU Details
 
@@ -457,8 +457,8 @@ logging.critical('This is a critical message')
 ::: {.fragment .boxed-content .fade style="margin-top: -0.1em; font-size: 0.80em;"}
 
 - {{< iconify fa6-solid people-line >}} **Discussion Questions**:
-    - Where and for how long should a security log be stored?
-    - How do we ensure that precursors are not overlooked?
+  - Where and for how long should a security log be stored?
+  - How do we ensure that precursors are not overlooked?
 
 :::
 
@@ -525,13 +525,13 @@ monitor_logs()
 ::: {.fragment .boxed-content .fade style="margin-top: -0.1em; font-size: 0.85em;"}
 
 - {{< iconify fa6-solid people-line >}} **Discussion Questions**:
-    - What are the trade-offs of redundancy?
-    - What system components should be redundant?
-    - Overall, how can you ensure high availability?
+  - What are the trade-offs of redundancy?
+  - What system components should be redundant?
+  - Overall, how can you ensure high availability?
 
 :::
 
-## RAID to the Rescue!
+## RAID to the Rescue
 
 - **RAID**: Redundant Array of Independent Disks
 - **RAID 0**: Striping, no redundancy, improved performance
