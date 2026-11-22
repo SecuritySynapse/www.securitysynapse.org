@@ -71,7 +71,7 @@ format:
 
 :::
 
-## Mathematical Background
+## Mathematical Background {transition="convex"}
 
 ```{python}
 def gcd(a: int, b: int) -> int:
@@ -89,13 +89,13 @@ def mod_inverse(a: int, m: int) -> int:
 ::: {.fragment style="margin-top: 0.25em;"}
 
 - {{< iconify fa6-solid people-line >}} **In-Class Discussion**
-    - What are the input and output types of these functions?
-    - What is the purpose of the `%` operator in these functions?
-    - What do the `gcd` and `mod_inverse` functions do?
+  - What are the input and output types of these functions?
+  - What is the purpose of the `%` operator in these functions?
+  - What do the `gcd` and `mod_inverse` functions do?
 
 :::
 
-## Using the `gcd` Function
+## Using the `gcd` Function {transition="convex"}
 
 ```{python}
 a = 10
@@ -116,11 +116,12 @@ print(f"gcd({a}, {b}) = {gcd_result}")
 
 ::: fragment
 
-What do outputs show about the `gcd` function's behavior?
+{{< iconify fa6-solid lightbulb >}} What do these outputs show about
+`gcd`'s behavior?
 
 :::
 
-## Using the `mod_inverse` Function
+## Using the `mod_inverse` Function {transition="convex"}
 
 ```{python}
 a = 10
@@ -142,11 +143,12 @@ except ValueError as e:
 
 ::: fragment
 
-What is the behavior of the `mod_inverse` function?
+{{< iconify fa6-solid lightbulb >}} What is the behavior of the
+`mod_inverse` function?
 
 :::
 
-# Goal: Find the number `x` such that when `a` is multiplied by `x` and then divided by `m`, the remainder is 1!
+# Goal: Find the number `x` such that when `a` is multiplied by `x` and then divided by `m`, the remainder is 1
 
 ## Checking `mod_inverse`
 
@@ -161,21 +163,22 @@ print(f"The result of {numerator} divided by {denominator}")
 print(f"is {result} with a remainder of {remainder}")
 ```
 
-::: fragment
+::: {.fragment style="font-size: 0.76em;"}
 
-- Did the `mod_inverse` function return the correct result?
-- What is the time complexity of the `mod_inverse` function?
-- How does this connection to affine ciphers?
-- Okay, let's explore this cryptosystem in greater detail!
+- {{< iconify fa6-solid people-line >}} **Discussion Questions**
+  - Did the `mod_inverse` function return the correct result?
+  - What is the time complexity of the `mod_inverse` function?
+  - How does this connect to affine ciphers?
+  - Okay, let's explore this cryptosystem in greater detail!
 
 :::
 
-## Encryption with Affine Ciphers
+## Encryption with Affine Ciphers {transition="convex"}
 
 ```{python}
 def affine_encrypt(plaintext: str, a: int, b: int) -> str:
     if gcd(a, 26) != 1:
-        raise ValueError("a and 26 are not coprime, choose a different 'a' value.")
+        raise ValueError("a must be coprime with 26")
     ciphertext = ""
     for char in plaintext:
         if char.isalpha():
@@ -199,12 +202,12 @@ encrypted = affine_encrypt(plaintext, a, b)
 print(f"Encrypted: {encrypted}")
 ```
 
-## Decryption with Affine Ciphers
+## Decryption with Affine Ciphers {transition="convex"}
 
 ```{python}
 def affine_decrypt(ciphertext: str, a: int, b: int) -> str:
     if gcd(a, 26) != 1:
-        raise ValueError("a and 26 are not coprime, choose a different 'a' value.")
+        raise ValueError("a must be coprime with 26")
     plaintext = ""
     # find modular inverse of the integer a
     a_inv = mod_inverse(a, 26)
@@ -231,8 +234,6 @@ print(f"Decrypted: {decrypted}")
 
 ::: {.fragment .callout-note icon=false title="Lessons Learned about Affine Cipher" style="margin-top: 0em; font-size: 1.1em;"}
 
-::: incremental
-
 - Affine ciphers use modular arithmetic and inverses
 
 - Code segment from the encryption function:
@@ -242,11 +243,10 @@ print(f"Decrypted: {decrypted}")
   - `decrypted_char = (a_inv * (y - b)) % 26`
 
 - Importantly, it is vulnerable to frequency analysis attacks
+
 - However, it illustrates role of modular arithmetic and primes!
 
 - Any questions about the `encrypt` or `decrypt` functions?
-
-:::
 
 :::
 
@@ -263,7 +263,7 @@ print(f"Decrypted: {decrypted}")
 
 :::
 
-## Encrypting with Vigenere
+## Encrypting with Vigenere {transition="convex"}
 
 ```{python}
 def vigenere_encrypt(plaintext: str, key: str) -> str:
@@ -288,7 +288,7 @@ encrypted = vigenere_encrypt(plaintext, key)
 print(f"Encrypted: {encrypted}")
 ```
 
-## Decrypting with Vigenere
+## Decrypting with Vigenere {transition="convex"}
 
 ```{python}
 def vigenere_decrypt(ciphertext:str, key:str) -> str:
@@ -315,8 +315,6 @@ print(f"Decrypted: {decrypted}")
 
 ::: {.fragment .callout-note icon=false title="Lessons Learned about Vigenere Cipher" style="margin-top: 0em; font-size: 1.1em;"}
 
-::: incremental
-
 - Vigenere ciphers use a repeating key to shift letters
 
 - Code segment from the encryption function:
@@ -326,9 +324,8 @@ print(f"Decrypted: {decrypted}")
   - `decrypted_char = chr((ord(char) - ord('a') - shift + 26) % 26 + ord('a'))`
 
 - Importantly, it is more secure than simple substitution ciphers
-- However, it is still vulnerable to frequency analysis for long ciphertexts
 
-:::
+- However, it is still vulnerable to frequency analysis for long ciphertexts
 
 :::
 
@@ -422,7 +419,8 @@ for word, freq in bottom_k_words:
 
 ::: fragment
 
-How does this help a cryptographer break a simple cipher?
+{{< iconify fa6-solid lightbulb >}} How does this help a cryptographer
+break a simple cipher?
 
 :::
 
@@ -445,7 +443,7 @@ How does this help a cryptographer break a simple cipher?
 
 ::: fragment
 
-#### Cryptography Roles
+### Cryptography Roles
 
 - Hashing
 - Signatures
@@ -538,7 +536,7 @@ How does this help a cryptographer break a simple cipher?
 
 :::
 
-::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.62em;"}
+::: {.fragment .fade .boxed-content style="margin-top: -0.1em; font-size: 0.6em;"}
 
 - **CCP Chapters 13-20 connection**: connect **affine** and **Vigenere**
 ciphers to **cryptanalysis** and **secure software**
