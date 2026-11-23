@@ -9,7 +9,7 @@ execute:
   echo: true
 jupyter: python3
 format:
-  revealjs:
+  live-revealjs:
     completion: true
     theme: default
     css: ../css/styles.css
@@ -123,28 +123,33 @@ print(f"gcd({a}, {b}) = {gcd_result}")
 
 ## Using the `mod_inverse` Function {transition="convex"}
 
-```{python}
-a = 10
-m = 26
-try:
-    mod_inverse_result = mod_inverse(a, m)
-    print(f"mod_inverse({a}, {m}) = {mod_inverse_result}")
-except ValueError as e:
-    print(e)
+```{pyodide}
+#| autorun: true
+#| max-lines: 12
+def mod_inverse(a: int, m: int) -> int:
+    for x in range(1, m):
+        if (a * x) % m == 1:
+            return x
+    raise ValueError("Modular inverse does not exist.")
 
-a = 17
-m = 31
-try:
-    mod_inverse_result = mod_inverse(a, m)
-    print(f"mod_inverse({a}, {m}) = {mod_inverse_result}")
-except ValueError as e:
-    print(e)
+for a, m in [(10, 26), (17, 31)]:
+    try:
+        print(f"mod_inverse({a}, {m}) = {mod_inverse(a, m)}")
+    except ValueError as e:
+        print(f"mod_inverse({a}, {m}): {e}")
 ```
 
 ::: fragment
 
 {{< iconify fa6-solid lightbulb >}} What is the behavior of the
 `mod_inverse` function?
+
+:::
+
+::: {.fragment .fade style="margin-top: 0.1em; font-size: 0.75em;"}
+
+{{< iconify fa6-solid keyboard >}} **Try it**: change `(10, 26)` to `(5, 26)`
+and rerun. Why does it succeed?
 
 :::
 
