@@ -27,12 +27,12 @@ format:
 - Offer an abstraction for system resources
 - Securely emulate a privileged environment
 - Yet, it introduces new security risks!
-    - Do I trust the virtualization software?
-    - Do I trust the Docker container?
+  - Do I trust the virtualization software?
+  - Do I trust the Docker container?
 
 :::
 
-## What is a virtual machine? 
+## What is a virtual machine?
 
 ::: {.incremental .fade style="margin-top: -0.45em; font-size: 0.95em;"}
 
@@ -46,10 +46,10 @@ format:
 ::: {.fragment .boxed-content .fade style="margin-top: -0.05em; font-size: 0.80em;"}
 
 - {{< iconify fa6-solid people-line >}} **In-Class Discussion**
-    - Where are virtual machines commonly used in industry?
-    - What are the security benefits of using a virtual machine?
-    - What are the downside of using a virtual machines?
-    - How do you design and implement a secure virtual machine?
+  - Where are virtual machines commonly used in industry?
+  - What are the security benefits of using a virtual machine?
+  - What are the downside of using a virtual machines?
+  - How do you design and implement a secure virtual machine?
 
 :::
 
@@ -70,13 +70,13 @@ format:
 
 - **Shared Kernel Vulnerabilities**: Containers share the host operating
 system's kernel, increasing the risk if the kernel is compromised
-  
+
 - **Isolation Issues**: Containers provide less isolation compared to virtual
 machines, potentially allowing for a variety of container breakout attacks
-  
+
 - **Image Vulnerabilities**: Container images downloaded from "hubs" may
 contain vulnerabilities if not regularly updated and scanned
-  
+
 - **Privilege Escalation**: Misconfigured software containers may run with some
 elevated privileges, increasing security risks for all software it runs
 
@@ -137,7 +137,7 @@ docker run -d \
 
 :::
 
-# Docker containers are complex software applications with behaviors that vary by operating system!
+# Docker containers are complex software applications with behaviors that vary by operating system
 
 # Container Orchestration
 
@@ -151,10 +151,10 @@ docker run -d \
 ::: {.fragment .boxed-content .fade style="margin-top: 0.15em; font-size: 0.80em;"}
 
 - Features of container orchestration:
-    - **Service Discovery**: Automatically find containers
-    - **Load Balancing**: Distribute traffic across containers
-    - **Health Checks**: Monitor container health
-    - **Rolling Updates**: Update containers without downtime
+  - **Service Discovery**: Automatically find containers
+  - **Load Balancing**: Distribute traffic across containers
+  - **Health Checks**: Monitor container health
+  - **Rolling Updates**: Update containers without downtime
 
 :::
 
@@ -183,9 +183,9 @@ docker run -d \
 ::: {.fragment .boxed-content .fade style="margin-top: 0.15em; font-size: 0.8em;"}
 
 - {{< iconify fa6-solid people-line >}} **In-Class Discussion**: What are the trade-offs for each cloud option?
-    - Performance
-    - Reliability
-    - Security
+  - Performance
+  - Reliability
+  - Security
 
 :::
 
@@ -201,10 +201,10 @@ docker run -d \
 ::: {.fragment .boxed-content .fade style="margin-top: 0.15em; font-size: 1em;"}
 
 - {{< iconify fa6-solid lightbulb >}} **Answer these questions for cloud native security:**
-    - **Code**: How secure is the code of the application?
-    - **Container**: How secure is the software container?
-    - **Cluster**: How secure is the Kubernetes cluster?
-    - **Cloud**: How secure is the cloud provider?
+  - **Code**: How secure is the code of the application?
+  - **Container**: How secure is the software container?
+  - **Cluster**: How secure is the Kubernetes cluster?
+  - **Cloud**: How secure is the cloud provider?
 
 :::
 
@@ -284,7 +284,7 @@ docker run -d \
 ### **Constrain**
 
 - Limit CPU and memory
-- Control files and processes
+- Control resources
 - Least privilege
 - System stability
 
