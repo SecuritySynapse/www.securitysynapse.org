@@ -255,6 +255,38 @@ print(f"Decrypted: {decrypted}")
 
 :::
 
+## A Caesar Cipher Is an Affine Cipher {transition="convex"}
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 11
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+message = "make a security synapse"
+shift = 3
+ciphertext = ""
+for char in message:
+    if char in alphabet:
+        position = alphabet.index(char)
+        ciphertext += alphabet[(position + shift) % 26]
+    else:
+        ciphertext += char
+print(ciphertext)
+```
+
+::: {.fragment .fade style="margin-top: 0.1em; font-size: 0.72em;"}
+
+{{< iconify fa6-solid lightbulb >}} Which `a` and `b` make the affine cipher do
+this?
+
+:::
+
+::: {.fragment .fade style="margin-top: 0.1em; font-size: 0.72em;"}
+
+{{< iconify fa6-solid keyboard >}} **Try it**: set `shift = 13` and rerun. Why
+does a second run undo it?
+
+:::
+
 # Exploring Substitution Ciphers Like Vigenere
 
 ::: incremental
@@ -265,6 +297,36 @@ print(f"Decrypted: {decrypted}")
 - Let's explore these functions:
   - `vigenere_encrypt`
   - `vigenere_decrypt`
+
+:::
+
+## The Vigenere Keystream {transition="convex"}
+
+```{pyodide}
+#| autorun: true
+#| max-lines: 10
+key = "key"
+message = "security"
+keystream = (key * len(message))[:len(message)]
+shifts = []
+for char in keystream:
+    shifts.append(ord(char) - ord("a"))
+print("Message:  ", message)
+print("Keystream:", keystream)
+print("Shifts:   ", shifts)
+```
+
+::: {.fragment .fade style="margin-top: 0.1em; font-size: 0.72em;"}
+
+{{< iconify fa6-solid lightbulb >}} Why does the key repeat when the message is
+longer?
+
+:::
+
+::: {.fragment .fade style="margin-top: 0.1em; font-size: 0.72em;"}
+
+{{< iconify fa6-solid keyboard >}} **Try it**: change `message` to
+`securitysynapse` and rerun.
 
 :::
 
