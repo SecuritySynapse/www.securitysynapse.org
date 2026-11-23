@@ -285,6 +285,9 @@ this?
 {{< iconify fa6-solid keyboard >}} **Try it**: set `shift = 13` and rerun. Why
 does a second run undo it?
 
+{{< iconify fa6-solid keyboard >}} **Reminder**: Make sure to copy and paste
+the output from the first run!
+
 :::
 
 # Exploring Substitution Ciphers Like Vigenere
